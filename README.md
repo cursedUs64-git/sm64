@@ -132,7 +132,7 @@ Use Homebrew's GNU make because the version included with macOS is too old.
 gmake VERSION=jp -j4       # build (J) version instead with 4 jobs
 ```
 
-#### Docker Installation
+#### Docker
 
 ##### Create Docker image
 
