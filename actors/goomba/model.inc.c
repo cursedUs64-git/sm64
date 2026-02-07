@@ -1,64 +1,64 @@
 // Goomba
 
 // Unreferenced light group
-UNUSED static const Lights1 goomba_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 goomba_lights_unused1 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 goomba_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 goomba_lights_unused2 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x080194D0
-static const Lights1 goomba_seg8_lights_080194D0 = gdSPDefLights1(
+ const Lights1 goomba_seg8_lights_080194D0 = gdSPDefLights1(
     0x15, 0x0b, 0x04,
     0x54, 0x2e, 0x10, 0x28, 0x28, 0x28
 );
 
 // 0x080194E8
-static const Lights1 goomba_seg8_lights_080194E8 = gdSPDefLights1(
+ const Lights1 goomba_seg8_lights_080194E8 = gdSPDefLights1(
     0x18, 0x0d, 0x04,
     0x61, 0x34, 0x13, 0x28, 0x28, 0x28
 );
 
 // 0x08019500
-static const Lights1 goomba_seg8_lights_08019500 = gdSPDefLights1(
+ const Lights1 goomba_seg8_lights_08019500 = gdSPDefLights1(
     0x1d, 0x10, 0x08,
     0x77, 0x42, 0x20, 0x28, 0x28, 0x28
 );
 
 // 0x08019518
-static const Lights1 goomba_seg8_lights_08019518 = gdSPDefLights1(
+ const Lights1 goomba_seg8_lights_08019518 = gdSPDefLights1(
     0x37, 0x2d, 0x13,
     0xde, 0xb4, 0x4e, 0x28, 0x28, 0x28
 );
 
 // 0x08019530
-ALIGNED8 static const Texture goomba_seg8_texture_08019530[] = {
+ALIGNED8  const Texture goomba_seg8_texture_08019530[] = {
 #include "actors/goomba/goomba_body.rgba16.inc.c"
 };
 
 // 0x08019D30
-ALIGNED8 static const Texture goomba_seg8_texture_08019D30[] = {
+ALIGNED8  const Texture goomba_seg8_texture_08019D30[] = {
 #include "actors/goomba/goomba_face.rgba16.inc.c"
 };
 
 // 0x0801A530
-ALIGNED8 static const Texture goomba_seg8_texture_0801A530[] = {
+ALIGNED8  const Texture goomba_seg8_texture_0801A530[] = {
 #include "actors/goomba/goomba_face_blink.rgba16.inc.c"
 };
 
 // 0x0801AD30
-static const Lights1 goomba_seg8_lights_0801AD30 = gdSPDefLights1(
+ const Lights1 goomba_seg8_lights_0801AD30 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0801AD48
-static const Vtx goomba_seg8_vertex_0801AD48[] = {
+ const Vtx goomba_seg8_vertex_0801AD48[] = {
     {{{    80,     58,    105}, 0, {  1124,    322}, {0x22, 0x3f, 0x68, 0xff}}},
     {{{    80,     98,     62}, 0, {   858,    338}, {0x1d, 0x6e, 0x36, 0xff}}},
     {{{   -23,    109,     59}, 0, {   842,   1002}, {0xc7, 0x64, 0x34, 0xff}}},
@@ -77,7 +77,7 @@ static const Vtx goomba_seg8_vertex_0801AD48[] = {
 };
 
 // 0x0801AE38
-static const Vtx goomba_seg8_vertex_0801AE38[] = {
+ const Vtx goomba_seg8_vertex_0801AE38[] = {
     {{{   -23,    109,    -58}, 0, {   122,   1008}, {0xbd, 0x65, 0xdc, 0xff}}},
     {{{    -1,    130,      0}, 0, {   482,    872}, {0xfb, 0x7e, 0x05, 0xff}}},
     {{{    82,    110,      0}, 0, {   482,    330}, {0x2d, 0x76, 0xf9, 0xff}}},
@@ -97,7 +97,7 @@ static const Vtx goomba_seg8_vertex_0801AE38[] = {
 };
 
 // 0x0801AF38
-static const Vtx goomba_seg8_vertex_0801AF38[] = {
+ const Vtx goomba_seg8_vertex_0801AF38[] = {
     {{{   -23,    -54,   -117}, 0, { -3250,   1226}, {0xbc, 0xdc, 0x9c, 0xff}}},
     {{{   -51,    -48,    -52}, 0, { -2604,   1510}, {0x85, 0xe8, 0xf0, 0xff}}},
     {{{   -51,     49,    -52}, 0, { -2604,   1510}, {0x87, 0x14, 0xe3, 0xff}}},
@@ -117,7 +117,7 @@ static const Vtx goomba_seg8_vertex_0801AF38[] = {
 };
 
 // 0x0801B038
-static const Vtx goomba_seg8_vertex_0801B038[] = {
+ const Vtx goomba_seg8_vertex_0801B038[] = {
     {{{   143,     65,     69}, 0, {   906,    -78}, {0x4d, 0x51, 0x3a, 0xff}}},
     {{{    80,     98,     62}, 0, {   858,    338}, {0x1d, 0x6e, 0x36, 0xff}}},
     {{{    80,     58,    105}, 0, {  1124,    322}, {0x22, 0x3f, 0x68, 0xff}}},
@@ -137,7 +137,7 @@ static const Vtx goomba_seg8_vertex_0801B038[] = {
 };
 
 // 0x0801B138
-static const Vtx goomba_seg8_vertex_0801B138[] = {
+ const Vtx goomba_seg8_vertex_0801B138[] = {
     {{{   156,      0,     74}, 0, { -1340,   -572}, {0x6a, 0x04, 0x45, 0xff}}},
     {{{   156,     68,      0}, 0, { -2074,   -572}, {0x6e, 0x3e, 0x00, 0xff}}},
     {{{   143,     65,     69}, 0, { -1380,   -440}, {0x4d, 0x51, 0x3a, 0xff}}},
@@ -157,7 +157,7 @@ static const Vtx goomba_seg8_vertex_0801B138[] = {
 };
 
 // 0x0801B238
-static const Vtx goomba_seg8_vertex_0801B238[] = {
+ const Vtx goomba_seg8_vertex_0801B238[] = {
     {{{   143,     65,    -68}, 0, {    62,    -70}, {0x4c, 0x49, 0xbb, 0xff}}},
     {{{    80,     98,    -61}, 0, {   108,    346}, {0x19, 0x6a, 0xc1, 0xff}}},
     {{{    82,    110,      0}, 0, {   482,    330}, {0x2d, 0x76, 0xf9, 0xff}}},
@@ -261,7 +261,7 @@ const Gfx goomba_seg8_dl_0801B5F0[] = {
 };
 
 // 0x0801B618
-static const Vtx goomba_seg8_vertex_0801B618[] = {
+ const Vtx goomba_seg8_vertex_0801B618[] = {
     {{{    18,     18,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -18,     18,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -18,    -18,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -297,7 +297,7 @@ const Gfx goomba_seg8_dl_0801B690[] = {
 };
 
 // 0x0801B700
-static const Vtx goomba_seg8_vertex_0801B700[] = {
+ const Vtx goomba_seg8_vertex_0801B700[] = {
     {{{    90,     14,    -14}, 0, {     0,      0}, {0x6c, 0xdf, 0xc8, 0x00}}},
     {{{    90,     14,     29}, 0, {     0,      0}, {0x6c, 0xdf, 0x38, 0x00}}},
     {{{    85,     -4,     29}, 0, {     0,      0}, {0x5d, 0xb8, 0x2d, 0x00}}},
@@ -317,7 +317,7 @@ static const Vtx goomba_seg8_vertex_0801B700[] = {
 };
 
 // 0x0801B800
-static const Vtx goomba_seg8_vertex_0801B800[] = {
+ const Vtx goomba_seg8_vertex_0801B800[] = {
     {{{     0,     11,    -30}, 0, {     0,      0}, {0xd3, 0xda, 0x91, 0xff}}},
     {{{    60,     14,    -37}, 0, {     0,      0}, {0x1f, 0xe1, 0x8a, 0x00}}},
     {{{    60,    -12,    -30}, 0, {     0,      0}, {0x20, 0xb2, 0xa2, 0x00}}},
@@ -336,7 +336,7 @@ static const Vtx goomba_seg8_vertex_0801B800[] = {
 };
 
 // 0x0801B8F0
-static const Vtx goomba_seg8_vertex_0801B8F0[] = {
+ const Vtx goomba_seg8_vertex_0801B8F0[] = {
     {{{     0,     11,     45}, 0, {     0,      0}, {0xd3, 0xda, 0x6f, 0xff}}},
     {{{   -30,     14,     21}, 0, {     0,      0}, {0x95, 0xd4, 0x33, 0x00}}},
     {{{   -25,      0,     19}, 0, {     0,      0}, {0xad, 0xa9, 0x26, 0x00}}},
@@ -354,7 +354,7 @@ static const Vtx goomba_seg8_vertex_0801B8F0[] = {
 };
 
 // 0x0801B9D0
-static const Vtx goomba_seg8_vertex_0801B9D0[] = {
+ const Vtx goomba_seg8_vertex_0801B9D0[] = {
     {{{   -30,     14,     -7}, 0, {     0,      0}, {0x09, 0x7e, 0x00, 0xff}}},
     {{{   -30,     14,     21}, 0, {     0,      0}, {0x09, 0x7e, 0x00, 0x00}}},
     {{{     0,     11,     45}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
@@ -366,7 +366,7 @@ static const Vtx goomba_seg8_vertex_0801B9D0[] = {
 };
 
 // 0x0801BA50
-static const Vtx goomba_seg8_vertex_0801BA50[] = {
+ const Vtx goomba_seg8_vertex_0801BA50[] = {
     {{{     0,     11,     30}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
     {{{    60,     14,     37}, 0, {     0,      0}, {0xfe, 0x7f, 0x00, 0x00}}},
     {{{    60,     14,    -51}, 0, {     0,      0}, {0xfe, 0x7f, 0x00, 0x00}}},
@@ -385,7 +385,7 @@ static const Vtx goomba_seg8_vertex_0801BA50[] = {
 };
 
 // 0x0801BB40
-static const Vtx goomba_seg8_vertex_0801BB40[] = {
+ const Vtx goomba_seg8_vertex_0801BB40[] = {
     {{{    60,     14,    -51}, 0, {     0,      0}, {0x1f, 0xe1, 0x8a, 0xff}}},
     {{{    90,     14,    -29}, 0, {     0,      0}, {0x6c, 0xdf, 0xc8, 0x00}}},
     {{{    85,     -4,    -29}, 0, {     0,      0}, {0x5d, 0xb8, 0xd3, 0x00}}},
@@ -405,7 +405,7 @@ static const Vtx goomba_seg8_vertex_0801BB40[] = {
 };
 
 // 0x0801BC40
-static const Vtx goomba_seg8_vertex_0801BC40[] = {
+ const Vtx goomba_seg8_vertex_0801BC40[] = {
     {{{    60,    -12,    -44}, 0, {     0,      0}, {0x20, 0xb2, 0xa2, 0xff}}},
     {{{    66,    -17,    -29}, 0, {     0,      0}, {0x1e, 0x88, 0xe5, 0x00}}},
     {{{     4,    -12,    -26}, 0, {     0,      0}, {0xe1, 0x87, 0xea, 0x00}}},
@@ -425,7 +425,7 @@ static const Vtx goomba_seg8_vertex_0801BC40[] = {
 };
 
 // 0x0801BD40
-static const Vtx goomba_seg8_vertex_0801BD40[] = {
+ const Vtx goomba_seg8_vertex_0801BD40[] = {
     {{{   -25,      0,    -19}, 0, {     0,      0}, {0xad, 0xa9, 0xda, 0xff}}},
     {{{   -25,      0,      4}, 0, {     0,      0}, {0xad, 0xa9, 0x26, 0x00}}},
     {{{   -30,     14,      7}, 0, {     0,      0}, {0x95, 0xd4, 0x33, 0x00}}},
@@ -437,7 +437,7 @@ static const Vtx goomba_seg8_vertex_0801BD40[] = {
 };
 
 // 0x0801BDC0
-static const Vtx goomba_seg8_vertex_0801BDC0[] = {
+ const Vtx goomba_seg8_vertex_0801BDC0[] = {
     {{{   -24,    108,    -74}, 0, {     0,      0}, {0xbd, 0x62, 0xd6, 0x00}}},
     {{{    -1,    128,      0}, 0, {     0,      0}, {0xf3, 0x7e, 0x00, 0x00}}},
     {{{    81,    109,      0}, 0, {     0,      0}, {0x2a, 0x77, 0x00, 0x00}}},
@@ -457,7 +457,7 @@ static const Vtx goomba_seg8_vertex_0801BDC0[] = {
 };
 
 // 0x0801BEC0
-static const Vtx goomba_seg8_vertex_0801BEC0[] = {
+ const Vtx goomba_seg8_vertex_0801BEC0[] = {
     {{{   -23,     55,    117}, 0, {     0,      0}, {0xbb, 0x2a, 0x61, 0xff}}},
     {{{    -1,      0,    139}, 0, {     0,      0}, {0xed, 0x00, 0x7d, 0x00}}},
     {{{    81,      0,    118}, 0, {     0,      0}, {0x2c, 0x00, 0x77, 0x00}}},
@@ -476,7 +476,7 @@ static const Vtx goomba_seg8_vertex_0801BEC0[] = {
 };
 
 // 0x0801BFB0
-static const Vtx goomba_seg8_vertex_0801BFB0[] = {
+ const Vtx goomba_seg8_vertex_0801BFB0[] = {
     {{{   -24,   -108,     58}, 0, {     0,      0}, {0xbc, 0x9d, 0x28, 0xff}}},
     {{{   -23,    -55,    117}, 0, {     0,      0}, {0xba, 0xd3, 0x5f, 0x00}}},
     {{{   -51,    -49,     52}, 0, {     0,      0}, {0x87, 0xe6, 0x18, 0x00}}},
@@ -495,7 +495,7 @@ static const Vtx goomba_seg8_vertex_0801BFB0[] = {
 };
 
 // 0x0801C0A0
-static const Vtx goomba_seg8_vertex_0801C0A0[] = {
+ const Vtx goomba_seg8_vertex_0801C0A0[] = {
     {{{   -23,    -55,   -117}, 0, {     0,      0}, {0xba, 0xd3, 0xa1, 0xff}}},
     {{{   -51,    -49,    -52}, 0, {     0,      0}, {0x87, 0xe6, 0xe8, 0x00}}},
     {{{   -51,     49,    -52}, 0, {     0,      0}, {0x86, 0x17, 0xe7, 0x00}}},
@@ -515,7 +515,7 @@ static const Vtx goomba_seg8_vertex_0801C0A0[] = {
 };
 
 // 0x0801C1A0
-static const Vtx goomba_seg8_vertex_0801C1A0[] = {
+ const Vtx goomba_seg8_vertex_0801C1A0[] = {
     {{{   142,    -64,     68}, 0, {     0,      0}, {0x4f, 0xb8, 0x43, 0xff}}},
     {{{    79,    -97,     61}, 0, {     0,      0}, {0x20, 0x95, 0x3a, 0x00}}},
     {{{    81,   -109,      0}, 0, {     0,      0}, {0x28, 0x88, 0x00, 0x00}}},
@@ -533,7 +533,7 @@ static const Vtx goomba_seg8_vertex_0801C1A0[] = {
 };
 
 // 0x0801C280
-static const Vtx goomba_seg8_vertex_0801C280[] = {
+ const Vtx goomba_seg8_vertex_0801C280[] = {
     {{{   142,     64,    -68}, 0, {     0,      0}, {0x4d, 0x4b, 0xbe, 0xff}}},
     {{{    79,     97,    -51}, 0, {     0,      0}, {0x22, 0x6c, 0xc8, 0x00}}},
     {{{    81,    109,      0}, 0, {     0,      0}, {0x2a, 0x77, 0x00, 0x00}}},
@@ -551,7 +551,7 @@ static const Vtx goomba_seg8_vertex_0801C280[] = {
 };
 
 // 0x0801C360
-static const Vtx goomba_seg8_vertex_0801C360[] = {
+ const Vtx goomba_seg8_vertex_0801C360[] = {
     {{{    81,      0,    118}, 0, {     0,      0}, {0x2c, 0x00, 0x77, 0xff}}},
     {{{    -1,      0,    139}, 0, {     0,      0}, {0xed, 0x00, 0x7d, 0x00}}},
     {{{   -23,    -55,    117}, 0, {     0,      0}, {0xba, 0xd3, 0x5f, 0x00}}},
@@ -571,7 +571,7 @@ static const Vtx goomba_seg8_vertex_0801C360[] = {
 };
 
 // 0x0801C460
-static const Vtx goomba_seg8_vertex_0801C460[] = {
+ const Vtx goomba_seg8_vertex_0801C460[] = {
     {{{    81,    109,      0}, 0, {     0,      0}, {0x2a, 0x77, 0x00, 0xff}}},
     {{{    79,     97,     51}, 0, {     0,      0}, {0x22, 0x6c, 0x38, 0x00}}},
     {{{   142,     64,     68}, 0, {     0,      0}, {0x4d, 0x4b, 0x42, 0x00}}},
@@ -591,7 +591,7 @@ static const Vtx goomba_seg8_vertex_0801C460[] = {
 };
 
 // 0x0801C560
-static const Vtx goomba_seg8_vertex_0801C560[] = {
+ const Vtx goomba_seg8_vertex_0801C560[] = {
     {{{   -24,    108,     74}, 0, {     0,      0}, {0xbd, 0x62, 0x2a, 0xff}}},
     {{{    -1,    128,      0}, 0, {     0,      0}, {0xf3, 0x7e, 0x00, 0x00}}},
     {{{   -24,    108,    -74}, 0, {     0,      0}, {0xbd, 0x62, 0xd6, 0x00}}},
@@ -607,7 +607,7 @@ static const Vtx goomba_seg8_vertex_0801C560[] = {
 };
 
 // 0x0801C620
-static const Vtx goomba_seg8_vertex_0801C620[] = {
+ const Vtx goomba_seg8_vertex_0801C620[] = {
     {{{    48,     47,      0}, 0, {     0,      0}, {0x5a, 0x59, 0x00, 0x00}}},
     {{{    48,     38,     27}, 0, {     0,      0}, {0x5a, 0x48, 0x34, 0x00}}},
     {{{    65,     14,     10}, 0, {     0,      0}, {0x77, 0x23, 0x19, 0x00}}},
@@ -627,7 +627,7 @@ static const Vtx goomba_seg8_vertex_0801C620[] = {
 };
 
 // 0x0801C720
-static const Vtx goomba_seg8_vertex_0801C720[] = {
+ const Vtx goomba_seg8_vertex_0801C720[] = {
     {{{   -46,     38,     27}, 0, {     0,      0}, {0xa6, 0x48, 0x34, 0xff}}},
     {{{   -46,     14,     45}, 0, {     0,      0}, {0xa6, 0x1b, 0x55, 0x00}}},
     {{{   -16,     20,     61}, 0, {     0,      0}, {0xdf, 0x25, 0x74, 0x00}}},
@@ -646,7 +646,7 @@ static const Vtx goomba_seg8_vertex_0801C720[] = {
 };
 
 // 0x0801C810
-static const Vtx goomba_seg8_vertex_0801C810[] = {
+ const Vtx goomba_seg8_vertex_0801C810[] = {
     {{{    48,    -14,     45}, 0, {     0,      0}, {0x5a, 0xe5, 0x55, 0xff}}},
     {{{    48,    -38,     27}, 0, {     0,      0}, {0x5a, 0xb8, 0x34, 0x00}}},
     {{{    65,    -14,     10}, 0, {     0,      0}, {0x77, 0xdd, 0x19, 0x00}}},
@@ -666,7 +666,7 @@ static const Vtx goomba_seg8_vertex_0801C810[] = {
 };
 
 // 0x0801C910
-static const Vtx goomba_seg8_vertex_0801C910[] = {
+ const Vtx goomba_seg8_vertex_0801C910[] = {
     {{{   -46,    -38,     27}, 0, {     0,      0}, {0xa6, 0xb8, 0x34, 0xff}}},
     {{{   -46,    -47,      0}, 0, {     0,      0}, {0xa6, 0xa7, 0x00, 0x00}}},
     {{{   -16,    -64,      0}, 0, {     0,      0}, {0xdf, 0x86, 0x00, 0x00}}},
@@ -685,7 +685,7 @@ static const Vtx goomba_seg8_vertex_0801C910[] = {
 };
 
 // 0x0801CA00
-static const Vtx goomba_seg8_vertex_0801CA00[] = {
+ const Vtx goomba_seg8_vertex_0801CA00[] = {
     {{{    48,    -38,    -27}, 0, {     0,      0}, {0x5a, 0xb8, 0xcc, 0xff}}},
     {{{    48,    -14,    -45}, 0, {     0,      0}, {0x5a, 0xe5, 0xab, 0x00}}},
     {{{    65,     -5,    -16}, 0, {     0,      0}, {0x77, 0xf3, 0xd7, 0x00}}},
@@ -705,7 +705,7 @@ static const Vtx goomba_seg8_vertex_0801CA00[] = {
 };
 
 // 0x0801CB00
-static const Vtx goomba_seg8_vertex_0801CB00[] = {
+ const Vtx goomba_seg8_vertex_0801CB00[] = {
     {{{   -46,    -14,    -45}, 0, {     0,      0}, {0xa6, 0xe5, 0xab, 0xff}}},
     {{{   -46,     14,    -45}, 0, {     0,      0}, {0xa6, 0x1b, 0xab, 0x00}}},
     {{{   -16,     20,    -61}, 0, {     0,      0}, {0xdf, 0x25, 0x8c, 0x00}}},
@@ -724,7 +724,7 @@ static const Vtx goomba_seg8_vertex_0801CB00[] = {
 };
 
 // 0x0801CBF0
-static const Vtx goomba_seg8_vertex_0801CBF0[] = {
+ const Vtx goomba_seg8_vertex_0801CBF0[] = {
     {{{    48,     38,    -27}, 0, {     0,      0}, {0x5a, 0x48, 0xcc, 0xff}}},
     {{{    48,     47,      0}, 0, {     0,      0}, {0x5a, 0x59, 0x00, 0x00}}},
     {{{    65,     17,      0}, 0, {     0,      0}, {0x77, 0x2b, 0x00, 0x00}}},
@@ -744,7 +744,7 @@ static const Vtx goomba_seg8_vertex_0801CBF0[] = {
 };
 
 // 0x0801CCF0
-static const Vtx goomba_seg8_vertex_0801CCF0[] = {
+ const Vtx goomba_seg8_vertex_0801CCF0[] = {
     {{{    65,     17,      0}, 0, {     0,      0}, {0x77, 0x2b, 0x00, 0xff}}},
     {{{    65,    -14,     10}, 0, {     0,      0}, {0x77, 0xdd, 0x19, 0x00}}},
     {{{    65,    -17,      0}, 0, {     0,      0}, {0x77, 0xd5, 0x00, 0x00}}},
@@ -764,7 +764,7 @@ static const Vtx goomba_seg8_vertex_0801CCF0[] = {
 };
 
 // 0x0801CDF0
-static const Vtx goomba_seg8_vertex_0801CDF0[] = {
+ const Vtx goomba_seg8_vertex_0801CDF0[] = {
     {{{   -63,     17,      0}, 0, {     0,      0}, {0x89, 0x2b, 0x00, 0xff}}},
     {{{   -63,      5,     16}, 0, {     0,      0}, {0x89, 0x0d, 0x29, 0x00}}},
     {{{   -63,     14,     10}, 0, {     0,      0}, {0x89, 0x23, 0x19, 0x00}}},

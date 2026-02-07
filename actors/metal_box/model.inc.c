@@ -1,18 +1,18 @@
 // Metal Box
 
 // 0x08023980
-static const Lights1 metal_box_seg8_lights_08023980 = gdSPDefLights1(
+ const Lights1 metal_box_seg8_lights_08023980 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08023998
-ALIGNED8 static const Texture metal_box_seg8_texture_08023998[] = {
+ALIGNED8  const Texture metal_box_seg8_texture_08023998[] = {
 #include "actors/metal_box/metal_box_side.rgba16.inc.c"
 };
 
 // 0x08024998
-static const Vtx metal_box_seg8_vertex_08024998[] = {
+ const Vtx metal_box_seg8_vertex_08024998[] = {
     {{{   154,    307,   -153}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -153,    307,   -153}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -153,    307,    154}, 0, {     0,   2012}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -32,7 +32,7 @@ static const Vtx metal_box_seg8_vertex_08024998[] = {
 };
 
 // 0x08024A98
-static const Vtx metal_box_seg8_vertex_08024A98[] = {
+ const Vtx metal_box_seg8_vertex_08024A98[] = {
     {{{   154,      0,    154}, 0, {   990,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -153,    307,    154}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -153,      0,    154}, 0, {     0,   2012}, {0x00, 0x00, 0x7f, 0xff}}},

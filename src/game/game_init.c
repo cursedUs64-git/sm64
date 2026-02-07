@@ -55,8 +55,8 @@ struct DmaHandlerList gMarioAnimsBuf;
 struct DmaHandlerList gDemoInputsBuf;
 
 // fillers
-UNUSED static u8 sfillerGameInit[0x90];
-static s32 sUnusedGameInitValue = 0;
+UNUSED  u8 sfillerGameInit[0x90];
+ s32 sUnusedGameInitValue = 0;
 
 // General timer that runs as the game starts
 u32 gGlobalTimer = 0;
@@ -389,7 +389,7 @@ void display_and_vsync(void) {
  * This function records distinct inputs over a 255-frame interval to RAM locations and was likely
  * used to record the demo sequences seen in the final game. This function is unused.
  */
-UNUSED static void record_demo(void) {
+UNUSED  void record_demo(void) {
     // Record the player's button mask and current rawStickX and rawStickY.
     u8 buttonMask =
         ((gPlayer1Controller->buttonDown & (A_BUTTON | B_BUTTON | Z_TRIG | START_BUTTON)) >> 8)

@@ -50,7 +50,7 @@ void bhv_fire_piranha_plant_init(void) {
     sNumActiveFirePiranhaPlants = sNumKilledFirePiranhaPlants = 0;
 }
 
-static void fire_piranha_plant_act_hide(void) {
+ void fire_piranha_plant_act_hide(void) {
     if (o->oFirePiranhaPlantDeathSpinTimer != 0) {
         o->oMoveAngleYaw += (s32) o->oFirePiranhaPlantDeathSpinVel;
         approach_f32_ptr(&o->oFirePiranhaPlantDeathSpinVel, 0.0f, 200.0f);
@@ -93,7 +93,7 @@ static void fire_piranha_plant_act_hide(void) {
     cur_obj_extend_animation_if_at_end();
 }
 
-static void fire_piranha_plant_act_grow(void) {
+ void fire_piranha_plant_act_grow(void) {
     cur_obj_init_anim_extend(4);
 
     if (approach_f32_ptr(&o->oFirePiranhaPlantScale, o->oFirePiranhaPlantNeutralScale,

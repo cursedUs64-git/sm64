@@ -16,7 +16,7 @@
 #include "make_const_nonconst.h"
 #include "levels/castle_inside/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript castle_inside_script_func_local_1[] = {
     WARP_NODE(/*id*/ WARP_NODE_00, /*destLevel*/ LEVEL_CASTLE_GROUNDS,   /*destArea*/ 1, /*destNode*/ WARP_NODE_00, /*flags*/ WARP_NO_CHECKPOINT),
     WARP_NODE(/*id*/ WARP_NODE_01, /*destLevel*/ LEVEL_CASTLE_GROUNDS,   /*destArea*/ 1, /*destNode*/ WARP_NODE_01, /*flags*/ WARP_NO_CHECKPOINT),
     WARP_NODE(/*id*/ WARP_NODE_02, /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_01, /*flags*/ WARP_NO_CHECKPOINT),
@@ -90,7 +90,7 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript castle_inside_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_CASTLE_KEY_DOOR, /*pos*/ -1100, 512, 3021, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_00), /*bhv*/ bhvDoorWarp),
     OBJECT(/*model*/ MODEL_CASTLE_KEY_DOOR, /*pos*/  -946, 512, 3021, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM2(WARP_NODE_01), /*bhv*/ bhvDoorWarp),
     WARP_NODE(/*id*/ WARP_NODE_00, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
@@ -159,7 +159,7 @@ static const LevelScript script_func_local_2[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript castle_inside_script_func_local_3[] = {
     OBJECT(/*model*/ MODEL_CASTLE_KEY_DOOR, /*pos*/ -1100, -1074, 922, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_00), /*bhv*/ bhvDoorWarp),
     OBJECT(/*model*/ MODEL_CASTLE_KEY_DOOR, /*pos*/  -946, -1074, 922, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM2(WARP_NODE_01), /*bhv*/ bhvDoorWarp),
     WARP_NODE(/*id*/ WARP_NODE_00, /*destLevel*/ LEVEL_CASTLE,         /*destArea*/ 1, /*destNode*/ WARP_NODE_05, /*flags*/ WARP_NO_CHECKPOINT),
@@ -202,7 +202,7 @@ static const LevelScript script_func_local_3[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_4[] = {
+ const LevelScript castle_inside_script_func_local_4[] = {
     OBJECT(/*model*/ MODEL_RED_FLAME,  /*pos*/ -2037,  -818,  -716, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlame),
     OBJECT(/*model*/ MODEL_RED_FLAME,  /*pos*/ -1648,  -818,  -716, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlame),
     OBJECT(/*model*/ MODEL_RED_FLAME,  /*pos*/ -1648,  -818,  -101, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlame),
@@ -260,7 +260,7 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_TOAD,       /*pos*/ -1671,    0,  1313, /*angle*/ 0,  83, 0, /*bhvParam*/ BPARAM1(DIALOG_133), /*bhv*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,       /*pos*/  1524,  307,   458, /*angle*/ 0, 110, 0, /*bhvParam*/ BPARAM1(DIALOG_134), /*bhv*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,       /*pos*/   596, -306, -2637, /*angle*/ 0, 152, 0, /*bhvParam*/ BPARAM1(DIALOG_135), /*bhv*/ bhvToadMessage),
-        JUMP_LINK(script_func_local_1),
+        JUMP_LINK(castle_inside_script_func_local_1),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ inside_castle_seg7_area_1_collision),
         ROOMS(/*surfaceRooms*/ inside_castle_seg7_area_1_rooms),
@@ -277,7 +277,7 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_TOAD,                     /*pos*/  -977, 1203, 2569, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(DIALOG_076), /*bhv*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,                     /*pos*/ -1584, 2253, 7157, /*angle*/ 0, 136, 0, /*bhvParam*/ BPARAM1(DIALOG_083), /*bhv*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,                     /*pos*/   837, 1203, 3020, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM1(DIALOG_137), /*bhv*/ bhvToadMessage),
-        JUMP_LINK(script_func_local_2),
+        JUMP_LINK(castle_inside_script_func_local_2),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ inside_castle_seg7_area_2_collision),
         ROOMS(/*surfaceRooms*/ inside_castle_seg7_area_2_rooms),
@@ -294,8 +294,8 @@ const LevelScript level_castle_inside_entry[] = {
         OBJECT(/*model*/ MODEL_MIPS,                      /*pos*/ -1509, -1177, -1564, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(MIPS_BP_15_STARS), /*bhv*/ bhvMips),
         OBJECT(/*model*/ MODEL_TOAD,                      /*pos*/  1787, -1381, -1957, /*angle*/ 0, 126, 0, /*bhvParam*/ BPARAM1(DIALOG_082), /*bhv*/ bhvToadMessage),
         OBJECT(/*model*/ MODEL_TOAD,                      /*pos*/ -4048, -1381, -1334, /*angle*/ 0,  30, 0, /*bhvParam*/ BPARAM1(DIALOG_136), /*bhv*/ bhvToadMessage),
-        JUMP_LINK(script_func_local_3),
-        JUMP_LINK(script_func_local_4),
+        JUMP_LINK(castle_inside_script_func_local_3),
+        JUMP_LINK(castle_inside_script_func_local_4),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ inside_castle_seg7_area_3_collision),
         ROOMS(/*surfaceRooms*/ inside_castle_seg7_area_3_rooms),

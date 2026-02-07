@@ -1,17 +1,17 @@
 // 0x0700CB60 - 0x0700CB78
-static const Lights1 ttm_seg7_lights_0700CB60 = gdSPDefLights1(
+ const Lights1 ttm_seg7_lights_0700CB60 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0700CB78 - 0x0700CB90
-static const Lights1 ttm_seg7_lights_0700CB78 = gdSPDefLights1(
+ const Lights1 ttm_seg7_lights_0700CB78 = gdSPDefLights1(
     0x5d, 0x5d, 0x5d,
     0xbb, 0xbb, 0xbb, 0x28, 0x28, 0x28
 );
 
 // 0x0700CB90 - 0x0700CBF0
-static const Vtx ttm_seg7_vertex_0700CB90[] = {
+ const Vtx ttm_seg7_vertex_0700CB90[] = {
     {{{  -323,   -387,    -61}, 0, {  8458,  -5948}, {0x9c, 0xf1, 0x4b, 0xff}}},
     {{{   -30,    389,    495}, 0, {  9592,  -7498}, {0x9c, 0xf1, 0x4b, 0xff}}},
     {{{  -224,    389,    235}, 0, {  8972,  -7498}, {0x9c, 0xf1, 0x4b, 0xff}}},
@@ -21,14 +21,14 @@ static const Vtx ttm_seg7_vertex_0700CB90[] = {
 };
 
 // 0x0700CBF0 - 0x0700CC20
-static const Vtx ttm_seg7_vertex_0700CBF0[] = {
+ const Vtx ttm_seg7_vertex_0700CBF0[] = {
     {{{  -323,   -387,    -61}, 0, {   974,  -2960}, {0x82, 0x0d, 0x07, 0xff}}},
     {{{  -224,    389,    235}, 0, {  1654,  -4488}, {0x82, 0x0d, 0x07, 0xff}}},
     {{{  -282,    389,   -714}, 0, {  -132,  -4554}, {0x82, 0x0d, 0x07, 0xff}}},
 };
 
 // 0x0700CC20 - 0x0700CC60
-static const Vtx ttm_seg7_vertex_0700CC20[] = {
+ const Vtx ttm_seg7_vertex_0700CC20[] = {
     {{{   377,    389,    751}, 0, {  7672,  -3032}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -224,    389,    235}, 0, {  6470,  -4062}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   -30,    389,    495}, 0, {  6856,  -3544}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx ttm_seg7_vertex_0700CC20[] = {
 };
 
 // 0x0700CC60 - 0x0700CCC8
-static const Gfx ttm_seg7_dl_0700CC60[] = {
+ const Gfx ttm_seg7_dl_0700CC60[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mountain_09004000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -52,7 +52,7 @@ static const Gfx ttm_seg7_dl_0700CC60[] = {
 };
 
 // 0x0700CCC8 - 0x0700CD10
-static const Gfx ttm_seg7_dl_0700CCC8[] = {
+ const Gfx ttm_seg7_dl_0700CCC8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mountain_09003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,7 +1,7 @@
 // Yellow Sphere (used in a lot of things)
 
 // 0x05000000
-static const Vtx yellow_sphere_seg5_vertex_05000000[] = {
+ const Vtx yellow_sphere_seg5_vertex_05000000[] = {
     {{{   -49,    -49,      0}, 0, {     0,    992}, {0xb5, 0x20, 0x40, 0xff}}},
     {{{    50,    -49,      0}, 0, {   992,    992}, {0xb5, 0x20, 0x40, 0xff}}},
     {{{    50,     50,      0}, 0, {   992,      0}, {0xb5, 0x20, 0x40, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx yellow_sphere_seg5_vertex_05000000[] = {
 };
 
 // 0x05000040
-ALIGNED8 static const Texture yellow_sphere_seg5_texture_05000040[] = {
+ALIGNED8  const Texture yellow_sphere_seg5_texture_05000040[] = {
 #include "actors/yellow_sphere_small/small_yellow_sphere.rgba16.inc.c"
 };
 

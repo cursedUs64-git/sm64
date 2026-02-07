@@ -1,11 +1,11 @@
 // 0x070075A8 - 0x070075C0
-static const Lights1 thi_seg7_lights_070075A8 = gdSPDefLights1(
+ const Lights1 thi_seg7_lights_070075A8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x070075C0 - 0x07007600
-static const Vtx thi_seg7_vertex_070075C0[] = {
+ const Vtx thi_seg7_vertex_070075C0[] = {
     {{{  -101,      0,   -101}, 0, {   406,    406}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -101,      0,    102}, 0, {   406,    552}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   102,      0,   -101}, 0, {   552,    406}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -13,7 +13,7 @@ static const Vtx thi_seg7_vertex_070075C0[] = {
 };
 
 // 0x07007600 - 0x07007648
-static const Gfx thi_seg7_dl_07007600[] = {
+ const Gfx thi_seg7_dl_07007600[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, thi_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

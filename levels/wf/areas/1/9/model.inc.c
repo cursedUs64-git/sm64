@@ -1,11 +1,11 @@
 // 0x07007298 - 0x070072B0
-static const Lights1 wf_seg7_lights_07007298 = gdSPDefLights1(
+ const Lights1 wf_seg7_lights_07007298 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x070072B0 - 0x070073A0
-static const Vtx wf_seg7_vertex_070072B0[] = {
+ const Vtx wf_seg7_vertex_070072B0[] = {
     {{{  -255,     65,    256}, 0, { -1308,    338}, {0x00, 0xe7, 0x7c, 0xff}}},
     {{{   205,    -62,    230}, 0, {   990,    990}, {0x00, 0xe7, 0x7c, 0xff}}},
     {{{   256,     65,    256}, 0, {  1246,    338}, {0x00, 0xe7, 0x7c, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx wf_seg7_vertex_070072B0[] = {
 };
 
 // 0x070073A0 - 0x07007410
-static const Vtx wf_seg7_vertex_070073A0[] = {
+ const Vtx wf_seg7_vertex_070073A0[] = {
     {{{   205,    -62,    230}, 0, { -1052,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -204,    -62,    230}, 0, {   990,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -204,    -62,   -229}, 0, {   990,  -1310}, {0x00, 0x81, 0x00, 0xff}}},
@@ -35,7 +35,7 @@ static const Vtx wf_seg7_vertex_070073A0[] = {
 };
 
 // 0x07007410 - 0x07007450
-static const Vtx wf_seg7_vertex_07007410[] = {
+ const Vtx wf_seg7_vertex_07007410[] = {
     {{{   256,     65,   -255}, 0, {   990,  -1566}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -255,     65,    256}, 0, { -1564,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   256,     65,    256}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx wf_seg7_vertex_07007410[] = {
 };
 
 // 0x07007450 - 0x070074E0
-static const Gfx wf_seg7_dl_07007450[] = {
+ const Gfx wf_seg7_dl_07007450[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -61,7 +61,7 @@ static const Gfx wf_seg7_dl_07007450[] = {
 };
 
 // 0x070074E0 - 0x07007518
-static const Gfx wf_seg7_dl_070074E0[] = {
+ const Gfx wf_seg7_dl_070074E0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

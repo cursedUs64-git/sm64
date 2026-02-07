@@ -1,33 +1,33 @@
 // Seaweed
 
 // 0x06007DF8
-static const Lights1 seaweed_seg6_lights_06007DF8 = gdSPDefLights1(
+ const Lights1 seaweed_seg6_lights_06007DF8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06007E10
-ALIGNED8 static const Texture seaweed_seg6_texture_06007E10[] = {
+ALIGNED8  const Texture seaweed_seg6_texture_06007E10[] = {
 #include "actors/seaweed/seaweed_tip.rgba16.inc.c"
 };
 
 // 0x06008610
-ALIGNED8 static const Texture seaweed_seg6_texture_06008610[] = {
+ALIGNED8  const Texture seaweed_seg6_texture_06008610[] = {
 #include "actors/seaweed/seaweed_upper_center.rgba16.inc.c"
 };
 
 // 0x06008E10
-ALIGNED8 static const Texture seaweed_seg6_texture_06008E10[] = {
+ALIGNED8  const Texture seaweed_seg6_texture_06008E10[] = {
 #include "actors/seaweed/seaweed_lower_center.rgba16.inc.c"
 };
 
 // 0x06009610
-ALIGNED8 static const Texture seaweed_seg6_texture_06009610[] = {
+ALIGNED8  const Texture seaweed_seg6_texture_06009610[] = {
 #include "actors/seaweed/seaweed_base.rgba16.inc.c"
 };
 
 // 0x06009E10
-static const Vtx seaweed_seg6_vertex_06009E10[] = {
+ const Vtx seaweed_seg6_vertex_06009E10[] = {
     {{{   232,      2,    -76}, 0, {   -30,    -12}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    -1,      2,     77}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   232,      2,     77}, 0, {   992,    -12}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -65,7 +65,7 @@ const Gfx seaweed_seg6_dl_06009E98[] = {
 };
 
 // 0x06009F08
-static const Vtx seaweed_seg6_vertex_06009F08[] = {
+ const Vtx seaweed_seg6_vertex_06009F08[] = {
     {{{   311,      2,    -76}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    -1,      2,    -76}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    -1,      2,     77}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -103,7 +103,7 @@ const Gfx seaweed_seg6_dl_06009F90[] = {
 };
 
 // 0x0600A000
-static const Vtx seaweed_seg6_vertex_0600A000[] = {
+ const Vtx seaweed_seg6_vertex_0600A000[] = {
     {{{   314,      2,    -76}, 0, {     0,    -20}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    -1,      2,     77}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   314,      2,     77}, 0, {   990,    -20}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -141,7 +141,7 @@ const Gfx seaweed_seg6_dl_0600A088[] = {
 };
 
 // 0x0600A0F8
-static const Vtx seaweed_seg6_vertex_0600A0F8[] = {
+ const Vtx seaweed_seg6_vertex_0600A0F8[] = {
     {{{   236,      2,    -76}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{     0,      2,     77}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   236,      2,     77}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},

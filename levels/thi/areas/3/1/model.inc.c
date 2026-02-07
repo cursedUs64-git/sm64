@@ -1,5 +1,5 @@
 // 0x070079D0 - 0x07007AB0
-static const Vtx thi_seg7_vertex_070079D0[] = {
+ const Vtx thi_seg7_vertex_070079D0[] = {
     {{{  -101,   2458,    102}, 0, {   376,    990}, {0xff, 0xff, 0xff, 0x80}}},
     {{{   102,   3072,    102}, 0, {     0,    744}, {0xff, 0xff, 0xff, 0x80}}},
     {{{   102,   2458,    102}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0x80}}},
@@ -17,7 +17,7 @@ static const Vtx thi_seg7_vertex_070079D0[] = {
 };
 
 // 0x07007AB0 - 0x07007B80
-static const Vtx thi_seg7_vertex_07007AB0[] = {
+ const Vtx thi_seg7_vertex_07007AB0[] = {
     {{{   102,   2458,    102}, 0, {   376,    990}, {0xff, 0xff, 0xff, 0x80}}},
     {{{   102,   3072,   -101}, 0, {    70,    762}, {0xff, 0xff, 0xff, 0x80}}},
     {{{   102,   2458,   -101}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0x80}}},
@@ -34,7 +34,7 @@ static const Vtx thi_seg7_vertex_07007AB0[] = {
 };
 
 // 0x07007B80 - 0x07007C20
-static const Gfx thi_seg7_dl_07007B80[] = {
+ const Gfx thi_seg7_dl_07007B80[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, grass_0900B800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

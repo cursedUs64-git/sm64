@@ -1,12 +1,12 @@
 // Whirlpool
 
 // 0x05012848
-ALIGNED8 static const Texture whirlpool_seg5_texture_05012848[] = {
+ALIGNED8  const Texture whirlpool_seg5_texture_05012848[] = {
 #include "actors/whirlpool/whirlpool.ia16.inc.c"
 };
 
 // 0x05013848
-static const Vtx whirlpool_seg5_vertex_05013848[] = {
+ const Vtx whirlpool_seg5_vertex_05013848[] = {
     {{{    93,    129,    161}, 0, {   650,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    129,    185}, 0, {   480,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,      0}, 0, {   564,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx whirlpool_seg5_vertex_05013848[] = {
 };
 
 // 0x05013928
-static const Vtx whirlpool_seg5_vertex_05013928[] = {
+ const Vtx whirlpool_seg5_vertex_05013928[] = {
     {{{   -92,    129,   -160}, 0, {  1672,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -188,    802,   -327}, 0, {  1672,    128}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    802,   -378}, 0, {  1502,    128}, {0xff, 0xff, 0xff, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx whirlpool_seg5_vertex_05013928[] = {
 };
 
 // 0x05013A28
-static const Vtx whirlpool_seg5_vertex_05013A28[] = {
+ const Vtx whirlpool_seg5_vertex_05013A28[] = {
     {{{   -92,    129,   -160}, 0, {  1672,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    129,   -184}, 0, {  1502,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,      0}, 0, {  1586,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -62,7 +62,7 @@ static const Vtx whirlpool_seg5_vertex_05013A28[] = {
 };
 
 // 0x05013B08
-static const Vtx whirlpool_seg5_vertex_05013B08[] = {
+ const Vtx whirlpool_seg5_vertex_05013B08[] = {
     {{{   -92,    129,    161}, 0, {   308,   1708}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -188,    802,    328}, 0, {   308,    128}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -327,    802,    189}, 0, {   138,    128}, {0xff, 0xff, 0xff, 0xff}}},

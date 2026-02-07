@@ -1,4 +1,4 @@
-static const Vtx dl_castle_aquarium_light_vertex_group_1[] = {
+ const Vtx dl_castle_aquarium_light_vertex_group_1[] = {
     {{{  3385,    358,  -1631}, 0, {     0,    536}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3060,    307,  -1305}, 0, {     0,      0}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3385,    768,  -1631}, 0, {     0,    990}, {0xbb, 0xc7, 0xff, 0x80}}},
@@ -17,7 +17,7 @@ static const Vtx dl_castle_aquarium_light_vertex_group_1[] = {
     {{{  4073,    307,    411}, 0, {   990,    422}, {0xbb, 0xc7, 0xff, 0x80}}},
 };
 
-static const Vtx dl_castle_aquarium_light_vertex_group_2[] = {
+ const Vtx dl_castle_aquarium_light_vertex_group_2[] = {
     {{{  3385,    358,  -1631}, 0, {     0,    536}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3349,    307,  -1595}, 0, {     0,    422}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3060,    307,  -1305}, 0, {     0,      0}, {0xbb, 0xc7, 0xff, 0x80}}},
@@ -36,7 +36,7 @@ static const Vtx dl_castle_aquarium_light_vertex_group_2[] = {
     {{{  3060,    307,    846}, 0, {     0,      0}, {0xbb, 0xc7, 0xff, 0x80}}},
 };
 
-static const Vtx dl_castle_aquarium_light_vertex_group_3[] = {
+ const Vtx dl_castle_aquarium_light_vertex_group_3[] = {
     {{{  4109,    768,    447}, 0, {   990,    990}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3060,    307,    846}, 0, {     0,      0}, {0xbb, 0xc7, 0xff, 0x80}}},
     {{{  3385,    768,   1171}, 0, {     0,    990}, {0xbb, 0xc7, 0xff, 0x80}}},
@@ -52,7 +52,7 @@ static const Vtx dl_castle_aquarium_light_vertex_group_3[] = {
     {{{  2355,    307,    819}, 0, {     0,      0}, {0xbb, 0xc7, 0xff, 0x80}}},
 };
 
-static const Gfx dl_castle_aquarium_light_model[] = {
+ const Gfx dl_castle_aquarium_light_model[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, texture_castle_light),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

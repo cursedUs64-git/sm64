@@ -1,13 +1,13 @@
 // Signpost
 
 // 0x0302C940
-static const Lights1 wooden_signpost_seg3_lights_0302C940 = gdSPDefLights1(
+ const Lights1 wooden_signpost_seg3_lights_0302C940 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0302C958
-static const Vtx wooden_signpost_seg3_vertex_0302C958[] = {
+ const Vtx wooden_signpost_seg3_vertex_0302C958[] = {
     {{{     0,    504,     19}, 0, {   962,    478}, {0x00, 0x7e, 0xfc, 0xff}}},
     {{{    24,    490,     34}, 0, {   938,    780}, {0x62, 0x3b, 0x36, 0xff}}},
     {{{     0,    490,     -6}, 0, {   938,    478}, {0xff, 0x39, 0x90, 0xff}}},
@@ -18,12 +18,12 @@ static const Vtx wooden_signpost_seg3_vertex_0302C958[] = {
 };
 
 // 0x0302C9C8
-ALIGNED8 static const Texture wooden_signpost_seg3_texture_0302C9C8[] = {
+ALIGNED8  const Texture wooden_signpost_seg3_texture_0302C9C8[] = {
 #include "actors/wooden_signpost/wooden_signpost_back.rgba16.inc.c"
 };
 
 // 0x0302D1C8
-ALIGNED8 static const Texture wooden_signpost_seg3_texture_0302D1C8[] = {
+ALIGNED8  const Texture wooden_signpost_seg3_texture_0302D1C8[] = {
 #include "actors/wooden_signpost/wooden_signpost_front.rgba16.inc.c"
 };
 
@@ -60,13 +60,13 @@ const Gfx wooden_signpost_seg3_dl_0302DA48[] = {
 };
 
 // 0x0302DAA8
-static const Lights1 wooden_signpost_seg3_lights_0302DAA8 = gdSPDefLights1(
+ const Lights1 wooden_signpost_seg3_lights_0302DAA8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0302DAC0
-static const Vtx wooden_signpost_seg3_vertex_0302DAC0[] = {
+ const Vtx wooden_signpost_seg3_vertex_0302DAC0[] = {
     {{{   180,    260,     20}, 0, {   990,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -179,    260,     60}, 0, {     0,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -179,    260,     20}, 0, {     0,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -86,7 +86,7 @@ static const Vtx wooden_signpost_seg3_vertex_0302DAC0[] = {
 };
 
 // 0x0302DBC0
-static const Vtx wooden_signpost_seg3_vertex_0302DBC0[] = {
+ const Vtx wooden_signpost_seg3_vertex_0302DBC0[] = {
     {{{   180,    260,     60}, 0, {   990,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   180,    460,     20}, 0, {   990,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   180,    460,     60}, 0, {   990,      0}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx wooden_signpost_seg3_vertex_0302DBC0[] = {
 };
 
 // 0x0302DC00
-static const Vtx wooden_signpost_seg3_vertex_0302DC00[] = {
+ const Vtx wooden_signpost_seg3_vertex_0302DC00[] = {
     {{{  -179,    260,     60}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   180,    460,     60}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -179,    460,     60}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},

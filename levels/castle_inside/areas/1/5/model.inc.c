@@ -1,4 +1,4 @@
-static const Vtx dl_castle_lobby_wing_cap_light_vertex_group[] = {
+ const Vtx dl_castle_lobby_wing_cap_light_vertex_group[] = {
     {{{ -1075,   1741,   -380}, 0, {  -360,    -62}, {0xff, 0xff, 0xff, 0x80}}},
     {{{ -1125,    -50,    461}, 0, {   478,    990}, {0xff, 0xff, 0xff, 0x80}}},
     {{{ -1279,    -50,    594}, 0, {   612,    990}, {0xff, 0xff, 0xff, 0x80}}},
@@ -17,7 +17,7 @@ static const Vtx dl_castle_lobby_wing_cap_light_vertex_group[] = {
     {{{ -1279,    -50,    819}, 0, {   836,    990}, {0xff, 0xff, 0xff, 0x80}}},
 };
 
-static const Gfx dl_castle_lobby_wing_cap_light_model[] = {
+ const Gfx dl_castle_lobby_wing_cap_light_model[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, texture_castle_light),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

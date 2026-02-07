@@ -1,11 +1,11 @@
 // 0x07007F90 - 0x07007FA8
-static const Lights1 vcutm_seg7_lights_07007F90 = gdSPDefLights1(
+ const Lights1 vcutm_seg7_lights_07007F90 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07007FA8 - 0x07008068
-static const Vtx vcutm_seg7_vertex_07007FA8[] = {
+ const Vtx vcutm_seg7_vertex_07007FA8[] = {
     {{{  4915,      0,  -5099}, 0, { -3096,   4054}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  4116,    819,  -5099}, 0, {  5078,  -4120}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  4915,    819,  -5099}, 0, { -3096,  -4120}, {0x00, 0x00, 0x81, 0xff}}},
@@ -21,7 +21,7 @@ static const Vtx vcutm_seg7_vertex_07007FA8[] = {
 };
 
 // 0x07008068 - 0x070080D0
-static const Gfx vcutm_seg7_dl_07008068[] = {
+ const Gfx vcutm_seg7_dl_07008068[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, vcutm_seg7_texture_07000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

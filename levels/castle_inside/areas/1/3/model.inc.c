@@ -1,5 +1,5 @@
 // 0x07029078 - 0x07029168
-static const Vtx inside_castle_seg7_vertex_07029078[] = {
+ const Vtx inside_castle_seg7_vertex_07029078[] = {
     {{{   -13,    614,  -1037}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    717,  -1043}, 0, {   114,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -13,    717,  -1037}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx inside_castle_seg7_vertex_07029078[] = {
 };
 
 // 0x07029168 - 0x07029268
-static const Vtx inside_castle_seg7_vertex_07029168[] = {
+ const Vtx inside_castle_seg7_vertex_07029168[] = {
     {{{   171,     26,    268}, 0, { -2584,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   171,    128,    268}, 0, { -2584,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   424,    307,     14}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx inside_castle_seg7_vertex_07029168[] = {
 };
 
 // 0x07029268 - 0x07029348
-static const Vtx inside_castle_seg7_vertex_07029268[] = {
+ const Vtx inside_castle_seg7_vertex_07029268[] = {
     {{{   606,    614,  -1043}, 0, {  6100,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   805,    717,  -1242}, 0, {  8144,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   606,    717,  -1043}, 0, {  6100,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx inside_castle_seg7_vertex_07029268[] = {
 };
 
 // 0x07029348 - 0x07029438
-static const Vtx inside_castle_seg7_vertex_07029348[] = {
+ const Vtx inside_castle_seg7_vertex_07029348[] = {
     {{{  -622,    614,   -429}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -818,    512,   -429}, 0, {  -966,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -622,    512,   -429}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -75,7 +75,7 @@ static const Vtx inside_castle_seg7_vertex_07029348[] = {
 };
 
 // 0x07029438 - 0x07029578
-static const Gfx inside_castle_seg7_dl_07029438[] = {
+ const Gfx inside_castle_seg7_dl_07029438[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

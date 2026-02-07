@@ -1,5 +1,5 @@
 // 0x07025AC0 - 0x07025B80
-static const Vtx lll_seg7_vertex_07025AC0[] = {
+ const Vtx lll_seg7_vertex_07025AC0[] = {
     {{{ -2732,   2391,  -1140}, 0, {   479,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2773,   2309,  -1069}, 0, {     0,    479}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2732,   2309,  -1140}, 0, {   479,    479}, {0xff, 0xff, 0xff, 0xff}}},
@@ -15,7 +15,7 @@ static const Vtx lll_seg7_vertex_07025AC0[] = {
 };
 
 // 0x07025B80 - 0x07025BD8
-static const Gfx lll_seg7_dl_07025B80[] = {
+ const Gfx lll_seg7_dl_07025B80[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, lll_seg7_texture_0700D000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 16 * 16 - 1, CALC_DXT(16, G_IM_SIZ_16b_BYTES)),

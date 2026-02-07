@@ -1,53 +1,53 @@
 // Capswitch
 
 // 0x05001BB8
-static const Lights1 capswitch_seg5_lights_05001BB8 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001BB8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001BD0
-static const Lights1 capswitch_seg5_lights_05001BD0 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001BD0 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001BE8
-static const Lights1 capswitch_seg5_lights_05001BE8 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001BE8 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05001C00
-static const Lights1 capswitch_seg5_lights_05001C00 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001C00 = gdSPDefLights1(
     0x01, 0x2a, 0x09,
     0x07, 0xa9, 0x25, 0x28, 0x28, 0x28
 );
 
 // 0x05001C18
-static const Lights1 capswitch_seg5_lights_05001C18 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001C18 = gdSPDefLights1(
     0x00, 0x00, 0x3f,
     0x00, 0x00, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001C30
-static const Lights1 capswitch_seg5_lights_05001C30 = gdSPDefLights1(
+ const Lights1 capswitch_seg5_lights_05001C30 = gdSPDefLights1(
     0x3f, 0x25, 0x02,
     0xff, 0x96, 0x08, 0x28, 0x28, 0x28
 );
 
 // 0x05001C48
-ALIGNED8 static const Texture capswitch_seg5_texture_05001C48[] = {
+ALIGNED8  const Texture capswitch_seg5_texture_05001C48[] = {
 #include "actors/capswitch/cap_switch_head.ia16.inc.c"
 };
 
 // 0x05002C48
-ALIGNED8 static const Texture capswitch_seg5_texture_05002C48[] = {
+ALIGNED8  const Texture capswitch_seg5_texture_05002C48[] = {
 #include "actors/capswitch/cap_switch_base.rgba16.inc.c"
 };
 
 // 0x05002CC8
-static const Vtx capswitch_seg5_vertex_05002CC8[] = {
+ const Vtx capswitch_seg5_vertex_05002CC8[] = {
     {{{  -118,    262,   -203}, 0, {  -130,    364}, {0x00, 0x36, 0x8e, 0xff}}},
     {{{   130,      0,   -224}, 0, {  1144,   2144}, {0x00, 0x0a, 0x82, 0xff}}},
     {{{  -129,      0,   -224}, 0, {  -184,   2144}, {0x00, 0x0a, 0x82, 0xff}}},
@@ -94,7 +94,7 @@ const Gfx cap_switch_exclamation_seg5_dl_05002E00[] = {
 };
 
 // 0x05002E60
-static const Vtx capswitch_seg5_vertex_05002E60[] = {
+ const Vtx capswitch_seg5_vertex_05002E60[] = {
     {{{   147,      0,   -253}, 0, {     0,    499}, {0x29, 0x00, 0x88, 0xff}}},
     {{{  -146,      0,   -253}, 0, {     0,   -436}, {0xad, 0x00, 0xa1, 0xff}}},
     {{{  -146,    137,   -253}, 0, {   407,   -436}, {0xd3, 0x48, 0xa3, 0xff}}},
@@ -114,7 +114,7 @@ static const Vtx capswitch_seg5_vertex_05002E60[] = {
 };
 
 // 0x05002F60
-static const Vtx capswitch_seg5_vertex_05002F60[] = {
+ const Vtx capswitch_seg5_vertex_05002F60[] = {
     {{{  -146,      0,   -253}, 0, {     0,   -436}, {0xad, 0x00, 0xa1, 0xff}}},
     {{{  -292,      0,      0}, 0, {     0,   -904}, {0x84, 0x00, 0x17, 0xff}}},
     {{{  -292,    137,      0}, 0, {   407,   -904}, {0x98, 0x48, 0xf9, 0xff}}},
@@ -171,7 +171,7 @@ const Gfx cap_switch_base_seg5_dl_05003120[] = {
 };
 
 //0x05003180
-static const Vtx capswitch_seg5_vertex_05003180[] = {
+ const Vtx capswitch_seg5_vertex_05003180[] = {
     {{{  -118,    262,   -203}, 0, {     0,      0}, {0xd9, 0x37, 0x95, 0xff}}},
     {{{   130,      0,   -224}, 0, {     0,      0}, {0x29, 0x0b, 0x89, 0xff}}},
     {{{  -129,      0,   -224}, 0, {     0,      0}, {0xae, 0x0a, 0xa0, 0xff}}},

@@ -1,5 +1,5 @@
 // 0x07026DE4
-static Movtex bbh_movtex_merry_go_round_water_entrance_data[] = {
+ Movtex bbh_movtex_merry_go_round_water_entrance_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    0),
     MOV_TEX_ROT_SCALE(   20),
@@ -14,7 +14,7 @@ static Movtex bbh_movtex_merry_go_round_water_entrance_data[] = {
 };
 
 // 0x07026E14
-static Movtex bbh_movtex_merry_go_round_water_side_data[] = {
+ Movtex bbh_movtex_merry_go_round_water_side_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    0),
     MOV_TEX_ROT_SCALE(   20),

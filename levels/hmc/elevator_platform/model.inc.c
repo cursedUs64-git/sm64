@@ -1,11 +1,11 @@
 // 0x07022910 - 0x07022928
-static const Lights1 hmc_seg7_lights_07022910 = gdSPDefLights1(
+ const Lights1 hmc_seg7_lights_07022910 = gdSPDefLights1(
     0x79, 0x79, 0x79,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07022928 - 0x07022A08
-static const Vtx hmc_seg7_vertex_07022928[] = {
+ const Vtx hmc_seg7_vertex_07022928[] = {
     {{{  -255,      0,   -255}, 0, {   990,     96}, {0xd6, 0xac, 0xac, 0xff}}},
     {{{   256,    102,   -255}, 0, {     0,      0}, {0x2a, 0x54, 0xac, 0xff}}},
     {{{   256,      0,   -255}, 0, {     0,     96}, {0x67, 0xcd, 0xcd, 0xff}}},
@@ -23,7 +23,7 @@ static const Vtx hmc_seg7_vertex_07022928[] = {
 };
 
 // 0x07022A08 - 0x07022AA0
-static const Gfx hmc_seg7_dl_07022A08[] = {
+ const Gfx hmc_seg7_dl_07022A08[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09002800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

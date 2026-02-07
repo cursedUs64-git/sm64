@@ -1,5 +1,5 @@
 // 0x0700AA78 - 0x0700AB38
-static const Vtx bitfs_seg7_vertex_0700AA78[] = {
+ const Vtx bitfs_seg7_vertex_0700AA78[] = {
     {{{   410,     51,   -306}, 0, {  2012,   1340}, {0xaf, 0xaf, 0xaf, 0xff}}},
     {{{    72,    205,    307}, 0, {     0,      0}, {0xaf, 0xaf, 0xaf, 0xff}}},
     {{{   410,     51,    307}, 0, {     0,   1340}, {0xaf, 0xaf, 0xaf, 0xff}}},
@@ -15,7 +15,7 @@ static const Vtx bitfs_seg7_vertex_0700AA78[] = {
 };
 
 // 0x0700AB38 - 0x0700AB90
-static const Gfx bitfs_seg7_dl_0700AB38[] = {
+ const Gfx bitfs_seg7_dl_0700AB38[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

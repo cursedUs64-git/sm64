@@ -1,5 +1,5 @@
 // 0x03015458
-static const struct Animation door_seg3_anim_03015458 = {
+ const struct Animation door_seg3_anim_03015458 = {
     1,
     0,
     40,

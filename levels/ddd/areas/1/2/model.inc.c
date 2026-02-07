@@ -1,11 +1,11 @@
 // 0x07004DA8 - 0x07004DC0
-static const Lights1 ddd_seg7_lights_07004DA8 = gdSPDefLights1(
+ const Lights1 ddd_seg7_lights_07004DA8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07004DC0 - 0x07004EC0
-static const Vtx ddd_seg7_vertex_07004DC0[] = {
+ const Vtx ddd_seg7_vertex_07004DC0[] = {
     {{{  6042,    205,    512}, 0, {     0,    582}, {0x9d, 0xe6, 0xb7, 0xff}}},
     {{{  6042,    205,   -511}, 0, {  2012,    582}, {0x99, 0xc4, 0x2a, 0xff}}},
     {{{  6042,  -1732,   -511}, 0, {  2012,   4448}, {0xc3, 0xc3, 0x5c, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx ddd_seg7_vertex_07004DC0[] = {
 };
 
 // 0x07004EC0 - 0x07004FA0
-static const Vtx ddd_seg7_vertex_07004EC0[] = {
+ const Vtx ddd_seg7_vertex_07004EC0[] = {
     {{{  5018,   1229,    512}, 0, {     0,  -1462}, {0xcc, 0xa7, 0xb7, 0xff}}},
     {{{  5018,   1229,   -511}, 0, {  2012,  -1462}, {0xee, 0xba, 0x68, 0xff}}},
     {{{  6042,    205,   -511}, 0, {  2012,    582}, {0x99, 0xc4, 0x2a, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx ddd_seg7_vertex_07004EC0[] = {
 };
 
 // 0x07004FA0 - 0x07005090
-static const Vtx ddd_seg7_vertex_07004FA0[] = {
+ const Vtx ddd_seg7_vertex_07004FA0[] = {
     {{{  2150,  -4607,    512}, 0, { -3096,   7120}, {0x33, 0x33, 0x99, 0xff}}},
     {{{  3174,   1229,    512}, 0, { -1052,  -4528}, {0x12, 0xba, 0x98, 0xff}}},
     {{{  3174,  -4607,    512}, 0, { -1052,   7120}, {0xcd, 0x67, 0xcd, 0xff}}},
@@ -62,7 +62,7 @@ static const Vtx ddd_seg7_vertex_07004FA0[] = {
 };
 
 // 0x07005090 - 0x07005190
-static const Vtx ddd_seg7_vertex_07005090[] = {
+ const Vtx ddd_seg7_vertex_07005090[] = {
     {{{  3174,   -511,   -511}, 0, { -1052,  -1054}, {0xd6, 0x54, 0x54, 0xff}}},
     {{{  5018,   -511,   -511}, 0, {  2624,  -1054}, {0x49, 0x49, 0x49, 0xff}}},
     {{{  5018,   1229,   -511}, 0, {  2624,  -4528}, {0xee, 0xba, 0x68, 0xff}}},
@@ -82,7 +82,7 @@ static const Vtx ddd_seg7_vertex_07005090[] = {
 };
 
 // 0x07005190 - 0x07005270
-static const Vtx ddd_seg7_vertex_07005190[] = {
+ const Vtx ddd_seg7_vertex_07005190[] = {
     {{{  2150,  -3890,   -511}, 0, {  8144,  -1054}, {0x2a, 0xe2, 0x73, 0xff}}},
     {{{  2150,  -3583,   -511}, 0, {  7532,  -1054}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  2150,  -3583,   -204}, 0, {  7532,   -440}, {0x2a, 0x99, 0x3c, 0xff}}},
@@ -100,7 +100,7 @@ static const Vtx ddd_seg7_vertex_07005190[] = {
 };
 
 // 0x07005270 - 0x07005350
-static const Vtx ddd_seg7_vertex_07005270[] = {
+ const Vtx ddd_seg7_vertex_07005270[] = {
     {{{  2150,    205,    512}, 0, {     0,    582}, {0x71, 0xd2, 0xdf, 0xff}}},
     {{{  3174,   1229,   -511}, 0, {  2012,  -1462}, {0x34, 0xa7, 0x49, 0xff}}},
     {{{  3174,   1229,    512}, 0, {     0,  -1462}, {0x12, 0xba, 0x98, 0xff}}},
@@ -118,7 +118,7 @@ static const Vtx ddd_seg7_vertex_07005270[] = {
 };
 
 // 0x07005350 - 0x070053C0
-static const Vtx ddd_seg7_vertex_07005350[] = {
+ const Vtx ddd_seg7_vertex_07005350[] = {
     {{{  3174,   -511,    512}, 0, {     0,  -4120}, {0x99, 0x33, 0xcd, 0xff}}},
     {{{  3174,  -4607,   -511}, 0, {  2012,   4054}, {0xac, 0x2a, 0x54, 0xff}}},
     {{{  3174,  -4607,    512}, 0, {     0,   4054}, {0xcd, 0x67, 0xcd, 0xff}}},
@@ -129,7 +129,7 @@ static const Vtx ddd_seg7_vertex_07005350[] = {
 };
 
 // 0x070053C0 - 0x070054B0
-static const Vtx ddd_seg7_vertex_070053C0[] = {
+ const Vtx ddd_seg7_vertex_070053C0[] = {
     {{{  -921,  -3583,    205}, 0, {     0,    990}, {0x00, 0x93, 0xc0, 0xff}}},
     {{{  2150,  -3890,    512}, 0, {  2012,    462}, {0x2a, 0xc4, 0x99, 0xff}}},
     {{{  -921,  -3890,    512}, 0, {     0,    462}, {0x00, 0xe0, 0x86, 0xff}}},
@@ -148,7 +148,7 @@ static const Vtx ddd_seg7_vertex_070053C0[] = {
 };
 
 // 0x070054B0 - 0x07005570
-static const Vtx ddd_seg7_vertex_070054B0[] = {
+ const Vtx ddd_seg7_vertex_070054B0[] = {
     {{{  -921,  -3890,   -511}, 0, {     0,    990}, {0x00, 0xc0, 0x6d, 0xff}}},
     {{{  2150,  -3890,   -511}, 0, {  2012,    990}, {0x2a, 0xe2, 0x73, 0xff}}},
     {{{  2150,  -3583,   -204}, 0, {  2012,    462}, {0x2a, 0x99, 0x3c, 0xff}}},
@@ -164,7 +164,7 @@ static const Vtx ddd_seg7_vertex_070054B0[] = {
 };
 
 // 0x07005570 - 0x07005738
-static const Gfx ddd_seg7_dl_07005570[] = {
+ const Gfx ddd_seg7_dl_07005570[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, water_09007800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
@@ -204,7 +204,7 @@ static const Gfx ddd_seg7_dl_07005570[] = {
 };
 
 // 0x07005738 - 0x070057E8
-static const Gfx ddd_seg7_dl_07005738[] = {
+ const Gfx ddd_seg7_dl_07005738[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, water_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

@@ -29,24 +29,24 @@
 #include "sound_init.h"
 #include "rumble_init.h"
 
-static struct Object *sIntroWarpPipeObj;
-static struct Object *sEndPeachObj;
-static struct Object *sEndRightToadObj;
-static struct Object *sEndLeftToadObj;
-static struct Object *sEndJumboStarObj;
-static UNUSED s32 sUnused;
-static s16 sEndPeachAnimation;
-static s16 sEndToadAnims[2];
+struct Object *sIntroWarpPipeObj;
+struct Object *sEndPeachObj;
+struct Object *sEndRightToadObj;
+struct Object *sEndLeftToadObj;
+struct Object *sEndJumboStarObj;
+UNUSED s32 sUnused;
+s16 sEndPeachAnimation;
+s16 sEndToadAnims[2];
 
-static Vp sEndCutsceneVp = { { { 640, 480, 511, 0 }, { 640, 480, 511, 0 } } };
-static struct CreditsEntry *sDispCreditsEntry = NULL;
+Vp sEndCutsceneVp = { { { 640, 480, 511, 0 }, { 640, 480, 511, 0 } } };
+struct CreditsEntry *sDispCreditsEntry = NULL;
 
 // related to peach gfx?
-static s8 D_8032CBE4 = 0;
-static s8 D_8032CBE8 = 0;
-static s8 D_8032CBEC[7] = { 2, 3, 2, 1, 2, 3, 2 };
+s8 D_8032CBE4 = 0;
+s8 D_8032CBE8 = 0;
+s8 D_8032CBEC[7] = { 2, 3, 2, 1, 2, 3, 2 };
 
-static u8 sStarsNeededForDialog[] = { 1, 3, 8, 30, 50, 70 };
+u8 sStarsNeededForDialog[] = { 1, 3, 8, 30, 50, 70 };
 
 /**
  * Data for the jumbo star cutscene. It specifies the flight path after triple
@@ -58,7 +58,7 @@ static u8 sStarsNeededForDialog[] = { 1, 3, 8, 30, 50, 70 };
  * The last three numbers of each entry are x, y and z coordinates of points
  * that define the curve.
  */
-static Vec4s sJumboStarKeyframes[27] = {
+Vec4s sJumboStarKeyframes[27] = {
     { 20, 0, 678, -2916 },      { 30, 0, 680, -3500 },      { 40, 1000, 700, -4000 },
     { 50, 2500, 750, -3500 },   { 50, 3500, 800, -2000 },   { 50, 4000, 850, 0 },
     { 50, 3500, 900, 2000 },    { 50, 2000, 950, 3500 },    { 50, 0, 1000, 4000 },
@@ -214,7 +214,7 @@ s32 geo_switch_peach_eyes(s32 run, struct GraphNode *node, UNUSED s32 a2) {
 }
 
 // unused
-UNUSED static void stub_is_textbox_active(u16 *arg) {
+UNUSED void stub_is_textbox_active(u16 *arg) {
     if (get_dialog_id() == DIALOG_NONE) {
         *arg = 0;
     }
@@ -1653,13 +1653,13 @@ s32 act_feet_stuck_in_ground(struct MarioState *m) {
  * Resets action state and action timer, adds 1 to the action arg (responsible
  * for keeping track of what step of the cutscene Mario is in.)
  */
-static void advance_cutscene_step(struct MarioState *m) {
+void advance_cutscene_step(struct MarioState *m) {
     m->actionState = 0;
     m->actionTimer = 0;
     m->actionArg++;
 }
 
-static void intro_cutscene_hide_hud_and_mario(struct MarioState *m) {
+void intro_cutscene_hide_hud_and_mario(struct MarioState *m) {
     gHudDisplay.flags = HUD_DISPLAY_NONE;
     m->statusForCamera->cameraEvent = CAM_EVENT_START_INTRO;
     m->marioObj->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
@@ -1672,7 +1672,7 @@ static void intro_cutscene_hide_hud_and_mario(struct MarioState *m) {
     #define TIMER_SPAWN_PIPE 37
 #endif
 
-static void intro_cutscene_peach_lakitu_scene(struct MarioState *m) {
+void intro_cutscene_peach_lakitu_scene(struct MarioState *m) {
     if ((s16) m->statusForCamera->cameraEvent != CAM_EVENT_START_INTRO) {
         if (m->actionTimer++ == TIMER_SPAWN_PIPE) {
             sIntroWarpPipeObj =
@@ -1690,7 +1690,7 @@ static void intro_cutscene_peach_lakitu_scene(struct MarioState *m) {
     #define TIMER_RAISE_PIPE 38
 #endif
 
-static void intro_cutscene_raise_pipe(struct MarioState *m) {
+void intro_cutscene_raise_pipe(struct MarioState *m) {
     sIntroWarpPipeObj->oPosY = camera_approach_f32_symmetric(sIntroWarpPipeObj->oPosY, 260.0f, 10.0f);
 
     if (m->actionTimer == 0) {
@@ -1704,7 +1704,7 @@ static void intro_cutscene_raise_pipe(struct MarioState *m) {
 }
 #undef TIMER_RAISE_PIPE
 
-static void intro_cutscene_jump_out_of_pipe(struct MarioState *m) {
+void intro_cutscene_jump_out_of_pipe(struct MarioState *m) {
     if (m->actionTimer == 25) {
         gHudDisplay.flags = HUD_DISPLAY_DEFAULT;
     }
@@ -1736,7 +1736,7 @@ static void intro_cutscene_jump_out_of_pipe(struct MarioState *m) {
     }
 }
 
-static void intro_cutscene_land_outside_pipe(struct MarioState *m) {
+void intro_cutscene_land_outside_pipe(struct MarioState *m) {
     set_mario_animation(m, MARIO_ANIM_LAND_FROM_SINGLE_JUMP);
 
     if (is_anim_at_end(m)) {
@@ -1746,7 +1746,7 @@ static void intro_cutscene_land_outside_pipe(struct MarioState *m) {
     stop_and_set_height_to_floor(m);
 }
 
-static void intro_cutscene_lower_pipe(struct MarioState *m) {
+void intro_cutscene_lower_pipe(struct MarioState *m) {
     if (m->actionTimer++ == 0) {
         play_sound(SOUND_MENU_ENTER_PIPE, sIntroWarpPipeObj->header.gfx.cameraToObject);
         set_mario_animation(m, MARIO_ANIM_FIRST_PERSON);
@@ -1761,7 +1761,7 @@ static void intro_cutscene_lower_pipe(struct MarioState *m) {
     stop_and_set_height_to_floor(m);
 }
 
-static void intro_cutscene_set_mario_to_idle(struct MarioState *m) {
+void intro_cutscene_set_mario_to_idle(struct MarioState *m) {
     if (gCamera->cutscene == 0) {
         gCameraMovementFlags &= ~CAM_MOVE_C_UP_MODE;
         set_mario_action(m, ACT_IDLE, 0);
@@ -1780,7 +1780,7 @@ enum {
     INTRO_CUTSCENE_SET_MARIO_TO_IDLE
 };
 
-static s32 act_intro_cutscene(struct MarioState *m) {
+s32 act_intro_cutscene(struct MarioState *m) {
     switch (m->actionArg) {
         case INTRO_CUTSCENE_HIDE_HUD_AND_MARIO:
             intro_cutscene_hide_hud_and_mario(m);
@@ -1808,7 +1808,7 @@ static s32 act_intro_cutscene(struct MarioState *m) {
 }
 
 // jumbo star cutscene: Mario lands after grabbing the jumbo star
-static void jumbo_star_cutscene_falling(struct MarioState *m) {
+ void jumbo_star_cutscene_falling(struct MarioState *m) {
     if (m->actionState == 0) {
         m->input |= INPUT_A_DOWN;
         m->flags |= (MARIO_WING_CAP | MARIO_CAP_ON_HEAD);
@@ -1835,7 +1835,7 @@ static void jumbo_star_cutscene_falling(struct MarioState *m) {
 }
 
 // jumbo star cutscene: Mario takes off
-static s32 jumbo_star_cutscene_taking_off(struct MarioState *m) {
+ s32 jumbo_star_cutscene_taking_off(struct MarioState *m) {
     struct Object *marioObj = m->marioObj;
     s32 animFrame;
 
@@ -1888,7 +1888,7 @@ static s32 jumbo_star_cutscene_taking_off(struct MarioState *m) {
 }
 
 // jumbo star cutscene: Mario flying
-static s32 jumbo_star_cutscene_flying(struct MarioState *m) {
+ s32 jumbo_star_cutscene_flying(struct MarioState *m) {
     Vec3f targetPos;
     UNUSED struct Object *marioObj = m->marioObj;
     f32 targetDX;
@@ -1940,7 +1940,7 @@ static s32 jumbo_star_cutscene_flying(struct MarioState *m) {
 
 enum { JUMBO_STAR_CUTSCENE_FALLING, JUMBO_STAR_CUTSCENE_TAKING_OFF, JUMBO_STAR_CUTSCENE_FLYING };
 
-static s32 act_jumbo_star_cutscene(struct MarioState *m) {
+ s32 act_jumbo_star_cutscene(struct MarioState *m) {
     switch (m->actionArg) {
         case JUMBO_STAR_CUTSCENE_FALLING:
             jumbo_star_cutscene_falling(m);
@@ -1980,7 +1980,7 @@ void generate_yellow_sparkles(s16 x, s16 y, s16 z, f32 radius) {
 
 // not sure what this does, returns the height of the floor.
 // (animation related?)
-static f32 end_obj_set_visual_pos(struct Object *o) {
+ f32 end_obj_set_visual_pos(struct Object *o) {
     struct Surface *surf;
     Vec3s sp24;
     f32 sp20;
@@ -1997,7 +1997,7 @@ static f32 end_obj_set_visual_pos(struct Object *o) {
 }
 
 // make Mario fall and soften wing cap gravity
-static void end_peach_cutscene_mario_falling(struct MarioState *m) {
+ void end_peach_cutscene_mario_falling(struct MarioState *m) {
     if (m->actionTimer == 1) {
         m->statusForCamera->cameraEvent = CAM_EVENT_START_ENDING;
     }
@@ -2015,7 +2015,7 @@ static void end_peach_cutscene_mario_falling(struct MarioState *m) {
 }
 
 // set Mario on the ground, wait and spawn the jumbo star outside the castle.
-static void end_peach_cutscene_mario_landing(struct MarioState *m) {
+ void end_peach_cutscene_mario_landing(struct MarioState *m) {
     set_mario_animation(m, MARIO_ANIM_GENERAL_LAND);
     stop_and_set_height_to_floor(m);
 
@@ -2031,7 +2031,7 @@ static void end_peach_cutscene_mario_landing(struct MarioState *m) {
 }
 
 // raise hand animation, lower hand animation, do some special effects
-static void end_peach_cutscene_summon_jumbo_star(struct MarioState *m) {
+ void end_peach_cutscene_summon_jumbo_star(struct MarioState *m) {
     set_mario_animation(m, m->actionState == 0 ? MARIO_ANIM_CREDITS_RAISE_HAND
                                                : MARIO_ANIM_CREDITS_LOWER_HAND);
 
@@ -2062,7 +2062,7 @@ static void end_peach_cutscene_summon_jumbo_star(struct MarioState *m) {
 #endif
 
 // free peach from the stained glass window
-static void end_peach_cutscene_spawn_peach(struct MarioState *m) {
+ void end_peach_cutscene_spawn_peach(struct MarioState *m) {
     if (m->actionTimer == 1) {
         play_transition(WARP_TRANSITION_FADE_INTO_COLOR, 14, 255, 255, 255);
     }
@@ -2119,7 +2119,7 @@ static void end_peach_cutscene_spawn_peach(struct MarioState *m) {
 #endif
 
 // descend peach
-static void end_peach_cutscene_descend_peach(struct MarioState *m) {
+ void end_peach_cutscene_descend_peach(struct MarioState *m) {
     generate_yellow_sparkles(0, sEndPeachObj->oPosY, -1300, 150.0f);
 
     if (sEndPeachObj->oPosY >= 1300.0f) {
@@ -2147,7 +2147,7 @@ static void end_peach_cutscene_descend_peach(struct MarioState *m) {
 #undef TIMER_RUN_TO_PEACH
 
 // Mario runs to peach
-static void end_peach_cutscene_run_to_peach(struct MarioState *m) {
+ void end_peach_cutscene_run_to_peach(struct MarioState *m) {
     struct Surface *surf;
 
     if (m->actionTimer == 22) {
@@ -2171,7 +2171,7 @@ static void end_peach_cutscene_run_to_peach(struct MarioState *m) {
 // dialog 1
 // "Mario!"
 // "The power of the Stars is restored to the castle..."
-static void end_peach_cutscene_dialog_1(struct MarioState *m) {
+ void end_peach_cutscene_dialog_1(struct MarioState *m) {
     s32 animFrame = set_mario_animation(m, m->actionState == 0 ? MARIO_ANIM_CREDITS_TAKE_OFF_CAP
                                                                : MARIO_ANIM_CREDITS_LOOK_UP);
 
@@ -2276,7 +2276,7 @@ static void end_peach_cutscene_dialog_1(struct MarioState *m) {
 // "...and it's all thanks to you!"
 // "Thank you Mario!"
 // "We have to do something special for you..."
-static void end_peach_cutscene_dialog_2(struct MarioState *m) {
+ void end_peach_cutscene_dialog_2(struct MarioState *m) {
     sEndPeachAnimation = 9;
 
     switch (m->actionTimer) {
@@ -2327,7 +2327,7 @@ static void end_peach_cutscene_dialog_2(struct MarioState *m) {
 #undef TIMER_PEACH_KISS
 
 // blink twice then have half-shut eyes (see end_peach_cutscene_kiss_from_peach)
-static u8 sMarioBlinkOverride[20] = {
+ u8 sMarioBlinkOverride[20] = {
     MARIO_EYES_HALF_CLOSED, MARIO_EYES_HALF_CLOSED, MARIO_EYES_CLOSED, MARIO_EYES_CLOSED,
     MARIO_EYES_HALF_CLOSED, MARIO_EYES_HALF_CLOSED, MARIO_EYES_OPEN,   MARIO_EYES_OPEN,
     MARIO_EYES_HALF_CLOSED, MARIO_EYES_HALF_CLOSED, MARIO_EYES_CLOSED, MARIO_EYES_CLOSED,
@@ -2335,7 +2335,7 @@ static u8 sMarioBlinkOverride[20] = {
     MARIO_EYES_HALF_CLOSED, MARIO_EYES_HALF_CLOSED, MARIO_EYES_CLOSED, MARIO_EYES_CLOSED,
 };
 
-static void end_peach_cutscene_kiss_from_peach(struct MarioState *m) {
+ void end_peach_cutscene_kiss_from_peach(struct MarioState *m) {
     sEndPeachAnimation = 10;
 
     if (m->actionTimer >= 90) {
@@ -2378,7 +2378,7 @@ static void end_peach_cutscene_kiss_from_peach(struct MarioState *m) {
     }
 }
 
-static void end_peach_cutscene_star_dance(struct MarioState *m) {
+ void end_peach_cutscene_star_dance(struct MarioState *m) {
     s32 animFrame = set_mario_animation(m, MARIO_ANIM_CREDITS_PEACE_SIGN);
 
     if (animFrame == 77) {
@@ -2429,7 +2429,7 @@ static void end_peach_cutscene_star_dance(struct MarioState *m) {
 // "Listen everybody"
 // "let's bake a delicious cake..."
 // "...for Mario..."
-static void end_peach_cutscene_dialog_3(struct MarioState *m) {
+ void end_peach_cutscene_dialog_3(struct MarioState *m) {
     set_mario_animation(m, MARIO_ANIM_FIRST_PERSON);
 
     sEndPeachObj->oPosY = end_obj_set_visual_pos(sEndPeachObj);
@@ -2466,7 +2466,7 @@ static void end_peach_cutscene_dialog_3(struct MarioState *m) {
 }
 
 // "Mario!"
-static void end_peach_cutscene_run_to_castle(struct MarioState *m) {
+ void end_peach_cutscene_run_to_castle(struct MarioState *m) {
     set_mario_animation(m, m->actionState == 0 ? MARIO_ANIM_CREDITS_START_WALK_LOOK_UP
                                                : MARIO_ANIM_CREDITS_LOOK_BACK_THEN_RUN);
 
@@ -2487,7 +2487,7 @@ static void end_peach_cutscene_run_to_castle(struct MarioState *m) {
     }
 }
 
-static void end_peach_cutscene_fade_out(struct MarioState *m) {
+ void end_peach_cutscene_fade_out(struct MarioState *m) {
     if (m->actionState == 0) {
         level_trigger_warp(m, WARP_OP_CREDITS_NEXT);
         gPaintingMarioYEntry = 1500.0f; // ensure medium water level in WDW credits cutscene
@@ -2511,7 +2511,7 @@ enum {
     END_PEACH_CUTSCENE_FADE_OUT
 };
 
-static s32 act_end_peach_cutscene(struct MarioState *m) {
+ s32 act_end_peach_cutscene(struct MarioState *m) {
     switch (m->actionArg) {
         case END_PEACH_CUTSCENE_MARIO_FALLING:
             end_peach_cutscene_mario_falling(m);
@@ -2579,7 +2579,7 @@ static s32 act_end_peach_cutscene(struct MarioState *m) {
     #define TIMER_CREDITS_WARP     200
 #endif
 
-static s32 act_credits_cutscene(struct MarioState *m) {
+ s32 act_credits_cutscene(struct MarioState *m) {
     s32 width;
     s32 height;
 
@@ -2636,7 +2636,7 @@ static s32 act_credits_cutscene(struct MarioState *m) {
     return FALSE;
 }
 
-static s32 act_end_waving_cutscene(struct MarioState *m) {
+ s32 act_end_waving_cutscene(struct MarioState *m) {
     if (m->actionState == 0) {
         m->statusForCamera->cameraEvent = CAM_EVENT_START_END_WAVING;
 
@@ -2674,7 +2674,7 @@ static s32 act_end_waving_cutscene(struct MarioState *m) {
     return FALSE;
 }
 
-static s32 check_for_instant_quicksand(struct MarioState *m) {
+ s32 check_for_instant_quicksand(struct MarioState *m) {
     if (m->floor->type == SURFACE_INSTANT_QUICKSAND && m->action & ACT_FLAG_INVULNERABLE
         && m->action != ACT_QUICKSAND_DEATH) {
         update_mario_sound_and_camera(m);

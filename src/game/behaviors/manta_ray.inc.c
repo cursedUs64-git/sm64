@@ -6,7 +6,7 @@
  * These rings contain a significant bug that is documented in water_ring.inc.c
  */
 
-static Trajectory sMantaRayTraj[] = {
+ Trajectory sMantaRayTraj[] = {
     TRAJECTORY_POS(0, /*pos*/ -4500, -1380,   -40),
     TRAJECTORY_POS(1, /*pos*/ -4120, -2240,   740),
     TRAJECTORY_POS(2, /*pos*/ -3280, -3080,  1040),
@@ -18,7 +18,7 @@ static Trajectory sMantaRayTraj[] = {
     TRAJECTORY_END(),
 };
 
-static struct ObjectHitbox sMantaRayHitbox = {
+ struct ObjectHitbox sMantaRayHitbox = {
     /* interactType:      */ INTERACT_DAMAGE,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 0,
@@ -40,7 +40,7 @@ void bhv_manta_ray_init(void) {
     cur_obj_scale(2.5f);
 }
 
-static void manta_ray_move(void) {
+ void manta_ray_move(void) {
     s16 animFrame = o->header.gfx.animInfo.animFrame;
     s32 pathStatus;
 #ifdef AVOID_UB
@@ -77,7 +77,7 @@ static void manta_ray_move(void) {
     }
 }
 
-static void manta_ray_act_spawn_ring(void) {
+ void manta_ray_act_spawn_ring(void) {
     struct Object *ringManager = o->parentObj;
 
     if (o->oTimer == 300) {

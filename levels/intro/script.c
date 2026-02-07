@@ -114,7 +114,7 @@ const LevelScript level_intro_entry_4[] = {
     JUMP(script_intro_L3),
 };
 
-// These should be static, but C doesn't allow non-sized forward declarations of static arrays
+// These should be , but C doesn't allow non-sized forward declarations of  arrays
 
 const LevelScript script_intro_L1[] = {
     STOP_MUSIC(/*fadeOutTime*/ 0x00BE),

@@ -1,5 +1,5 @@
 // 0x070046A0 - 0x07004790
-static const Vtx bitfs_seg7_vertex_070046A0[] = {
+ const Vtx bitfs_seg7_vertex_070046A0[] = {
     {{{  -775,    435,    -64}, 0, {   334,  -6088}, {0x8f, 0xef, 0xbe, 0xff}}},
     {{{  -775,    435,    -37}, 0, {   334,  -6088}, {0x8f, 0xef, 0xbe, 0xff}}},
     {{{  -759,    435,    -37}, 0, {   386,  -5934}, {0x8f, 0xef, 0xbe, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx bitfs_seg7_vertex_070046A0[] = {
 };
 
 // 0x07004790 - 0x07004890
-static const Vtx bitfs_seg7_vertex_07004790[] = {
+ const Vtx bitfs_seg7_vertex_07004790[] = {
     {{{ -1586,    486,    205}, 0, {  3204,   -202}, {0xce, 0x72, 0x16, 0xff}}},
     {{{ -1586,    538,    205}, 0, {  3204,   -202}, {0xce, 0x72, 0x16, 0xff}}},
     {{{ -1586,    538,   -204}, 0, {  3204,   1158}, {0xce, 0x72, 0x16, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx bitfs_seg7_vertex_07004790[] = {
 };
 
 // 0x07004890 - 0x07004990
-static const Vtx bitfs_seg7_vertex_07004890[] = {
+ const Vtx bitfs_seg7_vertex_07004890[] = {
     {{{  -255,    998,   -511}, 0, {  3204,      0}, {0x79, 0x79, 0xeb, 0xff}}},
     {{{ -1279,    998,   -511}, 0, {  -200,      0}, {0x79, 0x79, 0xeb, 0xff}}},
     {{{ -1279,    384,   -511}, 0, {  -200,   2010}, {0x79, 0x79, 0xeb, 0xff}}},
@@ -58,7 +58,7 @@ static const Vtx bitfs_seg7_vertex_07004890[] = {
 };
 
 // 0x07004990 - 0x07004A90
-static const Vtx bitfs_seg7_vertex_07004990[] = {
+ const Vtx bitfs_seg7_vertex_07004990[] = {
     {{{  -204,    333,   -562}, 0, {  3374,   2180}, {0x7f, 0x65, 0xff, 0xff}}},
     {{{ -1279,    998,   -562}, 0, {  -200,      0}, {0x7f, 0x65, 0xff, 0xff}}},
     {{{  -204,    998,   -562}, 0, {  3374,      0}, {0x7f, 0x65, 0xff, 0xff}}},
@@ -78,7 +78,7 @@ static const Vtx bitfs_seg7_vertex_07004990[] = {
 };
 
 // 0x07004A90 - 0x07004B90
-static const Vtx bitfs_seg7_vertex_07004A90[] = {
+ const Vtx bitfs_seg7_vertex_07004A90[] = {
     {{{  -752,   -383,    -50}, 0, {   410,   2316}, {0x79, 0xeb, 0xb2, 0xff}}},
     {{{  -752,    435,    -50}, 0, {   410,  -5858}, {0x79, 0xeb, 0xb2, 0xff}}},
     {{{  -759,    435,    -37}, 0, {   386,  -5934}, {0x79, 0xeb, 0xb2, 0xff}}},
@@ -98,7 +98,7 @@ static const Vtx bitfs_seg7_vertex_07004A90[] = {
 };
 
 // 0x07004B90 - 0x07004C90
-static const Vtx bitfs_seg7_vertex_07004B90[] = {
+ const Vtx bitfs_seg7_vertex_07004B90[] = {
     {{{  -775,   -383,    -37}, 0, {   334,   2086}, {0x1f, 0xdf, 0x7f, 0xff}}},
     {{{  -782,    435,    -50}, 0, {   308,  -6164}, {0x1f, 0xdf, 0x7f, 0xff}}},
     {{{  -782,   -383,    -50}, 0, {   308,   2010}, {0x1f, 0xdf, 0x7f, 0xff}}},
@@ -118,7 +118,7 @@ static const Vtx bitfs_seg7_vertex_07004B90[] = {
 };
 
 // 0x07004C90 - 0x07004D90
-static const Vtx bitfs_seg7_vertex_07004C90[] = {
+ const Vtx bitfs_seg7_vertex_07004C90[] = {
     {{{ -1279,    384,    512}, 0, {  2182,  -1224}, {0xdf, 0xbf, 0x1f, 0xff}}},
     {{{ -1586,    538,   -204}, 0, {  3204,   1158}, {0xdf, 0xbf, 0x1f, 0xff}}},
     {{{ -1586,    538,    205}, 0, {  3204,   -202}, {0xdf, 0xbf, 0x1f, 0xff}}},
@@ -138,7 +138,7 @@ static const Vtx bitfs_seg7_vertex_07004C90[] = {
 };
 
 // 0x07004D90 - 0x07004E10
-static const Vtx bitfs_seg7_vertex_07004D90[] = {
+ const Vtx bitfs_seg7_vertex_07004D90[] = {
     {{{ -1279,    333,   -562}, 0, {  2182,   2180}, {0xc8, 0x64, 0x00, 0xff}}},
     {{{  -921,    333,   -153}, 0, {   990,    990}, {0xc8, 0x64, 0x00, 0xff}}},
     {{{ -1279,    333,    512}, 0, {  2182,  -1224}, {0xc8, 0x64, 0x00, 0xff}}},
@@ -150,7 +150,7 @@ static const Vtx bitfs_seg7_vertex_07004D90[] = {
 };
 
 // 0x07004E10 - 0x07004F10
-static const Vtx bitfs_seg7_vertex_07004E10[] = {
+ const Vtx bitfs_seg7_vertex_07004E10[] = {
     {{{   308,   -542,    -91}, 0, {   606,    862}, {0x53, 0x46, 0x20, 0xff}}},
     {{{   411,   -542,     10}, 0, {   352,    606}, {0x53, 0x46, 0x20, 0xff}}},
     {{{   308,   -542,     10}, 0, {   352,    606}, {0x53, 0x46, 0x20, 0xff}}},
@@ -170,7 +170,7 @@ static const Vtx bitfs_seg7_vertex_07004E10[] = {
 };
 
 // 0x07004F10 - 0x07005010
-static const Vtx bitfs_seg7_vertex_07004F10[] = {
+ const Vtx bitfs_seg7_vertex_07004F10[] = {
     {{{  1639,   -696,     10}, 0, {     0,    990}, {0x72, 0x67, 0x34, 0xff}}},
     {{{  1639,   -614,     61}, 0, {    44,    658}, {0x72, 0x67, 0x34, 0xff}}},
     {{{  1639,   -532,     10}, 0, {   376,    582}, {0x72, 0x67, 0x34, 0xff}}},
@@ -190,7 +190,7 @@ static const Vtx bitfs_seg7_vertex_07004F10[] = {
 };
 
 // 0x07005010 - 0x070050F0
-static const Vtx bitfs_seg7_vertex_07005010[] = {
+ const Vtx bitfs_seg7_vertex_07005010[] = {
     {{{   613,   -532,     10}, 0, {   376,    582}, {0x72, 0x67, 0x34, 0xff}}},
     {{{   613,   -614,     61}, 0, {    44,    658}, {0x72, 0x67, 0x34, 0xff}}},
     {{{   613,   -696,     10}, 0, {     0,    990}, {0x72, 0x67, 0x34, 0xff}}},
@@ -208,7 +208,7 @@ static const Vtx bitfs_seg7_vertex_07005010[] = {
 };
 
 // 0x070050F0 - 0x070051F0
-static const Vtx bitfs_seg7_vertex_070050F0[] = {
+ const Vtx bitfs_seg7_vertex_070050F0[] = {
     {{{  -819,   -460,   -142}, 0, {   938,    786}, {0x72, 0x67, 0x34, 0xff}}},
     {{{  -717,   -460,   -142}, 0, {   938,    786}, {0x72, 0x67, 0x34, 0xff}}},
     {{{  -717,   -542,    -91}, 0, {   606,    862}, {0x72, 0x67, 0x34, 0xff}}},
@@ -228,7 +228,7 @@ static const Vtx bitfs_seg7_vertex_070050F0[] = {
 };
 
 // 0x070051F0 - 0x070052D0
-static const Vtx bitfs_seg7_vertex_070051F0[] = {
+ const Vtx bitfs_seg7_vertex_070051F0[] = {
     {{{   308,   -542,     10}, 0, {   352,    606}, {0x72, 0x67, 0x34, 0xff}}},
     {{{   308,   -460,   -142}, 0, {   938,    786}, {0x72, 0x67, 0x34, 0xff}}},
     {{{   308,   -542,    -91}, 0, {   606,    862}, {0x72, 0x67, 0x34, 0xff}}},
@@ -246,7 +246,7 @@ static const Vtx bitfs_seg7_vertex_070051F0[] = {
 };
 
 // 0x070052D0 - 0x070053C0
-static const Vtx bitfs_seg7_vertex_070052D0[] = {
+ const Vtx bitfs_seg7_vertex_070052D0[] = {
     {{{  1639,   -532,    -91}, 0, {   632,    836}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{  1742,   -532,    -91}, 0, {   632,    836}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{  1742,   -614,   -142}, 0, {   556,   1166}, {0x8a, 0x7d, 0x4c, 0xff}}},
@@ -265,7 +265,7 @@ static const Vtx bitfs_seg7_vertex_070052D0[] = {
 };
 
 // 0x070053C0 - 0x070054A0
-static const Vtx bitfs_seg7_vertex_070053C0[] = {
+ const Vtx bitfs_seg7_vertex_070053C0[] = {
     {{{   511,   -532,     10}, 0, {   376,    582}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{   511,   -614,     61}, 0, {    44,    658}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{   613,   -614,     61}, 0, {    44,    658}, {0x8a, 0x7d, 0x4c, 0xff}}},
@@ -283,7 +283,7 @@ static const Vtx bitfs_seg7_vertex_070053C0[] = {
 };
 
 // 0x070054A0 - 0x07005590
-static const Vtx bitfs_seg7_vertex_070054A0[] = {
+ const Vtx bitfs_seg7_vertex_070054A0[] = {
     {{{   308,   -460,     61}, 0, {   428,    274}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{   411,   -460,     61}, 0, {   428,    274}, {0x8a, 0x7d, 0x4c, 0xff}}},
     {{{   411,   -378,     10}, 0, {   760,    198}, {0x8a, 0x7d, 0x4c, 0xff}}},
@@ -302,7 +302,7 @@ static const Vtx bitfs_seg7_vertex_070054A0[] = {
 };
 
 // 0x07005590 - 0x07005600
-static const Vtx bitfs_seg7_vertex_07005590[] = {
+ const Vtx bitfs_seg7_vertex_07005590[] = {
     {{{  -717,   -378,     10}, 0, {   760,    198}, {0xac, 0x9d, 0x52, 0xff}}},
     {{{  -717,   -378,    -91}, 0, {  1016,    454}, {0xac, 0x9d, 0x52, 0xff}}},
     {{{  -819,   -378,     10}, 0, {   760,    198}, {0xac, 0x9d, 0x52, 0xff}}},
@@ -313,7 +313,7 @@ static const Vtx bitfs_seg7_vertex_07005590[] = {
 };
 
 // 0x07005600 - 0x07005700
-static const Vtx bitfs_seg7_vertex_07005600[] = {
+ const Vtx bitfs_seg7_vertex_07005600[] = {
     {{{   563,  -1253,    266}, 0, {     0,    990}, {0xaf, 0xaf, 0xaf, 0xff}}},
     {{{   563,  -1253,   -347}, 0, {  2012,    990}, {0xaf, 0xaf, 0xaf, 0xff}}},
     {{{  -357,  -1100,   -347}, 0, {  2012,  -2118}, {0xaf, 0xaf, 0xaf, 0xff}}},
@@ -333,7 +333,7 @@ static const Vtx bitfs_seg7_vertex_07005600[] = {
 };
 
 // 0x07005700 - 0x07005800
-static const Vtx bitfs_seg7_vertex_07005700[] = {
+ const Vtx bitfs_seg7_vertex_07005700[] = {
     {{{   513,   -429,     10}, 0, {   734,    734}, {0x68, 0x95, 0x73, 0xff}}},
     {{{   411,   -378,     10}, 0, {   606,    352}, {0x68, 0x95, 0x73, 0xff}}},
     {{{   411,   -634,     10}, 0, {     0,    990}, {0x68, 0x95, 0x73, 0xff}}},
@@ -353,7 +353,7 @@ static const Vtx bitfs_seg7_vertex_07005700[] = {
 };
 
 // 0x07005800 - 0x070058F0
-static const Vtx bitfs_seg7_vertex_07005800[] = {
+ const Vtx bitfs_seg7_vertex_07005800[] = {
     {{{ -1996,   2074,    205}, 0, {   650,    990}, {0xbc, 0xca, 0xbf, 0xff}}},
     {{{ -2201,   2074,    410}, 0, {     0,    990}, {0xbc, 0xca, 0xbf, 0xff}}},
     {{{ -1381,   2074,    410}, 0, {  1330,   -372}, {0xbc, 0xca, 0xbf, 0xff}}},
@@ -372,7 +372,7 @@ static const Vtx bitfs_seg7_vertex_07005800[] = {
 };
 
 // 0x070058F0 - 0x070059B0
-static const Vtx bitfs_seg7_vertex_070058F0[] = {
+ const Vtx bitfs_seg7_vertex_070058F0[] = {
     {{{ -2201,   2074,   -409}, 0, {  1330,   2350}, {0xbc, 0xca, 0xbf, 0xff}}},
     {{{ -1996,   2074,   -204}, 0, {  1330,   1670}, {0xbc, 0xca, 0xbf, 0xff}}},
     {{{ -1586,   2074,   -204}, 0, {  2012,    990}, {0xbc, 0xca, 0xbf, 0xff}}},
@@ -388,7 +388,7 @@ static const Vtx bitfs_seg7_vertex_070058F0[] = {
 };
 
 // 0x070059B0 - 0x07005AA0
-static const Vtx bitfs_seg7_vertex_070059B0[] = {
+ const Vtx bitfs_seg7_vertex_070059B0[] = {
     {{{ -1586,  -1407,    266}, 0, {  2012,    990}, {0x67, 0x76, 0x64, 0xff}}},
     {{{ -1586,  -1100,    266}, 0, {  2012,      0}, {0x67, 0x76, 0x64, 0xff}}},
     {{{ -1586,  -1100,   -347}, 0, {     0,      0}, {0x67, 0x76, 0x64, 0xff}}},
@@ -407,7 +407,7 @@ static const Vtx bitfs_seg7_vertex_070059B0[] = {
 };
 
 // 0x07005AA0 - 0x07005B90
-static const Vtx bitfs_seg7_vertex_07005AA0[] = {
+ const Vtx bitfs_seg7_vertex_07005AA0[] = {
     {{{ -1279,  -1100,   -654}, 0, {  2012,      0}, {0x88, 0x98, 0x84, 0xff}}},
     {{{  -665,  -1407,   -654}, 0, {     0,    990}, {0x88, 0x98, 0x84, 0xff}}},
     {{{ -1279,  -1407,   -654}, 0, {  2012,    990}, {0x88, 0x98, 0x84, 0xff}}},
@@ -426,7 +426,7 @@ static const Vtx bitfs_seg7_vertex_07005AA0[] = {
 };
 
 // 0x07005B90 - 0x07005C90
-static const Vtx bitfs_seg7_vertex_07005B90[] = {
+ const Vtx bitfs_seg7_vertex_07005B90[] = {
     {{{  -357,  -1100,    266}, 0, {  1414,      0}, {0x74, 0x86, 0x75, 0xff}}},
     {{{  -665,  -1407,    573}, 0, {     0,    990}, {0x74, 0x86, 0x75, 0xff}}},
     {{{  -357,  -1407,    266}, 0, {  1414,    990}, {0x74, 0x86, 0x75, 0xff}}},
@@ -446,7 +446,7 @@ static const Vtx bitfs_seg7_vertex_07005B90[] = {
 };
 
 // 0x07005C90 - 0x07005D80
-static const Vtx bitfs_seg7_vertex_07005C90[] = {
+ const Vtx bitfs_seg7_vertex_07005C90[] = {
     {{{  2253,  -1407,    266}, 0, {  2012,    990}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  2253,  -1100,   -347}, 0, {     0,      0}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  2253,  -1407,   -347}, 0, {     0,    990}, {0x64, 0x64, 0x64, 0xff}}},
@@ -465,7 +465,7 @@ static const Vtx bitfs_seg7_vertex_07005C90[] = {
 };
 
 // 0x07005D80 - 0x07005E60
-static const Vtx bitfs_seg7_vertex_07005D80[] = {
+ const Vtx bitfs_seg7_vertex_07005D80[] = {
     {{{  1638,  -1253,   -347}, 0, {  2012,    478}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  1638,  -1253,    266}, 0, {     0,    478}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  1638,  -1407,    266}, 0, {     0,    990}, {0x64, 0x64, 0x64, 0xff}}},
@@ -483,7 +483,7 @@ static const Vtx bitfs_seg7_vertex_07005D80[] = {
 };
 
 // 0x07005E60 - 0x07005F40
-static const Vtx bitfs_seg7_vertex_07005E60[] = {
+ const Vtx bitfs_seg7_vertex_07005E60[] = {
     {{{ -1996,  -1407,   -654}, 0, {     0,    990}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{ -2610,  -1100,   -654}, 0, {  2012,      0}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{ -1996,  -1100,   -654}, 0, {     0,      0}, {0x8c, 0x8c, 0x8c, 0xff}}},
@@ -501,7 +501,7 @@ static const Vtx bitfs_seg7_vertex_07005E60[] = {
 };
 
 // 0x07005F40 - 0x07006000
-static const Vtx bitfs_seg7_vertex_07005F40[] = {
+ const Vtx bitfs_seg7_vertex_07005F40[] = {
     {{{  -357,  -1100,    266}, 0, {     0,      0}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{  -357,  -1407,    266}, 0, {     0,    990}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{   563,  -1407,    266}, 0, {  3034,    990}, {0x8c, 0x8c, 0x8c, 0xff}}},
@@ -517,7 +517,7 @@ static const Vtx bitfs_seg7_vertex_07005F40[] = {
 };
 
 // 0x07006000 - 0x070060F0
-static const Vtx bitfs_seg7_vertex_07006000[] = {
+ const Vtx bitfs_seg7_vertex_07006000[] = {
     {{{ -1996,   1664,   -204}, 0, {   990,   1328}, {0x44, 0x44, 0x44, 0xff}}},
     {{{ -1996,   2074,   -204}, 0, {   990,      0}, {0x44, 0x44, 0x44, 0xff}}},
     {{{ -1996,   2074,    205}, 0, {  -370,      0}, {0x44, 0x44, 0x44, 0xff}}},
@@ -536,7 +536,7 @@ static const Vtx bitfs_seg7_vertex_07006000[] = {
 };
 
 // 0x070060F0 - 0x070061E0
-static const Vtx bitfs_seg7_vertex_070060F0[] = {
+ const Vtx bitfs_seg7_vertex_070060F0[] = {
     {{{  2867,  -1100,   -347}, 0, {     0,    990}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  2867,   -485,   -347}, 0, {     0,  -1054}, {0x64, 0x64, 0x64, 0xff}}},
     {{{  2867,   -485,    266}, 0, {  2012,  -1054}, {0x64, 0x64, 0x64, 0xff}}},
@@ -555,7 +555,7 @@ static const Vtx bitfs_seg7_vertex_070060F0[] = {
 };
 
 // 0x070061E0 - 0x07006220
-static const Vtx bitfs_seg7_vertex_070061E0[] = {
+ const Vtx bitfs_seg7_vertex_070061E0[] = {
     {{{  2867,  -1100,    266}, 0, {  2012,    990}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{  2253,   -485,    266}, 0, {     0,  -1054}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{  2253,  -1100,    266}, 0, {     0,    990}, {0x8c, 0x8c, 0x8c, 0xff}}},
@@ -563,7 +563,7 @@ static const Vtx bitfs_seg7_vertex_070061E0[] = {
 };
 
 // 0x07006220 - 0x070064A8
-static const Gfx bitfs_seg7_dl_07006220[] = {
+ const Gfx bitfs_seg7_dl_07006220[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitfs_seg7_texture_07001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -614,7 +614,7 @@ static const Gfx bitfs_seg7_dl_07006220[] = {
 };
 
 // 0x070064A8 - 0x07006790
-static const Gfx bitfs_seg7_dl_070064A8[] = {
+ const Gfx bitfs_seg7_dl_070064A8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -674,7 +674,7 @@ static const Gfx bitfs_seg7_dl_070064A8[] = {
 };
 
 // 0x07006790 - 0x070067F8
-static const Gfx bitfs_seg7_dl_07006790[] = {
+ const Gfx bitfs_seg7_dl_07006790[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09007000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -687,7 +687,7 @@ static const Gfx bitfs_seg7_dl_07006790[] = {
 };
 
 // 0x070067F8 - 0x07006900
-static const Gfx bitfs_seg7_dl_070067F8[] = {
+ const Gfx bitfs_seg7_dl_070067F8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -712,7 +712,7 @@ static const Gfx bitfs_seg7_dl_070067F8[] = {
 };
 
 // 0x07006900 - 0x07006AD8
-static const Gfx bitfs_seg7_dl_07006900[] = {
+ const Gfx bitfs_seg7_dl_07006900[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitfs_seg7_texture_07001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -753,7 +753,7 @@ static const Gfx bitfs_seg7_dl_07006900[] = {
 };
 
 // 0x07006AD8 - 0x07006B90
-static const Gfx bitfs_seg7_dl_07006AD8[] = {
+ const Gfx bitfs_seg7_dl_07006AD8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

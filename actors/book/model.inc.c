@@ -3,18 +3,18 @@
 // This actor file requires including actor bookend because of bookend_seg5_texture_05000C60
 
 // 0x05002558
-static const Lights1 book_seg5_lights_05002558 = gdSPDefLights1(
+ const Lights1 book_seg5_lights_05002558 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05002570
-ALIGNED8 static const Texture book_seg5_texture_05002570[] = {
+ALIGNED8  const Texture book_seg5_texture_05002570[] = {
 #include "actors/book/book_cover.rgba16.inc.c"
 };
 
 // 0x05002D70
-static const Vtx book_seg5_vertex_05002D70[] = {
+ const Vtx book_seg5_vertex_05002D70[] = {
     {{{    -9,     31,    -50}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    10,     31,      0}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    10,     31,    -50}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx book_seg5_vertex_05002D70[] = {
 };
 
 // 0x05002E30
-static const Vtx book_seg5_vertex_05002E30[] = {
+ const Vtx book_seg5_vertex_05002E30[] = {
     {{{    10,     31,      0}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    -9,     31,      0}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    -9,    -30,      0}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},

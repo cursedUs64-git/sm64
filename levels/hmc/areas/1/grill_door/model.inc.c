@@ -1,5 +1,5 @@
 // 0x0701FDC8 - 0x0701FEB8
-static const Vtx hmc_seg7_vertex_0701FDC8[] = {
+ const Vtx hmc_seg7_vertex_0701FDC8[] = {
     {{{   410,      0,     51}, 0, {     0,   4054}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   410,    717,    -50}, 0, {   990,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   410,    717,     51}, 0, {     0,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx hmc_seg7_vertex_0701FDC8[] = {
 };
 
 // 0x0701FEB8 - 0x0701FF68
-static const Vtx hmc_seg7_vertex_0701FEB8[] = {
+ const Vtx hmc_seg7_vertex_0701FEB8[] = {
     {{{   410,    717,     51}, 0, {  2012,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,     51}, 0, { -2074,   4054}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   410,      0,     51}, 0, {  2012,   4054}, {0xff, 0xff, 0xff, 0xff}}},
@@ -33,7 +33,7 @@ static const Vtx hmc_seg7_vertex_0701FEB8[] = {
 };
 
 // 0x0701FF68 - 0x0701FFF8
-static const Gfx hmc_seg7_dl_0701FF68[] = {
+ const Gfx hmc_seg7_dl_0701FF68[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

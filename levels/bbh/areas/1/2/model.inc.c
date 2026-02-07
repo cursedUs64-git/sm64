@@ -1,5 +1,5 @@
 // 0x070076C0 - 0x070077B0
-static const Vtx bbh_seg7_vertex_070076C0[] = {
+ const Vtx bbh_seg7_vertex_070076C0[] = {
     {{{  1044,    819,   1659}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1044,    922,   2048}, 0, {  3852,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1044,    819,   2048}, 0, {  3852,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx bbh_seg7_vertex_070076C0[] = {
 };
 
 // 0x070077B0 - 0x070078A0
-static const Vtx bbh_seg7_vertex_070077B0[] = {
+ const Vtx bbh_seg7_vertex_070077B0[] = {
     {{{  1659,    922,    389}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  1659,    819,    389}, 0, {     0,    990}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  1659,    819,    799}, 0, {  4056,    990}, {0x00, 0x00, 0x00, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx bbh_seg7_vertex_070077B0[] = {
 };
 
 // 0x070078A0 - 0x07007940
-static const Gfx bbh_seg7_dl_070078A0[] = {
+ const Gfx bbh_seg7_dl_070078A0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09008000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,50 +1,50 @@
 // Chain Chomp
 
 // 0x06021388
-UNUSED static const Lights1 chain_chomp_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 chain_chomp_lights_unused1 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060213A0
-UNUSED static const Lights1 chain_chomp_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 chain_chomp_lights_unused2 = gdSPDefLights1(
     0x03, 0x03, 0x05,
     0x0d, 0x0f, 0x16, 0x28, 0x28, 0x28
 );
 
 // 0x060213B8
-UNUSED static const Lights1 chain_chomp_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 chain_chomp_lights_unused3 = gdSPDefLights1(
     0x25, 0x00, 0x00,
     0x96, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060213D0
-ALIGNED8 static const Texture chain_chomp_seg6_texture_060213D0[] = {
+ALIGNED8  const Texture chain_chomp_seg6_texture_060213D0[] = {
 #include "actors/chain_chomp/chain_chomp_bright_shine.rgba16.inc.c"
 };
 
 // 0x06021BD0
-ALIGNED8 static const Texture chain_chomp_seg6_texture_06021BD0[] = {
+ALIGNED8  const Texture chain_chomp_seg6_texture_06021BD0[] = {
 #include "actors/chain_chomp/chain_chomp_dull_shine.rgba16.inc.c"
 };
 
 // 0x060223D0
-ALIGNED8 static const Texture chain_chomp_seg6_texture_060223D0[] = {
+ALIGNED8  const Texture chain_chomp_seg6_texture_060223D0[] = {
 #include "actors/chain_chomp/chain_chomp_tongue.rgba16.inc.c"
 };
 
 // 0x06022BD0
-ALIGNED8 static const Texture chain_chomp_seg6_texture_06022BD0[] = {
+ALIGNED8  const Texture chain_chomp_seg6_texture_06022BD0[] = {
 #include "actors/chain_chomp/chain_chomp_tooth.rgba16.inc.c"
 };
 
 // 0x060233D0
-ALIGNED8 static const Texture chain_chomp_seg6_texture_060233D0[] = {
+ALIGNED8  const Texture chain_chomp_seg6_texture_060233D0[] = {
 #include "actors/chain_chomp/chain_chomp_eye.rgba16.inc.c"
 };
 
 // 0x06023BD0
-static const Vtx chain_chomp_seg6_vertex_06023BD0[] = {
+ const Vtx chain_chomp_seg6_vertex_06023BD0[] = {
     {{{     0,      0,    582}, 0, {   990,    380}, {0xb2, 0xb2, 0xb2, 0xff}}},
     {{{   411,      0,   -410}, 0, {   118,    880}, {0xb2, 0xb2, 0xb2, 0xff}}},
     {{{     0,      0,   -581}, 0, {   -52,    472}, {0xb2, 0xb2, 0xb2, 0xff}}},
@@ -53,7 +53,7 @@ static const Vtx chain_chomp_seg6_vertex_06023BD0[] = {
 };
 
 // 0x06023C20
-static const Vtx chain_chomp_seg6_vertex_06023C20[] = {
+ const Vtx chain_chomp_seg6_vertex_06023C20[] = {
     {{{     0,   -581,      0}, 0, {   448,   -130}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -156,   -536,   -156}, 0, {   334,   -408}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -536,   -222}, 0, {    58,   -276}, {0xff, 0xff, 0xff, 0xff}}},
@@ -73,7 +73,7 @@ static const Vtx chain_chomp_seg6_vertex_06023C20[] = {
 };
 
 // 0x06023D20
-static const Vtx chain_chomp_seg6_vertex_06023D20[] = {
+ const Vtx chain_chomp_seg6_vertex_06023D20[] = {
     {{{   291,   -410,    291}, 0, {   600,    640}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -410,    411}, 0, {  1110,    398}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -536,    223}, 0, {   818,    106}, {0xff, 0xff, 0xff, 0xff}}},
@@ -92,7 +92,7 @@ static const Vtx chain_chomp_seg6_vertex_06023D20[] = {
 };
 
 // 0x06023E10
-static const Vtx chain_chomp_seg6_vertex_06023E10[] = {
+ const Vtx chain_chomp_seg6_vertex_06023E10[] = {
     {{{     0,   -410,   -410}, 0, {  -290,   -308}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   291,   -410,   -290}, 0, {  -390,    142}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   157,   -536,   -156}, 0, {     4,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -111,7 +111,7 @@ static const Vtx chain_chomp_seg6_vertex_06023E10[] = {
 };
 
 // 0x06023F00
-static const Vtx chain_chomp_seg6_vertex_06023F00[] = {
+ const Vtx chain_chomp_seg6_vertex_06023F00[] = {
     {{{  -410,      0,   -410}, 0, {    44,   -372}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,   -581}, 0, {  -674,    -30}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -222,   -536}, 0, {  -548,   -222}, {0xff, 0xff, 0xff, 0xff}}},
@@ -205,7 +205,7 @@ const Gfx chain_chomp_seg6_dl_06024240[] = {
 };
 
 // 0x060242D0
-static const Vtx chain_chomp_seg6_vertex_060242D0[] = {
+ const Vtx chain_chomp_seg6_vertex_060242D0[] = {
     {{{   157,    537,    157}, 0, { -1116,    776}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   223,    537,      0}, 0, {  -898,    552}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    582,      0}, 0, { -1454,    552}, {0xff, 0xff, 0xff, 0xff}}},
@@ -223,7 +223,7 @@ static const Vtx chain_chomp_seg6_vertex_060242D0[] = {
 };
 
 // 0x060243B0
-static const Vtx chain_chomp_seg6_vertex_060243B0[] = {
+ const Vtx chain_chomp_seg6_vertex_060243B0[] = {
     {{{     0,    411,   -410}, 0, { -1306,    -34}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   291,    411,   -290}, 0, {  -624,    138}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   380,    223,   -379}, 0, {  -370,     10}, {0xff, 0xff, 0xff, 0xff}}},
@@ -243,7 +243,7 @@ static const Vtx chain_chomp_seg6_vertex_060243B0[] = {
 };
 
 // 0x060244B0
-static const Vtx chain_chomp_seg6_vertex_060244B0[] = {
+ const Vtx chain_chomp_seg6_vertex_060244B0[] = {
     {{{     0,    223,   -536}, 0, { -1262,   -214}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   411,      0,   -410}, 0, {  -280,    -34}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,   -581}, 0, { -1246,   -278}, {0xff, 0xff, 0xff, 0xff}}},
@@ -263,7 +263,7 @@ static const Vtx chain_chomp_seg6_vertex_060244B0[] = {
 };
 
 // 0x060245B0
-static const Vtx chain_chomp_seg6_vertex_060245B0[] = {
+ const Vtx chain_chomp_seg6_vertex_060245B0[] = {
     {{{  -290,    411,   -290}, 0, { -2076,    138}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    223,   -536}, 0, { -1262,   -214}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -379,    223,   -379}, 0, { -2266,     10}, {0xff, 0xff, 0xff, 0xff}}},
@@ -283,7 +283,7 @@ static const Vtx chain_chomp_seg6_vertex_060245B0[] = {
 };
 
 // 0x060246B0
-static const Vtx chain_chomp_seg6_vertex_060246B0[] = {
+ const Vtx chain_chomp_seg6_vertex_060246B0[] = {
     {{{     0,      0,   -581}, 0, {  1154,    138}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   582,      0,      0}, 0, {   470,   1104}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   411,      0,    411}, 0, {   -12,    822}, {0xff, 0xff, 0xff, 0xff}}},
@@ -366,13 +366,13 @@ const Gfx chain_chomp_seg6_dl_06024940[] = {
 };
 
 // 0x060249D0
-static const Lights1 chain_chomp_seg6_lights_060249D0 = gdSPDefLights1(
+ const Lights1 chain_chomp_seg6_lights_060249D0 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060249E8
-static const Vtx chain_chomp_seg6_vertex_060249E8[] = {
+ const Vtx chain_chomp_seg6_vertex_060249E8[] = {
     {{{   341,   -287,    410}, 0, {   990,      0}, {0x69, 0xe7, 0x41, 0xff}}},
     {{{   505,    -32,    246}, 0, {     0,    990}, {0x69, 0xe7, 0x41, 0xff}}},
     {{{   374,    -49,    450}, 0, {   990,    990}, {0x69, 0xe7, 0x41, 0xff}}},
@@ -419,7 +419,7 @@ const Gfx chain_chomp_seg6_dl_06024B00[] = {
 };
 
 // 0x06024B70
-static const Vtx chain_chomp_seg6_vertex_06024B70[] = {
+ const Vtx chain_chomp_seg6_vertex_06024B70[] = {
     {{{   568,     -6,      1}, 0, {  -466,    -52}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   458,    227,    139}, 0, {   756,    806}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   462,     -6,    263}, 0, {   652,   -626}, {0xff, 0xff, 0xff, 0xff}}},
@@ -438,7 +438,7 @@ static const Vtx chain_chomp_seg6_vertex_06024B70[] = {
 };
 
 // 0x06024C60
-static const Vtx chain_chomp_seg6_vertex_06024C60[] = {
+ const Vtx chain_chomp_seg6_vertex_06024C60[] = {
     {{{   284,     -6,    455}, 0, {  -250,    814}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   225,     72,    474}, 0, {   530,   1852}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   182,     -6,    494}, 0, {   764,    134}, {0xff, 0xff, 0xff, 0xff}}},
@@ -484,7 +484,7 @@ const Gfx chain_chomp_seg6_dl_06024D60[] = {
 };
 
 // 0x06024DD0
-static const Vtx chain_chomp_seg6_vertex_06024DD0[] = {
+ const Vtx chain_chomp_seg6_vertex_06024DD0[] = {
     {{{   462,      7,    263}, 0, {  1768,   -234}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   455,   -211,    139}, 0, {   702,   -864}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   568,      7,      1}, 0, {   294,    704}, {0xff, 0xff, 0xff, 0xff}}},
@@ -503,7 +503,7 @@ static const Vtx chain_chomp_seg6_vertex_06024DD0[] = {
 };
 
 // 0x06024EC0
-static const Vtx chain_chomp_seg6_vertex_06024EC0[] = {
+ const Vtx chain_chomp_seg6_vertex_06024EC0[] = {
     {{{   182,      7,    494}, 0, {   860,    726}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   225,    -71,    474}, 0, {   378,    266}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   284,      7,    455}, 0, {   288,   1474}, {0xff, 0xff, 0xff, 0xff}}},

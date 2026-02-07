@@ -1,19 +1,19 @@
 // Spiny Egg
 
 // 0x050144F8
-static const Lights1 spiny_egg_seg5_lights_050144F8 = gdSPDefLights1(
+ const Lights1 spiny_egg_seg5_lights_050144F8 = gdSPDefLights1(
     0x3f, 0x3f, 0x00,
     0xff, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05014510
-static const Lights1 spiny_egg_seg5_lights_05014510 = gdSPDefLights1(
+ const Lights1 spiny_egg_seg5_lights_05014510 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05014528
-static const Vtx spiny_egg_seg5_vertex_05014528[] = {
+ const Vtx spiny_egg_seg5_vertex_05014528[] = {
     {{{  -165,      0,      0}, 0, {     0,      0}, {0xe7, 0x3e, 0x95, 0x00}}},
     {{{  -100,     28,      0}, 0, {     0,      0}, {0xe7, 0x3e, 0x95, 0x00}}},
     {{{  -100,    -18,    -27}, 0, {     0,      0}, {0xe7, 0x3e, 0x95, 0x00}}},
@@ -26,7 +26,7 @@ static const Vtx spiny_egg_seg5_vertex_05014528[] = {
 };
 
 // 0x050145B8
-static const Vtx spiny_egg_seg5_vertex_050145B8[] = {
+ const Vtx spiny_egg_seg5_vertex_050145B8[] = {
     {{{   100,    -18,    -27}, 0, {     0,      0}, {0x19, 0x3e, 0x95, 0x00}}},
     {{{   100,     28,      0}, 0, {     0,      0}, {0x19, 0x3e, 0x95, 0x00}}},
     {{{   165,      0,      0}, 0, {     0,      0}, {0x19, 0x3e, 0x95, 0x00}}},
@@ -39,7 +39,7 @@ static const Vtx spiny_egg_seg5_vertex_050145B8[] = {
 };
 
 // 0x05014648
-static const Vtx spiny_egg_seg5_vertex_05014648[] = {
+ const Vtx spiny_egg_seg5_vertex_05014648[] = {
     {{{     0,    -32,    -87}, 0, {     0,      0}, {0x69, 0x24, 0xc5, 0x00}}},
     {{{    27,    -69,    -61}, 0, {     0,      0}, {0x69, 0x24, 0xc5, 0x00}}},
     {{{     0,    -94,   -124}, 0, {     0,      0}, {0x69, 0x24, 0xc5, 0x00}}},
@@ -52,7 +52,7 @@ static const Vtx spiny_egg_seg5_vertex_05014648[] = {
 };
 
 // 0x050146D8
-static const Vtx spiny_egg_seg5_vertex_050146D8[] = {
+ const Vtx spiny_egg_seg5_vertex_050146D8[] = {
     {{{     0,   -160,      0}, 0, {     0,      0}, {0x6a, 0xe9, 0x40, 0x00}}},
     {{{    27,    -95,    -20}, 0, {     0,      0}, {0x6a, 0xe9, 0x40, 0x00}}},
     {{{     0,    -95,     25}, 0, {     0,      0}, {0x6a, 0xe9, 0x40, 0x00}}},
@@ -65,7 +65,7 @@ static const Vtx spiny_egg_seg5_vertex_050146D8[] = {
 };
 
 // 0x05014768
-static const Vtx spiny_egg_seg5_vertex_05014768[] = {
+ const Vtx spiny_egg_seg5_vertex_05014768[] = {
     {{{     0,    -94,    124}, 0, {     0,      0}, {0x69, 0x24, 0x3b, 0x00}}},
     {{{    27,    -69,     61}, 0, {     0,      0}, {0x69, 0x24, 0x3b, 0x00}}},
     {{{     0,    -32,     87}, 0, {     0,      0}, {0x69, 0x24, 0x3b, 0x00}}},
@@ -78,7 +78,7 @@ static const Vtx spiny_egg_seg5_vertex_05014768[] = {
 };
 
 // 0x050147F8
-static const Vtx spiny_egg_seg5_vertex_050147F8[] = {
+ const Vtx spiny_egg_seg5_vertex_050147F8[] = {
     {{{     0,     32,     87}, 0, {     0,      0}, {0x69, 0xdc, 0x3b, 0x00}}},
     {{{    27,     69,     61}, 0, {     0,      0}, {0x69, 0xdc, 0x3b, 0x00}}},
     {{{     0,     94,    124}, 0, {     0,      0}, {0x69, 0xdc, 0x3b, 0x00}}},
@@ -91,7 +91,7 @@ static const Vtx spiny_egg_seg5_vertex_050147F8[] = {
 };
 
 // 0x05014888
-static const Vtx spiny_egg_seg5_vertex_05014888[] = {
+ const Vtx spiny_egg_seg5_vertex_05014888[] = {
     {{{     0,     95,     25}, 0, {     0,      0}, {0x6a, 0x17, 0x40, 0x00}}},
     {{{    27,     95,    -20}, 0, {     0,      0}, {0x6a, 0x17, 0x40, 0x00}}},
     {{{     0,    160,      0}, 0, {     0,      0}, {0x6a, 0x17, 0x40, 0x00}}},
@@ -104,7 +104,7 @@ static const Vtx spiny_egg_seg5_vertex_05014888[] = {
 };
 
 // 0x05014918
-static const Vtx spiny_egg_seg5_vertex_05014918[] = {
+ const Vtx spiny_egg_seg5_vertex_05014918[] = {
     {{{     0,     94,   -124}, 0, {     0,      0}, {0x69, 0xdc, 0xc5, 0x00}}},
     {{{    27,     69,    -61}, 0, {     0,      0}, {0x69, 0xdc, 0xc5, 0x00}}},
     {{{     0,     32,    -87}, 0, {     0,      0}, {0x69, 0xdc, 0xc5, 0x00}}},
@@ -117,7 +117,7 @@ static const Vtx spiny_egg_seg5_vertex_05014918[] = {
 };
 
 // 0x050149A8
-static const Vtx spiny_egg_seg5_vertex_050149A8[] = {
+ const Vtx spiny_egg_seg5_vertex_050149A8[] = {
     {{{    28,    -96,    -28}, 0, {     0,      0}, {0x22, 0x8b, 0xde, 0x00}}},
     {{{    39,    -96,      0}, 0, {     0,      0}, {0x30, 0x8b, 0x00, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -137,7 +137,7 @@ static const Vtx spiny_egg_seg5_vertex_050149A8[] = {
 };
 
 // 0x05014AA8
-static const Vtx spiny_egg_seg5_vertex_05014AA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014AA8[] = {
     {{{     0,    -96,    -39}, 0, {     0,      0}, {0x00, 0x8b, 0xd0, 0xff}}},
     {{{    28,    -96,    -28}, 0, {     0,      0}, {0x22, 0x8b, 0xde, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -157,7 +157,7 @@ static const Vtx spiny_egg_seg5_vertex_05014AA8[] = {
 };
 
 // 0x05014BA8
-static const Vtx spiny_egg_seg5_vertex_05014BA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014BA8[] = {
     {{{   -28,    -96,    -28}, 0, {     0,      0}, {0xde, 0x8b, 0xde, 0xff}}},
     {{{     0,    -96,    -39}, 0, {     0,      0}, {0x00, 0x8b, 0xd0, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -177,7 +177,7 @@ static const Vtx spiny_egg_seg5_vertex_05014BA8[] = {
 };
 
 // 0x05014CA8
-static const Vtx spiny_egg_seg5_vertex_05014CA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014CA8[] = {
     {{{   -39,    -96,      0}, 0, {     0,      0}, {0xd0, 0x8b, 0x00, 0xff}}},
     {{{   -28,    -96,    -28}, 0, {     0,      0}, {0xde, 0x8b, 0xde, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -197,7 +197,7 @@ static const Vtx spiny_egg_seg5_vertex_05014CA8[] = {
 };
 
 // 0x05014DA8
-static const Vtx spiny_egg_seg5_vertex_05014DA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014DA8[] = {
     {{{   -28,    -96,     28}, 0, {     0,      0}, {0xde, 0x8b, 0x22, 0xff}}},
     {{{   -39,    -96,      0}, 0, {     0,      0}, {0xd0, 0x8b, 0x00, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -217,7 +217,7 @@ static const Vtx spiny_egg_seg5_vertex_05014DA8[] = {
 };
 
 // 0x05014EA8
-static const Vtx spiny_egg_seg5_vertex_05014EA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014EA8[] = {
     {{{     0,    -96,     39}, 0, {     0,      0}, {0x00, 0x8b, 0x30, 0xff}}},
     {{{   -28,    -96,     28}, 0, {     0,      0}, {0xde, 0x8b, 0x22, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -237,7 +237,7 @@ static const Vtx spiny_egg_seg5_vertex_05014EA8[] = {
 };
 
 // 0x05014FA8
-static const Vtx spiny_egg_seg5_vertex_05014FA8[] = {
+ const Vtx spiny_egg_seg5_vertex_05014FA8[] = {
     {{{    28,    -96,     28}, 0, {     0,      0}, {0x22, 0x8b, 0x22, 0xff}}},
     {{{     0,    -96,     39}, 0, {     0,      0}, {0x00, 0x8b, 0x30, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -257,7 +257,7 @@ static const Vtx spiny_egg_seg5_vertex_05014FA8[] = {
 };
 
 // 0x050150A8
-static const Vtx spiny_egg_seg5_vertex_050150A8[] = {
+ const Vtx spiny_egg_seg5_vertex_050150A8[] = {
     {{{    39,    -96,      0}, 0, {     0,      0}, {0x30, 0x8b, 0x00, 0xff}}},
     {{{    28,    -96,     28}, 0, {     0,      0}, {0x22, 0x8b, 0x22, 0x00}}},
     {{{     0,   -104,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},

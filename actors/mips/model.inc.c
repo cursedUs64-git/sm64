@@ -1,24 +1,24 @@
 // Mips
 
 // 0x0600FB80
-ALIGNED8 static const Texture mips_seg6_texture_0600FB80[] = {
+ALIGNED8  const Texture mips_seg6_texture_0600FB80[] = {
 #include "actors/mips/mips_eyes.rgba16.inc.c"
 };
 
 // 0x06010380
-static const Lights1 mips_seg6_lights_06010380 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010380 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06010398
-static const Lights1 mips_seg6_lights_06010398 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010398 = gdSPDefLights1(
     0x0f, 0x0d, 0x04,
     0x27, 0x21, 0x0b, 0x28, 0x28, 0x28
 );
 
 // 0x060103B0
-static const Vtx mips_seg6_vertex_060103B0[] = {
+ const Vtx mips_seg6_vertex_060103B0[] = {
     {{{    60,     25,    -62}, 0, {  -146,  -1034}, {0x1d, 0x21, 0x8a, 0xff}}},
     {{{   102,     15,    -32}, 0, {   144,  -1598}, {0x65, 0x0d, 0xb5, 0xff}}},
     {{{    46,    -61,    -46}, 0, {     8,   -848}, {0x23, 0x9a, 0xbf, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx mips_seg6_vertex_060103B0[] = {
 };
 
 // 0x060104B0
-static const Vtx mips_seg6_vertex_060104B0[] = {
+ const Vtx mips_seg6_vertex_060104B0[] = {
     {{{   115,     13,      0}, 0, {   468,      0}, {0x74, 0x31, 0x00, 0xff}}},
     {{{    64,     56,    -13}, 0, {   308,    632}, {0x45, 0x59, 0xc6, 0xff}}},
     {{{    64,     56,     15}, 0, {   632,    632}, {0x44, 0x5a, 0x38, 0xff}}},
@@ -55,7 +55,7 @@ static const Vtx mips_seg6_vertex_060104B0[] = {
 };
 
 // 0x06010580
-static const Vtx mips_seg6_vertex_06010580[] = {
+ const Vtx mips_seg6_vertex_06010580[] = {
     {{{    45,     77,      0}, 0, {     0,      0}, {0xfb, 0x7e, 0xfe, 0xff}}},
     {{{    64,     56,     15}, 0, {     0,      0}, {0x44, 0x5a, 0x38, 0xff}}},
     {{{    64,     76,      0}, 0, {     0,      0}, {0x56, 0x5d, 0xfd, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx mips_seg6_vertex_06010580[] = {
 };
 
 // 0x060105C0
-static const Vtx mips_seg6_vertex_060105C0[] = {
+ const Vtx mips_seg6_vertex_060105C0[] = {
     {{{    -9,     52,     -5}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    11,     50,    -12}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    11,     50,     13}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -132,13 +132,13 @@ const Gfx mips_seg6_dl_060107B8[] = {
 };
 
 // 0x06010820
-static const Lights1 mips_seg6_lights_06010820 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010820 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06010838
-static const Vtx mips_seg6_vertex_06010838[] = {
+ const Vtx mips_seg6_vertex_06010838[] = {
     {{{   -23,    -21,    -59}, 0, { -1764,    666}, {0xde, 0xd3, 0x8f, 0xff}}},
     {{{   -48,    -27,    -16}, 0, { -2202,    640}, {0x94, 0x0a, 0xbf, 0xff}}},
     {{{   -16,     41,    -55}, 0, { -1306,   -124}, {0xe5, 0x4b, 0x9e, 0xff}}},
@@ -157,7 +157,7 @@ static const Vtx mips_seg6_vertex_06010838[] = {
 };
 
 // 0x06010928
-static const Vtx mips_seg6_vertex_06010928[] = {
+ const Vtx mips_seg6_vertex_06010928[] = {
     {{{    12,    -27,     49}, 0, { -1206,    880}, {0x38, 0xb6, 0x55, 0xff}}},
     {{{    33,    -39,      0}, 0, {  -928,   1112}, {0x38, 0x8f, 0x00, 0xff}}},
     {{{    64,    -13,      0}, 0, {  -292,    902}, {0x6b, 0xbd, 0x00, 0xff}}},
@@ -176,7 +176,7 @@ static const Vtx mips_seg6_vertex_06010928[] = {
 };
 
 // 0x06010A18
-static const Vtx mips_seg6_vertex_06010A18[] = {
+ const Vtx mips_seg6_vertex_06010A18[] = {
     {{{   -34,    -55,      0}, 0, { -2112,   1046}, {0x22, 0x86, 0x00, 0xff}}},
     {{{   -53,    -82,      0}, 0, { -2566,   1322}, {0x1f, 0x86, 0xff, 0xff}}},
     {{{   -75,    -36,    -40}, 0, { -2688,    648}, {0xde, 0x30, 0x90, 0xff}}},
@@ -240,19 +240,19 @@ const Gfx mips_seg6_dl_06010C40[] = {
 };
 
 // 0x06010CA0
-static const Lights1 mips_seg6_lights_06010CA0 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010CA0 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06010CB8
-static const Lights1 mips_seg6_lights_06010CB8 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010CB8 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06010CD0
-static const Vtx mips_seg6_vertex_06010CD0[] = {
+ const Vtx mips_seg6_vertex_06010CD0[] = {
     {{{     0,      0,    -26}, 0, { -1052,    990}, {0xc7, 0x5d, 0xc1, 0xff}}},
     {{{    76,      0,     41}, 0, {  -290,    990}, {0x18, 0x42, 0x69, 0xff}}},
     {{{    76,      0,    -39}, 0, {  -290,    990}, {0x1c, 0x12, 0x86, 0xff}}},
@@ -262,7 +262,7 @@ static const Vtx mips_seg6_vertex_06010CD0[] = {
 };
 
 // 0x06010D30
-static const Vtx mips_seg6_vertex_06010D30[] = {
+ const Vtx mips_seg6_vertex_06010D30[] = {
     {{{   -11,    -30,      0}, 0, { -1168,    680}, {0xbc, 0x96, 0xfe, 0xff}}},
     {{{     0,      0,    -26}, 0, { -1052,    990}, {0xc7, 0x5d, 0xc1, 0xff}}},
     {{{    76,      0,    -39}, 0, {  -290,    990}, {0x1c, 0x12, 0x86, 0xff}}},
@@ -310,25 +310,25 @@ const Gfx mips_seg6_dl_06010E60[] = {
 };
 
 // 0x06010EC0
-static const Lights1 mips_seg6_lights_06010EC0 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010EC0 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06010ED8
-static const Lights1 mips_seg6_lights_06010ED8 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010ED8 = gdSPDefLights1(
     0x35, 0x38, 0x00,
     0x85, 0x8e, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06010EF0
-static const Lights1 mips_seg6_lights_06010EF0 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06010EF0 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06010F08
-static const Vtx mips_seg6_vertex_06010F08[] = {
+ const Vtx mips_seg6_vertex_06010F08[] = {
     {{{     1,      0,    -13}, 0, {   -52,   2012}, {0xbe, 0x5f, 0xcf, 0xff}}},
     {{{     1,      0,     15}, 0, {   -52,   2012}, {0xa0, 0x2f, 0x43, 0xff}}},
     {{{    80,      0,     28}, 0, {   702,   2122}, {0x35, 0x2d, 0x69, 0xff}}},
@@ -337,14 +337,14 @@ static const Vtx mips_seg6_vertex_06010F08[] = {
 };
 
 // 0x06010F58
-static const Vtx mips_seg6_vertex_06010F58[] = {
+ const Vtx mips_seg6_vertex_06010F58[] = {
     {{{    -2,    -19,      0}, 0, {   -72,   1382}, {0xbc, 0x96, 0xfe, 0xff}}},
     {{{     1,      0,     15}, 0, {   -52,   2012}, {0xa0, 0x2f, 0x43, 0xff}}},
     {{{     1,      0,    -13}, 0, {   -52,   2012}, {0xbe, 0x5f, 0xcf, 0xff}}},
 };
 
 // 0x06010F88
-static const Vtx mips_seg6_vertex_06010F88[] = {
+ const Vtx mips_seg6_vertex_06010F88[] = {
     {{{    -2,    -19,      0}, 0, {   -72,   1382}, {0xbc, 0x96, 0xfe, 0xff}}},
     {{{    80,      0,    -26}, 0, {   702,   2122}, {0x39, 0x02, 0x8f, 0xff}}},
     {{{    79,    -32,      0}, 0, {   714,   1108}, {0x33, 0x8d, 0xff, 0xff}}},
@@ -394,19 +394,19 @@ const Gfx mips_seg6_dl_060110B0[] = {
 };
 
 // 0x06011110
-static const Lights1 mips_seg6_lights_06011110 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011110 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06011128
-static const Lights1 mips_seg6_lights_06011128 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011128 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06011140
-static const Vtx mips_seg6_vertex_06011140[] = {
+ const Vtx mips_seg6_vertex_06011140[] = {
     {{{    87,      0,     55}, 0, {   732,   2272}, {0x2d, 0x46, 0x5f, 0xff}}},
     {{{   126,      0,      1}, 0, {  1082,   2254}, {0x7c, 0xe7, 0x00, 0xff}}},
     {{{    87,      0,    -52}, 0, {   732,   2272}, {0x1e, 0x66, 0xbc, 0xff}}},
@@ -416,7 +416,7 @@ static const Vtx mips_seg6_vertex_06011140[] = {
 };
 
 // 0x060111A0
-static const Vtx mips_seg6_vertex_060111A0[] = {
+ const Vtx mips_seg6_vertex_060111A0[] = {
     {{{   -19,    -20,     -3}, 0, {  -238,   1860}, {0x83, 0xf0, 0xfb, 0xff}}},
     {{{     0,    -38,     28}, 0, {   -54,   1464}, {0xcc, 0x97, 0x2e, 0xff}}},
     {{{     0,      0,     41}, 0, {   -58,   2302}, {0xbd, 0x3f, 0x56, 0xff}}},
@@ -468,19 +468,19 @@ const Gfx mips_seg6_dl_06011310[] = {
 };
 
 // 0x06011370
-static const Lights1 mips_seg6_lights_06011370 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011370 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06011388
-static const Lights1 mips_seg6_lights_06011388 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011388 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060113A0
-static const Vtx mips_seg6_vertex_060113A0[] = {
+ const Vtx mips_seg6_vertex_060113A0[] = {
     {{{    54,      0,    -35}, 0, {  -112,    464}, {0x5e, 0xf7, 0xac, 0xff}}},
     {{{    54,      0,     41}, 0, {  -112,    464}, {0x68, 0x18, 0x43, 0xff}}},
     {{{    49,    -37,      3}, 0, {  -288,     54}, {0x40, 0x93, 0x00, 0xff}}},
@@ -489,7 +489,7 @@ static const Vtx mips_seg6_vertex_060113A0[] = {
 };
 
 // 0x060113F0
-static const Vtx mips_seg6_vertex_060113F0[] = {
+ const Vtx mips_seg6_vertex_060113F0[] = {
     {{{    -2,     52,     24}, 0, {  -756,   1148}, {0xb6, 0x2a, 0x5e, 0xff}}},
     {{{    -2,     52,    -19}, 0, {  -756,   1148}, {0xe0, 0x50, 0xa4, 0xff}}},
     {{{   -14,     13,      2}, 0, { -1032,    740}, {0x86, 0xdf, 0x00, 0xff}}},
@@ -538,19 +538,19 @@ const Gfx mips_seg6_dl_06011520[] = {
 };
 
 // 0x06011580
-static const Lights1 mips_seg6_lights_06011580 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011580 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06011598
-static const Lights1 mips_seg6_lights_06011598 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011598 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060115B0
-static const Vtx mips_seg6_vertex_060115B0[] = {
+ const Vtx mips_seg6_vertex_060115B0[] = {
     {{{    87,      0,    -54}, 0, {  1972,    878}, {0x2d, 0x46, 0xa1, 0xff}}},
     {{{     0,      0,    -40}, 0, {  3460,    788}, {0xbd, 0x3f, 0xaa, 0xff}}},
     {{{    87,      0,     53}, 0, {  1972,    878}, {0x1e, 0x66, 0x44, 0xff}}},
@@ -560,7 +560,7 @@ static const Vtx mips_seg6_vertex_060115B0[] = {
 };
 
 // 0x06011610
-static const Vtx mips_seg6_vertex_06011610[] = {
+ const Vtx mips_seg6_vertex_06011610[] = {
     {{{     0,      0,    -40}, 0, {  3460,    788}, {0xbd, 0x3f, 0xaa, 0xff}}},
     {{{    87,      0,    -54}, 0, {  1972,    878}, {0x2d, 0x46, 0xa1, 0xff}}},
     {{{    89,    -42,    -20}, 0, {  1906,    290}, {0x2b, 0xa1, 0xb9, 0xff}}},
@@ -612,19 +612,19 @@ const Gfx mips_seg6_dl_06011780[] = {
 };
 
 // 0x060117E0
-static const Lights1 mips_seg6_lights_060117E0 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_060117E0 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060117F8
-static const Lights1 mips_seg6_lights_060117F8 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_060117F8 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06011810
-static const Vtx mips_seg6_vertex_06011810[] = {
+ const Vtx mips_seg6_vertex_06011810[] = {
     {{{    49,    -37,     -2}, 0, {  -516,    -60}, {0x40, 0x93, 0x00, 0xff}}},
     {{{    54,      0,    -40}, 0, {  -564,   -446}, {0x68, 0x18, 0xbd, 0xff}}},
     {{{    54,      0,     36}, 0, {  -564,    330}, {0x5e, 0xf7, 0x54, 0xff}}},
@@ -633,7 +633,7 @@ static const Vtx mips_seg6_vertex_06011810[] = {
 };
 
 // 0x06011860
-static const Vtx mips_seg6_vertex_06011860[] = {
+ const Vtx mips_seg6_vertex_06011860[] = {
     {{{   -14,     13,     -1}, 0, {   120,    -56}, {0x86, 0xdf, 0x00, 0xff}}},
     {{{    -2,     52,     20}, 0, {     2,    164}, {0xe0, 0x50, 0x5c, 0xff}}},
     {{{    -2,     52,    -23}, 0, {     2,   -268}, {0xb6, 0x2a, 0xa2, 0xff}}},
@@ -682,19 +682,19 @@ const Gfx mips_seg6_dl_06011990[] = {
 };
 
 // 0x060119F0
-static const Lights1 mips_seg6_lights_060119F0 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_060119F0 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06011A08
-static const Lights1 mips_seg6_lights_06011A08 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011A08 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06011A20
-static const Vtx mips_seg6_vertex_06011A20[] = {
+ const Vtx mips_seg6_vertex_06011A20[] = {
     {{{    76,      0,     40}, 0, {  -628,    934}, {0x1c, 0x11, 0x7a, 0xff}}},
     {{{    76,      0,    -40}, 0, {  -628,    934}, {0x18, 0x42, 0x97, 0xff}}},
     {{{     0,      0,     27}, 0, { -1998,    894}, {0xc6, 0x5d, 0x3f, 0xff}}},
@@ -704,7 +704,7 @@ static const Vtx mips_seg6_vertex_06011A20[] = {
 };
 
 // 0x06011A80
-static const Vtx mips_seg6_vertex_06011A80[] = {
+ const Vtx mips_seg6_vertex_06011A80[] = {
     {{{   -19,     -8,      0}, 0, { -2378,    732}, {0x84, 0x19, 0x00, 0xff}}},
     {{{   -11,    -30,      0}, 0, { -2264,    358}, {0xbc, 0x95, 0x00, 0xff}}},
     {{{     0,      0,     27}, 0, { -1998,    894}, {0xc6, 0x5d, 0x3f, 0xff}}},
@@ -752,19 +752,19 @@ const Gfx mips_seg6_dl_06011BB0[] = {
 };
 
 // 0x06011C10
-static const Lights1 mips_seg6_lights_06011C10 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011C10 = gdSPDefLights1(
     0x3c, 0x3c, 0x00,
     0x96, 0x96, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06011C28
-static const Lights1 mips_seg6_lights_06011C28 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011C28 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06011C40
-static const Vtx mips_seg6_vertex_06011C40[] = {
+ const Vtx mips_seg6_vertex_06011C40[] = {
     {{{    94,    -14,      0}, 0, {   -84,    658}, {0x7d, 0xeb, 0x00, 0xff}}},
     {{{    80,      0,    -27}, 0, {  -338,    952}, {0x35, 0x2f, 0x97, 0xff}}},
     {{{    80,      0,     27}, 0, {  -338,    952}, {0x39, 0xff, 0x71, 0xff}}},
@@ -774,7 +774,7 @@ static const Vtx mips_seg6_vertex_06011C40[] = {
 };
 
 // 0x06011CA0
-static const Vtx mips_seg6_vertex_06011CA0[] = {
+ const Vtx mips_seg6_vertex_06011CA0[] = {
     {{{    94,    -14,      0}, 0, {   -84,    658}, {0x7d, 0xeb, 0x00, 0xff}}},
     {{{    79,    -32,      0}, 0, {  -312,    302}, {0x33, 0x8d, 0x00, 0xff}}},
     {{{    80,      0,    -27}, 0, {  -338,    952}, {0x35, 0x2f, 0x97, 0xff}}},
@@ -820,13 +820,13 @@ const Gfx mips_seg6_dl_06011DB0[] = {
 };
 
 // 0x06011E10
-static const Lights1 mips_seg6_lights_06011E10 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011E10 = gdSPDefLights1(
     0x34, 0x2c, 0x0f,
     0x82, 0x6e, 0x26, 0x28, 0x28, 0x28
 );
 
 // 0x06011E28
-static const Vtx mips_seg6_vertex_06011E28[] = {
+ const Vtx mips_seg6_vertex_06011E28[] = {
     {{{    51,    -16,    -11}, 0, {     0,      0}, {0xf1, 0xb5, 0x9b, 0xff}}},
     {{{    51,    -16,     13}, 0, {     0,      0}, {0xf2, 0x93, 0x3e, 0xff}}},
     {{{     0,    -12,     -6}, 0, {     0,      0}, {0xf2, 0xb5, 0x9c, 0xff}}},
@@ -855,13 +855,13 @@ const Gfx mips_seg6_dl_06011ED8[] = {
 };
 
 // 0x06011EF8
-static const Lights1 mips_seg6_lights_06011EF8 = gdSPDefLights1(
+ const Lights1 mips_seg6_lights_06011EF8 = gdSPDefLights1(
     0x34, 0x2c, 0x0f,
     0x82, 0x6e, 0x26, 0x28, 0x28, 0x28
 );
 
 // 0x06011F10
-static const Vtx mips_seg6_vertex_06011F10[] = {
+ const Vtx mips_seg6_vertex_06011F10[] = {
     {{{     0,    -12,     -7}, 0, {     0,      0}, {0xf3, 0xe8, 0x85, 0xff}}},
     {{{     0,     10,      0}, 0, {     0,      0}, {0xe7, 0x7c, 0x00, 0xff}}},
     {{{    53,     21,      0}, 0, {     0,      0}, {0xe6, 0x7c, 0x00, 0xff}}},

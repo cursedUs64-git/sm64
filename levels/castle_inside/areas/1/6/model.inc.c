@@ -1,11 +1,11 @@
 // 0x0702A8F0 - 0x0702A908
-static const Lights1 inside_castle_seg7_lights_0702A8F0 = gdSPDefLights1(
+ const Lights1 inside_castle_seg7_lights_0702A8F0 = gdSPDefLights1(
     0x5f, 0x5f, 0x5f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0702A908 - 0x0702A998
-static const Vtx inside_castle_seg7_vertex_0702A908[] = {
+ const Vtx inside_castle_seg7_vertex_0702A908[] = {
     {{{  -757,    -50,    717}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -1023,    -50,    983}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -757,    -50,    983}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx inside_castle_seg7_vertex_0702A908[] = {
 };
 
 // 0x0702A998 - 0x0702AA10
-static const Gfx inside_castle_seg7_dl_0702A998[] = {
+ const Gfx inside_castle_seg7_dl_0702A998[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_castle_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

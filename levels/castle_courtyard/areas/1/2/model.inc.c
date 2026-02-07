@@ -1,5 +1,5 @@
 // 0x07005110 - 0x07005200
-static const Vtx castle_courtyard_seg7_vertex_07005110[] = {
+ const Vtx castle_courtyard_seg7_vertex_07005110[] = {
     {{{  -921,     20,  -3526}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -716,     20,  -3526}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -716,     20,  -3731}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx castle_courtyard_seg7_vertex_07005110[] = {
 };
 
 // 0x07005200 - 0x070052F0
-static const Vtx castle_courtyard_seg7_vertex_07005200[] = {
+ const Vtx castle_courtyard_seg7_vertex_07005200[] = {
     {{{  2662,   -204,  -1417}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2867,   -204,  -1417}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2867,   -204,  -1621}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx castle_courtyard_seg7_vertex_07005200[] = {
 };
 
 // 0x070052F0 - 0x070053E0
-static const Vtx castle_courtyard_seg7_vertex_070052F0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070052F0[] = {
     {{{ -1966,   -204,     52}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1761,   -204,   -152}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1966,   -204,   -152}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx castle_courtyard_seg7_vertex_070052F0[] = {
 };
 
 // 0x070053E0 - 0x070054D0
-static const Vtx castle_courtyard_seg7_vertex_070053E0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070053E0[] = {
     {{{ -2920,   -204,  -1217}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2715,   -204,  -1217}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2715,   -204,  -1422}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -75,7 +75,7 @@ static const Vtx castle_courtyard_seg7_vertex_070053E0[] = {
 };
 
 // 0x070054D0 - 0x07005550
-static const Vtx castle_courtyard_seg7_vertex_070054D0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070054D0[] = {
     {{{ -2822,   -204,  -2076}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2617,   -204,  -2281}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2822,   -204,  -2281}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -87,7 +87,7 @@ static const Vtx castle_courtyard_seg7_vertex_070054D0[] = {
 };
 
 // 0x07005550 - 0x07005698
-static const Gfx castle_courtyard_seg7_dl_07005550[] = {
+ const Gfx castle_courtyard_seg7_dl_07005550[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, outside_0900BC00),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

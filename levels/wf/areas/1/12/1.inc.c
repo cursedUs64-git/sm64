@@ -1,11 +1,11 @@
 // 0x070092F0 - 0x07009308
-static const Lights1 wf_seg7_lights_070092F0 = gdSPDefLights1(
+ const Lights1 wf_seg7_lights_070092F0 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07009308 - 0x070093F8
-static const Vtx wf_seg7_vertex_07009308[] = {
+ const Vtx wf_seg7_vertex_07009308[] = {
     {{{  -255,    282,  -1151}, 0, {  4822,      0}, {0x08, 0x7b, 0x1c, 0xff}}},
     {{{  -127,    160,   -654}, 0, {  3800,    224}, {0x08, 0x7b, 0x1c, 0xff}}},
     {{{     0,    180,   -778}, 0, {  4052,    478}, {0x08, 0x7b, 0x1c, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx wf_seg7_vertex_07009308[] = {
 };
 
 // 0x070093F8 - 0x070094E8
-static const Vtx wf_seg7_vertex_070093F8[] = {
+ const Vtx wf_seg7_vertex_070093F8[] = {
     {{{   256,   -281,   1152}, 0, {    88,    990}, {0x0a, 0x7c, 0x15, 0xff}}},
     {{{   128,   -194,    713}, 0, {   980,    734}, {0x0a, 0x7c, 0x15, 0xff}}},
     {{{  -127,   -193,    837}, 0, {   740,    224}, {0x0a, 0x7c, 0x15, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx wf_seg7_vertex_070093F8[] = {
 };
 
 // 0x070094E8 - 0x070095D8
-static const Vtx wf_seg7_vertex_070094E8[] = {
+ const Vtx wf_seg7_vertex_070094E8[] = {
     {{{   256,   -281,   1152}, 0, {    88,    990}, {0xf6, 0x7b, 0x1b, 0xff}}},
     {{{   128,     28,   -281}, 0, {  3014,    734}, {0xf6, 0x7b, 0x1b, 0xff}}},
     {{{   128,   -194,    713}, 0, {   980,    734}, {0xf6, 0x7b, 0x1b, 0xff}}},
@@ -62,7 +62,7 @@ static const Vtx wf_seg7_vertex_070094E8[] = {
 };
 
 // 0x070095D8 - 0x07009698
-static const Vtx wf_seg7_vertex_070095D8[] = {
+ const Vtx wf_seg7_vertex_070095D8[] = {
     {{{  -127,    160,   -654}, 0, {  3800,    224}, {0x06, 0x7b, 0x1a, 0xff}}},
     {{{     0,     99,   -405}, 0, {  3290,    478}, {0x06, 0x7b, 0x1a, 0xff}}},
     {{{     0,    180,   -778}, 0, {  4052,    478}, {0x06, 0x7b, 0x1a, 0xff}}},
@@ -78,7 +78,7 @@ static const Vtx wf_seg7_vertex_070095D8[] = {
 };
 
 // 0x07009698 - 0x07009780
-static const Gfx wf_seg7_dl_07009698[] = {
+ const Gfx wf_seg7_dl_07009698[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

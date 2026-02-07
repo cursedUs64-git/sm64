@@ -1,5 +1,5 @@
 // 0x07007C98 - 0x07007D18
-static const Vtx bits_seg7_vertex_07007C98[] = {
+ const Vtx bits_seg7_vertex_07007C98[] = {
     {{{   717,      0,    307}, 0, {  6270,   6268}, {0x44, 0x53, 0x41, 0xff}}},
     {{{  -716,      0,    307}, 0, {  3886,   3884}, {0x44, 0x53, 0x41, 0xff}}},
     {{{  -716,      0,   -306}, 0, {  2864,   4906}, {0x44, 0x53, 0x41, 0xff}}},
@@ -11,7 +11,7 @@ static const Vtx bits_seg7_vertex_07007C98[] = {
 };
 
 // 0x07007D18 - 0x07007E18
-static const Vtx bits_seg7_vertex_07007D18[] = {
+ const Vtx bits_seg7_vertex_07007D18[] = {
     {{{   717,    205,   -306}, 0, {     0,      0}, {0x6e, 0x7c, 0x6c, 0xff}}},
     {{{   717,      0,   -306}, 0, {     0,    990}, {0x6e, 0x7c, 0x6c, 0xff}}},
     {{{  -716,      0,   -306}, 0, {  6120,    990}, {0x6e, 0x7c, 0x6c, 0xff}}},
@@ -31,7 +31,7 @@ static const Vtx bits_seg7_vertex_07007D18[] = {
 };
 
 // 0x07007E18 - 0x07007E60
-static const Gfx bits_seg7_dl_07007E18[] = {
+ const Gfx bits_seg7_dl_07007E18[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09007000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -42,7 +42,7 @@ static const Gfx bits_seg7_dl_07007E18[] = {
 };
 
 // 0x07007E60 - 0x07007EC8
-static const Gfx bits_seg7_dl_07007E60[] = {
+ const Gfx bits_seg7_dl_07007E60[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bits_seg7_texture_07001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

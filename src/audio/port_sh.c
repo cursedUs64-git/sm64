@@ -288,7 +288,7 @@ void func_802ad770(u32 arg0, s8 arg1) {
 char shindouDebugPrint133[] = "AudioSend: %d -> %d (%d)\n";
 
 void func_sh_802F64C8(void) {
-    static s32 D_SH_8031503C = 0;
+     s32 D_SH_8031503C = 0;
     s32 mesg;
 
     if (((D_SH_80350F18 - D_SH_80350F19 + 0x100) & 0xff) > D_SH_8031503C) {
@@ -309,13 +309,13 @@ void func_802ad7ec(u32 arg0) {
     struct SequenceChannel *chan;
     u8 end;
 
-    UNUSED static char shindouDebugPrint134[] = "Continue Port\n";
-    UNUSED static char shindouDebugPrint135[] = "%d -> %d\n";
-    UNUSED static char shindouDebugPrint136[] = "Sync-Frame  Break. (Remain %d)\n";
-    UNUSED static char shindouDebugPrint137[] = "Undefined Port Command %d\n";
+    UNUSED  char shindouDebugPrint134[] = "Continue Port\n";
+    UNUSED  char shindouDebugPrint135[] = "%d -> %d\n";
+    UNUSED  char shindouDebugPrint136[] = "Sync-Frame  Break. (Remain %d)\n";
+    UNUSED  char shindouDebugPrint137[] = "Undefined Port Command %d\n";
 
-    static u8 D_SH_80315098 = 0;
-    static u8 D_SH_8031509C = 0;
+     u8 D_SH_80315098 = 0;
+     u8 D_SH_8031509C = 0;
 
     if (D_SH_8031509C == 0) {
         D_SH_80315098 = (arg0 >> 8) & 0xff;

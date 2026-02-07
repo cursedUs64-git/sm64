@@ -1,5 +1,5 @@
 // 0x07008E80 - 0x07008F70
-static const Vtx vcutm_seg7_vertex_07008E80[] = {
+ const Vtx vcutm_seg7_vertex_07008E80[] = {
     {{{     0,  -6553,   6554}, 0, { -6160,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{ -6553,  -6553,   6554}, 0, { 10188,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{ -6553,  -4505,   6554}, 0, { 10188,   4054}, {0x99, 0x99, 0x99, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx vcutm_seg7_vertex_07008E80[] = {
 };
 
 // 0x07008F70 - 0x07009060
-static const Vtx vcutm_seg7_vertex_07008F70[] = {
+ const Vtx vcutm_seg7_vertex_07008F70[] = {
     {{{ -1637,  -6553,  -6553}, 0, {     0,   3032}, {0x00, 0x00, 0x00, 0xff}}},
     {{{     0,  -4505,  -6553}, 0, {  4056,  -2076}, {0x99, 0x99, 0x99, 0xff}}},
     {{{ -1637,  -4505,  -6553}, 0, {     0,  -2076}, {0x99, 0x99, 0x99, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx vcutm_seg7_vertex_07008F70[] = {
 };
 
 // 0x07009060 - 0x07009140
-static const Vtx vcutm_seg7_vertex_07009060[] = {
+ const Vtx vcutm_seg7_vertex_07009060[] = {
     {{{  3738,  -6553,  -5938}, 0, {  4568,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  4915,  -4505,  -5938}, 0, {  7632,   4054}, {0x99, 0x99, 0x99, 0xff}}},
     {{{  3738,  -4505,  -5938}, 0, {  4568,   4054}, {0x99, 0x99, 0x99, 0xff}}},
@@ -55,7 +55,7 @@ static const Vtx vcutm_seg7_vertex_07009060[] = {
 };
 
 // 0x07009140 - 0x07009230
-static const Vtx vcutm_seg7_vertex_07009140[] = {
+ const Vtx vcutm_seg7_vertex_07009140[] = {
     {{{ -6553,  -6553,   6554}, 0, { -6160,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{ -6553,  -6553,   1638}, 0, {  6100,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{ -6553,  -4505,   1638}, 0, {  6100,   4054}, {0xff, 0xff, 0xff, 0xff}}},
@@ -74,7 +74,7 @@ static const Vtx vcutm_seg7_vertex_07009140[] = {
 };
 
 // 0x07009230 - 0x070092A0
-static const Vtx vcutm_seg7_vertex_07009230[] = {
+ const Vtx vcutm_seg7_vertex_07009230[] = {
     {{{  4915,  -6553,  -5938}, 0, { -6672,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  4915,  -6553,      0}, 0, {  8144,   9164}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  4915,  -4505,      0}, 0, {  8144,   4054}, {0xff, 0xff, 0xff, 0xff}}},
@@ -85,7 +85,7 @@ static const Vtx vcutm_seg7_vertex_07009230[] = {
 };
 
 // 0x070092A0 - 0x070093E8
-static const Gfx vcutm_seg7_dl_070092A0[] = {
+ const Gfx vcutm_seg7_dl_070092A0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, vcutm_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

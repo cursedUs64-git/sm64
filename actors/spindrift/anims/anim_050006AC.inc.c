@@ -1,5 +1,5 @@
 // 0x050003D8
-static const s16 spindrift_seg5_animvalue_050003D8[] = {
+ const s16 spindrift_seg5_animvalue_050003D8[] = {
     0x0000, 0x00EC, 0x00EC, 0x00EE, 0x00F1, 0x00F5, 0x00F8, 0x00FC,
     0x00FF, 0x0101, 0x0101, 0x0101, 0x00FF, 0x00FD, 0x00FA, 0x00F6,
     0x00F3, 0x00F0, 0x00EE, 0x00EC, 0x00EC, 0x3FFF, 0x0000, 0x0D79,
@@ -37,7 +37,7 @@ static const s16 spindrift_seg5_animvalue_050003D8[] = {
 };
 
 // 0x050005F8
-static const u16 spindrift_seg5_animindex_050005F8[] = {
+ const u16 spindrift_seg5_animindex_050005F8[] = {
     0x0001, 0x0000, 0x0014, 0x0001, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0015, 0x0001, 0x0000,
     0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x010F,
     0x0001, 0x0000, 0x0014, 0x00E7, 0x0014, 0x00FB,
@@ -55,7 +55,7 @@ static const u16 spindrift_seg5_animindex_050005F8[] = {
 };
 
 // 0x050006AC
-static const struct Animation spindrift_seg5_anim_050006AC = {
+ const struct Animation spindrift_seg5_anim_050006AC = {
     0,
     0,
     0,
@@ -69,30 +69,30 @@ static const struct Animation spindrift_seg5_anim_050006AC = {
 
 
 // False Bin ID?
-UNUSED static const u64 spindrift_unused_1 = 1;
+UNUSED  const u64 spindrift_unused_1 = 1;
 
 // 0x050006D0
-ALIGNED8 static const Texture spindrift_seg5_texture_050006D0[] = {
+ALIGNED8  const Texture spindrift_seg5_texture_050006D0[] = {
 #include "actors/spindrift/spindrift_face.rgba16.inc.c"
 };
 
 // 0x05000ED0
-ALIGNED8 static const Texture spindrift_seg5_texture_05000ED0[] = {
+ALIGNED8  const Texture spindrift_seg5_texture_05000ED0[] = {
 #include "actors/spindrift/spindrift_petal.rgba16.inc.c"
 };
 
 // 0x050016D0
-ALIGNED8 static const Texture spindrift_seg5_texture_050016D0[] = {
+ALIGNED8  const Texture spindrift_seg5_texture_050016D0[] = {
 #include "actors/spindrift/spindrift_leaf.rgba16.inc.c"
 };
 
 // 0x05001ED0
-ALIGNED8 static const Texture spindrift_seg5_texture_05001ED0[] = {
+ALIGNED8  const Texture spindrift_seg5_texture_05001ED0[] = {
 #include "actors/spindrift/spindrift_head.rgba16.inc.c"
 };
 
 // 0x050026D0
-static const Vtx spindrift_seg5_vertex_050026D0[] = {
+ const Vtx spindrift_seg5_vertex_050026D0[] = {
     {{{   -54,    -54,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    56,     56,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -54,     56,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -128,7 +128,7 @@ const Gfx spindrift_seg5_dl_05002748[] = {
 };
 
 // 0x050027B8
-static const Vtx spindrift_seg5_vertex_050027B8[] = {
+ const Vtx spindrift_seg5_vertex_050027B8[] = {
     {{{    27,   -112,    -47}, 0, {   -36,    520}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    27,   -112,     48}, 0, {   990,    520}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -32,   -112,    -47}, 0, {   -36,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -164,7 +164,7 @@ const Gfx spindrift_seg5_dl_05002830[] = {
 };
 
 // 0x050028A0
-static const Vtx spindrift_seg5_vertex_050028A0[] = {
+ const Vtx spindrift_seg5_vertex_050028A0[] = {
     {{{    36,   -109,    -44}, 0, {   -30,    572}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    83,    -79,      0}, 0, {   480,   1092}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    36,   -109,     45}, 0, {   990,    572}, {0xff, 0xff, 0xff, 0xff}}},
@@ -199,13 +199,13 @@ const Gfx spindrift_seg5_dl_05002900[] = {
 };
 
 // 0x05002970
-static const Lights1 spindrift_seg5_lights_05002970 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05002970 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05002988
-static const Vtx spindrift_seg5_vertex_05002988[] = {
+ const Vtx spindrift_seg5_vertex_05002988[] = {
     {{{    19,     22,    102}, 0, {   196,   1200}, {0x90, 0x25, 0x2e, 0xff}}},
     {{{    13,     -6,      4}, 0, {  1032,    456}, {0x92, 0x3e, 0xf5, 0xff}}},
     {{{   -20,    -53,     69}, 0, {   250,   -194}, {0x90, 0x25, 0x2e, 0xff}}},
@@ -243,13 +243,13 @@ const Gfx spindrift_seg5_dl_05002A20[] = {
 };
 
 // 0x05002A80
-static const Lights1 spindrift_seg5_lights_05002A80 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05002A80 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05002A98
-static const Vtx spindrift_seg5_vertex_05002A98[] = {
+ const Vtx spindrift_seg5_vertex_05002A98[] = {
     {{{     0,    -33,    -69}, 0, {   514,   1102}, {0xa0, 0x40, 0xcd, 0xff}}},
     {{{    13,     -2,      0}, 0, {  1070,    398}, {0x9c, 0x4c, 0xf1, 0xff}}},
     {{{    53,     33,    -86}, 0, {   138,   -146}, {0xa0, 0x40, 0xcd, 0xff}}},
@@ -287,13 +287,13 @@ const Gfx spindrift_seg5_dl_05002B30[] = {
 };
 
 // 0x05002B90
-static const Lights1 spindrift_seg5_lights_05002B90 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05002B90 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05002BA8
-static const Vtx spindrift_seg5_vertex_05002BA8[] = {
+ const Vtx spindrift_seg5_vertex_05002BA8[] = {
     {{{    28,     -6,     21}, 0, {   474,   1104}, {0x7e, 0xfd, 0x0b, 0xff}}},
     {{{    42,    -20,   -134}, 0, {  -192,      0}, {0x7e, 0xfd, 0x0b, 0xff}}},
     {{{    42,     98,    -96}, 0, {  1152,      0}, {0x7e, 0xfd, 0x0b, 0xff}}},

@@ -1,13 +1,13 @@
 // Test Platform (small tiny platform 1/4th the size of a box. Probably used in early modeling tests?)
 
 // 0x08026008
-static const Lights1 unknown_seg8_lights_08026008 = gdSPDefLights1(
+ const Lights1 unknown_seg8_lights_08026008 = gdSPDefLights1(
     0x32, 0x32, 0x07,
     0xc8, 0xc8, 0x1e, 0x28, 0x28, 0x28
 );
 
 // 0x08026020
-static const Vtx unknown_seg8_vertex_08026020[] = {
+ const Vtx unknown_seg8_vertex_08026020[] = {
     {{{   200,   -100,    200}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{   200,   -100,   -200}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{   200,      0,   -200}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -26,7 +26,7 @@ static const Vtx unknown_seg8_vertex_08026020[] = {
 };
 
 // 0x08026110
-static const Vtx unknown_seg8_vertex_08026110[] = {
+ const Vtx unknown_seg8_vertex_08026110[] = {
     {{{  -200,      0,   -200}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{   200,      0,   -200}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{  -200,   -100,   -200}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
@@ -45,7 +45,7 @@ static const Vtx unknown_seg8_vertex_08026110[] = {
 };
 
 // 0x08026200
-static const Vtx unknown_seg8_vertex_08026200[] = {
+ const Vtx unknown_seg8_vertex_08026200[] = {
     {{{   200,   -100,    200}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   200,      0,    200}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{  -200,   -100,    200}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},

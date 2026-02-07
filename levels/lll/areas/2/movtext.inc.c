@@ -21,7 +21,7 @@ const Gfx lll_dl_lava_floor[] = {
     gsSPEndDisplayList(),
 };
 
-static Movtex lll_movtex_volcano_floor_lava_data[] = {
+ Movtex lll_movtex_volcano_floor_lava_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    8),
     MOV_TEX_ROT_SCALE(    5),

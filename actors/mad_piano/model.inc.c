@@ -1,67 +1,67 @@
 // Mad Piano
 
 // Unreferenced light group
-UNUSED static const Lights1 mad_piano_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 mad_piano_lights_unused1 = gdSPDefLights1(
     0x05, 0x04, 0x08,
     0x14, 0x13, 0x20, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 mad_piano_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 mad_piano_lights_unused2 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 mad_piano_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 mad_piano_lights_unused3 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 mad_piano_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 mad_piano_lights_unused4 = gdSPDefLights1(
     0x30, 0x00, 0x00,
     0xc3, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05006AF0
-ALIGNED8 static const Texture mad_piano_seg5_texture_05006AF0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_05006AF0[] = {
 #include "actors/mad_piano/mad_piano_tooth.rgba16.inc.c"
 };
 
 // 0x050072F0
-ALIGNED8 static const Texture mad_piano_seg5_texture_050072F0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_050072F0[] = {
 #include "actors/mad_piano/mad_piano_body.rgba16.inc.c"
 };
 
 // 0x050076F0
-ALIGNED8 static const Texture mad_piano_seg5_texture_050076F0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_050076F0[] = {
 #include "actors/mad_piano/mad_piano_keys_corner.rgba16.inc.c"
 };
 
 // 0x05007AF0
-ALIGNED8 static const Texture mad_piano_seg5_texture_05007AF0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_05007AF0[] = {
 #include "actors/mad_piano/mad_piano_mouth.rgba16.inc.c"
 };
 
 // 0x05007EF0
-ALIGNED8 static const Texture mad_piano_seg5_texture_05007EF0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_05007EF0[] = {
 #include "actors/mad_piano/mad_piano_keys.rgba16.inc.c"
 };
 
 // 0x050082F0
-ALIGNED8 static const Texture mad_piano_seg5_texture_050082F0[] = {
+ALIGNED8  const Texture mad_piano_seg5_texture_050082F0[] = {
 #include "actors/mad_piano/mad_piano_keys_edge.rgba16.inc.c"
 };
 
 // 0x050086F0
-static const Lights1 mad_piano_seg5_lights_050086F0 = gdSPDefLights1(
+ const Lights1 mad_piano_seg5_lights_050086F0 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05008708
-static const Vtx mad_piano_seg5_vertex_05008708[] = {
+ const Vtx mad_piano_seg5_vertex_05008708[] = {
     {{{     0,      0,    609}, 0, {    17,    776}, {0x00, 0x7e, 0x00, 0xff}}},
     {{{   834,     -2,   -523}, 0, {   529,    420}, {0x00, 0x7e, 0x00, 0xff}}},
     {{{   626,     -1,   -740}, 0, {   566,    662}, {0x00, 0x7e, 0x00, 0xff}}},
@@ -75,7 +75,7 @@ static const Vtx mad_piano_seg5_vertex_05008708[] = {
 };
 
 // 0x050087A8
-static const Vtx mad_piano_seg5_vertex_050087A8[] = {
+ const Vtx mad_piano_seg5_vertex_050087A8[] = {
     {{{   641,     -4,    600}, 0, {  -344,    224}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   721,   -189,    600}, 0, {   920,    884}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   802,     -5,    600}, 0, {   536,   -572}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx mad_piano_seg5_vertex_050087A8[] = {
 };
 
 // 0x05008898
-static const Vtx mad_piano_seg5_vertex_05008898[] = {
+ const Vtx mad_piano_seg5_vertex_05008898[] = {
     {{{  1126,     -6,    337}, 0, {    68,    134}, {0x7e, 0xf3, 0x00, 0xff}}},
     {{{  1110,   -157,    267}, 0, {   728,    892}, {0x7e, 0xf3, 0x00, 0xff}}},
     {{{  1126,     -6,    198}, 0, {   726,   -548}, {0x7e, 0xf3, 0x00, 0xff}}},
@@ -113,7 +113,7 @@ static const Vtx mad_piano_seg5_vertex_05008898[] = {
 };
 
 // 0x05008988
-static const Vtx mad_piano_seg5_vertex_05008988[] = {
+ const Vtx mad_piano_seg5_vertex_05008988[] = {
     {{{   435,     -4,   -728}, 0, {    90,    138}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   354,   -123,   -728}, 0, {   858,    806}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   274,     -3,   -728}, 0, {   978,   -868}, {0x00, 0x00, 0x81, 0xff}}},
@@ -132,7 +132,7 @@ static const Vtx mad_piano_seg5_vertex_05008988[] = {
 };
 
 // 0x05008A78
-static const Vtx mad_piano_seg5_vertex_05008A78[] = {
+ const Vtx mad_piano_seg5_vertex_05008A78[] = {
     {{{   845,     -5,   -216}, 0, {    10,    306}, {0x7e, 0x02, 0xf5, 0xff}}},
     {{{   841,   -123,   -288}, 0, {   828,    886}, {0x7e, 0x02, 0xf5, 0xff}}},
     {{{   831,     -5,   -368}, 0, {   878,   -954}, {0x7e, 0x02, 0xf5, 0xff}}},
@@ -211,31 +211,31 @@ const Gfx mad_piano_seg5_dl_05008CB0[] = {
 };
 
 // 0x05008D40
-static const Lights1 mad_piano_seg5_lights_05008D40 = gdSPDefLights1(
+ const Lights1 mad_piano_seg5_lights_05008D40 = gdSPDefLights1(
     0x3d, 0x3d, 0x3d,
     0xcc, 0xcc, 0xcc, 0x28, 0x28, 0x28
 );
 
 // 0x05008D58
-static const Lights1 mad_piano_seg5_lights_05008D58 = gdSPDefLights1(
+ const Lights1 mad_piano_seg5_lights_05008D58 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05008D70
-static const Lights1 mad_piano_seg5_lights_05008D70 = gdSPDefLights1(
+ const Lights1 mad_piano_seg5_lights_05008D70 = gdSPDefLights1(
     0x26, 0x26, 0x26,
     0x7f, 0x7f, 0x7f, 0x28, 0x28, 0x28
 );
 
 // 0x05008D88
-static const Lights1 mad_piano_seg5_lights_05008D88 = gdSPDefLights1(
+ const Lights1 mad_piano_seg5_lights_05008D88 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05008DA0
-static const Vtx mad_piano_seg5_vertex_05008DA0[] = {
+ const Vtx mad_piano_seg5_vertex_05008DA0[] = {
     {{{   454,    592,     18}, 0, {   262,    962}, {0x2d, 0x74, 0x17, 0xff}}},
     {{{   -14,    586,    220}, 0, {   485,    588}, {0xfe, 0x09, 0x7e, 0xff}}},
     {{{   454,    592,    220}, 0, {   485,    962}, {0x92, 0x00, 0x3d, 0xff}}},
@@ -252,7 +252,7 @@ static const Vtx mad_piano_seg5_vertex_05008DA0[] = {
 };
 
 // 0x05008E70
-static const Vtx mad_piano_seg5_vertex_05008E70[] = {
+ const Vtx mad_piano_seg5_vertex_05008E70[] = {
     {{{   393,    432,   -372}, 0, {   -64,    714}, {0x00, 0x00, 0x82, 0xff}}},
     {{{   444,    347,    -92}, 0, {   456,    672}, {0x3d, 0x9a, 0xd6, 0xff}}},
     {{{   294,    431,    -92}, 0, {   428,    926}, {0x89, 0xff, 0xd6, 0xff}}},
@@ -271,7 +271,7 @@ static const Vtx mad_piano_seg5_vertex_05008E70[] = {
 };
 
 // 0x05008F60
-static const Vtx mad_piano_seg5_vertex_05008F60[] = {
+ const Vtx mad_piano_seg5_vertex_05008F60[] = {
     {{{  -884,   -357,    -92}, 0, {     0,     50}, {0x9c, 0xc0, 0xd6, 0xff}}},
     {{{  -665,   -556,    220}, 0, {   488,    286}, {0x05, 0xed, 0x7d, 0xff}}},
     {{{  -884,   -357,    220}, 0, {   488,     50}, {0xf5, 0xfd, 0x7e, 0xff}}},
@@ -290,7 +290,7 @@ static const Vtx mad_piano_seg5_vertex_05008F60[] = {
 };
 
 // 0x05009050
-static const Vtx mad_piano_seg5_vertex_05009050[] = {
+ const Vtx mad_piano_seg5_vertex_05009050[] = {
     {{{  -674,    277,    -92}, 0, {   138,     36}, {0xc9, 0x58, 0xb8, 0xff}}},
     {{{  -889,     67,    220}, 0, {   485,   -156}, {0xf5, 0x02, 0x7e, 0xff}}},
     {{{  -674,    277,    220}, 0, {   485,     36}, {0xfb, 0x08, 0x7e, 0xff}}},
@@ -310,7 +310,7 @@ static const Vtx mad_piano_seg5_vertex_05009050[] = {
 };
 
 // 0x05009150
-static const Vtx mad_piano_seg5_vertex_05009150[] = {
+ const Vtx mad_piano_seg5_vertex_05009150[] = {
     {{{  -889,     67,    220}, 0, {  -124,     16}, {0xf5, 0x02, 0x7e, 0xff}}},
     {{{  -855,     64,     46}, 0, {     0,    936}, {0x5a, 0xea, 0x56, 0xff}}},
     {{{  -655,    253,     38}, 0, {   884,    936}, {0x33, 0xb0, 0x53, 0xff}}},
@@ -329,7 +329,7 @@ static const Vtx mad_piano_seg5_vertex_05009150[] = {
 };
 
 // 0x05009240
-static const Vtx mad_piano_seg5_vertex_05009240[] = {
+ const Vtx mad_piano_seg5_vertex_05009240[] = {
     {{{   467,   -543,    220}, 0, {  -137,      6}, {0x70, 0xfe, 0x3a, 0xff}}},
     {{{  -666,   -525,     46}, 0, {  3633,    936}, {0x1c, 0x6c, 0x3b, 0xff}}},
     {{{  -665,   -556,    220}, 0, {  3631,      6}, {0x05, 0xed, 0x7d, 0xff}}},
@@ -348,7 +348,7 @@ static const Vtx mad_piano_seg5_vertex_05009240[] = {
 };
 
 // 0x05009330
-static const Vtx mad_piano_seg5_vertex_05009330[] = {
+ const Vtx mad_piano_seg5_vertex_05009330[] = {
     {{{   454,    592,    220}, 0, {  -204,      6}, {0x92, 0x00, 0x3d, 0xff}}},
     {{{   435,   -512,     46}, 0, {  5439,   1010}, {0xdc, 0x12, 0x78, 0xff}}},
     {{{   467,   -543,    220}, 0, {  5605,     44}, {0x70, 0xfe, 0x3a, 0xff}}},
@@ -364,7 +364,7 @@ static const Vtx mad_piano_seg5_vertex_05009330[] = {
 };
 
 // 0x050093F0
-static const Vtx mad_piano_seg5_vertex_050093F0[] = {
+ const Vtx mad_piano_seg5_vertex_050093F0[] = {
     {{{   678,   -541,    -92}, 0, {     0,    479}, {0x55, 0xd7, 0xac, 0xff}}},
     {{{   665,    594,     18}, 0, {  4504,    -77}, {0x54, 0x2b, 0x54, 0xff}}},
     {{{   678,   -541,     18}, 0, {     0,    -77}, {0x34, 0x99, 0x33, 0xff}}},
@@ -372,7 +372,7 @@ static const Vtx mad_piano_seg5_vertex_050093F0[] = {
 };
 
 // 0x05009430
-static const Vtx mad_piano_seg5_vertex_05009430[] = {
+ const Vtx mad_piano_seg5_vertex_05009430[] = {
     {{{   467,   -543,     18}, 0, {   -40,   -224}, {0x23, 0x9b, 0x43, 0xff}}},
     {{{   665,    594,     18}, 0, {  4504,    436}, {0x54, 0x2b, 0x54, 0xff}}},
     {{{   454,    592,     18}, 0, {  4494,   -268}, {0x2d, 0x74, 0x17, 0xff}}},
@@ -380,7 +380,7 @@ static const Vtx mad_piano_seg5_vertex_05009430[] = {
 };
 
 // 0x05009470
-static const Vtx mad_piano_seg5_vertex_05009470[] = {
+ const Vtx mad_piano_seg5_vertex_05009470[] = {
     {{{   454,    592,     18}, 0, {   972,    -27}, {0x2d, 0x74, 0x17, 0xff}}},
     {{{   665,    594,     18}, 0, {     0,    -27}, {0x54, 0x2b, 0x54, 0xff}}},
     {{{   665,    594,    -92}, 0, {     0,    479}, {0x32, 0x68, 0xcd, 0xff}}},
@@ -392,7 +392,7 @@ static const Vtx mad_piano_seg5_vertex_05009470[] = {
 };
 
 // 0x050094F0
-static const Vtx mad_piano_seg5_vertex_050094F0[] = {
+ const Vtx mad_piano_seg5_vertex_050094F0[] = {
     {{{  -665,   -556,    -92}, 0, {     0,      0}, {0xf5, 0xbe, 0x95, 0xff}}},
     {{{   -14,    586,    -92}, 0, {     0,      0}, {0xce, 0x62, 0xc3, 0xff}}},
     {{{   454,    592,    -92}, 0, {     0,      0}, {0x00, 0x38, 0x8f, 0xff}}},

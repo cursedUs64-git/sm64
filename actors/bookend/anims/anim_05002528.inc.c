@@ -1,5 +1,5 @@
 // 0x05002528
-static const struct Animation bookend_seg5_anim_05002528 = {
+ const struct Animation bookend_seg5_anim_05002528 = {
     0,
     0,
     0,

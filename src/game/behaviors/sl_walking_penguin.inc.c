@@ -18,7 +18,7 @@ struct SLWalkingPenguinStep sSLWalkingPenguinErraticSteps[] = {
     { -1, 0, 0.0f,  0.0f }, // Repeat
 };
 
-static s32 sl_walking_penguin_turn(void) {
+s32 sl_walking_penguin_turn(void) {
     // Stay still and use walking animation for the turn.
     o->oForwardVel = 0.0f;
     cur_obj_init_animation_with_accel_and_sound(PENGUIN_ANIM_WALK, 1.0f);

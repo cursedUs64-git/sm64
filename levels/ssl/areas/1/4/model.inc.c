@@ -1,5 +1,5 @@
 // 0x0700BC88 - 0x0700BCC8
-static const Vtx ssl_seg7_vertex_0700BC88[] = {
+ const Vtx ssl_seg7_vertex_0700BC88[] = {
     {{{ -6143,      0,  -4697}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xc8}}},
     {{{ -5836,      0,  -4697}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xc8}}},
     {{{ -5836,      0,  -5004}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xc8}}},
@@ -7,7 +7,7 @@ static const Vtx ssl_seg7_vertex_0700BC88[] = {
 };
 
 // 0x0700BCC8 - 0x0700BD00
-static const Gfx ssl_seg7_dl_0700BCC8[] = {
+ const Gfx ssl_seg7_dl_0700BCC8[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, ssl_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

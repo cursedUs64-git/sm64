@@ -1,5 +1,5 @@
 // 0x0700BBF0 - 0x0700BC30
-static const Vtx castle_grounds_seg7_vertex_0700BBF0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700BBF0[] = {
     {{{  2283,     65,   2072}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2485,     65,   2072}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2485,     65,   1849}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx castle_grounds_seg7_vertex_0700BBF0[] = {
 };
 
 // 0x0700BC30 - 0x0700BC68
-static const Gfx castle_grounds_seg7_dl_0700BC30[] = {
+ const Gfx castle_grounds_seg7_dl_0700BC30[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09005800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

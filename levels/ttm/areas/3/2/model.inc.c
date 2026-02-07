@@ -1,5 +1,5 @@
 // 0x07024AB0 - 0x07024B90
-static const Vtx ttm_seg7_vertex_07024AB0[] = {
+ const Vtx ttm_seg7_vertex_07024AB0[] = {
     {{{ -1475,   -140,  -6832}, 0, {     0,      0}, {0xdf, 0x1f, 0x1f, 0xff}}},
     {{{ -1475,   -345,  -6832}, 0, {     0,      0}, {0xdf, 0x1f, 0x1f, 0xff}}},
     {{{ -1528,   -191,  -6582}, 0, {     0,      0}, {0xdf, 0x1f, 0x1f, 0xff}}},
@@ -17,7 +17,7 @@ static const Vtx ttm_seg7_vertex_07024AB0[] = {
 };
 
 // 0x07024B90 - 0x07024C00
-static const Vtx ttm_seg7_vertex_07024B90[] = {
+ const Vtx ttm_seg7_vertex_07024B90[] = {
     {{{ -4335,    218,  -6760}, 0, {     0,      0}, {0xff, 0xaa, 0x00, 0xff}}},
     {{{ -4293,     64,  -6960}, 0, {     0,      0}, {0xff, 0xaa, 0x00, 0xff}}},
     {{{ -4335,    115,  -6760}, 0, {     0,      0}, {0xff, 0xaa, 0x00, 0xff}}},
@@ -28,7 +28,7 @@ static const Vtx ttm_seg7_vertex_07024B90[] = {
 };
 
 // 0x07024C00 - 0x07024C78
-static const Gfx ttm_seg7_dl_07024C00[] = {
+ const Gfx ttm_seg7_dl_07024C00[] = {
     gsSPVertex(ttm_seg7_vertex_07024AB0, 14, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  0,  3,  4, 0x0),
     gsSP2Triangles( 0,  5,  3, 0x0,  2,  6,  0, 0x0),

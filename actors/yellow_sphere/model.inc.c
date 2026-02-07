@@ -1,7 +1,7 @@
 // Yellow Sphere (used in a lot of things)
 
 // 0x0601EB48
-static const Vtx yellow_sphere_seg6_vertex_0601EB48[] = {
+ const Vtx yellow_sphere_seg6_vertex_0601EB48[] = {
     {{{   -76,    -76,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    77,    -76,      0}, 0, {   992,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    77,     77,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx yellow_sphere_seg6_vertex_0601EB48[] = {
 };
 
 // 0x0601EB88
-ALIGNED8 static const Texture yellow_sphere_seg6_texture_0601EB88[] = {
+ALIGNED8  const Texture yellow_sphere_seg6_texture_0601EB88[] = {
 #include "actors/yellow_sphere/yellow_sphere.rgba16.inc.c"
 };
 

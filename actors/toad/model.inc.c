@@ -1,23 +1,23 @@
 // Toad
 
 // 0x06005908
-static const Lights1 toad_seg6_lights_06005908 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06005908 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06005920
-ALIGNED8 static const Texture toad_seg6_texture_06005920[] = {
+ALIGNED8  const Texture toad_seg6_texture_06005920[] = {
 #include "actors/toad/toad_face.rgba16.inc.c"
 };
 
 // 0x06006120
-ALIGNED8 static const Texture toad_seg6_texture_06006120[] = {
+ALIGNED8  const Texture toad_seg6_texture_06006120[] = {
 #include "actors/toad/toad_head.rgba16.inc.c"
 };
 
 // 0x06006920
-static const Vtx toad_seg6_vertex_06006920[] = {
+ const Vtx toad_seg6_vertex_06006920[] = {
     {{{   -43,   -102,    106}, 0, {    36,    848}, {0xba, 0xcc, 0x5b, 0xff}}},
     {{{   -56,    -68,    103}, 0, {  -108,    448}, {0xa9, 0xfb, 0x5b, 0xff}}},
     {{{   -77,    -96,     50}, 0, {  -314,    702}, {0x94, 0xc1, 0x13, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx toad_seg6_vertex_06006920[] = {
 };
 
 // 0x06006A10
-static const Vtx toad_seg6_vertex_06006A10[] = {
+ const Vtx toad_seg6_vertex_06006A10[] = {
     {{{     0,   -143,      8}, 0, {  -546,    672}, {0xf8, 0x85, 0xe4, 0xff}}},
     {{{   -29,   -135,     34}, 0, {  -802,    592}, {0xc8, 0x8f, 0xfd, 0xff}}},
     {{{   -56,   -113,      7}, 0, {  -560,    370}, {0xab, 0xae, 0xd4, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx toad_seg6_vertex_06006A10[] = {
 };
 
 // 0x06006B10
-static const Vtx toad_seg6_vertex_06006B10[] = {
+ const Vtx toad_seg6_vertex_06006B10[] = {
     {{{     0,   -143,      8}, 0, {  -546,    672}, {0xf8, 0x85, 0xe4, 0xff}}},
     {{{   -56,   -113,      7}, 0, {  -560,    370}, {0xab, 0xae, 0xd4, 0xff}}},
     {{{     0,   -124,    -23}, 0, {  -254,    492}, {0x02, 0xa1, 0xad, 0xff}}},
@@ -72,7 +72,7 @@ static const Vtx toad_seg6_vertex_06006B10[] = {
 };
 
 // 0x06006BD0
-static const Vtx toad_seg6_vertex_06006BD0[] = {
+ const Vtx toad_seg6_vertex_06006BD0[] = {
     {{{    34,    -28,     97}, 0, {   -26,    942}, {0x12, 0x9f, 0x4e, 0xff}}},
     {{{   142,    -44,     36}, 0, {  1040,   1000}, {0x45, 0xa0, 0x2c, 0xff}}},
     {{{    71,     13,    144}, 0, {    98,    396}, {0x28, 0xbb, 0x62, 0xff}}},
@@ -91,7 +91,7 @@ static const Vtx toad_seg6_vertex_06006BD0[] = {
 };
 
 // 0x06006CC0
-static const Vtx toad_seg6_vertex_06006CC0[] = {
+ const Vtx toad_seg6_vertex_06006CC0[] = {
     {{{   -78,    122,    -51}, 0, {   490,    500}, {0xd3, 0x65, 0xc3, 0xff}}},
     {{{   -38,    154,      8}, 0, {  1016,    282}, {0xe4, 0x79, 0xe8, 0xff}}},
     {{{     0,    133,    -57}, 0, {   506,    -88}, {0x00, 0x70, 0xc5, 0xff}}},
@@ -111,7 +111,7 @@ static const Vtx toad_seg6_vertex_06006CC0[] = {
 };
 
 // 0x06006DC0
-static const Vtx toad_seg6_vertex_06006DC0[] = {
+ const Vtx toad_seg6_vertex_06006DC0[] = {
     {{{  -141,     91,    -35}, 0, {   472,   1082}, {0xad, 0x52, 0xd1, 0xff}}},
     {{{   -70,    149,     72}, 0, {  1420,    692}, {0xd3, 0x75, 0x12, 0xff}}},
     {{{   -38,    154,      8}, 0, {  1016,    282}, {0xe4, 0x79, 0xe8, 0xff}}},
@@ -131,7 +131,7 @@ static const Vtx toad_seg6_vertex_06006DC0[] = {
 };
 
 // 0x06006EC0
-static const Vtx toad_seg6_vertex_06006EC0[] = {
+ const Vtx toad_seg6_vertex_06006EC0[] = {
     {{{  -141,    -44,     37}, 0, {  -168,    914}, {0xba, 0xa7, 0x37, 0xff}}},
     {{{   -70,     13,    145}, 0, {  1136,    958}, {0xe6, 0xc0, 0x69, 0xff}}},
     {{{   -87,     71,    148}, 0, {  1280,    464}, {0xc5, 0x10, 0x6f, 0xff}}},
@@ -150,7 +150,7 @@ static const Vtx toad_seg6_vertex_06006EC0[] = {
 };
 
 // 0x06006FB0
-static const Vtx toad_seg6_vertex_06006FB0[] = {
+ const Vtx toad_seg6_vertex_06006FB0[] = {
     {{{   -88,    -72,   -121}, 0, {  -182,    430}, {0xc2, 0xae, 0xb7, 0xff}}},
     {{{  -175,     48,    -12}, 0, {  1388,    114}, {0x88, 0x21, 0xed, 0xff}}},
     {{{   -88,    -23,   -147}, 0, {  -130,    -66}, {0xc6, 0xf2, 0x91, 0xff}}},
@@ -170,7 +170,7 @@ static const Vtx toad_seg6_vertex_06006FB0[] = {
 };
 
 // 0x060070B0
-static const Vtx toad_seg6_vertex_060070B0[] = {
+ const Vtx toad_seg6_vertex_060070B0[] = {
     {{{    71,     34,   -144}, 0, {   848,   1202}, {0x2d, 0x32, 0x95, 0xff}}},
     {{{   -38,     90,   -112}, 0, {  1178,    -54}, {0xf0, 0x54, 0xa3, 0xff}}},
     {{{    39,     90,   -112}, 0, {   670,    514}, {0x1c, 0x58, 0xaa, 0xff}}},
@@ -190,7 +190,7 @@ static const Vtx toad_seg6_vertex_060070B0[] = {
 };
 
 // 0x060071B0
-static const Vtx toad_seg6_vertex_060071B0[] = {
+ const Vtx toad_seg6_vertex_060071B0[] = {
     {{{   176,      0,     13}, 0, {  -180,    454}, {0x78, 0xdd, 0x10, 0xff}}},
     {{{    88,    -24,   -147}, 0, {  1236,     52}, {0x3d, 0xf2, 0x93, 0xff}}},
     {{{   176,     47,    -12}, 0, {  -182,      6}, {0x79, 0x22, 0xf0, 0xff}}},
@@ -199,7 +199,7 @@ static const Vtx toad_seg6_vertex_060071B0[] = {
 };
 
 // 0x06007200
-static const Vtx toad_seg6_vertex_06007200[] = {
+ const Vtx toad_seg6_vertex_06007200[] = {
     {{{   176,     47,    -12}, 0, {     0,      0}, {0x79, 0x22, 0xf0, 0xff}}},
     {{{    71,     34,   -144}, 0, {     0,      0}, {0x2d, 0x32, 0x95, 0xff}}},
     {{{   142,     91,    -36}, 0, {     0,      0}, {0x54, 0x55, 0xd7, 0xff}}},
@@ -350,13 +350,13 @@ const Gfx toad_seg6_us_dl_06007788[] = {
 #endif
 
 // 0x06007788
-static const Lights1 toad_seg6_lights_06007788 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06007788 = gdSPDefLights1(
     0x21, 0x13, 0x5a,
     0x42, 0x27, 0xb5, 0x28, 0x28, 0x28
 );
 
 // 0x060077A0
-static const Vtx toad_seg6_vertex_060077A0[] = {
+ const Vtx toad_seg6_vertex_060077A0[] = {
     {{{   -80,    -27,    -24}, 0, {     0,      0}, {0x90, 0x28, 0xd5, 0xff}}},
     {{{   -61,     26,     28}, 0, {     0,      0}, {0x9c, 0x3a, 0x32, 0xff}}},
     {{{   -61,     26,    -27}, 0, {     0,      0}, {0x93, 0x37, 0xdf, 0xff}}},
@@ -376,7 +376,7 @@ static const Vtx toad_seg6_vertex_060077A0[] = {
 };
 
 // 0x060078A0
-static const Vtx toad_seg6_vertex_060078A0[] = {
+ const Vtx toad_seg6_vertex_060078A0[] = {
     {{{   -35,     60,     20}, 0, {     0,      0}, {0xa1, 0x4b, 0x23, 0xff}}},
     {{{   -61,     26,    -27}, 0, {     0,      0}, {0x93, 0x37, 0xdf, 0xff}}},
     {{{   -61,     26,     28}, 0, {     0,      0}, {0x9c, 0x3a, 0x32, 0xff}}},
@@ -435,19 +435,19 @@ const Gfx toad_seg6_us_dl_06007B00[] = {
 #endif
 
 // 0x06007A80
-static const Lights1 toad_seg6_lights_06007A80 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06007A80 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06007A98
-static const Lights1 toad_seg6_lights_06007A98 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06007A98 = gdSPDefLights1(
     0x7f, 0x6a, 0x50,
     0xfe, 0xd5, 0xa1, 0x28, 0x28, 0x28
 );
 
 // 0x06007AB0
-static const Vtx toad_seg6_vertex_06007AB0[] = {
+ const Vtx toad_seg6_vertex_06007AB0[] = {
     {{{    44,    -69,    -33}, 0, {     0,      0}, {0x21, 0x90, 0xd1, 0xff}}},
     {{{   -34,    -45,    -60}, 0, {     0,      0}, {0xdb, 0xd0, 0x91, 0xff}}},
     {{{    35,    -45,    -60}, 0, {     0,      0}, {0x2e, 0xf5, 0x8b, 0xff}}},
@@ -465,7 +465,7 @@ static const Vtx toad_seg6_vertex_06007AB0[] = {
 };
 
 // 0x06007B90
-static const Vtx toad_seg6_vertex_06007B90[] = {
+ const Vtx toad_seg6_vertex_06007B90[] = {
     {{{   -70,    -38,    -29}, 0, {     0,      0}, {0x8d, 0xfe, 0xcc, 0xff}}},
     {{{   -56,      9,     22}, 0, {     0,      0}, {0x96, 0x35, 0x2c, 0xff}}},
     {{{   -56,      9,    -26}, 0, {     0,      0}, {0x98, 0x3c, 0xda, 0xff}}},
@@ -481,7 +481,7 @@ static const Vtx toad_seg6_vertex_06007B90[] = {
 };
 
 // 0x06007C50
-static const Vtx toad_seg6_vertex_06007C50[] = {
+ const Vtx toad_seg6_vertex_06007C50[] = {
     {{{    29,      9,     49}, 0, {     0,      0}, {0x2b, 0x33, 0x6b, 0xff}}},
     {{{    57,      9,     22}, 0, {     0,      0}, {0x67, 0x41, 0x23, 0xff}}},
     {{{    21,     55,     14}, 0, {     0,      0}, {0x22, 0x6d, 0x36, 0xff}}},
@@ -541,13 +541,13 @@ const Gfx toad_seg6_dl_06007EB0[] = {
 };
 
 // 0x06007ED8
-static const Lights1 toad_seg6_lights_06007ED8 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06007ED8 = gdSPDefLights1(
     0x7f, 0x6a, 0x50,
     0xfe, 0xd5, 0xa1, 0x28, 0x28, 0x28
 );
 
 // 0x06007EF0
-static const Vtx toad_seg6_vertex_06007EF0[] = {
+ const Vtx toad_seg6_vertex_06007EF0[] = {
     {{{     7,     14,    -12}, 0, {     0,      0}, {0x4b, 0x1f, 0x9f, 0xff}}},
     {{{    -1,     14,    -12}, 0, {     0,      0}, {0xcf, 0x36, 0x99, 0xff}}},
     {{{    11,     34,      0}, 0, {     0,      0}, {0x24, 0x79, 0xfc, 0xff}}},
@@ -567,7 +567,7 @@ static const Vtx toad_seg6_vertex_06007EF0[] = {
 };
 
 // 0x06007FF0
-static const Vtx toad_seg6_vertex_06007FF0[] = {
+ const Vtx toad_seg6_vertex_06007FF0[] = {
     {{{     4,    -57,     18}, 0, {     0,      0}, {0x62, 0xd9, 0x45, 0xff}}},
     {{{   -17,    -43,     28}, 0, {     0,      0}, {0xcd, 0xf9, 0x73, 0xff}}},
     {{{   -15,    -73,      8}, 0, {     0,      0}, {0xd4, 0x97, 0x37, 0xff}}},
@@ -619,13 +619,13 @@ const Gfx toad_seg6_dl_060081F8[] = {
 };
 
 // 0x06008220
-static const Lights1 toad_seg6_lights_06008220 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06008220 = gdSPDefLights1(
     0x7f, 0x6a, 0x50,
     0xfe, 0xd5, 0xa1, 0x28, 0x28, 0x28
 );
 
 // 0x06008238
-static const Vtx toad_seg6_vertex_06008238[] = {
+ const Vtx toad_seg6_vertex_06008238[] = {
     {{{    11,    -43,      3}, 0, {     0,      0}, {0x7d, 0xf5, 0xf5, 0xff}}},
     {{{     3,    -43,    -27}, 0, {     0,      0}, {0x40, 0xfa, 0x93, 0xff}}},
     {{{     7,     15,    -12}, 0, {     0,      0}, {0x4d, 0x1f, 0xa1, 0xff}}},
@@ -645,7 +645,7 @@ static const Vtx toad_seg6_vertex_06008238[] = {
 };
 
 // 0x06008338
-static const Vtx toad_seg6_vertex_06008338[] = {
+ const Vtx toad_seg6_vertex_06008338[] = {
     {{{   -15,    -73,     -7}, 0, {     0,      0}, {0xcf, 0xa0, 0xbe, 0xff}}},
     {{{   -17,    -43,    -27}, 0, {     0,      0}, {0xd1, 0xe4, 0x8e, 0xff}}},
     {{{     4,    -57,    -17}, 0, {     0,      0}, {0x53, 0xc9, 0xb2, 0xff}}},
@@ -714,13 +714,13 @@ const Gfx toad_seg6_us_dl_06008608[] = {
 #endif
 
 // 0x06008560
-static const Lights1 toad_seg6_lights_06008560 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_06008560 = gdSPDefLights1(
     0x34, 0x20, 0x0d,
     0x68, 0x40, 0x1b, 0x28, 0x28, 0x28
 );
 
 // 0x06008578
-static const Vtx toad_seg6_vertex_06008578[] = {
+ const Vtx toad_seg6_vertex_06008578[] = {
     {{{   -17,     17,    -45}, 0, {     0,      0}, {0xce, 0x3b, 0x9d, 0xff}}},
     {{{    18,     17,    -45}, 0, {     0,      0}, {0x28, 0x51, 0xa8, 0xff}}},
     {{{    23,    -15,    -51}, 0, {     0,      0}, {0x1e, 0x98, 0xbf, 0xff}}},
@@ -740,7 +740,7 @@ static const Vtx toad_seg6_vertex_06008578[] = {
 };
 
 // 0x06008678
-static const Vtx toad_seg6_vertex_06008678[] = {
+ const Vtx toad_seg6_vertex_06008678[] = {
     {{{   -13,      7,     47}, 0, {     0,      0}, {0xda, 0x51, 0x59, 0xff}}},
     {{{    14,      7,     47}, 0, {     0,      0}, {0x34, 0x3b, 0x63, 0xff}}},
     {{{    14,     21,     26}, 0, {     0,      0}, {0x18, 0x6f, 0x37, 0xff}}},
@@ -794,13 +794,13 @@ const Gfx toad_seg6_dl_06008890[] = {
 };
 
 // 0x060088B8
-static const Lights1 toad_seg6_lights_060088B8 = gdSPDefLights1(
+ const Lights1 toad_seg6_lights_060088B8 = gdSPDefLights1(
     0x34, 0x20, 0x0d,
     0x68, 0x40, 0x1b, 0x28, 0x28, 0x28
 );
 
 // 0x060088D0
-static const Vtx toad_seg6_vertex_060088D0[] = {
+ const Vtx toad_seg6_vertex_060088D0[] = {
     {{{   -22,    -15,     52}, 0, {     0,      0}, {0xe2, 0x98, 0x41, 0xff}}},
     {{{   -17,     17,     46}, 0, {     0,      0}, {0xd8, 0x51, 0x58, 0xff}}},
     {{{   -35,     17,     21}, 0, {     0,      0}, {0x91, 0x39, 0x16, 0xff}}},
@@ -820,7 +820,7 @@ static const Vtx toad_seg6_vertex_060088D0[] = {
 };
 
 // 0x060089D0
-static const Vtx toad_seg6_vertex_060089D0[] = {
+ const Vtx toad_seg6_vertex_060089D0[] = {
     {{{   -13,     21,    -25}, 0, {     0,      0}, {0xe8, 0x6f, 0xc9, 0xff}}},
     {{{   -17,     35,     17}, 0, {     0,      0}, {0xc9, 0x72, 0x03, 0xff}}},
     {{{    18,     35,     17}, 0, {     0,      0}, {0x20, 0x7a, 0x0d, 0xff}}},

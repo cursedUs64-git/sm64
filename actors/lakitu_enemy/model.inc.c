@@ -1,63 +1,63 @@
 // Lakitu Enemy
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_enemy_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_enemy_lights_unused1 = gdSPDefLights1(
     0x33, 0x1f, 0x0c,
     0xcc, 0x7f, 0x33, 0x28, 0x28, 0x28
 );
 
 // 0x0500ECB0
-static const Lights1 lakitu_enemy_seg5_lights_0500ECB0 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_0500ECB0 = gdSPDefLights1(
     0x29, 0x13, 0x06,
     0xa5, 0x4f, 0x1b, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_enemy_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_enemy_lights_unused2 = gdSPDefLights1(
     0x0d, 0x2c, 0x0b,
     0x34, 0xb2, 0x2c, 0x28, 0x28, 0x28
 );
 
 // Unreferenced texture
 // 0x0500ECE0
-ALIGNED8 static const Texture lakitu_enemy_seg5_texture_0500ECE0[] = {
+ALIGNED8  const Texture lakitu_enemy_seg5_texture_0500ECE0[] = {
 #include "actors/lakitu_enemy/lakitu_enemy_cloud_face_unused.rgba16.inc.c"
 };
 
 // 0x0500F4E0
-ALIGNED8 static const Texture lakitu_enemy_seg5_texture_0500F4E0[] = {
+ALIGNED8  const Texture lakitu_enemy_seg5_texture_0500F4E0[] = {
 #include "actors/lakitu_enemy/lakitu_enemy_eyes_open.rgba16.inc.c"
 };
 
 // 0x050104E0
-ALIGNED8 static const Texture lakitu_enemy_seg5_texture_050104E0[] = {
+ALIGNED8  const Texture lakitu_enemy_seg5_texture_050104E0[] = {
 #include "actors/lakitu_enemy/lakitu_enemy_eyes_closed.rgba16.inc.c"
 };
 
 // 0x050114E0
-ALIGNED8 static const Texture lakitu_enemy_seg5_texture_050114E0[] = {
+ALIGNED8  const Texture lakitu_enemy_seg5_texture_050114E0[] = {
 #include "actors/lakitu_enemy/lakitu_enemy_shell.rgba16.inc.c"
 };
 
 // 0x05011CE0
-ALIGNED8 static const Texture lakitu_enemy_seg5_texture_05011CE0[] = {
+ALIGNED8  const Texture lakitu_enemy_seg5_texture_05011CE0[] = {
 #include "actors/lakitu_enemy/lakitu_enemy_frown.rgba16.inc.c"
 };
 
 // 0x050124E0
-static const Lights1 lakitu_enemy_seg5_lights_050124E0 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_050124E0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050124F8
-static const Lights1 lakitu_enemy_seg5_lights_050124F8 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_050124F8 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05012510
-static const Vtx lakitu_enemy_seg5_vertex_05012510[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012510[] = {
     {{{    91,    -25,     86}, 0, {   240,    464}, {0x3e, 0xd0, 0x63, 0xff}}},
     {{{   132,    -17,     43}, 0, {    34,    468}, {0x71, 0xce, 0x1a, 0xff}}},
     {{{   137,     35,     43}, 0, {     0,    980}, {0x64, 0x33, 0x39, 0xff}}},
@@ -77,7 +77,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012510[] = {
 };
 
 // 0x05012610
-static const Vtx lakitu_enemy_seg5_vertex_05012610[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012610[] = {
     {{{    -2,     15,     99}, 0, {   684,    990}, {0xc1, 0x34, 0x60, 0xff}}},
     {{{   -56,      7,     43}, 0, {   958,    992}, {0x87, 0x10, 0x21, 0xff}}},
     {{{   -33,    -40,     43}, 0, {   884,    484}, {0xa3, 0xbb, 0x31, 0xff}}},
@@ -91,7 +91,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012610[] = {
 };
 
 // 0x050126B0
-static const Vtx lakitu_enemy_seg5_vertex_050126B0[] = {
+ const Vtx lakitu_enemy_seg5_vertex_050126B0[] = {
     {{{     0,     51,      0}, 0, {     0,      0}, {0xcf, 0x75, 0x00, 0xff}}},
     {{{    68,     61,     35}, 0, {     0,      0}, {0x09, 0x7b, 0x1a, 0xff}}},
     {{{    68,     61,    -33}, 0, {     0,      0}, {0x01, 0x7a, 0xe0, 0xff}}},
@@ -164,13 +164,13 @@ const Gfx lakitu_enemy_seg5_dl_05012910[] = {
 };
 
 // 0x05012978
-static const Lights1 lakitu_enemy_seg5_lights_05012978 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_05012978 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05012990
-static const Vtx lakitu_enemy_seg5_vertex_05012990[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012990[] = {
     {{{     2,     -6,     83}, 0, { -1072,    916}, {0xcb, 0x25, 0x6c, 0xff}}},
     {{{   -49,    -11,     35}, 0, {  -556,    874}, {0x92, 0x2e, 0x2b, 0xff}}},
     {{{     1,    -57,     76}, 0, { -1062,    410}, {0xd5, 0xe6, 0x74, 0xff}}},
@@ -190,7 +190,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012990[] = {
 };
 
 // 0x05012A90
-static const Vtx lakitu_enemy_seg5_vertex_05012A90[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012A90[] = {
     {{{     1,    -57,    -75}, 0, { -1062,    410}, {0xd6, 0xe6, 0x8c, 0xff}}},
     {{{    98,    -35,    -80}, 0, { -2034,    626}, {0x43, 0xd5, 0x9e, 0xff}}},
     {{{    97,   -100,    -72}, 0, { -2022,    -18}, {0x1b, 0xcd, 0x90, 0xff}}},
@@ -209,7 +209,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012A90[] = {
 };
 
 // 0x05012B80
-static const Vtx lakitu_enemy_seg5_vertex_05012B80[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012B80[] = {
     {{{   105,     51,     40}, 0, {   864,    924}, {0x15, 0x7c, 0x0f, 0xff}}},
     {{{   148,     21,     46}, 0, {   920,    620}, {0x67, 0x30, 0x36, 0xff}}},
     {{{   161,     16,      0}, 0, {   480,    568}, {0x70, 0x3a, 0x00, 0xff}}},
@@ -229,7 +229,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012B80[] = {
 };
 
 // 0x05012C80
-static const Vtx lakitu_enemy_seg5_vertex_05012C80[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012C80[] = {
     {{{     2,     -6,    -82}, 0, { -1072,    916}, {0xcf, 0x36, 0x99, 0xff}}},
     {{{   104,     34,    -89}, 0, { -2094,   1332}, {0x1d, 0x53, 0xa5, 0xff}}},
     {{{   103,    -17,   -100}, 0, { -2084,    810}, {0x33, 0xd1, 0x97, 0xff}}},
@@ -248,7 +248,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012C80[] = {
 };
 
 // 0x05012D70
-static const Vtx lakitu_enemy_seg5_vertex_05012D70[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012D70[] = {
     {{{   103,    -17,    101}, 0, { -2084,    810}, {0x33, 0xd1, 0x69, 0xff}}},
     {{{   104,     34,     90}, 0, { -2094,   1332}, {0x12, 0x57, 0x5a, 0xff}}},
     {{{     2,     -6,     83}, 0, { -1072,    916}, {0xcb, 0x25, 0x6c, 0xff}}},
@@ -268,7 +268,7 @@ static const Vtx lakitu_enemy_seg5_vertex_05012D70[] = {
 };
 
 // 0x05012E70
-static const Vtx lakitu_enemy_seg5_vertex_05012E70[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05012E70[] = {
     {{{   101,   -142,    -34}, 0, { -2058,   -434}, {0x34, 0x92, 0xde, 0xff}}},
     {{{     0,   -140,     32}, 0, { -1046,   -414}, {0xc5, 0x94, 0x1d, 0xff}}},
     {{{     0,   -140,    -31}, 0, { -1046,   -414}, {0xd1, 0x9a, 0xc6, 0xff}}},
@@ -347,13 +347,13 @@ const Gfx lakitu_enemy_seg5_dl_05013160[] = {
 };
 
 // 0x050131C0
-static const Lights1 lakitu_enemy_seg5_lights_050131C0 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_050131C0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050131D8
-static const Vtx lakitu_enemy_seg5_vertex_050131D8[] = {
+ const Vtx lakitu_enemy_seg5_vertex_050131D8[] = {
     {{{   150,    -30,      0}, 0, {   992,    994}, {0x7e, 0xf5, 0x09, 0xff}}},
     {{{   136,   -116,     82}, 0, {  2012,      0}, {0x7e, 0xf5, 0x09, 0xff}}},
     {{{   142,   -116,      0}, 0, {   992,    -26}, {0x7e, 0xf5, 0x09, 0xff}}},
@@ -420,13 +420,13 @@ const Gfx lakitu_enemy_seg5_dl_05013378[] = {
 };
 
 // 0x050133A0
-static const Lights1 lakitu_enemy_seg5_lights_050133A0 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_050133A0 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x050133B8
-static const Vtx lakitu_enemy_seg5_vertex_050133B8[] = {
+ const Vtx lakitu_enemy_seg5_vertex_050133B8[] = {
     {{{    30,     -5,    -22}, 0, {     0,      0}, {0xe3, 0xb1, 0xa2, 0xff}}},
     {{{    -5,      0,      0}, 0, {     0,      0}, {0x83, 0xee, 0x00, 0xff}}},
     {{{    28,     15,    -22}, 0, {     0,      0}, {0xd1, 0x29, 0x92, 0xff}}},
@@ -466,13 +466,13 @@ const Gfx lakitu_enemy_seg5_dl_050134A8[] = {
 };
 
 // 0x05013598
-static const Lights1 lakitu_enemy_seg5_lights_05013598 = gdSPDefLights1(
+ const Lights1 lakitu_enemy_seg5_lights_05013598 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x050135B0
-static const Vtx lakitu_enemy_seg5_vertex_050135B0[] = {
+ const Vtx lakitu_enemy_seg5_vertex_050135B0[] = {
     {{{    99,     30,     33}, 0, {     0,      0}, {0x06, 0x5e, 0x54, 0xff}}},
     {{{   102,      0,     33}, 0, {     0,      0}, {0x21, 0xd1, 0x70, 0xff}}},
     {{{   140,     20,      2}, 0, {     0,      0}, {0x73, 0xfb, 0x35, 0xff}}},
@@ -512,7 +512,7 @@ const Gfx lakitu_enemy_seg5_dl_050136A0[] = {
 };
 
 // 0x05013790
-static const Vtx lakitu_enemy_seg5_vertex_05013790[] = {
+ const Vtx lakitu_enemy_seg5_vertex_05013790[] = {
     {{{   103,     40,     28}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},
     {{{   115,     46,     39}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},
     {{{   111,     46,     30}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},

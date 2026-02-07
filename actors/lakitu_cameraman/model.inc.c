@@ -1,49 +1,49 @@
 // Lakitu (Cameraman)
 
 // 0x06000000
-ALIGNED8 static const Texture lakitu_seg6_texture_06000000[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06000000[] = {
 #include "actors/lakitu_cameraman/lakitu_cameraman_cloud_face_unused.rgba16.inc.c"
 };
 
 // 0x06000800
-ALIGNED8 static const Texture lakitu_seg6_texture_06000800[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06000800[] = {
 #include "actors/lakitu_cameraman/lakitu_cameraman_eyes_open.rgba16.inc.c"
 };
 
 // 0x06001800
-ALIGNED8 static const Texture lakitu_seg6_texture_06001800[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06001800[] = {
 #include "actors/lakitu_cameraman/lakitu_cameraman_eyes_closed.rgba16.inc.c"
 };
 
 // 0x06002800
-ALIGNED8 static const Texture lakitu_seg6_texture_06002800[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06002800[] = {
 #include "actors/lakitu_cameraman/lakitu_cameraman_shell.rgba16.inc.c"
 };
 
 // 0x06003000
-ALIGNED8 static const Texture lakitu_seg6_texture_06003000[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06003000[] = {
 #include "actors/lakitu_cameraman/lakitu_cameraman_frown.rgba16.inc.c"
 };
 
 // 0x06003800
-ALIGNED8 static const Texture lakitu_seg6_texture_06003800[] = {
+ALIGNED8  const Texture lakitu_seg6_texture_06003800[] = {
 #include "actors/lakitu_cameraman/lakitu_camera_lens.rgba16.inc.c"
 };
 
 // 0x06003A00
-static const Lights1 lakitu_seg6_lights_06003A00 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06003A00 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06003A18
-static const Lights1 lakitu_seg6_lights_06003A18 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06003A18 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06003A30
-static const Vtx lakitu_seg6_vertex_06003A30[] = {
+ const Vtx lakitu_seg6_vertex_06003A30[] = {
     {{{    91,    -25,     86}, 0, {   240,    464}, {0x3e, 0xd0, 0x63, 0xff}}},
     {{{   132,    -17,     43}, 0, {    34,    468}, {0x71, 0xce, 0x1a, 0xff}}},
     {{{   137,     35,     43}, 0, {     0,    980}, {0x64, 0x33, 0x39, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx lakitu_seg6_vertex_06003A30[] = {
 };
 
 // 0x06003B30
-static const Vtx lakitu_seg6_vertex_06003B30[] = {
+ const Vtx lakitu_seg6_vertex_06003B30[] = {
     {{{    -2,     15,     99}, 0, {   684,    990}, {0xc1, 0x34, 0x60, 0xff}}},
     {{{   -56,      7,     43}, 0, {   958,    992}, {0x87, 0x10, 0x21, 0xff}}},
     {{{   -33,    -40,     43}, 0, {   884,    484}, {0xa3, 0xbb, 0x31, 0xff}}},
@@ -77,7 +77,7 @@ static const Vtx lakitu_seg6_vertex_06003B30[] = {
 };
 
 // 0x06003BD0
-static const Vtx lakitu_seg6_vertex_06003BD0[] = {
+ const Vtx lakitu_seg6_vertex_06003BD0[] = {
     {{{     0,     51,      0}, 0, {     0,      0}, {0xcf, 0x75, 0x00, 0xff}}},
     {{{    68,     61,     35}, 0, {     0,      0}, {0x09, 0x7b, 0x1a, 0xff}}},
     {{{    68,     61,    -33}, 0, {     0,      0}, {0x01, 0x7a, 0xe0, 0xff}}},
@@ -150,13 +150,13 @@ const Gfx lakitu_seg6_dl_06003E30[] = {
 };
 
 // 0x06003E98
-static const Lights1 lakitu_seg6_lights_06003E98 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06003E98 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06003EB0
-static const Vtx lakitu_seg6_vertex_06003EB0[] = {
+ const Vtx lakitu_seg6_vertex_06003EB0[] = {
     {{{     2,     -6,     83}, 0, { -1072,    916}, {0xcb, 0x25, 0x6c, 0xff}}},
     {{{   -49,    -11,     35}, 0, {  -556,    874}, {0x92, 0x2e, 0x2b, 0xff}}},
     {{{     1,    -57,     76}, 0, { -1062,    410}, {0xd5, 0xe6, 0x74, 0xff}}},
@@ -176,7 +176,7 @@ static const Vtx lakitu_seg6_vertex_06003EB0[] = {
 };
 
 // 0x06003FB0
-static const Vtx lakitu_seg6_vertex_06003FB0[] = {
+ const Vtx lakitu_seg6_vertex_06003FB0[] = {
     {{{     1,    -57,    -75}, 0, { -1062,    410}, {0xd6, 0xe6, 0x8c, 0xff}}},
     {{{    98,    -35,    -80}, 0, { -2034,    626}, {0x43, 0xd5, 0x9e, 0xff}}},
     {{{    97,   -100,    -72}, 0, { -2022,    -18}, {0x1b, 0xcd, 0x90, 0xff}}},
@@ -195,7 +195,7 @@ static const Vtx lakitu_seg6_vertex_06003FB0[] = {
 };
 
 // 0x060040A0
-static const Vtx lakitu_seg6_vertex_060040A0[] = {
+ const Vtx lakitu_seg6_vertex_060040A0[] = {
     {{{   105,     51,     40}, 0, {   864,    924}, {0x15, 0x7c, 0x0f, 0xff}}},
     {{{   148,     21,     46}, 0, {   920,    620}, {0x67, 0x30, 0x36, 0xff}}},
     {{{   161,     16,      0}, 0, {   480,    568}, {0x70, 0x3a, 0x00, 0xff}}},
@@ -215,7 +215,7 @@ static const Vtx lakitu_seg6_vertex_060040A0[] = {
 };
 
 // 0x060041A0
-static const Vtx lakitu_seg6_vertex_060041A0[] = {
+ const Vtx lakitu_seg6_vertex_060041A0[] = {
     {{{     2,     -6,    -82}, 0, { -1072,    916}, {0xcf, 0x36, 0x99, 0xff}}},
     {{{   104,     34,    -89}, 0, { -2094,   1332}, {0x1d, 0x53, 0xa5, 0xff}}},
     {{{   103,    -17,   -100}, 0, { -2084,    810}, {0x33, 0xd1, 0x97, 0xff}}},
@@ -234,7 +234,7 @@ static const Vtx lakitu_seg6_vertex_060041A0[] = {
 };
 
 // 0x06004290
-static const Vtx lakitu_seg6_vertex_06004290[] = {
+ const Vtx lakitu_seg6_vertex_06004290[] = {
     {{{   103,    -17,    101}, 0, { -2084,    810}, {0x33, 0xd1, 0x69, 0xff}}},
     {{{   104,     34,     90}, 0, { -2094,   1332}, {0x12, 0x57, 0x5a, 0xff}}},
     {{{     2,     -6,     83}, 0, { -1072,    916}, {0xcb, 0x25, 0x6c, 0xff}}},
@@ -254,7 +254,7 @@ static const Vtx lakitu_seg6_vertex_06004290[] = {
 };
 
 // 0x06004390
-static const Vtx lakitu_seg6_vertex_06004390[] = {
+ const Vtx lakitu_seg6_vertex_06004390[] = {
     {{{   101,   -142,    -34}, 0, { -2058,   -434}, {0x34, 0x92, 0xde, 0xff}}},
     {{{     0,   -140,     32}, 0, { -1046,   -414}, {0xc5, 0x94, 0x1d, 0xff}}},
     {{{     0,   -140,    -31}, 0, { -1046,   -414}, {0xd1, 0x9a, 0xc6, 0xff}}},
@@ -333,13 +333,13 @@ const Gfx lakitu_seg6_dl_06004680[] = {
 };
 
 // 0x060046E0
-static const Lights1 lakitu_seg6_lights_060046E0 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_060046E0 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060046F8
-static const Vtx lakitu_seg6_vertex_060046F8[] = {
+ const Vtx lakitu_seg6_vertex_060046F8[] = {
     {{{    99,     30,     33}, 0, {     0,      0}, {0x06, 0x5e, 0x54, 0xff}}},
     {{{   102,      0,     33}, 0, {     0,      0}, {0x21, 0xd1, 0x70, 0xff}}},
     {{{   140,     20,      2}, 0, {     0,      0}, {0x73, 0xfb, 0x35, 0xff}}},
@@ -379,13 +379,13 @@ const Gfx lakitu_seg6_dl_060047E8[] = {
 };
 
 // 0x060048D8
-static const Lights1 lakitu_seg6_lights_060048D8 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_060048D8 = gdSPDefLights1(
     0x79, 0x55, 0x00,
     0xf2, 0xab, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060048F0
-static const Vtx lakitu_seg6_vertex_060048F0[] = {
+ const Vtx lakitu_seg6_vertex_060048F0[] = {
     {{{    30,     -5,    -22}, 0, {     0,      0}, {0xe3, 0xb1, 0xa2, 0xff}}},
     {{{    -5,      0,      0}, 0, {     0,      0}, {0x83, 0xee, 0x00, 0xff}}},
     {{{    28,     15,    -22}, 0, {     0,      0}, {0xd1, 0x29, 0x92, 0xff}}},
@@ -425,13 +425,13 @@ const Gfx lakitu_seg6_dl_060049E0[] = {
 };
 
 // 0x06004AD0
-static const Lights1 lakitu_seg6_lights_06004AD0 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06004AD0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06004AE8
-static const Vtx lakitu_seg6_vertex_06004AE8[] = {
+ const Vtx lakitu_seg6_vertex_06004AE8[] = {
     {{{   150,    -30,      0}, 0, {   992,    994}, {0x7e, 0xf5, 0x09, 0xff}}},
     {{{   136,   -116,     82}, 0, {  2012,      0}, {0x7e, 0xf5, 0x09, 0xff}}},
     {{{   142,   -116,      0}, 0, {   992,    -26}, {0x7e, 0xf5, 0x09, 0xff}}},
@@ -498,31 +498,31 @@ const Gfx lakitu_seg6_dl_06004C88[] = {
 };
 
 // 0x06004CB0
-static const Lights1 lakitu_seg6_lights_06004CB0 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06004CB0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06004CC8
-static const Lights1 lakitu_seg6_lights_06004CC8 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06004CC8 = gdSPDefLights1(
     0x0c, 0x0c, 0x0c,
     0x19, 0x19, 0x19, 0x28, 0x28, 0x28
 );
 
 // 0x06004CE0
-static const Lights1 lakitu_seg6_lights_06004CE0 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06004CE0 = gdSPDefLights1(
     0x19, 0x22, 0x20,
     0x32, 0x44, 0x40, 0x28, 0x28, 0x28
 );
 
 // 0x06004CF8
-static const Lights1 lakitu_seg6_lights_06004CF8 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06004CF8 = gdSPDefLights1(
     0x18, 0x18, 0x18,
     0x30, 0x30, 0x30, 0x28, 0x28, 0x28
 );
 
 // 0x06004D10
-static const Vtx lakitu_seg6_vertex_06004D10[] = {
+ const Vtx lakitu_seg6_vertex_06004D10[] = {
     {{{    79,   -113,    -34}, 0, {     0,    480}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     7,   -113,     37}, 0, {   480,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     7,   -113,    -34}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -530,7 +530,7 @@ static const Vtx lakitu_seg6_vertex_06004D10[] = {
 };
 
 // 0x06004D50
-static const Vtx lakitu_seg6_vertex_06004D50[] = {
+ const Vtx lakitu_seg6_vertex_06004D50[] = {
     {{{    20,    -58,    -21}, 0, {     0,      0}, {0x00, 0x39, 0x8f, 0xff}}},
     {{{    66,    -58,    -21}, 0, {     0,      0}, {0x00, 0x39, 0x8f, 0xff}}},
     {{{    43,   -113,    -49}, 0, {     0,      0}, {0x00, 0x39, 0x8f, 0xff}}},
@@ -549,7 +549,7 @@ static const Vtx lakitu_seg6_vertex_06004D50[] = {
 };
 
 // 0x06004E40
-static const Vtx lakitu_seg6_vertex_06004E40[] = {
+ const Vtx lakitu_seg6_vertex_06004E40[] = {
     {{{    66,    -58,    -21}, 0, {     0,      0}, {0x71, 0x39, 0x00, 0xff}}},
     {{{    66,    -58,     24}, 0, {     0,      0}, {0x71, 0x39, 0x00, 0xff}}},
     {{{    94,   -113,      1}, 0, {     0,      0}, {0x71, 0x39, 0x00, 0xff}}},
@@ -568,7 +568,7 @@ static const Vtx lakitu_seg6_vertex_06004E40[] = {
 };
 
 // 0x06004F30
-static const Vtx lakitu_seg6_vertex_06004F30[] = {
+ const Vtx lakitu_seg6_vertex_06004F30[] = {
     {{{    43,   -113,     52}, 0, {     0,      0}, {0xd2, 0x25, 0x70, 0xff}}},
     {{{    20,    -58,     24}, 0, {     0,      0}, {0xd2, 0x25, 0x70, 0xff}}},
     {{{     7,   -113,     37}, 0, {     0,      0}, {0xd2, 0x25, 0x70, 0xff}}},
@@ -578,7 +578,7 @@ static const Vtx lakitu_seg6_vertex_06004F30[] = {
 };
 
 // 0x06004F90
-static const Vtx lakitu_seg6_vertex_06004F90[] = {
+ const Vtx lakitu_seg6_vertex_06004F90[] = {
     {{{    -4,     46,    -40}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    -4,    -58,     43}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    -4,     46,     43}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0xff}}},
@@ -596,7 +596,7 @@ static const Vtx lakitu_seg6_vertex_06004F90[] = {
 };
 
 // 0x06005070
-static const Vtx lakitu_seg6_vertex_06005070[] = {
+ const Vtx lakitu_seg6_vertex_06005070[] = {
     {{{   100,    -58,    -40}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   100,    -58,     43}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{    -4,    -58,     43}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -614,7 +614,7 @@ static const Vtx lakitu_seg6_vertex_06005070[] = {
 };
 
 // 0x06005150
-static const Vtx lakitu_seg6_vertex_06005150[] = {
+ const Vtx lakitu_seg6_vertex_06005150[] = {
     {{{     7,   -113,    -34}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     7,   -113,     37}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{    -7,   -113,      1}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -689,43 +689,43 @@ const Gfx lakitu_seg6_dl_06005360[] = {
 };
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_cameraman_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_cameraman_lights_unused1 = gdSPDefLights1(
     0x33, 0x1f, 0x0c,
     0xcc, 0x7f, 0x33, 0x28, 0x28, 0x28
 );
 
 // 0x060053F0
-static const Lights1 lakitu_seg6_lights_060053F0 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_060053F0 = gdSPDefLights1(
     0x29, 0x13, 0x06,
     0xa5, 0x4f, 0x1b, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_cameraman_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_cameraman_lights_unused2 = gdSPDefLights1(
     0x06, 0x06, 0x06,
     0x19, 0x19, 0x19, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_cameraman_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_cameraman_lights_unused3 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x06005438
-static const Lights1 lakitu_seg6_lights_06005438 = gdSPDefLights1(
+ const Lights1 lakitu_seg6_lights_06005438 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 lakitu_cameraman_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 lakitu_cameraman_lights_unused4 = gdSPDefLights1(
     0x0d, 0x2c, 0x0b,
     0x34, 0xb2, 0x2c, 0x28, 0x28, 0x28
 );
 
 // 0x06005468
-static const Vtx lakitu_seg6_vertex_06005468[] = {
+ const Vtx lakitu_seg6_vertex_06005468[] = {
     {{{   103,     40,     28}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},
     {{{   115,     46,     39}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},
     {{{   111,     46,     30}, 0, {     0,      0}, {0xb1, 0x5e, 0x1c, 0x00}}},
@@ -742,14 +742,14 @@ static const Vtx lakitu_seg6_vertex_06005468[] = {
 };
 
 // 0x06005538
-static const Vtx lakitu_seg6_vertex_06005538[] = {
+ const Vtx lakitu_seg6_vertex_06005538[] = {
     {{{   189,      1,      1}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{   189,      1,     -2}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{    -3,      0,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
 };
 
 // 0x06005568
-static const Vtx lakitu_seg6_vertex_06005568[] = {
+ const Vtx lakitu_seg6_vertex_06005568[] = {
     {{{    -3,      0,      0}, 0, {     0,      0}, {0x01, 0x81, 0x00, 0x00}}},
     {{{   189,      2,     -2}, 0, {     0,      0}, {0x01, 0x81, 0x00, 0x00}}},
     {{{   189,      2,      1}, 0, {     0,      0}, {0x01, 0x81, 0x00, 0x00}}},

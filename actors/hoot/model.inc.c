@@ -1,84 +1,84 @@
 // Hoot
 
 // 0x05000900
-static const Lights1 hoot_seg5_lights_05000900 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000900 = gdSPDefLights1(
     0x30, 0x1b, 0x0f,
     0xc0, 0x6e, 0x3d, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 hoot_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 hoot_lights_unused1 = gdSPDefLights1(
     0x37, 0x27, 0x0b,
     0xdd, 0x9d, 0x2d, 0x28, 0x28, 0x28
 );
 
 // 0x05000930
-static const Lights1 hoot_seg5_lights_05000930 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000930 = gdSPDefLights1(
     0x36, 0x26, 0x11,
     0xdb, 0x99, 0x46, 0x28, 0x28, 0x28
 );
 
 // 0x05000948
-static const Lights1 hoot_seg5_lights_05000948 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000948 = gdSPDefLights1(
     0x06, 0x06, 0x06,
     0x19, 0x19, 0x19, 0x28, 0x28, 0x28
 );
 
 // 0x05000960
-static const Lights1 hoot_seg5_lights_05000960 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000960 = gdSPDefLights1(
     0x1d, 0x0a, 0x05,
     0x77, 0x2a, 0x16, 0x28, 0x28, 0x28
 );
 
 // 0x05000978
-static const Lights1 hoot_seg5_lights_05000978 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000978 = gdSPDefLights1(
     0x06, 0x06, 0x06,
     0x19, 0x19, 0x19, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 hoot_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 hoot_lights_unused2 = gdSPDefLights1(
     0x39, 0x27, 0x0a,
     0xe6, 0x9d, 0x29, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 hoot_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 hoot_lights_unused3 = gdSPDefLights1(
     0x1d, 0x06, 0x3b,
     0x75, 0x18, 0xef, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 hoot_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 hoot_lights_unused4 = gdSPDefLights1(
     0x3a, 0x29, 0x09,
     0xeb, 0xa6, 0x27, 0x28, 0x28, 0x28
 );
 
 // 0x050009D8
-static const Lights1 hoot_seg5_lights_050009D8 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_050009D8 = gdSPDefLights1(
     0x18, 0x07, 0x03,
     0x63, 0x1e, 0x0f, 0x28, 0x28, 0x28
 );
 
 // 0x050009F0
-static const Lights1 hoot_seg5_lights_050009F0 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_050009F0 = gdSPDefLights1(
     0x3f, 0x3a, 0x09,
     0xfe, 0xea, 0x26, 0x28, 0x28, 0x28
 );
 
 // 0x05000A08
-static const Lights1 hoot_seg5_lights_05000A08 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05000A08 = gdSPDefLights1(
     0x13, 0x0d, 0x0b,
     0x4d, 0x35, 0x2e, 0x28, 0x28, 0x28
 );
 
 // 0x05000A20
-ALIGNED8 static const Texture hoot_seg5_texture_05000A20[] = {
+ALIGNED8  const Texture hoot_seg5_texture_05000A20[] = {
 #include "actors/hoot/hoot_eyes.rgba16.inc.c"
 };
 
 // 0x05001220
-static const Vtx hoot_seg5_vertex_05001220[] = {
+ const Vtx hoot_seg5_vertex_05001220[] = {
     {{{     8,     86,     22}, 0, {  1292,   1620}, {0xc8, 0x5e, 0x3f, 0x00}}},
     {{{     1,     77,     65}, 0, {  1984,   1676}, {0xb2, 0x4d, 0x3e, 0x00}}},
     {{{    89,     76,     57}, 0, {  1892,    256}, {0x0f, 0x6e, 0x3b, 0x00}}},
@@ -97,7 +97,7 @@ static const Vtx hoot_seg5_vertex_05001220[] = {
 };
 
 // 0x05001310
-static const Vtx hoot_seg5_vertex_05001310[] = {
+ const Vtx hoot_seg5_vertex_05001310[] = {
     {{{    39,    120,      0}, 0, {     0,      0}, {0x49, 0x67, 0xfe, 0x00}}},
     {{{   -10,    111,      0}, 0, {     0,      0}, {0x94, 0x41, 0xff, 0x00}}},
     {{{     8,     86,     22}, 0, {     0,      0}, {0xc8, 0x5e, 0x3f, 0x00}}},
@@ -113,14 +113,14 @@ static const Vtx hoot_seg5_vertex_05001310[] = {
 };
 
 // 0x050013D0
-static const Vtx hoot_seg5_vertex_050013D0[] = {
+ const Vtx hoot_seg5_vertex_050013D0[] = {
     {{{     8,     86,    -21}, 0, {     0,      0}, {0xd7, 0x5b, 0xb3, 0x00}}},
     {{{     8,     86,     22}, 0, {     0,      0}, {0xc8, 0x5e, 0x3f, 0x00}}},
     {{{   -10,    111,      0}, 0, {     0,      0}, {0x94, 0x41, 0xff, 0x00}}},
 };
 
 // 0x05001400
-static const Vtx hoot_seg5_vertex_05001400[] = {
+ const Vtx hoot_seg5_vertex_05001400[] = {
     {{{    -8,    -82,     44}, 0, {     0,      0}, {0x8d, 0xcf, 0x0e, 0x00}}},
     {{{    -8,    -82,    -43}, 0, {     0,      0}, {0xa4, 0xab, 0xf1, 0x00}}},
     {{{    69,    -83,     35}, 0, {     0,      0}, {0x26, 0x8c, 0x20, 0x00}}},
@@ -139,7 +139,7 @@ static const Vtx hoot_seg5_vertex_05001400[] = {
 };
 
 // 0x050014F0
-static const Vtx hoot_seg5_vertex_050014F0[] = {
+ const Vtx hoot_seg5_vertex_050014F0[] = {
     {{{    -8,    -82,    -43}, 0, {     0,      0}, {0xa4, 0xab, 0xf1, 0x00}}},
     {{{     1,     77,    -64}, 0, {     0,      0}, {0xa1, 0x46, 0xd4, 0x00}}},
     {{{    -3,     33,    -87}, 0, {     0,      0}, {0xb0, 0x1e, 0xa3, 0x00}}},
@@ -158,7 +158,7 @@ static const Vtx hoot_seg5_vertex_050014F0[] = {
 };
 
 // 0x050015E0
-static const Vtx hoot_seg5_vertex_050015E0[] = {
+ const Vtx hoot_seg5_vertex_050015E0[] = {
     {{{    81,    -44,     73}, 0, {     0,      0}, {0x3b, 0xd3, 0x66, 0x00}}},
     {{{    69,    -83,     35}, 0, {     0,      0}, {0x26, 0x8c, 0x20, 0x00}}},
     {{{   122,    -45,     36}, 0, {     0,      0}, {0x60, 0xbd, 0x2d, 0x00}}},
@@ -177,7 +177,7 @@ static const Vtx hoot_seg5_vertex_050015E0[] = {
 };
 
 // 0x050016D0
-static const Vtx hoot_seg5_vertex_050016D0[] = {
+ const Vtx hoot_seg5_vertex_050016D0[] = {
     {{{   135,     24,     44}, 0, {     0,      0}, {0x71, 0x01, 0x39, 0x00}}},
     {{{   122,    -45,     36}, 0, {     0,      0}, {0x60, 0xbd, 0x2d, 0x00}}},
     {{{   122,    -45,    -35}, 0, {     0,      0}, {0x66, 0xbb, 0xe2, 0x00}}},
@@ -196,7 +196,7 @@ static const Vtx hoot_seg5_vertex_050016D0[] = {
 };
 
 // 0x050017C0
-static const Vtx hoot_seg5_vertex_050017C0[] = {
+ const Vtx hoot_seg5_vertex_050017C0[] = {
     {{{    86,     27,     73}, 0, {     0,      0}, {0x25, 0x16, 0x77, 0x00}}},
     {{{     1,     77,     65}, 0, {     0,      0}, {0xb2, 0x4d, 0x3e, 0x00}}},
     {{{    -3,     33,     88}, 0, {     0,      0}, {0xb0, 0x1e, 0x5d, 0x00}}},
@@ -215,7 +215,7 @@ static const Vtx hoot_seg5_vertex_050017C0[] = {
 };
 
 // 0x050018B0
-static const Vtx hoot_seg5_vertex_050018B0[] = {
+ const Vtx hoot_seg5_vertex_050018B0[] = {
     {{{    89,     76,     57}, 0, {     0,      0}, {0x0f, 0x6e, 0x3b, 0x00}}},
     {{{   131,     93,    -14}, 0, {     0,      0}, {0x4c, 0x60, 0xe2, 0x00}}},
     {{{    89,     76,    -56}, 0, {     0,      0}, {0x19, 0x68, 0xbd, 0x00}}},
@@ -234,7 +234,7 @@ static const Vtx hoot_seg5_vertex_050018B0[] = {
 };
 
 // 0x050019A0
-static const Vtx hoot_seg5_vertex_050019A0[] = {
+ const Vtx hoot_seg5_vertex_050019A0[] = {
     {{{   131,     93,    -14}, 0, {     0,      0}, {0x4c, 0x60, 0xe2, 0x00}}},
     {{{   131,     93,     15}, 0, {     0,      0}, {0x4f, 0x56, 0x2f, 0x00}}},
     {{{   135,     24,     44}, 0, {     0,      0}, {0x71, 0x01, 0x39, 0x00}}},
@@ -253,7 +253,7 @@ static const Vtx hoot_seg5_vertex_050019A0[] = {
 };
 
 // 0x05001A90
-static const Vtx hoot_seg5_vertex_05001A90[] = {
+ const Vtx hoot_seg5_vertex_05001A90[] = {
     {{{     1,     77,    -64}, 0, {     0,      0}, {0xa1, 0x46, 0xd4, 0x00}}},
     {{{    89,     76,    -56}, 0, {     0,      0}, {0x19, 0x68, 0xbd, 0x00}}},
     {{{    86,     27,    -72}, 0, {     0,      0}, {0x25, 0x16, 0x89, 0x00}}},
@@ -345,24 +345,24 @@ const Gfx hoot_seg5_dl_05001DF0[] = {
 };
 
 // 0x05001E38
-static const Lights1 hoot_seg5_lights_05001E38 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05001E38 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001E50
-ALIGNED8 static const Texture hoot_seg5_texture_05001E50[] = {
+ALIGNED8  const Texture hoot_seg5_texture_05001E50[] = {
 #include "actors/hoot/hoot_wing.rgba16.inc.c"
 };
 
 // 0x05002650
-ALIGNED8 static const Texture hoot_seg5_texture_05002650[] = {
+ALIGNED8  const Texture hoot_seg5_texture_05002650[] = {
 #include "actors/hoot/hoot_wing_tip.rgba16.inc.c"
 };
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x05002E50
-static const Vtx hoot_seg5_vertex_05002E50[] = {
+ const Vtx hoot_seg5_vertex_05002E50[] = {
     {{{   126,      0,    -62}, 0, {  1780,    228}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     0,      0,    -87}, 0, {   296,    -56}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   168,      0,    125}, 0, {  2288,   2352}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -408,14 +408,14 @@ const Gfx hoot_seg5_dl_05002F10[] = {
 };
 
 // 0x05002F60
-static const Lights1 hoot_seg5_lights_05002F60 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05002F60 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x05002F78
-static const Vtx hoot_seg5_vertex_05002F78[] = {
+ const Vtx hoot_seg5_vertex_05002F78[] = {
     {{{   119,      0,    -85}, 0, {  1972,     68}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     0,      0,     96}, 0, {   964,   2040}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   119,      0,     77}, 0, {  1976,   1840}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -461,14 +461,14 @@ const Gfx hoot_seg5_dl_05003038[] = {
 };
 
 // 0x05003088
-static const Lights1 hoot_seg5_lights_05003088 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05003088 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x050030A0
-static const Vtx hoot_seg5_vertex_050030A0[] = {
+ const Vtx hoot_seg5_vertex_050030A0[] = {
     {{{    89,      1,    -46}, 0, {   928,    456}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    37,      1,    -66}, 0, {   352,    216}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    89,      1,     95}, 0, {   924,   2076}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -514,14 +514,14 @@ const Gfx hoot_seg5_dl_05003160[] = {
 };
 
 // 0x050031B0
-static const Lights1 hoot_seg5_lights_050031B0 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_050031B0 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x050031C8
-static const Vtx hoot_seg5_vertex_050031C8[] = {
+ const Vtx hoot_seg5_vertex_050031C8[] = {
     {{{    37,      1,    -66}, 0, {   380,    184}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     2,      1,    -39}, 0, {     0,    528}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    37,      1,     28}, 0, {   400,   1356}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -567,14 +567,14 @@ const Gfx hoot_seg5_dl_05003288[] = {
 };
 
 // 0x050032D8
-static const Lights1 hoot_seg5_lights_050032D8 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_050032D8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x050032F0
-static const Vtx hoot_seg5_vertex_050032F0[] = {
+ const Vtx hoot_seg5_vertex_050032F0[] = {
     {{{   168,      0,   -124}, 0, {  2340,   2408}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     0,      0,     88}, 0, {   424,     -4}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   126,      0,     63}, 0, {  1920,    276}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -620,14 +620,14 @@ const Gfx hoot_seg5_dl_050033B0[] = {
 };
 
 // 0x05003400
-static const Lights1 hoot_seg5_lights_05003400 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05003400 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x05003418
-static const Vtx hoot_seg5_vertex_05003418[] = {
+ const Vtx hoot_seg5_vertex_05003418[] = {
     {{{   119,      0,    -76}, 0, {  1988,   1892}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     0,      0,    -95}, 0, {  1000,   2096}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   119,      0,     86}, 0, {  1984,     36}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -673,14 +673,14 @@ const Gfx hoot_seg5_dl_050034D8[] = {
 };
 
 // 0x05003528
-static const Lights1 hoot_seg5_lights_05003528 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05003528 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x05003540
-static const Vtx hoot_seg5_vertex_05003540[] = {
+ const Vtx hoot_seg5_vertex_05003540[] = {
     {{{    89,      1,    -94}, 0, {   984,   2096}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    37,      1,     67}, 0, {   368,    192}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    89,      1,     47}, 0, {   992,    436}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -726,14 +726,14 @@ const Gfx hoot_seg5_dl_05003600[] = {
 };
 
 // 0x05003650
-static const Lights1 hoot_seg5_lights_05003650 = gdSPDefLights1(
+ const Lights1 hoot_seg5_lights_05003650 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // //! The vertex macro which calls this has too large of a size.
 // 0x05003668
-static const Vtx hoot_seg5_vertex_05003668[] = {
+ const Vtx hoot_seg5_vertex_05003668[] = {
     {{{    37,      1,    -27}, 0, {   428,   1324}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{     2,      1,     40}, 0, {   -24,    512}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{    37,      1,     67}, 0, {   432,    180}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -779,7 +779,7 @@ const Gfx hoot_seg5_dl_05003728[] = {
 };
 
 // 0x05003778
-static const Vtx hoot_seg5_vertex_05003778[] = {
+ const Vtx hoot_seg5_vertex_05003778[] = {
     {{{    26,    -12,      0}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0x00}}},
     {{{    22,     13,     15}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0x00}}},
     {{{   -14,      3,     11}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0x00}}},
@@ -798,7 +798,7 @@ static const Vtx hoot_seg5_vertex_05003778[] = {
 };
 
 // 0x05003868
-static const Vtx hoot_seg5_vertex_05003868[] = {
+ const Vtx hoot_seg5_vertex_05003868[] = {
     {{{    22,     13,    -15}, 0, {     0,      0}, {0x87, 0xe1, 0xf1, 0xff}}},
     {{{    38,    -32,    -47}, 0, {     0,      0}, {0x87, 0xe1, 0xf1, 0x00}}},
     {{{    26,    -12,      0}, 0, {     0,      0}, {0x87, 0xe1, 0xf1, 0x00}}},
@@ -817,7 +817,7 @@ static const Vtx hoot_seg5_vertex_05003868[] = {
 };
 
 // 0x05003958
-static const Vtx hoot_seg5_vertex_05003958[] = {
+ const Vtx hoot_seg5_vertex_05003958[] = {
     {{{    41,     29,      0}, 0, {     0,      0}, {0x33, 0xf6, 0x73, 0xff}}},
     {{{    26,     49,      9}, 0, {     0,      0}, {0x27, 0xea, 0x76, 0x00}}},
     {{{    22,     13,     15}, 0, {     0,      0}, {0x4e, 0x29, 0x5b, 0x00}}},
@@ -837,7 +837,7 @@ static const Vtx hoot_seg5_vertex_05003958[] = {
 };
 
 // 0x05003A58
-static const Vtx hoot_seg5_vertex_05003A58[] = {
+ const Vtx hoot_seg5_vertex_05003A58[] = {
     {{{    26,    -12,      0}, 0, {     0,      0}, {0x35, 0xbb, 0xa5, 0xff}}},
     {{{    45,      8,      0}, 0, {     0,      0}, {0x3f, 0xc7, 0xa3, 0x00}}},
     {{{    49,    -27,     25}, 0, {     0,      0}, {0x26, 0xb7, 0xa0, 0x00}}},
@@ -856,7 +856,7 @@ static const Vtx hoot_seg5_vertex_05003A58[] = {
 };
 
 // 0x05003B48
-static const Vtx hoot_seg5_vertex_05003B48[] = {
+ const Vtx hoot_seg5_vertex_05003B48[] = {
     {{{    26,    -12,      0}, 0, {     0,      0}, {0x02, 0xbe, 0x94, 0xff}}},
     {{{   -10,    -13,      0}, 0, {     0,      0}, {0x02, 0xbe, 0x94, 0x00}}},
     {{{   -14,      3,    -10}, 0, {     0,      0}, {0x02, 0xbe, 0x94, 0x00}}},
@@ -866,7 +866,7 @@ static const Vtx hoot_seg5_vertex_05003B48[] = {
 };
 
 // 0x05003BA8
-static const Vtx hoot_seg5_vertex_05003BA8[] = {
+ const Vtx hoot_seg5_vertex_05003BA8[] = {
     {{{    41,    -47,    -38}, 0, {     0,      0}, {0x18, 0xb1, 0x5f, 0x00}}},
     {{{    79,    -26,    -25}, 0, {     0,      0}, {0x07, 0xb4, 0x64, 0x00}}},
     {{{    49,    -27,    -24}, 0, {     0,      0}, {0x26, 0xb7, 0x60, 0x00}}},
@@ -885,7 +885,7 @@ static const Vtx hoot_seg5_vertex_05003BA8[] = {
 };
 
 // 0x05003C98
-static const Vtx hoot_seg5_vertex_05003C98[] = {
+ const Vtx hoot_seg5_vertex_05003C98[] = {
     {{{    41,     29,      0}, 0, {     0,      0}, {0x33, 0xf6, 0x73, 0xff}}},
     {{{    63,     30,      0}, 0, {     0,      0}, {0x00, 0xcc, 0x73, 0x00}}},
     {{{    26,     49,      9}, 0, {     0,      0}, {0x27, 0xea, 0x76, 0x00}}},
@@ -901,7 +901,7 @@ static const Vtx hoot_seg5_vertex_05003C98[] = {
 };
 
 // 0x05003D58
-static const Vtx hoot_seg5_vertex_05003D58[] = {
+ const Vtx hoot_seg5_vertex_05003D58[] = {
     {{{    45,    -48,      1}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
     {{{    51,     -7,     36}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
     {{{   -10,    -23,      1}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
@@ -921,7 +921,7 @@ static const Vtx hoot_seg5_vertex_05003D58[] = {
 };
 
 // 0x05003E58
-static const Vtx hoot_seg5_vertex_05003E58[] = {
+ const Vtx hoot_seg5_vertex_05003E58[] = {
     {{{    -2,     26,      1}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0xff}}},
     {{{    -6,      1,     23}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0x00}}},
     {{{    51,     -7,     36}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0x00}}},
@@ -937,7 +937,7 @@ static const Vtx hoot_seg5_vertex_05003E58[] = {
 };
 
 // 0x05003F18
-static const Vtx hoot_seg5_vertex_05003F18[] = {
+ const Vtx hoot_seg5_vertex_05003F18[] = {
     {{{    51,     -7,    -34}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
     {{{    58,     33,      1}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
     {{{    51,     -7,     36}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
@@ -945,7 +945,7 @@ static const Vtx hoot_seg5_vertex_05003F18[] = {
 };
 
 // 0x05003F58
-static const Vtx hoot_seg5_vertex_05003F58[] = {
+ const Vtx hoot_seg5_vertex_05003F58[] = {
     {{{    26,     49,     -9}, 0, {     0,      0}, {0x27, 0xea, 0x8a, 0x00}}},
     {{{    63,     30,      0}, 0, {     0,      0}, {0x00, 0xcc, 0x8d, 0x00}}},
     {{{    41,     29,      0}, 0, {     0,      0}, {0x33, 0xf6, 0x8d, 0x00}}},
@@ -964,7 +964,7 @@ static const Vtx hoot_seg5_vertex_05003F58[] = {
 };
 
 // 0x05004048
-static const Vtx hoot_seg5_vertex_05004048[] = {
+ const Vtx hoot_seg5_vertex_05004048[] = {
     {{{    49,    -27,     24}, 0, {     0,      0}, {0x26, 0xb7, 0xa0, 0xff}}},
     {{{    79,    -26,     25}, 0, {     0,      0}, {0x07, 0xb4, 0x9c, 0x00}}},
     {{{    41,    -47,     38}, 0, {     0,      0}, {0x18, 0xb1, 0xa1, 0x00}}},
@@ -980,7 +980,7 @@ static const Vtx hoot_seg5_vertex_05004048[] = {
 };
 
 // 0x05004108
-static const Vtx hoot_seg5_vertex_05004108[] = {
+ const Vtx hoot_seg5_vertex_05004108[] = {
     {{{    49,    -27,    -25}, 0, {     0,      0}, {0x37, 0x5f, 0xc2, 0x00}}},
     {{{    38,    -32,    -48}, 0, {     0,      0}, {0x2d, 0x6c, 0xd1, 0x00}}},
     {{{    22,     13,    -15}, 0, {     0,      0}, {0x4e, 0x29, 0xa5, 0x00}}},
@@ -999,7 +999,7 @@ static const Vtx hoot_seg5_vertex_05004108[] = {
 };
 
 // 0x050041F8
-static const Vtx hoot_seg5_vertex_050041F8[] = {
+ const Vtx hoot_seg5_vertex_050041F8[] = {
     {{{    22,     13,     15}, 0, {     0,      0}, {0x4e, 0x29, 0x5b, 0xff}}},
     {{{    38,    -32,     47}, 0, {     0,      0}, {0x2d, 0x6c, 0x2f, 0x00}}},
     {{{    49,    -27,     24}, 0, {     0,      0}, {0x37, 0x5f, 0x3e, 0x00}}},
@@ -1017,7 +1017,7 @@ static const Vtx hoot_seg5_vertex_050041F8[] = {
 };
 
 // 0x050042D8
-static const Vtx hoot_seg5_vertex_050042D8[] = {
+ const Vtx hoot_seg5_vertex_050042D8[] = {
     {{{   -14,      3,     10}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0xff}}},
     {{{    26,    -12,      0}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0x00}}},
     {{{    22,     13,     15}, 0, {     0,      0}, {0x02, 0xbe, 0x6c, 0x00}}},
@@ -1035,7 +1035,7 @@ static const Vtx hoot_seg5_vertex_050042D8[] = {
 };
 
 // 0x050043B8
-static const Vtx hoot_seg5_vertex_050043B8[] = {
+ const Vtx hoot_seg5_vertex_050043B8[] = {
     {{{    49,    -27,     24}, 0, {     0,      0}, {0x37, 0x5f, 0x3e, 0xff}}},
     {{{    45,      8,      0}, 0, {     0,      0}, {0x48, 0x27, 0x60, 0x00}}},
     {{{    22,     13,     15}, 0, {     0,      0}, {0x4e, 0x29, 0x5b, 0x00}}},
@@ -1054,7 +1054,7 @@ static const Vtx hoot_seg5_vertex_050043B8[] = {
 };
 
 // 0x050044A8
-static const Vtx hoot_seg5_vertex_050044A8[] = {
+ const Vtx hoot_seg5_vertex_050044A8[] = {
     {{{    22,     13,    -15}, 0, {     0,      0}, {0x4e, 0x29, 0xa5, 0xff}}},
     {{{    45,      8,      0}, 0, {     0,      0}, {0x48, 0x27, 0xa0, 0x00}}},
     {{{    49,    -27,    -25}, 0, {     0,      0}, {0x37, 0x5f, 0xc2, 0x00}}},
@@ -1068,7 +1068,7 @@ static const Vtx hoot_seg5_vertex_050044A8[] = {
 };
 
 // 0x05004548
-static const Vtx hoot_seg5_vertex_05004548[] = {
+ const Vtx hoot_seg5_vertex_05004548[] = {
     {{{   -10,    -23,     -1}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
     {{{    45,    -48,     -1}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
     {{{    51,     -7,     34}, 0, {     0,      0}, {0xde, 0xb4, 0x5f, 0x00}}},
@@ -1088,7 +1088,7 @@ static const Vtx hoot_seg5_vertex_05004548[] = {
 };
 
 // 0x05004648
-static const Vtx hoot_seg5_vertex_05004648[] = {
+ const Vtx hoot_seg5_vertex_05004648[] = {
     {{{    -2,     26,     -1}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0xff}}},
     {{{    -6,      1,     20}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0x00}}},
     {{{    51,     -7,     34}, 0, {     0,      0}, {0xf8, 0x53, 0x5f, 0x00}}},
@@ -1104,7 +1104,7 @@ static const Vtx hoot_seg5_vertex_05004648[] = {
 };
 
 // 0x05004708
-static const Vtx hoot_seg5_vertex_05004708[] = {
+ const Vtx hoot_seg5_vertex_05004708[] = {
     {{{    45,    -48,     -1}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
     {{{    51,     -7,    -36}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
     {{{    51,     -7,     34}, 0, {     0,      0}, {0x7d, 0xec, 0x00, 0x00}}},
@@ -1112,7 +1112,7 @@ static const Vtx hoot_seg5_vertex_05004708[] = {
 };
 
 // 0x05004748
-static const Vtx hoot_seg5_vertex_05004748[] = {
+ const Vtx hoot_seg5_vertex_05004748[] = {
     {{{     0,     71,    -47}, 0, {     0,      0}, {0xd6, 0x6a, 0xca, 0x00}}},
     {{{     0,     71,     47}, 0, {     0,      0}, {0xd4, 0x71, 0x23, 0x00}}},
     {{{    64,     81,    -43}, 0, {     0,      0}, {0x18, 0x71, 0xcd, 0x00}}},
@@ -1130,7 +1130,7 @@ static const Vtx hoot_seg5_vertex_05004748[] = {
 };
 
 // 0x05004828
-static const Vtx hoot_seg5_vertex_05004828[] = {
+ const Vtx hoot_seg5_vertex_05004828[] = {
     {{{    48,    -41,    -96}, 0, {     0,      0}, {0x09, 0xca, 0x8e, 0x00}}},
     {{{    36,    -84,    -48}, 0, {     0,      0}, {0x0a, 0x87, 0xde, 0x00}}},
     {{{   -36,    -75,    -34}, 0, {     0,      0}, {0xd6, 0x9d, 0xbe, 0x00}}},

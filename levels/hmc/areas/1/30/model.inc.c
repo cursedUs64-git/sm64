@@ -1,11 +1,11 @@
 // 0x070210E0 - 0x070210F8
-static const Lights1 hmc_seg7_lights_070210E0 = gdSPDefLights1(
+ const Lights1 hmc_seg7_lights_070210E0 = gdSPDefLights1(
     0x79, 0x79, 0x79,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x070210F8 - 0x070211F8
-static const Vtx hmc_seg7_vertex_070210F8[] = {
+ const Vtx hmc_seg7_vertex_070210F8[] = {
     {{{   922,  -4689,   2253}, 0, {   786,  -1054}, {0x00, 0x59, 0x59, 0xff}}},
     {{{   973,  -4689,   2406}, 0, {  1092,  -1156}, {0x2a, 0x54, 0xac, 0xff}}},
     {{{   973,  -4689,   2253}, 0, {   786,  -1156}, {0x49, 0x49, 0x49, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx hmc_seg7_vertex_070210F8[] = {
 };
 
 // 0x070211F8 - 0x070212E8
-static const Vtx hmc_seg7_vertex_070211F8[] = {
+ const Vtx hmc_seg7_vertex_070211F8[] = {
     {{{  6605,  -4689,   2662}, 0, {   990,   2012}, {0xac, 0x2a, 0xac, 0xff}}},
     {{{  6605,  -3665,   2662}, 0, {   990,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  6605,  -3665,   1997}, 0, {     0,      0}, {0xa7, 0x00, 0x59, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx hmc_seg7_vertex_070211F8[] = {
 };
 
 // 0x070212E8 - 0x070213D8
-static const Vtx hmc_seg7_vertex_070212E8[] = {
+ const Vtx hmc_seg7_vertex_070212E8[] = {
     {{{   973,  -4433,   2253}, 0, {   362,   1500}, {0x5c, 0xc3, 0x3d, 0xff}}},
     {{{   973,  -4689,   1997}, 0, {     0,   2012}, {0x54, 0x2a, 0x54, 0xff}}},
     {{{   973,  -3665,   1997}, 0, {     0,      0}, {0x78, 0x00, 0x28, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx hmc_seg7_vertex_070212E8[] = {
 };
 
 // 0x070213D8 - 0x070214C8
-static const Vtx hmc_seg7_vertex_070213D8[] = {
+ const Vtx hmc_seg7_vertex_070213D8[] = {
     {{{  6605,  -3665,   1997}, 0, {  4056,      0}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{   973,  -4689,   1997}, 0, { -7184,   2012}, {0x54, 0x2a, 0x54, 0xff}}},
     {{{  6605,  -4689,   1997}, 0, {  4056,   2012}, {0xcd, 0x67, 0x33, 0xff}}},
@@ -82,7 +82,7 @@ static const Vtx hmc_seg7_vertex_070213D8[] = {
 };
 
 // 0x070214C8 - 0x070215B8
-static const Vtx hmc_seg7_vertex_070214C8[] = {
+ const Vtx hmc_seg7_vertex_070214C8[] = {
     {{{  3021,  -4689,   1997}, 0, { -1052,   2012}, {0x2a, 0x54, 0x54, 0xff}}},
     {{{  3021,  -5713,   1997}, 0, { -1052,      0}, {0x71, 0x00, 0x38, 0xff}}},
     {{{  5581,  -5713,   1997}, 0, {  4056,      0}, {0xc8, 0x00, 0x71, 0xff}}},
@@ -101,7 +101,7 @@ static const Vtx hmc_seg7_vertex_070214C8[] = {
 };
 
 // 0x070215B8 - 0x07021630
-static const Gfx hmc_seg7_dl_070215B8[] = {
+ const Gfx hmc_seg7_dl_070215B8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09009800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -116,7 +116,7 @@ static const Gfx hmc_seg7_dl_070215B8[] = {
 };
 
 // 0x07021630 - 0x07021760
-static const Gfx hmc_seg7_dl_07021630[] = {
+ const Gfx hmc_seg7_dl_07021630[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09007800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

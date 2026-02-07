@@ -1,11 +1,11 @@
 // 0x0701F858 - 0x0701F870
-static const Lights1 bbh_seg7_lights_0701F858 = gdSPDefLights1(
+ const Lights1 bbh_seg7_lights_0701F858 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0701F870 - 0x0701F960
-static const Vtx bbh_seg7_vertex_0701F870[] = {
+ const Vtx bbh_seg7_vertex_0701F870[] = {
     {{{   102,   -101,    -50}, 0, {     0,  -1054}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   102,      0,     51}, 0, {   990,  -2076}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   102,   -101,     51}, 0, {     0,  -2076}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx bbh_seg7_vertex_0701F870[] = {
 };
 
 // 0x0701F960 - 0x0701FA10
-static const Vtx bbh_seg7_vertex_0701F960[] = {
+ const Vtx bbh_seg7_vertex_0701F960[] = {
     {{{   102,      0,    -50}, 0, {   990,   2010}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -101,      0,     51}, 0, {     0,   3032}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   102,      0,     51}, 0, {   990,   3032}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -39,7 +39,7 @@ static const Vtx bbh_seg7_vertex_0701F960[] = {
 };
 
 // 0x0701FA10 - 0x0701FAB0
-static const Gfx bbh_seg7_dl_0701FA10[] = {
+ const Gfx bbh_seg7_dl_0701FA10[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

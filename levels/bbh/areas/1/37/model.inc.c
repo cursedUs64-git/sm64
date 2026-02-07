@@ -1,17 +1,17 @@
 // 0x0701E948 - 0x0701E960
-static const Lights1 bbh_seg7_lights_0701E948 = gdSPDefLights1(
+ const Lights1 bbh_seg7_lights_0701E948 = gdSPDefLights1(
     0x24, 0x11, 0x0b,
     0x5a, 0x2c, 0x1d, 0x28, 0x28, 0x28
 );
 
 // 0x0701E960 - 0x0701E978
-static const Lights1 bbh_seg7_lights_0701E960 = gdSPDefLights1(
+ const Lights1 bbh_seg7_lights_0701E960 = gdSPDefLights1(
     0x3c, 0x3c, 0x3c,
     0x96, 0x96, 0x96, 0x28, 0x28, 0x28
 );
 
 // 0x0701E978 - 0x0701E9F8
-static const Vtx bbh_seg7_vertex_0701E978[] = {
+ const Vtx bbh_seg7_vertex_0701E978[] = {
     {{{  1638,   3021,    730}, 0, {   990,      0}, {0x00, 0x5f, 0x54, 0xff}}},
     {{{  1229,   3021,    730}, 0, {     0,      0}, {0x00, 0x5f, 0x54, 0xff}}},
     {{{  1229,   2750,   1037}, 0, {     0,    990}, {0x00, 0x5f, 0x54, 0xff}}},
@@ -23,7 +23,7 @@ static const Vtx bbh_seg7_vertex_0701E978[] = {
 };
 
 // 0x0701E9F8 - 0x0701EAE8
-static const Vtx bbh_seg7_vertex_0701E9F8[] = {
+ const Vtx bbh_seg7_vertex_0701E9F8[] = {
     {{{  1843,   1536,   2161}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1434,   1126,   2161}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1843,   1126,   2161}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -42,7 +42,7 @@ static const Vtx bbh_seg7_vertex_0701E9F8[] = {
 };
 
 // 0x0701EAE8 - 0x0701EBD8
-static const Vtx bbh_seg7_vertex_0701EAE8[] = {
+ const Vtx bbh_seg7_vertex_0701EAE8[] = {
     {{{  3072,    614,   2673}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  2662,    205,   2673}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  3072,    205,   2673}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -61,7 +61,7 @@ static const Vtx bbh_seg7_vertex_0701EAE8[] = {
 };
 
 // 0x0701EBD8 - 0x0701EC18
-static const Vtx bbh_seg7_vertex_0701EBD8[] = {
+ const Vtx bbh_seg7_vertex_0701EBD8[] = {
     {{{  3072,   1536,   2673}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  2662,   1126,   2673}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  3072,   1126,   2673}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -69,7 +69,7 @@ static const Vtx bbh_seg7_vertex_0701EBD8[] = {
 };
 
 // 0x0701EC18 - 0x0701ED18
-static const Gfx bbh_seg7_dl_0701EC18[] = {
+ const Gfx bbh_seg7_dl_0701EC18[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09006000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

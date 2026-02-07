@@ -1,7 +1,7 @@
 // White Particle Small
 
 // 0x04032700
-static const Vtx white_particle_small_vertex[] = {
+ const Vtx white_particle_small_vertex[] = {
     {{{    -4,      0,      0}, 0, {     0,    960}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     4,      0,      0}, 0, {   960,    960}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     4,      8,      0}, 0, {   960,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx white_particle_small_vertex[] = {
 };
 
 // 0x04032740
-static const Vtx white_particle_small_unused_vertex[] = {
+ const Vtx white_particle_small_unused_vertex[] = {
     {{{    -4,      0,      0}, 0, {     0,    960}, {0xff, 0x00, 0x00, 0xff}}},
     {{{     4,      0,      0}, 0, {   960,    960}, {0xff, 0x00, 0x00, 0xff}}},
     {{{     4,      8,      0}, 0, {   960,      0}, {0xff, 0x00, 0x00, 0xff}}},
@@ -17,7 +17,7 @@ static const Vtx white_particle_small_unused_vertex[] = {
 };
 
 // 0x04032780
-ALIGNED8 static const Texture white_particle_small_texture[] = {
+ALIGNED8  const Texture white_particle_small_texture[] = {
 #include "actors/white_particle_small/small_snow_particle.rgba16.inc.c"
 };
 

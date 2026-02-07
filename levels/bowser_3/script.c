@@ -15,7 +15,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bowser_3/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bowser_3_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BOWSER_3_FALLING_PLATFORM_1,  /*pos*/     0,   0,     0, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(1), /*bhv*/ bhvFallingBowserPlatform),
     OBJECT(/*model*/ MODEL_BOWSER_3_FALLING_PLATFORM_2,  /*pos*/     0,   0,     0, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(2), /*bhv*/ bhvFallingBowserPlatform),
     OBJECT(/*model*/ MODEL_BOWSER_3_FALLING_PLATFORM_3,  /*pos*/     0,   0,     0, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(3), /*bhv*/ bhvFallingBowserPlatform),
@@ -58,7 +58,7 @@ const LevelScript level_bowser_3_entry[] = {
     AREA(/*index*/ 1, bowser_3_geo_000398),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ 0, 1307, 0, /*angle*/ 0, 183, 0, /*bhvParam*/ BPARAM2(WARP_NODE_0A), /*bhv*/ bhvSpinAirborneCircleWarp),
         WARP_NODE(/*id*/ WARP_NODE_0A,    /*destLevel*/ LEVEL_BOWSER_3, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
+        JUMP_LINK(bowser_3_script_func_local_1),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_BITS,     /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
         TERRAIN(/*terrainData*/ bowser_3_seg7_collision_level),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0002, /*seq*/ SEQ_LEVEL_BOSS_KOOPA_FINAL),

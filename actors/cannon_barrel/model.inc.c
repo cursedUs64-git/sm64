@@ -1,24 +1,24 @@
 // Cannon Barrel
 
 // 0x08005878
-static const Lights1 cannon_barrel_seg8_lights_08005878 = gdSPDefLights1(
+ const Lights1 cannon_barrel_seg8_lights_08005878 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08005890
-static const Lights1 cannon_barrel_seg8_lights_08005890 = gdSPDefLights1(
+ const Lights1 cannon_barrel_seg8_lights_08005890 = gdSPDefLights1(
     0x00, 0x00, 0x0f,
     0x00, 0x00, 0x32, 0x28, 0x28, 0x28
 );
 
 // 0x080058A8
-ALIGNED8 static const Texture cannon_barrel_seg8_texture_080058A8[] = {
+ALIGNED8  const Texture cannon_barrel_seg8_texture_080058A8[] = {
 #include "actors/cannon_barrel/cannon_barrel.rgba16.inc.c"
 };
 
 // 0x080060A8
-static const Vtx cannon_barrel_seg8_vertex_080060A8[] = {
+ const Vtx cannon_barrel_seg8_vertex_080060A8[] = {
     {{{   -40,    236,     41}, 0, {   176,    748}, {0x45, 0x5d, 0xcd, 0xff}}},
     {{{   -56,    236,      0}, 0, {    64,    480}, {0x66, 0x49, 0x0d, 0xff}}},
     {{{   -81,    236,      0}, 0, {   -98,    480}, {0xb8, 0x68, 0x09, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx cannon_barrel_seg8_vertex_080060A8[] = {
 };
 
 // 0x080061A8
-static const Vtx cannon_barrel_seg8_vertex_080061A8[] = {
+ const Vtx cannon_barrel_seg8_vertex_080061A8[] = {
     {{{    41,    236,     41}, 0, {     0,      0}, {0xc3, 0x4a, 0xae, 0xff}}},
     {{{    41,    -19,     41}, 0, {     0,      0}, {0xae, 0x4a, 0xc3, 0xff}}},
     {{{     0,    -19,     57}, 0, {     0,      0}, {0xf3, 0x49, 0x9a, 0xff}}},
@@ -58,7 +58,7 @@ static const Vtx cannon_barrel_seg8_vertex_080061A8[] = {
 };
 
 // 0x080062A8
-static const Vtx cannon_barrel_seg8_vertex_080062A8[] = {
+ const Vtx cannon_barrel_seg8_vertex_080062A8[] = {
     {{{    82,    -19,      0}, 0, {     0,      0}, {0x74, 0xce, 0x0b, 0xff}}},
     {{{    58,    -19,     58}, 0, {     0,      0}, {0x49, 0xce, 0x5a, 0xff}}},
     {{{     0,    -71,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},
@@ -78,7 +78,7 @@ static const Vtx cannon_barrel_seg8_vertex_080062A8[] = {
 };
 
 // 0x080063A8
-static const Vtx cannon_barrel_seg8_vertex_080063A8[] = {
+ const Vtx cannon_barrel_seg8_vertex_080063A8[] = {
     {{{   -81,    -19,      0}, 0, {     0,      0}, {0x8c, 0xcf, 0xf4, 0xff}}},
     {{{   -57,    -19,    -57}, 0, {     0,      0}, {0xb6, 0xcf, 0xa6, 0xff}}},
     {{{     0,    -71,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},

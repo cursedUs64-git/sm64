@@ -30,5 +30,5 @@ const Collision breakable_box_seg8_collision_08012D70[] = {
     COL_END(),
 };
 
-UNUSED static const u32 breakable_box_unused_1 = 0;
-UNUSED static const u64 breakable_box_unused_2 = 0;
+UNUSED  const u32 breakable_box_unused_1 = 0;
+UNUSED  const u64 breakable_box_unused_2 = 0;

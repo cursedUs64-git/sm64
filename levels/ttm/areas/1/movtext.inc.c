@@ -1,5 +1,5 @@
 // 0x07017104 - 0x07017124
-static Movtex ttm_movtex_puddle_data[] = {
+ Movtex ttm_movtex_puddle_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(  100),
     MOV_TEX_ROT_SCALE(    3),

@@ -15,7 +15,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bitfs/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bitfs_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BITFS_PLATFORM_ON_TRACK,       /*pos*/ -5733, -3071,    0, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM1(0x07) | BPARAM2(0x33), /*bhv*/ bhvPlatformOnTrack),
     OBJECT(/*model*/ MODEL_BITFS_TILTING_SQUARE_PLATFORM, /*pos*/ -1945, -3225, -715, /*angle*/ 0, 0, 0,   /*bhvParam*/ 0, /*bhv*/ bhvBitFSTiltingInvertedPyramid),
     OBJECT(/*model*/ MODEL_BITFS_TILTING_SQUARE_PLATFORM, /*pos*/ -2866, -3225, -715, /*angle*/ 0, 0, 0,   /*bhvParam*/ 0, /*bhv*/ bhvBitFSTiltingInvertedPyramid),
@@ -38,14 +38,14 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript bitfs_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -3226, 3584, -822, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlamethrower),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -1382, 3584, -822, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlamethrower),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  1229,  307, -412, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlamethrower),
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript bitfs_script_func_local_3[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  1200, 5700,  160, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvBowserCourseRedCoinStar),
     RETURN(),
 };
@@ -107,9 +107,9 @@ const LevelScript level_bitfs_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_BOWSER_2, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_0C,    /*destLevel*/ LEVEL_BITFS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE,   /*destArea*/ 3, /*destNode*/ WARP_NODE_68, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(bitfs_script_func_local_1),
+        JUMP_LINK(bitfs_script_func_local_2),
+        JUMP_LINK(bitfs_script_func_local_3),
         TERRAIN(/*terrainData*/ bitfs_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ bitfs_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_KOOPA_ROAD),

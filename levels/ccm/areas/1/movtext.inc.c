@@ -1,5 +1,5 @@
 // 0x070166E8
-static Movtex ccm_movtex_penguin_puddle_water_data[] = {
+ Movtex ccm_movtex_penguin_puddle_water_data[] = {
     MOV_TEX_INIT_LOAD(   1),
     MOV_TEX_ROT_SPEED(   5),
     MOV_TEX_ROT_SCALE(   2),

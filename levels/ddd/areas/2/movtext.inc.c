@@ -1,5 +1,5 @@
 // 0x0700FCC4
-static Movtex ddd_movtex_area2_water_data[] = {
+ Movtex ddd_movtex_area2_water_data[] = {
     MOV_TEX_INIT_LOAD(    2),
     MOV_TEX_ROT_SPEED(   20), // area 2 general water
     MOV_TEX_ROT_SPEED(   20),

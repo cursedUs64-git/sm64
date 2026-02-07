@@ -11,7 +11,7 @@
  * Hitbox for koopa - this is used for every form except Koopa the Quick, which
  * uses a hardcoded soft hitbox.
  */
-static struct ObjectHitbox sKoopaHitbox = {
+ struct ObjectHitbox sKoopaHitbox = {
     /* interactType:      */ INTERACT_KOOPA,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 0,
@@ -26,7 +26,7 @@ static struct ObjectHitbox sKoopaHitbox = {
 /**
  * Attack handlers for unshelled koopa and tiny shelled koopa.
  */
-static u8 sKoopaUnshelledAttackHandlers[] = {
+ u8 sKoopaUnshelledAttackHandlers[] = {
     /* ATTACK_PUNCH:                 */ ATTACK_HANDLER_KNOCKBACK,
     /* ATTACK_KICK_OR_TRIP:          */ ATTACK_HANDLER_KNOCKBACK,
     /* ATTACK_FROM_ABOVE:            */ ATTACK_HANDLER_SQUISHED,
@@ -38,7 +38,7 @@ static u8 sKoopaUnshelledAttackHandlers[] = {
 /**
  * Attack handlers for regular sized shelled koopa.
  */
-static u8 sKoopaShelledAttackHandlers[] = {
+ u8 sKoopaShelledAttackHandlers[] = {
     /* ATTACK_PUNCH:                 */ ATTACK_HANDLER_SPECIAL_KOOPA_LOSE_SHELL,
     /* ATTACK_KICK_OR_TRIP:          */ ATTACK_HANDLER_SPECIAL_KOOPA_LOSE_SHELL,
     /* ATTACK_FROM_ABOVE:            */ ATTACK_HANDLER_SPECIAL_KOOPA_LOSE_SHELL,
@@ -60,7 +60,7 @@ struct KoopaTheQuickProperties {
 /**
  * Properties for the BoB race and the THI race.
  */
-static struct KoopaTheQuickProperties sKoopaTheQuickProperties[] = {
+ struct KoopaTheQuickProperties sKoopaTheQuickProperties[] = {
     { DIALOG_005, DIALOG_007, bob_seg7_trajectory_koopa, { 3030, 4500, -4600 } },
     { DIALOG_009, DIALOG_031, thi_seg7_trajectory_koopa, { 7100, -1300, -6000 } },
 };
@@ -89,7 +89,7 @@ void bhv_koopa_init(void) {
 /**
  * Play the appropriate footstep sound on the two provided animation frames.
  */
-static void koopa_play_footstep_sound(s8 animFrame1, s8 animFrame2) {
+ void koopa_play_footstep_sound(s8 animFrame1, s8 animFrame2) {
     s32 sound;
 
     if (o->header.gfx.scale[0] > 1.5f) {
@@ -105,7 +105,7 @@ static void koopa_play_footstep_sound(s8 animFrame1, s8 animFrame2) {
  * If mario is close to koopa, and koopa is facing toward mario, then begin
  * running away.
  */
-static s32 koopa_check_run_from_mario(void) {
+ s32 koopa_check_run_from_mario(void) {
     if (o->oKoopaDistanceToMario < 300.0f
         && abs_angle_diff(o->oKoopaAngleToMario, o->oMoveAngleYaw) < 0x3000) {
         o->oAction = KOOPA_SHELLED_ACT_RUN_FROM_MARIO;
@@ -119,7 +119,7 @@ static s32 koopa_check_run_from_mario(void) {
  * Stay still for a while, then change target yaw by 45 degrees and begin
  * walking.
  */
-static void koopa_shelled_act_stopped(void) {
+ void koopa_shelled_act_stopped(void) {
     o->oForwardVel = 0.0f;
     if (cur_obj_init_anim_and_check_if_end(7)) {
         o->oAction = KOOPA_SHELLED_ACT_WALK;
@@ -130,7 +130,7 @@ static void koopa_shelled_act_stopped(void) {
 /**
  * Begin walking, then increment sub-action.
  */
-static void koopa_walk_start(void) {
+ void koopa_walk_start(void) {
     obj_forward_vel_approach(3.0f * o->oKoopaAgility, 0.3f * o->oKoopaAgility);
 
     if (cur_obj_init_anim_and_check_if_end(11)) {
@@ -142,7 +142,7 @@ static void koopa_walk_start(void) {
 /**
  * Walk until oKoopaCountdown hits zero, then increment sub-action.
  */
-static void koopa_walk(void) {
+ void koopa_walk(void) {
     cur_obj_init_animation_with_sound(9);
     koopa_play_footstep_sound(2, 17);
 
@@ -156,7 +156,7 @@ static void koopa_walk(void) {
 /**
  * Stop walking, then enter action KOOPA_SHELLED_ACT_STOPPED.
  */
-static void koopa_walk_stop(void) {
+ void koopa_walk_stop(void) {
     obj_forward_vel_approach(0.0f, 1.0f * o->oKoopaAgility);
     if (cur_obj_init_anim_and_check_if_end(10)) {
         o->oAction = KOOPA_SHELLED_ACT_STOPPED;
@@ -167,7 +167,7 @@ static void koopa_walk_stop(void) {
  * Walk for a while, then come to a stop. During this time, turn toward the
  * target yaw.
  */
-static void koopa_shelled_act_walk(void) {
+ void koopa_shelled_act_walk(void) {
     if (o->oKoopaTurningAwayFromWall) {
         o->oKoopaTurningAwayFromWall = obj_resolve_collisions_and_turn(o->oKoopaTargetYaw, 0x200);
     } else {
@@ -199,7 +199,7 @@ static void koopa_shelled_act_walk(void) {
  * Run while turning away from mario. Come to a stop once mario is far enough
  * away.
  */
-static void koopa_shelled_act_run_from_mario(void) {
+ void koopa_shelled_act_run_from_mario(void) {
     cur_obj_init_animation_with_sound(1);
     koopa_play_footstep_sound(0, 11);
 
@@ -222,7 +222,7 @@ static void koopa_shelled_act_run_from_mario(void) {
 /**
  * If on the ground, decelerate. Generate dust if moving fast enough.
  */
-static void koopa_dive_update_speed(f32 decel) {
+ void koopa_dive_update_speed(f32 decel) {
     if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
         obj_forward_vel_approach(0.0f, decel);
         if (o->oForwardVel > 5.0f) {
@@ -236,7 +236,7 @@ static void koopa_dive_update_speed(f32 decel) {
 /**
  * Slide on the ground and then come to a stop.
  */
-static void koopa_shelled_act_lying(void) {
+ void koopa_shelled_act_lying(void) {
     if (o->oForwardVel != 0.0f) {
         if (o->oMoveFlags & OBJ_MOVE_HIT_WALL) {
             o->oMoveAngleYaw = cur_obj_reflect_move_angle_off_wall();
@@ -285,7 +285,7 @@ void shelled_koopa_attack_handler(s32 attackType) {
 /**
  * Update function for both regular and tiny shelled koopa.
  */
-static void koopa_shelled_update(void) {
+ void koopa_shelled_update(void) {
     cur_obj_update_floor_and_walls();
     obj_update_blinking(&o->oKoopaBlinkTimer, 20, 50, 4);
 
@@ -327,7 +327,7 @@ static void koopa_shelled_update(void) {
  * When close enough to the shell and with good angle and speed, enter the dive
  * action.
  */
-static void koopa_unshelled_act_run(void) {
+ void koopa_unshelled_act_run(void) {
     f32 distToShell = 99999.0f;
     struct Object *shell;
 
@@ -385,7 +385,7 @@ static void koopa_unshelled_act_run(void) {
  * Dive and slide along the ground. If close enough to the shell, pick it up,
  * and otherwise enter the running action.
  */
-static void koopa_unshelled_act_dive(void) {
+ void koopa_unshelled_act_dive(void) {
     struct Object *shell;
     f32 distToShell;
 
@@ -437,14 +437,14 @@ end:;
 /**
  * Unused action function.
  */
-static void koopa_unshelled_act_unused3(void) {
+ void koopa_unshelled_act_unused3(void) {
     cur_obj_init_anim_extend(0);
 }
 
 /**
  * Update function for koopa after losing his shell.
  */
-static void koopa_unshelled_update(void) {
+ void koopa_unshelled_update(void) {
     cur_obj_update_floor_and_walls();
     obj_update_blinking(&o->oKoopaBlinkTimer, 10, 15, 3);
 
@@ -495,7 +495,7 @@ s32 obj_begin_race(s32 noTimer) {
 /**
  * Wait for mario to approach, and then enter the show init text action.
  */
-static void koopa_the_quick_act_wait_before_race(void) {
+ void koopa_the_quick_act_wait_before_race(void) {
     koopa_shelled_act_stopped();
 
     if (o->oKoopaTheQuickInitTextboxCooldown != 0) {
@@ -515,7 +515,7 @@ static void koopa_the_quick_act_wait_before_race(void) {
  * Display the dialog asking mario if he wants to race. Begin the race or
  * return to the waiting action.
  */
-static void koopa_the_quick_act_show_init_text(void) {
+ void koopa_the_quick_act_show_init_text(void) {
     s32 response = obj_update_race_proposition_dialog(
         sKoopaTheQuickProperties[o->oKoopaTheQuickRaceIndex].initDialogID);
 
@@ -542,7 +542,7 @@ static void koopa_the_quick_act_show_init_text(void) {
  * If there is a bowling ball nearby, either slow down, or return +/-1 to
  * indicate that the ball is likely to collide.
  */
-static s32 koopa_the_quick_detect_bowling_ball(void) {
+ s32 koopa_the_quick_detect_bowling_ball(void) {
     struct Object *ball;
     f32 distToBall;
 
@@ -581,7 +581,7 @@ static s32 koopa_the_quick_detect_bowling_ball(void) {
  * Play the running animation at a speed proportional to ktq's forward velocity.
  * If he is moving backward, then the animation will play backward.
  */
-static void koopa_the_quick_animate_footsteps(void) {
+ void koopa_the_quick_animate_footsteps(void) {
     //! With high negative speed (using the bowling ball deceleration), we can
     //  index out of the animation's bounds
     cur_obj_init_animation_with_accel_and_sound(9, o->oForwardVel * 0.09f);
@@ -592,7 +592,7 @@ static void koopa_the_quick_animate_footsteps(void) {
  * Begin the race, then follow the race path. Avoid bowling balls by slowing
  * down or jumping. After finishing the race, enter the decelerate action.
  */
-static void koopa_the_quick_act_race(void) {
+ void koopa_the_quick_act_race(void) {
     if (obj_begin_race(FALSE)) {
         // Hitbox is slightly larger while racing
         cur_obj_push_mario_away_from_cylinder(180.0f, 300.0f);
@@ -676,7 +676,7 @@ static void koopa_the_quick_act_race(void) {
 /**
  * Decelerate and then enter the stop action.
  */
-static void koopa_the_quick_act_decelerate(void) {
+ void koopa_the_quick_act_decelerate(void) {
     obj_forward_vel_approach(3.0f, 1.0f);
     cur_obj_init_animation_with_accel_and_sound(9, 0.99f);
 
@@ -689,7 +689,7 @@ static void koopa_the_quick_act_decelerate(void) {
 /**
  * Stop and then enter the after race action.
  */
-static void koopa_the_quick_act_stop(void) {
+ void koopa_the_quick_act_stop(void) {
     koopa_walk_stop();
 
     // koopa_walk_stop() was written for shelled koopa, so it enters the
@@ -704,7 +704,7 @@ static void koopa_the_quick_act_stop(void) {
  * If mario got to the finish line first and didn't use the cannon, then spawn
  * the star.
  */
-static void koopa_the_quick_act_after_race(void) {
+ void koopa_the_quick_act_after_race(void) {
     cur_obj_init_animation_with_sound(7);
 
     if (o->parentObj->oKoopaRaceEndpointDialog == 0) {
@@ -749,7 +749,7 @@ static void koopa_the_quick_act_after_race(void) {
 /**
  * Update function for koopa the quick.
  */
-static void koopa_the_quick_update(void) {
+ void koopa_the_quick_update(void) {
     cur_obj_update_floor_and_walls();
     obj_update_blinking(&o->oKoopaBlinkTimer, 10, 15, 3);
 

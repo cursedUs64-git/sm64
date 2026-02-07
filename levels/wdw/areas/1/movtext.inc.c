@@ -1,5 +1,5 @@
 // 0x07018728
-static Movtex wdw_movtex_area1_water_data[] = {
+ Movtex wdw_movtex_area1_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   10),
     MOV_TEX_ROT_SCALE(   10),

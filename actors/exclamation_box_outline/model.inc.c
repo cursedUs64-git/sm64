@@ -1,31 +1,31 @@
 // Exclamation Box Outline
 
 // 0x08024CB8
-static const Lights1 exclamation_box_outline_seg8_lights_08024CB8 = gdSPDefLights1(
+ const Lights1 exclamation_box_outline_seg8_lights_08024CB8 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08024CD0
-static const Lights1 exclamation_box_outline_seg8_lights_08024CD0 = gdSPDefLights1(
+ const Lights1 exclamation_box_outline_seg8_lights_08024CD0 = gdSPDefLights1(
     0x00, 0x7f, 0x00,
     0x00, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08024CE8
-static const Lights1 exclamation_box_outline_seg8_lights_08024CE8 = gdSPDefLights1(
+ const Lights1 exclamation_box_outline_seg8_lights_08024CE8 = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08024D00
-static const Lights1 exclamation_box_outline_seg8_lights_08024D00 = gdSPDefLights1(
+ const Lights1 exclamation_box_outline_seg8_lights_08024D00 = gdSPDefLights1(
     0x7f, 0x6a, 0x00,
     0xff, 0xd4, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08024D18
-static const Vtx exclamation_box_outline_seg8_vertex_08024D18[] = {
+ const Vtx exclamation_box_outline_seg8_vertex_08024D18[] = {
     {{{    26,      1,    -25}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x50}}},
     {{{    26,     52,     26}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x50}}},
     {{{    26,      1,     26}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x50}}},
@@ -44,7 +44,7 @@ static const Vtx exclamation_box_outline_seg8_vertex_08024D18[] = {
 };
 
 // 0x08024E08
-static const Vtx exclamation_box_outline_seg8_vertex_08024E08[] = {
+ const Vtx exclamation_box_outline_seg8_vertex_08024E08[] = {
     {{{   -25,      1,    -25}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x50}}},
     {{{   -25,     52,    -25}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x50}}},
     {{{    26,     52,    -25}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x50}}},
@@ -124,7 +124,7 @@ const Gfx exclamation_box_outline_seg8_dl_08024FE8[] = {
 };
 
 // 0x08025008
-static const Vtx exclamation_box_outline_seg8_vertex_08025008[] = {
+ const Vtx exclamation_box_outline_seg8_vertex_08025008[] = {
     {{{   -25,     52,     26}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    26,     52,     26}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    26,     52,    -25}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -142,7 +142,7 @@ static const Vtx exclamation_box_outline_seg8_vertex_08025008[] = {
 };
 
 // 0x080250E8
-static const Vtx exclamation_box_outline_seg8_vertex_080250E8[] = {
+ const Vtx exclamation_box_outline_seg8_vertex_080250E8[] = {
     {{{   -25,      1,     26}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -25,     52,     26}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -25,     52,    -25}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -154,7 +154,7 @@ static const Vtx exclamation_box_outline_seg8_vertex_080250E8[] = {
 };
 
 // 0x08025168
-ALIGNED8 static const Texture exclamation_box_outline_seg8_texture_08025168[] = {
+ALIGNED8  const Texture exclamation_box_outline_seg8_texture_08025168[] = {
 #include "actors/exclamation_box_outline/exclamation_box_outline.rgba16.inc.c"
 };
 
@@ -193,18 +193,18 @@ const Gfx exclamation_box_outline_seg8_dl_080259F8[] = {
 };
 
 // 0x08025A68
-static const Lights1 exclamation_box_outline_seg8_lights_08025A68 = gdSPDefLights1(
+ const Lights1 exclamation_box_outline_seg8_lights_08025A68 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08025A80
-ALIGNED8 static const Texture exclamation_box_outline_seg8_texture_08025A80[] = {
+ALIGNED8  const Texture exclamation_box_outline_seg8_texture_08025A80[] = {
 #include "actors/exclamation_box_outline/exclamation_point.rgba16.inc.c"
 };
 
 // 0x08025E80
-static const Vtx exclamation_box_outline_seg8_vertex_08025E80[] = {
+ const Vtx exclamation_box_outline_seg8_vertex_08025E80[] = {
     {{{   -22,     49,      0}, 0, {  -157,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -22,      4,      0}, 0, {  -157,   1048}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    23,      4,      0}, 0, {   605,   1048}, {0x00, 0x00, 0x7f, 0xff}}},

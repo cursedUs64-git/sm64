@@ -1,5 +1,5 @@
 // 0x07051370 - 0x07051460
-static const Vtx inside_castle_seg7_vertex_07051370[] = {
+ const Vtx inside_castle_seg7_vertex_07051370[] = {
     {{{  1384,   2765,   7197}, 0, {  2012,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1384,   2867,   6992}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1384,   2765,   6992}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx inside_castle_seg7_vertex_07051370[] = {
 };
 
 // 0x07051460 - 0x07051560
-static const Vtx inside_castle_seg7_vertex_07051460[] = {
+ const Vtx inside_castle_seg7_vertex_07051460[] = {
     {{{ -1992,   2867,   6310}, 0, { -2074,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1793,   2867,   6509}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1793,   2765,   6509}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx inside_castle_seg7_vertex_07051460[] = {
 };
 
 // 0x07051560 - 0x070515B0
-static const Vtx inside_castle_seg7_vertex_07051560[] = {
+ const Vtx inside_castle_seg7_vertex_07051560[] = {
     {{{  1384,   2765,   6603}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1384,   2867,   6509}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1384,   2765,   6509}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -47,7 +47,7 @@ static const Vtx inside_castle_seg7_vertex_07051560[] = {
 };
 
 // 0x070515B0 - 0x07051678
-static const Gfx inside_castle_seg7_dl_070515B0[] = {
+ const Gfx inside_castle_seg7_dl_070515B0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

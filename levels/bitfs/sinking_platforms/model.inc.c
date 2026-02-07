@@ -1,5 +1,5 @@
 // 0x07011808 - 0x07011908
-static const Vtx bitfs_seg7_vertex_07011808[] = {
+ const Vtx bitfs_seg7_vertex_07011808[] = {
     {{{  -921,      0,   -613}, 0, {     0,   3236}, {0x8c, 0x8c, 0xd8, 0xff}}},
     {{{  -921,      0,    614}, 0, {  4056,   3236}, {0x8c, 0x8c, 0xd8, 0xff}}},
     {{{  -613,     56,    614}, 0, {  4056,   1996}, {0x8c, 0x8c, 0xd8, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bitfs_seg7_vertex_07011808[] = {
 };
 
 // 0x07011908 - 0x07011988
-static const Vtx bitfs_seg7_vertex_07011908[] = {
+ const Vtx bitfs_seg7_vertex_07011908[] = {
     {{{     0,     56,   -613}, 0, {   990,   1996}, {0x8c, 0x98, 0xd8, 0xff}}},
     {{{   307,      0,    614}, 0, { -3096,   3236}, {0x8c, 0x98, 0xd8, 0xff}}},
     {{{   307,      0,   -613}, 0, {   990,   3236}, {0x8c, 0x98, 0xd8, 0xff}}},
@@ -31,7 +31,7 @@ static const Vtx bitfs_seg7_vertex_07011908[] = {
 };
 
 // 0x07011988 - 0x07011A68
-static const Vtx bitfs_seg7_vertex_07011988[] = {
+ const Vtx bitfs_seg7_vertex_07011988[] = {
     {{{   307,      0,    614}, 0, {     0,      0}, {0x48, 0x3b, 0x7d, 0xff}}},
     {{{     0,     56,    614}, 0, {     0,      0}, {0x48, 0x3b, 0x7d, 0xff}}},
     {{{  -306,      0,    614}, 0, {     0,      0}, {0x48, 0x3b, 0x7d, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx bitfs_seg7_vertex_07011988[] = {
 };
 
 // 0x07011A68 - 0x07011AB8
-static const Vtx bitfs_seg7_vertex_07011A68[] = {
+ const Vtx bitfs_seg7_vertex_07011A68[] = {
     {{{   307,      0,    614}, 0, {     0,      0}, {0x79, 0x8c, 0xeb, 0xff}}},
     {{{     0,     56,    614}, 0, {     0,      0}, {0x79, 0x8c, 0xeb, 0xff}}},
     {{{  -306,      0,    614}, 0, {     0,      0}, {0x79, 0x8c, 0xeb, 0xff}}},
@@ -58,7 +58,7 @@ static const Vtx bitfs_seg7_vertex_07011A68[] = {
 };
 
 // 0x07011AB8 - 0x07011B48
-static const Gfx bitfs_seg7_dl_07011AB8[] = {
+ const Gfx bitfs_seg7_dl_07011AB8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -74,7 +74,7 @@ static const Gfx bitfs_seg7_dl_07011AB8[] = {
 };
 
 // 0x07011B48 - 0x07011BA0
-static const Gfx bitfs_seg7_dl_07011B48[] = {
+ const Gfx bitfs_seg7_dl_07011B48[] = {
     gsSPVertex(bitfs_seg7_vertex_07011988, 14, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  3,  4,  0, 0x0),
     gsSP2Triangles( 5,  6,  7, 0x0,  6,  8,  9, 0x0),

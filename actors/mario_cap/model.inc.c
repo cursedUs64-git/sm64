@@ -1,55 +1,55 @@
 // Mario Cap (Normal Cap, Metal, Winged, etc)
 
 // 0x0301CF08
-static const Lights1 mario_cap_seg3_lights_0301CF08 = gdSPDefLights1(
+ const Lights1 mario_cap_seg3_lights_0301CF08 = gdSPDefLights1(
     0x39, 0x03, 0x00,
     0x73, 0x06, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0301CF20
-static const Lights1 mario_cap_seg3_lights_0301CF20 = gdSPDefLights1(
+ const Lights1 mario_cap_seg3_lights_0301CF20 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0301CF38
-static const Lights1 mario_cap_seg3_lights_0301CF38 = gdSPDefLights1(
+ const Lights1 mario_cap_seg3_lights_0301CF38 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0301CF50
-ALIGNED8 static const Texture mario_cap_seg3_texture_0301CF50[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_0301CF50[] = {
 #include "actors/mario_cap/mario_cap_metal.rgba16.inc.c"
 };
 
 // 0x0301DF50
-ALIGNED8 static const Texture mario_cap_seg3_texture_0301DF50[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_0301DF50[] = {
 #include "actors/mario_cap/mario_cap_logo.rgba16.inc.c"
 };
 
 // 0x0301E750
-ALIGNED8 static const Texture mario_cap_seg3_texture_0301E750[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_0301E750[] = {
 #include "actors/mario_cap/mario_cap_wing.rgba16.inc.c"
 };
 
 // 0x0301F750
-ALIGNED8 static const Texture mario_cap_seg3_texture_0301F750[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_0301F750[] = {
 #include "actors/mario_cap/mario_cap_wing_tip.rgba16.inc.c"
 };
 
 // 0x03020750
-ALIGNED8 static const Texture mario_cap_seg3_texture_03020750[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_03020750[] = {
 #include "actors/mario_cap/mario_cap_metal_wing_unused.rgba16.inc.c"
 };
 
 // 0x03021750
-ALIGNED8 static const Texture mario_cap_seg3_texture_03021750[] = {
+ALIGNED8  const Texture mario_cap_seg3_texture_03021750[] = {
 #include "actors/mario_cap/mario_cap_metal_wing_tip_unused.rgba16.inc.c"
 };
 
 // 0x03022750
-static const Vtx mario_cap_seg3_vertex_03022750[] = {
+ const Vtx mario_cap_seg3_vertex_03022750[] = {
     {{{    33,     35,    118}, 0, {   728,    758}, {0x30, 0x26, 0x6e, 0xff}}},
     {{{    96,     22,     45}, 0, {  1240,    876}, {0x48, 0xa4, 0x31, 0xff}}},
     {{{    71,    101,    113}, 0, {  1028,    148}, {0x55, 0x16, 0x5b, 0xff}}},
@@ -60,7 +60,7 @@ static const Vtx mario_cap_seg3_vertex_03022750[] = {
 };
 
 // 0x030227C0
-static const Vtx mario_cap_seg3_vertex_030227C0[] = {
+ const Vtx mario_cap_seg3_vertex_030227C0[] = {
     {{{   -66,      2,    139}, 0, {     0,      0}, {0xb0, 0xbb, 0x45, 0xff}}},
     {{{     0,      0,    163}, 0, {     0,      0}, {0x00, 0xba, 0x69, 0xff}}},
     {{{   -31,     35,    118}, 0, {     0,      0}, {0xd0, 0x26, 0x6f, 0xff}}},
@@ -80,7 +80,7 @@ static const Vtx mario_cap_seg3_vertex_030227C0[] = {
 };
 
 // 0x030228C0
-static const Vtx mario_cap_seg3_vertex_030228C0[] = {
+ const Vtx mario_cap_seg3_vertex_030228C0[] = {
     {{{    42,    144,     64}, 0, {     0,      0}, {0x2b, 0x76, 0x0d, 0xff}}},
     {{{   136,     70,     22}, 0, {     0,      0}, {0x7b, 0x16, 0x10, 0xff}}},
     {{{    76,     84,    -60}, 0, {     0,      0}, {0x2a, 0x6c, 0xcf, 0xff}}},
@@ -99,7 +99,7 @@ static const Vtx mario_cap_seg3_vertex_030228C0[] = {
 };
 
 // 0x030229B0
-static const Vtx mario_cap_seg3_vertex_030229B0[] = {
+ const Vtx mario_cap_seg3_vertex_030229B0[] = {
     {{{   -76,     84,    -60}, 0, {     0,      0}, {0xd5, 0x6e, 0xd3, 0xff}}},
     {{{   -41,    144,     64}, 0, {     0,      0}, {0xdc, 0x79, 0x00, 0xff}}},
     {{{    76,     84,    -60}, 0, {     0,      0}, {0x2a, 0x6c, 0xcf, 0xff}}},
@@ -118,7 +118,7 @@ static const Vtx mario_cap_seg3_vertex_030229B0[] = {
 };
 
 // 0x03022AA0
-static const Vtx mario_cap_seg3_vertex_03022AA0[] = {
+ const Vtx mario_cap_seg3_vertex_03022AA0[] = {
     {{{    86,      1,    -60}, 0, {     0,      0}, {0x20, 0x86, 0xfe, 0xff}}},
     {{{   -86,      1,    -60}, 0, {     0,      0}, {0xce, 0x8c, 0xf6, 0xff}}},
     {{{   -52,      0,   -118}, 0, {     0,      0}, {0xd2, 0x9d, 0xc1, 0xff}}},
@@ -187,7 +187,7 @@ const Gfx mario_cap_seg3_dl_03022D10[] = {
 };
 
 // 0x03022D38
-static const Vtx mario_cap_seg3_vertex_03022D38[] = {
+ const Vtx mario_cap_seg3_vertex_03022D38[] = {
     {{{   199,    247,    -55}, 0, {   990,      0}, {0x59, 0xed, 0x58, 0xff}}},
     {{{   131,    274,     20}, 0, {     0,      0}, {0x59, 0xed, 0x58, 0xff}}},
     {{{    69,     71,     38}, 0, {     0,   2012}, {0x59, 0xed, 0x58, 0xff}}},
@@ -203,7 +203,7 @@ static const Vtx mario_cap_seg3_vertex_03022D38[] = {
 };
 
 // 0x03022DF8
-static const Vtx mario_cap_seg3_vertex_03022DF8[] = {
+ const Vtx mario_cap_seg3_vertex_03022DF8[] = {
     {{{   268,    219,   -132}, 0, {   990,      0}, {0x59, 0xed, 0x57, 0xff}}},
     {{{   199,    247,    -55}, 0, {     0,      0}, {0x59, 0xed, 0x57, 0xff}}},
     {{{   138,     44,    -37}, 0, {     0,   2012}, {0x59, 0xed, 0x57, 0xff}}},

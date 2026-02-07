@@ -1,55 +1,55 @@
 // Piranha Plant
 
 // 0x060113B0
-static const Lights1 piranha_plant_seg6_lights_060113B0 = gdSPDefLights1(
+ const Lights1 piranha_plant_seg6_lights_060113B0 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060113C8
-static const Lights1 piranha_plant_seg6_lights_060113C8 = gdSPDefLights1(
+ const Lights1 piranha_plant_seg6_lights_060113C8 = gdSPDefLights1(
     0x0a, 0x2b, 0x02,
     0x2b, 0xae, 0x0a, 0x28, 0x28, 0x28
 );
 
 // 0x060113E0
-static const Lights1 piranha_plant_seg6_lights_060113E0 = gdSPDefLights1(
+ const Lights1 piranha_plant_seg6_lights_060113E0 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060113F8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_060113F8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_060113F8[] = {
 #include "actors/piranha_plant/piranha_plant_tongue.rgba16.inc.c"
 };
 
 // 0x060123F8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_060123F8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_060123F8[] = {
 #include "actors/piranha_plant/piranha_plant_skin.rgba16.inc.c"
 };
 
 // 0x06012BF8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_06012BF8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_06012BF8[] = {
 #include "actors/piranha_plant/piranha_plant_stem.rgba16.inc.c"
 };
 
 // 0x060133F8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_060133F8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_060133F8[] = {
 #include "actors/piranha_plant/piranha_plant_bottom_lip.rgba16.inc.c"
 };
 
 // 0x06013BF8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_06013BF8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_06013BF8[] = {
 #include "actors/piranha_plant/piranha_plant_tooth.rgba16.inc.c"
 };
 
 // 0x060143F8
-ALIGNED8 static const Texture piranha_plant_seg6_texture_060143F8[] = {
+ALIGNED8  const Texture piranha_plant_seg6_texture_060143F8[] = {
 #include "actors/piranha_plant/piranha_plant_leaf.rgba16.inc.c"
 };
 
 // 0x060153F8
-static const Vtx piranha_plant_seg6_vertex_060153F8[] = {
+ const Vtx piranha_plant_seg6_vertex_060153F8[] = {
     {{{     0,      1,   -223}, 0, {     0,   2012}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   519,      1,    211}, 0, {   990,     28}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   519,      1,   -223}, 0, {     0,     28}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -87,7 +87,7 @@ const Gfx piranha_plant_seg6_dl_06015480[] = {
 };
 
 // 0x060154F0
-static const Vtx piranha_plant_seg6_vertex_060154F0[] = {
+ const Vtx piranha_plant_seg6_vertex_060154F0[] = {
     {{{   518,      2,   -223}, 0, {   990,      8}, {0x00, 0x82, 0x00, 0xff}}},
     {{{   518,      1,    211}, 0, {     0,      8}, {0x00, 0x82, 0x00, 0xff}}},
     {{{     0,     -1,    211}, 0, {     0,   2012}, {0x00, 0x82, 0x00, 0xff}}},
@@ -125,7 +125,7 @@ const Gfx piranha_plant_seg6_dl_06015578[] = {
 };
 
 // 0x060155E8
-static const Vtx piranha_plant_seg6_vertex_060155E8[] = {
+ const Vtx piranha_plant_seg6_vertex_060155E8[] = {
     {{{    49,    -71,      0}, 0, {   800,    384}, {0x6e, 0xc3, 0x0d, 0xff}}},
     {{{    46,     -7,    -87}, 0, {   168,    384}, {0x6c, 0xe5, 0xc4, 0xff}}},
     {{{    67,     22,      0}, 0, {   488,   -128}, {0x7e, 0x07, 0x00, 0xff}}},
@@ -143,7 +143,7 @@ static const Vtx piranha_plant_seg6_vertex_060155E8[] = {
 };
 
 // 0x060156C8
-static const Vtx piranha_plant_seg6_vertex_060156C8[] = {
+ const Vtx piranha_plant_seg6_vertex_060156C8[] = {
     {{{    40,     95,     54}, 0, {   796,    370}, {0x66, 0x44, 0x1c, 0xff}}},
     {{{    46,     -7,     88}, 0, {   164,    370}, {0x6b, 0xfe, 0x44, 0xff}}},
     {{{    67,     22,      0}, 0, {   482,   -152}, {0x7e, 0x07, 0x00, 0xff}}},
@@ -196,7 +196,7 @@ const Gfx piranha_plant_seg6_dl_06015850[] = {
 };
 
 // 0x060158B0
-static const Vtx piranha_plant_seg6_vertex_060158B0[] = {
+ const Vtx piranha_plant_seg6_vertex_060158B0[] = {
     {{{   519,     74,      0}, 0, {     0,     84}, {0x7e, 0x00, 0x00, 0xff}}},
     {{{   387,    136,    249}, 0, {  4082,    990}, {0x5a, 0x00, 0x59, 0xff}}},
     {{{   387,     66,    249}, 0, {  4074,      0}, {0x70, 0x00, 0x3b, 0xff}}},
@@ -214,7 +214,7 @@ static const Vtx piranha_plant_seg6_vertex_060158B0[] = {
 };
 
 // 0x06015990
-static const Vtx piranha_plant_seg6_vertex_06015990[] = {
+ const Vtx piranha_plant_seg6_vertex_06015990[] = {
     {{{   597,     13,      0}, 0, {  -166,    532}, {0x7c, 0x17, 0xfe, 0xff}}},
     {{{   385,     72,    255}, 0, {   872,    938}, {0x2c, 0x6c, 0x2f, 0xff}}},
     {{{   391,     10,    335}, 0, {  1064,    610}, {0x30, 0xfe, 0x75, 0xff}}},
@@ -233,7 +233,7 @@ static const Vtx piranha_plant_seg6_vertex_06015990[] = {
 };
 
 // 0x06015A80
-static const Vtx piranha_plant_seg6_vertex_06015A80[] = {
+ const Vtx piranha_plant_seg6_vertex_06015A80[] = {
     {{{   391,     10,   -334}, 0, {   -64,    582}, {0x2d, 0x18, 0x8c, 0xff}}},
     {{{   385,     72,   -253}, 0, {   130,    944}, {0x16, 0x77, 0xdd, 0xff}}},
     {{{   519,     79,      0}, 0, {   978,    956}, {0x33, 0x73, 0xf4, 0xff}}},
@@ -249,7 +249,7 @@ static const Vtx piranha_plant_seg6_vertex_06015A80[] = {
 };
 
 // 0x06015B40
-static const Vtx piranha_plant_seg6_vertex_06015B40[] = {
+ const Vtx piranha_plant_seg6_vertex_06015B40[] = {
     {{{   545,    -83,      0}, 0, {  -118,    908}, {0x6b, 0xbf, 0x14, 0xff}}},
     {{{   381,    -93,    261}, 0, {  1050,    888}, {0x2c, 0xbe, 0x62, 0xff}}},
     {{{   343,   -231,    195}, 0, {   880,     40}, {0x34, 0xa0, 0x3f, 0xff}}},
@@ -269,7 +269,7 @@ static const Vtx piranha_plant_seg6_vertex_06015B40[] = {
 };
 
 // 0x06015C40
-static const Vtx piranha_plant_seg6_vertex_06015C40[] = {
+ const Vtx piranha_plant_seg6_vertex_06015C40[] = {
     {{{   440,   -225,      0}, 0, {   -64,   1068}, {0x53, 0xa2, 0xf3, 0xff}}},
     {{{   343,   -231,    195}, 0, {   342,    310}, {0x34, 0xa0, 0x3f, 0xff}}},
     {{{   249,   -293,      0}, 0, {   640,    920}, {0xfe, 0x82, 0x00, 0xff}}},
@@ -289,7 +289,7 @@ static const Vtx piranha_plant_seg6_vertex_06015C40[] = {
 };
 
 // 0x06015D40
-static const Vtx piranha_plant_seg6_vertex_06015D40[] = {
+ const Vtx piranha_plant_seg6_vertex_06015D40[] = {
     {{{   101,    -60,   -288}, 0, {   -78,    848}, {0xd8, 0xc9, 0x96, 0xff}}},
     {{{   343,   -231,   -194}, 0, {   878,    562}, {0x21, 0xa1, 0xb3, 0xff}}},
     {{{   148,   -221,   -195}, 0, {   264,    390}, {0xca, 0xa3, 0xbf, 0xff}}},
@@ -301,7 +301,7 @@ static const Vtx piranha_plant_seg6_vertex_06015D40[] = {
 };
 
 // 0x06015DC0
-static const Vtx piranha_plant_seg6_vertex_06015DC0[] = {
+ const Vtx piranha_plant_seg6_vertex_06015DC0[] = {
     {{{   108,     56,    296}, 0, {     0,      0}, {0xe4, 0x73, 0x2c, 0xff}}},
     {{{   108,     56,   -294}, 0, {     0,      0}, {0xda, 0x65, 0xbf, 0xff}}},
     {{{   -89,     12,      0}, 0, {     0,      0}, {0x8f, 0x38, 0x00, 0xff}}},
@@ -419,7 +419,7 @@ const Gfx piranha_plant_seg6_dl_06016120[] = {
 };
 
 // 0x06016190
-static const Vtx piranha_plant_seg6_vertex_06016190[] = {
+ const Vtx piranha_plant_seg6_vertex_06016190[] = {
     {{{   228,      3,    232}, 0, { -2174,   1002}, {0xf5, 0x00, 0x7e, 0xff}}},
     {{{   412,   -109,    249}, 0, {   988,    986}, {0x51, 0x00, 0x61, 0xff}}},
     {{{   412,    -41,    249}, 0, {   982,    -34}, {0xf5, 0x00, 0x7e, 0xff}}},
@@ -437,7 +437,7 @@ static const Vtx piranha_plant_seg6_vertex_06016190[] = {
 };
 
 // 0x06016270
-static const Vtx piranha_plant_seg6_vertex_06016270[] = {
+ const Vtx piranha_plant_seg6_vertex_06016270[] = {
     {{{   109,     -3,   -277}, 0, {  -290,    482}, {0xc4, 0xb1, 0xb2, 0xff}}},
     {{{   432,     43,   -319}, 0, {  2054,    520}, {0x2b, 0xfb, 0x89, 0xff}}},
     {{{   410,    -50,   -253}, 0, {  1758,    -58}, {0x1b, 0x89, 0xe1, 0xff}}},
@@ -456,7 +456,7 @@ static const Vtx piranha_plant_seg6_vertex_06016270[] = {
 };
 
 // 0x06016360
-static const Vtx piranha_plant_seg6_vertex_06016360[] = {
+ const Vtx piranha_plant_seg6_vertex_06016360[] = {
     {{{   109,     -3,    278}, 0, {  -848,    398}, {0xc4, 0xb1, 0x4e, 0xff}}},
     {{{   153,     41,    300}, 0, { -1332,    812}, {0xd6, 0x3d, 0x66, 0xff}}},
     {{{   -39,     22,      0}, 0, {  2340,    726}, {0x91, 0x3b, 0x0a, 0xff}}},
@@ -476,14 +476,14 @@ static const Vtx piranha_plant_seg6_vertex_06016360[] = {
 };
 
 // 0x06016460
-static const Vtx piranha_plant_seg6_vertex_06016460[] = {
+ const Vtx piranha_plant_seg6_vertex_06016460[] = {
     {{{   -39,     22,      0}, 0, {   -30,    756}, {0x91, 0x3b, 0x0a, 0xff}}},
     {{{   153,     41,   -299}, 0, {  1032,    676}, {0xc5, 0x3b, 0xa1, 0xff}}},
     {{{   109,     -3,   -277}, 0, {   920,    274}, {0xc4, 0xb1, 0xb2, 0xff}}},
 };
 
 // 0x06016490
-static const Vtx piranha_plant_seg6_vertex_06016490[] = {
+ const Vtx piranha_plant_seg6_vertex_06016490[] = {
     {{{   276,    254,      0}, 0, {   514,    234}, {0xf8, 0x7e, 0x00, 0xff}}},
     {{{   177,    186,    185}, 0, {  -146,     84}, {0xc7, 0x5f, 0x3d, 0xff}}},
     {{{   373,    203,    195}, 0, {     8,    832}, {0x17, 0x68, 0x44, 0xff}}},
@@ -502,7 +502,7 @@ static const Vtx piranha_plant_seg6_vertex_06016490[] = {
 };
 
 // 0x06016580
-static const Vtx piranha_plant_seg6_vertex_06016580[] = {
+ const Vtx piranha_plant_seg6_vertex_06016580[] = {
     {{{   470,    201,      0}, 0, {  1006,    194}, {0x4a, 0x66, 0x0a, 0xff}}},
     {{{   417,     98,    263}, 0, {   -92,    386}, {0x3d, 0x56, 0x45, 0xff}}},
     {{{   551,    106,      0}, 0, {   920,    662}, {0x5b, 0x57, 0xf7, 0xff}}},
@@ -522,7 +522,7 @@ static const Vtx piranha_plant_seg6_vertex_06016580[] = {
 };
 
 // 0x06016680
-static const Vtx piranha_plant_seg6_vertex_06016680[] = {
+ const Vtx piranha_plant_seg6_vertex_06016680[] = {
     {{{   153,     26,    221}, 0, {   808,    604}, {0x02, 0x84, 0xe8, 0xff}}},
     {{{   -48,     -7,      0}, 0, {   486,    -60}, {0xd6, 0x89, 0x00, 0xff}}},
     {{{   153,     26,   -220}, 0, {   162,    604}, {0xf9, 0x83, 0x12, 0xff}}},
@@ -532,7 +532,7 @@ static const Vtx piranha_plant_seg6_vertex_06016680[] = {
 };
 
 // 0x060166E0
-static const Vtx piranha_plant_seg6_vertex_060166E0[] = {
+ const Vtx piranha_plant_seg6_vertex_060166E0[] = {
     {{{   410,    -50,   -253}, 0, {     0,      0}, {0x1b, 0x89, 0xe1, 0xff}}},
     {{{   153,     26,   -220}, 0, {     0,      0}, {0xf9, 0x83, 0x12, 0xff}}},
     {{{   109,     -3,   -277}, 0, {     0,      0}, {0xc4, 0xb1, 0xb2, 0xff}}},
@@ -662,7 +662,7 @@ const Gfx piranha_plant_seg6_dl_06016A78[] = {
 };
 
 // 0x06016AE8
-static const Vtx piranha_plant_seg6_vertex_06016AE8[] = {
+ const Vtx piranha_plant_seg6_vertex_06016AE8[] = {
     {{{    10,     34,      0}, 0, {     0,    990}, {0x05, 0x6f, 0x3c, 0xff}}},
     {{{    11,    -23,     35}, 0, {   990,    990}, {0x07, 0x94, 0x42, 0xff}}},
     {{{   191,    -17,     26}, 0, {   918,      0}, {0x06, 0x03, 0x7e, 0xff}}},
@@ -708,7 +708,7 @@ const Gfx piranha_plant_seg6_dl_06016C10[] = {
 };
 
 // 0x06016C70
-static const Vtx piranha_plant_seg6_vertex_06016C70[] = {
+ const Vtx piranha_plant_seg6_vertex_06016C70[] = {
     {{{    -1,     34,      0}, 0, {     0,    990}, {0x01, 0x6f, 0x3c, 0xff}}},
     {{{     0,    -26,     37}, 0, {   990,    990}, {0x03, 0x94, 0x42, 0xff}}},
     {{{   172,    -22,     33}, 0, {   938,    -26}, {0x02, 0x03, 0x7e, 0xff}}},
@@ -754,7 +754,7 @@ const Gfx piranha_plant_seg6_dl_06016D98[] = {
 };
 
 // 0x06016DF8
-static const Vtx piranha_plant_seg6_vertex_06016DF8[] = {
+ const Vtx piranha_plant_seg6_vertex_06016DF8[] = {
     {{{   -18,     36,      0}, 0, {     0,    990}, {0x02, 0x6f, 0x3d, 0xff}}},
     {{{   -18,    -27,     38}, 0, {   990,    990}, {0x02, 0x94, 0x41, 0xff}}},
     {{{   174,    -25,     34}, 0, {   946,    -12}, {0x02, 0x02, 0x7e, 0xff}}},

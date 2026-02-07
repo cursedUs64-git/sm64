@@ -16,7 +16,7 @@
 #include "make_const_nonconst.h"
 #include "levels/vcutm/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript vcutm_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_VCUTM_SEESAW_PLATFORM, /*pos*/   154, -1919, -6256, /*angle*/ 0, 270, 0, /*bhvParam*/ BPARAM2(0x07), /*bhv*/ bhvSeesawPlatform),
     OBJECT(/*model*/ MODEL_VCUTM_SEESAW_PLATFORM, /*pos*/ -2047, -3378, -2047, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(0x07), /*bhv*/ bhvSeesawPlatform),
     //! @bug invalid model IDs - model ID 0x37 isn't loaded
@@ -27,12 +27,12 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript vcutm_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_CAP_SWITCH, /*pos*/ 4506,  26, -6246, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x02), /*bhv*/ bhvCapSwitch),
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript vcutm_script_func_local_3[] = {
     OBJECT(/*model*/ MODEL_NONE,       /*pos*/ 4600, 250, -4500, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvHiddenRedCoinStar),
     RETURN(),
 };
@@ -58,9 +58,9 @@ const LevelScript level_vcutm_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_WARP_FLOOR, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_07, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS,    /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_08, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,      /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_06, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_3),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
+        JUMP_LINK(vcutm_script_func_local_3),
+        JUMP_LINK(vcutm_script_func_local_1),
+        JUMP_LINK(vcutm_script_func_local_2),
         TERRAIN(/*terrainData*/ vcutm_seg7_collision),
         MACRO_OBJECTS(/*objList*/ vcutm_seg7_macro_objs),
         SHOW_DIALOG(/*index*/ 0x00, DIALOG_129),

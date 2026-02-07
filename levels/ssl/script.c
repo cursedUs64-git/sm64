@@ -15,12 +15,12 @@
 #include "make_const_nonconst.h"
 #include "levels/ssl/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript ssl_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_SSL_PYRAMID_TOP, /*pos*/ -2047, 1536, -1023, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvPyramidTop),
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript ssl_script_func_local_2[] = {
     OBJECT          (/*model*/ MODEL_SSL_TOX_BOX,     /*pos*/ -1284,    0, -5895, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(TOX_BOX_BP_MOVEMENT_PATTERN_1), /*bhv*/ bhvToxBox),
     OBJECT          (/*model*/ MODEL_SSL_TOX_BOX,     /*pos*/  1283,    0, -4865, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(TOX_BOX_BP_MOVEMENT_PATTERN_2), /*bhv*/ bhvToxBox),
     OBJECT          (/*model*/ MODEL_SSL_TOX_BOX,     /*pos*/  4873,    0, -3335, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(TOX_BOX_BP_MOVEMENT_PATTERN_3), /*bhv*/ bhvToxBox),
@@ -32,13 +32,13 @@ static const LevelScript script_func_local_2[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript ssl_script_func_local_3[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR, /*pos*/ -2050, 1200, -580, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_2), /*bhv*/ bhvStar,                 /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE, /*pos*/  6000,  800, 3500, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_5), /*bhv*/ bhvHiddenRedCoinStar, /*acts*/ ALL_ACTS),
     RETURN(),
 };
 
-static const LevelScript script_func_local_4[] = {
+ const LevelScript ssl_script_func_local_4[] = {
     OBJECT(/*model*/ MODEL_NONE,                    /*pos*/  2867,  640,  2867, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(77), /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_NONE,                    /*pos*/     0, 3200,  1331, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(92), /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_SSL_GRINDEL,             /*pos*/  3297,    0,    95, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(28), /*bhv*/ bhvGrindel),
@@ -56,13 +56,13 @@ static const LevelScript script_func_local_4[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_5[] = {
+ const LevelScript ssl_script_func_local_5[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR, /*pos*/ 500, 5050, -500, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_3), /*bhv*/ bhvStar,        /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE, /*pos*/ 900, 1400, 2350, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_6) | BPARAM2(0x04), /*bhv*/ bhvHiddenStar, /*acts*/ ALL_ACTS),
     RETURN(),
 };
 
-static const LevelScript script_func_local_6[] = {
+ const LevelScript ssl_script_func_local_6[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ 0, -1534, -3693, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_4), /*bhv*/ bhvEyerokBoss),
     RETURN(),
 };
@@ -103,9 +103,9 @@ const LevelScript level_ssl_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_20,      /*destLevel*/ LEVEL_SSL,    /*destArea*/ 1, /*destNode*/ WARP_NODE_1F, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(ssl_script_func_local_1),
+        JUMP_LINK(ssl_script_func_local_2),
+        JUMP_LINK(ssl_script_func_local_3),
         TERRAIN(/*terrainData*/ ssl_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ ssl_seg7_area_1_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_HOT),
@@ -123,8 +123,8 @@ const LevelScript level_ssl_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_16,      /*destLevel*/ LEVEL_SSL,    /*destArea*/ 2, /*destNode*/ WARP_NODE_15, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_4),
-        JUMP_LINK(script_func_local_5),
+        JUMP_LINK(ssl_script_func_local_4),
+        JUMP_LINK(ssl_script_func_local_5),
         INSTANT_WARP(/*index*/ 3, /*destArea*/ 3, /*displace*/ 0, 0, 0),
         TERRAIN(/*terrainData*/ ssl_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ ssl_seg7_area_2_macro_objs),
@@ -135,7 +135,7 @@ const LevelScript level_ssl_entry[] = {
     AREA(/*index*/ 3, ssl_geo_00088C),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_6),
+        JUMP_LINK(ssl_script_func_local_6),
         TERRAIN(/*terrainData*/ ssl_seg7_area_3_collision),
         MACRO_OBJECTS(/*objList*/ ssl_seg7_area_3_macro_objs),
         INSTANT_WARP(/*index*/ 2, /*destArea*/ 2, /*displace*/ 0, 0, 0),

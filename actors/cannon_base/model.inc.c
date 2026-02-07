@@ -1,24 +1,24 @@
 // Cannon Base
 
 // 0x08004988
-static const Lights1 cannon_base_seg8_lights_08004988 = gdSPDefLights1(
+ const Lights1 cannon_base_seg8_lights_08004988 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x080049A0
-static const Lights1 cannon_base_seg8_lights_080049A0 = gdSPDefLights1(
+ const Lights1 cannon_base_seg8_lights_080049A0 = gdSPDefLights1(
     0x0e, 0x10, 0x4c,
     0x30, 0x37, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x080049B8
-ALIGNED8 static const Texture cannon_base_seg8_texture_080049B8[] = {
+ALIGNED8  const Texture cannon_base_seg8_texture_080049B8[] = {
 #include "actors/cannon_base/cannon_base.rgba16.inc.c"
 };
 
 // 0x080051B8
-static const Vtx cannon_base_seg8_vertex_080051B8[] = {
+ const Vtx cannon_base_seg8_vertex_080051B8[] = {
     {{{   102,   -101,     51}, 0, {     0,   1758}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   102,   -101,    -50}, 0, {   990,   1758}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   102,     51,    -50}, 0, {   990,    228}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -34,7 +34,7 @@ static const Vtx cannon_base_seg8_vertex_080051B8[] = {
 };
 
 // 0x08005278
-static const Vtx cannon_base_seg8_vertex_08005278[] = {
+ const Vtx cannon_base_seg8_vertex_08005278[] = {
     {{{   -60,   -101,     51}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    61,   -101,     51}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    61,   -101,    -50}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -54,7 +54,7 @@ static const Vtx cannon_base_seg8_vertex_08005278[] = {
 };
 
 // 0x08005378
-static const Vtx cannon_base_seg8_vertex_08005378[] = {
+ const Vtx cannon_base_seg8_vertex_08005378[] = {
     {{{   102,     51,    -50}, 0, {     0,      0}, {0x00, 0x58, 0xa5, 0xff}}},
     {{{    61,     77,    -25}, 0, {     0,      0}, {0x00, 0x58, 0xa5, 0xff}}},
     {{{   102,     77,    -25}, 0, {     0,      0}, {0x00, 0x58, 0xa5, 0xff}}},
@@ -73,7 +73,7 @@ static const Vtx cannon_base_seg8_vertex_08005378[] = {
 };
 
 // 0x08005468
-static const Vtx cannon_base_seg8_vertex_08005468[] = {
+ const Vtx cannon_base_seg8_vertex_08005468[] = {
     {{{   -60,   -101,     51}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    61,   -101,    -50}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   -60,   -101,    -50}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -92,7 +92,7 @@ static const Vtx cannon_base_seg8_vertex_08005468[] = {
 };
 
 // 0x08005558
-static const Vtx cannon_base_seg8_vertex_08005558[] = {
+ const Vtx cannon_base_seg8_vertex_08005558[] = {
     {{{  -101,   -101,     51}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -60,     51,     51}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -101,     51,     51}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},

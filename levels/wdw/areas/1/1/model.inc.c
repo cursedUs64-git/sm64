@@ -1,17 +1,17 @@
 // 0x07002800 - 0x07002818
-static const Lights1 wdw_seg7_lights_07002800 = gdSPDefLights1(
+ const Lights1 wdw_seg7_lights_07002800 = gdSPDefLights1(
     0x99, 0x99, 0x99,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07002818 - 0x07002830
-static const Lights1 wdw_seg7_lights_07002818 = gdSPDefLights1(
+ const Lights1 wdw_seg7_lights_07002818 = gdSPDefLights1(
     0x3c, 0x3c, 0x3c,
     0x64, 0x64, 0x64, 0x28, 0x28, 0x28
 );
 
 // 0x07002830 - 0x07002920
-static const Vtx wdw_seg7_vertex_07002830[] = {
+ const Vtx wdw_seg7_vertex_07002830[] = {
     {{{  -511,   3072,  -3327}, 0, {   990,  -1370}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -1023,   3072,  -3839}, 0, {  -158,  -1790}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -511,   3072,  -3839}, 0, {  -158,  -1370}, {0x00, 0x81, 0x00, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx wdw_seg7_vertex_07002830[] = {
 };
 
 // 0x07002920 - 0x07002A20
-static const Vtx wdw_seg7_vertex_07002920[] = {
+ const Vtx wdw_seg7_vertex_07002920[] = {
     {{{ -2560,   2304,   -511}, 0, {  2522,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -3839,   2304,   -511}, 0, {     0,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -3839,   1152,   -511}, 0, {     0,   5332}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -50,7 +50,7 @@ static const Vtx wdw_seg7_vertex_07002920[] = {
 };
 
 // 0x07002A20 - 0x07002B20
-static const Vtx wdw_seg7_vertex_07002A20[] = {
+ const Vtx wdw_seg7_vertex_07002A20[] = {
     {{{  1280,    205,  -1279}, 0, {   990,   4564}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   640,    205,  -1279}, 0, { -1308,   4564}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   640,   2304,  -1279}, 0, { -1308,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -70,7 +70,7 @@ static const Vtx wdw_seg7_vertex_07002A20[] = {
 };
 
 // 0x07002B20 - 0x07002C20
-static const Vtx wdw_seg7_vertex_07002B20[] = {
+ const Vtx wdw_seg7_vertex_07002B20[] = {
     {{{ -1792,   1152,    -68}, 0, {  4054,   5332}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -1792,   2304,    -68}, 0, {  4054,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2304,   2304,    -68}, 0, {  3032,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -90,7 +90,7 @@ static const Vtx wdw_seg7_vertex_07002B20[] = {
 };
 
 // 0x07002C20 - 0x07002D20
-static const Vtx wdw_seg7_vertex_07002C20[] = {
+ const Vtx wdw_seg7_vertex_07002C20[] = {
     {{{     0,   3072,  -3327}, 0, {  4568,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   256,   2816,  -3327}, 0, {  5078,   1498}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   256,   3072,  -3327}, 0, {  5078,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -110,7 +110,7 @@ static const Vtx wdw_seg7_vertex_07002C20[] = {
 };
 
 // 0x07002D20 - 0x07002E00
-static const Vtx wdw_seg7_vertex_07002D20[] = {
+ const Vtx wdw_seg7_vertex_07002D20[] = {
     {{{  2048,      0,   -895}, 0, {   990,   1704}, {0x00, 0x70, 0x3b, 0xff}}},
     {{{  2048,    205,  -1279}, 0, {   990,      0}, {0x00, 0x70, 0x3b, 0xff}}},
     {{{  1280,      0,   -895}, 0, { -2074,   1704}, {0x00, 0x70, 0x3b, 0xff}}},
@@ -128,7 +128,7 @@ static const Vtx wdw_seg7_vertex_07002D20[] = {
 };
 
 // 0x07002E00 - 0x07002F00
-static const Vtx wdw_seg7_vertex_07002E00[] = {
+ const Vtx wdw_seg7_vertex_07002E00[] = {
     {{{  2048,      0,   -895}, 0, {  -362,   1664}, {0x36, 0x65, 0x36, 0xff}}},
     {{{  2432,      0,  -1279}, 0, {  2344,   1664}, {0x36, 0x65, 0x36, 0xff}}},
     {{{  2048,    205,  -1279}, 0, {   990,      0}, {0x36, 0x65, 0x36, 0xff}}},
@@ -148,7 +148,7 @@ static const Vtx wdw_seg7_vertex_07002E00[] = {
 };
 
 // 0x07002F00 - 0x07002FE0
-static const Vtx wdw_seg7_vertex_07002F00[] = {
+ const Vtx wdw_seg7_vertex_07002F00[] = {
     {{{ -2303,   3328,  -3327}, 0, {     0,    478}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -1023,   3328,  -3327}, 0, {  2524,    478}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -1023,   3584,  -3327}, 0, {  2524,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -166,7 +166,7 @@ static const Vtx wdw_seg7_vertex_07002F00[] = {
 };
 
 // 0x07002FE0 - 0x070030C0
-static const Vtx wdw_seg7_vertex_07002FE0[] = {
+ const Vtx wdw_seg7_vertex_07002FE0[] = {
     {{{ -1023,   3328,  -3327}, 0, {  2012,    480}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -1023,   3328,  -3839}, 0, {  3034,    480}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -1023,   3584,  -3839}, 0, {  3034,      0}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -184,7 +184,7 @@ static const Vtx wdw_seg7_vertex_07002FE0[] = {
 };
 
 // 0x070030C0 - 0x070031A0
-static const Vtx wdw_seg7_vertex_070030C0[] = {
+ const Vtx wdw_seg7_vertex_070030C0[] = {
     {{{ -1023,   3072,  -3327}, 0, {  2012,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{ -1023,   2816,  -3839}, 0, {  3034,    480}, {0x81, 0x00, 0x00, 0xff}}},
     {{{ -1023,   2816,  -3327}, 0, {  2012,    480}, {0x81, 0x00, 0x00, 0xff}}},
@@ -202,7 +202,7 @@ static const Vtx wdw_seg7_vertex_070030C0[] = {
 };
 
 // 0x070031A0 - 0x07003290
-static const Vtx wdw_seg7_vertex_070031A0[] = {
+ const Vtx wdw_seg7_vertex_070031A0[] = {
     {{{ -2121,   3456,  -2229}, 0, {   524,    990}, {0x59, 0x00, 0x59, 0xff}}},
     {{{ -1919,   3584,  -2431}, 0, {   990,    734}, {0x59, 0x00, 0x59, 0xff}}},
     {{{ -2121,   3584,  -2229}, 0, {   524,    734}, {0x59, 0x00, 0x59, 0xff}}},
@@ -221,7 +221,7 @@ static const Vtx wdw_seg7_vertex_070031A0[] = {
 };
 
 // 0x07003290 - 0x07003380
-static const Vtx wdw_seg7_vertex_07003290[] = {
+ const Vtx wdw_seg7_vertex_07003290[] = {
     {{{ -2303,   2304,  -2303}, 0, {   990,   3542}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -3839,   3456,  -2303}, 0, { -2074,   1244}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -3839,   2304,  -2303}, 0, { -2074,   3544}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -240,7 +240,7 @@ static const Vtx wdw_seg7_vertex_07003290[] = {
 };
 
 // 0x07003380 - 0x07003460
-static const Vtx wdw_seg7_vertex_07003380[] = {
+ const Vtx wdw_seg7_vertex_07003380[] = {
     {{{ -2431,   1664,   3840}, 0, {  -542,   2522}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2047,   2304,   3840}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2431,   2304,   3840}, 0, {  -542,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -258,7 +258,7 @@ static const Vtx wdw_seg7_vertex_07003380[] = {
 };
 
 // 0x07003460 - 0x07003550
-static const Vtx wdw_seg7_vertex_07003460[] = {
+ const Vtx wdw_seg7_vertex_07003460[] = {
     {{{ -2047,   2304,   3840}, 0, { -1052,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -2047,   1664,   3840}, 0, { -1052,   3542}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -2047,   1664,   2432}, 0, {  5078,   3544}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -277,7 +277,7 @@ static const Vtx wdw_seg7_vertex_07003460[] = {
 };
 
 // 0x07003550 - 0x07003630
-static const Vtx wdw_seg7_vertex_07003550[] = {
+ const Vtx wdw_seg7_vertex_07003550[] = {
     {{{ -1909,   2304,   -320}, 0, {  1074,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2185,   2816,   -320}, 0, {     0,  -1054}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2185,   2304,   -320}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -295,7 +295,7 @@ static const Vtx wdw_seg7_vertex_07003550[] = {
 };
 
 // 0x07003630 - 0x07003720
-static const Vtx wdw_seg7_vertex_07003630[] = {
+ const Vtx wdw_seg7_vertex_07003630[] = {
     {{{ -1023,   3328,  -3327}, 0, {   990,  -1790}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -2303,   3328,  -3839}, 0, {  -158,  -2842}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -1023,   3328,  -3839}, 0, {  -158,  -1790}, {0x00, 0x81, 0x00, 0xff}}},
@@ -314,7 +314,7 @@ static const Vtx wdw_seg7_vertex_07003630[] = {
 };
 
 // 0x07003720 - 0x070037D0
-static const Vtx wdw_seg7_vertex_07003720[] = {
+ const Vtx wdw_seg7_vertex_07003720[] = {
     {{{   256,   2816,  -3327}, 0, {   990,    902}, {0xa7, 0xa7, 0x00, 0xff}}},
     {{{  -255,   3328,  -3327}, 0, {   990,   -542}, {0xa7, 0xa7, 0x00, 0xff}}},
     {{{  -255,   3328,  -3839}, 0, {     0,   -542}, {0xa7, 0xa7, 0x00, 0xff}}},
@@ -329,7 +329,7 @@ static const Vtx wdw_seg7_vertex_07003720[] = {
 };
 
 // 0x070037D0 - 0x070038C0
-static const Vtx wdw_seg7_vertex_070037D0[] = {
+ const Vtx wdw_seg7_vertex_070037D0[] = {
     {{{  2048,    205,  -1279}, 0, {  -542,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  2048,    205,  -2175}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   640,    205,  -2175}, 0, {   990,  -2842}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -348,7 +348,7 @@ static const Vtx wdw_seg7_vertex_070037D0[] = {
 };
 
 // 0x070038C0 - 0x070039C0
-static const Vtx wdw_seg7_vertex_070038C0[] = {
+ const Vtx wdw_seg7_vertex_070038C0[] = {
     {{{ -2303,   2304,  -3327}, 0, {  5078,   3032}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2303,   2304,  -2303}, 0, {  3034,   3032}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  1280,   2304,  -3327}, 0, {  5078,  10186}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -368,7 +368,7 @@ static const Vtx wdw_seg7_vertex_070038C0[] = {
 };
 
 // 0x070039C0 - 0x07003AB0
-static const Vtx wdw_seg7_vertex_070039C0[] = {
+ const Vtx wdw_seg7_vertex_070039C0[] = {
     {{{   256,   3072,  -3839}, 0, {   990,   8142}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{     0,   3072,  -3327}, 0, {     0,   7632}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   256,   3072,  -3327}, 0, {     0,   8142}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -387,7 +387,7 @@ static const Vtx wdw_seg7_vertex_070039C0[] = {
 };
 
 // 0x07003AB0 - 0x07003BB0
-static const Vtx wdw_seg7_vertex_07003AB0[] = {
+ const Vtx wdw_seg7_vertex_07003AB0[] = {
     {{{ -1023,   3072,  -3327}, 0, {     0,   5588}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -511,   3072,  -3839}, 0, {   990,   6608}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -1023,   3072,  -3839}, 0, {   990,   5586}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -407,7 +407,7 @@ static const Vtx wdw_seg7_vertex_07003AB0[] = {
 };
 
 // 0x07003BB0 - 0x07003CB0
-static const Vtx wdw_seg7_vertex_07003BB0[] = {
+ const Vtx wdw_seg7_vertex_07003BB0[] = {
     {{{ -2815,   3584,  -2303}, 0, {     0,   2010}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2229,   3584,  -2121}, 0, {  -394,   3180}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2357,   3584,  -2249}, 0, {  -138,   2924}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -427,7 +427,7 @@ static const Vtx wdw_seg7_vertex_07003BB0[] = {
 };
 
 // 0x07003CB0 - 0x07003D70
-static const Vtx wdw_seg7_vertex_07003CB0[] = {
+ const Vtx wdw_seg7_vertex_07003CB0[] = {
     {{{ -2431,   1664,   3840}, 0, {  5588,   -544}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -2431,   1664,   2944}, 0, {  2012,   -544}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -2175,   1664,   2432}, 0, {     0,    478}, {0x00, 0x81, 0x00, 0xff}}},
@@ -443,7 +443,7 @@ static const Vtx wdw_seg7_vertex_07003CB0[] = {
 };
 
 // 0x07003D70 - 0x07003E30
-static const Vtx wdw_seg7_vertex_07003D70[] = {
+ const Vtx wdw_seg7_vertex_07003D70[] = {
     {{{ -2121,   3584,  -2229}, 0, {  -178,   1352}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2357,   3584,  -2249}, 0, {  -138,    882}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2229,   3584,  -2121}, 0, {  -394,   1136}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -459,7 +459,7 @@ static const Vtx wdw_seg7_vertex_07003D70[] = {
 };
 
 // 0x07003E30 - 0x07003F20
-static const Vtx wdw_seg7_vertex_07003E30[] = {
+ const Vtx wdw_seg7_vertex_07003E30[] = {
     {{{ -1023,   2304,   2688}, 0, { -3096,   2520}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  -511,   2048,   2688}, 0, { -1052,   3544}, {0x00, 0x00, 0x81, 0xff}}},
     {{{ -1023,   2048,   2688}, 0, { -3096,   3542}, {0x00, 0x00, 0x81, 0xff}}},
@@ -478,7 +478,7 @@ static const Vtx wdw_seg7_vertex_07003E30[] = {
 };
 
 // 0x07003F20 - 0x07004010
-static const Vtx wdw_seg7_vertex_07003F20[] = {
+ const Vtx wdw_seg7_vertex_07003F20[] = {
     {{{  -511,   2048,   2048}, 0, {  7122,   4054}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  -511,   2176,   2432}, 0, {  5590,   3542}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  -511,   2048,   2432}, 0, {  5590,   4054}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -497,7 +497,7 @@ static const Vtx wdw_seg7_vertex_07003F20[] = {
 };
 
 // 0x07004010 - 0x07004100
-static const Vtx wdw_seg7_vertex_07004010[] = {
+ const Vtx wdw_seg7_vertex_07004010[] = {
     {{{   256,   3072,   3840}, 0, {  2012,    478}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -255,   3200,   3840}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -255,   3072,   3840}, 0, {     0,    478}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -516,7 +516,7 @@ static const Vtx wdw_seg7_vertex_07004010[] = {
 };
 
 // 0x07004100 - 0x070041F0
-static const Vtx wdw_seg7_vertex_07004100[] = {
+ const Vtx wdw_seg7_vertex_07004100[] = {
     {{{  1723,   3968,    340}, 0, {  2012,    478}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1211,   4096,    340}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1211,   3968,    340}, 0, {     0,    478}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -535,7 +535,7 @@ static const Vtx wdw_seg7_vertex_07004100[] = {
 };
 
 // 0x070041F0 - 0x07004270
-static const Vtx wdw_seg7_vertex_070041F0[] = {
+ const Vtx wdw_seg7_vertex_070041F0[] = {
     {{{  1723,   3968,   -171}, 0, {  2012,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  1723,   4096,    340}, 0, {     0,    478}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  1723,   3968,    340}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -547,7 +547,7 @@ static const Vtx wdw_seg7_vertex_070041F0[] = {
 };
 
 // 0x07004270 - 0x07004360
-static const Vtx wdw_seg7_vertex_07004270[] = {
+ const Vtx wdw_seg7_vertex_07004270[] = {
     {{{  -255,   1152,   1152}, 0, {     0,  -2076}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  -255,    384,   1152}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  -255,    384,   -511}, 0, {  6100,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -566,7 +566,7 @@ static const Vtx wdw_seg7_vertex_07004270[] = {
 };
 
 // 0x07004360 - 0x07004440
-static const Vtx wdw_seg7_vertex_07004360[] = {
+ const Vtx wdw_seg7_vertex_07004360[] = {
     {{{ -3839,   1152,   1280}, 0, {-12294,  -4120}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2354,    691,   1280}, 0, { -6366,  -2280}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2047,    691,   1280}, 0, { -5140,  -2280}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -584,7 +584,7 @@ static const Vtx wdw_seg7_vertex_07004360[] = {
 };
 
 // 0x07004440 - 0x07004530
-static const Vtx wdw_seg7_vertex_07004440[] = {
+ const Vtx wdw_seg7_vertex_07004440[] = {
     {{{ -2431,   2304,   4224}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -2943,   2304,   3456}, 0, {  5078,   2010}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -2431,   2304,   3456}, 0, {  5078,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -603,7 +603,7 @@ static const Vtx wdw_seg7_vertex_07004440[] = {
 };
 
 // 0x07004530 - 0x07004620
-static const Vtx wdw_seg7_vertex_07004530[] = {
+ const Vtx wdw_seg7_vertex_07004530[] = {
     {{{ -2789,   3328,   3098}, 0, {   376,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2789,   2816,   3098}, 0, {   376,   2010}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2585,   2816,   3098}, 0, {  1194,   2010}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -622,7 +622,7 @@ static const Vtx wdw_seg7_vertex_07004530[] = {
 };
 
 // 0x07004620 - 0x07004710
-static const Vtx wdw_seg7_vertex_07004620[] = {
+ const Vtx wdw_seg7_vertex_07004620[] = {
     {{{ -2789,   2816,   3302}, 0, {   172,    172}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2585,   2816,   3302}, 0, {   172,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2585,   2816,   3098}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -641,7 +641,7 @@ static const Vtx wdw_seg7_vertex_07004620[] = {
 };
 
 // 0x07004710 - 0x070047D0
-static const Vtx wdw_seg7_vertex_07004710[] = {
+ const Vtx wdw_seg7_vertex_07004710[] = {
     {{{ -2431,   3328,   3456}, 0, {     0,  -3098}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -2431,   2304,   4224}, 0, { -3096,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{ -2431,   2304,   3456}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -657,7 +657,7 @@ static const Vtx wdw_seg7_vertex_07004710[] = {
 };
 
 // 0x070047D0 - 0x070048D0
-static const Vtx wdw_seg7_vertex_070047D0[] = {
+ const Vtx wdw_seg7_vertex_070047D0[] = {
     {{{ -2047,    384,    666}, 0, { -5650,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2354,    691,    666}, 0, { -6878,   1806}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -2354,    384,    666}, 0, { -6878,   3032}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -677,7 +677,7 @@ static const Vtx wdw_seg7_vertex_070047D0[] = {
 };
 
 // 0x070048D0 - 0x070049B0
-static const Vtx wdw_seg7_vertex_070048D0[] = {
+ const Vtx wdw_seg7_vertex_070048D0[] = {
     {{{  4608,      0,   4608}, 0, {  6610,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{ -3839,   3072,   4608}, 0, {-10250,  -5142}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  4608,   3072,   4608}, 0, {  6612,  -5142}, {0x00, 0x00, 0x81, 0xff}}},
@@ -695,7 +695,7 @@ static const Vtx wdw_seg7_vertex_070048D0[] = {
 };
 
 // 0x070049B0 - 0x07004AA0
-static const Vtx wdw_seg7_vertex_070049B0[] = {
+ const Vtx wdw_seg7_vertex_070049B0[] = {
     {{{ -2943,   3328,   2944}, 0, {  2012,  -1054}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2789,   3328,   3302}, 0, {   582,   -440}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2789,   3328,   3098}, 0, {  1398,   -440}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -714,7 +714,7 @@ static const Vtx wdw_seg7_vertex_070049B0[] = {
 };
 
 // 0x07004AA0 - 0x07004B40
-static const Vtx wdw_seg7_vertex_07004AA0[] = {
+ const Vtx wdw_seg7_vertex_07004AA0[] = {
     {{{ -2431,   3328,   3456}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2431,   3328,   2944}, 0, {  2012,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2585,   3328,   3098}, 0, {  1398,    376}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -728,7 +728,7 @@ static const Vtx wdw_seg7_vertex_07004AA0[] = {
 };
 
 // 0x07004B40 - 0x07004C30
-static const Vtx wdw_seg7_vertex_07004B40[] = {
+ const Vtx wdw_seg7_vertex_07004B40[] = {
     {{{ -2357,   3814,  -2249}, 0, {   990,    990}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{  -511,   3840,   -402}, 0, {     0,  -9434}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{ -2357,   3840,  -2249}, 0, {     0,    990}, {0xa7, 0x00, 0x59, 0xff}}},
@@ -747,7 +747,7 @@ static const Vtx wdw_seg7_vertex_07004B40[] = {
 };
 
 // 0x07004C30 - 0x07004D20
-static const Vtx wdw_seg7_vertex_07004C30[] = {
+ const Vtx wdw_seg7_vertex_07004C30[] = {
     {{{  2304,   1613,   2560}, 0, {  1054,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  1024,   1613,   1792}, 0, {     0,    734}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  2304,   1613,   1792}, 0, {  1054,    734}, {0x00, 0x81, 0x00, 0xff}}},
@@ -766,7 +766,7 @@ static const Vtx wdw_seg7_vertex_07004C30[] = {
 };
 
 // 0x07004D20 - 0x07004E00
-static const Vtx wdw_seg7_vertex_07004D20[] = {
+ const Vtx wdw_seg7_vertex_07004D20[] = {
     {{{  3712,   1152,   3649}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3712,   1280,    831}, 0, {   480,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3712,   1280,   3649}, 0, {   480,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -784,7 +784,7 @@ static const Vtx wdw_seg7_vertex_07004D20[] = {
 };
 
 // 0x07004E00 - 0x07004EF0
-static const Vtx wdw_seg7_vertex_07004E00[] = {
+ const Vtx wdw_seg7_vertex_07004E00[] = {
     {{{  3072,   1152,   3649}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  3072,   1280,   3649}, 0, {   480,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  3072,   1280,    831}, 0, {   480,    990}, {0x81, 0x00, 0x00, 0xff}}},
@@ -803,7 +803,7 @@ static const Vtx wdw_seg7_vertex_07004E00[] = {
 };
 
 // 0x07004EF0 - 0x07004FF0
-static const Vtx wdw_seg7_vertex_07004EF0[] = {
+ const Vtx wdw_seg7_vertex_07004EF0[] = {
     {{{  3712,   1280,    831}, 0, {   482,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3712,      0,    768}, 0, {   608,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3712,   1280,    768}, 0, {   608,      0}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -823,7 +823,7 @@ static const Vtx wdw_seg7_vertex_07004EF0[] = {
 };
 
 // 0x07004FF0 - 0x070050D0
-static const Vtx wdw_seg7_vertex_07004FF0[] = {
+ const Vtx wdw_seg7_vertex_07004FF0[] = {
     {{{  3649,   1152,    768}, 0, {   480,      0}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{  3649,      0,    768}, 0, {   480,    990}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{  3712,      0,    831}, 0, {   658,    990}, {0xa7, 0x00, 0x59, 0xff}}},
@@ -841,7 +841,7 @@ static const Vtx wdw_seg7_vertex_07004FF0[] = {
 };
 
 // 0x070050D0 - 0x070051C0
-static const Vtx wdw_seg7_vertex_070050D0[] = {
+ const Vtx wdw_seg7_vertex_070050D0[] = {
     {{{  3712,   1152,   3649}, 0, {   478,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  3649,      0,   3712}, 0, {   658,    990}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  3649,   1152,   3712}, 0, {   658,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
@@ -860,7 +860,7 @@ static const Vtx wdw_seg7_vertex_070050D0[] = {
 };
 
 // 0x070051C0 - 0x070052A0
-static const Vtx wdw_seg7_vertex_070051C0[] = {
+ const Vtx wdw_seg7_vertex_070051C0[] = {
     {{{  -627,   4143,   1101}, 0, {  1056,  -3330}, {0xa6, 0x00, 0xa7, 0xff}}},
     {{{  -593,   4025,   1066}, 0, {  1908,  -3330}, {0xa6, 0x00, 0xa7, 0xff}}},
     {{{ -1094,   3731,   1568}, 0, {  1908,   -288}, {0xa6, 0x00, 0xa7, 0xff}}},
@@ -878,7 +878,7 @@ static const Vtx wdw_seg7_vertex_070051C0[] = {
 };
 
 // 0x070052A0 - 0x07005390
-static const Vtx wdw_seg7_vertex_070052A0[] = {
+ const Vtx wdw_seg7_vertex_070052A0[] = {
     {{{  -578,   3820,    961}, 0, {   990,      0}, {0x54, 0x30, 0xae, 0xff}}},
     {{{  -615,   3871,    953}, 0, {   862,    190}, {0x54, 0x30, 0xae, 0xff}}},
     {{{  -593,   4025,   1066}, 0, {  1246,    854}, {0x54, 0x30, 0xae, 0xff}}},
@@ -897,7 +897,7 @@ static const Vtx wdw_seg7_vertex_070052A0[] = {
 };
 
 // 0x07005390 - 0x07005490
-static const Vtx wdw_seg7_vertex_07005390[] = {
+ const Vtx wdw_seg7_vertex_07005390[] = {
     {{{  -913,   4348,    934}, 0, {     0,   2248}, {0x53, 0x2e, 0xad, 0xff}}},
     {{{  -732,   4348,   1115}, 0, {   990,   2248}, {0x53, 0x2e, 0xad, 0xff}}},
     {{{  -740,   4296,   1078}, 0, {   862,   2026}, {0x53, 0x2e, 0xad, 0xff}}},
@@ -917,7 +917,7 @@ static const Vtx wdw_seg7_vertex_07005390[] = {
 };
 
 // 0x07005490 - 0x07005580
-static const Vtx wdw_seg7_vertex_07005490[] = {
+ const Vtx wdw_seg7_vertex_07005490[] = {
     {{{  -732,   4348,   1115}, 0, {    12,  -3330}, {0x3c, 0x3a, 0x5e, 0xff}}},
     {{{ -1234,   4054,   1617}, 0, {    12,   -288}, {0x3c, 0x3a, 0x5e, 0xff}}},
     {{{ -1084,   3849,   1648}, 0, {  1172,   -288}, {0x3c, 0x3a, 0x5e, 0xff}}},
@@ -936,7 +936,7 @@ static const Vtx wdw_seg7_vertex_07005490[] = {
 };
 
 // 0x07005580 - 0x07005670
-static const Vtx wdw_seg7_vertex_07005580[] = {
+ const Vtx wdw_seg7_vertex_07005580[] = {
     {{{  -547,   4025,   1111}, 0, {  1818,  -3330}, {0x5e, 0xc6, 0x3c, 0xff}}},
     {{{ -1080,   3526,   1462}, 0, {  3032,   -288}, {0x5e, 0xc6, 0x3c, 0xff}}},
     {{{  -578,   3820,    961}, 0, {  3032,  -3330}, {0x5e, 0xc6, 0x3c, 0xff}}},
@@ -955,7 +955,7 @@ static const Vtx wdw_seg7_vertex_07005580[] = {
 };
 
 // 0x07005670 - 0x07005770
-static const Vtx wdw_seg7_vertex_07005670[] = {
+ const Vtx wdw_seg7_vertex_07005670[] = {
     {{{  -759,   3820,    780}, 0, {  4158,  -3330}, {0xc4, 0xc6, 0xa2, 0xff}}},
     {{{ -1411,   3731,   1251}, 0, {  5352,   -288}, {0xc4, 0xc6, 0xa2, 0xff}}},
     {{{  -909,   4025,    749}, 0, {  5352,  -3330}, {0xc4, 0xc6, 0xa2, 0xff}}},
@@ -975,7 +975,7 @@ static const Vtx wdw_seg7_vertex_07005670[] = {
 };
 
 // 0x07005770 - 0x07005870
-static const Vtx wdw_seg7_vertex_07005770[] = {
+ const Vtx wdw_seg7_vertex_07005770[] = {
     {{{  -740,   4296,   1078}, 0, {  8148,  -3330}, {0x22, 0x8b, 0xde, 0xff}}},
     {{{ -1242,   4003,   1579}, 0, {  8148,   -288}, {0x22, 0x8b, 0xde, 0xff}}},
     {{{  -876,   4296,    942}, 0, {  7154,  -3330}, {0x22, 0x8b, 0xde, 0xff}}},
@@ -995,7 +995,7 @@ static const Vtx wdw_seg7_vertex_07005770[] = {
 };
 
 // 0x07005870 - 0x07005960
-static const Vtx wdw_seg7_vertex_07005870[] = {
+ const Vtx wdw_seg7_vertex_07005870[] = {
     {{{  -913,   4348,    934}, 0, {  7120,  -3330}, {0xde, 0x75, 0x22, 0xff}}},
     {{{ -1234,   4054,   1617}, 0, {  8188,   -288}, {0xde, 0x75, 0x22, 0xff}}},
     {{{  -732,   4348,   1115}, 0, {  8188,  -3330}, {0xde, 0x75, 0x22, 0xff}}},
@@ -1014,7 +1014,7 @@ static const Vtx wdw_seg7_vertex_07005870[] = {
 };
 
 // 0x07005960 - 0x07005A60
-static const Vtx wdw_seg7_vertex_07005960[] = {
+ const Vtx wdw_seg7_vertex_07005960[] = {
     {{{ -1446,   3849,   1285}, 0, {  -540,   1362}, {0xae, 0xd0, 0x52, 0xff}}},
     {{{ -1411,   3731,   1251}, 0, {  -540,    854}, {0xae, 0xd0, 0x52, 0xff}}},
     {{{ -1366,   3731,   1296}, 0, {  -286,    854}, {0xae, 0xd0, 0x52, 0xff}}},
@@ -1034,7 +1034,7 @@ static const Vtx wdw_seg7_vertex_07005960[] = {
 };
 
 // 0x07005A60 - 0x07005B60
-static const Vtx wdw_seg7_vertex_07005A60[] = {
+ const Vtx wdw_seg7_vertex_07005A60[] = {
     {{{ -1234,   4054,   1617}, 0, {   990,   2248}, {0xad, 0xd0, 0x52, 0xff}}},
     {{{ -1242,   4003,   1579}, 0, {   862,   2026}, {0xad, 0xd0, 0x52, 0xff}}},
     {{{ -1129,   3849,   1602}, 0, {  1246,   1362}, {0xad, 0xd0, 0x52, 0xff}}},
@@ -1054,7 +1054,7 @@ static const Vtx wdw_seg7_vertex_07005A60[] = {
 };
 
 // 0x07005B60 - 0x07005C60
-static const Vtx wdw_seg7_vertex_07005B60[] = {
+ const Vtx wdw_seg7_vertex_07005B60[] = {
     {{{   512,      0,   3840}, 0, { -1052,    990}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   512,    640,   3328}, 0, {   990,  -1564}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   512,      0,   3328}, 0, {   990,    990}, {0x81, 0x00, 0x00, 0xff}}},
@@ -1074,7 +1074,7 @@ static const Vtx wdw_seg7_vertex_07005B60[] = {
 };
 
 // 0x07005C60 - 0x07005D60
-static const Vtx wdw_seg7_vertex_07005C60[] = {
+ const Vtx wdw_seg7_vertex_07005C60[] = {
     {{{   512,    640,   3584}, 0, {   990,   1500}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   512,    896,   3584}, 0, {   990,    478}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   768,    896,   3584}, 0, {     0,    478}, {0x00, 0x00, 0x81, 0xff}}},
@@ -1094,7 +1094,7 @@ static const Vtx wdw_seg7_vertex_07005C60[] = {
 };
 
 // 0x07005D60 - 0x07005E40
-static const Vtx wdw_seg7_vertex_07005D60[] = {
+ const Vtx wdw_seg7_vertex_07005D60[] = {
     {{{   768,    640,   3328}, 0, {  2524,   1500}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   512,    640,   3584}, 0, {  1502,    478}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   768,    640,   3584}, 0, {  1502,   1500}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1112,7 +1112,7 @@ static const Vtx wdw_seg7_vertex_07005D60[] = {
 };
 
 // 0x07005E40 - 0x07005F30
-static const Vtx wdw_seg7_vertex_07005E40[] = {
+ const Vtx wdw_seg7_vertex_07005E40[] = {
     {{{  3584,    154,   2662}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  3072,    154,   3174}, 0, {  4056,   4054}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  3584,    154,   3174}, 0, {  4056,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1131,7 +1131,7 @@ static const Vtx wdw_seg7_vertex_07005E40[] = {
 };
 
 // 0x07005F30 - 0x07006020
-static const Vtx wdw_seg7_vertex_07005F30[] = {
+ const Vtx wdw_seg7_vertex_07005F30[] = {
     {{{  3584,      0,   3174}, 0, {  3374,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  3584,    154,   3174}, 0, {  3374,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  3072,    154,   3174}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -1150,7 +1150,7 @@ static const Vtx wdw_seg7_vertex_07005F30[] = {
 };
 
 // 0x07006020 - 0x07006110
-static const Vtx wdw_seg7_vertex_07006020[] = {
+ const Vtx wdw_seg7_vertex_07006020[] = {
     {{{  1280,   1741,   2560}, 0, { -1052,  -2484}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1024,   1613,   2560}, 0, { -1562,  -2230}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  2304,   1613,   2560}, 0, {   990,  -2230}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -1169,7 +1169,7 @@ static const Vtx wdw_seg7_vertex_07006020[] = {
 };
 
 // 0x07006110 - 0x07006210
-static const Vtx wdw_seg7_vertex_07006110[] = {
+ const Vtx wdw_seg7_vertex_07006110[] = {
     {{{  2304,   1613,   2560}, 0, {   990,  -2230}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  2304,      0,   2560}, 0, {   990,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  2304,      0,   1792}, 0, {  -542,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -1189,7 +1189,7 @@ static const Vtx wdw_seg7_vertex_07006110[] = {
 };
 
 // 0x07006210 - 0x070062C0
-static const Vtx wdw_seg7_vertex_07006210[] = {
+ const Vtx wdw_seg7_vertex_07006210[] = {
     {{{  2304,   1613,   1792}, 0, {   990,  -2230}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  2304,      0,   1792}, 0, {   990,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  1024,      0,   1792}, 0, { -1564,    990}, {0x00, 0x00, 0x81, 0xff}}},
@@ -1204,7 +1204,7 @@ static const Vtx wdw_seg7_vertex_07006210[] = {
 };
 
 // 0x070062C0 - 0x070063B0
-static const Vtx wdw_seg7_vertex_070062C0[] = {
+ const Vtx wdw_seg7_vertex_070062C0[] = {
     {{{ -1023,   2176,   2048}, 0, {     0,  -6164}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -1023,   2176,   2432}, 0, {     0,  -3098}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -511,   2176,   2432}, 0, {  4056,  -3098}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1223,7 +1223,7 @@ static const Vtx wdw_seg7_vertex_070062C0[] = {
 };
 
 // 0x070063B0 - 0x070064A0
-static const Vtx wdw_seg7_vertex_070063B0[] = {
+ const Vtx wdw_seg7_vertex_070063B0[] = {
     {{{  1723,   3968,   -171}, 0, { -2584,   1498}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  1211,   3968,    340}, 0, {  -540,   3542}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  1211,   3968,   -171}, 0, {  -540,   1498}, {0x00, 0x81, 0x00, 0xff}}},
@@ -1242,7 +1242,7 @@ static const Vtx wdw_seg7_vertex_070063B0[] = {
 };
 
 // 0x070064A0 - 0x07006580
-static const Vtx wdw_seg7_vertex_070064A0[] = {
+ const Vtx wdw_seg7_vertex_070064A0[] = {
     {{{ -3839,   4352,  -4351}, 0, {     0,      0}, {0x00, 0x46, 0x69, 0xff}}},
     {{{ -3839,   3584,  -3839}, 0, {     0,    978}, {0x00, 0x46, 0x69, 0xff}}},
     {{{  -255,   3584,  -3839}, 0, {  3890,    978}, {0x00, 0x46, 0x69, 0xff}}},
@@ -1260,14 +1260,14 @@ static const Vtx wdw_seg7_vertex_070064A0[] = {
 };
 
 // 0x07006580 - 0x070065B0
-static const Vtx wdw_seg7_vertex_07006580[] = {
+ const Vtx wdw_seg7_vertex_07006580[] = {
     {{{  -255,   4352,  -4351}, 0, {  3890,      0}, {0x07, 0x46, 0x69, 0xff}}},
     {{{  -255,   3584,  -3839}, 0, {  3890,    978}, {0x07, 0x46, 0x69, 0xff}}},
     {{{  4608,   3072,  -3839}, 0, {  9214,   1676}, {0x07, 0x46, 0x69, 0xff}}},
 };
 
 // 0x070065B0 - 0x070066A0
-static const Vtx wdw_seg7_vertex_070065B0[] = {
+ const Vtx wdw_seg7_vertex_070065B0[] = {
     {{{  3584,   -827,  -2854}, 0, {  9166,      0}, {0x00, 0xa7, 0xa7, 0xff}}},
     {{{ -2815,   -550,  -3131}, 0, {  8144,   8482}, {0x00, 0xa7, 0xa7, 0xff}}},
     {{{  3584,   -550,  -3131}, 0, {  8144,      0}, {0x00, 0xa7, 0xa7, 0xff}}},
@@ -1286,7 +1286,7 @@ static const Vtx wdw_seg7_vertex_070065B0[] = {
 };
 
 // 0x070066A0 - 0x07006790
-static const Vtx wdw_seg7_vertex_070066A0[] = {
+ const Vtx wdw_seg7_vertex_070066A0[] = {
     {{{  3584,  -1496,  -3131}, 0, {  3034,      0}, {0x00, 0x59, 0xa7, 0xff}}},
     {{{ -2815,  -1496,  -3131}, 0, {  3034,   8482}, {0x00, 0x59, 0xa7, 0xff}}},
     {{{ -2815,  -1219,  -2854}, 0, {  2012,   8482}, {0x00, 0x59, 0xa7, 0xff}}},
@@ -1305,7 +1305,7 @@ static const Vtx wdw_seg7_vertex_070066A0[] = {
 };
 
 // 0x07006790 - 0x07006880
-static const Vtx wdw_seg7_vertex_07006790[] = {
+ const Vtx wdw_seg7_vertex_07006790[] = {
     {{{  3584,   -550,  -3523}, 0, {  7122,      0}, {0x00, 0xa7, 0x59, 0xff}}},
     {{{ -2815,   -550,  -3523}, 0, {  7122,   8482}, {0x00, 0xa7, 0x59, 0xff}}},
     {{{ -2815,   -827,  -3800}, 0, {  6100,   8482}, {0x00, 0xa7, 0x59, 0xff}}},
@@ -1324,7 +1324,7 @@ static const Vtx wdw_seg7_vertex_07006790[] = {
 };
 
 // 0x07006880 - 0x07006970
-static const Vtx wdw_seg7_vertex_07006880[] = {
+ const Vtx wdw_seg7_vertex_07006880[] = {
     {{{ -3523,  -1496,  -2815}, 0, {  8144,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -3523,  -1496,  -2303}, 0, {  8144,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -3131,  -1496,  -2303}, 0, {  9166,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1343,7 +1343,7 @@ static const Vtx wdw_seg7_vertex_07006880[] = {
 };
 
 // 0x07006970 - 0x07006A50
-static const Vtx wdw_seg7_vertex_07006970[] = {
+ const Vtx wdw_seg7_vertex_07006970[] = {
     {{{ -3131,   -550,  -2815}, 0, {  4056,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -3523,   -550,  -2303}, 0, {  5078,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -3523,   -550,  -2815}, 0, {  5078,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -1361,7 +1361,7 @@ static const Vtx wdw_seg7_vertex_07006970[] = {
 };
 
 // 0x07006A50 - 0x07006B40
-static const Vtx wdw_seg7_vertex_07006A50[] = {
+ const Vtx wdw_seg7_vertex_07006A50[] = {
     {{{  3900,      0,  -3800}, 0, {  5588,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  4292,   -511,  -3800}, 0, {  6610,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  4292,      0,  -3800}, 0, {  6610,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -1380,7 +1380,7 @@ static const Vtx wdw_seg7_vertex_07006A50[] = {
 };
 
 // 0x07006B40 - 0x07006C20
-static const Vtx wdw_seg7_vertex_07006B40[] = {
+ const Vtx wdw_seg7_vertex_07006B40[] = {
     {{{  3623,      0,  -3131}, 0, {  3544,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3623,   -511,  -3523}, 0, {  4566,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{  3623,      0,  -3523}, 0, {  4566,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -1398,7 +1398,7 @@ static const Vtx wdw_seg7_vertex_07006B40[] = {
 };
 
 // 0x07006C20 - 0x07006D10
-static const Vtx wdw_seg7_vertex_07006C20[] = {
+ const Vtx wdw_seg7_vertex_07006C20[] = {
     {{{  4569,      0,  -3131}, 0, {   478,    990}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  4292,   -511,  -2854}, 0, {  1500,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  4292,      0,  -2854}, 0, {  1500,    990}, {0xa7, 0x00, 0xa7, 0xff}}},
@@ -1417,7 +1417,7 @@ static const Vtx wdw_seg7_vertex_07006C20[] = {
 };
 
 // 0x07006D10 - 0x07006E00
-static const Vtx wdw_seg7_vertex_07006D10[] = {
+ const Vtx wdw_seg7_vertex_07006D10[] = {
     {{{  3833,   -760,  -2854}, 0, {  2160,    448}, {0x3b, 0xc8, 0xa0, 0xff}}},
     {{{  3584,   -550,  -3131}, 0, {  3434,    390}, {0x3b, 0xc8, 0xa0, 0xff}}},
     {{{  3603,   -530,  -3131}, 0, {  3434,    448}, {0x3b, 0xc8, 0xa0, 0xff}}},
@@ -1436,7 +1436,7 @@ static const Vtx wdw_seg7_vertex_07006D10[] = {
 };
 
 // 0x07006E00 - 0x07006EF0
-static const Vtx wdw_seg7_vertex_07006E00[] = {
+ const Vtx wdw_seg7_vertex_07006E00[] = {
     {{{  3584,   -550,  -3523}, 0, {  4678,    390}, {0x17, 0xa8, 0x58, 0xff}}},
     {{{  3584,   -827,  -3800}, 0, {  5622,    -16}, {0x17, 0xa8, 0x58, 0xff}}},
     {{{  3833,   -760,  -3800}, 0, {  5952,    448}, {0x17, 0xa8, 0x58, 0xff}}},
@@ -1455,7 +1455,7 @@ static const Vtx wdw_seg7_vertex_07006E00[] = {
 };
 
 // 0x07006EF0 - 0x07006FD0
-static const Vtx wdw_seg7_vertex_07006EF0[] = {
+ const Vtx wdw_seg7_vertex_07006EF0[] = {
     {{{  4292,   -511,  -3800}, 0, {  6358,   1486}, {0xae, 0x31, 0x52, 0xff}}},
     {{{  4028,   -955,  -3800}, 0, {  6674,    448}, {0xae, 0x31, 0x52, 0xff}}},
     {{{  4569,   -511,  -3523}, 0, {  7372,   1894}, {0xae, 0x31, 0x52, 0xff}}},
@@ -1473,7 +1473,7 @@ static const Vtx wdw_seg7_vertex_07006EF0[] = {
 };
 
 // 0x07006FD0 - 0x070070D0
-static const Vtx wdw_seg7_vertex_07006FD0[] = {
+ const Vtx wdw_seg7_vertex_07006FD0[] = {
     {{{  4569,   -511,  -3131}, 0, {   740,   1894}, {0xae, 0x31, 0xae, 0xff}}},
     {{{  4028,   -955,  -2854}, 0, {  1438,    448}, {0xae, 0x31, 0xae, 0xff}}},
     {{{  4292,   -511,  -2854}, 0, {  1754,   1486}, {0xae, 0x31, 0xae, 0xff}}},
@@ -1493,7 +1493,7 @@ static const Vtx wdw_seg7_vertex_07006FD0[] = {
 };
 
 // 0x070070D0 - 0x070071D0
-static const Vtx wdw_seg7_vertex_070070D0[] = {
+ const Vtx wdw_seg7_vertex_070070D0[] = {
     {{{  4028,   -955,  -2854}, 0, {  1438,    448}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  3584,  -1219,  -2854}, 0, {  1754,   -592}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  3584,   -827,  -2854}, 0, {  2490,    -16}, {0x00, 0x00, 0x81, 0xff}}},
@@ -1513,7 +1513,7 @@ static const Vtx wdw_seg7_vertex_070070D0[] = {
 };
 
 // 0x070071D0 - 0x070072D0
-static const Vtx wdw_seg7_vertex_070071D0[] = {
+ const Vtx wdw_seg7_vertex_070071D0[] = {
     {{{ -3308,  -1496,  -3308}, 0, {  7516,    872}, {0x25, 0x55, 0x55, 0xff}}},
     {{{ -2815,  -1496,  -3523}, 0, {  8002,   1910}, {0x25, 0x55, 0x55, 0xff}}},
     {{{ -2815,  -1219,  -3800}, 0, {  6972,   2318}, {0x25, 0x55, 0x55, 0xff}}},
@@ -1533,7 +1533,7 @@ static const Vtx wdw_seg7_vertex_070071D0[] = {
 };
 
 // 0x070072D0 - 0x070073C0
-static const Vtx wdw_seg7_vertex_070072D0[] = {
+ const Vtx wdw_seg7_vertex_070072D0[] = {
     {{{ -2815,   -827,  -2854}, 0, {  2578,    928}, {0xbf, 0xa7, 0xc3, 0xff}}},
     {{{ -2834,   -827,  -2834}, 0, {  2578,    872}, {0xbf, 0xa7, 0xc3, 0xff}}},
     {{{ -3030,   -550,  -3030}, 0, {  3670,    872}, {0xbf, 0xa7, 0xc3, 0xff}}},
@@ -1552,7 +1552,7 @@ static const Vtx wdw_seg7_vertex_070072D0[] = {
 };
 
 // 0x070073C0 - 0x070074C0
-static const Vtx wdw_seg7_vertex_070073C0[] = {
+ const Vtx wdw_seg7_vertex_070073C0[] = {
     {{{ -3308,  -1496,  -3308}, 0, {  7516,    872}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -3523,  -1496,  -2815}, 0, {  8002,   -170}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -3030,  -1496,  -3030}, 0, {  8530,    872}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1572,7 +1572,7 @@ static const Vtx wdw_seg7_vertex_070073C0[] = {
 };
 
 // 0x070074C0 - 0x070075B0
-static const Vtx wdw_seg7_vertex_070074C0[] = {
+ const Vtx wdw_seg7_vertex_070074C0[] = {
     {{{ -2815,  -1219,  -3800}, 0, {  6972,   2318}, {0x32, 0x00, 0x74, 0xff}}},
     {{{ -2815,   -827,  -3800}, 0, {  5228,   2318}, {0x32, 0x00, 0x74, 0xff}}},
     {{{ -3503,   -827,  -3503}, 0, {  5634,    872}, {0x32, 0x00, 0x74, 0xff}}},
@@ -1591,7 +1591,7 @@ static const Vtx wdw_seg7_vertex_070074C0[] = {
 };
 
 // 0x070075B0 - 0x070076B0
-static const Vtx wdw_seg7_vertex_070075B0[] = {
+ const Vtx wdw_seg7_vertex_070075B0[] = {
     {{{ -3523,   -550,  -2815}, 0, {  4198,   -170}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -3308,   -550,  -3308}, 0, {  4684,    872}, {0x00, 0x81, 0x00, 0xff}}},
     {{{ -3030,   -550,  -3030}, 0, {  3670,    872}, {0x00, 0x81, 0x00, 0xff}}},
@@ -1611,7 +1611,7 @@ static const Vtx wdw_seg7_vertex_070075B0[] = {
 };
 
 // 0x070076B0 - 0x070077B0
-static const Vtx wdw_seg7_vertex_070076B0[] = {
+ const Vtx wdw_seg7_vertex_070076B0[] = {
     {{{  3584,      0,  -3839}, 0, {   990,  -1034}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  3482,      0,  -3839}, 0, {   990,  -1238}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  3482,      0,  -2713}, 0, { -1236,  -1238}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1631,7 +1631,7 @@ static const Vtx wdw_seg7_vertex_070076B0[] = {
 };
 
 // 0x070077B0 - 0x07007840
-static const Vtx wdw_seg7_vertex_070077B0[] = {
+ const Vtx wdw_seg7_vertex_070077B0[] = {
     {{{  4608,      0,  -3839}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  4569,      0,  -3131}, 0, {  -422,    912}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  4608,      0,  -2815}, 0, { -1032,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1644,7 +1644,7 @@ static const Vtx wdw_seg7_vertex_070077B0[] = {
 };
 
 // 0x07007840 - 0x07007930
-static const Vtx wdw_seg7_vertex_07007840[] = {
+ const Vtx wdw_seg7_vertex_07007840[] = {
     {{{  1280,   2304,  -3071}, 0, { -9228,  16318}, {0xd4, 0x9e, 0xbe, 0xff}}},
     {{{  1834,   1997,  -2983}, 0, { -4806,  15618}, {0xd4, 0x9e, 0xbe, 0xff}}},
     {{{  1755,   1869,  -2740}, 0, { -5438,  13674}, {0xd4, 0x9e, 0xbe, 0xff}}},
@@ -1663,7 +1663,7 @@ static const Vtx wdw_seg7_vertex_07007840[] = {
 };
 
 // 0x07007930 - 0x07007A20
-static const Vtx wdw_seg7_vertex_07007930[] = {
+ const Vtx wdw_seg7_vertex_07007930[] = {
     {{{  1755,   1869,  -2740}, 0, { -5438,  13674}, {0xba, 0x9b, 0x1e, 0xff}}},
     {{{  1676,   1997,  -2496}, 0, { -6070,  11730}, {0xba, 0x9b, 0x1e, 0xff}}},
     {{{  1280,   2176,  -2815}, 0, { -9228,  14274}, {0xba, 0x9b, 0x1e, 0xff}}},
@@ -1682,7 +1682,7 @@ static const Vtx wdw_seg7_vertex_07007930[] = {
 };
 
 // 0x07007A20 - 0x07007B10
-static const Vtx wdw_seg7_vertex_07007A20[] = {
+ const Vtx wdw_seg7_vertex_07007A20[] = {
     {{{  2741,    947,  -1754}, 0, {  2434,   5800}, {0xbf, 0x9b, 0xd9, 0xff}}},
     {{{  2497,   1075,  -1675}, 0, {   490,   5168}, {0xbf, 0x9b, 0xd9, 0xff}}},
     {{{  2523,   1254,  -2182}, 0, {   692,   9218}, {0xbf, 0x9b, 0xd9, 0xff}}},
@@ -1701,7 +1701,7 @@ static const Vtx wdw_seg7_vertex_07007A20[] = {
 };
 
 // 0x07007B10 - 0x07007C00
-static const Vtx wdw_seg7_vertex_07007B10[] = {
+ const Vtx wdw_seg7_vertex_07007B10[] = {
     {{{  2523,   1254,  -2182}, 0, {   692,   9218}, {0xb6, 0x9b, 0xf0, 0xff}}},
     {{{  2316,   1382,  -2031}, 0, {  -960,   8018}, {0xb6, 0x9b, 0xf0, 0xff}}},
     {{{  2183,   1562,  -2522}, 0, { -2020,  11932}, {0xb6, 0x9b, 0xf0, 0xff}}},
@@ -1720,7 +1720,7 @@ static const Vtx wdw_seg7_vertex_07007B10[] = {
 };
 
 // 0x07007C00 - 0x07007CF0
-static const Vtx wdw_seg7_vertex_07007C00[] = {
+ const Vtx wdw_seg7_vertex_07007C00[] = {
     {{{  -210,   3328,     64}, 0, {  -286,   -288}, {0x00, 0xa2, 0xac, 0xff}}},
     {{{  -402,   3840,   -511}, 0, {  2012,    478}, {0x00, 0xa2, 0xac, 0xff}}},
     {{{   -18,   3840,   -511}, 0, {  2012,  -1054}, {0x00, 0xa2, 0xac, 0xff}}},
@@ -1739,7 +1739,7 @@ static const Vtx wdw_seg7_vertex_07007C00[] = {
 };
 
 // 0x07007CF0 - 0x07007DF0
-static const Vtx wdw_seg7_vertex_07007CF0[] = {
+ const Vtx wdw_seg7_vertex_07007CF0[] = {
     {{{  -210,   3328,     64}, 0, {  -286,   -288}, {0x3d, 0xa4, 0xc3, 0xff}}},
     {{{   -18,   3840,   -511}, 0, {  2012,  -1054}, {0x3d, 0xa4, 0xc3, 0xff}}},
     {{{   365,   3840,   -127}, 0, {   480,  -2588}, {0x3d, 0xa4, 0xc3, 0xff}}},
@@ -1759,14 +1759,14 @@ static const Vtx wdw_seg7_vertex_07007CF0[] = {
 };
 
 // 0x07007DF0 - 0x07007E20
-static const Vtx wdw_seg7_vertex_07007DF0[] = {
+ const Vtx wdw_seg7_vertex_07007DF0[] = {
     {{{  -402,   3840,   -511}, 0, {  2012,    478}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   365,   3840,   -127}, 0, {   480,  -2588}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   -18,   3840,   -511}, 0, {  2012,  -1054}, {0x00, 0x7f, 0x00, 0xff}}},
 };
 
 // 0x07007E20 - 0x07007F00
-static const Vtx wdw_seg7_vertex_07007E20[] = {
+ const Vtx wdw_seg7_vertex_07007E20[] = {
     {{{  2032,   1690,  -2315}, 0, { -4242,  -6256}, {0x31, 0x6f, 0x24, 0xff}}},
     {{{  2730,   1382,  -2332}, 0, {  1324,  -6398}, {0x31, 0x6f, 0x24, 0xff}}},
     {{{  2333,   1690,  -2729}, 0, { -1840,  -9564}, {0x31, 0x6f, 0x24, 0xff}}},
@@ -1784,7 +1784,7 @@ static const Vtx wdw_seg7_vertex_07007E20[] = {
 };
 
 // 0x07007F00 - 0x07007FF0
-static const Vtx wdw_seg7_vertex_07007F00[] = {
+ const Vtx wdw_seg7_vertex_07007F00[] = {
     {{{  1676,   1997,  -2496}, 0, { -7092,  -7708}, {0x3a, 0x6f, 0x13, 0xff}}},
     {{{  2333,   1690,  -2729}, 0, { -1840,  -9564}, {0x3a, 0x6f, 0x13, 0xff}}},
     {{{  1834,   1997,  -2983}, 0, { -5828, -11596}, {0x3a, 0x6f, 0x13, 0xff}}},
@@ -1803,7 +1803,7 @@ static const Vtx wdw_seg7_vertex_07007F00[] = {
 };
 
 // 0x07007FF0 - 0x070080F0
-static const Vtx wdw_seg7_vertex_07007FF0[] = {
+ const Vtx wdw_seg7_vertex_07007FF0[] = {
     {{{  2316,   1382,  -2031}, 0, { -1982,  -3996}, {0x24, 0x6f, 0x31, 0xff}}},
     {{{  2984,   1075,  -1833}, 0, {  3356,  -2410}, {0x24, 0x6f, 0x31, 0xff}}},
     {{{  2730,   1382,  -2332}, 0, {  1324,  -6398}, {0x24, 0x6f, 0x31, 0xff}}},
@@ -1823,14 +1823,14 @@ static const Vtx wdw_seg7_vertex_07007FF0[] = {
 };
 
 // 0x070080F0 - 0x07008120
-static const Vtx wdw_seg7_vertex_070080F0[] = {
+ const Vtx wdw_seg7_vertex_070080F0[] = {
     {{{  -383,    384,   1280}, 0, { -2586,  -2332}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -511,    384,   2304}, 0, { -4630,  -2588}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  1280,    384,   1024}, 0, { -2074,    990}, {0x00, 0x7f, 0x00, 0xff}}},
 };
 
 // 0x07008120 - 0x07008160
-static const Vtx wdw_seg7_vertex_07008120[] = {
+ const Vtx wdw_seg7_vertex_07008120[] = {
     {{{ -2047,    384,   1280}, 0, {   480,  -2588}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2354,    384,    666}, 0, {  1042,  -3200}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2354,    384,   1280}, 0, {   480,  -3200}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -1838,7 +1838,7 @@ static const Vtx wdw_seg7_vertex_07008120[] = {
 };
 
 // 0x07008160 - 0x07008598
-static const Gfx wdw_seg7_dl_07008160[] = {
+ const Gfx wdw_seg7_dl_07008160[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1925,7 +1925,7 @@ static const Gfx wdw_seg7_dl_07008160[] = {
 };
 
 // 0x07008598 - 0x070087B8
-static const Gfx wdw_seg7_dl_07008598[] = {
+ const Gfx wdw_seg7_dl_07008598[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1972,7 +1972,7 @@ static const Gfx wdw_seg7_dl_07008598[] = {
 };
 
 // 0x070087B8 - 0x07008910
-static const Gfx wdw_seg7_dl_070087B8[] = {
+ const Gfx wdw_seg7_dl_070087B8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09009000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2005,7 +2005,7 @@ static const Gfx wdw_seg7_dl_070087B8[] = {
 };
 
 // 0x07008910 - 0x07008B00
-static const Gfx wdw_seg7_dl_07008910[] = {
+ const Gfx wdw_seg7_dl_07008910[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2049,7 +2049,7 @@ static const Gfx wdw_seg7_dl_07008910[] = {
 };
 
 // 0x07008B00 - 0x07008C00
-static const Gfx wdw_seg7_dl_07008B00[] = {
+ const Gfx wdw_seg7_dl_07008B00[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09004000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2074,7 +2074,7 @@ static const Gfx wdw_seg7_dl_07008B00[] = {
 };
 
 // 0x07008C00 - 0x07008CA0
-static const Gfx wdw_seg7_dl_07008C00[] = {
+ const Gfx wdw_seg7_dl_07008C00[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09006800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2092,7 +2092,7 @@ static const Gfx wdw_seg7_dl_07008C00[] = {
 };
 
 // 0x07008CA0 - 0x07008E08
-static const Gfx wdw_seg7_dl_07008CA0[] = {
+ const Gfx wdw_seg7_dl_07008CA0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wdw_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2124,7 +2124,7 @@ static const Gfx wdw_seg7_dl_07008CA0[] = {
 };
 
 // 0x07008E08 - 0x07009268
-static const Gfx wdw_seg7_dl_07008E08[] = {
+ const Gfx wdw_seg7_dl_07008E08[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09007000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2213,7 +2213,7 @@ static const Gfx wdw_seg7_dl_07008E08[] = {
 };
 
 // 0x07009268 - 0x07009358
-static const Gfx wdw_seg7_dl_07009268[] = {
+ const Gfx wdw_seg7_dl_07009268[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09007800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2238,7 +2238,7 @@ static const Gfx wdw_seg7_dl_07009268[] = {
 };
 
 // 0x07009358 - 0x07009850
-static const Gfx wdw_seg7_dl_07009358[] = {
+ const Gfx wdw_seg7_dl_07009358[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09008000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2339,7 +2339,7 @@ static const Gfx wdw_seg7_dl_07009358[] = {
 };
 
 // 0x07009850 - 0x070099B0
-static const Gfx wdw_seg7_dl_07009850[] = {
+ const Gfx wdw_seg7_dl_07009850[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09009800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -2374,7 +2374,7 @@ static const Gfx wdw_seg7_dl_07009850[] = {
 };
 
 // 0x070099B0 - 0x07009AB0
-static const Gfx wdw_seg7_dl_070099B0[] = {
+ const Gfx wdw_seg7_dl_070099B0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -15,7 +15,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bowser_2/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bowser_2_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BOWSER_2_TILTING_ARENA, /*pos*/     0,    0,     0, /*angle*/ 0, 90, 0, /*bhvParam*/ 0, /*bhv*/ bhvTiltingBowserLavaPlatform),
     OBJECT(/*model*/ MODEL_BOWSER_BOMB,            /*pos*/     4, 1329,  3598, /*angle*/ 0, 90, 0, /*bhvParam*/ 0, /*bhv*/ bhvBowserBomb),
     OBJECT(/*model*/ MODEL_BOWSER_BOMB,            /*pos*/  3584, 1329,     0, /*angle*/ 0, 90, 0, /*bhvParam*/ 0, /*bhv*/ bhvBowserBomb),
@@ -42,7 +42,7 @@ const LevelScript level_bowser_2_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0A,      /*destLevel*/ LEVEL_BOWSER_2, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE,   /*destArea*/ 3, /*destNode*/ WARP_NODE_36, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_BITFS,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
+        JUMP_LINK(bowser_2_script_func_local_1),
         TERRAIN(/*terrainData*/ bowser_2_seg7_collision_lava),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0002, /*seq*/ SEQ_LEVEL_BOSS_KOOPA),
         TERRAIN_TYPE(/*terrainType*/ TERRAIN_STONE),

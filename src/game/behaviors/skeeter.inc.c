@@ -24,7 +24,7 @@ struct Struct80331C38 D_80331C38[] = {
     { 0x00B4, 0x0082 },
 };
 
-static void skeeter_spawn_waves(void) {
+ void skeeter_spawn_waves(void) {
     s32 i;
 
     for (i = 0; i < 4; i++) {
@@ -33,7 +33,7 @@ static void skeeter_spawn_waves(void) {
     }
 }
 
-static void skeeter_act_idle(void) {
+ void skeeter_act_idle(void) {
     if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
         cur_obj_init_animation_with_sound(3);
         o->oForwardVel = 0.0f;
@@ -62,7 +62,7 @@ static void skeeter_act_idle(void) {
     }
 }
 
-static void skeeter_act_lunge(void) {
+ void skeeter_act_lunge(void) {
     if (!(o->oMoveFlags & OBJ_MOVE_AT_WATER_SURFACE)) {
         o->oAction = SKEETER_ACT_IDLE;
     } else {
@@ -91,7 +91,7 @@ static void skeeter_act_lunge(void) {
     }
 }
 
-static void skeeter_act_walk(void) {
+ void skeeter_act_walk(void) {
     f32 sp24;
 
     if (!(o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND)) {

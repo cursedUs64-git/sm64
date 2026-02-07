@@ -14,8 +14,8 @@ struct UnkBufThing {
 }; /* sizeof = 0x44 */
 
 // data
-static s32 sNumRoutinesInStack = 0; // @ 801A8280
-static s32 sTimerGadgetColours[7] = {
+ s32 sNumRoutinesInStack = 0; // @ 801A8280
+ s32 sTimerGadgetColours[7] = {
     COLOUR_RED,
     COLOUR_WHITE,
     COLOUR_GREEN,
@@ -24,17 +24,17 @@ static s32 sTimerGadgetColours[7] = {
     COLOUR_YELLOW,
     COLOUR_PINK
 };
-static s32 sNumActiveMemTrackers = 0;   // @ 801A82A0
-static u32 sPrimarySeed = 0x12345678;   // @ 801A82A4
-static u32 sSecondarySeed = 0x58374895; // @ 801A82A8
+ s32 sNumActiveMemTrackers = 0;   // @ 801A82A0
+ u32 sPrimarySeed = 0x12345678;   // @ 801A82A4
+ u32 sSecondarySeed = 0x58374895; // @ 801A82A8
 
 // bss
 u8 *gGdStreamBuffer;                                        // @ 801BA190
-static const char *sRoutineNames[64];                       // @ 801BA198
-static s32 sTimingActive;                                   // @ 801BA298
-static struct GdTimer sTimers[GD_NUM_TIMERS];               // @ 801BA2A0
-static struct MemTracker sMemTrackers[GD_NUM_MEM_TRACKERS]; // @ 801BA720
-static struct MemTracker *sActiveMemTrackers[16];           // @ 801BA920
+ const char *sRoutineNames[64];                       // @ 801BA198
+ s32 sTimingActive;                                   // @ 801BA298
+ struct GdTimer sTimers[GD_NUM_TIMERS];               // @ 801BA2A0
+ struct MemTracker sMemTrackers[GD_NUM_MEM_TRACKERS]; // @ 801BA720
+ struct MemTracker *sActiveMemTrackers[16];           // @ 801BA920
 
 /*
  * Memtrackers
@@ -232,7 +232,7 @@ void remove_all_timers(void) {
 /**
  * Creates a new timer with the specified name
  */
-static struct GdTimer *new_timer(const char *name) {
+ struct GdTimer *new_timer(const char *name) {
     s32 i;
     struct GdTimer *timer = NULL;
 
@@ -268,7 +268,7 @@ struct GdTimer *get_timer(const char *timerName) {
  * Returns the timer with the specified name, or aborts the program if it does
  * not exist.
  */
-static struct GdTimer *get_timer_checked(const char *timerName) {
+ struct GdTimer *get_timer_checked(const char *timerName) {
     struct GdTimer *timer;
 
     timer = get_timer(timerName);
@@ -627,7 +627,7 @@ f64 gd_lazy_atof(const char *str, UNUSED u32 *unk) {
     return gd_atoi(str);
 }
 
-static char sHexNumerals[] = {"0123456789ABCDEF"};
+ char sHexNumerals[] = {"0123456789ABCDEF"};
 
 /* 23C018 -> 23C078; orig name: func_8018D848 */
 char *format_number_hex(char *str, s32 val) {
@@ -642,7 +642,7 @@ char *format_number_hex(char *str, s32 val) {
     return str;
 }
 
-static s32 sPadNumPrint = 0; // @ 801A82C0
+ s32 sPadNumPrint = 0; // @ 801A82C0
 
 /* 23C078 -> 23C174; orig name: func_8018D8A8 */
 /* padnum = a decimal number with the max desired output width */
@@ -688,7 +688,7 @@ char *format_number_decimal(char *str, s32 val, s32 padnum) {
 }
 
 /* 23C174 -> 23C1C8; orig name: func_8018D9A4 */
-static s32 int_sci_notation(s32 base, s32 significand) {
+ s32 int_sci_notation(s32 base, s32 significand) {
     s32 i;
 
     for (i = 1; i < significand; i++) {

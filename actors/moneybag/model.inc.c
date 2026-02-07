@@ -1,29 +1,29 @@
 // Moneybag
 
 // 0x060039B0
-ALIGNED8 static const Texture moneybag_seg6_texture_060039B0[] = {
+ALIGNED8  const Texture moneybag_seg6_texture_060039B0[] = {
 #include "actors/moneybag/moneybag_mouth.rgba16.inc.c"
 };
 
 // 0x060049B0
-ALIGNED8 static const Texture moneybag_seg6_texture_060049B0[] = {
+ALIGNED8  const Texture moneybag_seg6_texture_060049B0[] = {
 #include "actors/moneybag/moneybag_eyes.rgba16.inc.c"
 };
 
 // 0x060051B0
-static const Lights1 moneybag_seg6_lights_060051B0 = gdSPDefLights1(
+ const Lights1 moneybag_seg6_lights_060051B0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x060051C8
-static const Lights1 moneybag_seg6_lights_060051C8 = gdSPDefLights1(
+ const Lights1 moneybag_seg6_lights_060051C8 = gdSPDefLights1(
     0x00, 0x3f, 0x23,
     0x00, 0x7f, 0x47, 0x28, 0x28, 0x28
 );
 
 // 0x060051E0
-static const Vtx moneybag_seg6_vertex_060051E0[] = {
+ const Vtx moneybag_seg6_vertex_060051E0[] = {
     {{{   226,      1,    300}, 0, {  1988,      0}, {0xcd, 0xf8, 0x73, 0xff}}},
     {{{     0,      0,    200}, 0, {  2656,    358}, {0xac, 0xfb, 0x5e, 0xff}}},
     {{{   278,   -190,    140}, 0, {   988,    390}, {0xd2, 0x96, 0x33, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx moneybag_seg6_vertex_060051E0[] = {
 };
 
 // 0x06005280
-static const Vtx moneybag_seg6_vertex_06005280[] = {
+ const Vtx moneybag_seg6_vertex_06005280[] = {
     {{{     0,      0,    200}, 0, {     0,      0}, {0xac, 0xfb, 0x5e, 0xff}}},
     {{{   -88,    -68,      0}, 0, {     0,      0}, {0x9f, 0xaf, 0x00, 0xff}}},
     {{{   278,   -190,    140}, 0, {     0,      0}, {0xd2, 0x96, 0x33, 0xff}}},
@@ -92,13 +92,13 @@ const Gfx moneybag_seg6_dl_060053B8[] = {
 };
 
 // 0x06005428
-static const Lights1 moneybag_seg6_lights_06005428 = gdSPDefLights1(
+ const Lights1 moneybag_seg6_lights_06005428 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06005440
-static const Vtx moneybag_seg6_vertex_06005440[] = {
+ const Vtx moneybag_seg6_vertex_06005440[] = {
     {{{   418,     89,   -157}, 0, {   388,      0}, {0x46, 0x62, 0xdb, 0xff}}},
     {{{   261,    194,    175}, 0, {  1604,    408}, {0x46, 0x62, 0x25, 0xff}}},
     {{{   418,     89,    157}, 0, {  1540,      0}, {0x43, 0x5b, 0x39, 0xff}}},
@@ -116,7 +116,7 @@ static const Vtx moneybag_seg6_vertex_06005440[] = {
 };
 
 // 0x06005520
-static const Vtx moneybag_seg6_vertex_06005520[] = {
+ const Vtx moneybag_seg6_vertex_06005520[] = {
     {{{   278,   -190,   -139}, 0, {  1512,    416}, {0x46, 0x9d, 0xdd, 0xff}}},
     {{{   418,    -85,   -156}, 0, {  1588,      0}, {0x4c, 0x9b, 0x00, 0xff}}},
     {{{   418,    -85,    158}, 0, {   248,      0}, {0x4c, 0x9b, 0x00, 0xff}}},
@@ -170,7 +170,7 @@ const Gfx moneybag_seg6_dl_06005688[] = {
 };
 
 // 0x060056A8
-static const Vtx moneybag_seg6_vertex_060056A8[] = {
+ const Vtx moneybag_seg6_vertex_060056A8[] = {
     {{{   356,    121,   -159}, 0, {   960,      4}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   356,   -128,    150}, 0, {    28,    918}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   356,   -128,   -149}, 0, {   930,    918}, {0xff, 0xff, 0xff, 0xff}}},
@@ -209,31 +209,31 @@ const Gfx moneybag_seg6_dl_06005750[] = {
 };
 
 // Unreferenced light group
-UNUSED static const Lights1 moneybag_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 moneybag_lights_unused1 = gdSPDefLights1(
     0x0c, 0x20, 0x06,
     0x30, 0x83, 0x1a, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 moneybag_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 moneybag_lights_unused2 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x060057F0
-static const Lights1 moneybag_seg6_lights_060057F0 = gdSPDefLights1(
+ const Lights1 moneybag_seg6_lights_060057F0 = gdSPDefLights1(
     0x3f, 0x3f, 0x00,
     0xff, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 moneybag_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 moneybag_lights_unused3 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06005820
-static const Vtx moneybag_seg6_vertex_06005820[] = {
+ const Vtx moneybag_seg6_vertex_06005820[] = {
     {{{     0,      0,      0}, 0, {     0,      0}, {0x83, 0x11, 0x00, 0x00}}},
     {{{   180,     90,      0}, 0, {     0,      0}, {0xc8, 0x71, 0x00, 0x00}}},
     {{{   180,     40,    -80}, 0, {     0,      0}, {0xc8, 0x2a, 0x97, 0x00}}},
@@ -248,7 +248,7 @@ static const Vtx moneybag_seg6_vertex_06005820[] = {
 };
 
 // 0x060058D0
-static const Vtx moneybag_seg6_vertex_060058D0[] = {
+ const Vtx moneybag_seg6_vertex_060058D0[] = {
     {{{   180,     40,     80}, 0, {     0,      0}, {0xc8, 0x2a, 0x69, 0x00}}},
     {{{   180,     90,      0}, 0, {     0,      0}, {0xc8, 0x71, 0x00, 0x00}}},
     {{{     0,      0,      0}, 0, {     0,      0}, {0x83, 0x11, 0x00, 0x00}}},

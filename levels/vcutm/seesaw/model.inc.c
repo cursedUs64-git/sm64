@@ -1,17 +1,17 @@
 // 0x07009458 - 0x07009470
-static const Lights1 vcutm_seg7_lights_07009458 = gdSPDefLights1(
+ const Lights1 vcutm_seg7_lights_07009458 = gdSPDefLights1(
     0x22, 0x22, 0x22,
     0x88, 0x88, 0x88, 0x28, 0x28, 0x28
 );
 
 // 0x07009470 - 0x07009488
-static const Lights1 vcutm_seg7_lights_07009470 = gdSPDefLights1(
+ const Lights1 vcutm_seg7_lights_07009470 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07009488 - 0x07009578
-static const Vtx vcutm_seg7_vertex_07009488[] = {
+ const Vtx vcutm_seg7_vertex_07009488[] = {
     {{{   307,      0,    768}, 0, {     0,   1960}, {0x00, 0xc8, 0x71, 0xff}}},
     {{{  -306,    102,    819}, 0, {     0,    152}, {0x00, 0xc8, 0x71, 0xff}}},
     {{{  -306,      0,    768}, 0, {     0,    100}, {0x00, 0xc8, 0x71, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx vcutm_seg7_vertex_07009488[] = {
 };
 
 // 0x07009578 - 0x070095E8
-static const Vtx vcutm_seg7_vertex_07009578[] = {
+ const Vtx vcutm_seg7_vertex_07009578[] = {
     {{{  -306,      0,   -767}, 0, {   958,    100}, {0x00, 0xc8, 0x8f, 0xff}}},
     {{{   307,    102,   -818}, 0, {   990,   2012}, {0x00, 0xc8, 0x8f, 0xff}}},
     {{{   307,      0,   -767}, 0, {   958,   1960}, {0x00, 0xc8, 0x8f, 0xff}}},
@@ -41,7 +41,7 @@ static const Vtx vcutm_seg7_vertex_07009578[] = {
 };
 
 // 0x070095E8 - 0x07009628
-static const Vtx vcutm_seg7_vertex_070095E8[] = {
+ const Vtx vcutm_seg7_vertex_070095E8[] = {
     {{{   307,    102,   -818}, 0, {   990,   2012}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -306,    102,   -818}, 0, {   990,    152}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -306,    102,    819}, 0, {     0,    152}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx vcutm_seg7_vertex_070095E8[] = {
 };
 
 // 0x07009628 - 0x070096E0
-static const Gfx vcutm_seg7_dl_07009628[] = {
+ const Gfx vcutm_seg7_dl_07009628[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, vcutm_seg7_texture_07001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

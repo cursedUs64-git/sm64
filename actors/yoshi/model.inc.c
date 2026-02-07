@@ -1,40 +1,40 @@
 // Yoshi
 
 // 0x0501C458
-static const Lights1 yoshi_seg5_lights_0501C458 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501C458 = gdSPDefLights1(
     0x00, 0x7c, 0x00,
     0x00, 0xf9, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0501C470
-static const Lights1 yoshi_seg5_lights_0501C470 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501C470 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0501C488
-static const Lights1 yoshi_seg5_lights_0501C488 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501C488 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0501C4A0
-ALIGNED8 static const Texture yoshi_seg5_texture_0501C4A0[] = {
+ALIGNED8  const Texture yoshi_seg5_texture_0501C4A0[] = {
 #include "actors/yoshi/yoshi_eye.rgba16.inc.c"
 };
 
 // 0x0501C6A0
-ALIGNED8 static const Texture yoshi_seg5_texture_0501C6A0[] = {
+ALIGNED8  const Texture yoshi_seg5_texture_0501C6A0[] = {
 #include "actors/yoshi/yoshi_eye_blink.rgba16.inc.c"
 };
 
 // 0x0501C8A0
-ALIGNED8 static const Texture yoshi_seg5_texture_0501C8A0[] = {
+ALIGNED8  const Texture yoshi_seg5_texture_0501C8A0[] = {
 #include "actors/yoshi/yoshi_nostril.rgba16.inc.c"
 };
 
 // 0x0501CAA0
-static const Vtx yoshi_seg5_vertex_0501CAA0[] = {
+ const Vtx yoshi_seg5_vertex_0501CAA0[] = {
     {{{   174,    273,   -134}, 0, {  1177,    698}, {0x29, 0x20, 0x8d, 0xff}}},
     {{{   204,    356,    -45}, 0, {  -114,    749}, {0x30, 0x70, 0xe0, 0xff}}},
     {{{   279,    299,    -29}, 0, {  -189,   -676}, {0x71, 0x27, 0xd8, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx yoshi_seg5_vertex_0501CAA0[] = {
 };
 
 // 0x0501CB00
-static const Vtx yoshi_seg5_vertex_0501CB00[] = {
+ const Vtx yoshi_seg5_vertex_0501CB00[] = {
     {{{   370,     89,     29}, 0, {   273,   -403}, {0x60, 0x52, 0x01, 0xff}}},
     {{{   332,     90,     -4}, 0, {   -10,   -163}, {0x32, 0x74, 0x02, 0xff}}},
     {{{   260,    123,     -7}, 0, {     0,    287}, {0x69, 0x45, 0x02, 0xff}}},
@@ -59,7 +59,7 @@ static const Vtx yoshi_seg5_vertex_0501CB00[] = {
 };
 
 // 0x0501CBB0
-static const Vtx yoshi_seg5_vertex_0501CBB0[] = {
+ const Vtx yoshi_seg5_vertex_0501CBB0[] = {
     {{{   233,    -73,      0}, 0, {     0,      0}, {0x44, 0x96, 0x00, 0xff}}},
     {{{   136,   -196,      0}, 0, {     0,      0}, {0xe9, 0x84, 0x00, 0xff}}},
     {{{   121,   -105,    -49}, 0, {     0,      0}, {0xf6, 0xac, 0xa3, 0xff}}},
@@ -68,7 +68,7 @@ static const Vtx yoshi_seg5_vertex_0501CBB0[] = {
 };
 
 // 0x0501CC00
-static const Vtx yoshi_seg5_vertex_0501CC00[] = {
+ const Vtx yoshi_seg5_vertex_0501CC00[] = {
     {{{   171,    -23,    108}, 0, {     0,      0}, {0x1b, 0xb6, 0x62, 0xff}}},
     {{{   155,     50,    149}, 0, {     0,      0}, {0x3a, 0x14, 0x6f, 0xff}}},
     {{{    87,     54,    163}, 0, {     0,      0}, {0xcf, 0x0a, 0x74, 0xff}}},
@@ -87,7 +87,7 @@ static const Vtx yoshi_seg5_vertex_0501CC00[] = {
 };
 
 // 0x0501CCF0
-static const Vtx yoshi_seg5_vertex_0501CCF0[] = {
+ const Vtx yoshi_seg5_vertex_0501CCF0[] = {
     {{{   339,    -10,    -24}, 0, {     0,      0}, {0x4f, 0xa2, 0xe1, 0xff}}},
     {{{   339,    -10,     24}, 0, {     0,      0}, {0x4f, 0xa2, 0x1f, 0xff}}},
     {{{   233,    -73,      0}, 0, {     0,      0}, {0x44, 0x96, 0x00, 0xff}}},
@@ -106,7 +106,7 @@ static const Vtx yoshi_seg5_vertex_0501CCF0[] = {
 };
 
 // 0x0501CDE0
-static const Vtx yoshi_seg5_vertex_0501CDE0[] = {
+ const Vtx yoshi_seg5_vertex_0501CDE0[] = {
     {{{   209,     86,    -92}, 0, {     0,      0}, {0x11, 0x25, 0x88, 0xff}}},
     {{{   263,     47,   -107}, 0, {     0,      0}, {0xf5, 0xdf, 0x86, 0xff}}},
     {{{   264,     10,    -80}, 0, {     0,      0}, {0x24, 0xbc, 0x9c, 0xff}}},
@@ -126,7 +126,7 @@ static const Vtx yoshi_seg5_vertex_0501CDE0[] = {
 };
 
 // 0x0501CEE0
-static const Vtx yoshi_seg5_vertex_0501CEE0[] = {
+ const Vtx yoshi_seg5_vertex_0501CEE0[] = {
     {{{   372,     28,     45}, 0, {     0,      0}, {0x6a, 0xcf, 0x30, 0xff}}},
     {{{   339,    -10,     24}, 0, {     0,      0}, {0x4f, 0xa2, 0x1f, 0xff}}},
     {{{   361,     29,      0}, 0, {     0,      0}, {0x79, 0xdc, 0x00, 0xff}}},
@@ -146,7 +146,7 @@ static const Vtx yoshi_seg5_vertex_0501CEE0[] = {
 };
 
 // 0x0501CFE0
-static const Vtx yoshi_seg5_vertex_0501CFE0[] = {
+ const Vtx yoshi_seg5_vertex_0501CFE0[] = {
     {{{    82,    366,    -65}, 0, {     0,      0}, {0xde, 0x6b, 0xc5, 0xff}}},
     {{{    82,    366,     65}, 0, {     0,      0}, {0xda, 0x70, 0x2c, 0xff}}},
     {{{   204,    356,    -45}, 0, {     0,      0}, {0x30, 0x70, 0xe0, 0xff}}},
@@ -166,7 +166,7 @@ static const Vtx yoshi_seg5_vertex_0501CFE0[] = {
 };
 
 // 0x0501D0E0
-static const Vtx yoshi_seg5_vertex_0501D0E0[] = {
+ const Vtx yoshi_seg5_vertex_0501D0E0[] = {
     {{{   277,    191,     36}, 0, {     0,      0}, {0x6f, 0xe8, 0x38, 0xff}}},
     {{{   199,    115,     54}, 0, {     0,      0}, {0x46, 0x2e, 0x5e, 0xff}}},
     {{{   260,    123,     -7}, 0, {     0,      0}, {0x69, 0x45, 0x02, 0xff}}},
@@ -184,7 +184,7 @@ static const Vtx yoshi_seg5_vertex_0501D0E0[] = {
 };
 
 // 0x0501D1C0
-static const Vtx yoshi_seg5_vertex_0501D1C0[] = {
+ const Vtx yoshi_seg5_vertex_0501D1C0[] = {
     {{{    45,    205,   -125}, 0, {     0,      0}, {0xbc, 0xeb, 0x98, 0xff}}},
     {{{    55,    280,   -135}, 0, {     0,      0}, {0xca, 0x2a, 0x96, 0xff}}},
     {{{   174,    273,   -134}, 0, {     0,      0}, {0x29, 0x20, 0x8d, 0xff}}},
@@ -204,7 +204,7 @@ static const Vtx yoshi_seg5_vertex_0501D1C0[] = {
 };
 
 // 0x0501D2C0
-static const Vtx yoshi_seg5_vertex_0501D2C0[] = {
+ const Vtx yoshi_seg5_vertex_0501D2C0[] = {
     {{{    55,    280,    135}, 0, {     0,      0}, {0xc2, 0x2a, 0x66, 0xff}}},
     {{{    13,    282,     74}, 0, {     0,      0}, {0x8d, 0x2c, 0x1c, 0xff}}},
     {{{     2,    207,     74}, 0, {     0,      0}, {0x8b, 0xea, 0x29, 0xff}}},
@@ -215,7 +215,7 @@ static const Vtx yoshi_seg5_vertex_0501D2C0[] = {
 };
 
 // 0x0501D330
-static const Vtx yoshi_seg5_vertex_0501D330[] = {
+ const Vtx yoshi_seg5_vertex_0501D330[] = {
     {{{   349,     69,    -92}, 0, {     0,      0}, {0x35, 0x14, 0x8f, 0xff}}},
     {{{   209,     86,    -92}, 0, {     0,      0}, {0x11, 0x25, 0x88, 0xff}}},
     {{{   199,    115,    -77}, 0, {     0,      0}, {0x41, 0x29, 0x9c, 0xff}}},
@@ -233,7 +233,7 @@ static const Vtx yoshi_seg5_vertex_0501D330[] = {
 };
 
 // 0x0501D410
-static const Vtx yoshi_seg5_vertex_0501D410[] = {
+ const Vtx yoshi_seg5_vertex_0501D410[] = {
     {{{   209,     86,     84}, 0, {     0,      0}, {0x13, 0x3a, 0x6f, 0xff}}},
     {{{   265,     47,     97}, 0, {     0,      0}, {0x00, 0xf1, 0x7e, 0xff}}},
     {{{   349,     69,     76}, 0, {     0,      0}, {0x34, 0x23, 0x6e, 0xff}}},
@@ -386,43 +386,43 @@ const Gfx yoshi_seg5_dl_0501D998[] = {
 };
 
 // 0x0501D9C0
-static const Lights1 yoshi_seg5_lights_0501D9C0 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501D9C0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0501D9D8
-static const Lights1 yoshi_seg5_lights_0501D9D8 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501D9D8 = gdSPDefLights1(
     0x00, 0x7b, 0x00,
     0x00, 0xf7, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0501D9F0
-static const Lights1 yoshi_seg5_lights_0501D9F0 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501D9F0 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 yoshi_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 yoshi_lights_unused1 = gdSPDefLights1(
     0x59, 0x59, 0x59,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 yoshi_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 yoshi_lights_unused2 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0501DA38
-static const Lights1 yoshi_seg5_lights_0501DA38 = gdSPDefLights1(
+ const Lights1 yoshi_seg5_lights_0501DA38 = gdSPDefLights1(
     0x45, 0x00, 0x00,
     0x8b, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0501DA50
-static const Vtx yoshi_seg5_vertex_0501DA50[] = {
+ const Vtx yoshi_seg5_vertex_0501DA50[] = {
     {{{   156,    -27,    -20}, 0, {     0,      0}, {0x68, 0xd2, 0xca, 0x00}}},
     {{{   156,    -27,     20}, 0, {     0,      0}, {0x6f, 0xcf, 0x24, 0x00}}},
     {{{   128,    -49,    -24}, 0, {     0,      0}, {0x1f, 0x8b, 0xdc, 0x00}}},
@@ -441,7 +441,7 @@ static const Vtx yoshi_seg5_vertex_0501DA50[] = {
 };
 
 // 0x0501DB40
-static const Vtx yoshi_seg5_vertex_0501DB40[] = {
+ const Vtx yoshi_seg5_vertex_0501DB40[] = {
     {{{    84,      3,    -72}, 0, {     0,      0}, {0x46, 0x09, 0x98, 0xff}}},
     {{{   127,    -15,    -48}, 0, {     0,      0}, {0x46, 0xe3, 0x9b, 0x00}}},
     {{{   109,    -37,    -48}, 0, {     0,      0}, {0x21, 0xa7, 0xad, 0x00}}},
@@ -460,7 +460,7 @@ static const Vtx yoshi_seg5_vertex_0501DB40[] = {
 };
 
 // 0x0501DC30
-static const Vtx yoshi_seg5_vertex_0501DC30[] = {
+ const Vtx yoshi_seg5_vertex_0501DC30[] = {
     {{{   127,    -15,     48}, 0, {     0,      0}, {0x46, 0xe3, 0x65, 0xff}}},
     {{{   156,    -27,     20}, 0, {     0,      0}, {0x6f, 0xcf, 0x24, 0x00}}},
     {{{   152,     14,     24}, 0, {     0,      0}, {0x61, 0x2d, 0x42, 0x00}}},
@@ -478,7 +478,7 @@ static const Vtx yoshi_seg5_vertex_0501DC30[] = {
 };
 
 // 0x0501DD10
-static const Vtx yoshi_seg5_vertex_0501DD10[] = {
+ const Vtx yoshi_seg5_vertex_0501DD10[] = {
     {{{    44,     31,   -104}, 0, {     0,      0}, {0x35, 0x3d, 0x9f, 0xff}}},
     {{{    84,     73,    -25}, 0, {     0,      0}, {0x3c, 0x62, 0xcb, 0x00}}},
     {{{    84,      3,    -72}, 0, {     0,      0}, {0x46, 0x09, 0x98, 0x00}}},
@@ -498,7 +498,7 @@ static const Vtx yoshi_seg5_vertex_0501DD10[] = {
 };
 
 // 0x0501DE10
-static const Vtx yoshi_seg5_vertex_0501DE10[] = {
+ const Vtx yoshi_seg5_vertex_0501DE10[] = {
     {{{    44,     31,    104}, 0, {     0,      0}, {0x35, 0x3d, 0x61, 0xff}}},
     {{{   -13,     27,    121}, 0, {     0,      0}, {0x16, 0x4e, 0x61, 0x00}}},
     {{{   -12,      0,    135}, 0, {     0,      0}, {0x33, 0xe5, 0x70, 0x00}}},
@@ -517,7 +517,7 @@ static const Vtx yoshi_seg5_vertex_0501DE10[] = {
 };
 
 // 0x0501DF00
-static const Vtx yoshi_seg5_vertex_0501DF00[] = {
+ const Vtx yoshi_seg5_vertex_0501DF00[] = {
     {{{    84,     73,    -25}, 0, {     0,      0}, {0x3c, 0x62, 0xcb, 0xff}}},
     {{{   152,     14,    -24}, 0, {     0,      0}, {0x69, 0x32, 0xd0, 0x00}}},
     {{{    84,      3,    -72}, 0, {     0,      0}, {0x46, 0x09, 0x98, 0x00}}},
@@ -536,7 +536,7 @@ static const Vtx yoshi_seg5_vertex_0501DF00[] = {
 };
 
 // 0x0501DFF0
-static const Vtx yoshi_seg5_vertex_0501DFF0[] = {
+ const Vtx yoshi_seg5_vertex_0501DFF0[] = {
     {{{   156,    -27,     20}, 0, {     0,      0}, {0x6f, 0xcf, 0x24, 0xff}}},
     {{{   156,    -27,    -20}, 0, {     0,      0}, {0x68, 0xd2, 0xca, 0x00}}},
     {{{   152,     14,    -24}, 0, {     0,      0}, {0x69, 0x32, 0xd0, 0x00}}},
@@ -554,7 +554,7 @@ static const Vtx yoshi_seg5_vertex_0501DFF0[] = {
 };
 
 // 0x0501E0D0
-static const Vtx yoshi_seg5_vertex_0501E0D0[] = {
+ const Vtx yoshi_seg5_vertex_0501E0D0[] = {
     {{{   109,    -37,    -48}, 0, {     0,      0}, {0x21, 0xa7, 0xad, 0xff}}},
     {{{   102,    -41,    -31}, 0, {     0,      0}, {0xee, 0x84, 0xf2, 0x00}}},
     {{{    -7,    -27,    -87}, 0, {     0,      0}, {0x00, 0x86, 0xdf, 0x00}}},
@@ -572,14 +572,14 @@ static const Vtx yoshi_seg5_vertex_0501E0D0[] = {
 };
 
 // 0x0501E1B0
-static const Vtx yoshi_seg5_vertex_0501E1B0[] = {
+ const Vtx yoshi_seg5_vertex_0501E1B0[] = {
     {{{   156,    -27,     20}, 0, {     0,      0}, {0x6f, 0xcf, 0x24, 0xff}}},
     {{{   128,    -49,     24}, 0, {     0,      0}, {0x23, 0x92, 0x33, 0x00}}},
     {{{   128,    -49,    -24}, 0, {     0,      0}, {0x1f, 0x8b, 0xdc, 0x00}}},
 };
 
 // 0x0501E1E0
-static const Vtx yoshi_seg5_vertex_0501E1E0[] = {
+ const Vtx yoshi_seg5_vertex_0501E1E0[] = {
     {{{    10,      8,    -33}, 0, {     0,      0}, {0xbe, 0x0c, 0x95, 0x00}}},
     {{{    75,     11,    -43}, 0, {     0,      0}, {0x1b, 0x25, 0x8a, 0x00}}},
     {{{    73,    -16,    -34}, 0, {     0,      0}, {0x12, 0xab, 0xa4, 0x00}}},
@@ -597,7 +597,7 @@ static const Vtx yoshi_seg5_vertex_0501E1E0[] = {
 };
 
 // 0x0501E2C0
-static const Vtx yoshi_seg5_vertex_0501E2C0[] = {
+ const Vtx yoshi_seg5_vertex_0501E2C0[] = {
     {{{     8,     23,     14}, 0, {     0,      0}, {0xc8, 0x6e, 0x1b, 0xff}}},
     {{{    72,     32,     22}, 0, {     0,      0}, {0x11, 0x78, 0x23, 0x00}}},
     {{{    74,     30,    -21}, 0, {     0,      0}, {0x15, 0x75, 0xd4, 0x00}}},
@@ -617,7 +617,7 @@ static const Vtx yoshi_seg5_vertex_0501E2C0[] = {
 };
 
 // 0x0501E3C0
-static const Vtx yoshi_seg5_vertex_0501E3C0[] = {
+ const Vtx yoshi_seg5_vertex_0501E3C0[] = {
     {{{    71,     15,     46}, 0, {     0,      0}, {0x11, 0x2f, 0x74, 0xff}}},
     {{{    70,    -13,     40}, 0, {     0,      0}, {0x42, 0xcc, 0x5e, 0x00}}},
     {{{    94,    -15,     20}, 0, {     0,      0}, {0x5b, 0xbf, 0x3a, 0x00}}},
@@ -636,7 +636,7 @@ static const Vtx yoshi_seg5_vertex_0501E3C0[] = {
 };
 
 // 0x0501E4B0
-static const Vtx yoshi_seg5_vertex_0501E4B0[] = {
+ const Vtx yoshi_seg5_vertex_0501E4B0[] = {
     {{{    71,    -38,      3}, 0, {     0,      0}, {0x30, 0x8c, 0xf2, 0xff}}},
     {{{    96,    -17,    -13}, 0, {     0,      0}, {0x60, 0xba, 0xd4, 0x00}}},
     {{{    94,    -15,     20}, 0, {     0,      0}, {0x5b, 0xbf, 0x3a, 0x00}}},
@@ -648,7 +648,7 @@ static const Vtx yoshi_seg5_vertex_0501E4B0[] = {
 };
 
 // 0x0501E530
-static const Vtx yoshi_seg5_vertex_0501E530[] = {
+ const Vtx yoshi_seg5_vertex_0501E530[] = {
     {{{    87,      6,      0}, 0, {     0,      0}, {0x7e, 0x06, 0x00, 0x00}}},
     {{{    78,    -10,    -13}, 0, {     0,      0}, {0x4a, 0xa8, 0xcb, 0x00}}},
     {{{    76,     22,    -13}, 0, {     0,      0}, {0x32, 0x4d, 0xa9, 0x00}}},
@@ -662,7 +662,7 @@ static const Vtx yoshi_seg5_vertex_0501E530[] = {
 };
 
 // 0x0501E5D0
-static const Vtx yoshi_seg5_vertex_0501E5D0[] = {
+ const Vtx yoshi_seg5_vertex_0501E5D0[] = {
     {{{    -5,    -33,    -19}, 0, {     0,      0}, {0xdc, 0xa0, 0xb6, 0x00}}},
     {{{    87,    -12,    -13}, 0, {     0,      0}, {0x4b, 0xa6, 0xd1, 0x00}}},
     {{{    87,    -12,     16}, 0, {     0,      0}, {0x35, 0xbc, 0x5c, 0x00}}},
@@ -677,7 +677,7 @@ static const Vtx yoshi_seg5_vertex_0501E5D0[] = {
 };
 
 // 0x0501E680
-static const Vtx yoshi_seg5_vertex_0501E680[] = {
+ const Vtx yoshi_seg5_vertex_0501E680[] = {
     {{{    15,     -2,     25}, 0, {     0,      0}, {0xcd, 0xae, 0x51, 0x00}}},
     {{{    73,    -16,     34}, 0, {     0,      0}, {0x12, 0xab, 0x5c, 0x00}}},
     {{{    75,     11,     43}, 0, {     0,      0}, {0x1b, 0x25, 0x76, 0x00}}},
@@ -695,7 +695,7 @@ static const Vtx yoshi_seg5_vertex_0501E680[] = {
 };
 
 // 0x0501E760
-static const Vtx yoshi_seg5_vertex_0501E760[] = {
+ const Vtx yoshi_seg5_vertex_0501E760[] = {
     {{{    10,     21,     18}, 0, {     0,      0}, {0xca, 0x6b, 0x28, 0xff}}},
     {{{    74,     30,     21}, 0, {     0,      0}, {0x15, 0x75, 0x2c, 0x00}}},
     {{{    72,     32,    -22}, 0, {     0,      0}, {0x11, 0x78, 0xdd, 0x00}}},
@@ -715,7 +715,7 @@ static const Vtx yoshi_seg5_vertex_0501E760[] = {
 };
 
 // 0x0501E860
-static const Vtx yoshi_seg5_vertex_0501E860[] = {
+ const Vtx yoshi_seg5_vertex_0501E860[] = {
     {{{   104,     13,    -25}, 0, {     0,      0}, {0x60, 0x38, 0xc5, 0xff}}},
     {{{    94,    -15,    -20}, 0, {     0,      0}, {0x5b, 0xbf, 0xc6, 0x00}}},
     {{{    70,    -13,    -40}, 0, {     0,      0}, {0x42, 0xcc, 0xa2, 0x00}}},
@@ -734,7 +734,7 @@ static const Vtx yoshi_seg5_vertex_0501E860[] = {
 };
 
 // 0x0501E950
-static const Vtx yoshi_seg5_vertex_0501E950[] = {
+ const Vtx yoshi_seg5_vertex_0501E950[] = {
     {{{    94,    -15,    -20}, 0, {     0,      0}, {0x5b, 0xbf, 0xc6, 0xff}}},
     {{{    96,    -17,     13}, 0, {     0,      0}, {0x60, 0xba, 0x2c, 0x00}}},
     {{{    71,    -38,     -3}, 0, {     0,      0}, {0x30, 0x8c, 0x0e, 0x00}}},
@@ -746,7 +746,7 @@ static const Vtx yoshi_seg5_vertex_0501E950[] = {
 };
 
 // 0x0501E9D0
-static const Vtx yoshi_seg5_vertex_0501E9D0[] = {
+ const Vtx yoshi_seg5_vertex_0501E9D0[] = {
     {{{    76,     22,     13}, 0, {     0,      0}, {0x32, 0x4d, 0x57, 0x00}}},
     {{{    78,    -10,     13}, 0, {     0,      0}, {0x4a, 0xa8, 0x35, 0x00}}},
     {{{    87,      6,      0}, 0, {     0,      0}, {0x7e, 0x06, 0x00, 0x00}}},
@@ -760,7 +760,7 @@ static const Vtx yoshi_seg5_vertex_0501E9D0[] = {
 };
 
 // 0x0501EA70
-static const Vtx yoshi_seg5_vertex_0501EA70[] = {
+ const Vtx yoshi_seg5_vertex_0501EA70[] = {
     {{{    87,    -12,    -16}, 0, {     0,      0}, {0x35, 0xbc, 0xa4, 0x00}}},
     {{{    87,    -12,     13}, 0, {     0,      0}, {0x4b, 0xa6, 0x2f, 0x00}}},
     {{{    -5,    -33,     19}, 0, {     0,      0}, {0xdc, 0xa0, 0x4a, 0x00}}},
@@ -775,7 +775,7 @@ static const Vtx yoshi_seg5_vertex_0501EA70[] = {
 };
 
 // 0x0501EB20
-static const Vtx yoshi_seg5_vertex_0501EB20[] = {
+ const Vtx yoshi_seg5_vertex_0501EB20[] = {
     {{{   212,      0,    -34}, 0, {     0,      0}, {0x54, 0xba, 0xc1, 0x00}}},
     {{{   212,      0,     39}, 0, {     0,      0}, {0x5c, 0xb4, 0x29, 0x00}}},
     {{{   169,    -51,    -34}, 0, {     0,      0}, {0x3a, 0x9c, 0xcd, 0x00}}},
@@ -794,7 +794,7 @@ static const Vtx yoshi_seg5_vertex_0501EB20[] = {
 };
 
 // 0x0501EC10
-static const Vtx yoshi_seg5_vertex_0501EC10[] = {
+ const Vtx yoshi_seg5_vertex_0501EC10[] = {
     {{{   -13,     33,    -25}, 0, {     0,      0}, {0xd6, 0x24, 0x8f, 0xff}}},
     {{{   -11,     53,    -25}, 0, {     0,      0}, {0xcc, 0x02, 0x8d, 0x00}}},
     {{{    38,     19,    -49}, 0, {     0,      0}, {0xe8, 0xfc, 0x84, 0x00}}},
@@ -814,7 +814,7 @@ static const Vtx yoshi_seg5_vertex_0501EC10[] = {
 };
 
 // 0x0501ED10
-static const Vtx yoshi_seg5_vertex_0501ED10[] = {
+ const Vtx yoshi_seg5_vertex_0501ED10[] = {
     {{{   124,    -26,    -65}, 0, {     0,      0}, {0xed, 0xc6, 0x91, 0xff}}},
     {{{   119,    -59,    -26}, 0, {     0,      0}, {0xe1, 0x8e, 0xd4, 0x00}}},
     {{{    71,    -20,    -33}, 0, {     0,      0}, {0xb8, 0xa1, 0xd7, 0x00}}},
@@ -834,7 +834,7 @@ static const Vtx yoshi_seg5_vertex_0501ED10[] = {
 };
 
 // 0x0501EE10
-static const Vtx yoshi_seg5_vertex_0501EE10[] = {
+ const Vtx yoshi_seg5_vertex_0501EE10[] = {
     {{{   169,    -51,     39}, 0, {     0,      0}, {0x34, 0xa5, 0x46, 0xff}}},
     {{{   212,      0,     39}, 0, {     0,      0}, {0x5c, 0xb4, 0x29, 0x00}}},
     {{{   155,     31,     76}, 0, {     0,      0}, {0x1d, 0xe3, 0x77, 0x00}}},
@@ -854,7 +854,7 @@ static const Vtx yoshi_seg5_vertex_0501EE10[] = {
 };
 
 // 0x0501EF10
-static const Vtx yoshi_seg5_vertex_0501EF10[] = {
+ const Vtx yoshi_seg5_vertex_0501EF10[] = {
     {{{   -13,     33,    -25}, 0, {     0,      0}, {0x86, 0x22, 0x00, 0xff}}},
     {{{   -13,     33,     29}, 0, {     0,      0}, {0x8f, 0x38, 0x00, 0x00}}},
     {{{   -11,     53,     30}, 0, {     0,      0}, {0x84, 0x19, 0x00, 0x00}}},
@@ -873,7 +873,7 @@ static const Vtx yoshi_seg5_vertex_0501EF10[] = {
 };
 
 // 0x0501F000
-static const Vtx yoshi_seg5_vertex_0501F000[] = {
+ const Vtx yoshi_seg5_vertex_0501F000[] = {
     {{{   -35,      4,    -31}, 0, {     0,      0}, {0x9b, 0x4b, 0x00, 0xff}}},
     {{{   -35,      4,     37}, 0, {     0,      0}, {0x9b, 0x4b, 0x00, 0x00}}},
     {{{   -13,     33,     29}, 0, {     0,      0}, {0x8f, 0x38, 0x00, 0x00}}},
@@ -893,7 +893,7 @@ static const Vtx yoshi_seg5_vertex_0501F000[] = {
 };
 
 // 0x0501F100
-static const Vtx yoshi_seg5_vertex_0501F100[] = {
+ const Vtx yoshi_seg5_vertex_0501F100[] = {
     {{{   212,      0,    -34}, 0, {     0,      0}, {0x3b, 0x70, 0x00, 0xff}}},
     {{{   155,     31,    -71}, 0, {     0,      0}, {0x3b, 0x70, 0x01, 0x00}}},
     {{{    63,     80,    -58}, 0, {     0,      0}, {0x3b, 0x70, 0x00, 0x00}}},
@@ -905,7 +905,7 @@ static const Vtx yoshi_seg5_vertex_0501F100[] = {
 };
 
 // 0x0501F180
-static const Vtx yoshi_seg5_vertex_0501F180[] = {
+ const Vtx yoshi_seg5_vertex_0501F180[] = {
     {{{    77,    -40,    -10}, 0, {     0,      0}, {0x26, 0x90, 0xd5, 0x00}}},
     {{{     4,    -48,     28}, 0, {     0,      0}, {0xda, 0x91, 0x2e, 0x00}}},
     {{{     2,    -48,    -17}, 0, {     0,      0}, {0xba, 0xa0, 0xd6, 0x00}}},
@@ -925,7 +925,7 @@ static const Vtx yoshi_seg5_vertex_0501F180[] = {
 };
 
 // 0x0501F280
-static const Vtx yoshi_seg5_vertex_0501F280[] = {
+ const Vtx yoshi_seg5_vertex_0501F280[] = {
     {{{    77,    -21,     38}, 0, {     0,      0}, {0x24, 0xf7, 0x79, 0xff}}},
     {{{    76,    -40,     20}, 0, {     0,      0}, {0x24, 0x99, 0x3f, 0x00}}},
     {{{   114,    -16,     21}, 0, {     0,      0}, {0x5f, 0xbf, 0x34, 0x00}}},
@@ -945,7 +945,7 @@ static const Vtx yoshi_seg5_vertex_0501F280[] = {
 };
 
 // 0x0501F380
-static const Vtx yoshi_seg5_vertex_0501F380[] = {
+ const Vtx yoshi_seg5_vertex_0501F380[] = {
     {{{     3,    -26,    -33}, 0, {     0,      0}, {0xe1, 0xd9, 0x8c, 0xff}}},
     {{{   -21,    -10,    -11}, 0, {     0,      0}, {0x98, 0xf4, 0xba, 0x00}}},
     {{{    10,     38,    -23}, 0, {     0,      0}, {0xe3, 0x46, 0x9b, 0x00}}},
@@ -965,7 +965,7 @@ static const Vtx yoshi_seg5_vertex_0501F380[] = {
 };
 
 // 0x0501F480
-static const Vtx yoshi_seg5_vertex_0501F480[] = {
+ const Vtx yoshi_seg5_vertex_0501F480[] = {
     {{{     7,     37,     35}, 0, {     0,      0}, {0xe0, 0x45, 0x64, 0xff}}},
     {{{    80,     24,     30}, 0, {     0,      0}, {0x35, 0x44, 0x5d, 0x00}}},
     {{{    81,     36,      4}, 0, {     0,      0}, {0x2f, 0x75, 0xfe, 0x00}}},
@@ -981,7 +981,7 @@ static const Vtx yoshi_seg5_vertex_0501F480[] = {
 };
 
 // 0x0501F540
-static const Vtx yoshi_seg5_vertex_0501F540[] = {
+ const Vtx yoshi_seg5_vertex_0501F540[] = {
     {{{    94,    -67,    -16}, 0, {     0,      0}, {0x2c, 0x8d, 0xe5, 0x00}}},
     {{{    22,    -63,     23}, 0, {     0,      0}, {0xdc, 0xa3, 0x4d, 0x00}}},
     {{{    18,    -83,    -16}, 0, {     0,      0}, {0xd9, 0x96, 0xc9, 0x00}}},
@@ -1001,7 +1001,7 @@ static const Vtx yoshi_seg5_vertex_0501F540[] = {
 };
 
 // 0x0501F640
-static const Vtx yoshi_seg5_vertex_0501F640[] = {
+ const Vtx yoshi_seg5_vertex_0501F640[] = {
     {{{   105,     35,    -31}, 0, {     0,      0}, {0x1f, 0x1d, 0x89, 0xff}}},
     {{{   111,     66,    -12}, 0, {     0,      0}, {0x37, 0x71, 0xf9, 0x00}}},
     {{{   148,     27,    -12}, 0, {     0,      0}, {0x79, 0x22, 0xf2, 0x00}}},
@@ -1020,7 +1020,7 @@ static const Vtx yoshi_seg5_vertex_0501F640[] = {
 };
 
 // 0x0501F730
-static const Vtx yoshi_seg5_vertex_0501F730[] = {
+ const Vtx yoshi_seg5_vertex_0501F730[] = {
     {{{     8,     -9,    -37}, 0, {     0,      0}, {0xea, 0xf1, 0x85, 0xff}}},
     {{{    18,    -83,    -16}, 0, {     0,      0}, {0xd9, 0x96, 0xc9, 0x00}}},
     {{{   -27,    -31,    -16}, 0, {     0,      0}, {0x91, 0xce, 0xde, 0x00}}},
@@ -1039,7 +1039,7 @@ static const Vtx yoshi_seg5_vertex_0501F730[] = {
 };
 
 // 0x0501F820
-static const Vtx yoshi_seg5_vertex_0501F820[] = {
+ const Vtx yoshi_seg5_vertex_0501F820[] = {
     {{{    82,    -36,     45}, 0, {     0,      0}, {0x18, 0xcd, 0x71, 0xff}}},
     {{{    20,    -24,     44}, 0, {     0,      0}, {0xdf, 0xe3, 0x76, 0x00}}},
     {{{    22,    -63,     23}, 0, {     0,      0}, {0xdc, 0xa3, 0x4d, 0x00}}},
@@ -1058,7 +1058,7 @@ static const Vtx yoshi_seg5_vertex_0501F820[] = {
 };
 
 // 0x0501F910
-static const Vtx yoshi_seg5_vertex_0501F910[] = {
+ const Vtx yoshi_seg5_vertex_0501F910[] = {
     {{{   135,    -34,    -16}, 0, {     0,      0}, {0x5c, 0xd1, 0xb8, 0xff}}},
     {{{    93,    -26,    -37}, 0, {     0,      0}, {0x16, 0xe6, 0x86, 0x00}}},
     {{{   105,     35,    -31}, 0, {     0,      0}, {0x1f, 0x1d, 0x89, 0x00}}},
@@ -1077,7 +1077,7 @@ static const Vtx yoshi_seg5_vertex_0501F910[] = {
 };
 
 // 0x0501FA00
-static const Vtx yoshi_seg5_vertex_0501FA00[] = {
+ const Vtx yoshi_seg5_vertex_0501FA00[] = {
     {{{   153,     13,     26}, 0, {     0,      0}, {0x26, 0x45, 0x62, 0x00}}},
     {{{   163,     33,      0}, 0, {     0,      0}, {0x2c, 0x76, 0x06, 0x00}}},
     {{{    36,     83,      0}, 0, {     0,      0}, {0x11, 0x7d, 0x02, 0x00}}},
@@ -1096,7 +1096,7 @@ static const Vtx yoshi_seg5_vertex_0501FA00[] = {
 };
 
 // 0x0501FAF0
-static const Vtx yoshi_seg5_vertex_0501FAF0[] = {
+ const Vtx yoshi_seg5_vertex_0501FAF0[] = {
     {{{   -41,    -20,     45}, 0, {     0,      0}, {0x9a, 0xe5, 0x46, 0x00}}},
     {{{   -41,    -20,    -45}, 0, {     0,      0}, {0x96, 0xe0, 0xc3, 0x00}}},
     {{{    -7,    -89,    -41}, 0, {     0,      0}, {0xbc, 0x9a, 0xe2, 0x00}}},
@@ -1111,7 +1111,7 @@ static const Vtx yoshi_seg5_vertex_0501FAF0[] = {
 };
 
 // 0x0501FBA0
-static const Vtx yoshi_seg5_vertex_0501FBA0[] = {
+ const Vtx yoshi_seg5_vertex_0501FBA0[] = {
     {{{   169,    -51,     34}, 0, {     0,      0}, {0x3a, 0x9c, 0x33, 0x00}}},
     {{{   212,      0,    -39}, 0, {     0,      0}, {0x5c, 0xb4, 0xd7, 0x00}}},
     {{{   212,      0,     34}, 0, {     0,      0}, {0x54, 0xba, 0x3f, 0x00}}},
@@ -1130,7 +1130,7 @@ static const Vtx yoshi_seg5_vertex_0501FBA0[] = {
 };
 
 // 0x0501FC90
-static const Vtx yoshi_seg5_vertex_0501FC90[] = {
+ const Vtx yoshi_seg5_vertex_0501FC90[] = {
     {{{    38,     19,     49}, 0, {     0,      0}, {0xe8, 0xfc, 0x7c, 0xff}}},
     {{{   -11,     53,     25}, 0, {     0,      0}, {0xcc, 0x02, 0x73, 0x00}}},
     {{{   -13,     33,     25}, 0, {     0,      0}, {0xd6, 0x24, 0x71, 0x00}}},
@@ -1150,7 +1150,7 @@ static const Vtx yoshi_seg5_vertex_0501FC90[] = {
 };
 
 // 0x0501FD90
-static const Vtx yoshi_seg5_vertex_0501FD90[] = {
+ const Vtx yoshi_seg5_vertex_0501FD90[] = {
     {{{    71,    -20,     33}, 0, {     0,      0}, {0xb8, 0xa1, 0x29, 0xff}}},
     {{{   119,    -59,     26}, 0, {     0,      0}, {0xe1, 0x8e, 0x2c, 0x00}}},
     {{{   124,    -26,     65}, 0, {     0,      0}, {0xed, 0xc6, 0x6f, 0x00}}},
@@ -1170,7 +1170,7 @@ static const Vtx yoshi_seg5_vertex_0501FD90[] = {
 };
 
 // 0x0501FE90
-static const Vtx yoshi_seg5_vertex_0501FE90[] = {
+ const Vtx yoshi_seg5_vertex_0501FE90[] = {
     {{{   155,     31,    -76}, 0, {     0,      0}, {0x1d, 0xe3, 0x89, 0xff}}},
     {{{   212,      0,    -39}, 0, {     0,      0}, {0x5c, 0xb4, 0xd7, 0x00}}},
     {{{   169,    -51,    -39}, 0, {     0,      0}, {0x34, 0xa5, 0xba, 0x00}}},
@@ -1190,7 +1190,7 @@ static const Vtx yoshi_seg5_vertex_0501FE90[] = {
 };
 
 // 0x0501FF90
-static const Vtx yoshi_seg5_vertex_0501FF90[] = {
+ const Vtx yoshi_seg5_vertex_0501FF90[] = {
     {{{   -11,     53,    -30}, 0, {     0,      0}, {0x84, 0x19, 0x00, 0xff}}},
     {{{   -13,     33,    -29}, 0, {     0,      0}, {0x8f, 0x38, 0x00, 0x00}}},
     {{{   -13,     33,     25}, 0, {     0,      0}, {0x86, 0x22, 0x00, 0x00}}},
@@ -1209,7 +1209,7 @@ static const Vtx yoshi_seg5_vertex_0501FF90[] = {
 };
 
 // 0x05020080
-static const Vtx yoshi_seg5_vertex_05020080[] = {
+ const Vtx yoshi_seg5_vertex_05020080[] = {
     {{{   -13,     33,    -29}, 0, {     0,      0}, {0x8f, 0x38, 0x00, 0xff}}},
     {{{   -35,      4,    -37}, 0, {     0,      0}, {0x9b, 0x4b, 0x00, 0x00}}},
     {{{   -35,      4,     31}, 0, {     0,      0}, {0x9b, 0x4b, 0x00, 0x00}}},
@@ -1229,7 +1229,7 @@ static const Vtx yoshi_seg5_vertex_05020080[] = {
 };
 
 // 0x05020180
-static const Vtx yoshi_seg5_vertex_05020180[] = {
+ const Vtx yoshi_seg5_vertex_05020180[] = {
     {{{    63,     80,     58}, 0, {     0,      0}, {0x3b, 0x70, 0x00, 0xff}}},
     {{{   155,     31,     71}, 0, {     0,      0}, {0x3b, 0x70, 0xff, 0x00}}},
     {{{   212,      0,     34}, 0, {     0,      0}, {0x3b, 0x70, 0x00, 0x00}}},
@@ -1241,7 +1241,7 @@ static const Vtx yoshi_seg5_vertex_05020180[] = {
 };
 
 // 0x05020200
-static const Vtx yoshi_seg5_vertex_05020200[] = {
+ const Vtx yoshi_seg5_vertex_05020200[] = {
     {{{     2,    -48,     17}, 0, {     0,      0}, {0xba, 0xa0, 0x2a, 0x00}}},
     {{{     4,    -48,    -28}, 0, {     0,      0}, {0xda, 0x91, 0xd2, 0x00}}},
     {{{    77,    -40,     10}, 0, {     0,      0}, {0x26, 0x90, 0x2b, 0x00}}},
@@ -1261,7 +1261,7 @@ static const Vtx yoshi_seg5_vertex_05020200[] = {
 };
 
 // 0x05020300
-static const Vtx yoshi_seg5_vertex_05020300[] = {
+ const Vtx yoshi_seg5_vertex_05020300[] = {
     {{{   114,    -16,    -21}, 0, {     0,      0}, {0x5f, 0xbf, 0xcc, 0xff}}},
     {{{    76,    -40,    -20}, 0, {     0,      0}, {0x24, 0x99, 0xc1, 0x00}}},
     {{{    77,    -21,    -38}, 0, {     0,      0}, {0x24, 0xf7, 0x87, 0x00}}},
@@ -1281,7 +1281,7 @@ static const Vtx yoshi_seg5_vertex_05020300[] = {
 };
 
 // 0x05020400
-static const Vtx yoshi_seg5_vertex_05020400[] = {
+ const Vtx yoshi_seg5_vertex_05020400[] = {
     {{{    10,     38,     23}, 0, {     0,      0}, {0xe3, 0x46, 0x65, 0xff}}},
     {{{   -21,    -10,     11}, 0, {     0,      0}, {0x98, 0xf4, 0x46, 0x00}}},
     {{{     3,    -26,     33}, 0, {     0,      0}, {0xe1, 0xd9, 0x74, 0x00}}},
@@ -1301,7 +1301,7 @@ static const Vtx yoshi_seg5_vertex_05020400[] = {
 };
 
 // 0x05020500
-static const Vtx yoshi_seg5_vertex_05020500[] = {
+ const Vtx yoshi_seg5_vertex_05020500[] = {
     {{{    81,     36,     -4}, 0, {     0,      0}, {0x2f, 0x75, 0x02, 0xff}}},
     {{{    80,     24,    -30}, 0, {     0,      0}, {0x35, 0x44, 0xa3, 0x00}}},
     {{{     7,     37,    -35}, 0, {     0,      0}, {0xe0, 0x45, 0x9c, 0x00}}},
@@ -1317,7 +1317,7 @@ static const Vtx yoshi_seg5_vertex_05020500[] = {
 };
 
 // 0x050205C0
-static const Vtx yoshi_seg5_vertex_050205C0[] = {
+ const Vtx yoshi_seg5_vertex_050205C0[] = {
     {{{    18,    -83,     16}, 0, {     0,      0}, {0xd9, 0x96, 0x37, 0x00}}},
     {{{    22,    -63,    -23}, 0, {     0,      0}, {0xdc, 0xa3, 0xb3, 0x00}}},
     {{{    94,    -67,     16}, 0, {     0,      0}, {0x2c, 0x8d, 0x1b, 0x00}}},
@@ -1337,7 +1337,7 @@ static const Vtx yoshi_seg5_vertex_050205C0[] = {
 };
 
 // 0x050206C0
-static const Vtx yoshi_seg5_vertex_050206C0[] = {
+ const Vtx yoshi_seg5_vertex_050206C0[] = {
     {{{   148,     27,     12}, 0, {     0,      0}, {0x79, 0x22, 0x0e, 0xff}}},
     {{{   111,     66,     12}, 0, {     0,      0}, {0x37, 0x71, 0x07, 0x00}}},
     {{{   105,     35,     31}, 0, {     0,      0}, {0x1f, 0x1d, 0x77, 0x00}}},
@@ -1356,7 +1356,7 @@ static const Vtx yoshi_seg5_vertex_050206C0[] = {
 };
 
 // 0x050207B0
-static const Vtx yoshi_seg5_vertex_050207B0[] = {
+ const Vtx yoshi_seg5_vertex_050207B0[] = {
     {{{   -27,    -31,     16}, 0, {     0,      0}, {0x91, 0xce, 0x22, 0xff}}},
     {{{    18,    -83,     16}, 0, {     0,      0}, {0xd9, 0x96, 0x37, 0x00}}},
     {{{     8,     -9,     37}, 0, {     0,      0}, {0xea, 0xf1, 0x7b, 0x00}}},
@@ -1375,7 +1375,7 @@ static const Vtx yoshi_seg5_vertex_050207B0[] = {
 };
 
 // 0x050208A0
-static const Vtx yoshi_seg5_vertex_050208A0[] = {
+ const Vtx yoshi_seg5_vertex_050208A0[] = {
     {{{    22,    -63,    -23}, 0, {     0,      0}, {0xdc, 0xa3, 0xb3, 0xff}}},
     {{{    20,    -24,    -44}, 0, {     0,      0}, {0xdf, 0xe3, 0x8a, 0x00}}},
     {{{    82,    -36,    -45}, 0, {     0,      0}, {0x18, 0xcd, 0x8f, 0x00}}},
@@ -1394,7 +1394,7 @@ static const Vtx yoshi_seg5_vertex_050208A0[] = {
 };
 
 // 0x05020990
-static const Vtx yoshi_seg5_vertex_05020990[] = {
+ const Vtx yoshi_seg5_vertex_05020990[] = {
     {{{   105,     35,     31}, 0, {     0,      0}, {0x1f, 0x1d, 0x77, 0xff}}},
     {{{    93,    -26,     37}, 0, {     0,      0}, {0x16, 0xe6, 0x7a, 0x00}}},
     {{{   135,    -34,     16}, 0, {     0,      0}, {0x5c, 0xd1, 0x48, 0x00}}},
@@ -1413,7 +1413,7 @@ static const Vtx yoshi_seg5_vertex_05020990[] = {
 };
 
 // 0x05020A80
-static const Vtx yoshi_seg5_vertex_05020A80[] = {
+ const Vtx yoshi_seg5_vertex_05020A80[] = {
     {{{   255,     29,     39}, 0, {     0,      0}, {0x6c, 0x29, 0x33, 0x00}}},
     {{{   223,    -25,     39}, 0, {     0,      0}, {0x3a, 0xc1, 0x5d, 0x00}}},
     {{{   223,    -25,    -39}, 0, {     0,      0}, {0x46, 0xbe, 0xaf, 0x00}}},
@@ -1433,7 +1433,7 @@ static const Vtx yoshi_seg5_vertex_05020A80[] = {
 };
 
 // 0x05020B80
-static const Vtx yoshi_seg5_vertex_05020B80[] = {
+ const Vtx yoshi_seg5_vertex_05020B80[] = {
     {{{   126,    -32,     41}, 0, {     0,      0}, {0x1d, 0x9a, 0x44, 0xff}}},
     {{{   223,    -25,     39}, 0, {     0,      0}, {0x3a, 0xc1, 0x5d, 0x00}}},
     {{{   149,     11,     70}, 0, {     0,      0}, {0x23, 0xd1, 0x70, 0x00}}},
@@ -1453,7 +1453,7 @@ static const Vtx yoshi_seg5_vertex_05020B80[] = {
 };
 
 // 0x05020C80
-static const Vtx yoshi_seg5_vertex_05020C80[] = {
+ const Vtx yoshi_seg5_vertex_05020C80[] = {
     {{{   169,     50,    -65}, 0, {     0,      0}, {0x29, 0x1d, 0x8c, 0xff}}},
     {{{   255,     29,    -39}, 0, {     0,      0}, {0x5d, 0x2b, 0xb6, 0x00}}},
     {{{   223,    -25,    -39}, 0, {     0,      0}, {0x46, 0xbe, 0xaf, 0x00}}},
@@ -1471,7 +1471,7 @@ static const Vtx yoshi_seg5_vertex_05020C80[] = {
 };
 
 // 0x05020D60
-static const Vtx yoshi_seg5_vertex_05020D60[] = {
+ const Vtx yoshi_seg5_vertex_05020D60[] = {
     {{{   169,     50,     65}, 0, {     0,      0}, {0x2a, 0x20, 0x73, 0xff}}},
     {{{   149,     11,     70}, 0, {     0,      0}, {0x23, 0xd1, 0x70, 0x00}}},
     {{{   223,    -25,     39}, 0, {     0,      0}, {0x3a, 0xc1, 0x5d, 0x00}}},
@@ -1491,14 +1491,14 @@ static const Vtx yoshi_seg5_vertex_05020D60[] = {
 };
 
 // 0x05020E60
-static const Vtx yoshi_seg5_vertex_05020E60[] = {
+ const Vtx yoshi_seg5_vertex_05020E60[] = {
     {{{   223,    -25,    -39}, 0, {     0,      0}, {0x46, 0xbe, 0xaf, 0xff}}},
     {{{   255,     29,    -39}, 0, {     0,      0}, {0x5d, 0x2b, 0xb6, 0x00}}},
     {{{   255,     29,     39}, 0, {     0,      0}, {0x6c, 0x29, 0x33, 0x00}}},
 };
 
 // 0x05020E90
-static const Vtx yoshi_seg5_vertex_05020E90[] = {
+ const Vtx yoshi_seg5_vertex_05020E90[] = {
     {{{  -107,     51,    -49}, 0, {     0,      0}, {0xc0, 0x93, 0x00, 0x00}}},
     {{{   -75,     32,   -102}, 0, {     0,      0}, {0xb1, 0xab, 0xce, 0x00}}},
     {{{  -107,     51,     49}, 0, {     0,      0}, {0xc0, 0x93, 0x00, 0x00}}},
@@ -1518,7 +1518,7 @@ static const Vtx yoshi_seg5_vertex_05020E90[] = {
 };
 
 // 0x05020F90
-static const Vtx yoshi_seg5_vertex_05020F90[] = {
+ const Vtx yoshi_seg5_vertex_05020F90[] = {
     {{{   128,    -30,    -44}, 0, {     0,      0}, {0x82, 0xfb, 0xfe, 0x00}}},
     {{{   131,   -114,     -1}, 0, {     0,      0}, {0x82, 0xfb, 0xfe, 0x00}}},
     {{{   126,    -32,     41}, 0, {     0,      0}, {0x82, 0xfb, 0xfe, 0x00}}},
@@ -1530,7 +1530,7 @@ static const Vtx yoshi_seg5_vertex_05020F90[] = {
 };
 
 // 0x05021010
-static const Vtx yoshi_seg5_vertex_05021010[] = {
+ const Vtx yoshi_seg5_vertex_05021010[] = {
     {{{   197,     17,    -49}, 0, {     0,      0}, {0x62, 0x29, 0xbd, 0x00}}},
     {{{   197,     17,     49}, 0, {     0,      0}, {0x6b, 0x0a, 0x43, 0x00}}},
     {{{   166,    -61,    -58}, 0, {     0,      0}, {0x62, 0xc5, 0xca, 0x00}}},
@@ -1550,7 +1550,7 @@ static const Vtx yoshi_seg5_vertex_05021010[] = {
 };
 
 // 0x05021110
-static const Vtx yoshi_seg5_vertex_05021110[] = {
+ const Vtx yoshi_seg5_vertex_05021110[] = {
     {{{   -33,    -59,     99}, 0, {     0,      0}, {0xfc, 0xd1, 0x75, 0x00}}},
     {{{   -10,   -155,     43}, 0, {     0,      0}, {0x0a, 0x8d, 0x33, 0x00}}},
     {{{    99,   -129,     43}, 0, {     0,      0}, {0x2a, 0xa5, 0x4d, 0x00}}},
@@ -1566,7 +1566,7 @@ static const Vtx yoshi_seg5_vertex_05021110[] = {
 };
 
 // 0x050211D0
-static const Vtx yoshi_seg5_vertex_050211D0[] = {
+ const Vtx yoshi_seg5_vertex_050211D0[] = {
     {{{   -52,     39,   -117}, 0, {     0,      0}, {0xe7, 0x0b, 0x85, 0x00}}},
     {{{  -138,    -27,    -82}, 0, {     0,      0}, {0x96, 0xf3, 0xbc, 0x00}}},
     {{{   -65,     92,    -76}, 0, {     0,      0}, {0xc3, 0x5a, 0xc0, 0x00}}},

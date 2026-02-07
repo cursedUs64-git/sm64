@@ -1,23 +1,23 @@
 // Poundable Pole
 
 // 0x06001038
-static const Lights1 poundable_pole_seg6_lights_06001038 = gdSPDefLights1(
+ const Lights1 poundable_pole_seg6_lights_06001038 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06001050
-ALIGNED8 static const Texture poundable_pole_seg6_texture_06001050[] = {
+ALIGNED8  const Texture poundable_pole_seg6_texture_06001050[] = {
 #include "actors/poundable_pole/poundable_pole_top.rgba16.inc.c"
 };
 
 // 0x06001850
-ALIGNED8 static const Texture poundable_pole_seg6_texture_06001850[] = {
+ALIGNED8  const Texture poundable_pole_seg6_texture_06001850[] = {
 #include "actors/poundable_pole/poundable_pole_side.rgba16.inc.c"
 };
 
 // 0x06002050
-static const Vtx poundable_pole_seg6_vertex_06002050[] = {
+ const Vtx poundable_pole_seg6_vertex_06002050[] = {
     {{{   -38,    410,    -94}, 0, {    78,     78}, {0xdf, 0x5c, 0xb0, 0xff}}},
     {{{   -94,    410,    -38}, 0, {   -86,    478}, {0xa1, 0x49, 0xd9, 0xff}}},
     {{{    95,    410,     39}, 0, {  1046,    478}, {0x39, 0x6e, 0x18, 0xff}}},
@@ -29,7 +29,7 @@ static const Vtx poundable_pole_seg6_vertex_06002050[] = {
 };
 
 // 0x060020D0
-static const Vtx poundable_pole_seg6_vertex_060020D0[] = {
+ const Vtx poundable_pole_seg6_vertex_060020D0[] = {
     {{{   -71,    -19,     72}, 0, {     0,    990}, {0xa7, 0xff, 0x59, 0xff}}},
     {{{   -38,    410,     95}, 0, {   990,  -1012}, {0xd9, 0x49, 0x5f, 0xff}}},
     {{{   -94,    410,     39}, 0, {     0,  -1012}, {0xa1, 0x49, 0x27, 0xff}}},
@@ -48,7 +48,7 @@ static const Vtx poundable_pole_seg6_vertex_060020D0[] = {
 };
 
 // 0x060021C0
-static const Vtx poundable_pole_seg6_vertex_060021C0[] = {
+ const Vtx poundable_pole_seg6_vertex_060021C0[] = {
     {{{   102,    -19,      0}, 0, {   -26,    990}, {0x7e, 0xff, 0x00, 0xff}}},
     {{{    95,    410,    -38}, 0, {   990,  -1054}, {0x5f, 0x49, 0xd9, 0xff}}},
     {{{    95,    410,     39}, 0, {   -26,  -1054}, {0x39, 0x6e, 0x18, 0xff}}},
@@ -67,7 +67,7 @@ static const Vtx poundable_pole_seg6_vertex_060021C0[] = {
 };
 
 // 0x060022B0
-static const Vtx poundable_pole_seg6_vertex_060022B0[] = {
+ const Vtx poundable_pole_seg6_vertex_060022B0[] = {
     {{{    39,    410,    -94}, 0, {   990,  -1054}, {0x2d, 0x2a, 0x92, 0xff}}},
     {{{    95,    410,    -38}, 0, {   -26,  -1054}, {0x5f, 0x49, 0xd9, 0xff}}},
     {{{    72,    -19,    -71}, 0, {   -26,    990}, {0x59, 0xff, 0xa7, 0xff}}},

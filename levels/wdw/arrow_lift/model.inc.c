@@ -1,11 +1,11 @@
 // 0x07012C08 - 0x07012C20
-static const Lights1 wdw_seg7_lights_07012C08 = gdSPDefLights1(
+ const Lights1 wdw_seg7_lights_07012C08 = gdSPDefLights1(
     0x99, 0x99, 0x99,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07012C20 - 0x07012C60
-static const Vtx wdw_seg7_vertex_07012C20[] = {
+ const Vtx wdw_seg7_vertex_07012C20[] = {
     {{{    63,    127,    -60}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   -64,    127,     67}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    63,    127,     67}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -13,7 +13,7 @@ static const Vtx wdw_seg7_vertex_07012C20[] = {
 };
 
 // 0x07012C60 - 0x07012D50
-static const Vtx wdw_seg7_vertex_07012C60[] = {
+ const Vtx wdw_seg7_vertex_07012C60[] = {
     {{{    63,    127,    -60}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -64,      0,    -60}, 0, {   990,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -64,    127,    -60}, 0, {   990,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -32,7 +32,7 @@ static const Vtx wdw_seg7_vertex_07012C60[] = {
 };
 
 // 0x07012D50 - 0x07012DC0
-static const Vtx wdw_seg7_vertex_07012D50[] = {
+ const Vtx wdw_seg7_vertex_07012D50[] = {
     {{{    63,      0,     67}, 0, {     0,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -64,      0,     67}, 0, {   990,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -64,      0,    -60}, 0, {   990,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx wdw_seg7_vertex_07012D50[] = {
 };
 
 // 0x07012DC0 - 0x07012E08
-static const Gfx wdw_seg7_dl_07012DC0[] = {
+ const Gfx wdw_seg7_dl_07012DC0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wdw_seg7_texture_07001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -55,7 +55,7 @@ static const Gfx wdw_seg7_dl_07012DC0[] = {
 };
 
 // 0x07012E08 - 0x07012E88
-static const Gfx wdw_seg7_dl_07012E08[] = {
+ const Gfx wdw_seg7_dl_07012E08[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09004000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

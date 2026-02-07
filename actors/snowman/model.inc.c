@@ -1,65 +1,65 @@
 // Snowman
 
 // ???
-UNUSED static const u64 snowman_unused_1 = 1;
+UNUSED  const u64 snowman_unused_1 = 1;
 
 // Unreferenced light group
-UNUSED static const Lights1 snowman_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 snowman_lights_unused1 = gdSPDefLights1(
     0x0d, 0x0c, 0x28,
     0x35, 0x32, 0xa2, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 snowman_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 snowman_lights_unused2 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 snowman_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 snowman_lights_unused3 = gdSPDefLights1(
     0x08, 0x07, 0x04,
     0x23, 0x1c, 0x12, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 snowman_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 snowman_lights_unused4 = gdSPDefLights1(
     0x03, 0x03, 0x02,
     0x0e, 0x0d, 0x0b, 0x28, 0x28, 0x28
 );
 
 // 0x05008C70
-ALIGNED8 static const Texture snowman_seg5_texture_05008C70[] = {
+ALIGNED8  const Texture snowman_seg5_texture_05008C70[] = {
 #include "actors/snowman/mr_blizzard_mitten.rgba16.inc.c"
 };
 
 // 0x05009470
-ALIGNED8 static const Texture snowman_seg5_texture_05009470[] = {
+ALIGNED8  const Texture snowman_seg5_texture_05009470[] = {
 #include "actors/snowman/mr_blizzard_left_side.rgba16.inc.c"
 };
 
 // 0x0500A470
-ALIGNED8 static const Texture snowman_seg5_texture_0500A470[] = {
+ALIGNED8  const Texture snowman_seg5_texture_0500A470[] = {
 #include "actors/snowman/mr_blizzard_right_side.rgba16.inc.c"
 };
 
 // 0x0500B470
-ALIGNED8 static const Texture snowman_seg5_texture_0500B470[] = {
+ALIGNED8  const Texture snowman_seg5_texture_0500B470[] = {
 #include "actors/snowman/mr_blizzard_eye.rgba16.inc.c"
 };
 
 // 0x0500BC70
-ALIGNED8 static const Texture snowman_seg5_texture_0500BC70[] = {
+ALIGNED8  const Texture snowman_seg5_texture_0500BC70[] = {
 #include "actors/snowman/mr_blizzard_mouth.rgba16.inc.c"
 };
 
 // 0x0500C470
-static const Lights1 snowman_seg5_lights_0500C470 = gdSPDefLights1(
+ const Lights1 snowman_seg5_lights_0500C470 = gdSPDefLights1(
     0x1c, 0x0f, 0x07,
     0x38, 0x1e, 0x0e, 0x28, 0x28, 0x28
 );
 
 // 0x0500C488
-static const Vtx snowman_seg5_vertex_0500C488[] = {
+ const Vtx snowman_seg5_vertex_0500C488[] = {
     {{{   -23,      1,     -6}, 0, {     0,      0}, {0x82, 0xfd, 0xfd, 0xff}}},
     {{{    76,    -17,     -6}, 0, {     0,      0}, {0xea, 0x84, 0xf9, 0xff}}},
     {{{    75,     15,     15}, 0, {     0,      0}, {0xe1, 0x36, 0x6e, 0xff}}},
@@ -87,7 +87,7 @@ const Gfx snowman_seg5_dl_0500C500[] = {
 };
 
 // 0x0500C530
-static const Vtx snowman_seg5_vertex_0500C530[] = {
+ const Vtx snowman_seg5_vertex_0500C530[] = {
     {{{     0,     76,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -76,    -76,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -76,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -95,7 +95,7 @@ static const Vtx snowman_seg5_vertex_0500C530[] = {
 };
 
 // 0x0500C570
-static const Vtx snowman_seg5_vertex_0500C570[] = {
+ const Vtx snowman_seg5_vertex_0500C570[] = {
     {{{    76,     76,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -76,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    76,    -76,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -142,7 +142,7 @@ const Gfx snowman_seg5_dl_0500C620[] = {
 };
 
 // 0x0500C698
-static const Vtx snowman_seg5_vertex_0500C698[] = {
+ const Vtx snowman_seg5_vertex_0500C698[] = {
     {{{    69,    191,   -132}, 0, {  -370,   -440}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -63,    230,      0}, 0, {  1472,   1328}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    69,    230,      0}, 0, {  1472,   -440}, {0xff, 0xff, 0xff, 0xff}}},
@@ -183,13 +183,13 @@ const Gfx snowman_seg5_dl_0500C760[] = {
 };
 
 // 0x0500C7D0
-static const Lights1 snowman_seg5_lights_0500C7D0 = gdSPDefLights1(
+ const Lights1 snowman_seg5_lights_0500C7D0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C7E8
-static const Vtx snowman_seg5_vertex_0500C7E8[] = {
+ const Vtx snowman_seg5_vertex_0500C7E8[] = {
     {{{     3,    -44,    -24}, 0, {   672,   1148}, {0xc1, 0xb9, 0xad, 0xff}}},
     {{{   105,    -63,    -17}, 0, {   720,    626}, {0x31, 0xca, 0x99, 0xff}}},
     {{{   116,   -101,     11}, 0, {   888,    570}, {0x2d, 0x8c, 0xeb, 0xff}}},
@@ -209,7 +209,7 @@ static const Vtx snowman_seg5_vertex_0500C7E8[] = {
 };
 
 // 0x0500C8E8
-static const Vtx snowman_seg5_vertex_0500C8E8[] = {
+ const Vtx snowman_seg5_vertex_0500C8E8[] = {
     {{{    69,    -56,     36}, 0, {   704,    810}, {0x04, 0xe8, 0x7c, 0xff}}},
     {{{    57,    -20,     36}, 0, {   546,    864}, {0x02, 0xf8, 0x7e, 0xff}}},
     {{{     6,      0,     28}, 0, {   472,   1124}, {0xa3, 0xf5, 0x55, 0xff}}},
@@ -265,7 +265,7 @@ const Gfx snowman_seg5_dl_0500CAA8[] = {
 };
 
 // 0x0500CB08
-static const Vtx snowman_seg5_vertex_0500CB08[] = {
+ const Vtx snowman_seg5_vertex_0500CB08[] = {
     {{{     0,     57,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -57,    -57,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -57,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -273,7 +273,7 @@ static const Vtx snowman_seg5_vertex_0500CB08[] = {
 };
 
 // 0x0500CB48
-static const Vtx snowman_seg5_vertex_0500CB48[] = {
+ const Vtx snowman_seg5_vertex_0500CB48[] = {
     {{{    57,     57,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -57,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    57,    -57,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -320,7 +320,7 @@ const Gfx snowman_seg5_dl_0500CBF8[] = {
 };
 
 // 0x0500CC70
-static const Vtx snowman_seg5_vertex_0500CC70[] = {
+ const Vtx snowman_seg5_vertex_0500CC70[] = {
     {{{   -90,    210,    -56}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -134,    182,    -56}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -134,    182,     57}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},

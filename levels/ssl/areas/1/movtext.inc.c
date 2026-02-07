@@ -1,5 +1,5 @@
 // 0x07012758 - 0x07012778
-static Movtex ssl_movtex_puddle_water_data[] = {
+ Movtex ssl_movtex_puddle_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   10),
     MOV_TEX_ROT_SCALE(    3),
@@ -20,7 +20,7 @@ const struct MovtexQuadCollection ssl_movtex_puddle_water[] = {
 };
 
 // 0x07012788 - 0x070127A8
-static Movtex ssl_movtex_toxbox_quicksand_large_mist[] = {
+ Movtex ssl_movtex_toxbox_quicksand_large_mist[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   40),
     MOV_TEX_ROT_SCALE(    2),
@@ -35,7 +35,7 @@ static Movtex ssl_movtex_toxbox_quicksand_large_mist[] = {
 };
 
 // 0x070127A8 - 0x070127C8
-static Movtex ssl_movtex_toxbox_quicksand_short_mist[] = {
+ Movtex ssl_movtex_toxbox_quicksand_short_mist[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   40),
     MOV_TEX_ROT_SCALE(    2),

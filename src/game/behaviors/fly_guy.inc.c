@@ -6,7 +6,7 @@
 /**
  * Hitbox for fly guy.
  */
-static struct ObjectHitbox sFlyGuyHitbox = {
+ struct ObjectHitbox sFlyGuyHitbox = {
     /* interactType:      */ INTERACT_BOUNCE_TOP,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 2,
@@ -21,13 +21,13 @@ static struct ObjectHitbox sFlyGuyHitbox = {
 /**
  * Unused jitter amounts.
  */
-static s16 sFlyGuyJitterAmounts[] = { 0x1000, -0x2000, 0x2000 };
+ s16 sFlyGuyJitterAmounts[] = { 0x1000, -0x2000, 0x2000 };
 
 /**
  * Return to regular size. When mario is close enough or home is far enough,
  * turn toward mario/home and enter the approach mario action.
  */
-static void fly_guy_act_idle(void) {
+ void fly_guy_act_idle(void) {
     o->oForwardVel = 0.0f;
 
     if (approach_f32_ptr(&o->header.gfx.scale[0], 1.5f, 0.02f)) {
@@ -57,7 +57,7 @@ static void fly_guy_act_idle(void) {
  * Turn toward mario or home, and when positioned nicely, either lunge or shoot
  * fire. If mario is far away, stop and return to the idle action.
  */
-static void fly_guy_act_approach_mario(void) {
+ void fly_guy_act_approach_mario(void) {
     // If we are >2000 units from home or Mario is <2000 units from us
     if (o->oDistanceToMario >= 25000.0f || o->oDistanceToMario < 2000.0f) {
         obj_forward_vel_approach(10.0f, 0.5f);
@@ -92,7 +92,7 @@ static void fly_guy_act_approach_mario(void) {
  * Lunge downward at mario, then twirl back up. Enter the approach mario action
  * afterward.
  */
-static void fly_guy_act_lunge(void) {
+ void fly_guy_act_lunge(void) {
     if (o->oVelY < 0.0f) {
         // Lunge downward
 
@@ -131,7 +131,7 @@ static void fly_guy_act_lunge(void) {
 /**
  * Turn toward mario, then shoot fire. Then enter the idle action.
  */
-static void fly_guy_act_shoot_fire(void) {
+ void fly_guy_act_shoot_fire(void) {
     o->oForwardVel = 0.0f;
 
     if (obj_face_yaw_approach(o->oAngleToMario, 0x800)) {

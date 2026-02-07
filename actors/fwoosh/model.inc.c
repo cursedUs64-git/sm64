@@ -1,7 +1,7 @@
 // Fwoosh
 
 // 0x050157C8
-static const Vtx fwoosh_seg5_vertex_050157C8[] = {
+ const Vtx fwoosh_seg5_vertex_050157C8[] = {
     {{{   -19,    -19,      0}, 0, {   992,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    20,    -19,      0}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    20,     20,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx fwoosh_seg5_vertex_050157C8[] = {
 };
 
 // 0x05015808
-ALIGNED8 static const Texture fwoosh_seg5_texture_05015808[] = {
+ALIGNED8  const Texture fwoosh_seg5_texture_05015808[] = {
 #include "actors/fwoosh/fwoosh_face.ia16.inc.c"
 };
 

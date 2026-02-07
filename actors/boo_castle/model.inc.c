@@ -1,23 +1,23 @@
 // Boo (Castle)
 
 // 0x06015658
-static const Lights1 boo_castle_seg6_lights_06015658 = gdSPDefLights1(
+ const Lights1 boo_castle_seg6_lights_06015658 = gdSPDefLights1(
     0x97, 0x9a, 0xff,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06015670
-ALIGNED8 static const Texture boo_castle_seg6_texture_06015670[] = {
+ALIGNED8  const Texture boo_castle_seg6_texture_06015670[] = {
 #include "actors/boo_castle/bbh_boo_eyes.rgba16.inc.c"
 };
 
 // 0x06016670
-ALIGNED8 static const Texture boo_castle_seg6_texture_06016670[] = {
+ALIGNED8  const Texture boo_castle_seg6_texture_06016670[] = {
 #include "actors/boo_castle/bbh_boo_mouth.rgba16.inc.c"
 };
 
 // 0x06016E70
-static const Vtx boo_castle_seg6_vertex_06016E70[] = {
+ const Vtx boo_castle_seg6_vertex_06016E70[] = {
     {{{     0,   -117,    131}, 0, {   458,    990}, {0x00, 0x9d, 0x4e, 0x9e}}},
     {{{    87,    -78,    123}, 0, {  1096,    684}, {0x53, 0xc9, 0x4e, 0x9e}}},
     {{{     0,    -47,    171}, 0, {   458,    168}, {0x00, 0xe9, 0x7c, 0x9e}}},
@@ -33,7 +33,7 @@ static const Vtx boo_castle_seg6_vertex_06016E70[] = {
 };
 
 // 0x06016F30
-static const Vtx boo_castle_seg6_vertex_06016F30[] = {
+ const Vtx boo_castle_seg6_vertex_06016F30[] = {
     {{{  -107,     20,    118}, 0, {  -656,    538}, {0xa9, 0x14, 0x59, 0x9e}}},
     {{{     0,     60,    166}, 0, {   988,    148}, {0x00, 0x26, 0x79, 0x9e}}},
     {{{   -57,    128,    108}, 0, {    76,   -690}, {0xd3, 0x60, 0x45, 0x9e}}},
@@ -49,7 +49,7 @@ static const Vtx boo_castle_seg6_vertex_06016F30[] = {
 };
 
 // 0x06016FF0
-static const Vtx boo_castle_seg6_vertex_06016FF0[] = {
+ const Vtx boo_castle_seg6_vertex_06016FF0[] = {
     {{{  -135,    -70,     23}, 0, {     0,      0}, {0xb2, 0xaa, 0x33, 0x9e}}},
     {{{  -127,    -69,    -89}, 0, {     0,      0}, {0x9c, 0xc6, 0xce, 0x9e}}},
     {{{   -72,   -138,     30}, 0, {     0,      0}, {0xcf, 0x8c, 0x0a, 0x9e}}},
@@ -68,7 +68,7 @@ static const Vtx boo_castle_seg6_vertex_06016FF0[] = {
 };
 
 // 0x060170E0
-static const Vtx boo_castle_seg6_vertex_060170E0[] = {
+ const Vtx boo_castle_seg6_vertex_060170E0[] = {
     {{{   -86,    -78,    123}, 0, {     0,      0}, {0xad, 0xc9, 0x4e, 0x9e}}},
     {{{   -72,   -138,     30}, 0, {     0,      0}, {0xcf, 0x8c, 0x0a, 0x9e}}},
     {{{     0,   -117,    131}, 0, {     0,      0}, {0x00, 0x9d, 0x4e, 0x9e}}},
@@ -87,7 +87,7 @@ static const Vtx boo_castle_seg6_vertex_060170E0[] = {
 };
 
 // 0x060171D0
-static const Vtx boo_castle_seg6_vertex_060171D0[] = {
+ const Vtx boo_castle_seg6_vertex_060171D0[] = {
     {{{   136,    -70,     23}, 0, {     0,      0}, {0x4e, 0xaa, 0x33, 0x9e}}},
     {{{    73,   -138,     30}, 0, {     0,      0}, {0x39, 0x90, 0x0e, 0x9e}}},
     {{{   128,    -69,    -89}, 0, {     0,      0}, {0x64, 0xc6, 0xce, 0x9e}}},
@@ -106,7 +106,7 @@ static const Vtx boo_castle_seg6_vertex_060171D0[] = {
 };
 
 // 0x060172C0
-static const Vtx boo_castle_seg6_vertex_060172C0[] = {
+ const Vtx boo_castle_seg6_vertex_060172C0[] = {
     {{{   125,     99,     15}, 0, {     0,      0}, {0x65, 0x4c, 0x08, 0x9e}}},
     {{{    44,    162,     15}, 0, {     0,      0}, {0x21, 0x7a, 0x09, 0x9e}}},
     {{{    58,    128,    108}, 0, {     0,      0}, {0x35, 0x58, 0x49, 0x9e}}},
@@ -125,7 +125,7 @@ static const Vtx boo_castle_seg6_vertex_060172C0[] = {
 };
 
 // 0x060173B0
-static const Vtx boo_castle_seg6_vertex_060173B0[] = {
+ const Vtx boo_castle_seg6_vertex_060173B0[] = {
     {{{   -41,    130,    -88}, 0, {     0,      0}, {0xd4, 0x65, 0xc3, 0x9e}}},
     {{{   -43,    162,     15}, 0, {     0,      0}, {0xdf, 0x7a, 0xf8, 0x9e}}},
     {{{    42,    130,    -88}, 0, {     0,      0}, {0x25, 0x6a, 0xc7, 0x9e}}},
@@ -144,7 +144,7 @@ static const Vtx boo_castle_seg6_vertex_060173B0[] = {
 };
 
 // 0x060174A0
-static const Vtx boo_castle_seg6_vertex_060174A0[] = {
+ const Vtx boo_castle_seg6_vertex_060174A0[] = {
     {{{  -107,     20,    118}, 0, {     0,      0}, {0xa9, 0x14, 0x59, 0x9e}}},
     {{{   -57,    128,    108}, 0, {     0,      0}, {0xd3, 0x60, 0x45, 0x9e}}},
     {{{  -124,     99,     15}, 0, {     0,      0}, {0x9b, 0x4c, 0x08, 0x9e}}},
@@ -163,7 +163,7 @@ static const Vtx boo_castle_seg6_vertex_060174A0[] = {
 };
 
 // 0x06017590
-static const Vtx boo_castle_seg6_vertex_06017590[] = {
+ const Vtx boo_castle_seg6_vertex_06017590[] = {
     {{{  -199,    -60,     25}, 0, {     0,      0}, {0xa2, 0xbf, 0x36, 0x9e}}},
     {{{  -135,    -70,     23}, 0, {     0,      0}, {0xb2, 0xaa, 0x33, 0x9e}}},
     {{{  -155,      6,     33}, 0, {     0,      0}, {0x87, 0x0f, 0x22, 0x9e}}},
@@ -182,7 +182,7 @@ static const Vtx boo_castle_seg6_vertex_06017590[] = {
 };
 
 // 0x06017680
-static const Vtx boo_castle_seg6_vertex_06017680[] = {
+ const Vtx boo_castle_seg6_vertex_06017680[] = {
     {{{   156,      6,     33}, 0, {     0,      0}, {0x79, 0x0f, 0x22, 0x9e}}},
     {{{   128,    -69,    -89}, 0, {     0,      0}, {0x64, 0xc6, 0xce, 0x9e}}},
     {{{   122,     59,    -94}, 0, {     0,      0}, {0x5f, 0x2e, 0xbb, 0x9e}}},
@@ -201,7 +201,7 @@ static const Vtx boo_castle_seg6_vertex_06017680[] = {
 };
 
 // 0x06017770
-static const Vtx boo_castle_seg6_vertex_06017770[] = {
+ const Vtx boo_castle_seg6_vertex_06017770[] = {
     {{{     0,     62,   -162}, 0, {     0,      0}, {0x00, 0x5a, 0xa8, 0x9e}}},
     {{{   122,     59,    -94}, 0, {     0,      0}, {0x5f, 0x2e, 0xbb, 0x9e}}},
     {{{     0,     24,   -213}, 0, {     0,      0}, {0x00, 0x22, 0x86, 0x9e}}},
@@ -220,7 +220,7 @@ static const Vtx boo_castle_seg6_vertex_06017770[] = {
 };
 
 // 0x06017860
-static const Vtx boo_castle_seg6_vertex_06017860[] = {
+ const Vtx boo_castle_seg6_vertex_06017860[] = {
     {{{   -45,    -82,   -160}, 0, {     0,      0}, {0xc9, 0xc5, 0x9f, 0x9e}}},
     {{{    46,    -82,   -160}, 0, {     0,      0}, {0x2e, 0xba, 0xa2, 0x9e}}},
     {{{   -59,   -126,    -86}, 0, {     0,      0}, {0xe1, 0x90, 0xd0, 0x9e}}},
@@ -239,7 +239,7 @@ static const Vtx boo_castle_seg6_vertex_06017860[] = {
 };
 
 // 0x06017950
-static const Vtx boo_castle_seg6_vertex_06017950[] = {
+ const Vtx boo_castle_seg6_vertex_06017950[] = {
     {{{   -57,    128,    108}, 0, {     0,      0}, {0xd3, 0x60, 0x45, 0x9e}}},
     {{{     0,     60,    166}, 0, {     0,      0}, {0x00, 0x26, 0x79, 0x9e}}},
     {{{    58,    128,    108}, 0, {     0,      0}, {0x35, 0x58, 0x49, 0x9e}}},

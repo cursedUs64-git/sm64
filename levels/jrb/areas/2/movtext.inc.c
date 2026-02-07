@@ -1,5 +1,5 @@
 // 0x0701137C
-static Movtex jrb_movtex_sunken_ship_water_data[] = {
+ Movtex jrb_movtex_sunken_ship_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   20),
     MOV_TEX_ROT_SCALE(    6),

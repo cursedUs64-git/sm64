@@ -1,37 +1,37 @@
 // Whomp
 
 // ???
-UNUSED static const u64 whomp_unused_1 = 2;
+UNUSED  const u64 whomp_unused_1 = 2;
 
 
 // 0x0601C360
-ALIGNED8 static const Texture whomp_seg6_texture_0601C360[] = {
+ALIGNED8  const Texture whomp_seg6_texture_0601C360[] = {
 #include "actors/whomp/whomp_back.rgba16.inc.c"
 };
 
 // 0x0601D360
-ALIGNED8 static const Texture whomp_seg6_texture_0601D360[] = {
+ALIGNED8  const Texture whomp_seg6_texture_0601D360[] = {
 #include "actors/whomp/whomp_face.rgba16.inc.c"
 };
 
 // 0x0601D360
-ALIGNED8 static const Texture whomp_seg6_texture_0601E360[] = {
+ALIGNED8  const Texture whomp_seg6_texture_0601E360[] = {
 #include "actors/whomp/whomp_hand.rgba16.inc.c"
 };
 
 // 0x0601EB60
-ALIGNED8 static const Texture whomp_seg6_texture_0601EB60[] = {
+ALIGNED8  const Texture whomp_seg6_texture_0601EB60[] = {
 #include "actors/whomp/whomp_surface.rgba16.inc.c"
 };
 
 // 0x0601F360
-static const Lights1 whomp_seg6_lights_0601F360 = gdSPDefLights1(
+ const Lights1 whomp_seg6_lights_0601F360 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0601F378
-static const Vtx whomp_seg6_vertex_0601F378[] = {
+ const Vtx whomp_seg6_vertex_0601F378[] = {
     {{{   -52,    610,   -201}, 0, {   470,    990}, {0x00, 0x7e, 0x00, 0xff}}},
     {{{   -52,    610,    202}, 0, {     0,   2012}, {0x00, 0x7e, 0x00, 0xff}}},
     {{{  1559,    600,    202}, 0, {     0,  -1022}, {0x00, 0x7e, 0x00, 0xff}}},
@@ -51,7 +51,7 @@ static const Vtx whomp_seg6_vertex_0601F378[] = {
 };
 
 // 0x0601F478
-static const Vtx whomp_seg6_vertex_0601F478[] = {
+ const Vtx whomp_seg6_vertex_0601F478[] = {
     {{{   -60,   -598,   -201}, 0, {     0,   2012}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  1559,    600,   -201}, 0, {   990,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  1551,   -609,   -201}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -59,7 +59,7 @@ static const Vtx whomp_seg6_vertex_0601F478[] = {
 };
 
 // 0x0601F4B8
-static const Vtx whomp_seg6_vertex_0601F4B8[] = {
+ const Vtx whomp_seg6_vertex_0601F4B8[] = {
     {{{   -52,    610,    202}, 0, {     0,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -60,   -598,    202}, 0, {   990,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1551,   -609,    202}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -125,13 +125,13 @@ const Gfx whomp_seg6_dl_0601F5E0[] = {
 };
 
 // 0x0601F678
-static const Lights1 whomp_seg6_lights_0601F678 = gdSPDefLights1(
+ const Lights1 whomp_seg6_lights_0601F678 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0601F690
-static const Vtx whomp_seg6_vertex_0601F690[] = {
+ const Vtx whomp_seg6_vertex_0601F690[] = {
     {{{   290,      0,     85}, 0, {   952,      0}, {0xed, 0x1c, 0x7a, 0xff}}},
     {{{   -10,     35,     13}, 0, {   246,    976}, {0xed, 0x6a, 0x41, 0xff}}},
     {{{   -10,      0,     38}, 0, {   672,    976}, {0xed, 0xe3, 0x79, 0xff}}},
@@ -150,7 +150,7 @@ static const Vtx whomp_seg6_vertex_0601F690[] = {
 };
 
 // 0x0601F780
-static const Vtx whomp_seg6_vertex_0601F780[] = {
+ const Vtx whomp_seg6_vertex_0601F780[] = {
     {{{   290,    -48,    -65}, 0, {   952,      0}, {0xed, 0xa2, 0xae, 0xff}}},
     {{{   290,    -79,     28}, 0, {     0,      0}, {0xed, 0x95, 0x41, 0xff}}},
     {{{   -10,    -34,     13}, 0, {   246,    976}, {0xed, 0x83, 0x08, 0xff}}},
@@ -195,13 +195,13 @@ const Gfx whomp_seg6_dl_0601F880[] = {
 };
 
 // 0x0601F8E0
-static const Lights1 whomp_seg6_lights_0601F8E0 = gdSPDefLights1(
+ const Lights1 whomp_seg6_lights_0601F8E0 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0601F8F8
-static const Vtx whomp_seg6_vertex_0601F8F8[] = {
+ const Vtx whomp_seg6_vertex_0601F8F8[] = {
     {{{   -10,      0,    -37}, 0, {   246,    976}, {0xed, 0x1c, 0x86, 0xff}}},
     {{{   290,     80,    -26}, 0, {   952,      0}, {0xed, 0x6a, 0xbf, 0xff}}},
     {{{   290,      0,    -84}, 0, {     0,      0}, {0xed, 0xe2, 0x87, 0xff}}},
@@ -220,7 +220,7 @@ static const Vtx whomp_seg6_vertex_0601F8F8[] = {
 };
 
 // 0x0601F9E8
-static const Vtx whomp_seg6_vertex_0601F9E8[] = {
+ const Vtx whomp_seg6_vertex_0601F9E8[] = {
     {{{   -10,    -20,     28}, 0, {   246,    976}, {0xed, 0xa2, 0x52, 0xff}}},
     {{{   -10,    -34,    -12}, 0, {   672,    976}, {0xed, 0x95, 0xc0, 0xff}}},
     {{{   290,    -79,    -26}, 0, {   952,      0}, {0xed, 0x83, 0xf9, 0xff}}},
@@ -265,7 +265,7 @@ const Gfx whomp_seg6_dl_0601FAE8[] = {
 };
 
 // 0x0601FB48
-static const Vtx whomp_seg6_vertex_0601FB48[] = {
+ const Vtx whomp_seg6_vertex_0601FB48[] = {
     {{{   -37,    -37,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    38,    -37,      0}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    38,     38,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -301,7 +301,7 @@ const Gfx whomp_seg6_dl_0601FBC0[] = {
 };
 
 // 0x0601FC30
-static const Vtx whomp_seg6_vertex_0601FC30[] = {
+ const Vtx whomp_seg6_vertex_0601FC30[] = {
     {{{   -37,    -37,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    38,    -37,      0}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    38,     38,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -337,13 +337,13 @@ const Gfx whomp_seg6_dl_0601FCA8[] = {
 };
 
 // 0x0601FD18
-static const Lights1 whomp_seg6_lights_0601FD18 = gdSPDefLights1(
+ const Lights1 whomp_seg6_lights_0601FD18 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0601FD30
-static const Vtx whomp_seg6_vertex_0601FD30[] = {
+ const Vtx whomp_seg6_vertex_0601FD30[] = {
     {{{   174,    183,    177}, 0, {  1364,    114}, {0x01, 0x3e, 0x6e, 0xff}}},
     {{{   180,    257,      2}, 0, {   490,    -34}, {0x46, 0x69, 0x00, 0xff}}},
     {{{    22,    158,      2}, 0, {   490,    162}, {0x9b, 0x4c, 0xff, 0xff}}},
@@ -394,13 +394,13 @@ const Gfx whomp_seg6_dl_0601FEA8[] = {
 };
 
 // 0x0601FF08
-static const Lights1 whomp_seg6_lights_0601FF08 = gdSPDefLights1(
+ const Lights1 whomp_seg6_lights_0601FF08 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0601FF20
-static const Vtx whomp_seg6_vertex_0601FF20[] = {
+ const Vtx whomp_seg6_vertex_0601FF20[] = {
     {{{   154,   -260,     -2}, 0, {   470,    998}, {0x6e, 0xc3, 0xff, 0xff}}},
     {{{   174,    183,   -176}, 0, {  -110,    114}, {0x01, 0x3e, 0x92, 0xff}}},
     {{{   180,    257,     -1}, 0, {   472,    -34}, {0x46, 0x69, 0x00, 0xff}}},

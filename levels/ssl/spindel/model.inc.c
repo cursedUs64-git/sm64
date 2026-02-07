@@ -1,11 +1,11 @@
 // 0x070222A0 - 0x070222B8
-static const Lights1 ssl_seg7_lights_070222A0 = gdSPDefLights1(
+ const Lights1 ssl_seg7_lights_070222A0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x070222B8 - 0x070223B8
-static const Vtx ssl_seg7_vertex_070222B8[] = {
+ const Vtx ssl_seg7_vertex_070222B8[] = {
     {{{  -306,      0,      0}, 0, {   486,    912}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -306,     78,   -188}, 0, {   172,      0}, {0xb7, 0x1a, 0x9d, 0xff}}},
     {{{  -306,    -77,   -188}, 0, {   798,      0}, {0xb7, 0xcc, 0xa7, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx ssl_seg7_vertex_070222B8[] = {
 };
 
 // 0x070223B8 - 0x070224B8
-static const Vtx ssl_seg7_vertex_070223B8[] = {
+ const Vtx ssl_seg7_vertex_070223B8[] = {
     {{{  -306,      0,      0}, 0, {   486,    912}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -306,   -188,     78}, 0, {   172,      0}, {0xb7, 0xa7, 0x34, 0xff}}},
     {{{  -306,    -77,    189}, 0, {   798,      0}, {0xb7, 0xe6, 0x63, 0xff}}},
@@ -45,7 +45,7 @@ static const Vtx ssl_seg7_vertex_070223B8[] = {
 };
 
 // 0x070224B8 - 0x07022508
-static const Vtx ssl_seg7_vertex_070224B8[] = {
+ const Vtx ssl_seg7_vertex_070224B8[] = {
     {{{   307,    -77,   -188}, 0, {   798,      0}, {0x49, 0xe6, 0x9d, 0xff}}},
     {{{   307,     78,   -188}, 0, {   172,      0}, {0x49, 0x34, 0xa7, 0xff}}},
     {{{   307,      0,      0}, 0, {   486,    912}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -54,7 +54,7 @@ static const Vtx ssl_seg7_vertex_070224B8[] = {
 };
 
 // 0x07022508 - 0x070225F8
-static const Vtx ssl_seg7_vertex_07022508[] = {
+ const Vtx ssl_seg7_vertex_07022508[] = {
     {{{  -306,    -77,   -188}, 0, {   990,   2012}, {0xb7, 0xcc, 0xa7, 0xff}}},
     {{{   307,    -77,   -188}, 0, {   990,  -4120}, {0x49, 0xe6, 0x9d, 0xff}}},
     {{{   307,   -188,    -77}, 0, {     0,  -4120}, {0x49, 0xa7, 0xcc, 0xff}}},
@@ -73,7 +73,7 @@ static const Vtx ssl_seg7_vertex_07022508[] = {
 };
 
 // 0x070225F8 - 0x070226E8
-static const Vtx ssl_seg7_vertex_070225F8[] = {
+ const Vtx ssl_seg7_vertex_070225F8[] = {
     {{{  -306,    189,     78}, 0, {   990,   2012}, {0xb7, 0x63, 0x1a, 0xff}}},
     {{{   307,    189,     78}, 0, {   990,  -4120}, {0x49, 0x59, 0x34, 0xff}}},
     {{{   307,    189,    -77}, 0, {     0,  -4120}, {0x49, 0x63, 0xe6, 0xff}}},
@@ -92,7 +92,7 @@ static const Vtx ssl_seg7_vertex_070225F8[] = {
 };
 
 // 0x070226E8 - 0x07022728
-static const Vtx ssl_seg7_vertex_070226E8[] = {
+ const Vtx ssl_seg7_vertex_070226E8[] = {
     {{{  -306,     78,    189}, 0, {   990,   2012}, {0xb7, 0x34, 0x59, 0xff}}},
     {{{   307,     78,    189}, 0, {   990,  -4120}, {0x49, 0x1a, 0x63, 0xff}}},
     {{{   307,    189,     78}, 0, {     0,  -4120}, {0x49, 0x59, 0x34, 0xff}}},
@@ -100,7 +100,7 @@ static const Vtx ssl_seg7_vertex_070226E8[] = {
 };
 
 // 0x07022728 - 0x070227F0
-static const Gfx ssl_seg7_dl_07022728[] = {
+ const Gfx ssl_seg7_dl_07022728[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, generic_09002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -122,7 +122,7 @@ static const Gfx ssl_seg7_dl_07022728[] = {
 };
 
 // 0x070227F0 - 0x070228A8
-static const Gfx ssl_seg7_dl_070227F0[] = {
+ const Gfx ssl_seg7_dl_070227F0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, ssl_seg7_texture_07002800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -171,7 +171,7 @@ const Gfx ssl_seg7_dl_070228A8[] = {
 };
 
 // 0x07022970 - 0x070229B0
-static const Vtx ssl_seg7_vertex_07022970[] = {
+ const Vtx ssl_seg7_vertex_07022970[] = {
     {{{  -183,     82,    193}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   184,     82,    193}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   184,    193,     82}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -179,7 +179,7 @@ static const Vtx ssl_seg7_vertex_07022970[] = {
 };
 
 // 0x070229B0 - 0x070229E8
-static const Gfx ssl_seg7_dl_070229B0[] = {
+ const Gfx ssl_seg7_dl_070229B0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, ssl_seg7_texture_07003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

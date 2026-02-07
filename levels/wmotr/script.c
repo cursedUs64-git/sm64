@@ -15,7 +15,7 @@
 #include "make_const_nonconst.h"
 #include "levels/wmotr/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript wmotr_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  3996, -2739,  5477, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(82),  /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -2911,  3564, -3967, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(84),  /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -3258,  3359, -3946, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(105), /*bhv*/ bhvPoleGrabbing),
@@ -25,7 +25,7 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript wmotr_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -160, 1950, -470, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvHiddenRedCoinStar),
     RETURN(),
 };
@@ -53,8 +53,8 @@ const LevelScript level_wmotr_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS,    /*destLevel*/ LEVEL_CASTLE,         /*destArea*/ 2, /*destNode*/ WARP_NODE_38, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,      /*destLevel*/ LEVEL_CASTLE,         /*destArea*/ 2, /*destNode*/ WARP_NODE_6D, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_WARP_FLOOR, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
+        JUMP_LINK(wmotr_script_func_local_1),
+        JUMP_LINK(wmotr_script_func_local_2),
         TERRAIN(/*terrainData*/ wmotr_seg7_collision),
         MACRO_OBJECTS(/*objList*/ wmotr_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_SLIDE),

@@ -1,5 +1,5 @@
 // 0x07015E90 - 0x07015F10
-static const Vtx lll_seg7_vertex_07015E90[] = {
+ const Vtx lll_seg7_vertex_07015E90[] = {
     {{{  -255,    307,  -1023}, 0, { -2074,  -1054}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -383,    307,    896}, 0, { -2586,   6608}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -255,    307,   1024}, 0, { -2074,   7120}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -11,7 +11,7 @@ static const Vtx lll_seg7_vertex_07015E90[] = {
 };
 
 // 0x07015F10 - 0x07016000
-static const Vtx lll_seg7_vertex_07015F10[] = {
+ const Vtx lll_seg7_vertex_07015F10[] = {
     {{{  -383,      0,   -895}, 0, {     0,    990}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  -255,    307,  -1023}, 0, { -1234,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{  -255,      0,  -1023}, 0, { -1234,    990}, {0xa7, 0x00, 0xa7, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx lll_seg7_vertex_07015F10[] = {
 };
 
 // 0x07016000 - 0x070160F0
-static const Vtx lll_seg7_vertex_07016000[] = {
+ const Vtx lll_seg7_vertex_07016000[] = {
     {{{   384,      0,   -895}, 0, {  9336,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   384,    307,    896}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   384,      0,    896}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx lll_seg7_vertex_07016000[] = {
 };
 
 // 0x070160F0 - 0x07016130
-static const Vtx lll_seg7_vertex_070160F0[] = {
+ const Vtx lll_seg7_vertex_070160F0[] = {
     {{{   384,      0,    896}, 0, {  1172,    990}, {0x59, 0x00, 0x59, 0xff}}},
     {{{   256,    307,   1024}, 0, {     0,      0}, {0x59, 0x00, 0x59, 0xff}}},
     {{{   256,      0,   1024}, 0, {     0,    990}, {0x59, 0x00, 0x59, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx lll_seg7_vertex_070160F0[] = {
 };
 
 // 0x07016130 - 0x07016198
-static const Gfx lll_seg7_dl_07016130[] = {
+ const Gfx lll_seg7_dl_07016130[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_09005000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -71,7 +71,7 @@ static const Gfx lll_seg7_dl_07016130[] = {
 };
 
 // 0x07016198 - 0x07016250
-static const Gfx lll_seg7_dl_07016198[] = {
+ const Gfx lll_seg7_dl_07016198[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_09007800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

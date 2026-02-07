@@ -1,11 +1,11 @@
 // 0x07017578 - 0x07017590
-static const Lights1 lll_seg7_lights_07017578 = gdSPDefLights1(
+ const Lights1 lll_seg7_lights_07017578 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xfe, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07017590 - 0x07017650
-static const Vtx lll_seg7_vertex_07017590[] = {
+ const Vtx lll_seg7_vertex_07017590[] = {
     {{{  -511,    154,    128}, 0, {     0,    224}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -511,    154,    512}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   512,    154,    512}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -21,7 +21,7 @@ static const Vtx lll_seg7_vertex_07017590[] = {
 };
 
 // 0x07017650 - 0x07017740
-static const Vtx lll_seg7_vertex_07017650[] = {
+ const Vtx lll_seg7_vertex_07017650[] = {
     {{{  -511,      0,   -511}, 0, {  4056,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   512,    307,   -511}, 0, {   650,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   512,      0,   -511}, 0, {   650,    990}, {0x00, 0x00, 0x81, 0xff}}},
@@ -40,7 +40,7 @@ static const Vtx lll_seg7_vertex_07017650[] = {
 };
 
 // 0x07017740 - 0x070177B0
-static const Vtx lll_seg7_vertex_07017740[] = {
+ const Vtx lll_seg7_vertex_07017740[] = {
     {{{   512,      0,    512}, 0, {  3374,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -511,    154,    512}, 0, {     0,    478}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -511,      0,    512}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -51,7 +51,7 @@ static const Vtx lll_seg7_vertex_07017740[] = {
 };
 
 // 0x070177B0 - 0x07017818
-static const Gfx lll_seg7_dl_070177B0[] = {
+ const Gfx lll_seg7_dl_070177B0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_0900B800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -65,7 +65,7 @@ static const Gfx lll_seg7_dl_070177B0[] = {
 };
 
 // 0x07017818 - 0x070178A8
-static const Gfx lll_seg7_dl_07017818[] = {
+ const Gfx lll_seg7_dl_07017818[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_09007800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

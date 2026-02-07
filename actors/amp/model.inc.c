@@ -1,22 +1,22 @@
 // Amp
 
-ALIGNED8 static const Texture dAmpElectricityTexture[] = {
+ALIGNED8  const Texture dAmpElectricityTexture[] = {
 #include "actors/amp/amp_electricity.rgba16.inc.c"
 };
 
-ALIGNED8 static const Texture dAmpEyesTexture[] = {
+ALIGNED8  const Texture dAmpEyesTexture[] = {
 #include "actors/amp/amp_eyes.rgba16.inc.c"
 };
 
-ALIGNED8 static const Texture dAmpBodyTexture[] = {
+ALIGNED8  const Texture dAmpBodyTexture[] = {
 #include "actors/amp/amp_body.rgba16.inc.c"
 };
 
-ALIGNED8 static const Texture dAmpMouthTexture[] = {
+ALIGNED8  const Texture dAmpMouthTexture[] = {
 #include "actors/amp/amp_mouth.rgba16.inc.c"
 };
 
-static const Vtx dAmpElectricityVertices[] = {
+ const Vtx dAmpElectricityVertices[] = {
     {{{   224,      0,    -89}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   187,    149,      0}, 0, {   223,   1078}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   224,      0,     90}, 0, {   479,    478}, {0xff, 0xff, 0xff, 0xff}}},
@@ -50,7 +50,7 @@ const Gfx dAmpElectricityDl[] = {
     gsSPEndDisplayList(),
 };
 
-static const Vtx dAmpEyeVertices[] = {
+ const Vtx dAmpEyeVertices[] = {
     {{{    68,     72,    158}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -27,    -71,    164}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    68,    -71,    158}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -83,7 +83,7 @@ const Gfx dAmpEyeDl[] = {
     gsSPEndDisplayList(),
 };
 
-static const Vtx dAmpMouthVertices[] = {
+ const Vtx dAmpMouthVertices[] = {
     {{{   -29,     72,    164}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -124,    -71,    121}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -29,    -71,    164}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -116,7 +116,7 @@ const Gfx dAmpMouthDl[] = {
     gsSPEndDisplayList(),
 };
 
-static const Vtx dAmpBodyVertices[] = {
+ const Vtx dAmpBodyVertices[] = {
     {{{   -39,    -39,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    40,     40,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -39,     40,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -155,12 +155,12 @@ const Gfx dAmpBodyDl[] = {
  * broken model.
  */
 
-UNUSED static const Lights1 dAmpUnused3DLights = gdSPDefLights1(
+UNUSED  const Lights1 dAmpUnused3DLights = gdSPDefLights1(
     0x33, 0x3f, 0x00,
     0xcf, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
-UNUSED static const Vtx dAmpUnused3DVtx01[] = {
+UNUSED  const Vtx dAmpUnused3DVtx01[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   240,   -160,      0}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   280,      0,    -35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
@@ -169,7 +169,7 @@ UNUSED static const Vtx dAmpUnused3DVtx01[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx02[] = {
+UNUSED  const Vtx dAmpUnused3DVtx02[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   240,   -160,      0}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   280,      0,    -35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
@@ -178,7 +178,7 @@ UNUSED static const Vtx dAmpUnused3DVtx02[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx03[] = {
+UNUSED  const Vtx dAmpUnused3DVtx03[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   240,   -160,      0}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
     {{{   280,      0,    -35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0x00}}},
@@ -187,7 +187,7 @@ UNUSED static const Vtx dAmpUnused3DVtx03[] = {
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx04[] = {
+UNUSED  const Vtx dAmpUnused3DVtx04[] = {
     {{{   280,      0,    -35}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0x00}}},
     {{{   240,    160,      0}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0x00}}},
     {{{   280,      0,     35}, 0, {     0,      0}, {0x7b, 0x1e, 0x00, 0x00}}},
@@ -196,7 +196,7 @@ UNUSED static const Vtx dAmpUnused3DVtx04[] = {
     {{{   280,      0,    -35}, 0, {     0,      0}, {0x7b, 0xe2, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx05[] = {
+UNUSED  const Vtx dAmpUnused3DVtx05[] = {
     {{{  -184,    -54,    -54}, 0, {     0,      0}, {0x8b, 0xde, 0xde, 0x00}}},
     {{{  -184,    -76,      0}, 0, {     0,      0}, {0x8b, 0xd0, 0x00, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -215,7 +215,7 @@ UNUSED static const Vtx dAmpUnused3DVtx05[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx06[] = {
+UNUSED  const Vtx dAmpUnused3DVtx06[] = {
     {{{  -184,      0,    -76}, 0, {     0,      0}, {0x8b, 0x00, 0xd0, 0xff}}},
     {{{  -184,    -54,    -54}, 0, {     0,      0}, {0x8b, 0xde, 0xde, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -234,7 +234,7 @@ UNUSED static const Vtx dAmpUnused3DVtx06[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx07[] = {
+UNUSED  const Vtx dAmpUnused3DVtx07[] = {
     {{{  -184,     54,    -54}, 0, {     0,      0}, {0x8b, 0x22, 0xde, 0xff}}},
     {{{  -184,      0,    -76}, 0, {     0,      0}, {0x8b, 0x00, 0xd0, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -253,7 +253,7 @@ UNUSED static const Vtx dAmpUnused3DVtx07[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx08[] = {
+UNUSED  const Vtx dAmpUnused3DVtx08[] = {
     {{{  -184,     76,      0}, 0, {     0,      0}, {0x8b, 0x30, 0x00, 0xff}}},
     {{{  -184,     54,    -54}, 0, {     0,      0}, {0x8b, 0x22, 0xde, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -272,7 +272,7 @@ UNUSED static const Vtx dAmpUnused3DVtx08[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx09[] = {
+UNUSED  const Vtx dAmpUnused3DVtx09[] = {
     {{{  -184,     54,     54}, 0, {     0,      0}, {0x8b, 0x22, 0x22, 0xff}}},
     {{{  -184,     76,      0}, 0, {     0,      0}, {0x8b, 0x30, 0x00, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -291,7 +291,7 @@ UNUSED static const Vtx dAmpUnused3DVtx09[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx10[] = {
+UNUSED  const Vtx dAmpUnused3DVtx10[] = {
     {{{  -184,      0,     76}, 0, {     0,      0}, {0x8b, 0x00, 0x30, 0xff}}},
     {{{  -184,     54,     54}, 0, {     0,      0}, {0x8b, 0x22, 0x22, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -310,7 +310,7 @@ UNUSED static const Vtx dAmpUnused3DVtx10[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx11[] = {
+UNUSED  const Vtx dAmpUnused3DVtx11[] = {
     {{{  -184,    -54,     54}, 0, {     0,      0}, {0x8b, 0xde, 0x22, 0xff}}},
     {{{  -184,      0,     76}, 0, {     0,      0}, {0x8b, 0x00, 0x30, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -329,7 +329,7 @@ UNUSED static const Vtx dAmpUnused3DVtx11[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx12[] = {
+UNUSED  const Vtx dAmpUnused3DVtx12[] = {
     {{{  -184,    -76,      0}, 0, {     0,      0}, {0x8b, 0xd0, 0x00, 0xff}}},
     {{{  -184,    -54,     54}, 0, {     0,      0}, {0x8b, 0xde, 0x22, 0x00}}},
     {{{  -200,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -348,20 +348,20 @@ UNUSED static const Vtx dAmpUnused3DVtx12[] = {
     {{{   200,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx13[] = {
+UNUSED  const Vtx dAmpUnused3DVtx13[] = {
     {{{   -37,     90,    205}, 0, {     0,      0}, {0xcc, 0x00, 0x73, 0x00}}},
     {{{  -129,     90,    163}, 0, {     0,      0}, {0xcc, 0x00, 0x73, 0x00}}},
     {{{  -129,    -90,    163}, 0, {     0,      0}, {0xcc, 0x00, 0x73, 0x00}}},
     {{{   -37,    -90,    205}, 0, {     0,      0}, {0xcc, 0x00, 0x73, 0xff}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx14[] = {
+UNUSED  const Vtx dAmpUnused3DVtx14[] = {
     {{{   112,     -7,    182}, 0, {     0,      0}, {0x4c, 0xd8, 0x5c, 0x00}}},
     {{{    66,   -139,    162}, 0, {     0,      0}, {0x4c, 0xd8, 0x5c, 0x00}}},
     {{{   175,    -77,     98}, 0, {     0,      0}, {0x4c, 0xd8, 0x5c, 0x00}}},
 };
 
-UNUSED static const Vtx dAmpUnused3DVtx15[] = {
+UNUSED  const Vtx dAmpUnused3DVtx15[] = {
     {{{    63,     90,    198}, 0, {     0,      0}, {0x08, 0x00, 0x7e, 0x00}}},
     {{{   -35,     90,    205}, 0, {     0,      0}, {0x08, 0x00, 0x7e, 0x00}}},
     {{{   -35,    -90,    205}, 0, {     0,      0}, {0x08, 0x00, 0x7e, 0x00}}},

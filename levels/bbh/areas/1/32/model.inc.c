@@ -1,5 +1,5 @@
 // 0x0701A008 - 0x0701A048
-static const Vtx bbh_seg7_vertex_0701A008[] = {
+ const Vtx bbh_seg7_vertex_0701A008[] = {
     {{{   640,  -1433,   1536}, 0, { -1564,  -2588}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   640,  -2354,   1536}, 0, {  3034,   2010}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   640,  -2354,   2048}, 0, {   480,   4564}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx bbh_seg7_vertex_0701A008[] = {
 };
 
 // 0x0701A048 - 0x0701A080
-static const Gfx bbh_seg7_dl_0701A048[] = {
+ const Gfx bbh_seg7_dl_0701A048[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

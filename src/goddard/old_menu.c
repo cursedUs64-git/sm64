@@ -21,13 +21,13 @@
  */
 
 // bss
-static char sDefSettingsMenuStr[0x100];
-static struct GdVec3f sStaticVec;
-UNUSED static struct GdVec3f unusedVec;
-static struct ObjGadget *sCurGadgetPtr;
+ char sDefSettingsMenuStr[0x100];
+ struct GdVec3f sStaticVec;
+UNUSED  struct GdVec3f unusedVec;
+ struct ObjGadget *sCurGadgetPtr;
 
 // forward declarations
-static void reset_gadget_default(struct ObjGadget *);
+ void reset_gadget_default(struct ObjGadget *);
 
 /* 239EC0 -> 239F78 */
 void get_objvalue(union ObjVarVal *dst, enum ValPtrType type, void *base, size_t offset) {
@@ -63,7 +63,7 @@ void Unknown8018B7A8(void *a0) {
  *
  * @param itemId  ID of the menu item that was clicked
  */
-static void menu_cb_default_settings(intptr_t itemId) {
+ void menu_cb_default_settings(intptr_t itemId) {
     struct ObjGroup *group = (struct ObjGroup *)itemId;  // Unpack pointer from menu item ID
     apply_to_obj_types_in_group(OBJ_TYPE_GADGETS, (applyproc_t) reset_gadget_default, group);
     apply_to_obj_types_in_group(OBJ_TYPE_VIEWS, (applyproc_t) stub_renderer_6, gGdViewsGroup);
@@ -72,7 +72,7 @@ static void menu_cb_default_settings(intptr_t itemId) {
 /**
  * Unused - appends a menu item for the group to sDefSettingsMenuStr.
  */
-static void add_item_to_default_settings_menu(struct ObjGroup *group) {
+ void add_item_to_default_settings_menu(struct ObjGroup *group) {
     char buf[0x100];
 
     if (group->debugPrint == 1) {
@@ -172,7 +172,7 @@ void set_static_gdgt_value(struct ObjValPtr *vp) {
 }
 
 /* 23A488 -> 23A4D0 */
-static void reset_gadget_default(struct ObjGadget *gdgt) {
+ void reset_gadget_default(struct ObjGadget *gdgt) {
     UNUSED u8 filler[4];
 
     sCurGadgetPtr = gdgt;

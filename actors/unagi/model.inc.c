@@ -1,85 +1,85 @@
 // Unagi (Eel)
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused1 = gdSPDefLights1(
     0x2c, 0x25, 0x00,
     0xb2, 0x94, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused2 = gdSPDefLights1(
     0x35, 0x00, 0x00,
     0xd5, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused3 = gdSPDefLights1(
     0x37, 0x00, 0x00,
     0xdd, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused4 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused5 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused5 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused6 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused6 = gdSPDefLights1(
     0x34, 0x00, 0x00,
     0xd2, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused7 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused7 = gdSPDefLights1(
     0x34, 0x00, 0x00,
     0xd3, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 unagi_lights_unused8 = gdSPDefLights1(
+UNUSED  const Lights1 unagi_lights_unused8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500AF20
-ALIGNED8 static const Texture unagi_seg5_texture_0500AF20[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500AF20[] = {
 #include "actors/unagi/unagi_body.rgba16.inc.c"
 };
 
 // 0x0500B720
-ALIGNED8 static const Texture unagi_seg5_texture_0500B720[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500B720[] = {
 #include "actors/unagi/unagi_eye.rgba16.inc.c"
 };
 
 // 0x0500B920
-ALIGNED8 static const Texture unagi_seg5_texture_0500B920[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500B920[] = {
 #include "actors/unagi/unagi_head_base.rgba16.inc.c"
 };
 
 // 0x0500C120
-ALIGNED8 static const Texture unagi_seg5_texture_0500C120[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500C120[] = {
 #include "actors/unagi/unagi_tooth.rgba16.inc.c"
 };
 
 // 0x0500C320
-ALIGNED8 static const Texture unagi_seg5_texture_0500C320[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500C320[] = {
 #include "actors/unagi/unagi_mouth.rgba16.inc.c"
 };
 
 // 0x0500C3A0
-ALIGNED8 static const Texture unagi_seg5_texture_0500C3A0[] = {
+ALIGNED8  const Texture unagi_seg5_texture_0500C3A0[] = {
 #include "actors/unagi/unagi_tail.rgba16.inc.c"
 };
 
 // 0x0500CBA0
-static const Vtx unagi_seg5_vertex_0500CBA0[] = {
+ const Vtx unagi_seg5_vertex_0500CBA0[] = {
     {{{   179,     42,    160}, 0, {   -25,    134}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,   -164}, 0, {   224,    223}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   179,     42,   -150}, 0, {   213,    134}, {0xff, 0xff, 0xff, 0xff}}},
@@ -90,7 +90,7 @@ static const Vtx unagi_seg5_vertex_0500CBA0[] = {
 };
 
 // 0x0500CC10
-static const Vtx unagi_seg5_vertex_0500CC10[] = {
+ const Vtx unagi_seg5_vertex_0500CC10[] = {
     {{{     0,      0,    170}, 0, {   670,    620}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   106,    210,     85}, 0, {   518,   1064}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -59,    157,     53}, 0, {   754,    954}, {0xff, 0xff, 0xff, 0xff}}},
@@ -167,7 +167,7 @@ const Gfx unagi_seg5_dl_0500CDD0[] = {
 };
 
 // 0x0500CEA8
-static const Vtx unagi_seg5_vertex_0500CEA8[] = {
+ const Vtx unagi_seg5_vertex_0500CEA8[] = {
     {{{   528,      0,   -117}, 0, {     0,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   531,    208,    -60}, 0, {   -36,   1008}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   646,      0,      0}, 0, {  -258,    452}, {0xff, 0xff, 0xff, 0xff}}},
@@ -182,7 +182,7 @@ static const Vtx unagi_seg5_vertex_0500CEA8[] = {
 };
 
 // 0x0500CF58
-static const Vtx unagi_seg5_vertex_0500CF58[] = {
+ const Vtx unagi_seg5_vertex_0500CF58[] = {
     {{{   531,    208,     61}, 0, {     0,      0}, {0x89, 0x19, 0x2e, 0xff}}},
     {{{   531,    208,    -60}, 0, {     0,      0}, {0x89, 0x19, 0x2e, 0xff}}},
     {{{     0,    188,      0}, 0, {     0,      0}, {0x89, 0x19, 0x2e, 0xff}}},
@@ -244,7 +244,7 @@ const Gfx unagi_seg5_dl_0500D050[] = {
 };
 
 // 0x0500D120
-static const Vtx unagi_seg5_vertex_0500D120[] = {
+ const Vtx unagi_seg5_vertex_0500D120[] = {
     {{{  -357,      0,      0}, 0, {  -242,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -253,      0,    118}, 0, {     0,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -253,    160,      0}, 0, {     0,     22}, {0xff, 0xff, 0xff, 0xff}}},
@@ -302,7 +302,7 @@ const Gfx unagi_seg5_dl_0500D268[] = {
 };
 
 // 0x0500D320
-static const Vtx unagi_seg5_vertex_0500D320[] = {
+ const Vtx unagi_seg5_vertex_0500D320[] = {
     {{{   -93,      0,      0}, 0, {  -224,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,     99}, 0, {     0,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    151,      0}, 0, {     0,     46}, {0xff, 0xff, 0xff, 0xff}}},
@@ -360,7 +360,7 @@ const Gfx unagi_seg5_dl_0500D468[] = {
 };
 
 // 0x0500D520
-static const Vtx unagi_seg5_vertex_0500D520[] = {
+ const Vtx unagi_seg5_vertex_0500D520[] = {
     {{{   -79,      0,      0}, 0, {  -202,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,     90}, 0, {     0,    452}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    146,      0}, 0, {     0,     60}, {0xff, 0xff, 0xff, 0xff}}},
@@ -418,7 +418,7 @@ const Gfx unagi_seg5_dl_0500D668[] = {
 };
 
 // 0x0500D720
-static const Vtx unagi_seg5_vertex_0500D720[] = {
+ const Vtx unagi_seg5_vertex_0500D720[] = {
     {{{   327,    -97,      0}, 0, {   676,    896}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   471,      0,      0}, 0, {   988,    478}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      0,     57}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
@@ -472,7 +472,7 @@ const Gfx unagi_seg5_dl_0500D828[] = {
 };
 
 // 0x0500D8E0
-static const Vtx unagi_seg5_vertex_0500D8E0[] = {
+ const Vtx unagi_seg5_vertex_0500D8E0[] = {
     {{{   226,     66,   -164}, 0, {     0,    223}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   221,    236,     61}, 0, {   138,    142}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   226,     66,    170}, 0, {   219,    223}, {0xff, 0xff, 0xff, 0xff}}},
@@ -486,7 +486,7 @@ static const Vtx unagi_seg5_vertex_0500D8E0[] = {
 };
 
 // 0x0500D980
-static const Vtx unagi_seg5_vertex_0500D980[] = {
+ const Vtx unagi_seg5_vertex_0500D980[] = {
     {{{   679,     53,     96}, 0, {    26,    592}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   405,    108,    160}, 0, {   414,    710}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   506,    -68,    121}, 0, {   272,    332}, {0xff, 0xff, 0xff, 0xff}}},
@@ -505,7 +505,7 @@ static const Vtx unagi_seg5_vertex_0500D980[] = {
 };
 
 // 0x0500DA70
-static const Vtx unagi_seg5_vertex_0500DA70[] = {
+ const Vtx unagi_seg5_vertex_0500DA70[] = {
     {{{     3,    208,    -60}, 0, {   986,    922}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   221,    236,    -60}, 0, {   676,    980}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   226,     66,   -164}, 0, {   668,    620}, {0xff, 0xff, 0xff, 0xff}}},
@@ -596,7 +596,7 @@ const Gfx unagi_seg5_dl_0500DD08[] = {
 };
 
 // 0x0500DDE0
-static const Vtx unagi_seg5_vertex_0500DDE0[] = {
+ const Vtx unagi_seg5_vertex_0500DDE0[] = {
     {{{   506,    -68,   -120}, 0, {  1519,    199}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   679,     53,    -99}, 0, {   224,    609}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   700,    -50,    -42}, 0, {   224,   -160}, {0xff, 0xff, 0xff, 0xff}}},
@@ -647,7 +647,7 @@ const Gfx unagi_seg5_dl_0500DEB8[] = {
 };
 
 // 0x0500DF70
-static const Vtx unagi_seg5_vertex_0500DF70[] = {
+ const Vtx unagi_seg5_vertex_0500DF70[] = {
     {{{   673,    102,    -92}, 0, {  1493,    521}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   758,    123,      0}, 0, {   -43,    646}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   760,     50,      0}, 0, {   -43,    -51}, {0xff, 0xff, 0xff, 0xff}}},
@@ -702,7 +702,7 @@ const Gfx unagi_seg5_dl_0500E088[] = {
 };
 
 // 0x0500E140
-static const Vtx unagi_seg5_vertex_0500E140[] = {
+ const Vtx unagi_seg5_vertex_0500E140[] = {
     {{{   164,     46,    153}, 0, { -4789,    510}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   424,    -17,     85}, 0, {   558,    496}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   426,     27,     84}, 0, {   558,     27}, {0xff, 0xff, 0xff, 0xff}}},

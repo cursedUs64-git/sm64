@@ -1,5 +1,5 @@
 // 0x07079090 - 0x070790F0
-static Movtex inside_castle_movtex_green_room_water_data[] = {
+ Movtex inside_castle_movtex_green_room_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   10),
     MOV_TEX_ROT_SCALE(   10),
@@ -14,7 +14,7 @@ static Movtex inside_castle_movtex_green_room_water_data[] = {
 };
 
 // 0x070790B0 - 0x070790D0
-static Movtex inside_castle_movtex_moat_leftover_water_data[] = {
+ Movtex inside_castle_movtex_moat_leftover_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    5),
     MOV_TEX_ROT_SCALE(    7),
@@ -29,7 +29,7 @@ static Movtex inside_castle_movtex_moat_leftover_water_data[] = {
 };
 
 // 0x070790D0 - 0x07079100
-static Movtex inside_castle_movtex_moat_water_data[] = {
+ Movtex inside_castle_movtex_moat_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    3),
     MOV_TEX_ROT_SCALE(    5),

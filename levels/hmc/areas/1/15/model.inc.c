@@ -1,5 +1,5 @@
 // 0x07014B88 - 0x07014BC8
-static const Vtx hmc_seg7_vertex_07014B88[] = {
+ const Vtx hmc_seg7_vertex_07014B88[] = {
     {{{  3021,    922,   -296}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2407,    922,   -296}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2407,    307,   -296}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx hmc_seg7_vertex_07014B88[] = {
 };
 
 // 0x07014BC8 - 0x07014C00
-static const Gfx hmc_seg7_dl_07014BC8[] = {
+ const Gfx hmc_seg7_dl_07014BC8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, hmc_seg7_texture_07002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

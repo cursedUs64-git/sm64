@@ -1,5 +1,5 @@
 // 0x050065D8
-static const struct Animation monty_mole_seg5_anim_050065D8 = {
+ const struct Animation monty_mole_seg5_anim_050065D8 = {
     0,
     0,
     0,

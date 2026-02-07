@@ -4,13 +4,13 @@
 #include "make_const_nonconst.h"
 
 // 0x07000000 - 0x07000018
-static const Lights1 debug_level_select_lights_07000000 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07000000 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x07000018 - 0x07000108
-static const Vtx debug_level_select_vertex_07000018[] = {
+ const Vtx debug_level_select_vertex_07000018[] = {
     {{{   -23,     74,    -19}, 0, {     0,      0}, {0xbc, 0x6c, 0x00, 0x00}}},
     {{{   -65,     32,    -19}, 0, {     0,      0}, {0xa4, 0x59, 0x00, 0x00}}},
     {{{   -65,     32,     20}, 0, {     0,      0}, {0xa4, 0x59, 0x00, 0x00}}},
@@ -29,7 +29,7 @@ static const Vtx debug_level_select_vertex_07000018[] = {
 };
 
 // 0x07000108 - 0x070001F8
-static const Vtx debug_level_select_vertex_07000108[] = {
+ const Vtx debug_level_select_vertex_07000108[] = {
     {{{    -8,    -21,    -19}, 0, {     0,      0}, {0xd9, 0x79, 0x00, 0x00}}},
     {{{   -59,    -38,     20}, 0, {     0,      0}, {0xd9, 0x79, 0x00, 0x00}}},
     {{{    -8,    -21,     20}, 0, {     0,      0}, {0xd9, 0x79, 0x00, 0x00}}},
@@ -48,7 +48,7 @@ static const Vtx debug_level_select_vertex_07000108[] = {
 };
 
 // 0x070001F8 - 0x070002E8
-static const Vtx debug_level_select_vertex_070001F8[] = {
+ const Vtx debug_level_select_vertex_070001F8[] = {
     {{{    31,    -57,    -19}, 0, {     0,      0}, {0x5a, 0xa5, 0x00, 0x00}}},
     {{{    53,    -20,    -19}, 0, {     0,      0}, {0x6e, 0xc0, 0x00, 0x00}}},
     {{{    53,    -20,     20}, 0, {     0,      0}, {0x6e, 0xc0, 0x00, 0x00}}},
@@ -67,7 +67,7 @@ static const Vtx debug_level_select_vertex_070001F8[] = {
 };
 
 // 0x070002E8 - 0x070003D8
-static const Vtx debug_level_select_vertex_070002E8[] = {
+ const Vtx debug_level_select_vertex_070002E8[] = {
     {{{   -10,     30,    -19}, 0, {     0,      0}, {0x55, 0xa0, 0x00, 0x00}}},
     {{{     5,     44,     20}, 0, {     0,      0}, {0x55, 0xa0, 0x00, 0x00}}},
     {{{   -10,     30,     20}, 0, {     0,      0}, {0x55, 0xa0, 0x00, 0x00}}},
@@ -86,7 +86,7 @@ static const Vtx debug_level_select_vertex_070002E8[] = {
 };
 
 // 0x070003D8 - 0x070004C8
-static const Vtx debug_level_select_vertex_070003D8[] = {
+ const Vtx debug_level_select_vertex_070003D8[] = {
     {{{    56,     49,    -19}, 0, {     0,      0}, {0x4b, 0x67, 0x00, 0x00}}},
     {{{    19,     77,    -19}, 0, {     0,      0}, {0x15, 0x7e, 0x00, 0x00}}},
     {{{    19,     77,     20}, 0, {     0,      0}, {0x32, 0x75, 0x00, 0x00}}},
@@ -105,7 +105,7 @@ static const Vtx debug_level_select_vertex_070003D8[] = {
 };
 
 // 0x070004C8 - 0x070005B8
-static const Vtx debug_level_select_vertex_070004C8[] = {
+ const Vtx debug_level_select_vertex_070004C8[] = {
     {{{   -23,     74,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    56,     49,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    34,     28,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -124,7 +124,7 @@ static const Vtx debug_level_select_vertex_070004C8[] = {
 };
 
 // 0x070005B8 - 0x070006A8
-static const Vtx debug_level_select_vertex_070005B8[] = {
+ const Vtx debug_level_select_vertex_070005B8[] = {
     {{{    31,    -57,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -59,    -38,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -8,    -21,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -143,7 +143,7 @@ static const Vtx debug_level_select_vertex_070005B8[] = {
 };
 
 // 0x070006A8 - 0x07000798
-static const Vtx debug_level_select_vertex_070006A8[] = {
+ const Vtx debug_level_select_vertex_070006A8[] = {
     {{{    -8,    -21,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -23,    -71,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    31,    -57,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -162,7 +162,7 @@ static const Vtx debug_level_select_vertex_070006A8[] = {
 };
 
 // 0x07000798 - 0x07000858
-static const Vtx debug_level_select_vertex_07000798[] = {
+ const Vtx debug_level_select_vertex_07000798[] = {
     {{{     5,     44,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    19,     77,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -23,     74,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -220,13 +220,13 @@ const Gfx debug_level_select_dl_07000858[] = {
 };
 
 // 0x07000A28 - 0x07000A40
-static const Lights1 debug_level_select_lights_07000A28 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07000A28 = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x00, 0x00, 0x50
 );
 
 // 0x07000A40 - 0x07000B30
-static const Vtx debug_level_select_vertex_07000A40[] = {
+ const Vtx debug_level_select_vertex_07000A40[] = {
     {{{   -41,     81,    -22}, 0, {     0,      0}, {0x80, 0x00, 0x00, 0x00}}},
     {{{   -42,    -36,    -22}, 0, {     0,      0}, {0x88, 0xd3, 0x00, 0x00}}},
     {{{   -42,    -36,     20}, 0, {     0,      0}, {0x81, 0xe9, 0x00, 0x00}}},
@@ -245,7 +245,7 @@ static const Vtx debug_level_select_vertex_07000A40[] = {
 };
 
 // 0x07000B30 - 0x07000C20
-static const Vtx debug_level_select_vertex_07000B30[] = {
+ const Vtx debug_level_select_vertex_07000B30[] = {
     {{{   -20,    -72,    -22}, 0, {     0,      0}, {0x11, 0x81, 0x00, 0x00}}},
     {{{    33,    -64,     20}, 0, {     0,      0}, {0x30, 0x89, 0x00, 0x00}}},
     {{{   -20,    -72,     20}, 0, {     0,      0}, {0x11, 0x81, 0x00, 0x00}}},
@@ -264,7 +264,7 @@ static const Vtx debug_level_select_vertex_07000B30[] = {
 };
 
 // 0x07000C20 - 0x07000D10
-static const Vtx debug_level_select_vertex_07000C20[] = {
+ const Vtx debug_level_select_vertex_07000C20[] = {
     {{{    39,     58,    -22}, 0, {     0,      0}, {0xdf, 0x7b, 0x00, 0x00}}},
     {{{     6,     49,    -22}, 0, {     0,      0}, {0xdf, 0x7b, 0x00, 0x00}}},
     {{{     6,     49,     20}, 0, {     0,      0}, {0xdf, 0x7b, 0x00, 0x00}}},
@@ -283,7 +283,7 @@ static const Vtx debug_level_select_vertex_07000C20[] = {
 };
 
 // 0x07000D10 - 0x07000E00
-static const Vtx debug_level_select_vertex_07000D10[] = {
+ const Vtx debug_level_select_vertex_07000D10[] = {
     {{{    21,    -18,    -22}, 0, {     0,      0}, {0xb0, 0x64, 0x00, 0x00}}},
     {{{    -4,    -38,     20}, 0, {     0,      0}, {0xb0, 0x64, 0x00, 0x00}}},
     {{{    21,    -18,     20}, 0, {     0,      0}, {0xb0, 0x64, 0x00, 0x00}}},
@@ -302,7 +302,7 @@ static const Vtx debug_level_select_vertex_07000D10[] = {
 };
 
 // 0x07000E00 - 0x07000EF0
-static const Vtx debug_level_select_vertex_07000E00[] = {
+ const Vtx debug_level_select_vertex_07000E00[] = {
     {{{   -41,     81,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -4,     81,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -4,    -38,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -321,7 +321,7 @@ static const Vtx debug_level_select_vertex_07000E00[] = {
 };
 
 // 0x07000EF0 - 0x07000FE0
-static const Vtx debug_level_select_vertex_07000EF0[] = {
+ const Vtx debug_level_select_vertex_07000EF0[] = {
     {{{   -20,    -72,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -42,    -36,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -41,     81,    -22}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -340,7 +340,7 @@ static const Vtx debug_level_select_vertex_07000EF0[] = {
 };
 
 // 0x07000FE0 - 0x070010D0
-static const Vtx debug_level_select_vertex_07000FE0[] = {
+ const Vtx debug_level_select_vertex_07000FE0[] = {
     {{{    33,    -64,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    39,     58,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{     6,     49,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -359,7 +359,7 @@ static const Vtx debug_level_select_vertex_07000FE0[] = {
 };
 
 // 0x070010D0 - 0x07001100
-static const Vtx debug_level_select_vertex_070010D0[] = {
+ const Vtx debug_level_select_vertex_070010D0[] = {
     {{{    -4,    -38,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -42,    -36,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    33,    -64,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -403,13 +403,13 @@ const Gfx debug_level_select_dl_07001100[] = {
 };
 
 // 0x07001288 - 0x070012A0
-static const Lights1 debug_level_select_lights_07001288 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07001288 = gdSPDefLights1(
     0x00, 0x56, 0x00,
     0x00, 0xad, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x070012A0 - 0x07001390
-static const Vtx debug_level_select_vertex_070012A0[] = {
+ const Vtx debug_level_select_vertex_070012A0[] = {
     {{{     3,     82,    -19}, 0, {     0,      0}, {0x0f, 0x7e, 0x00, 0x00}}},
     {{{   -42,     82,    -19}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   -42,     82,     20}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -428,7 +428,7 @@ static const Vtx debug_level_select_vertex_070012A0[] = {
 };
 
 // 0x07001390 - 0x07001480
-static const Vtx debug_level_select_vertex_07001390[] = {
+ const Vtx debug_level_select_vertex_07001390[] = {
     {{{   -42,    -71,    -19}, 0, {     0,      0}, {0x02, 0x80, 0x00, 0x00}}},
     {{{    -5,    -71,     20}, 0, {     0,      0}, {0x02, 0x80, 0x00, 0x00}}},
     {{{   -42,    -71,     20}, 0, {     0,      0}, {0x02, 0x80, 0x00, 0x00}}},
@@ -447,7 +447,7 @@ static const Vtx debug_level_select_vertex_07001390[] = {
 };
 
 // 0x07001480 - 0x07001570
-static const Vtx debug_level_select_vertex_07001480[] = {
+ const Vtx debug_level_select_vertex_07001480[] = {
     {{{    20,    -44,    -19}, 0, {     0,      0}, {0x3e, 0x90, 0x00, 0x00}}},
     {{{    58,     -8,    -19}, 0, {     0,      0}, {0x7e, 0xeb, 0x00, 0x00}}},
     {{{    58,     -8,     20}, 0, {     0,      0}, {0x70, 0xc2, 0x00, 0x00}}},
@@ -466,7 +466,7 @@ static const Vtx debug_level_select_vertex_07001480[] = {
 };
 
 // 0x07001570 - 0x07001660
-static const Vtx debug_level_select_vertex_07001570[] = {
+ const Vtx debug_level_select_vertex_07001570[] = {
     {{{    47,     65,    -19}, 0, {     0,      0}, {0x2e, 0x77, 0x00, 0x00}}},
     {{{     3,     82,     20}, 0, {     0,      0}, {0x1f, 0x7c, 0x00, 0x00}}},
     {{{    47,     65,     20}, 0, {     0,      0}, {0x2e, 0x77, 0x00, 0x00}}},
@@ -485,7 +485,7 @@ static const Vtx debug_level_select_vertex_07001570[] = {
 };
 
 // 0x07001660 - 0x07001750
-static const Vtx debug_level_select_vertex_07001660[] = {
+ const Vtx debug_level_select_vertex_07001660[] = {
     {{{    29,     34,    -19}, 0, {     0,      0}, {0x83, 0x1c, 0x00, 0x00}}},
     {{{    18,     -9,    -19}, 0, {     0,      0}, {0x83, 0x1c, 0x00, 0x00}}},
     {{{    18,     -9,     20}, 0, {     0,      0}, {0x83, 0x1c, 0x00, 0x00}}},
@@ -504,7 +504,7 @@ static const Vtx debug_level_select_vertex_07001660[] = {
 };
 
 // 0x07001750 - 0x07001840
-static const Vtx debug_level_select_vertex_07001750[] = {
+ const Vtx debug_level_select_vertex_07001750[] = {
     {{{    29,     34,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{     3,     82,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    47,     65,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -523,7 +523,7 @@ static const Vtx debug_level_select_vertex_07001750[] = {
 };
 
 // 0x07001840 - 0x07001930
-static const Vtx debug_level_select_vertex_07001840[] = {
+ const Vtx debug_level_select_vertex_07001840[] = {
     {{{   -42,     82,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{     3,     82,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -5,     32,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -542,7 +542,7 @@ static const Vtx debug_level_select_vertex_07001840[] = {
 };
 
 // 0x07001930 - 0x07001A20
-static const Vtx debug_level_select_vertex_07001930[] = {
+ const Vtx debug_level_select_vertex_07001930[] = {
     {{{    -5,    -43,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -5,     -4,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    18,     -9,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -561,7 +561,7 @@ static const Vtx debug_level_select_vertex_07001930[] = {
 };
 
 // 0x07001A20 - 0x07001B10
-static const Vtx debug_level_select_vertex_07001A20[] = {
+ const Vtx debug_level_select_vertex_07001A20[] = {
     {{{    -5,    -43,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    20,    -44,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    58,     -8,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -580,7 +580,7 @@ static const Vtx debug_level_select_vertex_07001A20[] = {
 };
 
 // 0x07001B10 - 0x07001BA0
-static const Vtx debug_level_select_vertex_07001B10[] = {
+ const Vtx debug_level_select_vertex_07001B10[] = {
     {{{    18,     -9,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    -5,    -43,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    58,     -8,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -639,13 +639,13 @@ const Gfx debug_level_select_dl_07001BA0[] = {
 };
 
 // 0x07001D98 - 0x07001DB0
-static const Lights1 debug_level_select_lights_07001D98 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07001D98 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x07001DB0 - 0x07001EA0
-static const Vtx debug_level_select_vertex_07001DB0[] = {
+ const Vtx debug_level_select_vertex_07001DB0[] = {
     {{{    42,     76,    -19}, 0, {     0,      0}, {0xec, 0x7e, 0x00, 0x00}}},
     {{{   -49,     62,    -19}, 0, {     0,      0}, {0xec, 0x7e, 0x00, 0x00}}},
     {{{   -49,     62,     20}, 0, {     0,      0}, {0xec, 0x7e, 0x00, 0x00}}},
@@ -664,7 +664,7 @@ static const Vtx debug_level_select_vertex_07001DB0[] = {
 };
 
 // 0x07001EA0 - 0x07001F90
-static const Vtx debug_level_select_vertex_07001EA0[] = {
+ const Vtx debug_level_select_vertex_07001EA0[] = {
     {{{   -22,    -62,    -19}, 0, {     0,      0}, {0x0a, 0x80, 0x00, 0x00}}},
     {{{    73,    -54,     20}, 0, {     0,      0}, {0x0a, 0x80, 0x00, 0x00}}},
     {{{   -22,    -62,     20}, 0, {     0,      0}, {0x0a, 0x80, 0x00, 0x00}}},
@@ -683,7 +683,7 @@ static const Vtx debug_level_select_vertex_07001EA0[] = {
 };
 
 // 0x07001F90 - 0x07002080
-static const Vtx debug_level_select_vertex_07001F90[] = {
+ const Vtx debug_level_select_vertex_07001F90[] = {
     {{{     7,    -28,    -19}, 0, {     0,      0}, {0x7e, 0x12, 0x00, 0x00}}},
     {{{     3,     -1,    -19}, 0, {     0,      0}, {0x7e, 0x12, 0x00, 0x00}}},
     {{{     3,     -1,     20}, 0, {     0,      0}, {0x7e, 0x12, 0x00, 0x00}}},
@@ -702,7 +702,7 @@ static const Vtx debug_level_select_vertex_07001F90[] = {
 };
 
 // 0x07002080 - 0x07002170
-static const Vtx debug_level_select_vertex_07002080[] = {
+ const Vtx debug_level_select_vertex_07002080[] = {
     {{{    43,     -7,    -19}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    43,     19,     20}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    43,     -7,     20}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -721,7 +721,7 @@ static const Vtx debug_level_select_vertex_07002080[] = {
 };
 
 // 0x07002170 - 0x07002260
-static const Vtx debug_level_select_vertex_07002170[] = {
+ const Vtx debug_level_select_vertex_07002170[] = {
     {{{     1,     42,    -19}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
     {{{    38,     42,    -19}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
     {{{    38,     42,     20}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
@@ -740,7 +740,7 @@ static const Vtx debug_level_select_vertex_07002170[] = {
 };
 
 // 0x07002260 - 0x07002350
-static const Vtx debug_level_select_vertex_07002260[] = {
+ const Vtx debug_level_select_vertex_07002260[] = {
     {{{    -4,     23,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    43,     19,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    43,     -7,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -759,7 +759,7 @@ static const Vtx debug_level_select_vertex_07002260[] = {
 };
 
 // 0x07002350 - 0x07002440
-static const Vtx debug_level_select_vertex_07002350[] = {
+ const Vtx debug_level_select_vertex_07002350[] = {
     {{{     7,    -28,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -22,    -62,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -49,     62,    -19}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -778,7 +778,7 @@ static const Vtx debug_level_select_vertex_07002350[] = {
 };
 
 // 0x07002440 - 0x07002530
-static const Vtx debug_level_select_vertex_07002440[] = {
+ const Vtx debug_level_select_vertex_07002440[] = {
     {{{   -22,    -62,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    57,    -18,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{     7,    -28,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -797,7 +797,7 @@ static const Vtx debug_level_select_vertex_07002440[] = {
 };
 
 // 0x07002530 - 0x070025F0
-static const Vtx debug_level_select_vertex_07002530[] = {
+ const Vtx debug_level_select_vertex_07002530[] = {
     {{{     1,     42,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    42,     76,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -49,     62,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -855,13 +855,13 @@ const Gfx debug_level_select_dl_070025F0[] = {
 };
 
 // 0x070027C0 - 0x070027D8
-static const Lights1 debug_level_select_lights_070027C0 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_070027C0 = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x00, 0x00, 0x50
 );
 
 // 0x070027D8 - 0x070028C8
-static const Vtx debug_level_select_vertex_070027D8[] = {
+ const Vtx debug_level_select_vertex_070027D8[] = {
     {{{    28,     75,    -20}, 0, {     0,      0}, {0x16, 0x7d, 0x00, 0x00}}},
     {{{   -43,     76,    -20}, 0, {     0,      0}, {0x01, 0x7f, 0x00, 0x00}}},
     {{{   -43,     76,     20}, 0, {     0,      0}, {0x01, 0x7f, 0x00, 0x00}}},
@@ -880,7 +880,7 @@ static const Vtx debug_level_select_vertex_070027D8[] = {
 };
 
 // 0x070028C8 - 0x070029B8
-static const Vtx debug_level_select_vertex_070028C8[] = {
+ const Vtx debug_level_select_vertex_070028C8[] = {
     {{{   -37,    -71,    -20}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
     {{{     0,    -71,     20}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
     {{{   -37,    -71,     20}, 0, {     0,      0}, {0x00, 0x80, 0x00, 0x00}}},
@@ -899,7 +899,7 @@ static const Vtx debug_level_select_vertex_070028C8[] = {
 };
 
 // 0x070029B8 - 0x07002AA8
-static const Vtx debug_level_select_vertex_070029B8[] = {
+ const Vtx debug_level_select_vertex_070029B8[] = {
     {{{    46,    -70,    -20}, 0, {     0,      0}, {0x57, 0xa2, 0x00, 0x00}}},
     {{{    79,    -39,    -20}, 0, {     0,      0}, {0x57, 0xa2, 0x00, 0x00}}},
     {{{    79,    -39,     20}, 0, {     0,      0}, {0x57, 0xa2, 0x00, 0x00}}},
@@ -918,7 +918,7 @@ static const Vtx debug_level_select_vertex_070029B8[] = {
 };
 
 // 0x07002AA8 - 0x07002B98
-static const Vtx debug_level_select_vertex_07002AA8[] = {
+ const Vtx debug_level_select_vertex_07002AA8[] = {
     {{{    35,     -8,    -20}, 0, {     0,      0}, {0x53, 0x9f, 0x00, 0x00}}},
     {{{    64,     16,     20}, 0, {     0,      0}, {0x6d, 0xbd, 0x00, 0x00}}},
     {{{    35,     -8,     20}, 0, {     0,      0}, {0x53, 0x9f, 0x00, 0x00}}},
@@ -937,7 +937,7 @@ static const Vtx debug_level_select_vertex_07002AA8[] = {
 };
 
 // 0x07002B98 - 0x07002C88
-static const Vtx debug_level_select_vertex_07002B98[] = {
+ const Vtx debug_level_select_vertex_07002B98[] = {
     {{{    -9,     56,    -20}, 0, {     0,      0}, {0xc0, 0x90, 0x00, 0x00}}},
     {{{    32,     32,    -20}, 0, {     0,      0}, {0xc0, 0x90, 0x00, 0x00}}},
     {{{    32,     32,     20}, 0, {     0,      0}, {0xc0, 0x90, 0x00, 0x00}}},
@@ -956,7 +956,7 @@ static const Vtx debug_level_select_vertex_07002B98[] = {
 };
 
 // 0x07002C88 - 0x07002D78
-static const Vtx debug_level_select_vertex_07002C88[] = {
+ const Vtx debug_level_select_vertex_07002C88[] = {
     {{{    11,     -3,    -20}, 0, {     0,      0}, {0x44, 0x6c, 0x00, 0x00}}},
     {{{    -9,     10,     20}, 0, {     0,      0}, {0x63, 0x51, 0x00, 0x00}}},
     {{{    11,     -3,     20}, 0, {     0,      0}, {0x44, 0x6c, 0x00, 0x00}}},
@@ -975,7 +975,7 @@ static const Vtx debug_level_select_vertex_07002C88[] = {
 };
 
 // 0x07002D78 - 0x07002E68
-static const Vtx debug_level_select_vertex_07002D78[] = {
+ const Vtx debug_level_select_vertex_07002D78[] = {
     {{{    32,     32,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    59,     58,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    64,     16,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -994,7 +994,7 @@ static const Vtx debug_level_select_vertex_07002D78[] = {
 };
 
 // 0x07002E68 - 0x07002F58
-static const Vtx debug_level_select_vertex_07002E68[] = {
+ const Vtx debug_level_select_vertex_07002E68[] = {
     {{{    -7,    -14,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -37,    -71,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -43,     76,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1013,7 +1013,7 @@ static const Vtx debug_level_select_vertex_07002E68[] = {
 };
 
 // 0x07002F58 - 0x07003048
-static const Vtx debug_level_select_vertex_07002F58[] = {
+ const Vtx debug_level_select_vertex_07002F58[] = {
     {{{    -7,    -14,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -43,     76,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -9,     10,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1032,7 +1032,7 @@ static const Vtx debug_level_select_vertex_07002F58[] = {
 };
 
 // 0x07003048 - 0x07003138
-static const Vtx debug_level_select_vertex_07003048[] = {
+ const Vtx debug_level_select_vertex_07003048[] = {
     {{{    -7,    -14,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    46,    -70,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    79,    -39,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1051,7 +1051,7 @@ static const Vtx debug_level_select_vertex_07003048[] = {
 };
 
 // 0x07003138 - 0x07003228
-static const Vtx debug_level_select_vertex_07003138[] = {
+ const Vtx debug_level_select_vertex_07003138[] = {
     {{{    64,     16,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -43,     76,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    32,     32,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1070,7 +1070,7 @@ static const Vtx debug_level_select_vertex_07003138[] = {
 };
 
 // 0x07003228 - 0x07003258
-static const Vtx debug_level_select_vertex_07003228[] = {
+ const Vtx debug_level_select_vertex_07003228[] = {
     {{{    -7,    -14,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    11,     -3,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    -9,     10,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1130,13 +1130,13 @@ const Gfx debug_level_select_dl_07003258[] = {
 };
 
 // 0x070034A0 - 0x070034B8
-static const Lights1 debug_level_select_lights_070034A0 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_070034A0 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x070034B8 - 0x070035A8
-static const Vtx debug_level_select_vertex_070034B8[] = {
+ const Vtx debug_level_select_vertex_070034B8[] = {
     {{{    17,    107,    -20}, 0, {     0,      0}, {0x89, 0x2f, 0x00, 0x00}}},
     {{{    -1,     60,    -20}, 0, {     0,      0}, {0x89, 0x2f, 0x00, 0x00}}},
     {{{    -1,     60,     19}, 0, {     0,      0}, {0x89, 0x2f, 0x00, 0x00}}},
@@ -1155,7 +1155,7 @@ static const Vtx debug_level_select_vertex_070034B8[] = {
 };
 
 // 0x070035A8 - 0x07003698
-static const Vtx debug_level_select_vertex_070035A8[] = {
+ const Vtx debug_level_select_vertex_070035A8[] = {
     {{{   -23,    107,    -20}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
     {{{   -64,    108,     19}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
     {{{   -23,    107,     19}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
@@ -1174,7 +1174,7 @@ static const Vtx debug_level_select_vertex_070035A8[] = {
 };
 
 // 0x07003698 - 0x07003788
-static const Vtx debug_level_select_vertex_07003698[] = {
+ const Vtx debug_level_select_vertex_07003698[] = {
     {{{   -40,    -98,    -20}, 0, {     0,      0}, {0x7f, 0xf5, 0x00, 0x00}}},
     {{{   -32,      9,    -20}, 0, {     0,      0}, {0x7f, 0xf5, 0x00, 0x00}}},
     {{{   -32,      9,     19}, 0, {     0,      0}, {0x7f, 0xf5, 0x00, 0x00}}},
@@ -1193,7 +1193,7 @@ static const Vtx debug_level_select_vertex_07003698[] = {
 };
 
 // 0x07003788 - 0x07003878
-static const Vtx debug_level_select_vertex_07003788[] = {
+ const Vtx debug_level_select_vertex_07003788[] = {
     {{{    -2,    -46,    -20}, 0, {     0,      0}, {0x71, 0xc4, 0x00, 0x00}}},
     {{{    29,     14,     19}, 0, {     0,      0}, {0x71, 0xc4, 0x00, 0x00}}},
     {{{    -2,    -46,     19}, 0, {     0,      0}, {0x71, 0xc4, 0x00, 0x00}}},
@@ -1212,7 +1212,7 @@ static const Vtx debug_level_select_vertex_07003788[] = {
 };
 
 // 0x07003878 - 0x07003968
-static const Vtx debug_level_select_vertex_07003878[] = {
+ const Vtx debug_level_select_vertex_07003878[] = {
     {{{    54,    -93,    -20}, 0, {     0,      0}, {0x38, 0x8d, 0x00, 0x00}}},
     {{{   119,    -61,    -20}, 0, {     0,      0}, {0x38, 0x8d, 0x00, 0x00}}},
     {{{   119,    -61,     19}, 0, {     0,      0}, {0x38, 0x8d, 0x00, 0x00}}},
@@ -1231,7 +1231,7 @@ static const Vtx debug_level_select_vertex_07003878[] = {
 };
 
 // 0x07003968 - 0x07003A58
-static const Vtx debug_level_select_vertex_07003968[] = {
+ const Vtx debug_level_select_vertex_07003968[] = {
     {{{    64,     89,    -20}, 0, {     0,      0}, {0x4d, 0x65, 0x00, 0x00}}},
     {{{    17,    107,     19}, 0, {     0,      0}, {0x2f, 0x76, 0x00, 0x00}}},
     {{{    64,     89,     19}, 0, {     0,      0}, {0x68, 0x4a, 0x00, 0x00}}},
@@ -1250,7 +1250,7 @@ static const Vtx debug_level_select_vertex_07003968[] = {
 };
 
 // 0x07003A58 - 0x07003B48
-static const Vtx debug_level_select_vertex_07003A58[] = {
+ const Vtx debug_level_select_vertex_07003A58[] = {
     {{{   -32,      9,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -40,    -98,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{  -101,    -85,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1269,7 +1269,7 @@ static const Vtx debug_level_select_vertex_07003A58[] = {
 };
 
 // 0x07003B48 - 0x07003C38
-static const Vtx debug_level_select_vertex_07003B48[] = {
+ const Vtx debug_level_select_vertex_07003B48[] = {
     {{{    -1,     60,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   119,    -61,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    29,     14,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1288,7 +1288,7 @@ static const Vtx debug_level_select_vertex_07003B48[] = {
 };
 
 // 0x07003C38 - 0x07003D28
-static const Vtx debug_level_select_vertex_07003C38[] = {
+ const Vtx debug_level_select_vertex_07003C38[] = {
     {{{   -32,      9,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    -2,    -46,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    29,     14,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1307,7 +1307,7 @@ static const Vtx debug_level_select_vertex_07003C38[] = {
 };
 
 // 0x07003D28 - 0x07003DB8
-static const Vtx debug_level_select_vertex_07003D28[] = {
+ const Vtx debug_level_select_vertex_07003D28[] = {
     {{{    -1,     60,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -32,      9,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    29,     14,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1366,13 +1366,13 @@ const Gfx debug_level_select_dl_07003DB8[] = {
 };
 
 // 0x07003FB0 - 0x07003FC8
-static const Lights1 debug_level_select_lights_07003FB0 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07003FB0 = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x00, 0x00, 0x50
 );
 
 // 0x07003FC8 - 0x070040B8
-static const Vtx debug_level_select_vertex_07003FC8[] = {
+ const Vtx debug_level_select_vertex_07003FC8[] = {
     {{{   -15,     83,    -20}, 0, {     0,      0}, {0x93, 0x44, 0x00, 0x00}}},
     {{{  -105,    -60,    -20}, 0, {     0,      0}, {0x93, 0x44, 0x00, 0x00}}},
     {{{  -105,    -60,     19}, 0, {     0,      0}, {0x93, 0x44, 0x00, 0x00}}},
@@ -1391,7 +1391,7 @@ static const Vtx debug_level_select_vertex_07003FC8[] = {
 };
 
 // 0x070040B8 - 0x070041A8
-static const Vtx debug_level_select_vertex_070040B8[] = {
+ const Vtx debug_level_select_vertex_070040B8[] = {
     {{{   -48,    -72,    -20}, 0, {     0,      0}, {0x70, 0xc2, 0x00, 0x00}}},
     {{{   -35,    -47,     19}, 0, {     0,      0}, {0x70, 0xc2, 0x00, 0x00}}},
     {{{   -48,    -72,     19}, 0, {     0,      0}, {0x70, 0xc2, 0x00, 0x00}}},
@@ -1410,7 +1410,7 @@ static const Vtx debug_level_select_vertex_070040B8[] = {
 };
 
 // 0x070041A8 - 0x07004298
-static const Vtx debug_level_select_vertex_070041A8[] = {
+ const Vtx debug_level_select_vertex_070041A8[] = {
     {{{    33,    -90,    -20}, 0, {     0,      0}, {0x01, 0x80, 0x00, 0x00}}},
     {{{    89,    -89,    -20}, 0, {     0,      0}, {0x01, 0x80, 0x00, 0x00}}},
     {{{    89,    -89,     19}, 0, {     0,      0}, {0x01, 0x80, 0x00, 0x00}}},
@@ -1429,7 +1429,7 @@ static const Vtx debug_level_select_vertex_070041A8[] = {
 };
 
 // 0x07004298 - 0x07004388
-static const Vtx debug_level_select_vertex_07004298[] = {
+ const Vtx debug_level_select_vertex_07004298[] = {
     {{{    28,     74,    -20}, 0, {     0,      0}, {0x3f, 0x6e, 0x00, 0x00}}},
     {{{   -15,     83,     19}, 0, {     0,      0}, {0x18, 0x7d, 0x00, 0x00}}},
     {{{    28,     74,     19}, 0, {     0,      0}, {0x63, 0x50, 0x00, 0x00}}},
@@ -1448,7 +1448,7 @@ static const Vtx debug_level_select_vertex_07004298[] = {
 };
 
 // 0x07004388 - 0x07004478
-static const Vtx debug_level_select_vertex_07004388[] = {
+ const Vtx debug_level_select_vertex_07004388[] = {
     {{{     8,     28,    -20}, 0, {     0,      0}, {0x81, 0xed, 0x00, 0x00}}},
     {{{    15,    -20,    -20}, 0, {     0,      0}, {0x81, 0xed, 0x00, 0x00}}},
     {{{    15,    -20,     19}, 0, {     0,      0}, {0x81, 0xed, 0x00, 0x00}}},
@@ -1467,7 +1467,7 @@ static const Vtx debug_level_select_vertex_07004388[] = {
 };
 
 // 0x07004478 - 0x07004568
-static const Vtx debug_level_select_vertex_07004478[] = {
+ const Vtx debug_level_select_vertex_07004478[] = {
     {{{    -6,     29,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -15,     83,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    28,     74,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1486,7 +1486,7 @@ static const Vtx debug_level_select_vertex_07004478[] = {
 };
 
 // 0x07004568 - 0x07004658
-static const Vtx debug_level_select_vertex_07004568[] = {
+ const Vtx debug_level_select_vertex_07004568[] = {
     {{{   -35,    -47,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -15,     83,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -22,    -19,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1505,7 +1505,7 @@ static const Vtx debug_level_select_vertex_07004568[] = {
 };
 
 // 0x07004658 - 0x07004748
-static const Vtx debug_level_select_vertex_07004658[] = {
+ const Vtx debug_level_select_vertex_07004658[] = {
     {{{    26,    -65,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    15,    -20,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{     8,     28,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1524,7 +1524,7 @@ static const Vtx debug_level_select_vertex_07004658[] = {
 };
 
 // 0x07004748 - 0x07004838
-static const Vtx debug_level_select_vertex_07004748[] = {
+ const Vtx debug_level_select_vertex_07004748[] = {
     {{{    26,    -65,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    33,    -90,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    89,    -89,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1543,7 +1543,7 @@ static const Vtx debug_level_select_vertex_07004748[] = {
 };
 
 // 0x07004838 - 0x070048C8
-static const Vtx debug_level_select_vertex_07004838[] = {
+ const Vtx debug_level_select_vertex_07004838[] = {
     {{{    28,     74,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{     8,     28,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    15,    -20,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1602,13 +1602,13 @@ const Gfx debug_level_select_dl_070048C8[] = {
 };
 
 // 0x07004AC0 - 0x07004AD8
-static const Lights1 debug_level_select_lights_07004AC0 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07004AC0 = gdSPDefLights1(
     0x00, 0x59, 0x00,
     0x00, 0xb2, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x07004AD8 - 0x07004BC8
-static const Vtx debug_level_select_vertex_07004AD8[] = {
+ const Vtx debug_level_select_vertex_07004AD8[] = {
     {{{   -60,     95,    -20}, 0, {     0,      0}, {0x80, 0x00, 0x00, 0x00}}},
     {{{   -61,    -92,    -20}, 0, {     0,      0}, {0x80, 0x00, 0x00, 0x00}}},
     {{{   -61,    -92,     19}, 0, {     0,      0}, {0x80, 0x00, 0x00, 0x00}}},
@@ -1627,7 +1627,7 @@ static const Vtx debug_level_select_vertex_07004AD8[] = {
 };
 
 // 0x07004BC8 - 0x07004CB8
-static const Vtx debug_level_select_vertex_07004BC8[] = {
+ const Vtx debug_level_select_vertex_07004BC8[] = {
     {{{   -17,    -92,    -20}, 0, {     0,      0}, {0x7f, 0xff, 0x00, 0x00}}},
     {{{   -17,    -40,     19}, 0, {     0,      0}, {0x7f, 0xff, 0x00, 0x00}}},
     {{{   -17,    -92,     19}, 0, {     0,      0}, {0x7f, 0xff, 0x00, 0x00}}},
@@ -1646,7 +1646,7 @@ static const Vtx debug_level_select_vertex_07004BC8[] = {
 };
 
 // 0x07004CB8 - 0x07004DA8
-static const Vtx debug_level_select_vertex_07004CB8[] = {
+ const Vtx debug_level_select_vertex_07004CB8[] = {
     {{{    85,    -57,    -20}, 0, {     0,      0}, {0x4b, 0x67, 0x00, 0x00}}},
     {{{    35,    -20,    -20}, 0, {     0,      0}, {0x4b, 0x67, 0x00, 0x00}}},
     {{{    35,    -20,     19}, 0, {     0,      0}, {0x4b, 0x67, 0x00, 0x00}}},
@@ -1665,7 +1665,7 @@ static const Vtx debug_level_select_vertex_07004CB8[] = {
 };
 
 // 0x07004DA8 - 0x07004E98
-static const Vtx debug_level_select_vertex_07004DA8[] = {
+ const Vtx debug_level_select_vertex_07004DA8[] = {
     {{{    64,     -1,    -20}, 0, {     0,      0}, {0x78, 0xd4, 0x00, 0x00}}},
     {{{    66,     58,     19}, 0, {     0,      0}, {0x7f, 0xfb, 0x00, 0x00}}},
     {{{    64,     -1,     19}, 0, {     0,      0}, {0x63, 0xaf, 0x00, 0x00}}},
@@ -1684,7 +1684,7 @@ static const Vtx debug_level_select_vertex_07004DA8[] = {
 };
 
 // 0x07004E98 - 0x07004F88
-static const Vtx debug_level_select_vertex_07004E98[] = {
+ const Vtx debug_level_select_vertex_07004E98[] = {
     {{{   -16,     -1,    -20}, 0, {     0,      0}, {0x7c, 0x1e, 0x00, 0x00}}},
     {{{   -12,     50,    -20}, 0, {     0,      0}, {0x7f, 0xf8, 0x00, 0x00}}},
     {{{   -12,     50,     19}, 0, {     0,      0}, {0x7f, 0xf8, 0x00, 0x00}}},
@@ -1703,7 +1703,7 @@ static const Vtx debug_level_select_vertex_07004E98[] = {
 };
 
 // 0x07004F88 - 0x07005078
-static const Vtx debug_level_select_vertex_07004F88[] = {
+ const Vtx debug_level_select_vertex_07004F88[] = {
     {{{    20,     24,    -20}, 0, {     0,      0}, {0x90, 0x3f, 0x00, 0x00}}},
     {{{    -1,    -14,     19}, 0, {     0,      0}, {0x90, 0x3f, 0x00, 0x00}}},
     {{{    20,     24,     19}, 0, {     0,      0}, {0x90, 0x3f, 0x00, 0x00}}},
@@ -1722,7 +1722,7 @@ static const Vtx debug_level_select_vertex_07004F88[] = {
 };
 
 // 0x07005078 - 0x07005168
-static const Vtx debug_level_select_vertex_07005078[] = {
+ const Vtx debug_level_select_vertex_07005078[] = {
     {{{   -12,     50,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{     6,     95,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    66,     58,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1741,7 +1741,7 @@ static const Vtx debug_level_select_vertex_07005078[] = {
 };
 
 // 0x07005168 - 0x07005258
-static const Vtx debug_level_select_vertex_07005168[] = {
+ const Vtx debug_level_select_vertex_07005168[] = {
     {{{   -17,    -40,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -61,    -92,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -60,     95,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1760,7 +1760,7 @@ static const Vtx debug_level_select_vertex_07005168[] = {
 };
 
 // 0x07005258 - 0x07005348
-static const Vtx debug_level_select_vertex_07005258[] = {
+ const Vtx debug_level_select_vertex_07005258[] = {
     {{{    35,    -20,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -17,    -40,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    -1,    -14,    -20}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -1779,7 +1779,7 @@ static const Vtx debug_level_select_vertex_07005258[] = {
 };
 
 // 0x07005348 - 0x07005438
-static const Vtx debug_level_select_vertex_07005348[] = {
+ const Vtx debug_level_select_vertex_07005348[] = {
     {{{   -17,    -40,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    85,    -57,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    35,    -20,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1798,7 +1798,7 @@ static const Vtx debug_level_select_vertex_07005348[] = {
 };
 
 // 0x07005438 - 0x07005528
-static const Vtx debug_level_select_vertex_07005438[] = {
+ const Vtx debug_level_select_vertex_07005438[] = {
     {{{   -60,     95,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -12,     50,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    20,     24,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1817,7 +1817,7 @@ static const Vtx debug_level_select_vertex_07005438[] = {
 };
 
 // 0x07005528 - 0x07005558
-static const Vtx debug_level_select_vertex_07005528[] = {
+ const Vtx debug_level_select_vertex_07005528[] = {
     {{{    66,     58,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    20,     24,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    -1,    -14,     19}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1877,13 +1877,13 @@ const Gfx debug_level_select_dl_07005558[] = {
 };
 
 // 0x070057A0 - 0x070057B8
-static const Lights1 debug_level_select_lights_070057A0 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_070057A0 = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x00, 0x00, 0x50
 );
 
 // 0x070057B8 - 0x070058A8
-static const Vtx debug_level_select_vertex_070057B8[] = {
+ const Vtx debug_level_select_vertex_070057B8[] = {
     {{{   -32,    103,    -19}, 0, {     0,      0}, {0x80, 0xfa, 0x00, 0x00}}},
     {{{   -22,   -107,    -19}, 0, {     0,      0}, {0x80, 0xfa, 0x00, 0x00}}},
     {{{   -22,   -107,     20}, 0, {     0,      0}, {0x80, 0xfa, 0x00, 0x00}}},
@@ -1902,7 +1902,7 @@ static const Vtx debug_level_select_vertex_070057B8[] = {
 };
 
 // 0x070058A8 - 0x07005998
-static const Vtx debug_level_select_vertex_070058A8[] = {
+ const Vtx debug_level_select_vertex_070058A8[] = {
     {{{    28,    -98,    -19}, 0, {     0,      0}, {0x7f, 0x09, 0x00, 0x00}}},
     {{{    13,    100,     20}, 0, {     0,      0}, {0x7f, 0x09, 0x00, 0x00}}},
     {{{    28,    -98,     20}, 0, {     0,      0}, {0x7f, 0x09, 0x00, 0x00}}},
@@ -1921,7 +1921,7 @@ static const Vtx debug_level_select_vertex_070058A8[] = {
 };
 
 // 0x07005998 - 0x070059F8
-static const Vtx debug_level_select_vertex_07005998[] = {
+ const Vtx debug_level_select_vertex_07005998[] = {
     {{{   -22,   -107,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    28,    -98,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    13,    100,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -1948,13 +1948,13 @@ const Gfx debug_level_select_dl_070059F8[] = {
 };
 
 // 0x07005A98 - 0x07005AB0
-static const Lights1 debug_level_select_lights_07005A98 = gdSPDefLights1(
+ const Lights1 debug_level_select_lights_07005A98 = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x00, 0x00, 0x50
 );
 
 // 0x07005AB0 - 0x07005BA0
-static const Vtx debug_level_select_vertex_07005AB0[] = {
+ const Vtx debug_level_select_vertex_07005AB0[] = {
     {{{    30,     71,    -26}, 0, {     0,      0}, {0x1b, 0x7c, 0x00, 0x00}}},
     {{{   -30,     68,    -26}, 0, {     0,      0}, {0xc3, 0x71, 0x00, 0x00}}},
     {{{   -30,     68,     20}, 0, {     0,      0}, {0xde, 0x7b, 0x00, 0x00}}},
@@ -1973,7 +1973,7 @@ static const Vtx debug_level_select_vertex_07005AB0[] = {
 };
 
 // 0x07005BA0 - 0x07005C90
-static const Vtx debug_level_select_vertex_07005BA0[] = {
+ const Vtx debug_level_select_vertex_07005BA0[] = {
     {{{   -72,     33,    -26}, 0, {     0,      0}, {0x84, 0x23, 0x00, 0x00}}},
     {{{   -72,    -32,     20}, 0, {     0,      0}, {0x86, 0xd8, 0x00, 0x00}}},
     {{{   -72,     33,     20}, 0, {     0,      0}, {0x95, 0x47, 0x00, 0x00}}},
@@ -1992,7 +1992,7 @@ static const Vtx debug_level_select_vertex_07005BA0[] = {
 };
 
 // 0x07005C90 - 0x07005D80
-static const Vtx debug_level_select_vertex_07005C90[] = {
+ const Vtx debug_level_select_vertex_07005C90[] = {
     {{{    54,    -62,    -26}, 0, {     0,      0}, {0x76, 0xcf, 0x00, 0x00}}},
     {{{    86,     14,    -26}, 0, {     0,      0}, {0x76, 0xcf, 0x00, 0x00}}},
     {{{    86,     14,     20}, 0, {     0,      0}, {0x76, 0xcf, 0x00, 0x00}}},
@@ -2011,7 +2011,7 @@ static const Vtx debug_level_select_vertex_07005C90[] = {
 };
 
 // 0x07005D80 - 0x07005E70
-static const Vtx debug_level_select_vertex_07005D80[] = {
+ const Vtx debug_level_select_vertex_07005D80[] = {
     {{{     2,     31,    -26}, 0, {     0,      0}, {0xa8, 0xa3, 0x00, 0x00}}},
     {{{    31,      4,     20}, 0, {     0,      0}, {0xa8, 0xa3, 0x00, 0x00}}},
     {{{     2,     31,     20}, 0, {     0,      0}, {0xa8, 0xa3, 0x00, 0x00}}},
@@ -2030,7 +2030,7 @@ static const Vtx debug_level_select_vertex_07005D80[] = {
 };
 
 // 0x07005E70 - 0x07005F60
-static const Vtx debug_level_select_vertex_07005E70[] = {
+ const Vtx debug_level_select_vertex_07005E70[] = {
     {{{   -14,    -27,    -26}, 0, {     0,      0}, {0x6e, 0x41, 0x00, 0x00}}},
     {{{   -33,      5,    -26}, 0, {     0,      0}, {0x6e, 0x41, 0x00, 0x00}}},
     {{{   -33,      5,     20}, 0, {     0,      0}, {0x6e, 0x41, 0x00, 0x00}}},
@@ -2049,7 +2049,7 @@ static const Vtx debug_level_select_vertex_07005E70[] = {
 };
 
 // 0x07005F60 - 0x07006050
-static const Vtx debug_level_select_vertex_07005F60[] = {
+ const Vtx debug_level_select_vertex_07005F60[] = {
     {{{    31,      4,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{     2,     31,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    30,     71,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -2068,7 +2068,7 @@ static const Vtx debug_level_select_vertex_07005F60[] = {
 };
 
 // 0x07006050 - 0x07006140
-static const Vtx debug_level_select_vertex_07006050[] = {
+ const Vtx debug_level_select_vertex_07006050[] = {
     {{{   -72,    -32,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -30,     68,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    30,     71,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -2087,7 +2087,7 @@ static const Vtx debug_level_select_vertex_07006050[] = {
 };
 
 // 0x07006140 - 0x07006230
-static const Vtx debug_level_select_vertex_07006140[] = {
+ const Vtx debug_level_select_vertex_07006140[] = {
     {{{    54,    -62,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{   -14,    -27,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
     {{{    20,    -19,    -26}, 0, {     0,      0}, {0x00, 0x00, 0x80, 0x00}}},
@@ -2106,7 +2106,7 @@ static const Vtx debug_level_select_vertex_07006140[] = {
 };
 
 // 0x07006230 - 0x07006320
-static const Vtx debug_level_select_vertex_07006230[] = {
+ const Vtx debug_level_select_vertex_07006230[] = {
     {{{    86,     14,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    30,     71,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -30,     68,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -2125,7 +2125,7 @@ static const Vtx debug_level_select_vertex_07006230[] = {
 };
 
 // 0x07006320 - 0x070063B0
-static const Vtx debug_level_select_vertex_07006320[] = {
+ const Vtx debug_level_select_vertex_07006320[] = {
     {{{   -14,    -72,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    86,     14,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    20,    -19,     20}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},

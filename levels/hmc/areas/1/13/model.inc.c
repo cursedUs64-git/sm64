@@ -1,5 +1,5 @@
 // 0x07013F38 - 0x07014028
-static const Vtx hmc_seg7_vertex_07013F38[] = {
+ const Vtx hmc_seg7_vertex_07013F38[] = {
     {{{  4875,   -613,  -4402}, 0, {   990,    990}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  4875,   -101,  -3890}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  4875,   -613,  -3890}, 0, {     0,    990}, {0xff, 0x00, 0x00, 0xb4}}},
@@ -18,7 +18,7 @@ static const Vtx hmc_seg7_vertex_07013F38[] = {
 };
 
 // 0x07014028 - 0x07014118
-static const Vtx hmc_seg7_vertex_07014028[] = {
+ const Vtx hmc_seg7_vertex_07014028[] = {
     {{{  3523,   -511,   -869}, 0, {     0,    990}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  3523,      0,   -869}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  3523,      0,  -1381}, 0, {   990,      0}, {0xff, 0x00, 0x00, 0xb4}}},
@@ -37,7 +37,7 @@ static const Vtx hmc_seg7_vertex_07014028[] = {
 };
 
 // 0x07014118 - 0x07014218
-static const Vtx hmc_seg7_vertex_07014118[] = {
+ const Vtx hmc_seg7_vertex_07014118[] = {
     {{{  1700,   -716,      0}, 0, {   990,    990}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  1700,   -204,    512}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xb4}}},
     {{{  1700,   -716,    512}, 0, {     0,    990}, {0xff, 0x00, 0x00, 0xb4}}},
@@ -57,7 +57,7 @@ static const Vtx hmc_seg7_vertex_07014118[] = {
 };
 
 // 0x07014218 - 0x07014300
-static const Gfx hmc_seg7_dl_07014218[] = {
+ const Gfx hmc_seg7_dl_07014218[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, cave_0900C000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

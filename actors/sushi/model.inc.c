@@ -3,25 +3,25 @@
 // Could be a duplicate binid of the previous actor, but i'm putting it here for
 // macro reasons so I don't have to clutter the macros.inc with a new macro for this
 // case.
-UNUSED static const u64 sushi_unused_1 = 1;
+UNUSED  const u64 sushi_unused_1 = 1;
 
 // 0x05008ED0
-ALIGNED8 static const Texture sushi_seg5_texture_05008ED0[] = {
+ALIGNED8  const Texture sushi_seg5_texture_05008ED0[] = {
 #include "actors/sushi/sushi_snout.rgba16.inc.c"
 };
 
 // 0x050096D0
-ALIGNED8 static const Texture sushi_seg5_texture_050096D0[] = {
+ALIGNED8  const Texture sushi_seg5_texture_050096D0[] = {
 #include "actors/sushi/sushi_eye.rgba16.inc.c"
 };
 
 // 0x05009AD0
-ALIGNED8 static const Texture sushi_seg5_texture_05009AD0[] = {
+ALIGNED8  const Texture sushi_seg5_texture_05009AD0[] = {
 #include "actors/sushi/sushi_tooth.rgba16.inc.c"
 };
 
 // 0x05009B50
-static const Vtx sushi_seg5_vertex_05009B50[] = {
+ const Vtx sushi_seg5_vertex_05009B50[] = {
     {{{     0,      4,   -257}, 0, {   528,    804}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   416,      3,   -203}, 0, {   694,    704}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   416,   -104,   -154}, 0, {   694,    616}, {0xff, 0xff, 0xff, 0xff}}},
@@ -40,7 +40,7 @@ static const Vtx sushi_seg5_vertex_05009B50[] = {
 };
 
 // 0x05009C40
-static const Vtx sushi_seg5_vertex_05009C40[] = {
+ const Vtx sushi_seg5_vertex_05009C40[] = {
     {{{     0,      4,   -257}, 0, {   528,    804}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -82,      4,   -237}, 0, {   494,    768}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -82,    178,   -172}, 0, {   494,    650}, {0xff, 0xff, 0xff, 0xff}}},
@@ -94,7 +94,7 @@ const Gfx sushi_seg5_dl_05009DD0[] = {
 };
 
 // 0x05009E40
-static const Vtx sushi_seg5_vertex_05009E40[] = {
+ const Vtx sushi_seg5_vertex_05009E40[] = {
     {{{     0,    112,   -154}, 0, {   694,    616}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -82,    122,     52}, 0, {   660,    238}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    144,     67}, 0, {   694,    210}, {0xff, 0xff, 0xff, 0xff}}},
@@ -151,7 +151,7 @@ const Gfx sushi_seg5_dl_0500A008[] = {
 };
 
 // 0x0500A078
-static const Vtx sushi_seg5_vertex_0500A078[] = {
+ const Vtx sushi_seg5_vertex_0500A078[] = {
     {{{     6,    -34,     71}, 0, {   890,    204}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     5,      0,    -89}, 0, {   890,    498}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   241,    -41,      7}, 0, {   984,    320}, {0xff, 0xff, 0xff, 0xff}}},
@@ -194,7 +194,7 @@ const Gfx sushi_seg5_dl_0500A160[] = {
 };
 
 // 0x0500A1D0
-static const Vtx sushi_seg5_vertex_0500A1D0[] = {
+ const Vtx sushi_seg5_vertex_0500A1D0[] = {
     {{{   201,   -199,     90}, 0, {   528,    170}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   201,   -188,   -187}, 0, {   528,    676}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   201,      4,   -257}, 0, {   528,    804}, {0xff, 0xff, 0xff, 0xff}}},
@@ -213,7 +213,7 @@ static const Vtx sushi_seg5_vertex_0500A1D0[] = {
 };
 
 // 0x0500A2C0
-static const Vtx sushi_seg5_vertex_0500A2C0[] = {
+ const Vtx sushi_seg5_vertex_0500A2C0[] = {
     {{{  -221,    231,   -200}, 0, {   358,    700}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -645,    159,   -144}, 0, {   190,    598}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -645,    207,    120}, 0, {   190,    114}, {0xff, 0xff, 0xff, 0xff}}},
@@ -233,7 +233,7 @@ static const Vtx sushi_seg5_vertex_0500A2C0[] = {
 };
 
 // 0x0500A3C0
-static const Vtx sushi_seg5_vertex_0500A3C0[] = {
+ const Vtx sushi_seg5_vertex_0500A3C0[] = {
     {{{  -645,     -3,    185}, 0, {   190,     -4}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -221,    231,    121}, 0, {   358,    112}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -645,    207,    120}, 0, {   190,    114}, {0xff, 0xff, 0xff, 0xff}}},
@@ -251,7 +251,7 @@ static const Vtx sushi_seg5_vertex_0500A3C0[] = {
 };
 
 // 0x0500A4A0
-static const Vtx sushi_seg5_vertex_0500A4A0[] = {
+ const Vtx sushi_seg5_vertex_0500A4A0[] = {
     {{{   212,    569,   -380}, 0, {   452,    396}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -208,    212,   -160}, 0, {   340,    640}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   106,    176,   -124}, 0, {   460,    652}, {0xff, 0xff, 0xff, 0xff}}},
@@ -265,7 +265,7 @@ static const Vtx sushi_seg5_vertex_0500A4A0[] = {
 };
 
 // 0x0500A540
-static const Vtx sushi_seg5_vertex_0500A540[] = {
+ const Vtx sushi_seg5_vertex_0500A540[] = {
     {{{  -221,    231,   -200}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xff}}},
     {{{  -477,     -3,   -355}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xff}}},
     {{{  -221,   -239,   -200}, 0, {     0,      0}, {0xff, 0x00, 0x00, 0xff}}},
@@ -336,7 +336,7 @@ const Gfx sushi_seg5_dl_0500A768[] = {
 };
 
 // 0x0500A7E0
-static const Vtx sushi_seg5_vertex_0500A7E0[] = {
+ const Vtx sushi_seg5_vertex_0500A7E0[] = {
     {{{  -645,    221,    120}, 0, {   -24,  -2137}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -221,    246,    121}, 0, {  1672,   -830}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -221,    246,   -200}, 0, {   678,    847}, {0xff, 0xff, 0xff, 0xff}}},
@@ -377,7 +377,7 @@ const Gfx sushi_seg5_dl_0500A8A8[] = {
 };
 
 // 0x0500A918
-static const Vtx sushi_seg5_vertex_0500A918[] = {
+ const Vtx sushi_seg5_vertex_0500A918[] = {
     {{{  -505,      0,   -304}, 0, {   -32,      2}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -221,    231,   -200}, 0, {  1592,    -14}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -477,     -3,   -355}, 0, {     0,    166}, {0xff, 0xff, 0xff, 0xff}}},

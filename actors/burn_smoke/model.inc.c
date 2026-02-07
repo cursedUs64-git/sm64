@@ -1,7 +1,7 @@
 // Burn Smoke
 
 // 0x040217C0
-static const Vtx burn_smoke_seg4_vertex_040217C0[] = {
+ const Vtx burn_smoke_seg4_vertex_040217C0[] = {
     {{{   -50,    -50,      0}, 0, {     0,    992}, {0x14, 0x0a, 0x0a, 0xff}}},
     {{{    50,    -50,      0}, 0, {   992,    992}, {0x14, 0x0a, 0x0a, 0xff}}},
     {{{    50,     50,      0}, 0, {   992,      0}, {0x14, 0x0a, 0x0a, 0xff}}},
@@ -12,7 +12,7 @@ static const Vtx burn_smoke_seg4_vertex_040217C0[] = {
 //     as a transparent black burn smoke. Probably meant to show up as white-ish
 //     burn smoke, but mistakened for being intended as black smoke.
 // 0x04021800
-ALIGNED8 static const Texture burn_smoke_seg4_texture_04021800[] = {
+ALIGNED8  const Texture burn_smoke_seg4_texture_04021800[] = {
 #include "actors/burn_smoke/burn_smoke.ia16.inc.c"
 };
 

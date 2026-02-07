@@ -1,11 +1,11 @@
 // 0x0701F378 - 0x0701F390
-static const Lights1 bbh_seg7_lights_0701F378 = gdSPDefLights1(
+ const Lights1 bbh_seg7_lights_0701F378 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0701F390 - 0x0701F3D0
-static const Vtx bbh_seg7_vertex_0701F390[] = {
+ const Vtx bbh_seg7_vertex_0701F390[] = {
     {{{   307,   -101,    256}, 0, {   698,    260}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -306,   -101,    256}, 0, {   260,    260}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -306,   -101,   -255}, 0, {   260,    624}, {0x00, 0x81, 0x00, 0xff}}},
@@ -13,7 +13,7 @@ static const Vtx bbh_seg7_vertex_0701F390[] = {
 };
 
 // 0x0701F3D0 - 0x0701F4D0
-static const Vtx bbh_seg7_vertex_0701F3D0[] = {
+ const Vtx bbh_seg7_vertex_0701F3D0[] = {
     {{{   307,      0,    256}, 0, {  2522,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   307,   -101,   -255}, 0, {     0,    988}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   307,      0,   -255}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -33,7 +33,7 @@ static const Vtx bbh_seg7_vertex_0701F3D0[] = {
 };
 
 // 0x0701F4D0 - 0x0701F510
-static const Vtx bbh_seg7_vertex_0701F4D0[] = {
+ const Vtx bbh_seg7_vertex_0701F4D0[] = {
     {{{   307,      0,   -255}, 0, {  5080,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -306,      0,    256}, 0, {     0,  -5142}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   307,      0,    256}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -41,7 +41,7 @@ static const Vtx bbh_seg7_vertex_0701F4D0[] = {
 };
 
 // 0x0701F510 - 0x0701F558
-static const Gfx bbh_seg7_dl_0701F510[] = {
+ const Gfx bbh_seg7_dl_0701F510[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -53,7 +53,7 @@ static const Gfx bbh_seg7_dl_0701F510[] = {
 };
 
 // 0x0701F558 - 0x0701F5C0
-static const Gfx bbh_seg7_dl_0701F558[] = {
+ const Gfx bbh_seg7_dl_0701F558[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09005000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -66,7 +66,7 @@ static const Gfx bbh_seg7_dl_0701F558[] = {
 };
 
 // 0x0701F5C0 - 0x0701F5F8
-static const Gfx bbh_seg7_dl_0701F5C0[] = {
+ const Gfx bbh_seg7_dl_0701F5C0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09009000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

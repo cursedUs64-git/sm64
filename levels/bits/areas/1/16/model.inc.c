@@ -1,5 +1,5 @@
 // 0x0700D2F0 - 0x0700D3F0
-static const Vtx bits_seg7_vertex_0700D2F0[] = {
+ const Vtx bits_seg7_vertex_0700D2F0[] = {
     {{{ -3043,     51,    -50}, 0, { 23342,    678}, {0x41, 0x43, 0x8c, 0xff}}},
     {{{     0,     51,    -50}, 0, { 10684,    678}, {0x41, 0x43, 0x8c, 0xff}}},
     {{{     0,      0,      0}, 0, { 10862,    748}, {0x41, 0x43, 0x8c, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bits_seg7_vertex_0700D2F0[] = {
 };
 
 // 0x0700D3F0 - 0x0700D4D0
-static const Vtx bits_seg7_vertex_0700D3F0[] = {
+ const Vtx bits_seg7_vertex_0700D3F0[] = {
     {{{     0,    102,      0}, 0, { 10508,    606}, {0x8c, 0x98, 0xd8, 0xff}}},
     {{{  2765,     51,    -50}, 0, {  -810,    678}, {0x8c, 0x98, 0xd8, 0xff}}},
     {{{     0,     51,    -50}, 0, { 10684,    678}, {0x8c, 0x98, 0xd8, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx bits_seg7_vertex_0700D3F0[] = {
 };
 
 // 0x0700D4D0 - 0x0700D5A0
-static const Gfx bits_seg7_dl_0700D4D0[] = {
+ const Gfx bits_seg7_dl_0700D4D0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09008000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

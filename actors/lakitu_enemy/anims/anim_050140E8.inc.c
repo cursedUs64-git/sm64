@@ -1,5 +1,5 @@
 // 0x05013EF4
-static const s16 lakitu_enemy_seg5_animvalue_05013EF4[] = {
+ const s16 lakitu_enemy_seg5_animvalue_05013EF4[] = {
     0x0000, 0x003F, 0xFFC2, 0x3FFF, 0xFCF0, 0xFE8D, 0x8B77, 0x00DD,
     0x013F, 0x8AD2, 0x00DD, 0x013F, 0x8AD2, 0xA2CB, 0xA2CB, 0x00AF,
     0x00AC, 0x00A1, 0x0090, 0x0079, 0x005C, 0x003B, 0x0016, 0xFFEE,
@@ -28,7 +28,7 @@ static const s16 lakitu_enemy_seg5_animvalue_05013EF4[] = {
 };
 
 // 0x0501407C
-static const u16 lakitu_enemy_seg5_animindex_0501407C[] = {
+ const u16 lakitu_enemy_seg5_animindex_0501407C[] = {
     0x0001, 0x0000, 0x0001, 0x0001, 0x0001, 0x0002, 0x0001, 0x0000, 0x0001, 0x0003, 0x0001, 0x0000,
     0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x00C3,
     0x003C, 0x000F, 0x003C, 0x004B, 0x003C, 0x0087,
@@ -40,7 +40,7 @@ static const u16 lakitu_enemy_seg5_animindex_0501407C[] = {
 };
 
 // 0x050140E8
-static const struct Animation lakitu_enemy_seg5_anim_050140E8 = {
+ const struct Animation lakitu_enemy_seg5_anim_050140E8 = {
     0,
     0,
     0,

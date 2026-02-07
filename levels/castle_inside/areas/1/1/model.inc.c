@@ -1,5 +1,5 @@
 // 0x07023CB0 - 0x07023DB0
-static const Vtx inside_castle_seg7_vertex_07023CB0[] = {
+ const Vtx inside_castle_seg7_vertex_07023CB0[] = {
     {{{ -7395,   1126,  -5772}, 0, {     0,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -7178,   1126,  -5989}, 0, {   992,    992}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -7178,   1434,  -5989}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},

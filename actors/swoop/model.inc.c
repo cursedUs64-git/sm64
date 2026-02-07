@@ -1,45 +1,45 @@
 // Swoop
 
 // Unreferenced light group
-UNUSED static const Lights1 swoop_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 swoop_lights_unused1 = gdSPDefLights1(
     0x0a, 0x00, 0x25,
     0x2a, 0x00, 0x95, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 swoop_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 swoop_lights_unused2 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06004270
-ALIGNED8 static const Texture swoop_seg6_texture_06004270[] = {
+ALIGNED8  const Texture swoop_seg6_texture_06004270[] = {
 #include "actors/swoop/swoop_body.rgba16.inc.c"
 };
 
 // 0x06004A70
-ALIGNED8 static const Texture swoop_seg6_texture_06004A70[] = {
+ALIGNED8  const Texture swoop_seg6_texture_06004A70[] = {
 #include "actors/swoop/swoop_eye.rgba16.inc.c"
 };
 
 // 0x06005270
-ALIGNED8 static const Texture swoop_seg6_texture_06005270[] = {
+ALIGNED8  const Texture swoop_seg6_texture_06005270[] = {
 #include "actors/swoop/swoop_nose.rgba16.inc.c"
 };
 
 // 0x06005A70
-ALIGNED8 static const Texture swoop_seg6_texture_06005A70[] = {
+ALIGNED8  const Texture swoop_seg6_texture_06005A70[] = {
 #include "actors/swoop/swoop_wing.rgba16.inc.c"
 };
 
 // 0x06006270
-static const Lights1 swoop_seg6_lights_06006270 = gdSPDefLights1(
+ const Lights1 swoop_seg6_lights_06006270 = gdSPDefLights1(
     0x79, 0x79, 0x79,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06006288
-static const Vtx swoop_seg6_vertex_06006288[] = {
+ const Vtx swoop_seg6_vertex_06006288[] = {
     {{{    80,     38,    -44}, 0, {    40,     86}, {0x3f, 0x30, 0x9e, 0xff}}},
     {{{    65,     77,    -24}, 0, {  1108,    796}, {0x44, 0x59, 0xc6, 0xff}}},
     {{{   112,     54,      0}, 0, {   768,   -454}, {0x69, 0x46, 0x00, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx swoop_seg6_vertex_06006288[] = {
 };
 
 // 0x06006368
-static const Vtx swoop_seg6_vertex_06006368[] = {
+ const Vtx swoop_seg6_vertex_06006368[] = {
     {{{    82,      4,     53}, 0, {   758,   1078}, {0x40, 0xf1, 0x6c, 0xff}}},
     {{{    83,    -37,     25}, 0, {   628,   1076}, {0x54, 0xab, 0x27, 0xff}}},
     {{{   114,      5,     25}, 0, {   626,    928}, {0x6f, 0xf4, 0x3c, 0xff}}},
@@ -77,7 +77,7 @@ static const Vtx swoop_seg6_vertex_06006368[] = {
 };
 
 // 0x06006468
-static const Vtx swoop_seg6_vertex_06006468[] = {
+ const Vtx swoop_seg6_vertex_06006468[] = {
     {{{    34,    -55,     44}, 0, {   722,   1312}, {0x06, 0x8a, 0x2c, 0xff}}},
     {{{    34,    -55,    -43}, 0, {   314,   1318}, {0xe6, 0x8a, 0xdc, 0xff}}},
     {{{    83,    -37,    -24}, 0, {   402,   1080}, {0x48, 0xa4, 0xd1, 0xff}}},
@@ -92,7 +92,7 @@ static const Vtx swoop_seg6_vertex_06006468[] = {
 };
 
 // 0x06006518
-static const Vtx swoop_seg6_vertex_06006518[] = {
+ const Vtx swoop_seg6_vertex_06006518[] = {
     {{{   112,     54,      0}, 0, {   702,      6}, {0x69, 0x46, 0x00, 0xff}}},
     {{{    65,     77,    -24}, 0, {   382,    266}, {0x44, 0x59, 0xc6, 0xff}}},
     {{{    65,     77,     25}, 0, {   878,    288}, {0x44, 0x59, 0x3a, 0xff}}},
@@ -174,7 +174,7 @@ const Gfx swoop_seg6_dl_06006758[] = {
 };
 
 // 0x06006808
-static const Vtx swoop_seg6_vertex_06006808[] = {
+ const Vtx swoop_seg6_vertex_06006808[] = {
     {{{    15,     15,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -14,     15,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -14,    -14,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -219,13 +219,13 @@ const Gfx swoop_seg6_dl_06006880[] = {
 };
 
 // 0x06006938
-static const Lights1 swoop_seg6_lights_06006938 = gdSPDefLights1(
+ const Lights1 swoop_seg6_lights_06006938 = gdSPDefLights1(
     0x79, 0x79, 0x79,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06006950
-static const Vtx swoop_seg6_vertex_06006950[] = {
+ const Vtx swoop_seg6_vertex_06006950[] = {
     {{{   187,     48,    -55}, 0, {   426,    722}, {0xc6, 0x6b, 0xdf, 0xff}}},
     {{{   194,     32,   -119}, 0, {   334,    706}, {0xdf, 0x7a, 0x05, 0xff}}},
     {{{    80,     -3,    -32}, 0, {   458,    990}, {0xdf, 0x7a, 0x05, 0xff}}},
@@ -237,7 +237,7 @@ static const Vtx swoop_seg6_vertex_06006950[] = {
 };
 
 // 0x060069D0
-static const Vtx swoop_seg6_vertex_060069D0[] = {
+ const Vtx swoop_seg6_vertex_060069D0[] = {
     {{{    13,     79,    -15}, 0, {     0,      0}, {0xec, 0x7d, 0x00, 0xff}}},
     {{{   -17,     74,     -8}, 0, {     0,      0}, {0xec, 0x7d, 0x00, 0xff}}},
     {{{   -17,     74,      9}, 0, {     0,      0}, {0xec, 0x7d, 0x00, 0xff}}},
@@ -295,7 +295,7 @@ const Gfx swoop_seg6_dl_06006A88[] = {
 };
 
 // 0x06006B58
-static const Vtx swoop_seg6_vertex_06006B58[] = {
+ const Vtx swoop_seg6_vertex_06006B58[] = {
     {{{     0,      1,    133}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      1,   -133}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   265,      1,   -133}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -340,7 +340,7 @@ const Gfx swoop_seg6_dl_06006BD0[] = {
 };
 
 // 0x06006C88
-static const Vtx swoop_seg6_vertex_06006C88[] = {
+ const Vtx swoop_seg6_vertex_06006C88[] = {
     {{{   265,      1,   -132}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   265,      1,    134}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,      1,    134}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},

@@ -1,5 +1,5 @@
 // 0x0701A150 - 0x0701A240
-static const Vtx hmc_seg7_vertex_0701A150[] = {
+ const Vtx hmc_seg7_vertex_0701A150[] = {
     {{{ -3583,   2253,  -3276}, 0, { -4118,  -7186}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2559,   2253,  -2764}, 0, {   990,   3032}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3071,   2253,  -2764}, 0, {   990,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx hmc_seg7_vertex_0701A150[] = {
 };
 
 // 0x0701A240 - 0x0701A340
-static const Vtx hmc_seg7_vertex_0701A240[] = {
+ const Vtx hmc_seg7_vertex_0701A240[] = {
     {{{ -3071,   2253,  -2764}, 0, {   990,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3071,   2253,  -2252}, 0, {  6100,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3583,   2253,  -2252}, 0, {  6100,  -7186}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx hmc_seg7_vertex_0701A240[] = {
 };
 
 // 0x0701A340 - 0x0701A400
-static const Gfx hmc_seg7_dl_0701A340[] = {
+ const Gfx hmc_seg7_dl_0701A340[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

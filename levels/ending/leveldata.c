@@ -10,32 +10,32 @@
 #include "levels/ending/cake_eu.inc.c"
 
 // 0x07023000 - 0x07023FFF
-ALIGNED8 static const Texture cake_end_texture_eu_35[] = {
+ALIGNED8  const Texture cake_end_texture_eu_35[] = {
 #include "levels/ending/eu_023000.rgba16.inc.c"
 };
 
 // 0x07024000 - 0x07024FFF
-ALIGNED8 static const Texture cake_end_texture_eu_36[] = {
+ALIGNED8  const Texture cake_end_texture_eu_36[] = {
 #include "levels/ending/eu_024000.rgba16.inc.c"
 };
 
 // 0x07025000 - 0x07025FFF
-ALIGNED8 static const Texture cake_end_texture_eu_37[] = {
+ALIGNED8  const Texture cake_end_texture_eu_37[] = {
 #include "levels/ending/eu_025000.rgba16.inc.c"
 };
 
 // 0x07026000 - 0x07026FFF
-ALIGNED8 static const Texture cake_end_texture_eu_38[] = {
+ALIGNED8  const Texture cake_end_texture_eu_38[] = {
 #include "levels/ending/eu_026000.rgba16.inc.c"
 };
 
 // 0x07027000 - 0x07027FFF
-ALIGNED8 static const Texture cake_end_texture_eu_39[] = {
+ALIGNED8  const Texture cake_end_texture_eu_39[] = {
 #include "levels/ending/eu_027000.rgba16.inc.c"
 };
 
 // 0x07028000 - 0x07028FFF
-ALIGNED8 static const Texture cake_end_texture_eu_40[] = {
+ALIGNED8  const Texture cake_end_texture_eu_40[] = {
 #include "levels/ending/eu_028000.rgba16.inc.c"
 };
 
@@ -193,7 +193,7 @@ const Gfx dl_cake_end_screen[] = {
 };
 
 // 0x070296D8 - 0x070296F8
-static const Gfx dl_cake_end_eu_070296D8[] = {
+ const Gfx dl_cake_end_eu_070296D8[] = {
     gsDPPipeSync(),
     gsDPSetCycleType(G_CYC_1CYCLE),
     gsDPSetTexturePersp(G_TP_PERSP),
@@ -252,7 +252,7 @@ const Gfx dl_cake_end_screen_eu_070297D8[] = {
 #endif
 
 // 0x07025800 - 0x07025840
-static const Vtx cake_end_vertex_07025800[] = {
+ const Vtx cake_end_vertex_07025800[] = {
     {{{     0,    220,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    220,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    240,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -260,7 +260,7 @@ static const Vtx cake_end_vertex_07025800[] = {
 };
 
 // 0x07025840 - 0x07025880
-static const Vtx cake_end_vertex_07025840[] = {
+ const Vtx cake_end_vertex_07025840[] = {
     {{{    80,    220,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    220,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    240,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -268,7 +268,7 @@ static const Vtx cake_end_vertex_07025840[] = {
 };
 
 // 0x07025880 - 0x070258C0
-static const Vtx cake_end_vertex_07025880[] = {
+ const Vtx cake_end_vertex_07025880[] = {
     {{{   160,    220,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    220,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    240,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -276,7 +276,7 @@ static const Vtx cake_end_vertex_07025880[] = {
 };
 
 // 0x070258C0 - 0x07025900
-static const Vtx cake_end_vertex_070258C0[] = {
+ const Vtx cake_end_vertex_070258C0[] = {
     {{{   240,    220,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    220,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    240,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -284,7 +284,7 @@ static const Vtx cake_end_vertex_070258C0[] = {
 };
 
 // 0x07025900 - 0x07025940
-static const Vtx cake_end_vertex_07025900[] = {
+ const Vtx cake_end_vertex_07025900[] = {
     {{{     0,    200,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    200,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    220,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -292,7 +292,7 @@ static const Vtx cake_end_vertex_07025900[] = {
 };
 
 // 0x07025940 - 0x07025980
-static const Vtx cake_end_vertex_07025940[] = {
+ const Vtx cake_end_vertex_07025940[] = {
     {{{    80,    200,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    200,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    220,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -300,7 +300,7 @@ static const Vtx cake_end_vertex_07025940[] = {
 };
 
 // 0x07025980 - 0x070259C0
-static const Vtx cake_end_vertex_07025980[] = {
+ const Vtx cake_end_vertex_07025980[] = {
     {{{   160,    200,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    200,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    220,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -308,7 +308,7 @@ static const Vtx cake_end_vertex_07025980[] = {
 };
 
 // 0x070259C0 - 0x07025A00
-static const Vtx cake_end_vertex_070259C0[] = {
+ const Vtx cake_end_vertex_070259C0[] = {
     {{{   240,    200,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    200,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    220,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -316,7 +316,7 @@ static const Vtx cake_end_vertex_070259C0[] = {
 };
 
 // 0x07025A00 - 0x07025A40
-static const Vtx cake_end_vertex_07025A00[] = {
+ const Vtx cake_end_vertex_07025A00[] = {
     {{{     0,    180,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    180,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    200,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -324,7 +324,7 @@ static const Vtx cake_end_vertex_07025A00[] = {
 };
 
 // 0x07025A40 - 0x07025A80
-static const Vtx cake_end_vertex_07025A40[] = {
+ const Vtx cake_end_vertex_07025A40[] = {
     {{{    80,    180,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    180,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    200,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -332,7 +332,7 @@ static const Vtx cake_end_vertex_07025A40[] = {
 };
 
 // 0x07025A80 - 0x07025AC0
-static const Vtx cake_end_vertex_07025A80[] = {
+ const Vtx cake_end_vertex_07025A80[] = {
     {{{   160,    180,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    180,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    200,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -340,7 +340,7 @@ static const Vtx cake_end_vertex_07025A80[] = {
 };
 
 // 0x07025AC0 - 0x07025B00
-static const Vtx cake_end_vertex_07025AC0[] = {
+ const Vtx cake_end_vertex_07025AC0[] = {
     {{{   240,    180,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    180,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    200,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -348,7 +348,7 @@ static const Vtx cake_end_vertex_07025AC0[] = {
 };
 
 // 0x07025B00 - 0x07025B40
-static const Vtx cake_end_vertex_07025B00[] = {
+ const Vtx cake_end_vertex_07025B00[] = {
     {{{     0,    160,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    160,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    180,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -356,7 +356,7 @@ static const Vtx cake_end_vertex_07025B00[] = {
 };
 
 // 0x07025B40 - 0x07025B80
-static const Vtx cake_end_vertex_07025B40[] = {
+ const Vtx cake_end_vertex_07025B40[] = {
     {{{    80,    160,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    160,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    180,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -364,7 +364,7 @@ static const Vtx cake_end_vertex_07025B40[] = {
 };
 
 // 0x07025B80 - 0x07025BC0
-static const Vtx cake_end_vertex_07025B80[] = {
+ const Vtx cake_end_vertex_07025B80[] = {
     {{{   160,    160,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    160,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    180,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -372,7 +372,7 @@ static const Vtx cake_end_vertex_07025B80[] = {
 };
 
 // 0x07025BC0 - 0x07025C00
-static const Vtx cake_end_vertex_07025BC0[] = {
+ const Vtx cake_end_vertex_07025BC0[] = {
     {{{   240,    160,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    160,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    180,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -380,7 +380,7 @@ static const Vtx cake_end_vertex_07025BC0[] = {
 };
 
 // 0x07025C00 - 0x07025C40
-static const Vtx cake_end_vertex_07025C00[] = {
+ const Vtx cake_end_vertex_07025C00[] = {
     {{{     0,    140,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    140,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    160,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -388,7 +388,7 @@ static const Vtx cake_end_vertex_07025C00[] = {
 };
 
 // 0x07025C40 - 0x07025C80
-static const Vtx cake_end_vertex_07025C40[] = {
+ const Vtx cake_end_vertex_07025C40[] = {
     {{{    80,    140,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    140,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    160,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -396,7 +396,7 @@ static const Vtx cake_end_vertex_07025C40[] = {
 };
 
 // 0x07025C80 - 0x07025CC0
-static const Vtx cake_end_vertex_07025C80[] = {
+ const Vtx cake_end_vertex_07025C80[] = {
     {{{   160,    140,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    140,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    160,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -404,7 +404,7 @@ static const Vtx cake_end_vertex_07025C80[] = {
 };
 
 // 0x07025CC0 - 0x07025D00
-static const Vtx cake_end_vertex_07025CC0[] = {
+ const Vtx cake_end_vertex_07025CC0[] = {
     {{{   240,    140,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    140,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    160,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -412,7 +412,7 @@ static const Vtx cake_end_vertex_07025CC0[] = {
 };
 
 // 0x07025D00 - 0x07025D40
-static const Vtx cake_end_vertex_07025D00[] = {
+ const Vtx cake_end_vertex_07025D00[] = {
     {{{     0,    120,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    120,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    140,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -420,7 +420,7 @@ static const Vtx cake_end_vertex_07025D00[] = {
 };
 
 // 0x07025D40 - 0x07025D80
-static const Vtx cake_end_vertex_07025D40[] = {
+ const Vtx cake_end_vertex_07025D40[] = {
     {{{    80,    120,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    120,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    140,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -428,7 +428,7 @@ static const Vtx cake_end_vertex_07025D40[] = {
 };
 
 // 0x07025D80 - 0x07025DC0
-static const Vtx cake_end_vertex_07025D80[] = {
+ const Vtx cake_end_vertex_07025D80[] = {
     {{{   160,    120,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    120,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    140,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -436,7 +436,7 @@ static const Vtx cake_end_vertex_07025D80[] = {
 };
 
 // 0x07025DC0 - 0x07025E00
-static const Vtx cake_end_vertex_07025DC0[] = {
+ const Vtx cake_end_vertex_07025DC0[] = {
     {{{   240,    120,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    120,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    140,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -444,7 +444,7 @@ static const Vtx cake_end_vertex_07025DC0[] = {
 };
 
 // 0x07025E00 - 0x07025E40
-static const Vtx cake_end_vertex_07025E00[] = {
+ const Vtx cake_end_vertex_07025E00[] = {
     {{{     0,    100,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    100,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    120,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -452,7 +452,7 @@ static const Vtx cake_end_vertex_07025E00[] = {
 };
 
 // 0x07025E40 - 0x07025E80
-static const Vtx cake_end_vertex_07025E40[] = {
+ const Vtx cake_end_vertex_07025E40[] = {
     {{{    80,    100,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    100,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    120,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -460,7 +460,7 @@ static const Vtx cake_end_vertex_07025E40[] = {
 };
 
 // 0x07025E80 - 0x07025EC0
-static const Vtx cake_end_vertex_07025E80[] = {
+ const Vtx cake_end_vertex_07025E80[] = {
     {{{   160,    100,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    100,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    120,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -468,7 +468,7 @@ static const Vtx cake_end_vertex_07025E80[] = {
 };
 
 // 0x07025EC0 - 0x07025F00
-static const Vtx cake_end_vertex_07025EC0[] = {
+ const Vtx cake_end_vertex_07025EC0[] = {
     {{{   240,    100,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    100,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    120,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -476,7 +476,7 @@ static const Vtx cake_end_vertex_07025EC0[] = {
 };
 
 // 0x07025F00 - 0x07025F40
-static const Vtx cake_end_vertex_07025F00[] = {
+ const Vtx cake_end_vertex_07025F00[] = {
     {{{     0,     80,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     80,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,    100,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -484,7 +484,7 @@ static const Vtx cake_end_vertex_07025F00[] = {
 };
 
 // 0x07025F40 - 0x07025F80
-static const Vtx cake_end_vertex_07025F40[] = {
+ const Vtx cake_end_vertex_07025F40[] = {
     {{{    80,     80,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     80,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,    100,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -492,7 +492,7 @@ static const Vtx cake_end_vertex_07025F40[] = {
 };
 
 // 0x07025F80 - 0x07025FC0
-static const Vtx cake_end_vertex_07025F80[] = {
+ const Vtx cake_end_vertex_07025F80[] = {
     {{{   160,     80,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     80,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,    100,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -500,7 +500,7 @@ static const Vtx cake_end_vertex_07025F80[] = {
 };
 
 // 0x07025FC0 - 0x07026000
-static const Vtx cake_end_vertex_07025FC0[] = {
+ const Vtx cake_end_vertex_07025FC0[] = {
     {{{   240,     80,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     80,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,    100,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -508,7 +508,7 @@ static const Vtx cake_end_vertex_07025FC0[] = {
 };
 
 // 0x07026000 - 0x07026040
-static const Vtx cake_end_vertex_07026000[] = {
+ const Vtx cake_end_vertex_07026000[] = {
     {{{     0,     60,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     60,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     80,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -516,7 +516,7 @@ static const Vtx cake_end_vertex_07026000[] = {
 };
 
 // 0x07026040 - 0x07026080
-static const Vtx cake_end_vertex_07026040[] = {
+ const Vtx cake_end_vertex_07026040[] = {
     {{{    80,     60,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     60,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     80,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -524,7 +524,7 @@ static const Vtx cake_end_vertex_07026040[] = {
 };
 
 // 0x07026080 - 0x070260C0
-static const Vtx cake_end_vertex_07026080[] = {
+ const Vtx cake_end_vertex_07026080[] = {
     {{{   160,     60,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     60,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     80,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -532,7 +532,7 @@ static const Vtx cake_end_vertex_07026080[] = {
 };
 
 // 0x070260C0 - 0x07026100
-static const Vtx cake_end_vertex_070260C0[] = {
+ const Vtx cake_end_vertex_070260C0[] = {
     {{{   240,     60,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     60,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     80,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -540,7 +540,7 @@ static const Vtx cake_end_vertex_070260C0[] = {
 };
 
 // 0x07026100 - 0x07026140
-static const Vtx cake_end_vertex_07026100[] = {
+ const Vtx cake_end_vertex_07026100[] = {
     {{{     0,     40,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     40,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     60,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -548,7 +548,7 @@ static const Vtx cake_end_vertex_07026100[] = {
 };
 
 // 0x07026140 - 0x07026180
-static const Vtx cake_end_vertex_07026140[] = {
+ const Vtx cake_end_vertex_07026140[] = {
     {{{    80,     40,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     40,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     60,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -556,7 +556,7 @@ static const Vtx cake_end_vertex_07026140[] = {
 };
 
 // 0x07026180 - 0x070261C0
-static const Vtx cake_end_vertex_07026180[] = {
+ const Vtx cake_end_vertex_07026180[] = {
     {{{   160,     40,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     40,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     60,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -564,7 +564,7 @@ static const Vtx cake_end_vertex_07026180[] = {
 };
 
 // 0x070261C0 - 0x07026200
-static const Vtx cake_end_vertex_070261C0[] = {
+ const Vtx cake_end_vertex_070261C0[] = {
     {{{   240,     40,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     40,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     60,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -572,7 +572,7 @@ static const Vtx cake_end_vertex_070261C0[] = {
 };
 
 // 0x07026200 - 0x07026240
-static const Vtx cake_end_vertex_07026200[] = {
+ const Vtx cake_end_vertex_07026200[] = {
     {{{     0,     20,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     20,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     40,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -580,7 +580,7 @@ static const Vtx cake_end_vertex_07026200[] = {
 };
 
 // 0x07026240 - 0x07026280
-static const Vtx cake_end_vertex_07026240[] = {
+ const Vtx cake_end_vertex_07026240[] = {
     {{{    80,     20,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     20,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     40,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -588,7 +588,7 @@ static const Vtx cake_end_vertex_07026240[] = {
 };
 
 // 0x07026280 - 0x070262C0
-static const Vtx cake_end_vertex_07026280[] = {
+ const Vtx cake_end_vertex_07026280[] = {
     {{{   160,     20,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     20,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     40,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -596,7 +596,7 @@ static const Vtx cake_end_vertex_07026280[] = {
 };
 
 // 0x070262C0 - 0x07026300
-static const Vtx cake_end_vertex_070262C0[] = {
+ const Vtx cake_end_vertex_070262C0[] = {
     {{{   240,     20,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     20,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     40,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -604,7 +604,7 @@ static const Vtx cake_end_vertex_070262C0[] = {
 };
 
 // 0x07026300 - 0x07026340
-static const Vtx cake_end_vertex_07026300[] = {
+ const Vtx cake_end_vertex_07026300[] = {
     {{{     0,      0,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,      0,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    80,     20,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -612,7 +612,7 @@ static const Vtx cake_end_vertex_07026300[] = {
 };
 
 // 0x07026340 - 0x07026380
-static const Vtx cake_end_vertex_07026340[] = {
+ const Vtx cake_end_vertex_07026340[] = {
     {{{    80,      0,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,      0,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   160,     20,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -620,7 +620,7 @@ static const Vtx cake_end_vertex_07026340[] = {
 };
 
 // 0x07026380 - 0x070263C0
-static const Vtx cake_end_vertex_07026380[] = {
+ const Vtx cake_end_vertex_07026380[] = {
     {{{   160,      0,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,      0,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   240,     20,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -628,7 +628,7 @@ static const Vtx cake_end_vertex_07026380[] = {
 };
 
 // 0x070263C0 - 0x07026400
-static const Vtx cake_end_vertex_070263C0[] = {
+ const Vtx cake_end_vertex_070263C0[] = {
     {{{   240,      0,     -1}, 0, {     0,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,      0,     -1}, 0, {  2528,    608}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   320,     20,     -1}, 0, {  2528,      0}, {0xff, 0xff, 0xff, 0xff}}},

@@ -1,28 +1,28 @@
 // Water Mine (unused)
 
 // 0x0600A4E0
-static const Lights1 water_mine_seg6_lights_0600A4E0 = gdSPDefLights1(
+ const Lights1 water_mine_seg6_lights_0600A4E0 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600A4F8
-ALIGNED8 static const Texture water_mine_seg6_texture_0600A4F8[] = {
+ALIGNED8  const Texture water_mine_seg6_texture_0600A4F8[] = {
 #include "actors/water_mine/water_mine_left_side_unused.rgba16.inc.c"
 };
 
 // 0x0600B4F8
-ALIGNED8 static const Texture water_mine_seg6_texture_0600B4F8[] = {
+ALIGNED8  const Texture water_mine_seg6_texture_0600B4F8[] = {
 #include "actors/water_mine/water_mine_right_side_unused.rgba16.inc.c"
 };
 
 // 0x0600C4F8
-ALIGNED8 static const Texture water_mine_seg6_texture_0600C4F8[] = {
+ALIGNED8  const Texture water_mine_seg6_texture_0600C4F8[] = {
 #include "actors/water_mine/water_mine_spike_unused.rgba16.inc.c"
 };
 
 // 0x0600CCF8
-static const Vtx water_mine_seg6_vertex_0600CCF8[] = {
+ const Vtx water_mine_seg6_vertex_0600CCF8[] = {
     {{{     0,     40,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -39,    -39,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -39,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx water_mine_seg6_vertex_0600CCF8[] = {
 };
 
 // 0x0600CD38
-static const Vtx water_mine_seg6_vertex_0600CD38[] = {
+ const Vtx water_mine_seg6_vertex_0600CD38[] = {
     {{{    40,     40,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -39,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    40,    -39,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx water_mine_seg6_vertex_0600CD38[] = {
 };
 
 // 0x0600CD78
-static const Vtx water_mine_seg6_vertex_0600CD78[] = {
+ const Vtx water_mine_seg6_vertex_0600CD78[] = {
     {{{     0,    -59,      0}, 0, {   502,    -18}, {0xf7, 0x82, 0xf7, 0xff}}},
     {{{    -9,    -36,      0}, 0, {    14,    976}, {0x8a, 0xd2, 0xfd, 0xff}}},
     {{{     0,    -36,     -8}, 0, {   938,    980}, {0xfd, 0xd7, 0x89, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx water_mine_seg6_vertex_0600CD78[] = {
 };
 
 // 0x0600CE68
-static const Vtx water_mine_seg6_vertex_0600CE68[] = {
+ const Vtx water_mine_seg6_vertex_0600CE68[] = {
     {{{     0,     10,     37}, 0, {   -20,    976}, {0xfd, 0x74, 0x32, 0xff}}},
     {{{    -9,      0,     37}, 0, {   974,    974}, {0x8a, 0xf9, 0x2e, 0xff}}},
     {{{     0,      0,     60}, 0, {   428,      4}, {0xf8, 0xee, 0x7d, 0xff}}},
@@ -76,7 +76,7 @@ static const Vtx water_mine_seg6_vertex_0600CE68[] = {
 };
 
 // 0x0600CF58
-static const Vtx water_mine_seg6_vertex_0600CF58[] = {
+ const Vtx water_mine_seg6_vertex_0600CF58[] = {
     {{{    37,      0,     -9}, 0, {    10,    960}, {0x2e, 0xf9, 0x8a, 0xff}}},
     {{{    37,     10,      0}, 0, {   928,    972}, {0x32, 0x74, 0xfd, 0xff}}},
     {{{    60,      0,      0}, 0, {   494,     -4}, {0x7d, 0xee, 0xf8, 0xff}}},
@@ -95,7 +95,7 @@ static const Vtx water_mine_seg6_vertex_0600CF58[] = {
 };
 
 // 0x0600D048
-static const Vtx water_mine_seg6_vertex_0600D048[] = {
+ const Vtx water_mine_seg6_vertex_0600D048[] = {
     {{{   -59,      0,      0}, 0, {   452,     20}, {0x83, 0xee, 0xf8, 0xff}}},
     {{{   -36,      0,     -9}, 0, {    -4,    974}, {0xd2, 0xf9, 0x8a, 0xff}}},
     {{{   -36,     -8,      0}, 0, {   948,    980}, {0xd7, 0x89, 0xfd, 0xff}}},
@@ -114,7 +114,7 @@ static const Vtx water_mine_seg6_vertex_0600D048[] = {
 };
 
 // 0x0600D138
-static const Vtx water_mine_seg6_vertex_0600D138[] = {
+ const Vtx water_mine_seg6_vertex_0600D138[] = {
     {{{     0,      0,    -59}, 0, {   464,      4}, {0xf8, 0xee, 0x83, 0xff}}},
     {{{     0,     10,    -36}, 0, {   -14,    968}, {0xfd, 0x74, 0xce, 0xff}}},
     {{{    10,      0,    -36}, 0, {   942,    976}, {0x74, 0xf9, 0xce, 0xff}}},

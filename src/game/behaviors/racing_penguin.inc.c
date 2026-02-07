@@ -6,7 +6,7 @@ struct RacingPenguinData {
     f32 height;
 };
 
-static struct RacingPenguinData sRacingPenguinData[] = {
+ struct RacingPenguinData sRacingPenguinData[] = {
     /* RACING_PENGUIN_BP_THIN */ { DIALOG_055, 200.0f, 200.0f },
     /* RACING_PENGUIN_BP_FAT  */ { DIALOG_164, 350.0f, 250.0f },
 };
@@ -19,14 +19,14 @@ void bhv_racing_penguin_init(void) {
     }
 }
 
-static void racing_penguin_act_wait_for_mario(void) {
+ void racing_penguin_act_wait_for_mario(void) {
     if (o->oTimer > o->oRacingPenguinInitTextCooldown && o->oPosY - gMarioObject->oPosY <= 0.0f
         && cur_obj_can_mario_activate_textbox_2(400.0f, 400.0f)) {
         o->oAction = RACING_PENGUIN_ACT_SHOW_INIT_TEXT;
     }
 }
 
-static void racing_penguin_act_show_init_text(void) {
+ void racing_penguin_act_show_init_text(void) {
     s32 response = obj_update_race_proposition_dialog(sRacingPenguinData[o->oBhvParams2ndByte].dialogID);
 
     if (response == DIALOG_RESPONSE_YES) {
@@ -50,7 +50,7 @@ static void racing_penguin_act_show_init_text(void) {
     }
 }
 
-static void racing_penguin_act_prepare_for_race(void) {
+ void racing_penguin_act_prepare_for_race(void) {
     if (obj_begin_race(TRUE)) {
         o->oAction = RACING_PENGUIN_ACT_RACE;
         o->oForwardVel = 20.0f;
@@ -59,7 +59,7 @@ static void racing_penguin_act_prepare_for_race(void) {
     cur_obj_rotate_yaw_toward(0x4000, 2500);
 }
 
-static void racing_penguin_act_race(void) {
+ void racing_penguin_act_race(void) {
     if (cur_obj_follow_path(0) == PATH_REACHED_END) {
         o->oRacingPenguinReachedBottom = TRUE;
         o->oAction = RACING_PENGUIN_ACT_FINISH_RACE;
@@ -100,7 +100,7 @@ static void racing_penguin_act_race(void) {
     }
 }
 
-static void racing_penguin_act_finish_race(void) {
+ void racing_penguin_act_finish_race(void) {
     if (o->oForwardVel != 0.0f) {
         if (o->oTimer > 5 && (o->oMoveFlags & OBJ_MOVE_HIT_WALL)) {
             cur_obj_play_sound_2(SOUND_OBJ_POUNDING_LOUD);
@@ -112,7 +112,7 @@ static void racing_penguin_act_finish_race(void) {
     }
 }
 
-static void racing_penguin_act_show_final_text(void) {
+ void racing_penguin_act_show_final_text(void) {
     if (o->oRacingPenguinFinalTextbox == 0) {
         if (cur_obj_rotate_yaw_toward(0, 200)) {
             cur_obj_init_animation_with_sound(3);

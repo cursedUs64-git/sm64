@@ -1,18 +1,18 @@
 // Cannon Lid
 
 // 0x08004040
-static const Lights1 cannon_lid_seg8_lights_08004040 = gdSPDefLights1(
+ const Lights1 cannon_lid_seg8_lights_08004040 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08004058
-ALIGNED8 static const Texture cannon_lid_seg8_texture_08004058[] = {
+ALIGNED8  const Texture cannon_lid_seg8_texture_08004058[] = {
 #include "actors/cannon_lid/cannon_lid.rgba16.inc.c"
 };
 
 // 0x08004858
-static const Vtx cannon_lid_seg8_vertex_08004858[] = {
+ const Vtx cannon_lid_seg8_vertex_08004858[] = {
     {{{   102,      0,   -101}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -101,      0,   -101}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -101,      0,    102}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},

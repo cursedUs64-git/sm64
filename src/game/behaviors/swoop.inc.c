@@ -7,7 +7,7 @@
 /**
  * Hitbox for swoop.
  */
-static struct ObjectHitbox sSwoopHitbox = {
+ struct ObjectHitbox sSwoopHitbox = {
     /* interactType:      */ INTERACT_HIT_FROM_BELOW,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
@@ -23,7 +23,7 @@ static struct ObjectHitbox sSwoopHitbox = {
  * If necessary, grow to full size. Wait for mario to enter range, then turn
  * toward him and enter the move action.
  */
-static void swoop_act_idle(void) {
+ void swoop_act_idle(void) {
     cur_obj_init_animation_with_sound(1);
 
     if (approach_f32_ptr(&o->header.gfx.scale[0], 1.0f, 0.05f) && o->oDistanceToMario < 1500.0f) {
@@ -41,7 +41,7 @@ static void swoop_act_idle(void) {
  * Swoop downward toward mario. Stop moving downward and speed up after reaching
  * him. Return to home once mario is far away.
  */
-static void swoop_act_move(void) {
+ void swoop_act_move(void) {
     cur_obj_init_animation_with_accel_and_sound(0, 2.0f);
     if (cur_obj_check_if_near_animation_end()) {
         cur_obj_play_sound_2(SOUND_OBJ_UNKNOWN6);

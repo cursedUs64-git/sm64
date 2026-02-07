@@ -1,33 +1,33 @@
 // Treasure Chest
 
 // 0x06013F90
-static const Lights1 treasure_chest_seg6_lights_06013F90 = gdSPDefLights1(
+ const Lights1 treasure_chest_seg6_lights_06013F90 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06013FA8
-ALIGNED8 static const Texture treasure_chest_seg6_texture_06013FA8[] = {
+ALIGNED8  const Texture treasure_chest_seg6_texture_06013FA8[] = {
 #include "actors/treasure_chest/treasure_chest_lock.rgba16.inc.c"
 };
 
 // 0x060147A8
-ALIGNED8 static const Texture treasure_chest_seg6_texture_060147A8[] = {
+ALIGNED8  const Texture treasure_chest_seg6_texture_060147A8[] = {
 #include "actors/treasure_chest/treasure_chest_side.rgba16.inc.c"
 };
 
 // 0x06014FA8
-ALIGNED8 static const Texture treasure_chest_seg6_texture_06014FA8[] = {
+ALIGNED8  const Texture treasure_chest_seg6_texture_06014FA8[] = {
 #include "actors/treasure_chest/treasure_chest_lock_top.rgba16.inc.c"
 };
 
 // 0x060157A8
-ALIGNED8 static const Texture treasure_chest_seg6_texture_060157A8[] = {
+ALIGNED8  const Texture treasure_chest_seg6_texture_060157A8[] = {
 #include "actors/treasure_chest/treasure_chest_front.rgba16.inc.c"
 };
 
 // 0x060167A8
-static const Vtx treasure_chest_seg6_vertex_060167A8[] = {
+ const Vtx treasure_chest_seg6_vertex_060167A8[] = {
     {{{    20,    102,     87}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -19,     72,     87}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    20,     72,     87}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -35,7 +35,7 @@ static const Vtx treasure_chest_seg6_vertex_060167A8[] = {
 };
 
 // 0x060167E8
-static const Vtx treasure_chest_seg6_vertex_060167E8[] = {
+ const Vtx treasure_chest_seg6_vertex_060167E8[] = {
     {{{    20,     72,     77}, 0, {   990,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -19,     72,     87}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -19,     72,     77}, 0, {     0,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -55,14 +55,14 @@ static const Vtx treasure_chest_seg6_vertex_060167E8[] = {
 };
 
 // 0x060168E8
-static const Vtx treasure_chest_seg6_vertex_060168E8[] = {
+ const Vtx treasure_chest_seg6_vertex_060168E8[] = {
     {{{    20,    102,     77}, 0, {   990,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    20,    102,     87}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    20,     72,     87}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
 };
 
 // 0x06016918
-static const Vtx treasure_chest_seg6_vertex_06016918[] = {
+ const Vtx treasure_chest_seg6_vertex_06016918[] = {
     {{{    77,    102,    -50}, 0, {     0,  -1736}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    77,     20,    -50}, 0, {     0,    990}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    77,     20,     51}, 0, {  3374,    990}, {0x81, 0x00, 0x00, 0xff}}},
@@ -81,7 +81,7 @@ static const Vtx treasure_chest_seg6_vertex_06016918[] = {
 };
 
 // 0x06016A08
-static const Vtx treasure_chest_seg6_vertex_06016A08[] = {
+ const Vtx treasure_chest_seg6_vertex_06016A08[] = {
     {{{   -91,    102,    -76}, 0, {  5244,    962}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   -76,    102,    -50}, 0, {  4734,     46}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    77,    102,    -50}, 0, {  -368,      2}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -100,7 +100,7 @@ static const Vtx treasure_chest_seg6_vertex_06016A08[] = {
 };
 
 // 0x06016AF8
-static const Vtx treasure_chest_seg6_vertex_06016AF8[] = {
+ const Vtx treasure_chest_seg6_vertex_06016AF8[] = {
     {{{    92,    102,    -76}, 0, {  6356,    964}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    77,    102,    -50}, 0, {  5078,     86}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    77,    102,     51}, 0, {     0,     34}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -112,7 +112,7 @@ static const Vtx treasure_chest_seg6_vertex_06016AF8[] = {
 };
 
 // 0x06016B78
-static const Vtx treasure_chest_seg6_vertex_06016B78[] = {
+ const Vtx treasure_chest_seg6_vertex_06016B78[] = {
     {{{    92,      0,    -68}, 0, {  2012,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    92,    102,      0}, 0, {   152,  -2392}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    92,      0,      0}, 0, {   340,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -132,7 +132,7 @@ static const Vtx treasure_chest_seg6_vertex_06016B78[] = {
 };
 
 // 0x06016C78
-static const Vtx treasure_chest_seg6_vertex_06016C78[] = {
+ const Vtx treasure_chest_seg6_vertex_06016C78[] = {
     {{{    92,      0,     69}, 0, {  2012,    990}, {0x00, 0xf7, 0x7e, 0xff}}},
     {{{     0,    102,     77}, 0, { -1664,  -2416}, {0x00, 0xf7, 0x7e, 0xff}}},
     {{{     0,      0,     69}, 0, { -1664,    990}, {0x00, 0xf7, 0x7e, 0xff}}},
@@ -240,7 +240,7 @@ const Gfx treasure_chest_seg6_dl_06016F90[] = {
 };
 
 // 0x06017030
-static const Vtx treasure_chest_seg6_vertex_06017030[] = {
+ const Vtx treasure_chest_seg6_vertex_06017030[] = {
     {{{    92,      0,    154}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    92,      0,      0}, 0, {  5078,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    92,     30,     27}, 0, {  4184,  -1022}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -258,7 +258,7 @@ static const Vtx treasure_chest_seg6_vertex_06017030[] = {
 };
 
 // 0x06017110
-static const Vtx treasure_chest_seg6_vertex_06017110[] = {
+ const Vtx treasure_chest_seg6_vertex_06017110[] = {
     {{{   -91,      0,      0}, 0, { -1564,     36}, {0x00, 0x81, 0x00, 0xff}}},
     {{{    74,      0,     15}, 0, {  6714,    752}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -73,      0,     15}, 0, {  -644,    752}, {0x00, 0x81, 0x00, 0xff}}},
@@ -277,7 +277,7 @@ static const Vtx treasure_chest_seg6_vertex_06017110[] = {
 };
 
 // 0x06017200
-static const Vtx treasure_chest_seg6_vertex_06017200[] = {
+ const Vtx treasure_chest_seg6_vertex_06017200[] = {
     {{{    74,      0,    138}, 0, { -3720,     10}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    74,     20,     27}, 0, {  1206,    974}, {0x81, 0x00, 0x00, 0xff}}},
     {{{    74,      0,     15}, 0, {  1730,     30}, {0x81, 0x00, 0x00, 0xff}}},
@@ -296,7 +296,7 @@ static const Vtx treasure_chest_seg6_vertex_06017200[] = {
 };
 
 // 0x060172F0
-static const Vtx treasure_chest_seg6_vertex_060172F0[] = {
+ const Vtx treasure_chest_seg6_vertex_060172F0[] = {
     {{{   -73,      0,    138}, 0, { -6024,    156}, {0x00, 0xc3, 0x91, 0xff}}},
     {{{    74,     20,    127}, 0, {  1162,    896}, {0x00, 0xc3, 0x91, 0xff}}},
     {{{    74,      0,    138}, 0, {  1212,    112}, {0x00, 0xc3, 0x91, 0xff}}},
@@ -304,7 +304,7 @@ static const Vtx treasure_chest_seg6_vertex_060172F0[] = {
 };
 
 // 0x06017330
-static const Vtx treasure_chest_seg6_vertex_06017330[] = {
+ const Vtx treasure_chest_seg6_vertex_06017330[] = {
     {{{   -19,     20,    136}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    20,     20,    154}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    20,     20,    136}, 0, {   990,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -323,7 +323,7 @@ static const Vtx treasure_chest_seg6_vertex_06017330[] = {
 };
 
 // 0x06017420
-static const Vtx treasure_chest_seg6_vertex_06017420[] = {
+ const Vtx treasure_chest_seg6_vertex_06017420[] = {
     {{{   -19,      0,    154}, 0, {   480,    990}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,      0,    164}, 0, {   990,    990}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     20,    154}, 0, {   990,      0}, {0x81, 0x00, 0x00, 0xff}}},
@@ -334,7 +334,7 @@ static const Vtx treasure_chest_seg6_vertex_06017420[] = {
 };
 
 // 0x06017490
-static const Vtx treasure_chest_seg6_vertex_06017490[] = {
+ const Vtx treasure_chest_seg6_vertex_06017490[] = {
     {{{   -91,     46,     77}, 0, {  2012,  -1036}, {0x00, 0x78, 0x26, 0xff}}},
     {{{     0,     30,    127}, 0, { -1664,    990}, {0x00, 0x78, 0x26, 0xff}}},
     {{{     0,     46,     77}, 0, { -1664,  -1036}, {0x00, 0x78, 0x26, 0xff}}},
@@ -354,7 +354,7 @@ static const Vtx treasure_chest_seg6_vertex_06017490[] = {
 };
 
 // 0x06017590
-static const Vtx treasure_chest_seg6_vertex_06017590[] = {
+ const Vtx treasure_chest_seg6_vertex_06017590[] = {
     {{{   -91,     46,     77}, 0, {  2012,  -1036}, {0x00, 0x78, 0x26, 0xff}}},
     {{{   -91,     30,    127}, 0, {  2012,    990}, {0x00, 0x78, 0x26, 0xff}}},
     {{{     0,     30,    127}, 0, { -1664,    990}, {0x00, 0x78, 0x26, 0xff}}},

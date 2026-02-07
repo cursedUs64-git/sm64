@@ -15,14 +15,14 @@
 #include "make_const_nonconst.h"
 #include "levels/castle_courtyard/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript castle_courtyard_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/     0, 200, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvAmbientSounds),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -2700,   0, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x00), /*bhv*/ bhvBirdsSoundLoop),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  2700,   0, -1652, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x01), /*bhv*/ bhvBirdsSoundLoop),
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript castle_courtyard_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_BOO, /*pos*/ -3217, 100,  -101, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
     OBJECT(/*model*/ MODEL_BOO, /*pos*/  3317, 100, -1701, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
     OBJECT(/*model*/ MODEL_BOO, /*pos*/   -71,   1, -1387, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvCourtyardBooTriplet),
@@ -55,8 +55,8 @@ const LevelScript level_castle_courtyard_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_CASTLE_COURTYARD, /*destArea*/ 1, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_01,    /*destLevel*/ LEVEL_CASTLE,           /*destArea*/ 1, /*destNode*/ WARP_NODE_02, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE_GROUNDS,   /*destArea*/ 1, /*destNode*/ WARP_NODE_03, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
+        JUMP_LINK(castle_courtyard_script_func_local_1),
+        JUMP_LINK(castle_courtyard_script_func_local_2),
         TERRAIN(/*terrainData*/ castle_courtyard_seg7_collision),
         MACRO_OBJECTS(/*objList*/ castle_courtyard_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_SOUND_PLAYER),

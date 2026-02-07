@@ -1,5 +1,5 @@
 // 0x07019C80 - 0x07019D20
-static const Vtx lll_seg7_vertex_07019C80[] = {
+ const Vtx lll_seg7_vertex_07019C80[] = {
     {{{  -509,     41,   -511}, 0, {   -30,      0}, {0x00, 0x7e, 0x0a, 0xff}}},
     {{{ -1023,      0,      0}, 0, {  -542,    478}, {0x00, 0x7e, 0x0a, 0xff}}},
     {{{    -1,      0,      0}, 0, {   476,    480}, {0x00, 0x7e, 0x0a, 0xff}}},
@@ -13,7 +13,7 @@ static const Vtx lll_seg7_vertex_07019C80[] = {
 };
 
 // 0x07019D20 - 0x07019E20
-static const Vtx lll_seg7_vertex_07019D20[] = {
+ const Vtx lll_seg7_vertex_07019D20[] = {
     {{{     0,      0,  -1023}, 0, {   480,   -544}, {0xf6, 0x7e, 0x00, 0xff}}},
     {{{    -1,      0,      0}, 0, {   476,    480}, {0xf6, 0x7e, 0x00, 0xff}}},
     {{{   514,     41,   -511}, 0, {   992,      0}, {0xf6, 0x7e, 0x00, 0xff}}},
@@ -33,7 +33,7 @@ static const Vtx lll_seg7_vertex_07019D20[] = {
 };
 
 // 0x07019E20 - 0x07019E80
-static const Vtx lll_seg7_vertex_07019E20[] = {
+ const Vtx lll_seg7_vertex_07019E20[] = {
     {{{  -509,     41,    512}, 0, {   -30,    990}, {0x0a, 0x7e, 0x00, 0xff}}},
     {{{     0,      0,   1024}, 0, {   480,   1500}, {0x0a, 0x7e, 0x00, 0xff}}},
     {{{     0,      0,      0}, 0, {   478,    480}, {0x0a, 0x7e, 0x00, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx lll_seg7_vertex_07019E20[] = {
 };
 
 // 0x07019E80 - 0x07019F20
-static const Vtx lll_seg7_vertex_07019E80[] = {
+ const Vtx lll_seg7_vertex_07019E80[] = {
     {{{  1024,      0,  -1023}, 0, {  1502,   -544}, {0x00, 0x7e, 0xf6, 0xff}}},
     {{{     0,      0,  -1023}, 0, {   480,   -544}, {0x00, 0x7e, 0xf6, 0xff}}},
     {{{   514,     41,   -511}, 0, {   992,      0}, {0x00, 0x7e, 0xf6, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx lll_seg7_vertex_07019E80[] = {
 };
 
 // 0x07019F20 - 0x0701A010
-static const Gfx lll_seg7_dl_07019F20[] = {
+ const Gfx lll_seg7_dl_07019F20[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_09004000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

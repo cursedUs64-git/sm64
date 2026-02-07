@@ -1,5 +1,5 @@
 // 0x07031608 - 0x070316C8
-static const Vtx inside_castle_seg7_vertex_07031608[] = {
+ const Vtx inside_castle_seg7_vertex_07031608[] = {
     {{{  2001,   1024,  -2688}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1857,   1024,  -2833}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2001,    691,  -2688}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -15,7 +15,7 @@ static const Vtx inside_castle_seg7_vertex_07031608[] = {
 };
 
 // 0x070316C8 - 0x07031720
-static const Gfx inside_castle_seg7_dl_070316C8[] = {
+ const Gfx inside_castle_seg7_dl_070316C8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_castle_seg7_texture_07002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

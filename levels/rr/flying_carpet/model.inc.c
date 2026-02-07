@@ -1,7 +1,7 @@
 // Not a traditional model file. The vertexes are generated in src/geo_misc.c.
 
 // 0x07019230 - 0x07019248
-static const Lights1 rr_seg7_lights_07019230 = gdSPDefLights1(
+ const Lights1 rr_seg7_lights_07019230 = gdSPDefLights1(
     0x5f, 0x5f, 0x5f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );

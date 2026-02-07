@@ -1,11 +1,11 @@
 // 0x07007078 - 0x07007090
-static const Lights1 thi_seg7_lights_07007078 = gdSPDefLights1(
+ const Lights1 thi_seg7_lights_07007078 = gdSPDefLights1(
     0x7f, 0x7f, 0x3c,
     0xff, 0xff, 0x78, 0x28, 0x28, 0x28
 );
 
 // 0x07007090 - 0x07007180
-static const Vtx thi_seg7_vertex_07007090[] = {
+ const Vtx thi_seg7_vertex_07007090[] = {
     {{{  5632,  -6655,  -6655}, 0, {    76,    806}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  5120,  -6655,  -7167}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  4608,  -6655,  -5631}, 0, {   506,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx thi_seg7_vertex_07007090[] = {
 };
 
 // 0x07007180 - 0x07007240
-static const Vtx thi_seg7_vertex_07007180[] = {
+ const Vtx thi_seg7_vertex_07007180[] = {
     {{{  7680,  -6655,  -6655}, 0, {   224,    786}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  8192,  -6655,  -7167}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  5120,  -6655,  -7167}, 0, {  1502,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -40,7 +40,7 @@ static const Vtx thi_seg7_vertex_07007180[] = {
 };
 
 // 0x07007240 - 0x070072E8
-static const Gfx thi_seg7_dl_07007240[] = {
+ const Gfx thi_seg7_dl_07007240[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, grass_0900B800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

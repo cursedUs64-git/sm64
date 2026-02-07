@@ -15,22 +15,22 @@
 #include "make_const_nonconst.h"
 #include "levels/thi/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript thi_script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript thi_script_func_local_2[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,    /*pos*/     0, -700, -4500, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_4), /*bhv*/ bhvHiddenStar,          /*acts*/ ALL_ACTS),
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript thi_script_func_local_3[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,             /*pos*/ -1800,   800, -1500, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_5), /*bhv*/ bhvHiddenRedCoinStar, /*acts*/ ALL_ACTS),
     OBJECT          (/*model*/ MODEL_WIGGLER_HEAD,     /*pos*/    17,  1843,   -62, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_6), /*bhv*/ bhvWigglerHead),
     RETURN(),
 };
 
-static const LevelScript script_func_local_4[] = {
+ const LevelScript thi_script_func_local_4[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_KOOPA_WITH_SHELL, /*pos*/ -1900,  -511,  2400, /*angle*/ 0, -30, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_3) | BPARAM2(KOOPA_BP_KOOPA_THE_QUICK_THI), /*bhv*/ bhvKoopa,             /*acts*/ ACT_3),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,             /*pos*/  7400, -1537, -6300, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvKoopaRaceEndpoint, /*acts*/ ACT_3),
     OBJECT          (/*model*/ MODEL_NONE,             /*pos*/ -6556, -2969,  6565, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(GOOMBA_TRIPLET_SPAWNER_BP_EXTRA_GOOMBAS(0) | GOOMBA_SIZE_HUGE), /*bhv*/ bhvGoombaTripletSpawner),
@@ -46,18 +46,18 @@ static const LevelScript script_func_local_4[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_5[] = {
+ const LevelScript thi_script_func_local_5[] = {
     OBJECT(/*model*/ MODEL_THI_HUGE_ISLAND_TOP, /*pos*/     0, 3891, -1533, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvTHIHugeIslandTop),
     RETURN(),
 };
 
-static const LevelScript script_func_local_6[] = {
+ const LevelScript thi_script_func_local_6[] = {
     OBJECT(/*model*/ MODEL_THI_TINY_ISLAND_TOP, /*pos*/     0, 1167,  -460, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvTHITinyIslandTop),
     OBJECT(/*model*/ MODEL_NONE,                /*pos*/ -1382,   80,  -649, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(BBALL_BP_STYPE_THI_SMALL), /*bhv*/ bhvTHIBowlingBallSpawner),
     RETURN(),
 };
 
-static const LevelScript script_func_local_7[] = {
+ const LevelScript thi_script_func_local_7[] = {
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/  6656, -1536, -5632, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_32), /*bhv*/ bhvWarpPipe),
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/ -5888, -2048, -5888, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_33), /*bhv*/ bhvWarpPipe),
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/ -3072,   512, -3840, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_34), /*bhv*/ bhvWarpPipe),
@@ -67,7 +67,7 @@ static const LevelScript script_func_local_7[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_8[] = {
+ const LevelScript thi_script_func_local_8[] = {
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/  1997, -461, -1690, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_32), /*bhv*/ bhvWarpPipe),
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/ -1766, -614, -1766, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_33), /*bhv*/ bhvWarpPipe),
     OBJECT(/*model*/ MODEL_THI_WARP_PIPE, /*pos*/  -922,  154, -1152, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(WARP_NODE_34), /*bhv*/ bhvWarpPipe),
@@ -110,10 +110,10 @@ const LevelScript level_thi_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0D,      /*destLevel*/ LEVEL_THI,    /*destArea*/ 3, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_37, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_69, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_7),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_5),
-        JUMP_LINK(script_func_local_4),
+        JUMP_LINK(thi_script_func_local_7),
+        JUMP_LINK(thi_script_func_local_1),
+        JUMP_LINK(thi_script_func_local_5),
+        JUMP_LINK(thi_script_func_local_4),
         TERRAIN(/*terrainData*/ thi_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_1_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_GRASS),
@@ -129,9 +129,9 @@ const LevelScript level_thi_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0C,      /*destLevel*/ LEVEL_THI,    /*destArea*/ 2, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_8),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_6),
+        JUMP_LINK(thi_script_func_local_8),
+        JUMP_LINK(thi_script_func_local_2),
+        JUMP_LINK(thi_script_func_local_6),
         TERRAIN(/*terrainData*/ thi_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_2_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_GRASS),
@@ -147,7 +147,7 @@ const LevelScript level_thi_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0C,      /*destLevel*/ LEVEL_THI,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0B, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_37, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 2, /*destNode*/ WARP_NODE_69, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(thi_script_func_local_3),
         TERRAIN(/*terrainData*/ thi_seg7_area_3_collision),
         MACRO_OBJECTS(/*objList*/ thi_seg7_area_3_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_UNDERGROUND),

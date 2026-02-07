@@ -1,18 +1,18 @@
 // Tornado
 
 // 0x05013128
-ALIGNED8 static const Texture tornado_seg5_texture_05013128[] = {
+ALIGNED8  const Texture tornado_seg5_texture_05013128[] = {
 #include "actors/tornado/tornado.ia16.inc.c"
 };
 
 // 0x05014128
-static const Lights1 tornado_seg5_lights_05014128 = gdSPDefLights1(
+ const Lights1 tornado_seg5_lights_05014128 = gdSPDefLights1(
     0x3b, 0x34, 0x23,
     0xee, 0xd0, 0x8d, 0x28, 0x28, 0x28
 );
 
 // 0x05014140
-static const Vtx tornado_seg5_vertex_05014140[] = {
+ const Vtx tornado_seg5_vertex_05014140[] = {
     {{{   474,    661,    822}, 0, {   650,   1708}, {0x30, 0xbe, 0x60, 0x64}}},
     {{{     0,    661,    949}, 0, {   480,   1708}, {0x00, 0xb6, 0x67, 0x64}}},
     {{{     0,      0,      0}, 0, {   564,   2012}, {0x00, 0x82, 0x00, 0x64}}},
@@ -30,7 +30,7 @@ static const Vtx tornado_seg5_vertex_05014140[] = {
 };
 
 // 0x05014220
-static const Vtx tornado_seg5_vertex_05014220[] = {
+ const Vtx tornado_seg5_vertex_05014220[] = {
     {{{  -474,    661,   -822}, 0, {  1672,   1708}, {0xd0, 0xbe, 0xa0, 0x64}}},
     {{{  -969,   4107,  -1678}, 0, {  1672,    128}, {0xba, 0xde, 0x9d, 0x64}}},
     {{{     0,   4107,  -1938}, 0, {  1502,    128}, {0x00, 0xdd, 0x86, 0x64}}},
@@ -50,7 +50,7 @@ static const Vtx tornado_seg5_vertex_05014220[] = {
 };
 
 // 0x05014320
-static const Vtx tornado_seg5_vertex_05014320[] = {
+ const Vtx tornado_seg5_vertex_05014320[] = {
     {{{  -474,    661,   -822}, 0, {  1672,   1708}, {0xd0, 0xbe, 0xa0, 0x64}}},
     {{{     0,    661,   -949}, 0, {  1502,   1708}, {0x00, 0xb6, 0x99, 0x64}}},
     {{{     0,      0,      0}, 0, {  1586,   2012}, {0x00, 0x82, 0x00, 0x64}}},
@@ -68,7 +68,7 @@ static const Vtx tornado_seg5_vertex_05014320[] = {
 };
 
 // 0x05014400
-static const Vtx tornado_seg5_vertex_05014400[] = {
+ const Vtx tornado_seg5_vertex_05014400[] = {
     {{{  -474,    661,    822}, 0, {   308,   1708}, {0xc9, 0xc3, 0x60, 0x64}}},
     {{{  -969,   4107,   1679}, 0, {   308,    128}, {0xc3, 0xdd, 0x69, 0x64}}},
     {{{ -1678,   4107,    969}, 0, {   138,    128}, {0x9d, 0xde, 0x46, 0x64}}},

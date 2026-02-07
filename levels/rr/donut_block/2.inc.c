@@ -1,5 +1,5 @@
 // 0x0701B8B8 - 0x0701B938
-static const Vtx rr_seg7_vertex_0701B8B8[] = {
+ const Vtx rr_seg7_vertex_0701B8B8[] = {
     {{{    61,    143,    317}, 0, {   990,      0}, {0xc7, 0xa2, 0x68, 0xff}}},
     {{{   -60,     20,    317}, 0, {     0,    990}, {0xc7, 0xa2, 0x68, 0xff}}},
     {{{    61,     20,    317}, 0, {   990,    990}, {0xc7, 0xa2, 0x68, 0xff}}},
@@ -11,7 +11,7 @@ static const Vtx rr_seg7_vertex_0701B8B8[] = {
 };
 
 // 0x0701B938 - 0x0701B980
-static const Gfx rr_seg7_dl_0701B938[] = {
+ const Gfx rr_seg7_dl_0701B938[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, texture_metal_hole),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

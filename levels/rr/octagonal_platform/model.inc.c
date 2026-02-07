@@ -1,11 +1,11 @@
 // 0x0701A6F0 - 0x0701A708
-static const Lights1 rr_seg7_lights_0701A6F0 = gdSPDefLights1(
+ const Lights1 rr_seg7_lights_0701A6F0 = gdSPDefLights1(
     0x55, 0x5f, 0x53,
     0xe3, 0xfe, 0xdf, 0x28, 0x28, 0x28
 );
 
 // 0x0701A708 - 0x0701A7F8
-static const Vtx rr_seg7_vertex_0701A708[] = {
+ const Vtx rr_seg7_vertex_0701A708[] = {
     {{{     0,    205,    819}, 0, {  1006,    464}, {0xd0, 0x00, 0x75, 0xff}}},
     {{{  -578,      0,    579}, 0, {     0,    990}, {0xd0, 0x00, 0x75, 0xff}}},
     {{{     0,      0,    819}, 0, {   750,    208}, {0xd0, 0x00, 0x75, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx rr_seg7_vertex_0701A708[] = {
 };
 
 // 0x0701A7F8 - 0x0701A8E8
-static const Vtx rr_seg7_vertex_0701A7F8[] = {
+ const Vtx rr_seg7_vertex_0701A7F8[] = {
     {{{     0,      0,    819}, 0, {  5038,   4494}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   579,      0,   -578}, 0, {  3150,   2606}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   819,      0,      0}, 0, {  4256,   2606}, {0x00, 0x81, 0x00, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx rr_seg7_vertex_0701A7F8[] = {
 };
 
 // 0x0701A8E8 - 0x0701A9D8
-static const Vtx rr_seg7_vertex_0701A8E8[] = {
+ const Vtx rr_seg7_vertex_0701A8E8[] = {
     {{{     0,    205,   -818}, 0, {  2112,   3132}, {0x30, 0x00, 0x8b, 0xff}}},
     {{{   579,    205,   -578}, 0, {  2894,   2350}, {0x30, 0x00, 0x8b, 0xff}}},
     {{{     0,      0,   -818}, 0, {  2368,   3388}, {0x30, 0x00, 0x8b, 0xff}}},
@@ -62,7 +62,7 @@ static const Vtx rr_seg7_vertex_0701A8E8[] = {
 };
 
 // 0x0701A9D8 - 0x0701AA48
-static const Vtx rr_seg7_vertex_0701A9D8[] = {
+ const Vtx rr_seg7_vertex_0701A9D8[] = {
     {{{   819,      0,      0}, 0, {  3256,   1244}, {0x75, 0x00, 0xd0, 0xff}}},
     {{{   579,    205,   -578}, 0, {  2894,   2350}, {0x75, 0x00, 0xd0, 0xff}}},
     {{{   819,    205,      0}, 0, {  2894,   1244}, {0x75, 0x00, 0xd0, 0xff}}},
@@ -73,7 +73,7 @@ static const Vtx rr_seg7_vertex_0701A9D8[] = {
 };
 
 // 0x0701AA48 - 0x0701AB78
-static const Gfx rr_seg7_dl_0701AA48[] = {
+ const Gfx rr_seg7_dl_0701AA48[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

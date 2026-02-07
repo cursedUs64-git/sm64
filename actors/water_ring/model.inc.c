@@ -1,18 +1,18 @@
 // Water Ring
 
 // 0x06012368
-static const Lights1 water_ring_seg6_lights_06012368 = gdSPDefLights1(
+ const Lights1 water_ring_seg6_lights_06012368 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06012380
-ALIGNED8 static const Texture water_ring_seg6_texture_06012380[] = {
+ALIGNED8  const Texture water_ring_seg6_texture_06012380[] = {
 #include "actors/water_ring/water_ring.rgba16.inc.c"
 };
 
 // 0x06013380
-static const Vtx water_ring_seg6_vertex_06013380[] = {
+ const Vtx water_ring_seg6_vertex_06013380[] = {
     {{{     0,    264,      0}, 0, {     0,      0}, {0x00, 0x2a, 0x77, 0x00}}},
     {{{  -131,    228,      0}, 0, {     0,      0}, {0xeb, 0x25, 0x77, 0x00}}},
     {{{   -98,    171,     23}, 0, {     0,      0}, {0xeb, 0x25, 0x77, 0x00}}},
@@ -32,7 +32,7 @@ static const Vtx water_ring_seg6_vertex_06013380[] = {
 };
 
 // 0x06013480
-static const Vtx water_ring_seg6_vertex_06013480[] = {
+ const Vtx water_ring_seg6_vertex_06013480[] = {
     {{{   -98,    171,    -23}, 0, {     0,      0}, {0xeb, 0x25, 0x89, 0x00}}},
     {{{  -170,     99,    -23}, 0, {     0,      0}, {0xdb, 0x15, 0x89, 0x00}}},
     {{{  -227,    132,      0}, 0, {     0,      0}, {0xdb, 0x15, 0x89, 0x00}}},
@@ -52,7 +52,7 @@ static const Vtx water_ring_seg6_vertex_06013480[] = {
 };
 
 // 0x06013580
-static const Vtx water_ring_seg6_vertex_06013580[] = {
+ const Vtx water_ring_seg6_vertex_06013580[] = {
     {{{  -197,      0,     23}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{  -170,    -99,     23}, 0, {     0,      0}, {0x6d, 0x3f, 0x00, 0x00}}},
     {{{  -170,    -99,    -23}, 0, {     0,      0}, {0x6d, 0x3f, 0x00, 0x00}}},
@@ -72,7 +72,7 @@ static const Vtx water_ring_seg6_vertex_06013580[] = {
 };
 
 // 0x06013680
-static const Vtx water_ring_seg6_vertex_06013680[] = {
+ const Vtx water_ring_seg6_vertex_06013680[] = {
     {{{  -131,   -228,      0}, 0, {     0,      0}, {0xeb, 0xdb, 0x77, 0x00}}},
     {{{     0,   -264,      0}, 0, {     0,      0}, {0x00, 0xd6, 0x77, 0x00}}},
     {{{     0,   -198,     23}, 0, {     0,      0}, {0x00, 0xd6, 0x77, 0x00}}},
@@ -92,7 +92,7 @@ static const Vtx water_ring_seg6_vertex_06013680[] = {
 };
 
 // 0x06013780
-static const Vtx water_ring_seg6_vertex_06013780[] = {
+ const Vtx water_ring_seg6_vertex_06013780[] = {
     {{{     0,   -198,    -23}, 0, {     0,      0}, {0x00, 0xd6, 0x89, 0x00}}},
     {{{    99,   -171,    -23}, 0, {     0,      0}, {0x15, 0xdb, 0x89, 0x00}}},
     {{{   132,   -228,      0}, 0, {     0,      0}, {0x15, 0xdb, 0x89, 0x00}}},
@@ -112,7 +112,7 @@ static const Vtx water_ring_seg6_vertex_06013780[] = {
 };
 
 // 0x06013880
-static const Vtx water_ring_seg6_vertex_06013880[] = {
+ const Vtx water_ring_seg6_vertex_06013880[] = {
     {{{   172,    -99,     23}, 0, {     0,      0}, {0x93, 0x3f, 0x00, 0x00}}},
     {{{   198,      0,     23}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   198,      0,    -23}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -132,7 +132,7 @@ static const Vtx water_ring_seg6_vertex_06013880[] = {
 };
 
 // 0x06013980
-static const Vtx water_ring_seg6_vertex_06013980[] = {
+ const Vtx water_ring_seg6_vertex_06013980[] = {
     {{{   229,    132,      0}, 0, {     0,      0}, {0x25, 0x15, 0x77, 0x00}}},
     {{{   132,    228,      0}, 0, {     0,      0}, {0x15, 0x25, 0x77, 0x00}}},
     {{{    99,    171,     23}, 0, {     0,      0}, {0x15, 0x25, 0x77, 0x00}}},
@@ -152,7 +152,7 @@ static const Vtx water_ring_seg6_vertex_06013980[] = {
 };
 
 // 0x06013A80
-static const Vtx water_ring_seg6_vertex_06013A80[] = {
+ const Vtx water_ring_seg6_vertex_06013A80[] = {
     {{{    99,    171,    -23}, 0, {     0,      0}, {0x15, 0x25, 0x89, 0x00}}},
     {{{     0,    198,    -23}, 0, {     0,      0}, {0x00, 0x2a, 0x89, 0x00}}},
     {{{     0,    264,      0}, 0, {     0,      0}, {0x00, 0x2a, 0x89, 0x00}}},

@@ -1,35 +1,35 @@
 // Clam Shell
 
 // Unreferenced light group
-UNUSED static const Lights1 clam_shell_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 clam_shell_lights_unused1 = gdSPDefLights1(
     0x1b, 0x23, 0x30,
     0x6d, 0x8f, 0xc3, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 clam_shell_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 clam_shell_lights_unused2 = gdSPDefLights1(
     0x18, 0x28, 0x38,
     0x60, 0xa2, 0xe2, 0x28, 0x28, 0x28
 );
 
 // 0x05000030
-ALIGNED8 static const Texture clam_shell_seg5_texture_05000030[] = {
+ALIGNED8  const Texture clam_shell_seg5_texture_05000030[] = {
 #include "actors/clam_shell/clam_shell.rgba16.inc.c"
 };
 
 // 0x05000830
-ALIGNED8 static const Texture clam_shell_seg5_texture_05000830[] = {
+ALIGNED8  const Texture clam_shell_seg5_texture_05000830[] = {
 #include "actors/clam_shell/clam_shell_mouth.rgba16.inc.c"
 };
 
 // 0x05001030
-static const Lights1 clam_shell_seg5_lights_05001030 = gdSPDefLights1(
+ const Lights1 clam_shell_seg5_lights_05001030 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001048
-static const Vtx clam_shell_seg5_vertex_05001048[] = {
+ const Vtx clam_shell_seg5_vertex_05001048[] = {
     {{{   728,   -261,      0}, 0, {   480,    566}, {0x00, 0x7e, 0xf5, 0xff}}},
     {{{   -10,      2,   -131}, 0, {   580,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   404,    -50,   -528}, 0, {   886,    318}, {0xf5, 0x7e, 0x00, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx clam_shell_seg5_vertex_05001048[] = {
 };
 
 // 0x050010F8
-static const Vtx clam_shell_seg5_vertex_050010F8[] = {
+ const Vtx clam_shell_seg5_vertex_050010F8[] = {
     {{{  1087,   -154,      0}, 0, {   480,    816}, {0x38, 0x71, 0x00, 0xff}}},
     {{{  1214,     19,      0}, 0, {   480,    906}, {0xa7, 0xa7, 0x00, 0xff}}},
     {{{  1083,   -106,   -434}, 0, {   168,    814}, {0x31, 0x63, 0x3d, 0xff}}},
@@ -108,13 +108,13 @@ const Gfx clam_shell_seg5_dl_050012B8[] = {
 };
 
 // 0x05001320
-static const Lights1 clam_shell_seg5_lights_05001320 = gdSPDefLights1(
+ const Lights1 clam_shell_seg5_lights_05001320 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05001338
-static const Vtx clam_shell_seg5_vertex_05001338[] = {
+ const Vtx clam_shell_seg5_vertex_05001338[] = {
     {{{   260,      0,      0}, 0, {   480,    600}, {0xf5, 0x7e, 0x07, 0xff}}},
     {{{  -531,     -1,    132}, 0, {   580,     -8}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -124,    -74,    529}, 0, {   886,    304}, {0xff, 0xff, 0xff, 0xff}}},
@@ -128,7 +128,7 @@ static const Vtx clam_shell_seg5_vertex_05001338[] = {
 };
 
 // 0x050013D8
-static const Vtx clam_shell_seg5_vertex_050013D8[] = {
+ const Vtx clam_shell_seg5_vertex_050013D8[] = {
     {{{   556,   -160,    435}, 0, {   790,    796}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   248,    -68,    658}, 0, {   948,    568}, {0x0f, 0x7d, 0x0f, 0xff}}},
     {{{   260,      0,      0}, 0, {   480,    576}, {0xf5, 0x7e, 0x07, 0xff}}},

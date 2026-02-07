@@ -1,5 +1,5 @@
 // 0x0700E5B0 - 0x0700E6B0
-static const Vtx hmc_seg7_vertex_0700E5B0[] = {
+ const Vtx hmc_seg7_vertex_0700E5B0[] = {
     {{{  6244,    154,   2560}, 0, {  4056,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5579,    154,   2560}, 0, { -2586,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5579,    256,   2458}, 0, { -2586,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx hmc_seg7_vertex_0700E5B0[] = {
 };
 
 // 0x0700E6B0 - 0x0700E7A0
-static const Vtx hmc_seg7_vertex_0700E6B0[] = {
+ const Vtx hmc_seg7_vertex_0700E6B0[] = {
     {{{  6244,    154,   2560}, 0, {  4056,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5579,    256,   2458}, 0, { -2586,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  6244,    256,   2458}, 0, {  4056,  -2076}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx hmc_seg7_vertex_0700E6B0[] = {
 };
 
 // 0x0700E7A0 - 0x0700E880
-static const Vtx hmc_seg7_vertex_0700E7A0[] = {
+ const Vtx hmc_seg7_vertex_0700E7A0[] = {
     {{{ -3631,   1536,   1872}, 0, { -6162,   4054}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3357,   1536,   1735}, 0, { -3096,   4054}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3586,   1536,   1277}, 0, { -3096,  -1054}, {0xff, 0xff, 0xff, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx hmc_seg7_vertex_0700E7A0[] = {
 };
 
 // 0x0700E880 - 0x0700E980
-static const Vtx hmc_seg7_vertex_0700E880[] = {
+ const Vtx hmc_seg7_vertex_0700E880[] = {
     {{{ -3586,   1536,   1277}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3128,   1434,   1048}, 0, {  5078,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3128,   1536,   1048}, 0, {  5078,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -76,7 +76,7 @@ static const Vtx hmc_seg7_vertex_0700E880[] = {
 };
 
 // 0x0700E980 - 0x0700EA50
-static const Vtx hmc_seg7_vertex_0700E980[] = {
+ const Vtx hmc_seg7_vertex_0700E980[] = {
     {{{  2765,      0,   4403}, 0, {  7122,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2765,   1126,   4403}, 0, {  7122, -10252}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2048,   1126,   4403}, 0, {     0, -10252}, {0xff, 0xff, 0xff, 0xff}}},
@@ -93,7 +93,7 @@ static const Vtx hmc_seg7_vertex_0700E980[] = {
 };
 
 // 0x0700EA50 - 0x0700EB40
-static const Vtx hmc_seg7_vertex_0700EA50[] = {
+ const Vtx hmc_seg7_vertex_0700EA50[] = {
     {{{  6543,    819,   6646}, 0, {  3034,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  6543,   1024,   6646}, 0, {  3034,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  7588,   1024,   6646}, 0, { -7388,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -112,7 +112,7 @@ static const Vtx hmc_seg7_vertex_0700EA50[] = {
 };
 
 // 0x0700EB40 - 0x0700EC30
-static const Vtx hmc_seg7_vertex_0700EB40[] = {
+ const Vtx hmc_seg7_vertex_0700EB40[] = {
     {{{   410,    819,   4086}, 0, { 10290,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   410,   1024,   4086}, 0, { 10290,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1444,   1024,   4086}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -131,7 +131,7 @@ static const Vtx hmc_seg7_vertex_0700EB40[] = {
 };
 
 // 0x0700EC30 - 0x0700ECB0
-static const Vtx hmc_seg7_vertex_0700EC30[] = {
+ const Vtx hmc_seg7_vertex_0700EC30[] = {
     {{{  1444,    819,   4086}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1444,   1024,   4618}, 0, { -4220,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1444,    819,   4618}, 0, { -4220,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -143,7 +143,7 @@ static const Vtx hmc_seg7_vertex_0700EC30[] = {
 };
 
 // 0x0700ECB0 - 0x0700EE38
-static const Gfx hmc_seg7_dl_0700ECB0[] = {
+ const Gfx hmc_seg7_dl_0700ECB0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -177,7 +177,7 @@ static const Gfx hmc_seg7_dl_0700ECB0[] = {
 };
 
 // 0x0700EE38 - 0x0700EF00
-static const Gfx hmc_seg7_dl_0700EE38[] = {
+ const Gfx hmc_seg7_dl_0700EE38[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09003000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,6 +1,6 @@
 // US: 0x0701B0C8
 // 0x0701B290 - 0x0701B370
-static const Vtx rr_seg7_vertex_0701B290[] = {
+ const Vtx rr_seg7_vertex_0701B290[] = {
 #ifdef VERSION_JP
     {{{  -306,    102,   -818}, 0, {  3716,   -714}, {0xaf, 0xcf, 0xc1, 0xff}}},
     {{{  -306,    102,    819}, 0, {   990,   2010}, {0xaf, 0xcf, 0xc1, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx rr_seg7_vertex_0701B290[] = {
 
 // US: 0x0701B1C8
 // 0x0701B370 - 0x0701B430
-static const Vtx rr_seg7_vertex_0701B370[] = {
+ const Vtx rr_seg7_vertex_0701B370[] = {
 #ifdef VERSION_JP
     {{{   307,    102,    819}, 0, {     0,    990}, {0x63, 0x80, 0x88, 0xff}}},
     {{{   307,      0,    768}, 0, {  -116,   1244}, {0x63, 0x80, 0x88, 0xff}}},
@@ -65,7 +65,7 @@ static const Vtx rr_seg7_vertex_0701B370[] = {
 };
 
 // 0x0701B430 - 0x0701B4C0
-static const Gfx rr_seg7_dl_0701B430[] = {
+ const Gfx rr_seg7_dl_0701B430[] = {
 #ifdef VERSION_JP
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09001800),
     gsDPLoadSync(),

@@ -1,5 +1,5 @@
 // 0x0700C2A0 - 0x0700C2E0
-static const Vtx castle_grounds_seg7_vertex_0700C2A0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700C2A0[] = {
     {{{   268,    803,  -3206}, 0, {   990,    328}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{  -243,    803,  -3206}, 0, {     0,    330}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{  -245,    803,  -2844}, 0, {     0,    970}, {0xc4, 0xc4, 0xd0, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx castle_grounds_seg7_vertex_0700C2A0[] = {
 };
 
 // 0x0700C2E0 - 0x0700C3A0
-static const Vtx castle_grounds_seg7_vertex_0700C2E0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700C2E0[] = {
     {{{   205,   1110,  -3104}, 0, { -4534,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   154,    803,  -3104}, 0, {  1596,    990}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   205,    803,  -3104}, 0, {  1596,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -23,7 +23,7 @@ static const Vtx castle_grounds_seg7_vertex_0700C2E0[] = {
 };
 
 // 0x0700C3A0 - 0x0700C3D8
-static const Gfx castle_grounds_seg7_dl_0700C3A0[] = {
+ const Gfx castle_grounds_seg7_dl_0700C3A0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09006000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -33,7 +33,7 @@ static const Gfx castle_grounds_seg7_dl_0700C3A0[] = {
 };
 
 // 0x0700C3D8 - 0x0700C430
-static const Gfx castle_grounds_seg7_dl_0700C3D8[] = {
+ const Gfx castle_grounds_seg7_dl_0700C3D8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09003000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

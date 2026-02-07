@@ -61,29 +61,29 @@ struct DynObjInfo {
 ///@}
 
 // data
-static struct DynObjInfo *sGdDynObjList = NULL; // @ 801A8250; info for all loaded/made dynobjs
-static struct GdObj *sDynListCurObj = NULL;     // @ 801A8254
-static struct GdBoundingBox sNullBoundingBox = {        // @ 801A8258
+ struct DynObjInfo *sGdDynObjList = NULL; // @ 801A8250; info for all loaded/made dynobjs
+ struct GdObj *sDynListCurObj = NULL;     // @ 801A8254
+ struct GdBoundingBox sNullBoundingBox = {        // @ 801A8258
     0.0, 0.0, 0.0,
     0.0, 0.0, 0.0
 };
-static s32 sUseIntegerNames = FALSE;  // if TRUE, then all DynNames are specified as integers
+ s32 sUseIntegerNames = FALSE;  // if TRUE, then all DynNames are specified as integers
 
 // bss
-static char sIntToStringBuf[DYNOBJ_NAME_SIZE]; ///< buffer for returning formated string from
+ char sIntToStringBuf[DYNOBJ_NAME_SIZE]; ///< buffer for returning formated string from
                                                ///< `integer_name_to_string()`
-static struct DynObjInfo sNullDynObjInfo;      // @ 801B9F08
-static char sDynNameSuffix[DYNOBJ_NAME_SIZE];       // @ 801B9F20; small buf for printing dynid to?
-static s32
+ struct DynObjInfo sNullDynObjInfo;      // @ 801B9F08
+ char sDynNameSuffix[DYNOBJ_NAME_SIZE];       // @ 801B9F20; small buf for printing dynid to?
+ s32
     sUnnamedObjCount;      // @ 801B9F28; used to print empty string ids (not NULL char *) to sDynNameSuffix
-static s32 sLoadedDynObjs; // @ 801B9F2C; total loaded dynobjs
-static struct DynObjInfo *sDynListCurInfo; // @ 801B9F30; info for most recently added object
-static struct DynObjInfo *sParentObjInfo; ///< Information for `ObjNet` made by `d_add_net_with_subgroup()` or `ObjJoint` made by `d_attach_joint_to_net()`
-static struct DynObjInfo *sStashedDynObjInfo; // @ 801B9F38
-static struct GdObj *sStashedDynObj;          // @ 801B9F3C
-static s32 sDynNetCount;                      // @ 801B9F40
-static char sDynNetNameSuffix[0x20];               // @ 801B9F48
-static char sStashedDynNameSuffix[0x100];                  // @ 801B9F68
+ s32 sLoadedDynObjs; // @ 801B9F2C; total loaded dynobjs
+ struct DynObjInfo *sDynListCurInfo; // @ 801B9F30; info for most recently added object
+ struct DynObjInfo *sParentObjInfo; ///< Information for `ObjNet` made by `d_add_net_with_subgroup()` or `ObjJoint` made by `d_attach_joint_to_net()`
+ struct DynObjInfo *sStashedDynObjInfo; // @ 801B9F38
+ struct GdObj *sStashedDynObj;          // @ 801B9F3C
+ s32 sDynNetCount;                      // @ 801B9F40
+ char sDynNetNameSuffix[0x20];               // @ 801B9F48
+ char sStashedDynNameSuffix[0x100];                  // @ 801B9F68
 
 // necessary foreward declarations
 void d_add_net_with_subgroup(s32, DynObjName);
@@ -381,14 +381,14 @@ void d_append_to_name_suffix(char *str) {
 /**
  * Stash the current string that is appended to a created dynamic `GdObj` name.
  */
-static void stash_name_suffix(void) {
+ void stash_name_suffix(void) {
     gd_strcpy(sStashedDynNameSuffix, sDynNameSuffix);
 }
 
 /**
  * Pop the stash for the string that is appended to a created dynamic `GdObj` name.
  */
-static void unstash_name_suffix(void) {
+ void unstash_name_suffix(void) {
     gd_strcpy(sDynNameSuffix, sStashedDynNameSuffix);
 }
 
@@ -398,7 +398,7 @@ static void unstash_name_suffix(void) {
  * @param name Either a string or integer id for a dynamic `GdObj`
  * @returns pointer to that object's information
  */
-static struct DynObjInfo *get_dynobj_info(DynObjName name) {
+ struct DynObjInfo *get_dynobj_info(DynObjName name) {
     struct DynObjInfo *foundDynobj;
     char buf[0x100];
     s32 i;
@@ -586,7 +586,7 @@ void add_to_dynobj_list(struct GdObj *newobj, DynObjName name) {
  * @returns pointer to global buffer for id
  * @retval NULL if `name` is `NULL` or if `DynObjName`s are interpreted as strings
  */
-static char *integer_name_to_string(DynObjName name) {
+ char *integer_name_to_string(DynObjName name) {
     if (DynNameAsInt(name) != 0 && sUseIntegerNames) {
         sprintf(sIntToStringBuf, "N%d", DynNameAsInt(name));
         return sIntToStringBuf;

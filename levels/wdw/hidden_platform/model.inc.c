@@ -1,11 +1,11 @@
 // 0x07013238 - 0x07013250
-static const Lights1 wdw_seg7_lights_07013238 = gdSPDefLights1(
+ const Lights1 wdw_seg7_lights_07013238 = gdSPDefLights1(
     0x99, 0x99, 0x99,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07013250 - 0x07013340
-static const Vtx wdw_seg7_vertex_07013250[] = {
+ const Vtx wdw_seg7_vertex_07013250[] = {
     {{{   193,      0,    193}, 0, {   990,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -190,      0,    193}, 0, {   990,  -2076}, {0x00, 0x81, 0x00, 0xff}}},
     {{{  -190,      0,   -190}, 0, { -2074,  -2076}, {0x00, 0x81, 0x00, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx wdw_seg7_vertex_07013250[] = {
 };
 
 // 0x07013340 - 0x070133F0
-static const Vtx wdw_seg7_vertex_07013340[] = {
+ const Vtx wdw_seg7_vertex_07013340[] = {
     {{{   193,    128,   -190}, 0, { -2074,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -190,    128,    193}, 0, {   990,  -2076}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   193,    128,    193}, 0, {   990,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -39,7 +39,7 @@ static const Vtx wdw_seg7_vertex_07013340[] = {
 };
 
 // 0x070133F0 - 0x07013490
-static const Gfx wdw_seg7_dl_070133F0[] = {
+ const Gfx wdw_seg7_dl_070133F0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09006800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

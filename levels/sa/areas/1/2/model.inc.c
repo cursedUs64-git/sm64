@@ -1,5 +1,5 @@
 // 0x07002E80 - 0x07002F80
-static const Vtx sa_vertex_07002E80[] = {
+ const Vtx sa_vertex_07002E80[] = {
     {{{ -3276,   -972,   1075}, 0, {     0,      0}, {0x00, 0x00, 0xff, 0x40}}},
     {{{ -3276,  -3122,  -1074}, 0, {     0,      0}, {0x00, 0x00, 0xff, 0x40}}},
     {{{ -3276,   -972,  -1074}, 0, {     0,      0}, {0x00, 0x00, 0xff, 0x40}}},
@@ -19,7 +19,7 @@ static const Vtx sa_vertex_07002E80[] = {
 };
 
 // 0x07002F80 - 0x07002FD0
-static const Gfx sa_dl_07002F80[] = {
+ const Gfx sa_dl_07002F80[] = {
     gsSPVertex(sa_vertex_07002E80, 16, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  0,  3,  1, 0x0),
     gsSP2Triangles( 4,  5,  6, 0x0,  4,  7,  5, 0x0),

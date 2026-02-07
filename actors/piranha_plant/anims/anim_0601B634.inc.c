@@ -1,5 +1,5 @@
 // 0x0601AF4C
-static const s16 piranha_plant_seg6_animvalue_0601AF4C[] = {
+ const s16 piranha_plant_seg6_animvalue_0601AF4C[] = {
     0x0000, 0x000E, 0x0003, 0x3FFF, 0x73EC, 0x73E6, 0x73D5, 0x73BA,
     0x7396, 0x7369, 0x7335, 0x72FA, 0x72BA, 0x7275, 0x722D, 0x71E1,
     0x7194, 0x7146, 0x70F8, 0x70AB, 0x7060, 0x7017, 0x6FD2, 0x6F92,
@@ -103,7 +103,7 @@ static const s16 piranha_plant_seg6_animvalue_0601AF4C[] = {
 };
 
 // 0x0601B58C
-static const u16 piranha_plant_seg6_animindex_0601B58C[] = {
+ const u16 piranha_plant_seg6_animindex_0601B58C[] = {
     0x0001, 0x0000, 0x0001, 0x0001, 0x0001, 0x0002, 0x0001, 0x0000, 0x0001, 0x0003, 0x0001, 0x0000,
     0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x031F,
     0x0001, 0x031C, 0x0001, 0x031D, 0x0001, 0x031E,
@@ -120,7 +120,7 @@ static const u16 piranha_plant_seg6_animindex_0601B58C[] = {
 };
 
 // 0x0601B634
-static const struct Animation piranha_plant_seg6_anim_0601B634 = {
+ const struct Animation piranha_plant_seg6_anim_0601B634 = {
     0,
     0,
     0,

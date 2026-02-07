@@ -128,7 +128,7 @@ void stub_objects_1(UNUSED struct ObjGroup *a0, UNUSED struct GdObj *a1) {
 /**
  * Returns a string containing the name of the the object type
  */
-static const char *get_obj_name_str(enum ObjTypeFlag objFlag) {
+ const char *get_obj_name_str(enum ObjTypeFlag objFlag) {
     const char *objName;
     switch (objFlag) {
         case OBJ_TYPE_JOINTS:
@@ -1002,7 +1002,7 @@ s32 make_scene(void) {
 }
 
 /* @ 22CA00 for 0x88 */
-static void reset_joint_or_net(struct GdObj *obj) {
+ void reset_joint_or_net(struct GdObj *obj) {
     struct GdObj *localObjPtr = obj;
 
     switch (obj->type) {

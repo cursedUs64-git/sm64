@@ -1,13 +1,13 @@
 // Bowser Key
 
 // 0x030156E0, ambient color brown - light color orange
-static const Lights1 bowser_key_lights = gdSPDefLights1(
+ const Lights1 bowser_key_lights = gdSPDefLights1(
     0x3f, 0x2c, 0x00,
     0xff, 0xb2, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x030156F8
-static const Vtx bowser_key_dl_vertex_group1[] = {
+ const Vtx bowser_key_dl_vertex_group1[] = {
     {{{   219,     22,    -17}, 0, {     0,      0}, {0x88, 0x26, 0x00, 0x00}}},
     {{{   219,     22,     17}, 0, {     0,      0}, {0x88, 0x26, 0x00, 0x00}}},
     {{{   230,     57,      7}, 0, {     0,      0}, {0x88, 0x26, 0x00, 0x00}}},
@@ -27,7 +27,7 @@ static const Vtx bowser_key_dl_vertex_group1[] = {
 };
 
 // 0x030157F8
-static const Vtx bowser_key_dl_vertex_group2[] = {
+ const Vtx bowser_key_dl_vertex_group2[] = {
     {{{   230,     57,      7}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   249,     57,      7}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
     {{{   249,     57,     -7}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -47,7 +47,7 @@ static const Vtx bowser_key_dl_vertex_group2[] = {
 };
 
 // 0x030158F8
-static const Vtx bowser_key_dl_vertex_group3[] = {
+ const Vtx bowser_key_dl_vertex_group3[] = {
     {{{   272,     22,     17}, 0, {     0,      0}, {0x00, 0x16, 0x7c, 0xff}}},
     {{{   317,     22,     17}, 0, {     0,      0}, {0x00, 0x16, 0x7c, 0x00}}},
     {{{   318,     70,      9}, 0, {     0,      0}, {0x00, 0x16, 0x7c, 0x00}}},
@@ -67,7 +67,7 @@ static const Vtx bowser_key_dl_vertex_group3[] = {
 };
 
 // 0x030159F8
-static const Vtx bowser_key_dl_vertex_group4[] = {
+ const Vtx bowser_key_dl_vertex_group4[] = {
     {{{   317,    -22,    -17}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   317,    -22,     17}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{   131,    -22,     17}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -87,7 +87,7 @@ static const Vtx bowser_key_dl_vertex_group4[] = {
 };
 
 // 0x03015AF8
-static const Vtx bowser_key_dl_vertex_group5[] = {
+ const Vtx bowser_key_dl_vertex_group5[] = {
     {{{    -4,    -39,    -37}, 0, {     0,      0}, {0xf0, 0xf1, 0x84, 0xff}}},
     {{{    -4,     41,    -37}, 0, {     0,      0}, {0xef, 0x14, 0x84, 0x00}}},
     {{{   130,     41,    -53}, 0, {     0,      0}, {0xf2, 0x08, 0x83, 0x00}}},
@@ -107,7 +107,7 @@ static const Vtx bowser_key_dl_vertex_group5[] = {
 };
 
 // 0x03015BF8
-static const Vtx bowser_key_dl_vertex_group6[] = {
+ const Vtx bowser_key_dl_vertex_group6[] = {
     {{{    -4,    -39,    -37}, 0, {     0,      0}, {0x8a, 0xd3, 0x00, 0xff}}},
     {{{    20,    -80,    -30}, 0, {     0,      0}, {0xad, 0xa1, 0x00, 0x00}}},
     {{{    20,    -80,     30}, 0, {     0,      0}, {0xad, 0xa1, 0x00, 0x00}}},
@@ -127,7 +127,7 @@ static const Vtx bowser_key_dl_vertex_group6[] = {
 };
 
 // 0x03015CF8
-static const Vtx bowser_key_dl_vertex_group7[] = {
+ const Vtx bowser_key_dl_vertex_group7[] = {
     {{{    -4,    -39,     37}, 0, {     0,      0}, {0xef, 0xec, 0x7c, 0xff}}},
     {{{    20,    -80,     30}, 0, {     0,      0}, {0xeb, 0xde, 0x78, 0x00}}},
     {{{    92,   -111,     34}, 0, {     0,      0}, {0xee, 0xe2, 0x7a, 0x00}}},
@@ -145,7 +145,7 @@ static const Vtx bowser_key_dl_vertex_group7[] = {
 };
 
 // 0x03015DD8
-static const Vtx bowser_key_dl_vertex_group8[] = {
+ const Vtx bowser_key_dl_vertex_group8[] = {
     {{{    16,   -152,     25}, 0, {     0,      0}, {0xce, 0x15, 0x72, 0xff}}},
     {{{    12,   -121,     15}, 0, {     0,      0}, {0xc8, 0x19, 0x6e, 0x00}}},
     {{{   -51,   -115,      0}, 0, {     0,      0}, {0xe6, 0x21, 0x77, 0x00}}},
@@ -165,7 +165,7 @@ static const Vtx bowser_key_dl_vertex_group8[] = {
 };
 
 // 0x03015ED8
-static const Vtx bowser_key_dl_vertex_group9[] = {
+ const Vtx bowser_key_dl_vertex_group9[] = {
     {{{   -51,    115,      0}, 0, {     0,      0}, {0xb3, 0x64, 0x00, 0xff}}},
     {{{    16,    152,     25}, 0, {     0,      0}, {0xbb, 0x59, 0x38, 0x00}}},
     {{{    21,    171,      0}, 0, {     0,      0}, {0xb3, 0x64, 0x00, 0x00}}},
@@ -185,7 +185,7 @@ static const Vtx bowser_key_dl_vertex_group9[] = {
 };
 
 // 0x03015FD8
-static const Vtx bowser_key_dl_vertex_group10[] = {
+ const Vtx bowser_key_dl_vertex_group10[] = {
     {{{    12,    121,     15}, 0, {     0,      0}, {0x99, 0xdc, 0x3f, 0xff}}},
     {{{    12,    121,    -15}, 0, {     0,      0}, {0xa7, 0xde, 0xad, 0x00}}},
     {{{    23,     83,    -19}, 0, {     0,      0}, {0x97, 0xe1, 0xc2, 0x00}}},
@@ -203,7 +203,7 @@ static const Vtx bowser_key_dl_vertex_group10[] = {
 };
 
 // 0x030160B8
-static const Vtx bowser_key_dl_vertex_group11[] = {
+ const Vtx bowser_key_dl_vertex_group11[] = {
     {{{    16,   -152,    -25}, 0, {     0,      0}, {0xce, 0x15, 0x8e, 0xff}}},
     {{{    12,   -121,    -15}, 0, {     0,      0}, {0xc8, 0x19, 0x92, 0x00}}},
     {{{    24,    -82,    -19}, 0, {     0,      0}, {0xc3, 0x0f, 0x93, 0x00}}},
@@ -223,7 +223,7 @@ static const Vtx bowser_key_dl_vertex_group11[] = {
 };
 
 // 0x030161B8
-static const Vtx bowser_key_dl_vertex_group12[] = {
+ const Vtx bowser_key_dl_vertex_group12[] = {
     {{{    16,   -152,     25}, 0, {     0,      0}, {0x50, 0xbd, 0x47, 0xff}}},
     {{{    21,   -171,      0}, 0, {     0,      0}, {0x50, 0xbb, 0x45, 0x00}}},
     {{{    78,   -105,      0}, 0, {     0,      0}, {0x50, 0xbd, 0x47, 0x00}}},

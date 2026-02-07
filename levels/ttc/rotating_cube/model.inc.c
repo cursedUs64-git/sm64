@@ -1,17 +1,17 @@
 // 0x0700E950 - 0x0700E968
-static const Lights1 ttc_seg7_lights_0700E950 = gdSPDefLights1(
+ const Lights1 ttc_seg7_lights_0700E950 = gdSPDefLights1(
     0x55, 0x55, 0x55,
     0xaa, 0xaa, 0xaa, 0x28, 0x28, 0x28
 );
 
 // 0x0700E968 - 0x0700E980
-static const Lights1 ttc_seg7_lights_0700E968 = gdSPDefLights1(
+ const Lights1 ttc_seg7_lights_0700E968 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0700E980 - 0x0700EA20
-static const Vtx ttc_seg7_vertex_0700E980[] = {
+ const Vtx ttc_seg7_vertex_0700E980[] = {
     {{{  -199,    200,   -199}, 0, {  2012,      0}, {0xd6, 0x54, 0xac, 0xff}}},
     {{{     0,      0,   -199}, 0, {   478,   1340}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  -199,   -199,   -199}, 0, { -1052,      0}, {0xac, 0xd6, 0xac, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx ttc_seg7_vertex_0700E980[] = {
 };
 
 // 0x0700EA20 - 0x0700EAC0
-static const Vtx ttc_seg7_vertex_0700EA20[] = {
+ const Vtx ttc_seg7_vertex_0700EA20[] = {
     {{{  -199,   -199,   -199}, 0, {  2012,      0}, {0xac, 0xd6, 0xac, 0xff}}},
     {{{     0,      0,   -199}, 0, {   478,   1340}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   200,   -199,   -199}, 0, { -1052,      0}, {0x2a, 0xac, 0xac, 0xff}}},
@@ -39,7 +39,7 @@ static const Vtx ttc_seg7_vertex_0700EA20[] = {
 };
 
 // 0x0700EAC0 - 0x0700EBC0
-static const Vtx ttc_seg7_vertex_0700EAC0[] = {
+ const Vtx ttc_seg7_vertex_0700EAC0[] = {
     {{{   200,   -199,   -199}, 0, {     0,    990}, {0x2a, 0xac, 0xac, 0xff}}},
     {{{   200,   -199,    200}, 0, {   990,    990}, {0x54, 0xd6, 0x54, 0xff}}},
     {{{  -199,   -199,    200}, 0, {   990,      0}, {0xd6, 0xac, 0x54, 0xff}}},
@@ -59,7 +59,7 @@ static const Vtx ttc_seg7_vertex_0700EAC0[] = {
 };
 
 // 0x0700EBC0 - 0x0700EC50
-static const Gfx ttc_seg7_dl_0700EBC0[] = {
+ const Gfx ttc_seg7_dl_0700EBC0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, machine_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -77,7 +77,7 @@ static const Gfx ttc_seg7_dl_0700EBC0[] = {
 };
 
 // 0x0700EC50 - 0x0700ECB8
-static const Gfx ttc_seg7_dl_0700EC50[] = {
+ const Gfx ttc_seg7_dl_0700EC50[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, machine_09005000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

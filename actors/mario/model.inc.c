@@ -1,140 +1,140 @@
 // Mario
 
 // 0x04000000 # solid color blue - butt, left thigh, right thigh - all poly types
-static const Lights1 mario_blue_lights_group = gdSPDefLights1(
+ const Lights1 mario_blue_lights_group = gdSPDefLights1(
     0x00, 0x00, 0x7f,
     0x00, 0x00, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x04000018 # solid color red - left & right arm, torso (tshirt part), caps - all poly types
-static const Lights1 mario_red_lights_group = gdSPDefLights1(
+ const Lights1 mario_red_lights_group = gdSPDefLights1(
     0x7f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x04000030 # solid color white - metal butt & left thigh - normal left & right hand closed & open (with cap too) and all wings - all poly types
-static const Lights1 mario_white_lights_group = gdSPDefLights1(
+ const Lights1 mario_white_lights_group = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x04000048 # solid color brown 1 - foot - all poly types
-static const Lights1 mario_brown1_lights_group = gdSPDefLights1(
+ const Lights1 mario_brown1_lights_group = gdSPDefLights1(
     0x39, 0x0e, 0x07,
     0x72, 0x1c, 0x0e, 0x28, 0x28, 0x28
 );
 
 // 0x04000060 # solid color beige skin - face (cap on and off dls) - all poly types
-static const Lights1 mario_beige_lights_group = gdSPDefLights1(
+ const Lights1 mario_beige_lights_group = gdSPDefLights1(
     0x7f, 0x60, 0x3c,
     0xfe, 0xc1, 0x79, 0x28, 0x28, 0x28
 );
 
 // 0x04000078  # solid color brown 2 - hair - all poly types
-static const Lights1 mario_brown2_lights_group = gdSPDefLights1(
+ const Lights1 mario_brown2_lights_group = gdSPDefLights1(
     0x39, 0x03, 0x00,
     0x73, 0x06, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x04000090
-ALIGNED8 static const Texture mario_texture_metal[] = {
+ALIGNED8  const Texture mario_texture_metal[] = {
 #include "actors/mario/mario_metal.rgba16.inc.c"
 };
 
 // 0x04001090
-ALIGNED8 static const Texture mario_texture_yellow_button[] = {
+ALIGNED8  const Texture mario_texture_yellow_button[] = {
 #include "actors/mario/mario_overalls_button.rgba16.inc.c"
 };
 
 // 0x04001890
-ALIGNED8 static const Texture mario_texture_m_logo[] = {
+ALIGNED8  const Texture mario_texture_m_logo[] = {
 #include "actors/mario/mario_logo.rgba16.inc.c"
 };
 
 // 0x04002090
-ALIGNED8 static const Texture mario_texture_hair_sideburn[] = {
+ALIGNED8  const Texture mario_texture_hair_sideburn[] = {
 #include "actors/mario/mario_sideburn.rgba16.inc.c"
 };
 
 // 0x04002890
-ALIGNED8 static const Texture mario_texture_mustache[] = {
+ALIGNED8  const Texture mario_texture_mustache[] = {
 #include "actors/mario/mario_mustache.rgba16.inc.c"
 };
 
 // 0x04003090
-ALIGNED8 static const Texture mario_texture_eyes_front[] = {
+ALIGNED8  const Texture mario_texture_eyes_front[] = {
 #include "actors/mario/mario_eyes_center.rgba16.inc.c"
 };
 
 // 0x04003890
-ALIGNED8 static const Texture mario_texture_eyes_half_closed[] = {
+ALIGNED8  const Texture mario_texture_eyes_half_closed[] = {
 #include "actors/mario/mario_eyes_half_closed.rgba16.inc.c"
 };
 
 // 0x04004090
-ALIGNED8 static const Texture mario_texture_eyes_closed[] = {
+ALIGNED8  const Texture mario_texture_eyes_closed[] = {
 #include "actors/mario/mario_eyes_closed.rgba16.inc.c"
 };
 
 // Unreferenced
 // 0x04004890
-ALIGNED8 static const Texture mario_texture_eyes_closed_unused1[] = {
+ALIGNED8  const Texture mario_texture_eyes_closed_unused1[] = {
 #include "actors/mario/mario_eyes_closed_unused_0.rgba16.inc.c"
 };
 
 // Unreferenced
 // 0x04005090
-ALIGNED8 static const Texture mario_texture_eyes_closed_unused2[] = {
+ALIGNED8  const Texture mario_texture_eyes_closed_unused2[] = {
 #include "actors/mario/mario_eyes_closed_unused_1.rgba16.inc.c"
 };
 
 // 0x04005890
-ALIGNED8 static const Texture mario_texture_eyes_right[] = {
+ALIGNED8  const Texture mario_texture_eyes_right[] = {
 #include "actors/mario/mario_eyes_left_unused.rgba16.inc.c"
 };
 
 // 0x04006090
-ALIGNED8 static const Texture mario_texture_eyes_left[] = {
+ALIGNED8  const Texture mario_texture_eyes_left[] = {
 #include "actors/mario/mario_eyes_right_unused.rgba16.inc.c"
 };
 
 // 0x04006890
-ALIGNED8 static const Texture mario_texture_eyes_up[] = {
+ALIGNED8  const Texture mario_texture_eyes_up[] = {
 #include "actors/mario/mario_eyes_up_unused.rgba16.inc.c"
 };
 
 // 0x04007090
-ALIGNED8 static const Texture mario_texture_eyes_down[] = {
+ALIGNED8  const Texture mario_texture_eyes_down[] = {
 #include "actors/mario/mario_eyes_down_unused.rgba16.inc.c"
 };
 
 // 0x04007890
-ALIGNED8 static const Texture mario_texture_eyes_dead[] = {
+ALIGNED8  const Texture mario_texture_eyes_dead[] = {
 #include "actors/mario/mario_eyes_dead.rgba16.inc.c"
 };
 
 // 0x04008090
-ALIGNED8 static const Texture mario_texture_wings_half_1[] = {
+ALIGNED8  const Texture mario_texture_wings_half_1[] = {
 #include "actors/mario/mario_wing.rgba16.inc.c"
 };
 
 // 0x04009090
-ALIGNED8 static const Texture mario_texture_wings_half_2[] = {
+ALIGNED8  const Texture mario_texture_wings_half_2[] = {
 #include "actors/mario/mario_wing_tip.rgba16.inc.c"
 };
 
 // 0x0400A090
-ALIGNED8 static const Texture mario_texture_metal_wings_half_1[] = {
+ALIGNED8  const Texture mario_texture_metal_wings_half_1[] = {
 #include "actors/mario/mario_metal_wing_unused.rgba16.inc.c"
 };
 
 // 0x0400B090
-ALIGNED8 static const Texture mario_texture_metal_wings_half_2[] = {
+ALIGNED8  const Texture mario_texture_metal_wings_half_2[] = {
 #include "actors/mario/mario_metal_wing_tip_unused.rgba16.inc.c"
 };
 
 // 0x0400C090
-static const Vtx mario_butt_dl_vertex_group1[] = {
+ const Vtx mario_butt_dl_vertex_group1[] = {
     {{{    -9,     73,    -34}, 0, {     0,      0}, {0xc2, 0x6b, 0xe6, 0x00}}},
     {{{    -9,     73,     34}, 0, {     0,      0}, {0xbe, 0x6a, 0x12, 0x00}}},
     {{{    22,     82,    -26}, 0, {     0,      0}, {0x07, 0x7e, 0xf5, 0x00}}},
@@ -153,7 +153,7 @@ static const Vtx mario_butt_dl_vertex_group1[] = {
 };
 
 // 0x0400C180
-static const Vtx mario_butt_dl_vertex_group2[] = {
+ const Vtx mario_butt_dl_vertex_group2[] = {
     {{{    -5,     59,     72}, 0, {     0,      0}, {0xc0, 0x52, 0x47, 0x00}}},
     {{{    -9,     73,     34}, 0, {     0,      0}, {0xbe, 0x6a, 0x12, 0x00}}},
     {{{   -32,     40,     39}, 0, {     0,      0}, {0x8b, 0x25, 0x1d, 0x00}}},
@@ -171,7 +171,7 @@ static const Vtx mario_butt_dl_vertex_group2[] = {
 };
 
 // 0x0400C260
-static const Vtx mario_butt_dl_vertex_group3[] = {
+ const Vtx mario_butt_dl_vertex_group3[] = {
     {{{   -14,    -74,      0}, 0, {     0,      0}, {0xcb, 0x8d, 0x00, 0x00}}},
     {{{    -9,    -69,     55}, 0, {     0,      0}, {0xcd, 0x97, 0x30, 0x00}}},
     {{{   -31,    -51,     42}, 0, {     0,      0}, {0x8d, 0xd7, 0x1f, 0x00}}},
@@ -191,7 +191,7 @@ static const Vtx mario_butt_dl_vertex_group3[] = {
 };
 
 // 0x0400C360
-static const Vtx mario_butt_dl_vertex_group4[] = {
+ const Vtx mario_butt_dl_vertex_group4[] = {
     {{{     6,     33,    -95}, 0, {     0,      0}, {0xe6, 0x26, 0x8b, 0x00}}},
     {{{    27,     72,    -63}, 0, {     0,      0}, {0x07, 0x6b, 0xbe, 0x00}}},
     {{{    43,     40,    -91}, 0, {     0,      0}, {0x4e, 0x30, 0xa9, 0x00}}},
@@ -210,7 +210,7 @@ static const Vtx mario_butt_dl_vertex_group4[] = {
 };
 
 // 0x0400C450
-static const Vtx mario_butt_dl_vertex_group5[] = {
+ const Vtx mario_butt_dl_vertex_group5[] = {
     {{{    -5,     59,    -72}, 0, {     0,      0}, {0xc0, 0x52, 0xb9, 0x00}}},
     {{{    -9,     73,    -34}, 0, {     0,      0}, {0xc2, 0x6b, 0xe6, 0x00}}},
     {{{    27,     72,    -63}, 0, {     0,      0}, {0x07, 0x6b, 0xbe, 0x00}}},
@@ -229,7 +229,7 @@ static const Vtx mario_butt_dl_vertex_group5[] = {
 };
 
 // 0x0400C540
-static const Vtx mario_butt_dl_vertex_group6[] = {
+ const Vtx mario_butt_dl_vertex_group6[] = {
     {{{     6,     33,    -95}, 0, {     0,      0}, {0xe6, 0x26, 0x8b, 0x00}}},
     {{{    43,     40,    -91}, 0, {     0,      0}, {0x4e, 0x30, 0xa9, 0x00}}},
     {{{    44,    -10,    -92}, 0, {     0,      0}, {0x4f, 0xf2, 0x9e, 0x00}}},
@@ -248,7 +248,7 @@ static const Vtx mario_butt_dl_vertex_group6[] = {
 };
 
 // 0x0400C630
-static const Vtx mario_butt_dl_vertex_group7[] = {
+ const Vtx mario_butt_dl_vertex_group7[] = {
     {{{    -5,     59,    -72}, 0, {     0,      0}, {0xc0, 0x52, 0xb9, 0x00}}},
     {{{     6,     33,    -95}, 0, {     0,      0}, {0xe6, 0x26, 0x8b, 0x00}}},
     {{{   -17,     32,    -79}, 0, {     0,      0}, {0xa4, 0x23, 0xb1, 0x00}}},
@@ -267,7 +267,7 @@ static const Vtx mario_butt_dl_vertex_group7[] = {
 };
 
 // 0x0400C720
-static const Vtx mario_butt_dl_vertex_group8[] = {
+ const Vtx mario_butt_dl_vertex_group8[] = {
     {{{     8,     -8,     99}, 0, {     0,      0}, {0xf3, 0xef, 0x7c, 0x00}}},
     {{{     4,    -49,     86}, 0, {     0,      0}, {0xd8, 0xb9, 0x61, 0x00}}},
     {{{    36,    -52,     79}, 0, {     0,      0}, {0x30, 0xb8, 0x5c, 0x00}}},
@@ -287,7 +287,7 @@ static const Vtx mario_butt_dl_vertex_group8[] = {
 };
 
 // 0x0400C820
-static const Vtx mario_butt_dl_vertex_group9[] = {
+ const Vtx mario_butt_dl_vertex_group9[] = {
     {{{     4,    -48,    -86}, 0, {     0,      0}, {0xd8, 0xba, 0x9f, 0x00}}},
     {{{    36,    -51,    -79}, 0, {     0,      0}, {0x30, 0xb8, 0xa4, 0x00}}},
     {{{    26,    -74,    -46}, 0, {     0,      0}, {0x18, 0x88, 0xe2, 0x00}}},
@@ -307,7 +307,7 @@ static const Vtx mario_butt_dl_vertex_group9[] = {
 };
 
 // 0x0400C920
-static const Vtx mario_butt_dl_vertex_group10[] = {
+ const Vtx mario_butt_dl_vertex_group10[] = {
     {{{   -31,    -51,     42}, 0, {     0,      0}, {0x8d, 0xd7, 0x1f, 0x00}}},
     {{{    -9,    -69,     55}, 0, {     0,      0}, {0xcd, 0x97, 0x30, 0x00}}},
     {{{     4,    -49,     86}, 0, {     0,      0}, {0xd8, 0xb9, 0x61, 0x00}}},
@@ -401,7 +401,7 @@ const Gfx mario_metal_butt[] = {
 };
 
 // 0x0400CD40
-static const Vtx mario_left_arm_shared_dl_vertex_group1[] = {
+ const Vtx mario_left_arm_shared_dl_vertex_group1[] = {
     {{{     7,     27,     20}, 0, {     0,      0}, {0xda, 0x61, 0x47, 0x00}}},
     {{{    59,     20,     15}, 0, {     0,      0}, {0x44, 0x4a, 0x4c, 0x00}}},
     {{{    59,     21,    -21}, 0, {     0,      0}, {0x37, 0x67, 0xd0, 0x00}}},
@@ -420,7 +420,7 @@ static const Vtx mario_left_arm_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400CE30
-static const Vtx mario_left_arm_shared_dl_vertex_group2[] = {
+ const Vtx mario_left_arm_shared_dl_vertex_group2[] = {
     {{{    68,     13,    -16}, 0, {     0,      0}, {0x6a, 0x38, 0xd9, 0x00}}},
     {{{    68,    -10,    -25}, 0, {     0,      0}, {0x75, 0xe7, 0xd9, 0x00}}},
     {{{    58,    -13,    -34}, 0, {     0,      0}, {0x3b, 0xfb, 0x90, 0x00}}},
@@ -439,7 +439,7 @@ static const Vtx mario_left_arm_shared_dl_vertex_group2[] = {
 };
 
 // 0x0400CF20
-static const Vtx mario_left_arm_shared_dl_vertex_group3[] = {
+ const Vtx mario_left_arm_shared_dl_vertex_group3[] = {
     {{{     5,    -42,     -5}, 0, {     0,      0}, {0xd3, 0x8a, 0xff, 0x00}}},
     {{{    -8,     -9,    -27}, 0, {     0,      0}, {0x8e, 0xe8, 0xce, 0x00}}},
     {{{     6,    -13,    -42}, 0, {     0,      0}, {0xd6, 0xde, 0x8e, 0x00}}},
@@ -457,7 +457,7 @@ static const Vtx mario_left_arm_shared_dl_vertex_group3[] = {
 };
 
 // 0x0400D000
-static const Vtx mario_left_arm_shared_dl_vertex_group4[] = {
+ const Vtx mario_left_arm_shared_dl_vertex_group4[] = {
     {{{    68,     12,      9}, 0, {     0,      0}, {0x78, 0x1f, 0x1b, 0x00}}},
     {{{    68,    -10,    -25}, 0, {     0,      0}, {0x75, 0xe7, 0xd9, 0x00}}},
     {{{    68,     13,    -16}, 0, {     0,      0}, {0x6a, 0x38, 0xd9, 0x00}}},
@@ -506,7 +506,7 @@ const Gfx mario_left_arm[] = {
 };
 
 // 0x0400D1F8
-static const Vtx mario_left_forearm_shared_dl_vertex[] = {
+ const Vtx mario_left_forearm_shared_dl_vertex[] = {
     {{{    -2,     19,     16}, 0, {     0,      0}, {0xdb, 0x61, 0x48, 0x00}}},
     {{{    47,     14,     13}, 0, {     0,      0}, {0x44, 0x44, 0x51, 0x00}}},
     {{{    47,     16,    -19}, 0, {     0,      0}, {0x45, 0x61, 0xd6, 0x00}}},
@@ -546,7 +546,7 @@ const Gfx mario_left_forearm_shared_dl[] = {
 };
 
 // 0x0400D3E8
-static const Vtx mario_left_hand_closed_shared_dl_vertex_group1[] = {
+ const Vtx mario_left_hand_closed_shared_dl_vertex_group1[] = {
     {{{    36,      6,     42}, 0, {     0,      0}, {0xe1, 0xf0, 0x79, 0x00}}},
     {{{    17,     -1,     27}, 0, {     0,      0}, {0x00, 0xfd, 0x7f, 0x00}}},
     {{{    34,    -41,      3}, 0, {     0,      0}, {0x42, 0xa3, 0x36, 0x00}}},
@@ -566,7 +566,7 @@ static const Vtx mario_left_hand_closed_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400D4E8
-static const Vtx mario_left_hand_closed_shared_dl_vertex_group2[] = {
+ const Vtx mario_left_hand_closed_shared_dl_vertex_group2[] = {
     {{{    90,     17,    -46}, 0, {     0,      0}, {0x43, 0x35, 0xa3, 0x00}}},
     {{{    57,     55,    -37}, 0, {     0,      0}, {0x22, 0x54, 0xa9, 0x00}}},
     {{{    99,     40,    -16}, 0, {     0,      0}, {0x6c, 0x3c, 0xe5, 0x00}}},
@@ -584,7 +584,7 @@ static const Vtx mario_left_hand_closed_shared_dl_vertex_group2[] = {
 };
 
 // 0x0400D5C8
-static const Vtx mario_left_hand_closed_shared_dl_vertex_group3[] = {
+ const Vtx mario_left_hand_closed_shared_dl_vertex_group3[] = {
     {{{    27,    -58,      6}, 0, {     0,      0}, {0xa3, 0xad, 0x12, 0x00}}},
     {{{   -14,    -14,     -4}, 0, {     0,      0}, {0x8c, 0xcd, 0x02, 0x00}}},
     {{{    17,    -38,    -39}, 0, {     0,      0}, {0x1a, 0xb7, 0x9d, 0x00}}},
@@ -603,7 +603,7 @@ static const Vtx mario_left_hand_closed_shared_dl_vertex_group3[] = {
 };
 
 // 0x0400D6B8
-static const Vtx mario_left_hand_closed_shared_dl_vertex_group4[] = {
+ const Vtx mario_left_hand_closed_shared_dl_vertex_group4[] = {
     {{{    26,    -25,    -32}, 0, {     0,      0}, {0x09, 0xc7, 0x8f, 0x00}}},
     {{{    33,      7,    -44}, 0, {     0,      0}, {0xc6, 0xfe, 0x90, 0x00}}},
     {{{    80,    -31,    -61}, 0, {     0,      0}, {0x0c, 0xb2, 0x9d, 0x00}}},
@@ -658,7 +658,7 @@ const Gfx mario_left_hand_closed[] = {
 };
 
 // 0x0400D910
-static const Vtx mario_right_arm_shared_dl_vertex_group1[] = {
+ const Vtx mario_right_arm_shared_dl_vertex_group1[] = {
     {{{    57,    -14,    -22}, 0, {     0,      0}, {0x33, 0xcf, 0x97, 0x00}}},
     {{{     5,    -44,      5}, 0, {     0,      0}, {0xd3, 0x8a, 0xf7, 0x00}}},
     {{{     6,    -15,    -30}, 0, {     0,      0}, {0xd6, 0xe6, 0x8c, 0x00}}},
@@ -678,7 +678,7 @@ static const Vtx mario_right_arm_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400DA10
-static const Vtx mario_right_arm_shared_dl_vertex_group2[] = {
+ const Vtx mario_right_arm_shared_dl_vertex_group2[] = {
     {{{    57,    -38,      6}, 0, {     0,      0}, {0x3e, 0x93, 0x07, 0x00}}},
     {{{    67,    -14,     28}, 0, {     0,      0}, {0x6f, 0xe8, 0x37, 0x00}}},
     {{{    57,    -17,     37}, 0, {     0,      0}, {0x33, 0xe8, 0x71, 0x00}}},
@@ -698,7 +698,7 @@ static const Vtx mario_right_arm_shared_dl_vertex_group2[] = {
 };
 
 // 0x0400DB10
-static const Vtx mario_right_arm_shared_dl_vertex_group3[] = {
+ const Vtx mario_right_arm_shared_dl_vertex_group3[] = {
     {{{    -9,    -10,    -15}, 0, {     0,      0}, {0x8f, 0x01, 0xc7, 0x00}}},
     {{{    -8,     15,     -5}, 0, {     0,      0}, {0x91, 0x39, 0xed, 0x00}}},
     {{{     7,     27,    -13}, 0, {     0,      0}, {0xda, 0x67, 0xc2, 0x00}}},
@@ -718,7 +718,7 @@ static const Vtx mario_right_arm_shared_dl_vertex_group3[] = {
 };
 
 // 0x0400DC10
-static const Vtx mario_right_arm_shared_dl_vertex_group4[] = {
+ const Vtx mario_right_arm_shared_dl_vertex_group4[] = {
     {{{    -9,    -10,    -15}, 0, {     0,      0}, {0x8f, 0x01, 0xc7, 0x00}}},
     {{{    -9,    -28,      6}, 0, {     0,      0}, {0x96, 0xbf, 0xec, 0x00}}},
     {{{    -9,    -13,     30}, 0, {     0,      0}, {0x8a, 0xe9, 0x26, 0x00}}},
@@ -767,7 +767,7 @@ const Gfx mario_right_arm[] = {
 };
 
 // 0x0400DE08
-static const Vtx mario_right_forearm_shared_dl_vertex[] = {
+ const Vtx mario_right_forearm_shared_dl_vertex[] = {
     {{{    47,    -15,    -19}, 0, {     0,      0}, {0x41, 0xcf, 0x9f, 0x00}}},
     {{{    -3,    -39,      6}, 0, {     0,      0}, {0xd4, 0x8a, 0xf8, 0x00}}},
     {{{    -2,    -15,    -23}, 0, {     0,      0}, {0xd7, 0xe5, 0x8c, 0x00}}},
@@ -807,7 +807,7 @@ const Gfx mario_right_forearm_shared_dl[] = {
 };
 
 // 0x0400DFF8
-static const Vtx mario_right_hand_closed_dl_vertex_group1[] = {
+ const Vtx mario_right_hand_closed_dl_vertex_group1[] = {
     {{{    35,      9,    -37}, 0, {     0,      0}, {0xe5, 0xf5, 0x85, 0x00}}},
     {{{    55,    -44,     -4}, 0, {     0,      0}, {0x00, 0x86, 0xdf, 0x00}}},
     {{{    31,    -40,     -1}, 0, {     0,      0}, {0x43, 0xa4, 0xc9, 0x00}}},
@@ -827,7 +827,7 @@ static const Vtx mario_right_hand_closed_dl_vertex_group1[] = {
 };
 
 // 0x0400E0F8
-static const Vtx mario_right_hand_closed_dl_vertex_group2[] = {
+ const Vtx mario_right_hand_closed_dl_vertex_group2[] = {
     {{{    35,      9,    -37}, 0, {     0,      0}, {0xe5, 0xf5, 0x85, 0x00}}},
     {{{   104,    -26,      1}, 0, {     0,      0}, {0x68, 0xc5, 0xd7, 0x00}}},
     {{{    55,    -44,     -4}, 0, {     0,      0}, {0x00, 0x86, 0xdf, 0x00}}},
@@ -845,7 +845,7 @@ static const Vtx mario_right_hand_closed_dl_vertex_group2[] = {
 };
 
 // 0x0400E1D8
-static const Vtx mario_right_hand_closed_dl_vertex_group3[] = {
+ const Vtx mario_right_hand_closed_dl_vertex_group3[] = {
     {{{    31,    -40,     -1}, 0, {     0,      0}, {0x43, 0xa4, 0xc9, 0x00}}},
     {{{    23,    -26,     35}, 0, {     0,      0}, {0x04, 0xc3, 0x6e, 0x00}}},
     {{{    13,    -38,     41}, 0, {     0,      0}, {0x15, 0xb3, 0x61, 0x00}}},
@@ -914,7 +914,7 @@ const Gfx mario_metal_right_hand_closed[] = {
 };
 
 // 0x0400E4A8
-static const Vtx mario_left_thigh_dl_vertex_group1[] = {
+ const Vtx mario_left_thigh_dl_vertex_group1[] = {
     {{{     1,    -44,      8}, 0, {     0,      0}, {0xab, 0xa2, 0x00, 0x00}}},
     {{{   -15,      0,      7}, 0, {     0,      0}, {0x82, 0xf7, 0xff, 0x00}}},
     {{{     0,    -13,    -32}, 0, {     0,      0}, {0x9f, 0xe1, 0xb5, 0x00}}},
@@ -934,7 +934,7 @@ static const Vtx mario_left_thigh_dl_vertex_group1[] = {
 };
 
 // 0x0400E5A8
-static const Vtx mario_left_thigh_dl_vertex_group2[] = {
+ const Vtx mario_left_thigh_dl_vertex_group2[] = {
     {{{    18,    -15,     58}, 0, {     0,      0}, {0xea, 0xda, 0x76, 0x00}}},
     {{{     1,    -44,      8}, 0, {     0,      0}, {0xab, 0xa2, 0x00, 0x00}}},
     {{{    21,    -54,      8}, 0, {     0,      0}, {0xf0, 0x83, 0x00, 0x00}}},
@@ -999,7 +999,7 @@ const Gfx mario_metal_left_thigh[] = {
 };
 
 // 0x0400E858
-static const Vtx mario_left_leg_shared_dl_vertex[] = {
+ const Vtx mario_left_leg_shared_dl_vertex[] = {
     {{{     4,    -37,      9}, 0, {     0,      0}, {0xc1, 0x93, 0x00, 0x00}}},
     {{{    64,    -46,      9}, 0, {     0,      0}, {0x4b, 0x9a, 0x01, 0x00}}},
     {{{    65,    -11,     54}, 0, {     0,      0}, {0x2d, 0xdb, 0x70, 0x00}}},
@@ -1031,7 +1031,7 @@ const Gfx mario_left_leg_shared_dl[] = {
 };
 
 // 0x0400E9C8
-static const Vtx mario_left_foot_shared_dl_vertex_group1[] = {
+ const Vtx mario_left_foot_shared_dl_vertex_group1[] = {
     {{{   110,      9,     35}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{   110,      8,    -20}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{    76,     20,    -41}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
@@ -1051,7 +1051,7 @@ static const Vtx mario_left_foot_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400EAC8
-static const Vtx mario_left_foot_shared_dl_vertex_group2[] = {
+ const Vtx mario_left_foot_shared_dl_vertex_group2[] = {
     {{{    44,    -12,    -33}, 0, {     0,      0}, {0x01, 0xb7, 0x99, 0x00}}},
     {{{    76,     20,    -41}, 0, {     0,      0}, {0x0c, 0xd8, 0x89, 0x00}}},
     {{{   110,      8,    -20}, 0, {     0,      0}, {0x44, 0xad, 0xbe, 0x00}}},
@@ -1098,7 +1098,7 @@ const Gfx mario_left_foot[] = {
 };
 
 // 0x0400ECC0
-static const Vtx mario_right_thigh_shared_dl_vertex_group1[] = {
+ const Vtx mario_right_thigh_shared_dl_vertex_group1[] = {
     {{{    98,    -35,    -10}, 0, {     0,      0}, {0x47, 0x97, 0xfc, 0x00}}},
     {{{    19,    -16,     41}, 0, {     0,      0}, {0xee, 0xd6, 0x76, 0x00}}},
     {{{    22,    -54,     -9}, 0, {     0,      0}, {0xf2, 0x82, 0xfd, 0x00}}},
@@ -1118,7 +1118,7 @@ static const Vtx mario_right_thigh_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400EDC0
-static const Vtx mario_right_thigh_shared_dl_vertex_group2[] = {
+ const Vtx mario_right_thigh_shared_dl_vertex_group2[] = {
     {{{    -5,     36,     18}, 0, {     0,      0}, {0x9e, 0x2d, 0x42, 0x00}}},
     {{{   -15,      0,     -7}, 0, {     0,      0}, {0x82, 0xf5, 0x02, 0x00}}},
     {{{     0,    -14,     31}, 0, {     0,      0}, {0xa0, 0xdf, 0x4b, 0x00}}},
@@ -1167,7 +1167,7 @@ const Gfx mario_right_thigh[] = {
 };
 
 // 0x0400EFD8
-static const Vtx mario_right_leg_shared_dl_vertex_group1[] = {
+ const Vtx mario_right_leg_shared_dl_vertex_group1[] = {
     {{{    63,    -45,    -12}, 0, {     0,      0}, {0xf2, 0x9b, 0x4a, 0x00}}},
     {{{    66,    -11,     34}, 0, {     0,      0}, {0xf2, 0x9b, 0x4a, 0x00}}},
     {{{     4,    -36,    -10}, 0, {     0,      0}, {0xc0, 0x93, 0xfe, 0x00}}},
@@ -1187,7 +1187,7 @@ static const Vtx mario_right_leg_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400F0D8
-static const Vtx mario_right_leg_shared_dl_vertex_group2[] = {
+ const Vtx mario_right_leg_shared_dl_vertex_group2[] = {
     {{{    65,     -9,    -56}, 0, {     0,      0}, {0x75, 0xee, 0xd5, 0x00}}},
     {{{    83,      4,    -10}, 0, {     0,      0}, {0x7e, 0xf9, 0xfe, 0x00}}},
     {{{    63,    -45,    -12}, 0, {     0,      0}, {0x75, 0xd1, 0xfd, 0x00}}},
@@ -1224,7 +1224,7 @@ const Gfx mario_right_leg_shared_dl[] = {
 };
 
 // 0x0400F290
-static const Vtx mario_right_foot_dl_vertex_group1[] = {
+ const Vtx mario_right_foot_dl_vertex_group1[] = {
     {{{    27,    -35,    -11}, 0, {     0,      0}, {0xdc, 0x87, 0x06, 0x00}}},
     {{{   -36,     11,     19}, 0, {     0,      0}, {0xb5, 0xd3, 0x5b, 0x00}}},
     {{{   -54,     14,    -10}, 0, {     0,      0}, {0x89, 0xd6, 0x03, 0x00}}},
@@ -1243,7 +1243,7 @@ static const Vtx mario_right_foot_dl_vertex_group1[] = {
 };
 
 // 0x0400F380
-static const Vtx mario_right_foot_dl_vertex_group2[] = {
+ const Vtx mario_right_foot_dl_vertex_group2[] = {
     {{{   -42,     64,    -29}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
     {{{   -40,     63,      5}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
     {{{   -11,     53,    -56}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
@@ -1299,7 +1299,7 @@ const Gfx mario_metal_right_foot[] = {
 };
 
 // 0x0400F568
-static const Vtx mario_yellow_button_dl_vertex[] = {
+ const Vtx mario_yellow_button_dl_vertex[] = {
     {{{     9,     89,     41}, 0, {   180,    962}, {0x14, 0x78, 0x23, 0xff}}},
     {{{     3,     77,     62}, 0, {   682,    966}, {0x04, 0x6a, 0x44, 0xff}}},
     {{{    47,     75,     35}, 0, {    34,    106}, {0x39, 0x6a, 0x26, 0xff}}},
@@ -1317,7 +1317,7 @@ static const Vtx mario_yellow_button_dl_vertex[] = {
 };
 
 // 0x0400F648
-static const Vtx mario_tshirt_shared_dl_vertex_group1[] = {
+ const Vtx mario_tshirt_shared_dl_vertex_group1[] = {
     {{{    47,     75,    -34}, 0, {     0,      0}, {0x3e, 0x6a, 0xe2, 0xff}}},
     {{{    47,     75,     35}, 0, {     0,      0}, {0x39, 0x6a, 0x26, 0xff}}},
     {{{    82,     37,     27}, 0, {     0,      0}, {0x66, 0x48, 0x14, 0xff}}},
@@ -1337,7 +1337,7 @@ static const Vtx mario_tshirt_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400F748
-static const Vtx mario_tshirt_shared_dl_vertex_group2[] = {
+ const Vtx mario_tshirt_shared_dl_vertex_group2[] = {
     {{{    20,    -61,     68}, 0, {     0,      0}, {0x0a, 0x99, 0x49, 0xff}}},
     {{{    46,    -34,     84}, 0, {     0,      0}, {0x24, 0xc8, 0x6b, 0xff}}},
     {{{     6,    -11,     93}, 0, {     0,      0}, {0x00, 0xea, 0x7c, 0xff}}},
@@ -1355,7 +1355,7 @@ static const Vtx mario_tshirt_shared_dl_vertex_group2[] = {
 };
 
 // 0x0400F828
-static const Vtx mario_tshirt_shared_dl_vertex_group3[] = {
+ const Vtx mario_tshirt_shared_dl_vertex_group3[] = {
     {{{    80,     14,    -61}, 0, {     0,      0}, {0x60, 0x28, 0xb8, 0xff}}},
     {{{    47,      3,    -88}, 0, {     0,      0}, {0x30, 0x09, 0x8b, 0xff}}},
     {{{    43,     51,    -74}, 0, {     0,      0}, {0x3c, 0x32, 0x9d, 0xff}}},
@@ -1364,7 +1364,7 @@ static const Vtx mario_tshirt_shared_dl_vertex_group3[] = {
 };
 
 // 0x0400F878
-static const Vtx mario_pants_overalls_shared_dl_vertex_group1[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group1[] = {
     {{{    47,     75,    -34}, 0, {     0,      0}, {0x3e, 0x6a, 0xe2, 0xff}}},
     {{{    28,     85,     30}, 0, {     0,      0}, {0x2c, 0x76, 0x08, 0xff}}},
     {{{    47,     75,     35}, 0, {     0,      0}, {0x39, 0x6a, 0x26, 0xff}}},
@@ -1383,7 +1383,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group1[] = {
 };
 
 // 0x0400F968
-static const Vtx mario_pants_overalls_shared_dl_vertex_group2[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group2[] = {
     {{{    80,     14,    -61}, 0, {     0,      0}, {0x60, 0x28, 0xb8, 0xff}}},
     {{{    43,     51,    -74}, 0, {     0,      0}, {0x3c, 0x32, 0x9d, 0xff}}},
     {{{    48,     64,    -58}, 0, {     0,      0}, {0x4d, 0x50, 0xc5, 0xff}}},
@@ -1403,7 +1403,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group2[] = {
 };
 
 // 0x0400FA68
-static const Vtx mario_pants_overalls_shared_dl_vertex_group3[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group3[] = {
     {{{    80,     14,    -61}, 0, {     0,      0}, {0x60, 0x28, 0xb8, 0xff}}},
     {{{    82,     37,    -26}, 0, {     0,      0}, {0x69, 0x43, 0xec, 0xff}}},
     {{{   100,      1,    -23}, 0, {     0,      0}, {0x7c, 0x09, 0xea, 0xff}}},
@@ -1423,7 +1423,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group3[] = {
 };
 
 // 0x0400FB68
-static const Vtx mario_pants_overalls_shared_dl_vertex_group4[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group4[] = {
     {{{     8,    -74,      0}, 0, {     0,      0}, {0xfd, 0x82, 0x00, 0xff}}},
     {{{    20,    -61,     68}, 0, {     0,      0}, {0x0a, 0x99, 0x49, 0xff}}},
     {{{   -29,    -58,     59}, 0, {     0,      0}, {0xc8, 0x99, 0x30, 0xff}}},
@@ -1443,7 +1443,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group4[] = {
 };
 
 // 0x0400FC68
-static const Vtx mario_pants_overalls_shared_dl_vertex_group5[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group5[] = {
     {{{   -71,     54,    -29}, 0, {     0,      0}, {0x8f, 0x2a, 0xda, 0xff}}},
     {{{   -43,     83,    -24}, 0, {     0,      0}, {0xcc, 0x72, 0xee, 0xff}}},
     {{{   -40,     72,    -54}, 0, {     0,      0}, {0xc5, 0x5f, 0xc6, 0xff}}},
@@ -1461,7 +1461,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group5[] = {
 };
 
 // 0x0400FD48
-static const Vtx mario_pants_overalls_shared_dl_vertex_group6[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group6[] = {
     {{{   -27,     26,    -89}, 0, {     0,      0}, {0xc7, 0x0f, 0x90, 0xff}}},
     {{{    -4,     58,    -82}, 0, {     0,      0}, {0xf9, 0x42, 0x94, 0xff}}},
     {{{    12,     33,    -90}, 0, {     0,      0}, {0x11, 0x20, 0x87, 0xff}}},
@@ -1480,7 +1480,7 @@ static const Vtx mario_pants_overalls_shared_dl_vertex_group6[] = {
 };
 
 // 0x0400FE38
-static const Vtx mario_pants_overalls_shared_dl_vertex_group7[] = {
+ const Vtx mario_pants_overalls_shared_dl_vertex_group7[] = {
     {{{    17,     66,    -75}, 0, {     0,      0}, {0x17, 0x58, 0xa8, 0xff}}},
     {{{    -4,     58,    -82}, 0, {     0,      0}, {0xf9, 0x42, 0x94, 0xff}}},
     {{{     3,     77,    -61}, 0, {     0,      0}, {0x03, 0x6a, 0xbb, 0xff}}},
@@ -1624,7 +1624,7 @@ const Gfx mario_metal_torso_shared_dl[] = {
 };
 
 // 0x04010410
-static const Vtx mario_m_logo_dl_vertex[] = {
+ const Vtx mario_m_logo_dl_vertex[] = {
     {{{   195,     93,     32}, 0, {   744,    732}, {0x51, 0x54, 0x30, 0xff}}},
     {{{   153,     33,     95}, 0, {  1250,   1066}, {0x04, 0x46, 0x69, 0xff}}},
     {{{   252,     62,     70}, 0, {  1032,    152}, {0x39, 0x4a, 0x55, 0xff}}},
@@ -1635,7 +1635,7 @@ static const Vtx mario_m_logo_dl_vertex[] = {
 };
 
 // 0x04010480
-static const Vtx mario_eyes_cap_on_dl_vertex[] = {
+ const Vtx mario_eyes_cap_on_dl_vertex[] = {
     {{{   145,    101,      0}, 0, {   480,    446}, {0x13, 0x7d, 0x00, 0xff}}},
     {{{   108,    105,      0}, 0, {   488,    854}, {0x69, 0x46, 0x00, 0xff}}},
     {{{    97,    103,     25}, 0, {   724,    958}, {0x40, 0x5a, 0x3d, 0xff}}},
@@ -1651,7 +1651,7 @@ static const Vtx mario_eyes_cap_on_dl_vertex[] = {
 };
 
 // 0x04010540
-static const Vtx mario_hair_sideburn_cap_on_dl_vertex[] = {
+ const Vtx mario_hair_sideburn_cap_on_dl_vertex[] = {
     {{{   120,    -12,   -109}, 0, {   916,    184}, {0xed, 0x24, 0x88, 0xff}}},
     {{{    96,     49,    -93}, 0, {   -70,    700}, {0x11, 0x27, 0x89, 0xff}}},
     {{{   153,     33,    -94}, 0, {    90,    -58}, {0x03, 0x46, 0x97, 0xff}}},
@@ -1667,7 +1667,7 @@ static const Vtx mario_hair_sideburn_cap_on_dl_vertex[] = {
 };
 
 // 0x04010600
-static const Vtx mario_mustache_cap_on_dl_vertex_group1[] = {
+ const Vtx mario_mustache_cap_on_dl_vertex_group1[] = {
     {{{    77,    108,     34}, 0, {   342,    368}, {0x0e, 0x16, 0x7c, 0xff}}},
     {{{    92,     88,     84}, 0, {   898,    -18}, {0x23, 0x59, 0x53, 0xff}}},
     {{{    97,    103,     25}, 0, {   224,    146}, {0x40, 0x5a, 0x3d, 0xff}}},
@@ -1687,7 +1687,7 @@ static const Vtx mario_mustache_cap_on_dl_vertex_group1[] = {
 };
 
 // 0x04010700
-static const Vtx mario_mustache_cap_on_dl_vertex_group2[] = {
+ const Vtx mario_mustache_cap_on_dl_vertex_group2[] = {
     {{{    48,     94,    -75}, 0, {   856,    608}, {0xd7, 0x60, 0xb9, 0xff}}},
     {{{    77,    108,    -33}, 0, {   362,    344}, {0x0e, 0x16, 0x84, 0xff}}},
     {{{    92,     88,    -83}, 0, {   922,     -4}, {0x23, 0x59, 0xad, 0xff}}},
@@ -1696,7 +1696,7 @@ static const Vtx mario_mustache_cap_on_dl_vertex_group2[] = {
 };
 
 // 0x04010750
-static const Vtx mario_face_cap_dl_vertex_group1[] = {
+ const Vtx mario_face_cap_dl_vertex_group1[] = {
     {{{   164,    -89,    -74}, 0, {     0,      0}, {0x51, 0xa9, 0xd5, 0xff}}},
     {{{   122,   -139,    -48}, 0, {     0,      0}, {0x28, 0x94, 0xcd, 0xff}}},
     {{{   131,    -56,   -123}, 0, {     0,      0}, {0xde, 0xd4, 0x8f, 0xff}}},
@@ -1716,7 +1716,7 @@ static const Vtx mario_face_cap_dl_vertex_group1[] = {
 };
 
 // 0x04010850
-static const Vtx mario_face_cap_dl_vertex_group2[] = {
+ const Vtx mario_face_cap_dl_vertex_group2[] = {
     {{{   153,     33,    -94}, 0, {     0,      0}, {0x03, 0x46, 0x97, 0xff}}},
     {{{   187,     -6,   -133}, 0, {     0,      0}, {0x1e, 0x04, 0x85, 0xff}}},
     {{{   120,    -12,   -109}, 0, {     0,      0}, {0xed, 0x24, 0x88, 0xff}}},
@@ -1735,7 +1735,7 @@ static const Vtx mario_face_cap_dl_vertex_group2[] = {
 };
 
 // 0x04010940
-static const Vtx mario_face_cap_dl_vertex_group3[] = {
+ const Vtx mario_face_cap_dl_vertex_group3[] = {
     {{{   195,     93,     32}, 0, {     0,      0}, {0x51, 0x54, 0x30, 0xff}}},
     {{{   173,    132,     66}, 0, {     0,      0}, {0xda, 0x5a, 0x50, 0xff}}},
     {{{   153,     33,     95}, 0, {     0,      0}, {0x04, 0x46, 0x69, 0xff}}},
@@ -1754,7 +1754,7 @@ static const Vtx mario_face_cap_dl_vertex_group3[] = {
 };
 
 // 0x04010A30
-static const Vtx mario_face_part_cap_on_dl_vertex_group1[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group1[] = {
     {{{    41,    109,      0}, 0, {     0,      0}, {0x95, 0x44, 0x00, 0xff}}},
     {{{    27,    100,    -29}, 0, {     0,      0}, {0xb1, 0x60, 0xea, 0xff}}},
     {{{    27,    100,     30}, 0, {     0,      0}, {0xb1, 0x60, 0x16, 0xff}}},
@@ -1773,7 +1773,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group1[] = {
 };
 
 // 0x04010B20
-static const Vtx mario_face_part_cap_on_dl_vertex_group2[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group2[] = {
     {{{   102,    -33,   -134}, 0, {     0,      0}, {0x32, 0x19, 0x8f, 0xff}}},
     {{{   120,    -12,   -109}, 0, {     0,      0}, {0xed, 0x24, 0x88, 0xff}}},
     {{{    91,    -54,    -85}, 0, {     0,      0}, {0xd9, 0xb0, 0xa7, 0xff}}},
@@ -1793,7 +1793,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group2[] = {
 };
 
 // 0x04010C20
-static const Vtx mario_face_part_cap_on_dl_vertex_group3[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group3[] = {
     {{{    56,    -45,    -76}, 0, {     0,      0}, {0xe3, 0xca, 0x92, 0xff}}},
     {{{    64,    -25,   -134}, 0, {     0,      0}, {0xcc, 0xe5, 0x90, 0xff}}},
     {{{    91,    -54,    -85}, 0, {     0,      0}, {0xd9, 0xb0, 0xa7, 0xff}}},
@@ -1812,7 +1812,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group3[] = {
 };
 
 // 0x04010D10
-static const Vtx mario_face_part_cap_on_dl_vertex_group4[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group4[] = {
     {{{    92,     88,     84}, 0, {     0,      0}, {0x23, 0x59, 0x53, 0xff}}},
     {{{   104,     87,     70}, 0, {     0,      0}, {0x30, 0x5c, 0x49, 0xff}}},
     {{{    97,    103,     25}, 0, {     0,      0}, {0x40, 0x5a, 0x3d, 0xff}}},
@@ -1832,7 +1832,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group4[] = {
 };
 
 // 0x04010E10
-static const Vtx mario_face_part_cap_on_dl_vertex_group5[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group5[] = {
     {{{    47,    131,     41}, 0, {     0,      0}, {0xb0, 0xe4, 0x5e, 0xff}}},
     {{{    52,    164,     41}, 0, {     0,      0}, {0xc8, 0x3d, 0x5f, 0xff}}},
     {{{    33,    165,      0}, 0, {     0,      0}, {0x8f, 0x38, 0x09, 0xff}}},
@@ -1851,7 +1851,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group5[] = {
 };
 
 // 0x04010F00
-static const Vtx mario_face_part_cap_on_dl_vertex_group6[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group6[] = {
     {{{    17,    -52,    -46}, 0, {     0,      0}, {0x89, 0xf8, 0xd7, 0xff}}},
     {{{    31,    -84,      0}, 0, {     0,      0}, {0xa0, 0xae, 0x00, 0xff}}},
     {{{    17,    -52,     47}, 0, {     0,      0}, {0x89, 0xf8, 0x29, 0xff}}},
@@ -1871,7 +1871,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group6[] = {
 };
 
 // 0x04011000
-static const Vtx mario_face_part_cap_on_dl_vertex_group7[] = {
+ const Vtx mario_face_part_cap_on_dl_vertex_group7[] = {
     {{{    52,    164,    -40}, 0, {     0,      0}, {0xb8, 0x34, 0xa6, 0xff}}},
     {{{    47,    131,    -40}, 0, {     0,      0}, {0xbc, 0xde, 0x9c, 0xff}}},
     {{{    32,    132,      0}, 0, {     0,      0}, {0x84, 0xe8, 0xf8, 0xff}}},
@@ -1888,7 +1888,7 @@ static const Vtx mario_face_part_cap_on_dl_vertex_group7[] = {
 };
 
 // 0x040110D0
-static const Vtx mario_face_back_hair_cap_on_dl_vertex_group1[] = {
+ const Vtx mario_face_back_hair_cap_on_dl_vertex_group1[] = {
     {{{    31,    -84,      0}, 0, {     0,      0}, {0xa0, 0xae, 0x00, 0xff}}},
     {{{    36,   -116,    -35}, 0, {     0,      0}, {0xfb, 0x8e, 0x37, 0xff}}},
     {{{    64,   -103,    -51}, 0, {     0,      0}, {0xde, 0x94, 0xc7, 0xff}}},
@@ -1908,7 +1908,7 @@ static const Vtx mario_face_back_hair_cap_on_dl_vertex_group1[] = {
 };
 
 // 0x040111D0
-static const Vtx mario_face_back_hair_cap_on_dl_vertex_group2[] = {
+ const Vtx mario_face_back_hair_cap_on_dl_vertex_group2[] = {
     {{{    31,    -85,    -86}, 0, {     0,      0}, {0xdb, 0xfd, 0x87, 0xff}}},
     {{{    35,   -120,    -67}, 0, {     0,      0}, {0xda, 0x94, 0xcb, 0xff}}},
     {{{     9,    -88,    -58}, 0, {     0,      0}, {0x87, 0xdf, 0xf5, 0xff}}},
@@ -2374,19 +2374,19 @@ const Gfx mario_metal_cap_on_shared_dl[] = {
 };
 
 // Unreferenced light group
-UNUSED static const Lights1 mario_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 mario_lights_unused1 = gdSPDefLights1(
     0x3f, 0x30, 0x1e,
     0xfe, 0xc1, 0x79, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 mario_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 mario_lights_unused2 = gdSPDefLights1(
     0x1c, 0x01, 0x00,
     0x73, 0x06, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x04012190
-static const Vtx mario_eyes_cap_off_dl_vertex[] = {
+ const Vtx mario_eyes_cap_off_dl_vertex[] = {
     {{{   104,     87,    -69}, 0, {  -160,    898}, {0x30, 0x5c, 0xb7, 0xff}}},
     {{{    97,    103,    -24}, 0, {   256,    970}, {0x40, 0x5a, 0xc3, 0xff}}},
     {{{   144,     83,    -66}, 0, {  -146,    460}, {0x19, 0x5b, 0xad, 0xff}}},
@@ -2402,7 +2402,7 @@ static const Vtx mario_eyes_cap_off_dl_vertex[] = {
 };
 
 // 0x04012250
-static const Vtx mario_hair_sideburn_cap_off_dl_vertex[] = {
+ const Vtx mario_hair_sideburn_cap_off_dl_vertex[] = {
     {{{    42,      0,    103}, 0, {   968,   1192}, {0xc3, 0x05, 0x6e, 0xff}}},
     {{{    85,    -23,    111}, 0, {  1238,    518}, {0x04, 0x58, 0x5a, 0xff}}},
     {{{    96,     49,     94}, 0, {   -74,    726}, {0x10, 0x28, 0x77, 0xff}}},
@@ -2418,7 +2418,7 @@ static const Vtx mario_hair_sideburn_cap_off_dl_vertex[] = {
 };
 
 // 0x04012310
-static const Vtx mario_mustache_cap_off_dl_vertex_group1[] = {
+ const Vtx mario_mustache_cap_off_dl_vertex_group1[] = {
     {{{    92,     88,    -83}, 0, {   992,    -10}, {0x23, 0x59, 0xad, 0xff}}},
     {{{    77,    108,    -33}, 0, {   360,    296}, {0x0e, 0x16, 0x84, 0xff}}},
     {{{    97,    103,    -24}, 0, {   298,     20}, {0x40, 0x5a, 0xc3, 0xff}}},
@@ -2438,7 +2438,7 @@ static const Vtx mario_mustache_cap_off_dl_vertex_group1[] = {
 };
 
 // 0x04012410
-static const Vtx mario_mustache_cap_off_dl_vertex_group2[] = {
+ const Vtx mario_mustache_cap_off_dl_vertex_group2[] = {
     {{{    41,    109,      0}, 0, {   -38,    852}, {0x95, 0x44, 0x00, 0xff}}},
     {{{    52,    111,    -30}, 0, {   294,    656}, {0xa8, 0x32, 0xb5, 0xff}}},
     {{{    27,    100,    -29}, 0, {   310,   1002}, {0xb1, 0x60, 0xea, 0xff}}},
@@ -2447,7 +2447,7 @@ static const Vtx mario_mustache_cap_off_dl_vertex_group2[] = {
 };
 
 // 0x04012460
-static const Vtx mario_face_part_cap_off_dl_vertex_group1[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group1[] = {
     {{{    97,    103,     25}, 0, {     0,      0}, {0x40, 0x5a, 0x3d, 0xff}}},
     {{{   108,    105,      0}, 0, {     0,      0}, {0x69, 0x46, 0x00, 0xff}}},
     {{{   117,    128,      0}, 0, {     0,      0}, {0x7a, 0xe1, 0x06, 0xff}}},
@@ -2466,7 +2466,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group1[] = {
 };
 
 // 0x04012550
-static const Vtx mario_face_part_cap_off_dl_vertex_group2[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group2[] = {
     {{{    -7,     62,      0}, 0, {     0,      0}, {0x85, 0x1d, 0x00, 0xff}}},
     {{{     3,     54,     52}, 0, {     0,      0}, {0x95, 0x1d, 0x3c, 0xff}}},
     {{{    27,    100,     30}, 0, {     0,      0}, {0xb1, 0x60, 0x16, 0xff}}},
@@ -2486,7 +2486,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group2[] = {
 };
 
 // 0x04012650
-static const Vtx mario_face_part_cap_off_dl_vertex_group3[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group3[] = {
     {{{    96,     49,     94}, 0, {     0,      0}, {0x10, 0x28, 0x77, 0xff}}},
     {{{   153,     33,     95}, 0, {     0,      0}, {0x05, 0x38, 0x71, 0xff}}},
     {{{   144,     83,     67}, 0, {     0,      0}, {0x19, 0x5b, 0x53, 0xff}}},
@@ -2505,7 +2505,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group3[] = {
 };
 
 // 0x04012740
-static const Vtx mario_face_part_cap_off_dl_vertex_group4[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group4[] = {
     {{{    27,    100,     30}, 0, {     0,      0}, {0xb1, 0x60, 0x16, 0xff}}},
     {{{    27,    100,    -29}, 0, {     0,      0}, {0xb1, 0x60, 0xea, 0xff}}},
     {{{    -7,     62,      0}, 0, {     0,      0}, {0x85, 0x1d, 0x00, 0xff}}},
@@ -2524,7 +2524,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group4[] = {
 };
 
 // 0x04012830
-static const Vtx mario_face_part_cap_off_dl_vertex_group5[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group5[] = {
     {{{    33,    165,      0}, 0, {     0,      0}, {0x8f, 0x38, 0x09, 0xff}}},
     {{{    60,    181,      0}, 0, {     0,      0}, {0xea, 0x7c, 0x00, 0xff}}},
     {{{    52,    164,    -40}, 0, {     0,      0}, {0xb8, 0x34, 0xa6, 0xff}}},
@@ -2544,7 +2544,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group5[] = {
 };
 
 // 0x04012930
-static const Vtx mario_face_part_cap_off_dl_vertex_group6[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group6[] = {
     {{{   104,    162,     41}, 0, {     0,      0}, {0x52, 0x27, 0x58, 0xff}}},
     {{{   101,    179,      0}, 0, {     0,      0}, {0x27, 0x78, 0x00, 0xff}}},
     {{{    78,    163,     46}, 0, {     0,      0}, {0x03, 0x55, 0x5d, 0xff}}},
@@ -2564,7 +2564,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group6[] = {
 };
 
 // 0x04012A30
-static const Vtx mario_face_part_cap_off_dl_vertex_group7[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group7[] = {
     {{{    52,    111,     31}, 0, {     0,      0}, {0xa8, 0x33, 0x4b, 0xff}}},
     {{{    47,    131,     41}, 0, {     0,      0}, {0xb0, 0xe4, 0x5e, 0xff}}},
     {{{    32,    132,      0}, 0, {     0,      0}, {0x84, 0xe8, 0xf8, 0xff}}},
@@ -2584,7 +2584,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group7[] = {
 };
 
 // 0x04012B30
-static const Vtx mario_face_part_cap_off_dl_vertex_group8[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group8[] = {
     {{{   102,    129,    -40}, 0, {     0,      0}, {0x50, 0xdc, 0xa6, 0xff}}},
     {{{   104,    162,    -40}, 0, {     0,      0}, {0x44, 0x31, 0xa1, 0xff}}},
     {{{   119,    161,      0}, 0, {     0,      0}, {0x79, 0x23, 0xf6, 0xff}}},
@@ -2597,7 +2597,7 @@ static const Vtx mario_face_part_cap_off_dl_vertex_group8[] = {
 };
 
 // 0x04012BC0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group1[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group1[] = {
     {{{   153,     33,    -94}, 0, {     0,      0}, {0xfe, 0x36, 0x8e, 0xff}}},
     {{{   200,     70,    -97}, 0, {     0,      0}, {0x07, 0x48, 0x99, 0xff}}},
     {{{   182,     -9,   -115}, 0, {     0,      0}, {0x2f, 0xfe, 0x8b, 0xff}}},
@@ -2617,7 +2617,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group1[] = {
 };
 
 // 0x04012CC0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group2[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group2[] = {
     {{{   120,    -12,   -109}, 0, {     0,      0}, {0xff, 0x13, 0x83, 0xff}}},
     {{{   153,     33,    -94}, 0, {     0,      0}, {0xfe, 0x36, 0x8e, 0xff}}},
     {{{   182,     -9,   -115}, 0, {     0,      0}, {0x2f, 0xfe, 0x8b, 0xff}}},
@@ -2636,7 +2636,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group2[] = {
 };
 
 // 0x04012DB0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group3[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group3[] = {
     {{{   221,     35,    -73}, 0, {     0,      0}, {0x71, 0x03, 0xc8, 0xff}}},
     {{{   211,     91,    -71}, 0, {     0,      0}, {0x31, 0x46, 0xa3, 0xff}}},
     {{{   232,     69,    -34}, 0, {     0,      0}, {0x72, 0xe4, 0xd1, 0xff}}},
@@ -2656,7 +2656,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group3[] = {
 };
 
 // 0x04012EB0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group4[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group4[] = {
     {{{   145,    -83,    105}, 0, {     0,      0}, {0xef, 0xd0, 0x73, 0xff}}},
     {{{   189,   -102,     73}, 0, {     0,      0}, {0x50, 0xbb, 0x44, 0xff}}},
     {{{   181,     -9,    116}, 0, {     0,      0}, {0x2d, 0x01, 0x76, 0xff}}},
@@ -2676,7 +2676,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group4[] = {
 };
 
 // 0x04012FB0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group5[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group5[] = {
     {{{   145,    -83,    105}, 0, {     0,      0}, {0xef, 0xd0, 0x73, 0xff}}},
     {{{   181,     -9,    116}, 0, {     0,      0}, {0x2d, 0x01, 0x76, 0xff}}},
     {{{   120,    -11,    111}, 0, {     0,      0}, {0xff, 0x13, 0x7d, 0xff}}},
@@ -2696,7 +2696,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group5[] = {
 };
 
 // 0x040130B0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group6[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group6[] = {
     {{{    64,   -103,     52}, 0, {     0,      0}, {0xf3, 0x8b, 0x2e, 0xff}}},
     {{{    91,    -54,     86}, 0, {     0,      0}, {0xe9, 0xa9, 0x59, 0xff}}},
     {{{    56,    -45,     77}, 0, {     0,      0}, {0xe3, 0xca, 0x6e, 0xff}}},
@@ -2716,7 +2716,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group6[] = {
 };
 
 // 0x040131B0
-static const Vtx mario_face_hair_cap_off_dl_vertex_group7[] = {
+ const Vtx mario_face_hair_cap_off_dl_vertex_group7[] = {
     {{{    36,   -116,     36}, 0, {     0,      0}, {0xfb, 0x8e, 0xc9, 0xff}}},
     {{{    35,   -120,     68}, 0, {     0,      0}, {0xda, 0x94, 0x35, 0xff}}},
     {{{     9,    -88,     59}, 0, {     0,      0}, {0x87, 0xdf, 0x0b, 0xff}}},
@@ -2733,7 +2733,7 @@ static const Vtx mario_face_hair_cap_off_dl_vertex_group7[] = {
 };
 
 // 0x04013280
-static const Vtx mario_face_part_cap_off_dl_vertex_group9[] = {
+ const Vtx mario_face_part_cap_off_dl_vertex_group9[] = {
     {{{    44,     44,     97}, 0, {     0,      0}, {0xda, 0x21, 0x74, 0xff}}},
     {{{    48,     94,     76}, 0, {     0,      0}, {0xd7, 0x60, 0x47, 0xff}}},
     {{{     3,     54,     52}, 0, {     0,      0}, {0x95, 0x1d, 0x3c, 0xff}}},
@@ -3149,7 +3149,7 @@ const Gfx mario_metal_cap_off_shared_dl[] = {
 };
 
 // 0x04014098
-static const Vtx mario_medium_poly_butt_dl_vertex_group1[] = {
+ const Vtx mario_medium_poly_butt_dl_vertex_group1[] = {
     {{{     0,     78,     37}, 0, {     0,      0}, {0xc7, 0x6f, 0x14, 0x00}}},
     {{{    44,     80,     46}, 0, {     0,      0}, {0x36, 0x68, 0x2e, 0x00}}},
     {{{    43,     80,    -45}, 0, {     0,      0}, {0x2c, 0x70, 0xdb, 0x00}}},
@@ -3169,7 +3169,7 @@ static const Vtx mario_medium_poly_butt_dl_vertex_group1[] = {
 };
 
 // 0x04014198
-static const Vtx mario_medium_poly_butt_dl_vertex_group2[] = {
+ const Vtx mario_medium_poly_butt_dl_vertex_group2[] = {
     {{{    -2,     41,     95}, 0, {     0,      0}, {0xba, 0x3b, 0x57, 0x00}}},
     {{{     0,     78,     37}, 0, {     0,      0}, {0xc7, 0x6f, 0x14, 0x00}}},
     {{{   -32,     43,     22}, 0, {     0,      0}, {0x8c, 0x2c, 0x18, 0x00}}},
@@ -3189,7 +3189,7 @@ static const Vtx mario_medium_poly_butt_dl_vertex_group2[] = {
 };
 
 // 0x04014298
-static const Vtx mario_medium_poly_butt_dl_vertex_group3[] = {
+ const Vtx mario_medium_poly_butt_dl_vertex_group3[] = {
     {{{    -2,     41,    -95}, 0, {     0,      0}, {0xba, 0x3b, 0xaa, 0x00}}},
     {{{    43,     80,    -45}, 0, {     0,      0}, {0x2c, 0x70, 0xdb, 0x00}}},
     {{{    44,     35,    -96}, 0, {     0,      0}, {0x3c, 0x22, 0x96, 0x00}}},
@@ -3209,7 +3209,7 @@ static const Vtx mario_medium_poly_butt_dl_vertex_group3[] = {
 };
 
 // 0x04014398
-static const Vtx mario_medium_poly_butt_dl_vertex_group4[] = {
+ const Vtx mario_medium_poly_butt_dl_vertex_group4[] = {
     {{{    -5,    -45,     97}, 0, {     0,      0}, {0xc7, 0xde, 0x6b, 0x00}}},
     {{{    43,    -48,     97}, 0, {     0,      0}, {0x3b, 0xc2, 0x5c, 0x00}}},
     {{{    44,     36,     95}, 0, {     0,      0}, {0x3d, 0x22, 0x69, 0x00}}},
@@ -3229,7 +3229,7 @@ static const Vtx mario_medium_poly_butt_dl_vertex_group4[] = {
 };
 
 // 0x04014498
-static const Vtx mario_medium_poly_butt_dl_vertex_group5[] = {
+ const Vtx mario_medium_poly_butt_dl_vertex_group5[] = {
     {{{    44,     36,     95}, 0, {     0,      0}, {0x3d, 0x22, 0x69, 0x00}}},
     {{{    85,     -5,      0}, 0, {     0,      0}, {0x7f, 0xfe, 0x00, 0x00}}},
     {{{    44,     80,     46}, 0, {     0,      0}, {0x36, 0x68, 0x2e, 0x00}}},
@@ -3290,7 +3290,7 @@ const Gfx mario_metal_medium_poly_butt[] = {
 };
 
 // 0x040146E0
-static const Vtx mario_medium_poly_left_arm_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_left_arm_shared_dl_vertex[] = {
     {{{    -6,    -32,    -22}, 0, {     0,      0}, {0x08, 0x84, 0x18, 0x00}}},
     {{{    60,    -27,    -18}, 0, {     0,      0}, {0x3d, 0xc5, 0xa3, 0x00}}},
     {{{    60,    -18,     26}, 0, {     0,      0}, {0x5c, 0xbe, 0x36, 0x00}}},
@@ -3329,7 +3329,7 @@ const Gfx mario_medium_poly_left_arm[] = {
 };
 
 // 0x04014860
-static const Vtx mario_medium_poly_left_forearm_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_left_forearm_shared_dl_vertex[] = {
     {{{    -9,    -29,    -18}, 0, {     0,      0}, {0x05, 0x84, 0x19, 0x00}}},
     {{{    53,    -26,    -17}, 0, {     0,      0}, {0x59, 0xd0, 0xb5, 0x00}}},
     {{{    53,    -17,     24}, 0, {     0,      0}, {0x3d, 0xab, 0x47, 0x00}}},
@@ -3360,7 +3360,7 @@ const Gfx mario_medium_poly_left_forearm_shared_dl[] = {
 };
 
 // 0x040149C0
-static const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group1[] = {
+ const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group1[] = {
     {{{    31,     10,     40}, 0, {     0,      0}, {0xd8, 0xed, 0x76, 0x00}}},
     {{{    12,      1,     26}, 0, {     0,      0}, {0xf1, 0xf7, 0x7d, 0x00}}},
     {{{    27,    -32,     -3}, 0, {     0,      0}, {0x06, 0x82, 0x0b, 0x00}}},
@@ -3380,7 +3380,7 @@ static const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group1[] = 
 };
 
 // 0x04014AC0
-static const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group2[] = {
+ const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group2[] = {
     {{{    31,     10,     40}, 0, {     0,      0}, {0xd8, 0xed, 0x76, 0x00}}},
     {{{    55,     84,      9}, 0, {     0,      0}, {0x14, 0x74, 0x2c, 0x00}}},
     {{{     7,     62,     10}, 0, {     0,      0}, {0xa7, 0x5a, 0x00, 0x00}}},
@@ -3399,7 +3399,7 @@ static const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group2[] = 
 };
 
 // 0x04014BB0
-static const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group3[] = {
+ const Vtx mario_medium_poly_left_hand_closed_shared_dl_vertex_group3[] = {
     {{{    54,     58,    -32}, 0, {     0,      0}, {0x02, 0x4e, 0x9d, 0x00}}},
     {{{    95,     43,    -12}, 0, {     0,      0}, {0x6e, 0x36, 0xe0, 0x00}}},
     {{{    84,    -10,    -41}, 0, {     0,      0}, {0x39, 0xe2, 0x93, 0x00}}},
@@ -3451,7 +3451,7 @@ const Gfx mario_medium_poly_left_hand_closed[] = {
 };
 
 // 0x04014DE0
-static const Vtx mario_medium_poly_right_arm_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_right_arm_shared_dl_vertex[] = {
     {{{    60,    -28,     22}, 0, {     0,      0}, {0x3b, 0xc7, 0x60, 0x00}}},
     {{{    60,    -19,    -19}, 0, {     0,      0}, {0x5a, 0xbc, 0xc7, 0x00}}},
     {{{    60,     14,     24}, 0, {     0,      0}, {0x5b, 0x4f, 0x26, 0x00}}},
@@ -3490,7 +3490,7 @@ const Gfx mario_medium_poly_right_arm[] = {
 };
 
 // 0x04014F60
-static const Vtx mario_medium_poly_right_forearm_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_right_forearm_shared_dl_vertex[] = {
     {{{    -5,    -18,    -24}, 0, {     0,      0}, {0x81, 0xfe, 0x03, 0x00}}},
     {{{    -3,    -29,     21}, 0, {     0,      0}, {0x81, 0xfe, 0x03, 0x00}}},
     {{{    -4,     17,     26}, 0, {     0,      0}, {0x81, 0xfe, 0x03, 0x00}}},
@@ -3521,7 +3521,7 @@ const Gfx mario_medium_poly_right_forearm_shared_dl[] = {
 };
 
 // 0x040150C0
-static const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group1[] = {
+ const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group1[] = {
     {{{    -7,     -4,     36}, 0, {     0,      0}, {0x8c, 0xcd, 0xfd, 0x00}}},
     {{{   -26,     40,      0}, 0, {     0,      0}, {0x8c, 0xcd, 0xfd, 0x00}}},
     {{{    -4,     -7,    -34}, 0, {     0,      0}, {0x8c, 0xcd, 0xfd, 0x00}}},
@@ -3541,7 +3541,7 @@ static const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group1[] = {
 };
 
 // 0x040151C0
-static const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group2[] = {
+ const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group2[] = {
     {{{    16,     38,     35}, 0, {     0,      0}, {0xc1, 0x2d, 0x63, 0x00}}},
     {{{     7,     62,    -11}, 0, {     0,      0}, {0xa7, 0x5a, 0xf9, 0x00}}},
     {{{    -3,     37,      3}, 0, {     0,      0}, {0xb0, 0x62, 0xf7, 0x00}}},
@@ -3561,7 +3561,7 @@ static const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group2[] = {
 };
 
 // 0x040152C0
-static const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group3[] = {
+ const Vtx mario_medium_poly_right_hand_closed_dl_vertex_group3[] = {
     {{{   102,    -23,      0}, 0, {     0,      0}, {0x65, 0xc1, 0xd7, 0x00}}},
     {{{    94,     43,     18}, 0, {     0,      0}, {0x6d, 0x38, 0x21, 0x00}}},
     {{{    81,     -8,     49}, 0, {     0,      0}, {0x36, 0xe6, 0x6f, 0x00}}},
@@ -3623,7 +3623,7 @@ const Gfx mario_metal_medium_poly_right_hand_closed[] = {
 };
 
 // 0x04015530
-static const Vtx mario_medium_poly_left_thigh_dl_vertex[] = {
+ const Vtx mario_medium_poly_left_thigh_dl_vertex[] = {
     {{{    18,    -12,     58}, 0, {     0,      0}, {0x13, 0xdd, 0x78, 0x00}}},
     {{{    22,    -52,      8}, 0, {     0,      0}, {0x1c, 0x85, 0x01, 0x00}}},
     {{{    99,    -35,      8}, 0, {     0,      0}, {0x3e, 0x92, 0x01, 0x00}}},
@@ -3679,7 +3679,7 @@ const Gfx mario_metal_medium_poly_left_thigh[] = {
 };
 
 // 0x04015758
-static const Vtx mario_medium_poly_left_leg_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_left_leg_shared_dl_vertex[] = {
     {{{     5,    -35,      9}, 0, {     0,      0}, {0xca, 0x8e, 0x00, 0x00}}},
     {{{    65,    -44,     10}, 0, {     0,      0}, {0xee, 0x83, 0x01, 0x00}}},
     {{{    66,     -9,     54}, 0, {     0,      0}, {0xf2, 0xdc, 0x78, 0x00}}},
@@ -3712,7 +3712,7 @@ const Gfx mario_medium_poly_left_leg_shared_dl[] = {
 };
 
 // 0x040158D8
-static const Vtx mario_medium_poly_left_foot_shared_dl_vertex_group1[] = {
+ const Vtx mario_medium_poly_left_foot_shared_dl_vertex_group1[] = {
     {{{   108,     10,     36}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{   108,      9,    -20}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{    75,     21,    -41}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
@@ -3732,7 +3732,7 @@ static const Vtx mario_medium_poly_left_foot_shared_dl_vertex_group1[] = {
 };
 
 // 0x040159D8
-static const Vtx mario_medium_poly_left_foot_shared_dl_vertex_group2[] = {
+ const Vtx mario_medium_poly_left_foot_shared_dl_vertex_group2[] = {
     {{{    78,    -30,      7}, 0, {     0,      0}, {0x34, 0x8d, 0xfb, 0x00}}},
     {{{   108,      9,    -20}, 0, {     0,      0}, {0x44, 0xad, 0xbe, 0x00}}},
     {{{   108,     10,     36}, 0, {     0,      0}, {0x4c, 0xaf, 0x3c, 0x00}}},
@@ -3774,7 +3774,7 @@ const Gfx mario_medium_poly_left_foot[] = {
 };
 
 // 0x04015B80
-static const Vtx mario_medium_poly_right_thigh_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_right_thigh_shared_dl_vertex[] = {
     {{{    18,    -11,    -58}, 0, {     0,      0}, {0x82, 0xf5, 0x02, 0x00}}},
     {{{    23,    -52,     -9}, 0, {     0,      0}, {0x82, 0xf5, 0x02, 0x00}}},
     {{{    20,    -14,     41}, 0, {     0,      0}, {0x82, 0xf5, 0x02, 0x00}}},
@@ -3815,7 +3815,7 @@ const Gfx mario_medium_poly_right_thigh[] = {
 };
 
 // 0x04015D20
-static const Vtx mario_medium_poly_right_leg_shared_dl_vertex[] = {
+ const Vtx mario_medium_poly_right_leg_shared_dl_vertex[] = {
     {{{     6,     -1,    -50}, 0, {     0,      0}, {0x8e, 0xf7, 0xca, 0x00}}},
     {{{     5,    -34,    -11}, 0, {     0,      0}, {0xc9, 0x8e, 0xfe, 0x00}}},
     {{{     7,     -4,     30}, 0, {     0,      0}, {0x9b, 0xed, 0x4a, 0x00}}},
@@ -3848,7 +3848,7 @@ const Gfx mario_medium_poly_right_leg_shared_dl[] = {
 };
 
 // 0x04015EA0
-static const Vtx mario_medium_poly_right_foot_dl_vertex_group1[] = {
+ const Vtx mario_medium_poly_right_foot_dl_vertex_group1[] = {
     {{{   -38,     12,     14}, 0, {     0,      0}, {0xa1, 0xcf, 0x43, 0x00}}},
     {{{   -43,     65,    -12}, 0, {     0,      0}, {0x83, 0x13, 0xff, 0x00}}},
     {{{   -36,     12,    -41}, 0, {     0,      0}, {0xa1, 0xce, 0xbe, 0x00}}},
@@ -3868,7 +3868,7 @@ static const Vtx mario_medium_poly_right_foot_dl_vertex_group1[] = {
 };
 
 // 0x04015FA0
-static const Vtx mario_medium_poly_right_foot_dl_vertex_group2[] = {
+ const Vtx mario_medium_poly_right_foot_dl_vertex_group2[] = {
     {{{   -15,     55,     24}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
     {{{    76,     23,    -62}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
     {{{   -14,     54,    -51}, 0, {     0,      0}, {0x29, 0x77, 0x00, 0x00}}},
@@ -3920,7 +3920,7 @@ const Gfx mario_metal_medium_poly_right_foot[] = {
 };
 
 // 0x04016148
-static const Vtx mario_seg4_vertex_04016148[] = {
+ const Vtx mario_seg4_vertex_04016148[] = {
     {{{    75,     24,    -60}, 0, {   -74,   -930}, {0x60, 0x27, 0xb8, 0xff}}},
     {{{    36,     47,    -76}, 0, {  -174,    168}, {0x2e, 0x36, 0x98, 0xff}}},
     {{{    44,     78,    -35}, 0, {   988,     92}, {0x45, 0x65, 0xe2, 0xff}}},
@@ -3936,7 +3936,7 @@ static const Vtx mario_seg4_vertex_04016148[] = {
 };
 
 // 0x04016208
-static const Vtx mario_seg4_vertex_04016208[] = {
+ const Vtx mario_seg4_vertex_04016208[] = {
     {{{    82,     37,     28}, 0, {     0,      0}, {0x71, 0x36, 0x0e, 0xff}}},
     {{{    82,     37,    -28}, 0, {     0,      0}, {0x71, 0x35, 0xea, 0xff}}},
     {{{    44,     78,    -35}, 0, {     0,      0}, {0x45, 0x65, 0xe2, 0xff}}},
@@ -3956,7 +3956,7 @@ static const Vtx mario_seg4_vertex_04016208[] = {
 };
 
 // 0x04016308
-static const Vtx mario_seg4_vertex_04016308[] = {
+ const Vtx mario_seg4_vertex_04016308[] = {
     {{{    36,     47,    -76}, 0, {     0,      0}, {0x2e, 0x36, 0x98, 0xff}}},
     {{{    75,     24,    -60}, 0, {     0,      0}, {0x60, 0x27, 0xb8, 0xff}}},
     {{{    56,     -4,    -77}, 0, {     0,      0}, {0x38, 0x04, 0x8f, 0xff}}},
@@ -3969,7 +3969,7 @@ static const Vtx mario_seg4_vertex_04016308[] = {
 };
 
 // 0x04016398
-static const Vtx mario_seg4_vertex_04016398[] = {
+ const Vtx mario_seg4_vertex_04016398[] = {
     {{{    83,    -29,    -58}, 0, {     0,      0}, {0x52, 0xc9, 0xb2, 0xff}}},
     {{{    95,    -39,    -25}, 0, {     0,      0}, {0x79, 0xe6, 0xe8, 0xff}}},
     {{{    54,    -68,      0}, 0, {     0,      0}, {0x2d, 0x8a, 0x00, 0xff}}},
@@ -3989,7 +3989,7 @@ static const Vtx mario_seg4_vertex_04016398[] = {
 };
 
 // 0x04016498
-static const Vtx mario_seg4_vertex_04016498[] = {
+ const Vtx mario_seg4_vertex_04016498[] = {
     {{{     1,     87,    -53}, 0, {     0,      0}, {0x0e, 0x74, 0xd1, 0xff}}},
     {{{   -30,     88,    -41}, 0, {     0,      0}, {0xc7, 0x6a, 0xda, 0xff}}},
     {{{   -30,     88,     42}, 0, {     0,      0}, {0xd3, 0x72, 0x1f, 0xff}}},
@@ -4009,7 +4009,7 @@ static const Vtx mario_seg4_vertex_04016498[] = {
 };
 
 // 0x04016598
-static const Vtx mario_seg4_vertex_04016598[] = {
+ const Vtx mario_seg4_vertex_04016598[] = {
     {{{   -26,     49,     88}, 0, {     0,      0}, {0xc4, 0x29, 0x67, 0xff}}},
     {{{     9,      0,     94}, 0, {     0,      0}, {0x0e, 0x03, 0x7e, 0xff}}},
     {{{    36,     47,     77}, 0, {     0,      0}, {0x2f, 0x37, 0x68, 0xff}}},
@@ -4116,7 +4116,7 @@ const Gfx mario_metal_medium_poly_torso[] = {
 };
 
 // 0x04016968
-static const Vtx mario_low_poly_butt_dl_vertex[] = {
+ const Vtx mario_low_poly_butt_dl_vertex[] = {
     {{{   -37,    -37,      0}, 0, {     0,      0}, {0x82, 0xf5, 0x00, 0x00}}},
     {{{    -2,     52,     92}, 0, {     0,      0}, {0xb1, 0x3c, 0x4e, 0x00}}},
     {{{   -35,     55,      0}, 0, {     0,      0}, {0x97, 0x45, 0x00, 0x00}}},
@@ -4169,7 +4169,7 @@ const Gfx mario_metal_low_poly_butt[] = {
 };
 
 // 0x04016B60
-static const Vtx mario_low_poly_left_arm_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_left_arm_shared_dl_vertex[] = {
     {{{    -6,     28,     10}, 0, {     0,      0}, {0x09, 0x65, 0xb5, 0x00}}},
     {{{    72,     21,      8}, 0, {     0,      0}, {0x44, 0x4d, 0x48, 0x00}}},
     {{{    71,    -11,    -34}, 0, {     0,      0}, {0x3f, 0x57, 0xbe, 0x00}}},
@@ -4203,7 +4203,7 @@ const Gfx mario_low_poly_left_arm[] = {
 };
 
 // 0x04016C90
-static const Vtx mario_low_poly_left_forearm_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_left_forearm_shared_dl_vertex[] = {
     {{{    -5,     20,      6}, 0, {     0,      0}, {0x05, 0x62, 0xb0, 0x00}}},
     {{{    67,     16,      5}, 0, {     0,      0}, {0x43, 0x4b, 0x4c, 0x00}}},
     {{{    67,    -14,    -31}, 0, {     0,      0}, {0x3c, 0x55, 0xba, 0x00}}},
@@ -4229,7 +4229,7 @@ const Gfx mario_low_poly_left_forearm_shared_dl[] = {
 };
 
 // 0x04016DA0
-static const Vtx mario_low_poly_left_hand_closed_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_left_hand_closed_shared_dl_vertex[] = {
     {{{    -6,     34,    -25}, 0, {     0,      0}, {0xa0, 0x13, 0xb0, 0x00}}},
     {{{    -9,     39,     24}, 0, {     0,      0}, {0xb3, 0x43, 0x4a, 0x00}}},
     {{{    91,     80,    -34}, 0, {     0,      0}, {0x13, 0x7c, 0xee, 0x00}}},
@@ -4260,7 +4260,7 @@ const Gfx mario_low_poly_left_hand_closed[] = {
 };
 
 // 0x04016EA0
-static const Vtx mario_low_poly_right_arm_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_right_arm_shared_dl_vertex[] = {
     {{{    65,     30,     23}, 0, {     0,      0}, {0x5e, 0xeb, 0x51, 0x00}}},
     {{{    66,    -21,      8}, 0, {     0,      0}, {0x45, 0xb3, 0x49, 0x00}}},
     {{{    65,     11,    -34}, 0, {     0,      0}, {0x40, 0xa9, 0xbf, 0x00}}},
@@ -4294,7 +4294,7 @@ const Gfx mario_low_poly_right_arm[] = {
 };
 
 // 0x04016FD0
-static const Vtx mario_low_poly_right_forearm_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_right_forearm_shared_dl_vertex[] = {
     {{{   -13,     12,    -35}, 0, {     0,      0}, {0xa5, 0x53, 0xe5, 0x00}}},
     {{{   -13,    -20,      6}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
     {{{   -13,     30,     21}, 0, {     0,      0}, {0xa5, 0x53, 0xe5, 0x00}}},
@@ -4320,7 +4320,7 @@ const Gfx mario_low_poly_right_forearm_shared_dl[] = {
 };
 
 // 0x040170E0
-static const Vtx mario_low_poly_right_hand_closed_dl_vertex[] = {
+ const Vtx mario_low_poly_right_hand_closed_dl_vertex[] = {
     {{{    85,    -38,    -32}, 0, {     0,      0}, {0x3d, 0xe3, 0x96, 0x00}}},
     {{{   -15,    -35,    -22}, 0, {     0,      0}, {0x99, 0xdc, 0xc1, 0x00}}},
     {{{    17,     37,    -22}, 0, {     0,      0}, {0xfe, 0x69, 0xb9, 0x00}}},
@@ -4361,7 +4361,7 @@ const Gfx mario_metal_low_poly_right_hand_closed[] = {
 };
 
 // 0x04017210
-static const Vtx mario_low_poly_left_thigh_dl_vertex[] = {
+ const Vtx mario_low_poly_left_thigh_dl_vertex[] = {
     {{{    10,     51,     45}, 0, {     0,      0}, {0x08, 0x73, 0x34, 0x00}}},
     {{{    17,    -44,     58}, 0, {     0,      0}, {0x0a, 0x11, 0x7d, 0x00}}},
     {{{    94,     48,     38}, 0, {     0,      0}, {0x38, 0x40, 0x5d, 0x00}}},
@@ -4414,7 +4414,7 @@ const Gfx mario_metal_low_poly_left_thigh[] = {
 };
 
 // 0x04017408
-static const Vtx mario_low_poly_left_leg_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_left_leg_shared_dl_vertex[] = {
     {{{     7,     47,     38}, 0, {     0,      0}, {0xcf, 0x59, 0x4b, 0x00}}},
     {{{    70,    -39,     53}, 0, {     0,      0}, {0xf8, 0x10, 0x7d, 0x00}}},
     {{{    75,     52,     42}, 0, {     0,      0}, {0xf4, 0x5e, 0x53, 0x00}}},
@@ -4444,7 +4444,7 @@ const Gfx mario_low_poly_left_leg_shared_dl[] = {
 };
 
 // 0x04017558
-static const Vtx mario_low_poly_left_foot_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_left_foot_shared_dl_vertex[] = {
     {{{   110,     11,     56}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{   109,     10,    -33}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
     {{{   -50,     69,    -36}, 0, {     0,      0}, {0x2b, 0x77, 0xff, 0x00}}},
@@ -4482,7 +4482,7 @@ const Gfx mario_low_poly_left_foot[] = {
 };
 
 // 0x040176C8
-static const Vtx mario_low_poly_right_thigh_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_right_thigh_shared_dl_vertex[] = {
     {{{   102,    -25,    -48}, 0, {     0,      0}, {0x64, 0xbf, 0xd5, 0x00}}},
     {{{   103,    -27,     25}, 0, {     0,      0}, {0x5c, 0xc9, 0x42, 0x00}}},
     {{{    25,    -45,     35}, 0, {     0,      0}, {0x1b, 0x85, 0xfd, 0x00}}},
@@ -4520,7 +4520,7 @@ const Gfx mario_low_poly_right_thigh[] = {
 };
 
 // 0x04017838
-static const Vtx mario_low_poly_right_leg_shared_dl_vertex[] = {
+ const Vtx mario_low_poly_right_leg_shared_dl_vertex[] = {
     {{{     2,    -29,     27}, 0, {     0,      0}, {0xba, 0xa3, 0x31, 0x00}}},
     {{{     1,    -26,    -50}, 0, {     0,      0}, {0x91, 0xdd, 0xcf, 0x00}}},
     {{{    68,    -37,    -56}, 0, {     0,      0}, {0xec, 0x83, 0xfd, 0x00}}},
@@ -4550,7 +4550,7 @@ const Gfx mario_low_poly_right_leg_shared_dl[] = {
 };
 
 // 0x04017988
-static const Vtx mario_low_poly_right_foot_dl_vertex[] = {
+ const Vtx mario_low_poly_right_foot_dl_vertex[] = {
     {{{   -55,     19,    -59}, 0, {     0,      0}, {0x9a, 0xc0, 0xda, 0x00}}},
     {{{   -57,     20,     28}, 0, {     0,      0}, {0xa4, 0xc5, 0x3e, 0x00}}},
     {{{   -52,     69,     34}, 0, {     0,      0}, {0x82, 0x0c, 0xfd, 0x00}}},
@@ -4604,7 +4604,7 @@ const Gfx mario_metal_low_poly_right_foot[] = {
 };
 
 // 0x04017B58
-static const Vtx mario_seg4_vertex_04017B58[] = {
+ const Vtx mario_seg4_vertex_04017B58[] = {
     {{{   -28,     41,    -88}, 0, {  -396,   1646}, {0xb7, 0x31, 0xa5, 0xff}}},
     {{{     0,     98,      0}, 0, {  1968,    722}, {0xf0, 0x7d, 0x00, 0xff}}},
     {{{    35,     64,    -82}, 0, {  -390,    132}, {0x29, 0x4b, 0xa3, 0xff}}},
@@ -4616,7 +4616,7 @@ static const Vtx mario_seg4_vertex_04017B58[] = {
 };
 
 // 0x04017BD8
-static const Vtx mario_seg4_vertex_04017BD8[] = {
+ const Vtx mario_seg4_vertex_04017BD8[] = {
     {{{   -28,    -71,     81}, 0, {     0,      0}, {0x9a, 0xbd, 0x20, 0xff}}},
     {{{   -28,     41,    -88}, 0, {     0,      0}, {0xb7, 0x31, 0xa5, 0xff}}},
     {{{   -28,    -71,    -80}, 0, {     0,      0}, {0xb7, 0xb5, 0xba, 0xff}}},
@@ -4635,7 +4635,7 @@ static const Vtx mario_seg4_vertex_04017BD8[] = {
 };
 
 // 0x04017CC8
-static const Vtx mario_seg4_vertex_04017CC8[] = {
+ const Vtx mario_seg4_vertex_04017CC8[] = {
     {{{    74,     26,     60}, 0, {     0,      0}, {0x61, 0x25, 0x47, 0xff}}},
     {{{    87,     42,      0}, 0, {     0,      0}, {0x76, 0x2d, 0x00, 0xff}}},
     {{{    39,     90,      0}, 0, {     0,      0}, {0x4a, 0x67, 0x00, 0xff}}},
@@ -4719,7 +4719,7 @@ const Gfx mario_metal_low_poly_torso[] = {
 };
 
 // 0x04017F40
-static const Vtx mario_low_poly_mario_m_logo_dl_vertex[] = {
+ const Vtx mario_low_poly_mario_m_logo_dl_vertex[] = {
     {{{   272,     48,     53}, 0, {   904,      0}, {0x42, 0x51, 0x47, 0xff}}},
     {{{   174,     79,     -9}, 0, {   452,    816}, {0x51, 0x61, 0xfa, 0xff}}},
     {{{   146,     27,     92}, 0, {  1238,    962}, {0x03, 0x3a, 0x70, 0xff}}},
@@ -4728,7 +4728,7 @@ static const Vtx mario_low_poly_mario_m_logo_dl_vertex[] = {
 };
 
 // 0x04017F90
-static const Vtx mario_low_poly_eyes_cap_on_dl_vertex[] = {
+ const Vtx mario_low_poly_eyes_cap_on_dl_vertex[] = {
     {{{   146,     27,     92}, 0, {  1316,    212}, {0x03, 0x3a, 0x70, 0xff}}},
     {{{   168,     79,      0}, 0, {   458,     68}, {0xd9, 0x78, 0x00, 0xff}}},
     {{{    88,    101,     33}, 0, {   762,    990}, {0x38, 0x55, 0x4b, 0xff}}},
@@ -4737,7 +4737,7 @@ static const Vtx mario_low_poly_eyes_cap_on_dl_vertex[] = {
 };
 
 // 0x04017FE0
-static const Vtx mario_low_poly_mustache_cap_on_dl_vertex[] = {
+ const Vtx mario_low_poly_mustache_cap_on_dl_vertex[] = {
     {{{    88,    101,    -32}, 0, {   398,    214}, {0x1e, 0x5d, 0xb1, 0xff}}},
     {{{   146,     27,    -91}, 0, {  1408,   -550}, {0x03, 0x39, 0x8f, 0xff}}},
     {{{    34,     39,    -98}, 0, {  1306,    732}, {0xcd, 0x40, 0xa0, 0xff}}},
@@ -4751,7 +4751,7 @@ static const Vtx mario_low_poly_mustache_cap_on_dl_vertex[] = {
 };
 
 // 0x04018080
-static const Vtx mario_low_poly_face_cap_dl_vertex[] = {
+ const Vtx mario_low_poly_face_cap_dl_vertex[] = {
     {{{   272,     48,    -52}, 0, {     0,      0}, {0x62, 0x27, 0xba, 0xff}}},
     {{{   272,     48,     53}, 0, {     0,      0}, {0x42, 0x51, 0x47, 0xff}}},
     {{{   149,    -87,    138}, 0, {     0,      0}, {0x43, 0xb6, 0x4d, 0xff}}},
@@ -4767,7 +4767,7 @@ static const Vtx mario_low_poly_face_cap_dl_vertex[] = {
 };
 
 // 0x04018140
-static const Vtx mario_low_poly_face_part_cap_on_dl_vertex[] = {
+ const Vtx mario_low_poly_face_part_cap_on_dl_vertex[] = {
     {{{    94,    146,     33}, 0, {     0,      0}, {0xff, 0x44, 0x6b, 0xff}}},
     {{{    50,    153,      0}, 0, {     0,      0}, {0xad, 0x5f, 0x00, 0xff}}},
     {{{    44,    113,      0}, 0, {     0,      0}, {0x9c, 0x4d, 0x00, 0xff}}},
@@ -4784,7 +4784,7 @@ static const Vtx mario_low_poly_face_part_cap_on_dl_vertex[] = {
 };
 
 // 0x04018210
-static const Vtx mario_low_poly_face_back_hair_cap_on_dl_vertex[] = {
+ const Vtx mario_low_poly_face_back_hair_cap_on_dl_vertex[] = {
     {{{    58,   -114,     81}, 0, {     0,      0}, {0xba, 0xad, 0x40, 0xff}}},
     {{{     7,    -85,     79}, 0, {     0,      0}, {0xaa, 0xdc, 0x54, 0xff}}},
     {{{     7,    -85,    -78}, 0, {     0,      0}, {0xa9, 0xc7, 0xb9, 0xff}}},
@@ -5115,7 +5115,7 @@ const Gfx mario_metal_low_poly_cap_on[] = {
 };
 
 // 0x04018B18
-static const Vtx mario_low_poly_mario_eyes_cap_off_dl_vertex[] = {
+ const Vtx mario_low_poly_mario_eyes_cap_off_dl_vertex[] = {
     {{{   146,     27,     92}, 0, {  1316,    212}, {0x16, 0x25, 0x77, 0xff}}},
     {{{   168,     79,      0}, 0, {   458,     68}, {0x27, 0x78, 0x00, 0xff}}},
     {{{    88,    101,     33}, 0, {   762,    990}, {0x38, 0x55, 0x4b, 0xff}}},
@@ -5124,7 +5124,7 @@ static const Vtx mario_low_poly_mario_eyes_cap_off_dl_vertex[] = {
 };
 
 // 0x04018B68
-static const Vtx mario_low_poly_mustache_cap_off_dl_vertex[] = {
+ const Vtx mario_low_poly_mustache_cap_off_dl_vertex[] = {
     {{{    34,     39,    -98}, 0, {  1306,    732}, {0xcd, 0x40, 0xa0, 0xff}}},
     {{{    44,    113,      0}, 0, {    10,    800}, {0x9c, 0x4d, 0x00, 0xff}}},
     {{{    88,    101,    -32}, 0, {   398,    214}, {0x1e, 0x5d, 0xb1, 0xff}}},
@@ -5138,7 +5138,7 @@ static const Vtx mario_low_poly_mustache_cap_off_dl_vertex[] = {
 };
 
 // 0x04018C08
-static const Vtx mario_low_poly_face_part_cap_off_dl_vertex[] = {
+ const Vtx mario_low_poly_face_part_cap_off_dl_vertex[] = {
     {{{    44,    113,      0}, 0, {     0,      0}, {0x9c, 0x4d, 0x00, 0xff}}},
     {{{    94,    146,    -32}, 0, {     0,      0}, {0x3b, 0x35, 0x9e, 0xff}}},
     {{{    88,    101,    -32}, 0, {     0,      0}, {0x1e, 0x5d, 0xb1, 0xff}}},
@@ -5155,7 +5155,7 @@ static const Vtx mario_low_poly_face_part_cap_off_dl_vertex[] = {
 };
 
 // 0x04018CD8
-static const Vtx mario_low_poly_face_hair_cap_off_dl_vertex[] = {
+ const Vtx mario_low_poly_face_hair_cap_off_dl_vertex[] = {
     {{{    58,   -114,     81}, 0, {     0,      0}, {0xd3, 0x9b, 0x3d, 0xff}}},
     {{{     7,    -85,     79}, 0, {     0,      0}, {0xaa, 0xdc, 0x54, 0xff}}},
     {{{     7,    -85,    -78}, 0, {     0,      0}, {0xa9, 0xc7, 0xb9, 0xff}}},
@@ -5447,7 +5447,7 @@ const Gfx mario_metal_low_poly_cap_off[] = {
 };
 
 // 0x04019538
-static const Vtx mario_left_hand_open_shared_dl_vertex_group1[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group1[] = {
     {{{   121,     73,    -21}, 0, {     0,      0}, {0x47, 0x60, 0x2b, 0x00}}},
     {{{    70,     89,    -20}, 0, {     0,      0}, {0xec, 0x7c, 0xf6, 0x00}}},
     {{{    77,     41,     21}, 0, {     0,      0}, {0x1d, 0x2a, 0x74, 0x00}}},
@@ -5465,7 +5465,7 @@ static const Vtx mario_left_hand_open_shared_dl_vertex_group1[] = {
 };
 
 // 0x04019618
-static const Vtx mario_left_hand_open_shared_dl_vertex_group2[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group2[] = {
     {{{    -3,     35,     -9}, 0, {     0,      0}, {0xcd, 0x72, 0x13, 0x00}}},
     {{{     6,     53,     -9}, 0, {     0,      0}, {0xaf, 0x61, 0x00, 0x00}}},
     {{{    11,     29,    -52}, 0, {     0,      0}, {0xba, 0x2a, 0xa0, 0x00}}},
@@ -5485,7 +5485,7 @@ static const Vtx mario_left_hand_open_shared_dl_vertex_group2[] = {
 };
 
 // 0x04019718
-static const Vtx mario_left_hand_open_shared_dl_vertex_group3[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group3[] = {
     {{{    45,    -34,     10}, 0, {     0,      0}, {0xfe, 0x9a, 0x4a, 0x00}}},
     {{{    83,    -17,     10}, 0, {     0,      0}, {0x4d, 0xbd, 0x4a, 0x00}}},
     {{{    26,     16,     28}, 0, {     0,      0}, {0xda, 0x0c, 0x78, 0x00}}},
@@ -5505,7 +5505,7 @@ static const Vtx mario_left_hand_open_shared_dl_vertex_group3[] = {
 };
 
 // 0x04019818
-static const Vtx mario_left_hand_open_shared_dl_vertex_group4[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group4[] = {
     {{{    25,     -1,    -44}, 0, {     0,      0}, {0xe4, 0xe0, 0x89, 0x00}}},
     {{{    11,     29,    -52}, 0, {     0,      0}, {0xba, 0x2a, 0xa0, 0x00}}},
     {{{    26,     41,    -41}, 0, {     0,      0}, {0x05, 0x34, 0x8d, 0x00}}},
@@ -5525,7 +5525,7 @@ static const Vtx mario_left_hand_open_shared_dl_vertex_group4[] = {
 };
 
 // 0x04019918
-static const Vtx mario_left_hand_open_shared_dl_vertex_group5[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group5[] = {
     {{{     6,    -38,      7}, 0, {     0,      0}, {0xae, 0xab, 0x2b, 0x00}}},
     {{{     1,    -33,    -23}, 0, {     0,      0}, {0x9c, 0xbb, 0xe0, 0x00}}},
     {{{    13,    -39,    -31}, 0, {     0,      0}, {0x18, 0x9a, 0xba, 0x00}}},
@@ -5545,7 +5545,7 @@ static const Vtx mario_left_hand_open_shared_dl_vertex_group5[] = {
 };
 
 // 0x04019A18
-static const Vtx mario_left_hand_open_shared_dl_vertex_group6[] = {
+ const Vtx mario_left_hand_open_shared_dl_vertex_group6[] = {
     {{{    26,    -32,      6}, 0, {     0,      0}, {0x34, 0xa6, 0x47, 0x00}}},
     {{{    20,    -27,    -27}, 0, {     0,      0}, {0x09, 0xbf, 0x94, 0x00}}},
     {{{    41,    -37,    -36}, 0, {     0,      0}, {0xd8, 0x9b, 0xbf, 0x00}}},
@@ -5606,7 +5606,7 @@ const Gfx mario_left_hand_open[] = {
 };
 
 // 0x04019CC0
-static const Vtx mario_right_hand_open_dl_vertex_group1[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group1[] = {
     {{{    81,     37,    -28}, 0, {     0,      0}, {0x18, 0x20, 0x88, 0x00}}},
     {{{    76,     88,      9}, 0, {     0,      0}, {0xef, 0x7d, 0x00, 0x00}}},
     {{{   125,     71,      9}, 0, {     0,      0}, {0x47, 0x5a, 0xcb, 0x00}}},
@@ -5624,7 +5624,7 @@ static const Vtx mario_right_hand_open_dl_vertex_group1[] = {
 };
 
 // 0x04019DA0
-static const Vtx mario_right_hand_open_dl_vertex_group2[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group2[] = {
     {{{    20,     33,     48}, 0, {     0,      0}, {0xbf, 0x32, 0x60, 0x00}}},
     {{{    13,     53,      5}, 0, {     0,      0}, {0xb0, 0x62, 0xfc, 0x00}}},
     {{{     3,     36,      6}, 0, {     0,      0}, {0xce, 0x71, 0xe6, 0x00}}},
@@ -5644,7 +5644,7 @@ static const Vtx mario_right_hand_open_dl_vertex_group2[] = {
 };
 
 // 0x04019EA0
-static const Vtx mario_right_hand_open_dl_vertex_group3[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group3[] = {
     {{{    30,     13,    -30}, 0, {     0,      0}, {0xd3, 0x03, 0x8a, 0x00}}},
     {{{    86,    -19,    -13}, 0, {     0,      0}, {0x49, 0xb6, 0xb8, 0x00}}},
     {{{    48,    -35,     -9}, 0, {     0,      0}, {0xf7, 0x94, 0xbe, 0x00}}},
@@ -5664,7 +5664,7 @@ static const Vtx mario_right_hand_open_dl_vertex_group3[] = {
 };
 
 // 0x04019FA0
-static const Vtx mario_right_hand_open_dl_vertex_group4[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group4[] = {
     {{{    34,     43,     36}, 0, {     0,      0}, {0x0c, 0x3d, 0x6e, 0x00}}},
     {{{    20,     33,     48}, 0, {     0,      0}, {0xbf, 0x32, 0x60, 0x00}}},
     {{{    32,      2,     43}, 0, {     0,      0}, {0xe9, 0xeb, 0x7a, 0x00}}},
@@ -5684,7 +5684,7 @@ static const Vtx mario_right_hand_open_dl_vertex_group4[] = {
 };
 
 // 0x0401A0A0
-static const Vtx mario_right_hand_open_dl_vertex_group5[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group5[] = {
     {{{    19,    -36,     33}, 0, {     0,      0}, {0x1a, 0xa0, 0x4d, 0x00}}},
     {{{     7,    -30,     26}, 0, {     0,      0}, {0x9b, 0xc0, 0x29, 0x00}}},
     {{{    11,    -38,     -3}, 0, {     0,      0}, {0xa9, 0xaa, 0xe0, 0x00}}},
@@ -5704,7 +5704,7 @@ static const Vtx mario_right_hand_open_dl_vertex_group5[] = {
 };
 
 // 0x0401A1A0
-static const Vtx mario_right_hand_open_dl_vertex_group6[] = {
+ const Vtx mario_right_hand_open_dl_vertex_group6[] = {
     {{{    46,    -35,     37}, 0, {     0,      0}, {0xd8, 0xa2, 0x4a, 0x00}}},
     {{{    26,    -24,     28}, 0, {     0,      0}, {0x0d, 0xc8, 0x70, 0x00}}},
     {{{    30,    -32,     -4}, 0, {     0,      0}, {0x2f, 0x9f, 0xbe, 0x00}}},
@@ -5775,7 +5775,7 @@ const Gfx mario_metal_right_hand_open[] = {
 };
 
 // 0x0401A478
-static const Vtx mario_right_hand_cap_m_logo_dl_vertex[] = {
+ const Vtx mario_right_hand_cap_m_logo_dl_vertex[] = {
     {{{   131,     47,     -1}, 0, {  1104,    228}, {0xd7, 0x60, 0xb8, 0xff}}},
     {{{   107,    -19,    -33}, 0, {   474,     32}, {0xd1, 0x0e, 0x8c, 0xff}}},
     {{{    78,     11,     40}, 0, {   772,    818}, {0xd0, 0x3e, 0x9d, 0xff}}},
@@ -5784,7 +5784,7 @@ static const Vtx mario_right_hand_cap_m_logo_dl_vertex[] = {
 };
 
 // 0x0401A4C8
-static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group1[] = {
+ const Vtx mario_right_hand_cap_hand_position_dl_vertex_group1[] = {
     {{{     1,     24,     35}, 0, {     0,      0}, {0xd4, 0x3c, 0x66, 0xff}}},
     {{{    29,      7,     48}, 0, {     0,      0}, {0xc3, 0xfa, 0x6e, 0xff}}},
     {{{    29,     62,     34}, 0, {     0,      0}, {0xcd, 0x4c, 0x57, 0xff}}},
@@ -5803,7 +5803,7 @@ static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group1[] = {
 };
 
 // 0x0401A5B8
-static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group2[] = {
+ const Vtx mario_right_hand_cap_hand_position_dl_vertex_group2[] = {
     {{{   103,    -25,      1}, 0, {     0,      0}, {0x67, 0xc4, 0xd6, 0xff}}},
     {{{    95,     -8,     52}, 0, {     0,      0}, {0x60, 0x06, 0x52, 0xff}}},
     {{{    75,    -32,     65}, 0, {     0,      0}, {0x08, 0xae, 0x60, 0xff}}},
@@ -5823,7 +5823,7 @@ static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group2[] = {
 };
 
 // 0x0401A6B8
-static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group3[] = {
+ const Vtx mario_right_hand_cap_hand_position_dl_vertex_group3[] = {
     {{{    35,      9,    -36}, 0, {     0,      0}, {0xe4, 0xf4, 0x85, 0xff}}},
     {{{    85,     30,    -32}, 0, {     0,      0}, {0x4f, 0x21, 0xa3, 0xff}}},
     {{{   103,    -25,      1}, 0, {     0,      0}, {0x67, 0xc4, 0xd6, 0xff}}},
@@ -5841,7 +5841,7 @@ static const Vtx mario_right_hand_cap_hand_position_dl_vertex_group3[] = {
 };
 
 // 0x0401A798
-static const Vtx mario_right_hand_cap_top_dl_vertex_group1[] = {
+ const Vtx mario_right_hand_cap_top_dl_vertex_group1[] = {
     {{{    29,    -82,     43}, 0, {     0,      0}, {0x95, 0xbd, 0x00, 0xff}}},
     {{{    70,    -52,     35}, 0, {     0,      0}, {0xc5, 0xde, 0x96, 0xff}}},
     {{{   106,   -124,     90}, 0, {     0,      0}, {0x9d, 0xb2, 0x09, 0xff}}},
@@ -5860,7 +5860,7 @@ static const Vtx mario_right_hand_cap_top_dl_vertex_group1[] = {
 };
 
 // 0x0401A888
-static const Vtx mario_right_hand_cap_top_dl_vertex_group2[] = {
+ const Vtx mario_right_hand_cap_top_dl_vertex_group2[] = {
     {{{    78,     11,     40}, 0, {     0,      0}, {0xd0, 0x3e, 0x9d, 0xff}}},
     {{{   129,     65,    103}, 0, {     0,      0}, {0xa7, 0x50, 0x27, 0xff}}},
     {{{   131,     47,     -1}, 0, {     0,      0}, {0xd7, 0x60, 0xb8, 0xff}}},
@@ -5880,7 +5880,7 @@ static const Vtx mario_right_hand_cap_top_dl_vertex_group2[] = {
 };
 
 // 0x0401A988
-static const Vtx mario_right_hand_cap_top_dl_vertex_group3[] = {
+ const Vtx mario_right_hand_cap_top_dl_vertex_group3[] = {
     {{{    65,    -53,     55}, 0, {     0,      0}, {0xb7, 0x01, 0x67, 0xff}}},
     {{{    18,    -13,     33}, 0, {     0,      0}, {0x84, 0x10, 0xed, 0xff}}},
     {{{    29,    -82,     43}, 0, {     0,      0}, {0x95, 0xbd, 0x00, 0xff}}},
@@ -5900,7 +5900,7 @@ static const Vtx mario_right_hand_cap_top_dl_vertex_group3[] = {
 };
 
 // 0x0401AA88
-static const Vtx mario_right_hand_cap_top_dl_vertex_group4[] = {
+ const Vtx mario_right_hand_cap_top_dl_vertex_group4[] = {
     {{{   181,   -167,    138}, 0, {     0,      0}, {0x06, 0x88, 0x26, 0xff}}},
     {{{   273,   -105,    188}, 0, {     0,      0}, {0x5f, 0xbf, 0x34, 0xff}}},
     {{{   216,   -104,    220}, 0, {     0,      0}, {0xe5, 0xcc, 0x70, 0xff}}},
@@ -5912,7 +5912,7 @@ static const Vtx mario_right_hand_cap_top_dl_vertex_group4[] = {
 };
 
 // 0x0401AB08
-static const Vtx mario_right_hand_cap_bottom_dl_vertex[] = {
+ const Vtx mario_right_hand_cap_bottom_dl_vertex[] = {
     {{{    65,    -53,     55}, 0, {     0,      0}, {0xb7, 0x01, 0x67, 0xff}}},
     {{{   106,   -124,     90}, 0, {     0,      0}, {0x9d, 0xb2, 0x09, 0xff}}},
     {{{   137,   -137,    134}, 0, {     0,      0}, {0x9f, 0xdf, 0x49, 0xff}}},
@@ -6018,7 +6018,7 @@ const Gfx mario_right_hand_cap_dl[] = {
 };
 
 // 0x0401AF60
-static const Vtx mario_right_hand_cap_wings_half_1_dl_vertex[] = {
+ const Vtx mario_right_hand_cap_wings_half_1_dl_vertex[] = {
     {{{   368,    146,      7}, 0, {   990,      0}, {0xbe, 0x65, 0xda, 0xff}}},
     {{{   166,     37,     68}, 0, {     0,   2012}, {0xbe, 0x65, 0xda, 0xff}}},
     {{{   212,     96,    143}, 0, {   990,   2012}, {0xbe, 0x65, 0xda, 0xff}}},
@@ -6032,7 +6032,7 @@ static const Vtx mario_right_hand_cap_wings_half_1_dl_vertex[] = {
 };
 
 // 0x0401B000
-static const Vtx mario_right_hand_cap_wings_half_2_dl_vertex[] = {
+ const Vtx mario_right_hand_cap_wings_half_2_dl_vertex[] = {
     {{{   414,    206,     82}, 0, {   990,      0}, {0xbe, 0x64, 0xd9, 0xff}}},
     {{{   212,     96,    143}, 0, {     0,   2012}, {0xbe, 0x64, 0xd9, 0xff}}},
     {{{   258,    156,    218}, 0, {   990,   2012}, {0xbe, 0x64, 0xd9, 0xff}}},
@@ -6146,7 +6146,7 @@ const Gfx mario_metal_right_hand_cap_shared_dl_wings[] = {
 };
 
 // 0x0401B2D0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group1[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group1[] = {
     {{{   -21,      9,     33}, 0, {     0,      0}, {0x8a, 0xe1, 0x1f, 0x00}}},
     {{{   -25,     24,      0}, 0, {     0,      0}, {0x84, 0xf8, 0xea, 0x00}}},
     {{{    -8,    -12,    -20}, 0, {     0,      0}, {0x93, 0xcf, 0xd7, 0x00}}},
@@ -6166,7 +6166,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group1[] = {
 };
 
 // 0x0401B3D0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group2[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group2[] = {
     {{{    33,      7,    -37}, 0, {     0,      0}, {0xde, 0xf5, 0x87, 0xff}}},
     {{{    56,    -47,     -5}, 0, {     0,      0}, {0x0c, 0x87, 0xde, 0x00}}},
     {{{    32,    -43,      0}, 0, {     0,      0}, {0xdd, 0xba, 0x9d, 0x00}}},
@@ -6184,7 +6184,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group2[] = {
 };
 
 // 0x0401B4B0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group3[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group3[] = {
     {{{   -22,     43,     -3}, 0, {     0,      0}, {0x31, 0x4d, 0xa8, 0xff}}},
     {{{    -4,     38,      0}, 0, {     0,      0}, {0x31, 0x4d, 0xa8, 0x00}}},
     {{{    14,     -1,    -22}, 0, {     0,      0}, {0x47, 0x20, 0x9d, 0x00}}},
@@ -6203,7 +6203,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group3[] = {
 };
 
 // 0x0401B5A0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group4[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group4[] = {
     {{{   101,    -29,     15}, 0, {     0,      0}, {0x53, 0xa3, 0x15, 0xff}}},
     {{{    88,    -34,     39}, 0, {     0,      0}, {0x38, 0xa1, 0x3d, 0x00}}},
     {{{    56,    -47,     -5}, 0, {     0,      0}, {0x0c, 0x87, 0xde, 0x00}}},
@@ -6223,7 +6223,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group4[] = {
 };
 
 // 0x0401B6A0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group5[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group5[] = {
     {{{    -4,     38,      0}, 0, {     0,      0}, {0xd3, 0x66, 0x3c, 0xff}}},
     {{{     0,     21,     37}, 0, {     0,      0}, {0xfe, 0x44, 0x6a, 0x00}}},
     {{{    18,     30,     41}, 0, {     0,      0}, {0xc1, 0x2b, 0x64, 0x00}}},
@@ -6243,7 +6243,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group5[] = {
 };
 
 // 0x0401B7A0
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group6[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group6[] = {
     {{{   146,     59,     -8}, 0, {     0,      0}, {0x5d, 0x4d, 0x26, 0xff}}},
     {{{   126,     84,     -3}, 0, {     0,      0}, {0x5f, 0x47, 0x2a, 0x00}}},
     {{{   123,     72,     21}, 0, {     0,      0}, {0x5d, 0x4d, 0x26, 0x00}}},
@@ -6262,7 +6262,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group6[] = {
 };
 
 // 0x0401B890
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group7[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group7[] = {
     {{{   139,     53,     25}, 0, {     0,      0}, {0x5b, 0xa8, 0x02, 0xff}}},
     {{{   105,     17,      3}, 0, {     0,      0}, {0x59, 0xa6, 0xf7, 0x00}}},
     {{{   146,     59,     -8}, 0, {     0,      0}, {0x57, 0xa6, 0xf0, 0x00}}},
@@ -6281,7 +6281,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group7[] = {
 };
 
 // 0x0401B980
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group8[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group8[] = {
     {{{   139,     53,     25}, 0, {     0,      0}, {0xfc, 0x13, 0x7d, 0xff}}},
     {{{   123,     72,     21}, 0, {     0,      0}, {0xfc, 0x15, 0x7d, 0x00}}},
     {{{    84,     48,     24}, 0, {     0,      0}, {0x32, 0x3d, 0x62, 0x00}}},
@@ -6300,7 +6300,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group8[] = {
 };
 
 // 0x0401BA70
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group9[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group9[] = {
     {{{    84,     48,     24}, 0, {     0,      0}, {0xc2, 0x66, 0x28, 0xff}}},
     {{{   123,     72,     21}, 0, {     0,      0}, {0xc3, 0x66, 0x29, 0x00}}},
     {{{   126,     84,     -3}, 0, {     0,      0}, {0xc2, 0x66, 0x28, 0x00}}},
@@ -6320,7 +6320,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group9[] = {
 };
 
 // 0x0401BB70
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group10[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group10[] = {
     {{{     2,     -5,    -33}, 0, {     0,      0}, {0x47, 0x20, 0x9d, 0xff}}},
     {{{    14,     -1,    -22}, 0, {     0,      0}, {0x47, 0x20, 0x9d, 0x00}}},
     {{{    32,    -43,      0}, 0, {     0,      0}, {0x52, 0xee, 0xa2, 0x00}}},
@@ -6338,7 +6338,7 @@ static const Vtx mario_right_hand_peace_shared_dl_vertex_group10[] = {
 };
 
 // 0x0401BC50
-static const Vtx mario_right_hand_peace_shared_dl_vertex_group11[] = {
+ const Vtx mario_right_hand_peace_shared_dl_vertex_group11[] = {
     {{{   101,    -29,     15}, 0, {     0,      0}, {0x53, 0xa3, 0x15, 0xff}}},
     {{{    56,    -47,     -5}, 0, {     0,      0}, {0x0c, 0x87, 0xde, 0x00}}},
     {{{    94,    -22,    -18}, 0, {     0,      0}, {0x1c, 0x85, 0x00, 0x00}}},
@@ -6408,7 +6408,7 @@ const Gfx mario_right_hand_peace[] = {
 };
 
 // 0x0401BF50
-static const Vtx mario_cap_unused_m_logo_dl_vertex[] = {
+ const Vtx mario_cap_unused_m_logo_dl_vertex[] = {
     {{{    33,     35,    118}, 0, {   728,    758}, {0x30, 0x26, 0x6e, 0xff}}},
     {{{    96,     22,     45}, 0, {  1240,    876}, {0x48, 0xa4, 0x31, 0xff}}},
     {{{    71,    101,    113}, 0, {  1028,    148}, {0x55, 0x16, 0x5b, 0xff}}},
@@ -6419,7 +6419,7 @@ static const Vtx mario_cap_unused_m_logo_dl_vertex[] = {
 };
 
 // 0x0401BFC0
-static const Vtx mario_cap_unused_base_top_dl_vertex_group1[] = {
+ const Vtx mario_cap_unused_base_top_dl_vertex_group1[] = {
     {{{   -66,      2,    139}, 0, {     0,      0}, {0xb0, 0xbb, 0x45, 0xff}}},
     {{{     0,      0,    163}, 0, {     0,      0}, {0x00, 0xba, 0x69, 0xff}}},
     {{{   -31,     35,    118}, 0, {     0,      0}, {0xd0, 0x26, 0x6f, 0xff}}},
@@ -6439,7 +6439,7 @@ static const Vtx mario_cap_unused_base_top_dl_vertex_group1[] = {
 };
 
 // 0x0401C0C0
-static const Vtx mario_cap_unused_base_top_dl_vertex_group2[] = {
+ const Vtx mario_cap_unused_base_top_dl_vertex_group2[] = {
     {{{    42,    144,     64}, 0, {     0,      0}, {0x2b, 0x76, 0x0d, 0xff}}},
     {{{   136,     70,     22}, 0, {     0,      0}, {0x7b, 0x16, 0x10, 0xff}}},
     {{{    76,     84,    -60}, 0, {     0,      0}, {0x2a, 0x6c, 0xcf, 0xff}}},
@@ -6458,7 +6458,7 @@ static const Vtx mario_cap_unused_base_top_dl_vertex_group2[] = {
 };
 
 // 0x0401C1B0
-static const Vtx mario_cap_unused_base_top_dl_vertex_group3[] = {
+ const Vtx mario_cap_unused_base_top_dl_vertex_group3[] = {
     {{{   -76,     84,    -60}, 0, {     0,      0}, {0xd5, 0x6e, 0xd3, 0xff}}},
     {{{   -41,    144,     64}, 0, {     0,      0}, {0xdc, 0x79, 0x00, 0xff}}},
     {{{    76,     84,    -60}, 0, {     0,      0}, {0x2a, 0x6c, 0xcf, 0xff}}},
@@ -6477,7 +6477,7 @@ static const Vtx mario_cap_unused_base_top_dl_vertex_group3[] = {
 };
 
 // 0x0401C2A0
-static const Vtx mario_cap_unused_base_bottom_dl_vertex[] = {
+ const Vtx mario_cap_unused_base_bottom_dl_vertex[] = {
     {{{    86,      1,    -60}, 0, {     0,      0}, {0x20, 0x86, 0xfe, 0xff}}},
     {{{   -86,      1,    -60}, 0, {     0,      0}, {0xce, 0x8c, 0xf6, 0xff}}},
     {{{   -52,      0,   -118}, 0, {     0,      0}, {0xd2, 0x9d, 0xc1, 0xff}}},
@@ -6546,7 +6546,7 @@ const Gfx mario_cap_unused_base_dl[] = {
 };
 
 // 0x0401C538
-static const Vtx mario_wings_half_1_unused_dl_vertex[] = {
+ const Vtx mario_wings_half_1_unused_dl_vertex[] = {
     {{{   199,    247,    -55}, 0, {   990,      0}, {0x59, 0xed, 0x58, 0xff}}},
     {{{   131,    274,     20}, 0, {     0,      0}, {0x59, 0xed, 0x58, 0xff}}},
     {{{    69,     71,     38}, 0, {     0,   2012}, {0x59, 0xed, 0x58, 0xff}}},
@@ -6562,7 +6562,7 @@ static const Vtx mario_wings_half_1_unused_dl_vertex[] = {
 };
 
 // 0x0401C5F8
-static const Vtx mario_wings_half_2_unused_dl_vertex[] = {
+ const Vtx mario_wings_half_2_unused_dl_vertex[] = {
     {{{   268,    219,   -132}, 0, {   990,      0}, {0x59, 0xed, 0x57, 0xff}}},
     {{{   199,    247,    -55}, 0, {     0,      0}, {0x59, 0xed, 0x57, 0xff}}},
     {{{   138,     44,    -37}, 0, {     0,   2012}, {0x59, 0xed, 0x57, 0xff}}},
@@ -6685,7 +6685,7 @@ const Gfx mario_metal_cap_wings_unused[] = {
 };
 
 // 0x0401C940
-static const Vtx mario_wings_half_1_dl_vertex[] = {
+ const Vtx mario_wings_half_1_dl_vertex[] = {
     {{{  -105,    212,      0}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -105,      0,      0}, 0, {     0,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,      0,      0}, 0, {   990,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -6693,7 +6693,7 @@ static const Vtx mario_wings_half_1_dl_vertex[] = {
 };
 
 // 0x0401C980
-static const Vtx mario_wings_half_2_dl_vertex[] = {
+ const Vtx mario_wings_half_2_dl_vertex[] = {
     {{{     0,      0,      0}, 0, {     0,   2012}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   106,    212,      0}, 0, {   990,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,    212,      0}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},

@@ -16,7 +16,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bitdw/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bitdw_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BITDW_SQUARE_PLATFORM,   /*pos*/ -1966, -3154,  3586, /*angle*/ 0, 0, 0,  /*bhvParam*/ BPARAM2(0x00), /*bhv*/ bhvSquarishPathMoving),
     OBJECT(/*model*/ MODEL_BITDW_SQUARE_PLATFORM,   /*pos*/ -1352, -3154,  4200, /*angle*/ 0, 0, 0,  /*bhvParam*/ BPARAM2(0x02), /*bhv*/ bhvSquarishPathMoving),
     OBJECT(/*model*/ MODEL_BITDW_SQUARE_PLATFORM,   /*pos*/ -2963,  1017, -2464, /*angle*/ 0, 0, 0,  /*bhvParam*/ BPARAM2(0x00), /*bhv*/ bhvSquarishPathMoving),
@@ -32,13 +32,13 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript bitdw_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ -3092, -2795, 2842, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlamethrower),
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  2463, -2386, 2844, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvFlamethrower),
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript bitdw_script_func_local_3[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/  7180,  3000,    0, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvBowserCourseRedCoinStar),
     RETURN(),
 };
@@ -94,9 +94,9 @@ const LevelScript level_bitdw_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_BOWSER_1, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_0C,    /*destLevel*/ LEVEL_BITDW,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE,   /*destArea*/ 1, /*destNode*/ WARP_NODE_25, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(bitdw_script_func_local_1),
+        JUMP_LINK(bitdw_script_func_local_2),
+        JUMP_LINK(bitdw_script_func_local_3),
         TERRAIN(/*terrainData*/ bitdw_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ bitdw_seg7_macro_objs),
         SHOW_DIALOG(/*index*/ 0x00, DIALOG_090),

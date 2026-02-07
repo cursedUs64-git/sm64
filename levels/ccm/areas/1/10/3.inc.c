@@ -1,11 +1,11 @@
 // 0x07010A60 - 0x07010A78
-static const Lights1 ccm_seg7_lights_07010A60 = gdSPDefLights1(
+ const Lights1 ccm_seg7_lights_07010A60 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07010A78 - 0x07010AF8
-static const Vtx ccm_seg7_vertex_07010A78[] = {
+ const Vtx ccm_seg7_vertex_07010A78[] = {
     {{{   -55,    540,    574}, 0, {  -912,   4482}, {0x01, 0x7e, 0x00, 0xff}}},
     {{{ -1163,    553,    677}, 0, {   308,    990}, {0x01, 0x7e, 0x00, 0xff}}},
     {{{ -1120,    553,    770}, 0, {     0,    990}, {0x01, 0x7e, 0x00, 0xff}}},
@@ -17,7 +17,7 @@ static const Vtx ccm_seg7_vertex_07010A78[] = {
 };
 
 // 0x07010AF8 - 0x07010B50
-static const Gfx ccm_seg7_dl_07010AF8[] = {
+ const Gfx ccm_seg7_dl_07010AF8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, snow_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

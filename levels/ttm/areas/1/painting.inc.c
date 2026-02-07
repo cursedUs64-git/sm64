@@ -1,13 +1,13 @@
 #include "game/paintings.h"
 
 // 0x070122F0 - 0x07012308
-static const Lights1 ttm_seg7_lights_070122F0 = gdSPDefLights1(
+ const Lights1 ttm_seg7_lights_070122F0 = gdSPDefLights1(
     0x50, 0x50, 0x50,
     0xff, 0xff, 0xff, 0x32, 0x32, 0x32
 );
 
 // 0x07012308 - 0x07012388
-static const Vtx ttm_seg7_vertex_07012308[] = {
+ const Vtx ttm_seg7_vertex_07012308[] = {
     {{{     0,      0,      0}, 0, {   -32,    992}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   614,      0,      0}, 0, {  2012,    992}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   614,    307,      0}, 0, {  2012,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -54,7 +54,7 @@ const Gfx ttm_seg7_dl_07012410[] = {
 };
 
 // 0x07012430 - 0x07012450
-static const Gfx ttm_seg7_painting_dl_07012430[] = {
+ const Gfx ttm_seg7_painting_dl_07012430[] = {
     gsDPTileSync(),
     gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 16, 0, G_TX_RENDERTILE, 0, G_TX_CLAMP, 5, G_TX_NOLOD, G_TX_CLAMP, 6, G_TX_NOLOD),
     gsDPSetTileSize(0, 0, 0, (64 - 1) << G_TEXTURE_IMAGE_FRAC, (32 - 1) << G_TEXTURE_IMAGE_FRAC),
@@ -62,7 +62,7 @@ static const Gfx ttm_seg7_painting_dl_07012430[] = {
 };
 
 // 0x07012450 - 0x0701296A
-static const PaintingData ttm_seg7_painting_texture_map_bottom_07012450[] = {
+ const PaintingData ttm_seg7_painting_texture_map_bottom_07012450[] = {
     85, // num mappings
     // Format:
     // mesh vtx ID, texture X, texture Y
@@ -291,7 +291,7 @@ static const PaintingData ttm_seg7_painting_texture_map_bottom_07012450[] = {
 
 
 // 0x0701296C - 0x07012E84
-static const PaintingData ttm_seg7_painting_top_0701296C[] = {
+ const PaintingData ttm_seg7_painting_top_0701296C[] = {
     85, // num mappings
     // Format:
     // mesh vtx ID, texture X, texture Y
@@ -520,16 +520,16 @@ static const PaintingData ttm_seg7_painting_top_0701296C[] = {
 
 
 // 0x07012E88
-static const PaintingData *const ttm_seg7_painting_texture_maps_07012E88[] = {
+ const PaintingData *const ttm_seg7_painting_texture_maps_07012E88[] = {
     ttm_seg7_painting_texture_map_bottom_07012450,
     ttm_seg7_painting_top_0701296C,
 };
 
-UNUSED static const u64 ttm_unused_0 = 0x0;
+UNUSED  const u64 ttm_unused_0 = 0x0;
 
 
 // 0x07012E98 - 0x07012EF8
-static const Gfx ttm_seg7_painting_dl_07012E98[] = {
+ const Gfx ttm_seg7_painting_dl_07012E98[] = {
     gsSPDisplayList(ttm_seg7_dl_070123B8),
     gsSPVertex(ttm_seg7_vertex_07012308, 8, 0),
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, ttm_seg7_texture_07004000),
@@ -545,7 +545,7 @@ static const Gfx ttm_seg7_painting_dl_07012E98[] = {
 };
 
 // 0x07012EF8 - 0x07012F78
-ALIGNED8 static const Texture *const ttm_seg7_painting_textures_07012EF8[] = {
+ALIGNED8  const Texture *const ttm_seg7_painting_textures_07012EF8[] = {
     ttm_seg7_texture_07004000, ttm_seg7_texture_07003000,
 };
 

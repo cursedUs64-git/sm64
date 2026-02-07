@@ -1,5 +1,5 @@
 // 0x07008CB8 - 0x07008D98
-static const Vtx ddd_seg7_vertex_07008CB8[] = {
+ const Vtx ddd_seg7_vertex_07008CB8[] = {
     {{{  -869,  -2746,   -255}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{  -869,  -2746,    256}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{  -511,  -2746,      0}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
@@ -17,7 +17,7 @@ static const Vtx ddd_seg7_vertex_07008CB8[] = {
 };
 
 // 0x07008D98 - 0x07008E78
-static const Vtx ddd_seg7_vertex_07008D98[] = {
+ const Vtx ddd_seg7_vertex_07008D98[] = {
     {{{ -2713,  -2746,   -153}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{ -2713,  -2746,    154}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{ -2405,  -2746,     51}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
@@ -35,7 +35,7 @@ static const Vtx ddd_seg7_vertex_07008D98[] = {
 };
 
 // 0x07008E78 - 0x07008EE8
-static const Vtx ddd_seg7_vertex_07008E78[] = {
+ const Vtx ddd_seg7_vertex_07008E78[] = {
     {{{ -5068,  -4505,   -153}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{ -5068,  -4505,    154}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
     {{{ -5068,  -4197,     51}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0xff}}},
@@ -46,7 +46,7 @@ static const Vtx ddd_seg7_vertex_07008E78[] = {
 };
 
 // 0x07008EE8 - 0x07008F80
-static const Gfx ddd_seg7_dl_07008EE8[] = {
+ const Gfx ddd_seg7_dl_07008EE8[] = {
     gsSPVertex(ddd_seg7_vertex_07008CB8, 14, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  3,  4,  5, 0x0),
     gsSP2Triangles( 3,  6,  4, 0x0,  7,  8,  9, 0x0),

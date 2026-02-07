@@ -1,5 +1,5 @@
 // 0x03016530
-static const s16 bowser_key_seg3_animvalue_course_exit[] = {
+ const s16 bowser_key_seg3_animvalue_course_exit[] = {
     0x0000, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9,
     0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9,
     0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9, 0xFFF9,
@@ -109,13 +109,13 @@ static const s16 bowser_key_seg3_animvalue_course_exit[] = {
 };
 
 // 0x03016BC4
-static const u16 bowser_key_seg3_animindex_course_exit[] = {
+ const u16 bowser_key_seg3_animindex_course_exit[] = {
     0x008C, 0x0001, 0x008C, 0x008D, 0x008C, 0x0119, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000,
     0x008C, 0x01A5, 0x008C, 0x0231, 0x008C, 0x02BD,
 };
 
 // 0x03016BE8
-static const struct Animation bowser_key_seg3_anim_course_exit = {
+ const struct Animation bowser_key_seg3_anim_course_exit = {
     1,
     0,
     0,

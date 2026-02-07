@@ -1,7 +1,7 @@
 // White Particle
 
 // 0x0302C660
-static const Vtx white_particle_vertex[] = {
+ const Vtx white_particle_vertex[] = {
     {{{   -15,    -15,      0}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    15,    -15,      0}, 0, {   480,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    15,     15,      0}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx white_particle_vertex[] = {
 };
 
 // 0x0302C6A0
-ALIGNED8 static const Texture white_particle_texture[] = {
+ALIGNED8  const Texture white_particle_texture[] = {
 #include "actors/white_particle/snow_particle.rgba16.inc.c"
 };
 

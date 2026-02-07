@@ -1,7 +1,7 @@
 // Leaves
 
 // 0x0301CBA0
-static const Vtx leaves_seg3_vertex_0301CBA0[] = {
+ const Vtx leaves_seg3_vertex_0301CBA0[] = {
     {{{   -10,    -10,      0}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    10,    -10,      0}, 0, {   480,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    10,     10,      0}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx leaves_seg3_vertex_0301CBA0[] = {
 };
 
 // 0x0301CBE0
-ALIGNED8 static const Texture leaves_seg3_texture_0301CBE0[] = {
+ALIGNED8  const Texture leaves_seg3_texture_0301CBE0[] = {
 #include "actors/leaves/leaf.rgba16.inc.c"
 };
 

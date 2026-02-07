@@ -1,5 +1,5 @@
 // 0x0700AF40 - 0x0700AF80
-static const Vtx wf_seg7_vertex_0700AF40[] = {
+ const Vtx wf_seg7_vertex_0700AF40[] = {
     {{{  -818,    102,   -460}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1228,    102,   -460}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1228,    102,    -50}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx wf_seg7_vertex_0700AF40[] = {
 };
 
 // 0x0700AF80 - 0x0700AFB8
-static const Gfx wf_seg7_dl_0700AF80[] = {
+ const Gfx wf_seg7_dl_0700AF80[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, grass_0900B000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

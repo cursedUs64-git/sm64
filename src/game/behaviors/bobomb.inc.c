@@ -1,6 +1,6 @@
 // bobomb.inc.c
 
-static struct ObjectHitbox sBobombHitbox = {
+ struct ObjectHitbox sBobombHitbox = {
     /* interactType:      */ INTERACT_GRABBABLE,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 0,

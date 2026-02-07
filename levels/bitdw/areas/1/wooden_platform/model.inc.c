@@ -1,5 +1,5 @@
 // 0x07005C40 - 0x07005D40
-static const Vtx bitdw_seg7_vertex_07005C40[] = {
+ const Vtx bitdw_seg7_vertex_07005C40[] = {
     {{{  -153,    435,   -716}, 0, {  1672,  -1054}, {0xff, 0xff, 0xa8, 0xff}}},
     {{{  -562,    435,   -716}, 0, {   308,  -1054}, {0xff, 0xff, 0xa8, 0xff}}},
     {{{  -869,    435,   -409}, 0, {  -712,   -616}, {0xff, 0xff, 0xa8, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bitdw_seg7_vertex_07005C40[] = {
 };
 
 // 0x07005D40 - 0x07005E40
-static const Vtx bitdw_seg7_vertex_07005D40[] = {
+ const Vtx bitdw_seg7_vertex_07005D40[] = {
     {{{   358,    333,   -306}, 0, {  1864,    160}, {0x7c, 0x89, 0x79, 0xff}}},
     {{{   672,    218,   -306}, 0, {  1150,    490}, {0x7c, 0x89, 0x79, 0xff}}},
     {{{   672,     13,   -306}, 0, {   808,    150}, {0x7c, 0x89, 0x79, 0xff}}},
@@ -39,7 +39,7 @@ static const Vtx bitdw_seg7_vertex_07005D40[] = {
 };
 
 // 0x07005E40 - 0x07005F20
-static const Vtx bitdw_seg7_vertex_07005E40[] = {
+ const Vtx bitdw_seg7_vertex_07005E40[] = {
     {{{   672,     13,   -306}, 0, {   150,   1828}, {0x38, 0x4a, 0x3d, 0xff}}},
     {{{  1178,     13,    307}, 0, {     0,      0}, {0x38, 0x4a, 0x3d, 0xff}}},
     {{{   672,     13,    307}, 0, {  -870,    808}, {0x38, 0x4a, 0x3d, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx bitdw_seg7_vertex_07005E40[] = {
 };
 
 // 0x07005F20 - 0x07006010
-static const Vtx bitdw_seg7_vertex_07005F20[] = {
+ const Vtx bitdw_seg7_vertex_07005F20[] = {
     {{{  -665,    333,   -921}, 0, {     0,    990}, {0xc7, 0xee, 0xff, 0xff}}},
     {{{  -562,    435,   -716}, 0, {   308,      0}, {0xc7, 0xee, 0xff, 0xff}}},
     {{{  -153,    435,   -716}, 0, {   990,      0}, {0xc7, 0xee, 0xff, 0xff}}},
@@ -76,7 +76,7 @@ static const Vtx bitdw_seg7_vertex_07005F20[] = {
 };
 
 // 0x07006010 - 0x070060F0
-static const Vtx bitdw_seg7_vertex_07006010[] = {
+ const Vtx bitdw_seg7_vertex_07006010[] = {
     {{{   -50,    333,   -921}, 0, {     0,    990}, {0xa0, 0xd8, 0xff, 0xff}}},
     {{{  -153,    435,   -716}, 0, {    96,    -30}, {0xa0, 0xd8, 0xff, 0xff}}},
     {{{   154,    435,   -409}, 0, {   862,    -30}, {0xa0, 0xd8, 0xff, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx bitdw_seg7_vertex_07006010[] = {
 };
 
 // 0x070060F0 - 0x070061E0
-static const Vtx bitdw_seg7_vertex_070060F0[] = {
+ const Vtx bitdw_seg7_vertex_070060F0[] = {
     {{{  -562,    128,    717}, 0, {   820,    584}, {0x82, 0xc2, 0xff, 0xff}}},
     {{{  -153,    128,    717}, 0, {   138,    584}, {0x82, 0xc2, 0xff, 0xff}}},
     {{{   -50,    333,    922}, 0, {     0,    990}, {0x82, 0xc2, 0xff, 0xff}}},
@@ -113,7 +113,7 @@ static const Vtx bitdw_seg7_vertex_070060F0[] = {
 };
 
 // 0x070061E0 - 0x070062E0
-static const Vtx bitdw_seg7_vertex_070061E0[] = {
+ const Vtx bitdw_seg7_vertex_070061E0[] = {
     {{{  -869,    128,    410}, 0, {   862,    526}, {0x69, 0xb4, 0xff, 0xff}}},
     {{{  -665,    333,    922}, 0, {     0,    990}, {0x69, 0xb4, 0xff, 0xff}}},
     {{{ -1074,    333,    512}, 0, {   990,    990}, {0x69, 0xb4, 0xff, 0xff}}},
@@ -133,7 +133,7 @@ static const Vtx bitdw_seg7_vertex_070061E0[] = {
 };
 
 // 0x070062E0 - 0x07006360
-static const Vtx bitdw_seg7_vertex_070062E0[] = {
+ const Vtx bitdw_seg7_vertex_070062E0[] = {
     {{{   358,    333,    512}, 0, {     0,    990}, {0x5f, 0x9c, 0xff, 0xff}}},
     {{{   154,    128,    410}, 0, {   206,    582}, {0x5f, 0x9c, 0xff, 0xff}}},
     {{{   358,    333,   -511}, 0, {   990,    990}, {0x5f, 0x9c, 0xff, 0xff}}},
@@ -145,7 +145,7 @@ static const Vtx bitdw_seg7_vertex_070062E0[] = {
 };
 
 // 0x07006360 - 0x070063E8
-static const Gfx bitdw_seg7_dl_07006360[] = {
+ const Gfx bitdw_seg7_dl_07006360[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -160,7 +160,7 @@ static const Gfx bitdw_seg7_dl_07006360[] = {
 };
 
 // 0x070063E8 - 0x070064A8
-static const Gfx bitdw_seg7_dl_070063E8[] = {
+ const Gfx bitdw_seg7_dl_070063E8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09007000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -179,7 +179,7 @@ static const Gfx bitdw_seg7_dl_070063E8[] = {
 };
 
 // 0x070064A8 - 0x070065F0
-static const Gfx bitdw_seg7_dl_070064A8[] = {
+ const Gfx bitdw_seg7_dl_070064A8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitdw_seg7_texture_07001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

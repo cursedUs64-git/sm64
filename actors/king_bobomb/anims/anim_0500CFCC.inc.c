@@ -1,5 +1,5 @@
 // 0x0500C78C
-static const s16 king_bobomb_seg5_animvalue_0500C78C[] = {
+ const s16 king_bobomb_seg5_animvalue_0500C78C[] = {
     0x0000, 0x0000, 0x0003, 0x000E, 0x001F, 0x0033, 0x004B, 0x0064,
     0x007D, 0x0094, 0x00A9, 0x00B9, 0x00C4, 0x00C8, 0x00B7, 0x008D,
     0x0058, 0x0024, 0x0000, 0xFFF5, 0xFFFB, 0x0000, 0x0000, 0x0000,
@@ -112,7 +112,7 @@ static const s16 king_bobomb_seg5_animvalue_0500C78C[] = {
 };
 
 // 0x0500CE58
-static const u16 king_bobomb_seg5_animindex_0500CE58[] = {
+ const u16 king_bobomb_seg5_animindex_0500CE58[] = {
     0x001A, 0x0001, 0x001A, 0x001B, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000,
     0x001A, 0x0317, 0x001A, 0x0331, 0x001A, 0x034B,
     0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000,
@@ -146,7 +146,7 @@ static const u16 king_bobomb_seg5_animindex_0500CE58[] = {
 };
 
 // 0x0500CFCC
-static const struct Animation king_bobomb_seg5_anim_0500CFCC = {
+ const struct Animation king_bobomb_seg5_anim_0500CFCC = {
     0,
     0,
     0,

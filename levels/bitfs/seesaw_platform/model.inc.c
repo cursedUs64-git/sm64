@@ -1,5 +1,5 @@
 // 0x07011C18 - 0x07011D18
-static const Vtx bitfs_seg7_vertex_07011C18[] = {
+ const Vtx bitfs_seg7_vertex_07011C18[] = {
     {{{  -511,    179,    307}, 0, {     0,    990}, {0xc8, 0xc8, 0xc8, 0xff}}},
     {{{   512,    179,    307}, 0, {  1672,   -714}, {0xc8, 0xc8, 0xc8, 0xff}}},
     {{{   512,    179,   -306}, 0, {  2694,    308}, {0xc8, 0xc8, 0xc8, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bitfs_seg7_vertex_07011C18[] = {
 };
 
 // 0x07011D18 - 0x07011D98
-static const Vtx bitfs_seg7_vertex_07011D18[] = {
+ const Vtx bitfs_seg7_vertex_07011D18[] = {
     {{{  -511,     26,    307}, 0, { -1988,  -1480}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{   512,    179,    307}, 0, {     0,      0}, {0x8c, 0x8c, 0x8c, 0xff}}},
     {{{  -511,    179,    307}, 0, { -1734,  -1736}, {0x8c, 0x8c, 0x8c, 0xff}}},

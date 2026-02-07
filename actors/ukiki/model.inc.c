@@ -1,60 +1,60 @@
 // Ukiki
 
 // Unreferenced light group
-UNUSED static const Lights1 ukiki_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 ukiki_lights_unused1 = gdSPDefLights1(
     0x1d, 0x12, 0x07,
     0x77, 0x48, 0x1f, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 ukiki_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 ukiki_lights_unused2 = gdSPDefLights1(
     0x39, 0x24, 0x18,
     0xe7, 0x93, 0x61, 0x28, 0x28, 0x28
 );
 
 // 0x05007BA0
-static const Lights1 ukiki_seg5_lights_05007BA0 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_05007BA0 = gdSPDefLights1(
     0x39, 0x24, 0x18,
     0xe7, 0x93, 0x61, 0x28, 0x28, 0x28
 );
 
 // The hell?
-UNUSED static const u64 ukiki_unused_1 = 1;
+UNUSED  const u64 ukiki_unused_1 = 1;
 
 // 0x05007BC0
-ALIGNED8 static const Texture ukiki_seg5_texture_05007BC0[] = {
+ALIGNED8  const Texture ukiki_seg5_texture_05007BC0[] = {
 #include "actors/ukiki/ukiki_face.rgba16.inc.c"
 };
 
 // 0x05008BC0
-ALIGNED8 static const Texture ukiki_seg5_texture_05008BC0[] = {
+ALIGNED8  const Texture ukiki_seg5_texture_05008BC0[] = {
 #include "actors/ukiki/ukiki_face_blink.rgba16.inc.c"
 };
 
 // 0x05009BC0
-ALIGNED8 static const Texture ukiki_seg5_texture_05009BC0[] = {
+ALIGNED8  const Texture ukiki_seg5_texture_05009BC0[] = {
 #include "actors/ukiki/ukiki_butt.rgba16.inc.c"
 };
 
 // 0x0500A3C0
-ALIGNED8 static const Texture ukiki_seg5_texture_0500A3C0[] = {
+ALIGNED8  const Texture ukiki_seg5_texture_0500A3C0[] = {
 #include "actors/ukiki/ukiki_fur.rgba16.inc.c"
 };
 
 // 0x0500ABC0
-static const Lights1 ukiki_seg5_lights_0500ABC0 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500ABC0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500ABD8
-static const Lights1 ukiki_seg5_lights_0500ABD8 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500ABD8 = gdSPDefLights1(
     0x77, 0x66, 0x45,
     0xee, 0xcd, 0x8a, 0x28, 0x28, 0x28
 );
 
 // 0x0500ABF0
-static const Vtx ukiki_seg5_vertex_0500ABF0[] = {
+ const Vtx ukiki_seg5_vertex_0500ABF0[] = {
     {{{   188,    -23,     43}, 0, { -1000,    918}, {0x6f, 0xdd, 0x32, 0xff}}},
     {{{   178,     68,     52}, 0, {  -832,   1062}, {0x5c, 0x2c, 0x4a, 0xff}}},
     {{{   137,     14,     87}, 0, {  -124,   1652}, {0x45, 0x2e, 0x5f, 0xff}}},
@@ -74,7 +74,7 @@ static const Vtx ukiki_seg5_vertex_0500ABF0[] = {
 };
 
 // 0x0500ACF0
-static const Vtx ukiki_seg5_vertex_0500ACF0[] = {
+ const Vtx ukiki_seg5_vertex_0500ACF0[] = {
     {{{    46,    -22,    -91}, 0, { -3704,   2950}, {0xbc, 0xb1, 0xba, 0xff}}},
     {{{   104,    -40,    -86}, 0, { -3612,   2114}, {0x2c, 0xa8, 0xb1, 0xff}}},
     {{{   144,    -81,    -42}, 0, { -2732,   1554}, {0x2a, 0x93, 0xd0, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx ukiki_seg5_vertex_0500ACF0[] = {
 };
 
 // 0x0500ADF0
-static const Vtx ukiki_seg5_vertex_0500ADF0[] = {
+ const Vtx ukiki_seg5_vertex_0500ADF0[] = {
     {{{   116,     50,    -82}, 0, {    64,    174}, {0x16, 0x2b, 0x8b, 0xff}}},
     {{{   139,    115,    -40}, 0, {   540,     -8}, {0x26, 0x68, 0xc3, 0xff}}},
     {{{   178,     68,    -51}, 0, {   416,   -306}, {0x68, 0x30, 0xcb, 0xff}}},
@@ -114,7 +114,7 @@ static const Vtx ukiki_seg5_vertex_0500ADF0[] = {
 };
 
 // 0x0500AEF0
-static const Vtx ukiki_seg5_vertex_0500AEF0[] = {
+ const Vtx ukiki_seg5_vertex_0500AEF0[] = {
     {{{    43,    100,    -67}, 0, {   236,    734}, {0xde, 0x4e, 0xa3, 0xff}}},
     {{{    40,    126,      0}, 0, {   992,    754}, {0xd2, 0x76, 0x00, 0xff}}},
     {{{   139,    115,    -40}, 0, {   540,     -8}, {0x26, 0x68, 0xc3, 0xff}}},
@@ -125,7 +125,7 @@ static const Vtx ukiki_seg5_vertex_0500AEF0[] = {
 };
 
 // 0x0500AF60
-static const Vtx ukiki_seg5_vertex_0500AF60[] = {
+ const Vtx ukiki_seg5_vertex_0500AF60[] = {
     {{{    89,     14,   -164}, 0, {     0,      0}, {0xf3, 0xea, 0x84, 0xff}}},
     {{{   143,     14,   -129}, 0, {     0,      0}, {0x74, 0xe9, 0xd5, 0xff}}},
     {{{   104,    -40,    -86}, 0, {     0,      0}, {0x2c, 0xa8, 0xb1, 0xff}}},
@@ -233,13 +233,13 @@ const Gfx ukiki_seg5_dl_0500B310[] = {
 };
 
 // 0x0500B338
-static const Lights1 ukiki_seg5_lights_0500B338 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500B338 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500B350
-static const Vtx ukiki_seg5_vertex_0500B350[] = {
+ const Vtx ukiki_seg5_vertex_0500B350[] = {
     {{{    45,    -43,     43}, 0, {   350,   -182}, {0x26, 0x9e, 0x45, 0xff}}},
     {{{    42,      5,     63}, 0, {   386,    460}, {0x30, 0x02, 0x75, 0xff}}},
     {{{   -39,      5,     63}, 0, {   572,    496}, {0xe1, 0x01, 0x7a, 0xff}}},
@@ -258,7 +258,7 @@ static const Vtx ukiki_seg5_vertex_0500B350[] = {
 };
 
 // 0x0500B440
-static const Vtx ukiki_seg5_vertex_0500B440[] = {
+ const Vtx ukiki_seg5_vertex_0500B440[] = {
     {{{   -80,      2,    -44}, 0, {   816,    484}, {0x8b, 0xee, 0xd5, 0xff}}},
     {{{   -44,    -43,     43}, 0, {   616,   -142}, {0xb9, 0xa5, 0x34, 0xff}}},
     {{{   -80,      2,     24}, 0, {   688,    484}, {0x90, 0x03, 0x3a, 0xff}}},
@@ -278,7 +278,7 @@ static const Vtx ukiki_seg5_vertex_0500B440[] = {
 };
 
 // 0x0500B540
-static const Vtx ukiki_seg5_vertex_0500B540[] = {
+ const Vtx ukiki_seg5_vertex_0500B540[] = {
     {{{    35,      2,    -71}, 0, {    40,    434}, {0x15, 0xf1, 0x84, 0xff}}},
     {{{    82,      2,    -44}, 0, {   142,    412}, {0x63, 0xfe, 0xb2, 0xff}}},
     {{{    45,    -44,    -47}, 0, {    88,   -194}, {0x3f, 0xa0, 0xcb, 0xff}}},
@@ -296,7 +296,7 @@ static const Vtx ukiki_seg5_vertex_0500B540[] = {
 };
 
 // 0x0500B620
-static const Vtx ukiki_seg5_vertex_0500B620[] = {
+ const Vtx ukiki_seg5_vertex_0500B620[] = {
     {{{   -44,    -44,    -47}, 0, {   976,    850}, {0xde, 0x9a, 0xbe, 0xff}}},
     {{{    35,      2,    -71}, 0, {    56,    194}, {0x15, 0xf1, 0x84, 0xff}}},
     {{{    45,    -44,    -47}, 0, {   -88,    842}, {0x3f, 0xa0, 0xcb, 0xff}}},
@@ -365,13 +365,13 @@ const Gfx ukiki_seg5_dl_0500B820[] = {
 };
 
 // 0x0500B888
-static const Lights1 ukiki_seg5_lights_0500B888 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500B888 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500B8A0
-static const Vtx ukiki_seg5_vertex_0500B8A0[] = {
+ const Vtx ukiki_seg5_vertex_0500B8A0[] = {
     {{{    88,     19,    -15}, 0, {  1848,   -114}, {0x5f, 0x3d, 0xc6, 0xff}}},
     {{{    89,    -13,    -15}, 0, {  1310,   -140}, {0x38, 0xb1, 0xaf, 0xff}}},
     {{{     0,      0,      1}, 0, {  2896,   1502}, {0x82, 0xfc, 0x00, 0xff}}},
@@ -413,13 +413,13 @@ const Gfx ukiki_seg5_dl_0500B988[] = {
 };
 
 // 0x0500B9E8
-static const Lights1 ukiki_seg5_lights_0500B9E8 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500B9E8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BA00
-static const Vtx ukiki_seg5_vertex_0500BA00[] = {
+ const Vtx ukiki_seg5_vertex_0500BA00[] = {
     {{{    73,    -12,    -23}, 0, {   248,    740}, {0x2f, 0x98, 0xca, 0xff}}},
     {{{    73,    -12,     25}, 0, {   950,    740}, {0x50, 0xdb, 0x5b, 0xff}}},
     {{{    -1,    -12,     16}, 0, {  1256,   -602}, {0xca, 0x99, 0x30, 0xff}}},
@@ -465,13 +465,13 @@ const Gfx ukiki_seg5_dl_0500BB28[] = {
 };
 
 // 0x0500BB88
-static const Lights1 ukiki_seg5_lights_0500BB88 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500BB88 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BBA0
-static const Vtx ukiki_seg5_vertex_0500BBA0[] = {
+ const Vtx ukiki_seg5_vertex_0500BBA0[] = {
     {{{     0,      0,      0}, 0, {   498,   -748}, {0x82, 0xfc, 0x00, 0xff}}},
     {{{    89,    -13,    -16}, 0, {   290,   1200}, {0x38, 0xb1, 0xaf, 0xff}}},
     {{{    89,    -13,     16}, 0, {  1014,   1200}, {0x62, 0xca, 0x39, 0xff}}},
@@ -512,13 +512,13 @@ const Gfx ukiki_seg5_dl_0500BC78[] = {
 };
 
 // 0x0500BCD8
-static const Lights1 ukiki_seg5_lights_0500BCD8 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500BCD8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BCF0
-static const Vtx ukiki_seg5_vertex_0500BCF0[] = {
+ const Vtx ukiki_seg5_vertex_0500BCF0[] = {
     {{{    -4,     18,     15}, 0, {  1770,   -134}, {0xa0, 0x1d, 0x4d, 0xff}}},
     {{{    -1,    -12,    -15}, 0, {   356,   -128}, {0xa9, 0xd0, 0xb2, 0xff}}},
     {{{    -1,    -12,     15}, 0, {  1024,   -128}, {0xca, 0x99, 0x30, 0xff}}},
@@ -566,13 +566,13 @@ const Gfx ukiki_seg5_dl_0500BE38[] = {
 };
 
 // 0x0500BE98
-static const Lights1 ukiki_seg5_lights_0500BE98 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500BE98 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BEB0
-static const Vtx ukiki_seg5_vertex_0500BEB0[] = {
+ const Vtx ukiki_seg5_vertex_0500BEB0[] = {
     {{{    47,     29,      0}, 0, {  1588,     60}, {0x4e, 0x5b, 0xd9, 0xff}}},
     {{{    53,    -18,      1}, 0, {  2668,    104}, {0x63, 0xbb, 0x26, 0xff}}},
     {{{    50,      4,    -23}, 0, {   980,     84}, {0x33, 0xea, 0x8f, 0xff}}},
@@ -620,13 +620,13 @@ const Gfx ukiki_seg5_dl_0500BFF8[] = {
 };
 
 // 0x0500C058
-static const Lights1 ukiki_seg5_lights_0500C058 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C058 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C070
-static const Vtx ukiki_seg5_vertex_0500C070[] = {
+ const Vtx ukiki_seg5_vertex_0500C070[] = {
     {{{    45,     19,      0}, 0, {  2822,    894}, {0x69, 0x3d, 0xde, 0xff}}},
     {{{    26,    -34,      1}, 0, {  1692,    926}, {0x2a, 0x8d, 0x1f, 0xff}}},
     {{{    35,     -8,    -27}, 0, {  1100,    910}, {0x19, 0xcc, 0x8f, 0xff}}},
@@ -674,13 +674,13 @@ const Gfx ukiki_seg5_dl_0500C1B8[] = {
 };
 
 // 0x0500C218
-static const Lights1 ukiki_seg5_lights_0500C218 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C218 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C230
-static const Vtx ukiki_seg5_vertex_0500C230[] = {
+ const Vtx ukiki_seg5_vertex_0500C230[] = {
     {{{    -6,     29,      1}, 0, {  1878,     52}, {0x9c, 0x44, 0x25, 0xff}}},
     {{{     2,    -33,      0}, 0, {  3150,    -22}, {0xb0, 0xa4, 0xde, 0xff}}},
     {{{    -1,     -2,     19}, 0, {  1244,     14}, {0xd4, 0xd8, 0x6f, 0xff}}},
@@ -727,13 +727,13 @@ const Gfx ukiki_seg5_dl_0500C368[] = {
 };
 
 // 0x0500C3C8
-static const Lights1 ukiki_seg5_lights_0500C3C8 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C3C8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C3E0
-static const Vtx ukiki_seg5_vertex_0500C3E0[] = {
+ const Vtx ukiki_seg5_vertex_0500C3E0[] = {
     {{{     3,     29,      1}, 0, {  3150,     -2}, {0xc8, 0x6d, 0x1f, 0xff}}},
     {{{   -12,    -15,      0}, 0, {  1868,     42}, {0x90, 0xce, 0xe2, 0xff}}},
     {{{    -4,      6,     24}, 0, {  2484,     20}, {0xbb, 0xf1, 0x69, 0xff}}},
@@ -781,13 +781,13 @@ const Gfx ukiki_seg5_dl_0500C528[] = {
 };
 
 // 0x0500C588
-static const Lights1 ukiki_seg5_lights_0500C588 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C588 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C5A0
-static const Vtx ukiki_seg5_vertex_0500C5A0[] = {
+ const Vtx ukiki_seg5_vertex_0500C5A0[] = {
     {{{    48,     11,     12}, 0, {  1362,     20}, {0x55, 0x52, 0x2c, 0xff}}},
     {{{    46,    -11,    -10}, 0, {   876,    -10}, {0x46, 0xa0, 0xd4, 0xff}}},
     {{{    48,     11,    -10}, 0, {  1132,     20}, {0x2d, 0x31, 0x95, 0xff}}},
@@ -835,13 +835,13 @@ const Gfx ukiki_seg5_dl_0500C6E8[] = {
 };
 
 // 0x0500C748
-static const Lights1 ukiki_seg5_lights_0500C748 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C748 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C760
-static const Vtx ukiki_seg5_vertex_0500C760[] = {
+ const Vtx ukiki_seg5_vertex_0500C760[] = {
     {{{    47,     12,     14}, 0, {   160,    998}, {0x54, 0x54, 0x2b, 0xff}}},
     {{{    46,    -14,    -13}, 0, {   924,   1008}, {0x4e, 0xa7, 0xd5, 0xff}}},
     {{{    47,     12,    -13}, 0, {   538,    998}, {0x2d, 0x33, 0x96, 0xff}}},
@@ -888,13 +888,13 @@ const Gfx ukiki_seg5_dl_0500C898[] = {
 };
 
 // 0x0500C8F8
-static const Lights1 ukiki_seg5_lights_0500C8F8 = gdSPDefLights1(
+ const Lights1 ukiki_seg5_lights_0500C8F8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C910
-static const Vtx ukiki_seg5_vertex_0500C910[] = {
+ const Vtx ukiki_seg5_vertex_0500C910[] = {
     {{{    49,     16,     14}, 0, {   612,    -26}, {0x50, 0x57, 0x2b, 0xff}}},
     {{{    49,    -15,    -13}, 0, {  1114,    -26}, {0x50, 0xa9, 0xd5, 0xff}}},
     {{{    49,     16,    -13}, 0, {   370,    -16}, {0x2b, 0x35, 0x96, 0xff}}},
@@ -941,7 +941,7 @@ const Gfx ukiki_seg5_dl_0500CA48[] = {
 };
 
 // 0x0500CAA8
-static const Vtx ukiki_seg5_vertex_0500CAA8[] = {
+ const Vtx ukiki_seg5_vertex_0500CAA8[] = {
     {{{    22,    -23,    -14}, 0, {     0,      0}, {0xc6, 0x90, 0x00, 0x00}}},
     {{{    22,    -23,     14}, 0, {     0,      0}, {0xc6, 0x90, 0x00, 0x00}}},
     {{{   -11,     -5,     15}, 0, {     0,      0}, {0xc6, 0x90, 0x00, 0x00}}},
@@ -961,7 +961,7 @@ static const Vtx ukiki_seg5_vertex_0500CAA8[] = {
 };
 
 // 0x0500CBA8
-static const Vtx ukiki_seg5_vertex_0500CBA8[] = {
+ const Vtx ukiki_seg5_vertex_0500CBA8[] = {
     {{{    22,    -23,     14}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0xff}}},
     {{{    50,      4,     22}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0x00}}},
     {{{    12,     30,     22}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0x00}}},
@@ -973,7 +973,7 @@ static const Vtx ukiki_seg5_vertex_0500CBA8[] = {
 };
 
 // 0x0500CC28
-static const Vtx ukiki_seg5_vertex_0500CC28[] = {
+ const Vtx ukiki_seg5_vertex_0500CC28[] = {
     {{{    12,     30,     21}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0x00}}},
     {{{   -11,     -5,     15}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0x00}}},
     {{{    22,    -23,     14}, 0, {     0,      0}, {0xf7, 0xee, 0x7d, 0x00}}},
@@ -993,7 +993,7 @@ static const Vtx ukiki_seg5_vertex_0500CC28[] = {
 };
 
 // 0x0500CD28
-static const Vtx ukiki_seg5_vertex_0500CD28[] = {
+ const Vtx ukiki_seg5_vertex_0500CD28[] = {
     {{{    12,     30,    -22}, 0, {     0,      0}, {0x47, 0x69, 0x00, 0xff}}},
     {{{    12,     30,     21}, 0, {     0,      0}, {0x47, 0x69, 0x00, 0x00}}},
     {{{    50,      4,     21}, 0, {     0,      0}, {0x47, 0x69, 0x00, 0x00}}},
@@ -1005,7 +1005,7 @@ static const Vtx ukiki_seg5_vertex_0500CD28[] = {
 };
 
 // 0x0500CDA8
-static const Vtx ukiki_seg5_vertex_0500CDA8[] = {
+ const Vtx ukiki_seg5_vertex_0500CDA8[] = {
     {{{    81,     10,    -39}, 0, {     0,      0}, {0x68, 0xb9, 0x00, 0x00}}},
     {{{    81,     10,      5}, 0, {     0,      0}, {0x58, 0xa8, 0x17, 0x00}}},
     {{{    62,    -17,    -36}, 0, {     0,      0}, {0x18, 0x93, 0xc5, 0x00}}},
@@ -1024,7 +1024,7 @@ static const Vtx ukiki_seg5_vertex_0500CDA8[] = {
 };
 
 // 0x0500CE98
-static const Vtx ukiki_seg5_vertex_0500CE98[] = {
+ const Vtx ukiki_seg5_vertex_0500CE98[] = {
     {{{    62,    -17,     41}, 0, {     0,      0}, {0x3b, 0x92, 0x12, 0x00}}},
     {{{    36,    -14,    -34}, 0, {     0,      0}, {0xfc, 0x9f, 0xaf, 0x00}}},
     {{{    66,     11,    -34}, 0, {     0,      0}, {0x4e, 0x24, 0xa4, 0x00}}},

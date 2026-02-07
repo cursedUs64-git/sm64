@@ -1,23 +1,23 @@
 // Springboard (unused)
 
 // 0x05000000
-static const Lights1 springboard_seg5_lights_05000000 = gdSPDefLights1(
+ const Lights1 springboard_seg5_lights_05000000 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05000018
-ALIGNED8 static const Texture springboard_seg5_texture_05000018[] = {
+ALIGNED8  const Texture springboard_seg5_texture_05000018[] = {
 #include "actors/springboard/springboard_top_unused.rgba16.inc.c"
 };
 
 // 0x05000818
-ALIGNED8 static const Texture springboard_seg5_texture_05000818[] = {
+ALIGNED8  const Texture springboard_seg5_texture_05000818[] = {
 #include "actors/springboard/springboard_base_unused.rgba16.inc.c"
 };
 
 // 0x05001018
-static const Vtx springboard_seg5_vertex_05001018[] = {
+ const Vtx springboard_seg5_vertex_05001018[] = {
     {{{   205,      0,      0}, 0, {  2524,    478}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   102,      0,   -176}, 0, {  1502,  -1292}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -101,      0,   -176}, 0, {  -542,  -1292}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx springboard_seg5_vertex_05001018[] = {
 };
 
 // 0x05001118
-static const Vtx springboard_seg5_vertex_05001118[] = {
+ const Vtx springboard_seg5_vertex_05001118[] = {
     {{{  -101,      0,   -176}, 0, {  -542,  -1292}, {0x93, 0x00, 0xc0, 0xff}}},
     {{{  -101,    -19,   -176}, 0, {  -542,  -1292}, {0x93, 0x00, 0xc0, 0xff}}},
     {{{  -204,    -19,      0}, 0, { -1564,    478}, {0x93, 0x00, 0xc0, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx springboard_seg5_vertex_05001118[] = {
 };
 
 // 0x05001208
-static const Vtx springboard_seg5_vertex_05001208[] = {
+ const Vtx springboard_seg5_vertex_05001208[] = {
     {{{  -101,      0,    177}, 0, {  -542,   2248}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  -101,    -19,    177}, 0, {  -542,   2248}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   102,    -19,    177}, 0, {  1502,   2248}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -71,7 +71,7 @@ static const Vtx springboard_seg5_vertex_05001208[] = {
 };
 
 // 0x050012B8
-static const Vtx springboard_seg5_vertex_050012B8[] = {
+ const Vtx springboard_seg5_vertex_050012B8[] = {
     {{{   -76,    -55,   -132}, 0, {     0,    990}, {0x93, 0x00, 0xc1, 0xff}}},
     {{{  -153,     56,      0}, 0, {   990,      0}, {0x93, 0x00, 0xc1, 0xff}}},
     {{{   -76,     56,   -132}, 0, {     0,      0}, {0x93, 0x00, 0xc1, 0xff}}},
@@ -90,7 +90,7 @@ static const Vtx springboard_seg5_vertex_050012B8[] = {
 };
 
 // 0x050013A8
-static const Vtx springboard_seg5_vertex_050013A8[] = {
+ const Vtx springboard_seg5_vertex_050013A8[] = {
     {{{    77,     56,   -132}, 0, {   990,      0}, {0x6d, 0x00, 0xc1, 0xff}}},
     {{{   154,    -55,      0}, 0, {     0,    990}, {0x6d, 0x00, 0xc1, 0xff}}},
     {{{    77,    -55,   -132}, 0, {   990,    990}, {0x6d, 0x00, 0xc1, 0xff}}},
@@ -105,7 +105,7 @@ static const Vtx springboard_seg5_vertex_050013A8[] = {
 };
 
 // 0x05001458
-static const Vtx springboard_seg5_vertex_05001458[] = {
+ const Vtx springboard_seg5_vertex_05001458[] = {
     {{{   102,     20,   -176}, 0, {  1502,  -1292}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   102,      0,   -176}, 0, {  1502,  -1292}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  -101,      0,   -176}, 0, {  -542,  -1292}, {0x00, 0x00, 0x81, 0xff}}},
@@ -125,7 +125,7 @@ static const Vtx springboard_seg5_vertex_05001458[] = {
 };
 
 // 0x05001558
-static const Vtx springboard_seg5_vertex_05001558[] = {
+ const Vtx springboard_seg5_vertex_05001558[] = {
     {{{  -101,     20,   -176}, 0, {  -542,  -1292}, {0x93, 0x00, 0xc0, 0xff}}},
     {{{  -204,      0,      0}, 0, { -1564,    480}, {0x93, 0x00, 0xc0, 0xff}}},
     {{{  -204,     20,      0}, 0, { -1564,    480}, {0x93, 0x00, 0xc0, 0xff}}},
@@ -145,7 +145,7 @@ static const Vtx springboard_seg5_vertex_05001558[] = {
 };
 
 // 0x05001658
-static const Vtx springboard_seg5_vertex_05001658[] = {
+ const Vtx springboard_seg5_vertex_05001658[] = {
     {{{  -204,     20,      0}, 0, { -1564,    480}, {0x93, 0x00, 0x3f, 0xff}}},
     {{{  -101,      0,    177}, 0, {  -542,   2248}, {0x93, 0x00, 0x3f, 0xff}}},
     {{{  -101,     20,    177}, 0, {  -542,   2248}, {0x93, 0x00, 0x3f, 0xff}}},

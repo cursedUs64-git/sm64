@@ -1,17 +1,17 @@
 // 0x07002338 - 0x07002350
-static const Lights1 bowser_3_seg7_lights_07002338 = gdSPDefLights1(
+ const Lights1 bowser_3_seg7_lights_07002338 = gdSPDefLights1(
     0x22, 0x22, 0x22,
     0x89, 0x89, 0x8a, 0x28, 0x28, 0x28
 );
 
 // 0x07002350 - 0x07002368
-static const Lights1 bowser_3_seg7_lights_07002350 = gdSPDefLights1(
+ const Lights1 bowser_3_seg7_lights_07002350 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07002368 - 0x070023C8
-static const Vtx bowser_3_seg7_vertex_07002368[] = {
+ const Vtx bowser_3_seg7_vertex_07002368[] = {
     {{{ -2364,  -1852,   -787}, 0, {  3412,   1202}, {0xb6, 0x9a, 0x00, 0xff}}},
     {{{ -3071,  -1340,   1024}, 0, {  1604,   1908}, {0xb6, 0x9a, 0x00, 0xff}}},
     {{{ -3071,  -1340,  -1023}, 0, {  3648,   1908}, {0xb6, 0x9a, 0x00, 0xff}}},
@@ -21,7 +21,7 @@ static const Vtx bowser_3_seg7_vertex_07002368[] = {
 };
 
 // 0x070023C8 - 0x07002408
-static const Vtx bowser_3_seg7_vertex_070023C8[] = {
+ const Vtx bowser_3_seg7_vertex_070023C8[] = {
     {{{ -3071,    307,   1024}, 0, { -1052,   -508}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -1182,    307,    394}, 0, {   204,   -928}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{ -2364,    307,   -787}, 0, {  -582,  -1714}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -29,7 +29,7 @@ static const Vtx bowser_3_seg7_vertex_070023C8[] = {
 };
 
 // 0x07002408 - 0x07002508
-static const Vtx bowser_3_seg7_vertex_07002408[] = {
+ const Vtx bowser_3_seg7_vertex_07002408[] = {
     {{{ -1182,  -2364,    394}, 0, {  -996,   2012}, {0x28, 0x00, 0x78, 0xff}}},
     {{{ -3071,    307,   1024}, 0, {   990,      0}, {0x28, 0x00, 0x78, 0xff}}},
     {{{ -3071,  -1340,   1024}, 0, {   990,   2012}, {0x28, 0x00, 0x78, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx bowser_3_seg7_vertex_07002408[] = {
 };
 
 // 0x07002508 - 0x07002578
-static const Gfx bowser_3_seg7_dl_07002508[] = {
+ const Gfx bowser_3_seg7_dl_07002508[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bowser_3_seg7_texture_07000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -65,7 +65,7 @@ static const Gfx bowser_3_seg7_dl_07002508[] = {
 };
 
 // 0x07002578 - 0x070025E0
-static const Gfx bowser_3_seg7_dl_07002578[] = {
+ const Gfx bowser_3_seg7_dl_07002578[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bowser_3_seg7_texture_07001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,20 +1,20 @@
 // Cyan Fish
 
 // ???
-UNUSED static const u64 cyan_fish_unused_1 = 0;
+UNUSED  const u64 cyan_fish_unused_1 = 0;
 
 // 0x0600D468
-ALIGNED8 static const Texture cyan_fish_seg6_texture_0600D468[] = {
+ALIGNED8  const Texture cyan_fish_seg6_texture_0600D468[] = {
 #include "actors/cyan_fish/cyan_fish.rgba16.inc.c"
 };
 
-static const Lights1 cyan_fish_seg6_lights_0600DC68 = gdSPDefLights1(
+ const Lights1 cyan_fish_seg6_lights_0600DC68 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600DC80
-static const Vtx cyan_fish_seg6_vertex_0600DC80[] = {
+ const Vtx cyan_fish_seg6_vertex_0600DC80[] = {
     {{{   -95,     32,      0}, 0, {    32,    436}, {0xa9, 0x5b, 0xff, 0xff}}},
     {{{   -39,     20,     28}, 0, {   184,    480}, {0xf4, 0x0a, 0x7d, 0xff}}},
     {{{    32,    112,      0}, 0, {   376,    144}, {0xe2, 0x7b, 0xff, 0xff}}},
@@ -63,13 +63,13 @@ const Gfx cyan_fish_seg6_dl_0600DDD8[] = {
 };
 
 // 0x0600DE38
-static const Lights1 cyan_fish_seg6_lights_0600DE38 = gdSPDefLights1(
+ const Lights1 cyan_fish_seg6_lights_0600DE38 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600DE50
-static const Vtx cyan_fish_seg6_vertex_0600DE50[] = {
+ const Vtx cyan_fish_seg6_vertex_0600DE50[] = {
     {{{     9,    -26,      0}, 0, {   420,    230}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    57,    -48,      0}, 0, {   560,    260}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   120,      0,      0}, 0, {   688,     26}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -107,13 +107,13 @@ const Gfx cyan_fish_seg6_dl_0600DED8[] = {
 };
 
 // 0x0600DF48
-static const Lights1 cyan_fish_seg6_lights_0600DF48 = gdSPDefLights1(
+ const Lights1 cyan_fish_seg6_lights_0600DF48 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600DF60
-static const Vtx cyan_fish_seg6_vertex_0600DF60[] = {
+ const Vtx cyan_fish_seg6_vertex_0600DF60[] = {
     {{{    55,    -37,      6}, 0, {   868,    690}, {0x4e, 0xae, 0x37, 0xff}}},
     {{{    55,    -37,     -5}, 0, {   868,    690}, {0x15, 0xc0, 0x95, 0xff}}},
     {{{    88,     64,     -3}, 0, {   958,    318}, {0x64, 0x15, 0xb6, 0xff}}},

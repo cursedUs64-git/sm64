@@ -1,28 +1,28 @@
 // Bomb
 
 // 0x06057AA8
-static const Lights1 bomb_seg6_lights_06057AA8 = gdSPDefLights1(
+ const Lights1 bomb_seg6_lights_06057AA8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x06057AC0
-ALIGNED8 static const Texture bomb_seg6_texture_06057AC0[] = {
+ALIGNED8  const Texture bomb_seg6_texture_06057AC0[] = {
 #include "actors/bomb/bomb_left_side.rgba16.inc.c"
 };
 
 // 0x06058AC0
-ALIGNED8 static const Texture bomb_seg6_texture_06058AC0[] = {
+ALIGNED8  const Texture bomb_seg6_texture_06058AC0[] = {
 #include "actors/bomb/bomb_right_side.rgba16.inc.c"
 };
 
 // 0x06059AC0
-ALIGNED8 static const Texture bomb_seg6_texture_06059AC0[] = {
+ALIGNED8  const Texture bomb_seg6_texture_06059AC0[] = {
 #include "actors/bomb/bomb_spike.rgba16.inc.c"
 };
 
 // 0x0605A2C0
-static const Vtx bomb_seg6_vertex_0605A2C0[] = {
+ const Vtx bomb_seg6_vertex_0605A2C0[] = {
     {{{     0,    120,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -120,   -120,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -120,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -30,7 +30,7 @@ static const Vtx bomb_seg6_vertex_0605A2C0[] = {
 };
 
 // 0x0605A300
-static const Vtx bomb_seg6_vertex_0605A300[] = {
+ const Vtx bomb_seg6_vertex_0605A300[] = {
     {{{   120,    120,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -120,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   120,   -120,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -38,7 +38,7 @@ static const Vtx bomb_seg6_vertex_0605A300[] = {
 };
 
 // 0x0605A340
-static const Vtx bomb_seg6_vertex_0605A340[] = {
+ const Vtx bomb_seg6_vertex_0605A340[] = {
     {{{     0,    -59,      0}, 0, {   502,    -18}, {0xf7, 0x82, 0xf7, 0xff}}},
     {{{    -9,    -36,      0}, 0, {    14,    976}, {0x8a, 0xd2, 0xfd, 0xff}}},
     {{{     0,    -36,     -8}, 0, {   938,    980}, {0xfd, 0xd7, 0x89, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx bomb_seg6_vertex_0605A340[] = {
 };
 
 // 0x0605A430
-static const Vtx bomb_seg6_vertex_0605A430[] = {
+ const Vtx bomb_seg6_vertex_0605A430[] = {
     {{{     0,     10,     37}, 0, {   -20,    976}, {0xfd, 0x74, 0x32, 0xff}}},
     {{{    -9,      0,     37}, 0, {   974,    974}, {0x8a, 0xf9, 0x2e, 0xff}}},
     {{{     0,      0,     60}, 0, {   428,      4}, {0xf8, 0xee, 0x7d, 0xff}}},
@@ -76,7 +76,7 @@ static const Vtx bomb_seg6_vertex_0605A430[] = {
 };
 
 // 0x0605A520
-static const Vtx bomb_seg6_vertex_0605A520[] = {
+ const Vtx bomb_seg6_vertex_0605A520[] = {
     {{{    37,      0,     -9}, 0, {    10,    960}, {0x2e, 0xf9, 0x8a, 0xff}}},
     {{{    37,     10,      0}, 0, {   928,    972}, {0x32, 0x74, 0xfd, 0xff}}},
     {{{    60,      0,      0}, 0, {   494,     -4}, {0x7d, 0xee, 0xf8, 0xff}}},
@@ -95,7 +95,7 @@ static const Vtx bomb_seg6_vertex_0605A520[] = {
 };
 
 // 0x0605A610
-static const Vtx bomb_seg6_vertex_0605A610[] = {
+ const Vtx bomb_seg6_vertex_0605A610[] = {
     {{{   -59,      0,      0}, 0, {   452,     20}, {0x83, 0xee, 0xf8, 0xff}}},
     {{{   -36,      0,     -9}, 0, {    -4,    974}, {0xd2, 0xf9, 0x8a, 0xff}}},
     {{{   -36,     -8,      0}, 0, {   948,    980}, {0xd7, 0x89, 0xfd, 0xff}}},
@@ -114,7 +114,7 @@ static const Vtx bomb_seg6_vertex_0605A610[] = {
 };
 
 // 0x0605A700
-static const Vtx bomb_seg6_vertex_0605A700[] = {
+ const Vtx bomb_seg6_vertex_0605A700[] = {
     {{{     0,      0,    -59}, 0, {   464,      4}, {0xf8, 0xee, 0x83, 0xff}}},
     {{{     0,     10,    -36}, 0, {   -14,    968}, {0xfd, 0x74, 0xce, 0xff}}},
     {{{    10,      0,    -36}, 0, {   942,    976}, {0x74, 0xf9, 0xce, 0xff}}},

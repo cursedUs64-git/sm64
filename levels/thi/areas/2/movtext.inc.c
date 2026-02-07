@@ -1,5 +1,5 @@
 // 0x0700E33C
-static Movtex thi_movtex_area2_short_side_water_data[] = {
+ Movtex thi_movtex_area2_short_side_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    3),
     MOV_TEX_ROT_SCALE(    3),
@@ -14,7 +14,7 @@ static Movtex thi_movtex_area2_short_side_water_data[] = {
 };
 
 // 0x0700E35C
-static Movtex thi_movtex_area2_large_side_water_data[] = {
+ Movtex thi_movtex_area2_large_side_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    3),
     MOV_TEX_ROT_SCALE(    3),
@@ -29,7 +29,7 @@ static Movtex thi_movtex_area2_large_side_water_data[] = {
 };
 
 // 0x0700E37C
-static Movtex thi_movtex_area2_mountain_top_water_data[] = {
+ Movtex thi_movtex_area2_mountain_top_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    3),
     MOV_TEX_ROT_SCALE(    3),

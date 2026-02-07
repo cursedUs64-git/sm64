@@ -1,44 +1,44 @@
 // Eyerok
 
 // Unreferenced light group
-UNUSED static const Lights1 eyerok_lights_unused = gdSPDefLights1(
+UNUSED  const Lights1 eyerok_lights_unused = gdSPDefLights1(
     0x3f, 0x2a, 0x16,
     0xff, 0xa9, 0x5b, 0x28, 0x28, 0x28
 );
 
 // 0x05008D40
-ALIGNED8 static const Texture eyerok_seg5_texture_05008D40[] = {
+ALIGNED8  const Texture eyerok_seg5_texture_05008D40[] = {
 #include "actors/eyerok/eyerok_bricks.rgba16.inc.c"
 };
 
 // 0x05009540
-ALIGNED8 static const Texture eyerok_seg5_texture_05009540[] = {
+ALIGNED8  const Texture eyerok_seg5_texture_05009540[] = {
 #include "actors/eyerok/eyerok_eye_open.rgba16.inc.c"
 };
 
 // 0x05009D40
-ALIGNED8 static const Texture eyerok_seg5_texture_05009D40[] = {
+ALIGNED8  const Texture eyerok_seg5_texture_05009D40[] = {
 #include "actors/eyerok/eyerok_eye_mostly_open.rgba16.inc.c"
 };
 
 // 0x0500A540
-ALIGNED8 static const Texture eyerok_seg5_texture_0500A540[] = {
+ALIGNED8  const Texture eyerok_seg5_texture_0500A540[] = {
 #include "actors/eyerok/eyerok_eye_mostly_closed.rgba16.inc.c"
 };
 
 // 0x0500AD40
-ALIGNED8 static const Texture eyerok_seg5_texture_0500AD40[] = {
+ALIGNED8  const Texture eyerok_seg5_texture_0500AD40[] = {
 #include "actors/eyerok/eyerok_eye_closed.rgba16.inc.c"
 };
 
 // 0x0500B540
-static const Lights1 eyerok_seg5_lights_0500B540 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500B540 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500B558
-static const Vtx eyerok_seg5_vertex_0500B558[] = {
+ const Vtx eyerok_seg5_vertex_0500B558[] = {
     {{{   348,    201,   -202}, 0, {     0,    -16}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   348,      0,   -202}, 0, {     0,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{     0,      0,   -202}, 0, {  1702,    990}, {0x00, 0x00, 0x81, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx eyerok_seg5_vertex_0500B558[] = {
 };
 
 // 0x0500B648
-static const Vtx eyerok_seg5_vertex_0500B648[] = {
+ const Vtx eyerok_seg5_vertex_0500B648[] = {
     {{{   348,      0,   -202}, 0, {     0,    -16}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   348,      0,      0}, 0, {     0,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     0,      0,      0}, 0, {  1702,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -104,13 +104,13 @@ const Gfx eyerok_seg5_dl_0500B748[] = {
 };
 
 // 0x0500B7B8
-static const Lights1 eyerok_seg5_lights_0500B7B8 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500B7B8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500B7D0
-static const Vtx eyerok_seg5_vertex_0500B7D0[] = {
+ const Vtx eyerok_seg5_vertex_0500B7D0[] = {
     {{{   339,    201,   -201}, 0, {  1708,    -16}, {0x00, 0x00, 0x82, 0xff}}},
     {{{   339,      0,   -202}, 0, {  1708,    990}, {0x00, 0x00, 0x82, 0xff}}},
     {{{     0,      0,   -202}, 0, {  3406,    990}, {0x00, 0x00, 0x82, 0xff}}},
@@ -129,7 +129,7 @@ static const Vtx eyerok_seg5_vertex_0500B7D0[] = {
 };
 
 // 0x0500B8C0
-static const Vtx eyerok_seg5_vertex_0500B8C0[] = {
+ const Vtx eyerok_seg5_vertex_0500B8C0[] = {
     {{{   339,      0,   -202}, 0, {  1708,    -16}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   339,      0,      0}, 0, {  1708,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     0,      0,      0}, 0, {  3406,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -176,13 +176,13 @@ const Gfx eyerok_seg5_dl_0500B9C0[] = {
 };
 
 // 0x0500BA30
-static const Lights1 eyerok_seg5_lights_0500BA30 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500BA30 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BA48
-static const Vtx eyerok_seg5_vertex_0500BA48[] = {
+ const Vtx eyerok_seg5_vertex_0500BA48[] = {
     {{{  -200,    200,   -100}, 0, { -1020,   -512}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -200,   -202,   -100}, 0, {   990,   -512}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -200,    200,    200}, 0, { -1020,    990}, {0x81, 0x00, 0x00, 0xff}}},
@@ -201,7 +201,7 @@ static const Vtx eyerok_seg5_vertex_0500BA48[] = {
 };
 
 // 0x0500BB38
-static const Vtx eyerok_seg5_vertex_0500BB38[] = {
+ const Vtx eyerok_seg5_vertex_0500BB38[] = {
     {{{   202,    200,   -100}, 0, {     0,   -512}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   202,    200,    200}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   202,   -202,    200}, 0, {  1980,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -253,13 +253,13 @@ const Gfx eyerok_seg5_dl_0500BC88[] = {
 };
 
 // 0x0500BCF8
-static const Lights1 eyerok_seg5_lights_0500BCF8 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500BCF8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BD10
-static const Vtx eyerok_seg5_vertex_0500BD10[] = {
+ const Vtx eyerok_seg5_vertex_0500BD10[] = {
     {{{   403,      0,    101}, 0, {   990,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   403,      0,   -100}, 0, {   -16,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   403,    201,    101}, 0, {   990,    -16}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -278,7 +278,7 @@ static const Vtx eyerok_seg5_vertex_0500BD10[] = {
 };
 
 // 0x0500BE00
-static const Vtx eyerok_seg5_vertex_0500BE00[] = {
+ const Vtx eyerok_seg5_vertex_0500BE00[] = {
     {{{   403,      0,    101}, 0, {  1982,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   403,    201,    101}, 0, {  1982,    -16}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,    201,    101}, 0, {     0,    -16}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -325,13 +325,13 @@ const Gfx eyerok_seg5_dl_0500BF00[] = {
 };
 
 // 0x0500BF70
-static const Lights1 eyerok_seg5_lights_0500BF70 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500BF70 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500BF88
-static const Vtx eyerok_seg5_vertex_0500BF88[] = {
+ const Vtx eyerok_seg5_vertex_0500BF88[] = {
     {{{     1,      0,    101}, 0, {   -16,  -1024}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   405,      0,    101}, 0, {   -16,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     1,    201,    101}, 0, {   990,  -1024}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -384,13 +384,13 @@ const Gfx eyerok_seg5_dl_0500C100[] = {
 };
 
 // 0x0500C170
-static const Lights1 eyerok_seg5_lights_0500C170 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500C170 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C188
-static const Vtx eyerok_seg5_vertex_0500C188[] = {
+ const Vtx eyerok_seg5_vertex_0500C188[] = {
     {{{   403,      0,   -100}, 0, {   986,    -16}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   403,      0,    101}, 0, {   986,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{     0,      0,    101}, 0, { -1024,    990}, {0x00, 0x81, 0x00, 0xff}}},
@@ -409,7 +409,7 @@ static const Vtx eyerok_seg5_vertex_0500C188[] = {
 };
 
 // 0x0500C278
-static const Vtx eyerok_seg5_vertex_0500C278[] = {
+ const Vtx eyerok_seg5_vertex_0500C278[] = {
     {{{   403,      0,    101}, 0, {     0,    -16}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   403,    201,    101}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,    201,    101}, 0, {  1982,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -456,13 +456,13 @@ const Gfx eyerok_seg5_dl_0500C378[] = {
 };
 
 // 0x0500C3E8
-static const Lights1 eyerok_seg5_lights_0500C3E8 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500C3E8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C400
-static const Vtx eyerok_seg5_vertex_0500C400[] = {
+ const Vtx eyerok_seg5_vertex_0500C400[] = {
     {{{   464,     12,   -523}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{    -3,     -2,   -523}, 0, {  2306,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   330,    409,   -523}, 0, {   576,   1966}, {0x00, 0x00, 0x81, 0xff}}},
@@ -481,7 +481,7 @@ static const Vtx eyerok_seg5_vertex_0500C400[] = {
 };
 
 // 0x0500C4F0
-static const Vtx eyerok_seg5_vertex_0500C4F0[] = {
+ const Vtx eyerok_seg5_vertex_0500C4F0[] = {
     {{{   464,     12,    282}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   330,    409,    282}, 0, {   576,   1966}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -16,    398,    282}, 0, {  2306,   1966}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -533,13 +533,13 @@ const Gfx eyerok_seg5_dl_0500C640[] = {
 };
 
 // 0x0500C6B0
-static const Lights1 eyerok_seg5_lights_0500C6B0 = gdSPDefLights1(
+ const Lights1 eyerok_seg5_lights_0500C6B0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500C6C8
-static const Vtx eyerok_seg5_vertex_0500C6C8[] = {
+ const Vtx eyerok_seg5_vertex_0500C6C8[] = {
     {{{   273,    357,    281}, 0, {  2306,   1978}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   -89,    181,    281}, 0, {  4318,   1978}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    86,   -181,    281}, 0, {  4318,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -558,7 +558,7 @@ static const Vtx eyerok_seg5_vertex_0500C6C8[] = {
 };
 
 // 0x0500C7B8
-static const Vtx eyerok_seg5_vertex_0500C7B8[] = {
+ const Vtx eyerok_seg5_vertex_0500C7B8[] = {
     {{{   -89,    181,   -522}, 0, {  4318,   1978}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   273,    357,   -522}, 0, {  2306,   1978}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   449,     -5,   -522}, 0, {  2306,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -610,7 +610,7 @@ const Gfx eyerok_seg5_dl_0500C908[] = {
 };
 
 // 0x0500C978
-static const Vtx eyerok_seg5_vertex_0500C978[] = {
+ const Vtx eyerok_seg5_vertex_0500C978[] = {
     {{{   212,    365,     63}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   212,    365,   -255}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -73,    190,   -255}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},

@@ -1,7 +1,7 @@
 // Bully
 
 // 0x05000000
-static const Vtx bully_seg5_vertex_05000000[] = {
+ const Vtx bully_seg5_vertex_05000000[] = {
     {{{   196,     17,    114}, 0, {   325,    310}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   259,      2,    106}, 0, {   422,      7}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   184,    -14,    137}, 0, {   399,    416}, {0xff, 0xff, 0xff, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bully_seg5_vertex_05000000[] = {
 };
 
 // 0x050000E0
-ALIGNED8 static const Texture bully_seg5_texture_050000E0[] = {
+ALIGNED8  const Texture bully_seg5_texture_050000E0[] = {
 #include "actors/bully/bully_horn.rgba16.inc.c"
 };
 
@@ -60,47 +60,47 @@ const Gfx bully_seg5_dl_05000398[] = {
 };
 
 // 0x05000408
-static const Lights1 bully_seg5_lights_05000408 = gdSPDefLights1(
+ const Lights1 bully_seg5_lights_05000408 = gdSPDefLights1(
     0x00, 0x38, 0x00,
     0x00, 0xe3, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05000420
-static const Lights1 bully_seg5_lights_05000420 = gdSPDefLights1(
+ const Lights1 bully_seg5_lights_05000420 = gdSPDefLights1(
     0x00, 0x3f, 0x00,
     0x00, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 bully_lights_unused = gdSPDefLights1(
+UNUSED  const Lights1 bully_lights_unused = gdSPDefLights1(
     0x3f, 0x29, 0x00,
     0xff, 0xa5, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05000450
-static const Lights1 bully_seg5_lights_05000450 = gdSPDefLights1(
+ const Lights1 bully_seg5_lights_05000450 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // //! There's another malformed light entry here.
 // 0x05000468
-ALIGNED8 static const Texture bully_seg5_texture_05000468[] = {
+ALIGNED8  const Texture bully_seg5_texture_05000468[] = {
 #include "actors/bully/bully_left_side.rgba16.inc.c"
 };
 
 // 0x05001468
-ALIGNED8 static const Texture bully_seg5_texture_05001468[] = {
+ALIGNED8  const Texture bully_seg5_texture_05001468[] = {
 #include "actors/bully/bully_right_side.rgba16.inc.c"
 };
 
 // 0x05002468
-ALIGNED8 static const Texture bully_seg5_texture_05002468[] = {
+ALIGNED8  const Texture bully_seg5_texture_05002468[] = {
 #include "actors/bully/bully_eye.rgba16.inc.c"
 };
 
 // 0x05002C68
-static const Vtx bully_seg5_vertex_05002C68[] = {
+ const Vtx bully_seg5_vertex_05002C68[] = {
     {{{    27,    -35,      0}, 0, {     0,      0}, {0x0c, 0x82, 0x04, 0x00}}},
     {{{    56,    -16,    -27}, 0, {     0,      0}, {0x16, 0xae, 0xa3, 0x00}}},
     {{{    72,    -16,      0}, 0, {     0,      0}, {0x59, 0xa7, 0x04, 0x00}}},
@@ -118,7 +118,7 @@ static const Vtx bully_seg5_vertex_05002C68[] = {
 };
 
 // 0x05002D48
-static const Vtx bully_seg5_vertex_05002D48[] = {
+ const Vtx bully_seg5_vertex_05002D48[] = {
     {{{    90,     28,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0xff}}},
     {{{    56,     28,    -46}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{   -37,     27,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
@@ -126,7 +126,7 @@ static const Vtx bully_seg5_vertex_05002D48[] = {
 };
 
 // 0x05002D88
-static const Vtx bully_seg5_vertex_05002D88[] = {
+ const Vtx bully_seg5_vertex_05002D88[] = {
     {{{    72,    -16,      0}, 0, {     0,      0}, {0x59, 0xa7, 0xfc, 0x00}}},
     {{{    56,    -16,     27}, 0, {     0,      0}, {0x16, 0xae, 0x5d, 0x00}}},
     {{{    27,    -35,      0}, 0, {     0,      0}, {0x0c, 0x82, 0xfc, 0x00}}},
@@ -144,7 +144,7 @@ static const Vtx bully_seg5_vertex_05002D88[] = {
 };
 
 // 0x05002E68
-static const Vtx bully_seg5_vertex_05002E68[] = {
+ const Vtx bully_seg5_vertex_05002E68[] = {
     {{{    55,     28,    -41}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0xff}}},
     {{{   -37,     27,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{    56,     28,     46}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
@@ -152,7 +152,7 @@ static const Vtx bully_seg5_vertex_05002E68[] = {
 };
 
 // 0x05002EA8
-static const Vtx bully_seg5_vertex_05002EA8[] = {
+ const Vtx bully_seg5_vertex_05002EA8[] = {
     {{{    60,    143,      0}, 0, {     0,      0}, {0x0c, 0x7e, 0x00, 0x00}}},
     {{{    57,    127,    -67}, 0, {     0,      0}, {0x0c, 0x7a, 0xe3, 0x00}}},
     {{{   -46,    137,    -67}, 0, {     0,      0}, {0x0c, 0x7a, 0xe3, 0x00}}},
@@ -162,7 +162,7 @@ static const Vtx bully_seg5_vertex_05002EA8[] = {
 };
 
 // 0x05002F08
-static const Vtx bully_seg5_vertex_05002F08[] = {
+ const Vtx bully_seg5_vertex_05002F08[] = {
     {{{  -133,    -40,     39}, 0, {     0,      0}, {0x8b, 0xdd, 0x22, 0x00}}},
     {{{  -134,     -1,     55}, 0, {     0,      0}, {0x8b, 0x00, 0x30, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -182,7 +182,7 @@ static const Vtx bully_seg5_vertex_05002F08[] = {
 };
 
 // 0x05003008
-static const Vtx bully_seg5_vertex_05003008[] = {
+ const Vtx bully_seg5_vertex_05003008[] = {
     {{{  -133,    -56,      0}, 0, {     0,      0}, {0x8b, 0xcf, 0x00, 0xff}}},
     {{{  -133,    -40,     39}, 0, {     0,      0}, {0x8b, 0xdd, 0x22, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -202,7 +202,7 @@ static const Vtx bully_seg5_vertex_05003008[] = {
 };
 
 // 0x05003108
-static const Vtx bully_seg5_vertex_05003108[] = {
+ const Vtx bully_seg5_vertex_05003108[] = {
     {{{  -133,    -40,    -39}, 0, {     0,      0}, {0x8b, 0xdd, 0xde, 0xff}}},
     {{{  -133,    -56,      0}, 0, {     0,      0}, {0x8b, 0xcf, 0x00, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -222,7 +222,7 @@ static const Vtx bully_seg5_vertex_05003108[] = {
 };
 
 // 0x05003208
-static const Vtx bully_seg5_vertex_05003208[] = {
+ const Vtx bully_seg5_vertex_05003208[] = {
     {{{  -134,     -1,    -55}, 0, {     0,      0}, {0x8b, 0x00, 0xd0, 0xff}}},
     {{{  -133,    -40,    -39}, 0, {     0,      0}, {0x8b, 0xdd, 0xde, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -242,7 +242,7 @@ static const Vtx bully_seg5_vertex_05003208[] = {
 };
 
 // 0x05003308
-static const Vtx bully_seg5_vertex_05003308[] = {
+ const Vtx bully_seg5_vertex_05003308[] = {
     {{{  -134,     38,    -39}, 0, {     0,      0}, {0x8b, 0x21, 0xde, 0xff}}},
     {{{  -134,     -1,    -55}, 0, {     0,      0}, {0x8b, 0x00, 0xd0, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -262,7 +262,7 @@ static const Vtx bully_seg5_vertex_05003308[] = {
 };
 
 // 0x05003408
-static const Vtx bully_seg5_vertex_05003408[] = {
+ const Vtx bully_seg5_vertex_05003408[] = {
     {{{  -134,     54,      0}, 0, {     0,      0}, {0x8b, 0x2f, 0x00, 0xff}}},
     {{{  -134,     38,    -39}, 0, {     0,      0}, {0x8b, 0x21, 0xde, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -282,7 +282,7 @@ static const Vtx bully_seg5_vertex_05003408[] = {
 };
 
 // 0x05003508
-static const Vtx bully_seg5_vertex_05003508[] = {
+ const Vtx bully_seg5_vertex_05003508[] = {
     {{{  -134,     38,     39}, 0, {     0,      0}, {0x8b, 0x21, 0x22, 0xff}}},
     {{{  -134,     54,      0}, 0, {     0,      0}, {0x8b, 0x2f, 0x00, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -302,7 +302,7 @@ static const Vtx bully_seg5_vertex_05003508[] = {
 };
 
 // 0x05003608
-static const Vtx bully_seg5_vertex_05003608[] = {
+ const Vtx bully_seg5_vertex_05003608[] = {
     {{{  -134,     -1,     55}, 0, {     0,      0}, {0x8b, 0x00, 0x30, 0xff}}},
     {{{  -134,     38,     39}, 0, {     0,      0}, {0x8b, 0x21, 0x22, 0x00}}},
     {{{  -145,     -1,      0}, 0, {     0,      0}, {0x81, 0xff, 0x00, 0x00}}},
@@ -435,7 +435,7 @@ const Gfx bully_seg5_dl_05003878[] = {
 };
 
 // 0x05003C50
-static const Vtx bully_seg5_vertex_05003C50[] = {
+ const Vtx bully_seg5_vertex_05003C50[] = {
     {{{     0,     57,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -55,    -55,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -55,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -443,7 +443,7 @@ static const Vtx bully_seg5_vertex_05003C50[] = {
 };
 
 // 0x05003C90
-static const Vtx bully_seg5_vertex_05003C90[] = {
+ const Vtx bully_seg5_vertex_05003C90[] = {
     {{{    57,     57,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -55,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    57,    -55,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -490,7 +490,7 @@ const Gfx bully_seg5_dl_05003D40[] = {
 };
 
 // 0x05003DB8
-static const Vtx bully_seg5_vertex_05003DB8[] = {
+ const Vtx bully_seg5_vertex_05003DB8[] = {
     {{{     0,    114,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -111,   -111,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -111,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -498,7 +498,7 @@ static const Vtx bully_seg5_vertex_05003DB8[] = {
 };
 
 // 0x05003DF8
-static const Vtx bully_seg5_vertex_05003DF8[] = {
+ const Vtx bully_seg5_vertex_05003DF8[] = {
     {{{   114,    114,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -111,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   114,   -111,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -545,7 +545,7 @@ const Gfx bully_seg5_dl_05003EA8[] = {
 };
 
 // 0x05003F20
-static const Vtx bully_seg5_vertex_05003F20[] = {
+ const Vtx bully_seg5_vertex_05003F20[] = {
     {{{   -36,    152,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -40,    136,     68}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    56,    124,     68}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},

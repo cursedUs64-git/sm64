@@ -1,11 +1,11 @@
 // 0x0701A8E8 - 0x0701A900
-static const Lights1 lll_seg7_lights_0701A8E8 = gdSPDefLights1(
+ const Lights1 lll_seg7_lights_0701A8E8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xfe, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0701A900 - 0x0701A9F0
-static const Vtx lll_seg7_vertex_0701A900[] = {
+ const Vtx lll_seg7_vertex_0701A900[] = {
     {{{  1024,   -105,   -255}, 0, {     0,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{ -1023,    106,   -255}, 0, {   990,    144}, {0x00, 0x00, 0x81, 0xff}}},
     {{{  1024,    106,   -255}, 0, {     0,    144}, {0x00, 0x00, 0x81, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx lll_seg7_vertex_0701A900[] = {
 };
 
 // 0x0701A9F0 - 0x0701AAE0
-static const Vtx lll_seg7_vertex_0701A9F0[] = {
+ const Vtx lll_seg7_vertex_0701A9F0[] = {
     {{{  1024,   -105,    256}, 0, {     0,    144}, {0x00, 0xa7, 0x59, 0xff}}},
     {{{ -1023,   -105,    256}, 0, {   990,    144}, {0x00, 0xa7, 0x59, 0xff}}},
     {{{ -1023,   -255,    106}, 0, {   990,    990}, {0x00, 0xa7, 0x59, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx lll_seg7_vertex_0701A9F0[] = {
 };
 
 // 0x0701AAE0 - 0x0701AB20
-static const Vtx lll_seg7_vertex_0701AAE0[] = {
+ const Vtx lll_seg7_vertex_0701AAE0[] = {
     {{{  1024,    106,    256}, 0, {     0,    144}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{ -1023,   -105,    256}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{  1024,   -105,    256}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -51,7 +51,7 @@ static const Vtx lll_seg7_vertex_0701AAE0[] = {
 };
 
 // 0x0701AB20 - 0x0701AC20
-static const Vtx lll_seg7_vertex_0701AB20[] = {
+ const Vtx lll_seg7_vertex_0701AB20[] = {
     {{{ -1023,   -255,    106}, 0, {     0,    778}, {0x81, 0x00, 0x00, 0xff}}},
     {{{ -1023,    256,    106}, 0, {   990,    778}, {0x81, 0x00, 0x00, 0xff}}},
     {{{ -1023,    256,   -105}, 0, {   990,    990}, {0x81, 0x00, 0x00, 0xff}}},
@@ -71,7 +71,7 @@ static const Vtx lll_seg7_vertex_0701AB20[] = {
 };
 
 // 0x0701AC20 - 0x0701ACE8
-static const Gfx lll_seg7_dl_0701AC20[] = {
+ const Gfx lll_seg7_dl_0701AC20[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_0900A800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -93,7 +93,7 @@ static const Gfx lll_seg7_dl_0701AC20[] = {
 };
 
 // 0x0701ACE8 - 0x0701AD70
-static const Gfx lll_seg7_dl_0701ACE8[] = {
+ const Gfx lll_seg7_dl_0701ACE8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, fire_0900B000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

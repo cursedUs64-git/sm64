@@ -25,7 +25,7 @@ void bhv_camera_lakitu_init(void) {
  * Wait for mario to stand on the bridge, then interrupt his action and enter
  * the spawn cloud action.
  */
-static void camera_lakitu_intro_act_trigger_cutscene(void) {
+ void camera_lakitu_intro_act_trigger_cutscene(void) {
     //! These bounds are slightly smaller than the actual bridge bounds, allowing
     //  the RTA speedrunning method of lakitu skip
     if (gMarioObject->oPosX > -544.0f && gMarioObject->oPosX < 545.0f
@@ -39,7 +39,7 @@ static void camera_lakitu_intro_act_trigger_cutscene(void) {
 /**
  * Warp up into the air and spawn cloud, then enter the TODO action.
  */
-static void camera_lakitu_intro_act_spawn_cloud(void) {
+ void camera_lakitu_intro_act_spawn_cloud(void) {
     if (set_mario_npc_dialog(MARIO_DIALOG_LOOK_UP) == MARIO_DIALOG_STATUS_SPEAK) {
         o->oAction = CAMERA_LAKITU_INTRO_ACT_UNK2;
 
@@ -58,7 +58,7 @@ static void camera_lakitu_intro_act_spawn_cloud(void) {
 /**
  * Circle down to mario, show the dialog, then fly away.
  */
-static void camera_lakitu_intro_act_show_dialog(void) {
+ void camera_lakitu_intro_act_show_dialog(void) {
     s16 targetMovePitch;
     s16 targetMoveYaw;
 #ifdef AVOID_UB

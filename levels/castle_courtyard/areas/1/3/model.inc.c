@@ -1,5 +1,5 @@
 // 0x07005708 - 0x070057F8
-static const Vtx castle_courtyard_seg7_vertex_07005708[] = {
+ const Vtx castle_courtyard_seg7_vertex_07005708[] = {
     {{{   205,   1741,    502}, 0, {   990,      0}, {0xa2, 0xa2, 0xc1, 0xff}}},
     {{{   614,   1741,    502}, 0, {     0,      0}, {0xa2, 0xa2, 0xc1, 0xff}}},
     {{{   614,   1331,    502}, 0, {     0,    990}, {0xa2, 0xa2, 0xc1, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx castle_courtyard_seg7_vertex_07005708[] = {
 };
 
 // 0x070057F8 - 0x070058A8
-static const Vtx castle_courtyard_seg7_vertex_070057F8[] = {
+ const Vtx castle_courtyard_seg7_vertex_070057F8[] = {
     {{{  1638,   1741,    195}, 0, {   990,      0}, {0xa2, 0xa2, 0xc1, 0xff}}},
     {{{  2048,   1741,    195}, 0, {     0,      0}, {0xa2, 0xa2, 0xc1, 0xff}}},
     {{{  2048,   1331,    195}, 0, {     0,    990}, {0xa2, 0xa2, 0xc1, 0xff}}},
@@ -33,7 +33,7 @@ static const Vtx castle_courtyard_seg7_vertex_070057F8[] = {
 };
 
 // 0x070058A8 - 0x07005938
-static const Gfx castle_courtyard_seg7_dl_070058A8[] = {
+ const Gfx castle_courtyard_seg7_dl_070058A8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_0900A800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,55 +1,55 @@
 // Spindrift
 
 // Unreferenced light group
-UNUSED static const Lights1 spindrift_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 spindrift_lights_unused1 = gdSPDefLights1(
     0x3f, 0x08, 0x1b,
     0xff, 0x22, 0x6d, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 spindrift_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 spindrift_lights_unused2 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xfd, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05000030
-static const Lights1 spindrift_seg5_lights_05000030 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05000030 = gdSPDefLights1(
     0x12, 0x2c, 0x00,
     0x49, 0xb2, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05000048
-static const Lights1 spindrift_seg5_lights_05000048 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05000048 = gdSPDefLights1(
     0x37, 0x3f, 0x00,
     0xdd, 0xff, 0x01, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 spindrift_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 spindrift_lights_unused3 = gdSPDefLights1(
     0x00, 0x15, 0x00,
     0x00, 0x56, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05000078
-static const Lights1 spindrift_seg5_lights_05000078 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05000078 = gdSPDefLights1(
     0x3f, 0x38, 0x00,
     0xff, 0xe2, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05000090
-static const Lights1 spindrift_seg5_lights_05000090 = gdSPDefLights1(
+ const Lights1 spindrift_seg5_lights_05000090 = gdSPDefLights1(
     0x00, 0x0f, 0x00,
     0x00, 0x3f, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 spindrift_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 spindrift_lights_unused4 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x050000C0
-static const Vtx spindrift_seg5_vertex_050000C0[] = {
+ const Vtx spindrift_seg5_vertex_050000C0[] = {
     {{{    34,     40,     30}, 0, {     0,      0}, {0x7b, 0x17, 0x11, 0x00}}},
     {{{    34,    -16,     46}, 0, {     0,      0}, {0x7b, 0xf7, 0x1c, 0x00}}},
     {{{    46,      0,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -59,7 +59,7 @@ static const Vtx spindrift_seg5_vertex_050000C0[] = {
 };
 
 // 0x05000120
-static const Vtx spindrift_seg5_vertex_05000120[] = {
+ const Vtx spindrift_seg5_vertex_05000120[] = {
     {{{     6,      0,      0}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{    34,    -16,    -46}, 0, {     0,      0}, {0x92, 0xee, 0xc4, 0x00}}},
     {{{    34,    -50,      0}, 0, {     0,      0}, {0x92, 0xc2, 0x00, 0x00}}},
@@ -69,7 +69,7 @@ static const Vtx spindrift_seg5_vertex_05000120[] = {
 };
 
 // 0x05000180
-static const Vtx spindrift_seg5_vertex_05000180[] = {
+ const Vtx spindrift_seg5_vertex_05000180[] = {
     {{{    70,     50,      0}, 0, {     0,      0}, {0xcb, 0x73, 0x00, 0x00}}},
     {{{    24,    -12,     56}, 0, {     0,      0}, {0xa9, 0x22, 0x54, 0x00}}},
     {{{   128,     -2,     94}, 0, {     0,      0}, {0xda, 0x45, 0x63, 0x00}}},
@@ -82,7 +82,7 @@ static const Vtx spindrift_seg5_vertex_05000180[] = {
 };
 
 // 0x05000210
-static const Vtx spindrift_seg5_vertex_05000210[] = {
+ const Vtx spindrift_seg5_vertex_05000210[] = {
     {{{    55,   -113,    -57}, 0, {     0,      0}, {0xa5, 0xce, 0xb8, 0x00}}},
     {{{    55,   -113,     57}, 0, {     0,      0}, {0xa5, 0xce, 0x48, 0x00}}},
     {{{     0,    -57,      0}, 0, {     0,      0}, {0x87, 0xdd, 0x00, 0x00}}},

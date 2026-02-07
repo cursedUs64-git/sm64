@@ -15,7 +15,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bits/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bits_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BITS_SLIDING_PLATFORM,       /*pos*/ -2370, -4525,     0, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM2(0x10), /*bhv*/ bhvSlidingPlatform2),
     OBJECT(/*model*/ MODEL_BITS_TWIN_SLIDING_PLATFORMS, /*pos*/ -2611,  3544,  -904, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM2(0xCF), /*bhv*/ bhvSlidingPlatform2),
     OBJECT(/*model*/ MODEL_BITS_TWIN_SLIDING_PLATFORMS, /*pos*/ -4700,  3544,  -904, /*angle*/ 0, 180, 0, /*bhvParam*/ BPARAM2(0x8F), /*bhv*/ bhvSlidingPlatform2),
@@ -38,7 +38,7 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript bits_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_NONE, /*pos*/ 350, 6800, -6800, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvBowserCourseRedCoinStar),
     RETURN(),
 };
@@ -97,8 +97,8 @@ const LevelScript level_bits_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0B,    /*destLevel*/ LEVEL_BOWSER_3, /*destArea*/ 1, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_0C,    /*destLevel*/ LEVEL_BITS,     /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH, /*destLevel*/ LEVEL_CASTLE,   /*destArea*/ 2, /*destNode*/ WARP_NODE_6B, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
+        JUMP_LINK(bits_script_func_local_1),
+        JUMP_LINK(bits_script_func_local_2),
         TERRAIN(/*terrainData*/ bits_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ bits_seg7_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0000, /*seq*/ SEQ_LEVEL_KOOPA_ROAD),

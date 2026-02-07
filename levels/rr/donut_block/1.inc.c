@@ -1,5 +1,5 @@
 // 0x0701B530 - 0x0701B630
-static const Vtx rr_seg7_vertex_0701B530[] = {
+ const Vtx rr_seg7_vertex_0701B530[] = {
     {{{   102,     51,   -306}, 0, {   224,   1244}, {0x72, 0x5d, 0x29, 0xff}}},
     {{{    51,      0,    307}, 0, {   122,   1192}, {0x72, 0x5d, 0x29, 0xff}}},
     {{{    51,      0,   -306}, 0, {   122,   1192}, {0x72, 0x5d, 0x29, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx rr_seg7_vertex_0701B530[] = {
 };
 
 // 0x0701B630 - 0x0701B710
-static const Vtx rr_seg7_vertex_0701B630[] = {
+ const Vtx rr_seg7_vertex_0701B630[] = {
     {{{  -101,     51,   -306}, 0, {   122,    938}, {0x9b, 0x7c, 0x3d, 0xff}}},
     {{{  -101,    154,    307}, 0, {   274,    888}, {0x9b, 0x7c, 0x3d, 0xff}}},
     {{{  -101,    154,   -306}, 0, {   274,    888}, {0x9b, 0x7c, 0x3d, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx rr_seg7_vertex_0701B630[] = {
 };
 
 // 0x0701B710 - 0x0701B770
-static const Vtx rr_seg7_vertex_0701B710[] = {
+ const Vtx rr_seg7_vertex_0701B710[] = {
     {{{  -101,     51,   -306}, 0, {   122,    938}, {0xac, 0x9d, 0x52, 0xff}}},
     {{{    51,      0,   -306}, 0, {   122,   1192}, {0xac, 0x9d, 0x52, 0xff}}},
     {{{   -50,      0,   -306}, 0, {    70,   1040}, {0xac, 0x9d, 0x52, 0xff}}},
@@ -47,7 +47,7 @@ static const Vtx rr_seg7_vertex_0701B710[] = {
 };
 
 // 0x0701B770 - 0x0701B848
-static const Gfx rr_seg7_dl_0701B770[] = {
+ const Gfx rr_seg7_dl_0701B770[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,6 +1,6 @@
 // triplet_butterfly.inc.c
 
-static struct ObjectHitbox sTripletButterflyExplodeHitbox = {
+ struct ObjectHitbox sTripletButterflyExplodeHitbox = {
     /* interactType:      */ INTERACT_MR_BLIZZARD,
     /* downOffset:        */ 50,
     /* damageOrCoinValue: */ 2,
@@ -18,12 +18,12 @@ struct TripletButterflyActivationData {
     f32 scale;
 };
 
-static struct TripletButterflyActivationData sTripletButterflyActivationData[] = {
+ struct TripletButterflyActivationData sTripletButterflyActivationData[] = {
     /* TRIPLET_BUTTERFLY_TYPE_EXPLODES  */ { MODEL_BOWLING_BALL, NULL,          0.5f },
     /* TRIPLET_BUTTERFLY_TYPE_SPAWN_1UP */ { MODEL_1UP,          bhv1UpWalking, 1.0f },
 };
 
-static void triplet_butterfly_act_init(void) {
+ void triplet_butterfly_act_init(void) {
     s32 butterflySpawnType = o->oBhvParams2ndByte & TRIPLET_BUTTERFLY_BP_SPAWN_TYPE_MASK;
     s32 i;
 
@@ -54,7 +54,7 @@ static void triplet_butterfly_act_init(void) {
     }
 }
 
-static void triplet_butterfly_act_wander(void) {
+ void triplet_butterfly_act_wander(void) {
     if (o->oDistanceToMario > 1500.0f) {
         obj_mark_for_deletion(o);
     } else {
@@ -86,7 +86,7 @@ static void triplet_butterfly_act_wander(void) {
     }
 }
 
-static void triplet_butterfly_act_activate(void) {
+ void triplet_butterfly_act_activate(void) {
     if (o->oTimer > 20) {
         if (o->oTripletButterflyModel == 0) {
             spawn_object_relative_with_scale(0, 0, -40, 0, 1.5f, o, MODEL_SMOKE, bhvWhitePuffSmoke2);
@@ -116,7 +116,7 @@ static void triplet_butterfly_act_activate(void) {
     }
 }
 
-static void triplet_butterfly_act_explode(void) {
+ void triplet_butterfly_act_explode(void) {
     obj_check_attacks(&sTripletButterflyExplodeHitbox, -1);
 
     if (o->oAction == -1 || (o->oMoveFlags & OBJ_MOVE_HIT_WALL) || o->oTimer >= 158) {

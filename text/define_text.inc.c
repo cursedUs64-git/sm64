@@ -2,13 +2,13 @@
 // (defines en_dialog_table etc.)
 
 #define DEFINE_DIALOG(id, _1, _2, _3, _4, str) \
-    static const u8 dialog_text_ ## id[] = { str };
+     const u8 dialog_text_ ## id[] = { str };
 
 #include "dialogs.h"
 
 #undef DEFINE_DIALOG
 #define DEFINE_DIALOG(id, unused, linesPerBox, leftOffset, width, _) \
-    static const struct DialogEntry dialog_entry_ ## id = { \
+     const struct DialogEntry dialog_entry_ ## id = { \
         unused, linesPerBox, leftOffset, width, dialog_text_ ## id \
     };
 
@@ -35,19 +35,19 @@ const struct DialogEntry *const seg2_dialog_table[] = {
 // (defines en_act_name_table etc.)
 
 #define COURSE_ACTS(id, name, a,b,c,d,e,f) \
-    static const u8 act_name_ ## id ## _1[] = { a }; \
-    static const u8 act_name_ ## id ## _2[] = { b }; \
-    static const u8 act_name_ ## id ## _3[] = { c }; \
-    static const u8 act_name_ ## id ## _4[] = { d }; \
-    static const u8 act_name_ ## id ## _5[] = { e }; \
-    static const u8 act_name_ ## id ## _6[] = { f };
+     const u8 act_name_ ## id ## _1[] = { a }; \
+     const u8 act_name_ ## id ## _2[] = { b }; \
+     const u8 act_name_ ## id ## _3[] = { c }; \
+     const u8 act_name_ ## id ## _4[] = { d }; \
+     const u8 act_name_ ## id ## _5[] = { e }; \
+     const u8 act_name_ ## id ## _6[] = { f };
 
 #define SECRET_STAR(id, name)
 #define CASTLE_SECRET_STARS(str)
 
 #undef EXTRA_TEXT
 #define EXTRA_TEXT(id, str) \
-    static const u8 extra_text_ ## id[] = { str };
+     const u8 extra_text_ ## id[] = { str };
 
 #include "courses.h"
 

@@ -1,5 +1,5 @@
 // 0x0701A270 - 0x0701A2B0
-static const Vtx lll_seg7_vertex_0701A270[] = {
+ const Vtx lll_seg7_vertex_0701A270[] = {
     {{{  -245,      0,    246}, 0, {     0,    992}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   246,      0,    246}, 0, {   992,    992}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   246,      0,   -245}, 0, {   992,      0}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx lll_seg7_vertex_0701A270[] = {
 };
 
 // 0x0701A2B0 - 0x0701A2F0
-static const Vtx lll_seg7_vertex_0701A2B0[] = {
+ const Vtx lll_seg7_vertex_0701A2B0[] = {
     {{{  -245,    -45,    246}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xc8}}},
     {{{   246,    -45,    246}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xc8}}},
     {{{   246,    -45,   -245}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xc8}}},
@@ -15,7 +15,7 @@ static const Vtx lll_seg7_vertex_0701A2B0[] = {
 };
 
 // 0x0701A2F0 - 0x0701A338
-static const Gfx lll_seg7_dl_0701A2F0[] = {
+ const Gfx lll_seg7_dl_0701A2F0[] = {
     gsDPPipeSync(),
     gsDPSetCombineMode(G_CC_MODULATERGB, G_CC_MODULATERGB),
     gsSPClearGeometryMode(G_SHADING_SMOOTH),
@@ -28,7 +28,7 @@ static const Gfx lll_seg7_dl_0701A2F0[] = {
 };
 
 // 0x0701A338 - 0x0701A388
-static const Gfx lll_seg7_dl_0701A338[] = {
+ const Gfx lll_seg7_dl_0701A338[] = {
     gsSPLight(&lll_seg7_lights_0700FC00.l, 1),
     gsSPLight(&lll_seg7_lights_0700FC00.a, 2),
     gsSPVertex(lll_seg7_vertex_0701A270, 4, 0),

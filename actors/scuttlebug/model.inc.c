@@ -1,44 +1,44 @@
 // Scuttlebug
 
 // Unreferenced light group
-UNUSED static const Lights1 scuttlebug_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 scuttlebug_lights_unused1 = gdSPDefLights1(
     0x2c, 0x00, 0x00,
     0xb2, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 scuttlebug_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 scuttlebug_lights_unused2 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06010108
-ALIGNED8 static const Texture scuttlebug_seg6_texture_06010108[] = {
+ALIGNED8  const Texture scuttlebug_seg6_texture_06010108[] = {
 #include "actors/scuttlebug/scuttlebug_eye.rgba16.inc.c"
 };
 
 // 0x06010908
-ALIGNED8 static const Texture scuttlebug_seg6_texture_06010908[] = {
+ALIGNED8  const Texture scuttlebug_seg6_texture_06010908[] = {
 #include "actors/scuttlebug/scuttlebug_left_side.rgba16.inc.c"
 };
 
 // 0x06011908
-ALIGNED8 static const Texture scuttlebug_seg6_texture_06011908[] = {
+ALIGNED8  const Texture scuttlebug_seg6_texture_06011908[] = {
 #include "actors/scuttlebug/scuttlebug_right_side.rgba16.inc.c"
 };
 
 // 0x06012908
-ALIGNED8 static const Texture scuttlebug_seg6_texture_06012908[] = {
+ALIGNED8  const Texture scuttlebug_seg6_texture_06012908[] = {
 #include "actors/scuttlebug/scuttlebug_iris.rgba16.inc.c"
 };
 
 // 0x06013108
-ALIGNED8 static const Texture scuttlebug_seg6_texture_06013108[] = {
+ALIGNED8  const Texture scuttlebug_seg6_texture_06013108[] = {
 #include "actors/scuttlebug/scuttlebug_leg.rgba16.inc.c"
 };
 
 // 0x06013908
-static const Vtx scuttlebug_seg6_vertex_06013908[] = {
+ const Vtx scuttlebug_seg6_vertex_06013908[] = {
     {{{   -44,    -44,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -44,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,     44,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -46,7 +46,7 @@ static const Vtx scuttlebug_seg6_vertex_06013908[] = {
 };
 
 // 0x06013948
-static const Vtx scuttlebug_seg6_vertex_06013948[] = {
+ const Vtx scuttlebug_seg6_vertex_06013948[] = {
     {{{     0,    -44,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    44,     44,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,     44,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -93,7 +93,7 @@ const Gfx scuttlebug_seg6_dl_060139F8[] = {
 };
 
 // 0x06013A70
-static const Vtx scuttlebug_seg6_vertex_06013A70[] = {
+ const Vtx scuttlebug_seg6_vertex_06013A70[] = {
     {{{    15,     15,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -15,     15,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -15,    -15,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -129,7 +129,7 @@ const Gfx scuttlebug_seg6_dl_06013AE8[] = {
 };
 
 // 0x06013B58
-static const Vtx scuttlebug_seg6_vertex_06013B58[] = {
+ const Vtx scuttlebug_seg6_vertex_06013B58[] = {
     {{{    15,     15,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -15,     15,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -15,    -15,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -165,7 +165,7 @@ const Gfx scuttlebug_seg6_dl_06013BD0[] = {
 };
 
 // 0x06013C40
-static const Vtx scuttlebug_seg6_vertex_06013C40[] = {
+ const Vtx scuttlebug_seg6_vertex_06013C40[] = {
     {{{    60,    -30,     31}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    60,    -30,    -30}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    60,     32,    -30}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -201,7 +201,7 @@ const Gfx scuttlebug_seg6_dl_06013CB8[] = {
 };
 
 // 0x06013D28
-static const Vtx scuttlebug_seg6_vertex_06013D28[] = {
+ const Vtx scuttlebug_seg6_vertex_06013D28[] = {
     {{{    60,    -30,     31}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    60,    -30,    -30}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    59,     31,    -30}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -237,13 +237,13 @@ const Gfx scuttlebug_seg6_dl_06013DA0[] = {
 };
 
 // 0x06013E10
-static const Lights1 scuttlebug_seg6_lights_06013E10 = gdSPDefLights1(
+ const Lights1 scuttlebug_seg6_lights_06013E10 = gdSPDefLights1(
     0x33, 0x22, 0x01,
     0xcf, 0x89, 0x06, 0x28, 0x28, 0x28
 );
 
 // 0x06013E28
-static const Vtx scuttlebug_seg6_vertex_06013E28[] = {
+ const Vtx scuttlebug_seg6_vertex_06013E28[] = {
     {{{  -111,     85,    293}, 0, {     0,      0}, {0x7e, 0x06, 0x0b, 0xff}}},
     {{{  -120,    127,    192}, 0, {     0,      0}, {0x34, 0x64, 0xc8, 0xff}}},
     {{{  -120,    103,    301}, 0, {     0,      0}, {0xc9, 0x62, 0x3a, 0xff}}},
@@ -263,7 +263,7 @@ static const Vtx scuttlebug_seg6_vertex_06013E28[] = {
 };
 
 // 0x06013F28
-static const Vtx scuttlebug_seg6_vertex_06013F28[] = {
+ const Vtx scuttlebug_seg6_vertex_06013F28[] = {
     {{{  -103,     89,    199}, 0, {     0,      0}, {0x7c, 0xee, 0xf3, 0xff}}},
     {{{  -120,     59,    167}, 0, {     0,      0}, {0xfe, 0xe1, 0x85, 0xff}}},
     {{{  -120,    127,    192}, 0, {     0,      0}, {0x34, 0x64, 0xc8, 0xff}}},
@@ -310,7 +310,7 @@ const Gfx scuttlebug_seg6_dl_060140F0[] = {
 };
 
 // 0x06014110
-static const Vtx scuttlebug_seg6_vertex_06014110[] = {
+ const Vtx scuttlebug_seg6_vertex_06014110[] = {
     {{{   -21,     37,      0}, 0, {  -584,  -4238}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   191,     18,      0}, 0, {    28,    892}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   193,    -19,      0}, 0, {   988,    958}, {0xff, 0xff, 0xff, 0xff}}},
@@ -346,7 +346,7 @@ const Gfx scuttlebug_seg6_dl_06014188[] = {
 };
 
 // 0x060141F8
-static const Vtx scuttlebug_seg6_vertex_060141F8[] = {
+ const Vtx scuttlebug_seg6_vertex_060141F8[] = {
     {{{    -9,     39,      4}, 0, {  -560,  -4258}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   199,     20,      2}, 0, {    38,    948}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   201,    -17,     -2}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -382,13 +382,13 @@ const Gfx scuttlebug_seg6_dl_06014270[] = {
 };
 
 // 0x060142E0
-static const Lights1 scuttlebug_seg6_lights_060142E0 = gdSPDefLights1(
+ const Lights1 scuttlebug_seg6_lights_060142E0 = gdSPDefLights1(
     0x26, 0x05, 0x05,
     0x99, 0x16, 0x16, 0x28, 0x28, 0x28
 );
 
 // 0x060142F8
-static const Vtx scuttlebug_seg6_vertex_060142F8[] = {
+ const Vtx scuttlebug_seg6_vertex_060142F8[] = {
     {{{     0,     -1,      0}, 0, {     0,      0}, {0x82, 0x02, 0x00, 0xff}}},
     {{{    57,   -106,     -3}, 0, {     0,      0}, {0xcf, 0x8c, 0xfd, 0xff}}},
     {{{    57,     48,     83}, 0, {     0,      0}, {0xd0, 0x37, 0x67, 0xff}}},

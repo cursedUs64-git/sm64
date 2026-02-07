@@ -1,5 +1,5 @@
 // 0x0700A8D0 - 0x0700A9C0
-static const Vtx castle_grounds_seg7_vertex_0700A8D0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700A8D0[] = {
     {{{ -4998,    316,    603}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -5397,    265,   1006}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -4993,    281,   1006}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx castle_grounds_seg7_vertex_0700A8D0[] = {
 };
 
 // 0x0700A9C0 - 0x0700AAB0
-static const Vtx castle_grounds_seg7_vertex_0700A9C0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700A9C0[] = {
     {{{ -6070,    452,  -2345}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6473,    427,  -2347}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6468,    386,  -1945}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx castle_grounds_seg7_vertex_0700A9C0[] = {
 };
 
 // 0x0700AAB0 - 0x0700ABA0
-static const Vtx castle_grounds_seg7_vertex_0700AAB0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700AAB0[] = {
     {{{ -2355,    535,   2446}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2757,    382,   2818}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2358,    439,   2832}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx castle_grounds_seg7_vertex_0700AAB0[] = {
 };
 
 // 0x0700ABA0 - 0x0700AC90
-static const Vtx castle_grounds_seg7_vertex_0700ABA0[] = {
+ const Vtx castle_grounds_seg7_vertex_0700ABA0[] = {
     {{{    35,    716,   2812}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -290,    551,   2805}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -283,    537,   3214}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -75,7 +75,7 @@ static const Vtx castle_grounds_seg7_vertex_0700ABA0[] = {
 };
 
 // 0x0700AC90 - 0x0700AD80
-static const Vtx castle_grounds_seg7_vertex_0700AC90[] = {
+ const Vtx castle_grounds_seg7_vertex_0700AC90[] = {
     {{{  2115,    312,    950}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1723,    265,   1363}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2078,    112,   1291}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx castle_grounds_seg7_vertex_0700AC90[] = {
 };
 
 // 0x0700AD80 - 0x0700AE70
-static const Vtx castle_grounds_seg7_vertex_0700AD80[] = {
+ const Vtx castle_grounds_seg7_vertex_0700AD80[] = {
     {{{  5978,    431,  -1320}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5570,    413,   -910}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5977,    448,   -911}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -113,7 +113,7 @@ static const Vtx castle_grounds_seg7_vertex_0700AD80[] = {
 };
 
 // 0x0700AE70 - 0x0700AF60
-static const Vtx castle_grounds_seg7_vertex_0700AE70[] = {
+ const Vtx castle_grounds_seg7_vertex_0700AE70[] = {
     {{{  6064,    734,  -4652}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5661,    681,  -4649}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5665,    661,  -4246}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -132,7 +132,7 @@ static const Vtx castle_grounds_seg7_vertex_0700AE70[] = {
 };
 
 // 0x0700AF60 - 0x0700AFD0
-static const Vtx castle_grounds_seg7_vertex_0700AF60[] = {
+ const Vtx castle_grounds_seg7_vertex_0700AF60[] = {
     {{{  6597,    947,  -5509}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  6217,    790,  -5117}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  6610,    882,  -5114}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -143,7 +143,7 @@ static const Vtx castle_grounds_seg7_vertex_0700AF60[] = {
 };
 
 // 0x0700AFD0 - 0x0700B1D0
-static const Gfx castle_grounds_seg7_dl_0700AFD0[] = {
+ const Gfx castle_grounds_seg7_dl_0700AFD0[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, outside_0900BC00),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

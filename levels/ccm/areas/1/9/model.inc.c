@@ -1,11 +1,11 @@
 // 0x0700FB78 - 0x0700FB90
-static const Lights1 ccm_seg7_lights_0700FB78 = gdSPDefLights1(
+ const Lights1 ccm_seg7_lights_0700FB78 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0700FB90 - 0x0700FC90
-static const Vtx ccm_seg7_vertex_0700FB90[] = {
+ const Vtx ccm_seg7_vertex_0700FB90[] = {
     {{{  -123,   -613,    238}, 0, {     0,    990}, {0x8f, 0x00, 0x38, 0xff}}},
     {{{  -283,    666,    -85}, 0, {   690,    138}, {0x8f, 0x00, 0x38, 0xff}}},
     {{{  -283,   -613,    -85}, 0, {   690,    990}, {0x8f, 0x00, 0x38, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx ccm_seg7_vertex_0700FB90[] = {
 };
 
 // 0x0700FC90 - 0x0700FD08
-static const Gfx ccm_seg7_dl_0700FC90[] = {
+ const Gfx ccm_seg7_dl_0700FC90[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, snow_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

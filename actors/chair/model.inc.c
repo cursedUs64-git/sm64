@@ -1,40 +1,40 @@
 // Chair
 
 // Unreferenced light group
-UNUSED static const Lights1 chair_lights_unused = gdSPDefLights1(
+UNUSED  const Lights1 chair_lights_unused = gdSPDefLights1(
     0x19, 0x0d, 0x06,
     0x64, 0x36, 0x1a, 0x28, 0x28, 0x28
 );
 
 // 0x05003060
-ALIGNED8 static const Texture chair_seg5_texture_05003060[] = {
+ALIGNED8  const Texture chair_seg5_texture_05003060[] = {
 #include "actors/chair/chair_front.rgba16.inc.c"
 };
 
 // 0x05003860
-ALIGNED8 static const Texture chair_seg5_texture_05003860[] = {
+ALIGNED8  const Texture chair_seg5_texture_05003860[] = {
 #include "actors/chair/chair_leg.rgba16.inc.c"
 };
 
 // 0x05004060
-ALIGNED8 static const Texture chair_seg5_texture_05004060[] = {
+ALIGNED8  const Texture chair_seg5_texture_05004060[] = {
 #include "actors/chair/chair_bottom.rgba16.inc.c"
 };
 
 // unreferenced
 // 0x05004460
-ALIGNED8 static const Texture chair_seg5_texture_05004460[] = {
+ALIGNED8  const Texture chair_seg5_texture_05004460[] = {
 #include "actors/chair/chair_surface_unused.rgba16.inc.c"
 };
 
 // 0x05004C60
-static const Lights1 chair_seg5_lights_05004C60 = gdSPDefLights1(
+ const Lights1 chair_seg5_lights_05004C60 = gdSPDefLights1(
     0x47, 0x47, 0x47,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x05004C78
-static const Vtx chair_seg5_vertex_05004C78[] = {
+ const Vtx chair_seg5_vertex_05004C78[] = {
     {{{   334,    -20,      1}, 0, {   474,   -182}, {0x77, 0x00, 0xd6, 0xff}}},
     {{{   287,    -20,   -132}, 0, {  1212,     58}, {0x77, 0x00, 0xd6, 0xff}}},
     {{{   334,     25,      1}, 0, {   474,   -182}, {0x77, 0x00, 0xd6, 0xff}}},
@@ -54,7 +54,7 @@ static const Vtx chair_seg5_vertex_05004C78[] = {
 };
 
 // 0x05004D78
-static const Vtx chair_seg5_vertex_05004D78[] = {
+ const Vtx chair_seg5_vertex_05004D78[] = {
     {{{   287,     25,    134}, 0, {  -262,     58}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   334,     25,      1}, 0, {   474,   -182}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   287,     25,   -132}, 0, {  1212,     58}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -107,13 +107,13 @@ const Gfx chair_seg5_dl_05004EE8[] = {
 };
 
 // 0x05004F58
-static const Lights1 chair_seg5_lights_05004F58 = gdSPDefLights1(
+ const Lights1 chair_seg5_lights_05004F58 = gdSPDefLights1(
     0x47, 0x47, 0x47,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x05004F70
-static const Vtx chair_seg5_vertex_05004F70[] = {
+ const Vtx chair_seg5_vertex_05004F70[] = {
     {{{   208,    -20,   -125}, 0, {  1934,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -38,     24,   -125}, 0, {  1935,    990}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   208,     24,   -125}, 0, {  1934,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -133,7 +133,7 @@ static const Vtx chair_seg5_vertex_05004F70[] = {
 };
 
 // 0x05005070
-static const Vtx chair_seg5_vertex_05005070[] = {
+ const Vtx chair_seg5_vertex_05005070[] = {
     {{{   208,    -20,    127}, 0, {   -21,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -38,    -20,   -125}, 0, {  1935,    990}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   208,    -20,   -125}, 0, {  1934,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -181,13 +181,13 @@ const Gfx chair_seg5_dl_05005190[] = {
 };
 
 // 0x05005200
-static const Lights1 chair_seg5_lights_05005200 = gdSPDefLights1(
+ const Lights1 chair_seg5_lights_05005200 = gdSPDefLights1(
     0x47, 0x47, 0x47,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x05005218
-static const Vtx chair_seg5_vertex_05005218[] = {
+ const Vtx chair_seg5_vertex_05005218[] = {
     {{{   146,    -22,    104}, 0, {   998,    990}, {0xef, 0x00, 0x7d, 0xff}}},
     {{{   146,     26,    104}, 0, {   998,    990}, {0xef, 0x00, 0x7d, 0xff}}},
     {{{    -8,     26,     82}, 0, {   886,    -24}, {0xef, 0x00, 0x7d, 0xff}}},
@@ -206,7 +206,7 @@ static const Vtx chair_seg5_vertex_05005218[] = {
 };
 
 // 0x05005308
-static const Vtx chair_seg5_vertex_05005308[] = {
+ const Vtx chair_seg5_vertex_05005308[] = {
     {{{   146,     26,   -102}, 0, {     0,    990}, {0xee, 0x00, 0x83, 0xff}}},
     {{{   146,    -22,   -102}, 0, {     0,    990}, {0xee, 0x00, 0x83, 0xff}}},
     {{{    -8,    -22,    -79}, 0, {    78,    -24}, {0xee, 0x00, 0x83, 0xff}}},
@@ -253,13 +253,13 @@ const Gfx chair_seg5_dl_05005408[] = {
 };
 
 // 0x05005478
-static const Lights1 chair_seg5_lights_05005478 = gdSPDefLights1(
+ const Lights1 chair_seg5_lights_05005478 = gdSPDefLights1(
     0x47, 0x47, 0x47,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x05005490
-static const Vtx chair_seg5_vertex_05005490[] = {
+ const Vtx chair_seg5_vertex_05005490[] = {
     {{{   146,    -19,    104}, 0, {   998,    990}, {0xef, 0x00, 0x7d, 0xff}}},
     {{{   146,     29,    104}, 0, {   998,    990}, {0xef, 0x00, 0x7d, 0xff}}},
     {{{    -8,     29,     82}, 0, {   886,    -40}, {0xef, 0x00, 0x7d, 0xff}}},
@@ -278,7 +278,7 @@ static const Vtx chair_seg5_vertex_05005490[] = {
 };
 
 // 0x05005580
-static const Vtx chair_seg5_vertex_05005580[] = {
+ const Vtx chair_seg5_vertex_05005580[] = {
     {{{   146,     29,   -102}, 0, {     0,    990}, {0xee, 0x00, 0x83, 0xff}}},
     {{{   146,    -19,   -102}, 0, {     0,    990}, {0xee, 0x00, 0x83, 0xff}}},
     {{{    -8,    -19,    -79}, 0, {    78,    -40}, {0xee, 0x00, 0x83, 0xff}}},

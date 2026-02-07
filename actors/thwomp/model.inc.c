@@ -1,23 +1,23 @@
 // Thwomp
 
 // 0x050098E8
-static const Lights1 thwomp_seg5_lights_050098E8 = gdSPDefLights1(
+ const Lights1 thwomp_seg5_lights_050098E8 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05009900
-ALIGNED8 static const Texture thwomp_seg5_texture_05009900[] = {
+ALIGNED8  const Texture thwomp_seg5_texture_05009900[] = {
 #include "actors/thwomp/thwomp_face.rgba16.inc.c"
 };
 
 // 0x0500A900
-ALIGNED8 static const Texture thwomp_seg5_texture_0500A900[] = {
+ALIGNED8  const Texture thwomp_seg5_texture_0500A900[] = {
 #include "actors/thwomp/thwomp_surface.rgba16.inc.c"
 };
 
 // 0x0500B100
-static const Vtx thwomp_seg5_vertex_0500B100[] = {
+ const Vtx thwomp_seg5_vertex_0500B100[] = {
     {{{   -97,     52,   -141}, 0, {  3308,    418}, {0xce, 0xcb, 0x99, 0xff}}},
     {{{  -141,     52,    -72}, 0, {  2910,    418}, {0x93, 0xca, 0xdf, 0xff}}},
     {{{  -156,    252,    -78}, 0, {  2904,   1584}, {0x89, 0x1a, 0xde, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx thwomp_seg5_vertex_0500B100[] = {
 };
 
 // 0x0500B1F0
-static const Vtx thwomp_seg5_vertex_0500B1F0[] = {
+ const Vtx thwomp_seg5_vertex_0500B1F0[] = {
     {{{  -156,    252,     79}, 0, {  -452,   1000}, {0x8d, 0x22, 0x29, 0xff}}},
     {{{  -105,    252,    157}, 0, {  -160,   1452}, {0xd7, 0x39, 0x69, 0xff}}},
     {{{   -92,    330,      0}, 0, {   -80,    540}, {0xd4, 0x76, 0x00, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx thwomp_seg5_vertex_0500B1F0[] = {
 };
 
 // 0x0500B2F0
-static const Vtx thwomp_seg5_vertex_0500B2F0[] = {
+ const Vtx thwomp_seg5_vertex_0500B2F0[] = {
     {{{   -82,      0,    -82}, 0, {   -82,   1040}, {0xc9, 0x92, 0xe2, 0xff}}},
     {{{   -82,      0,     83}, 0, {   -82,    -84}, {0xe2, 0x8c, 0x29, 0xff}}},
     {{{  -141,     52,     73}, 0, {  -486,    -18}, {0x90, 0xc9, 0x16, 0xff}}},
@@ -74,7 +74,7 @@ static const Vtx thwomp_seg5_vertex_0500B2F0[] = {
 };
 
 // 0x0500B3D0
-static const Vtx thwomp_seg5_vertex_0500B3D0[] = {
+ const Vtx thwomp_seg5_vertex_0500B3D0[] = {
     {{{   106,    252,    157}, 0, {   760,   1584}, {0x30, 0x46, 0x5d, 0xff}}},
     {{{    98,     52,    142}, 0, {   754,    418}, {0x32, 0xcb, 0x67, 0xff}}},
     {{{   157,    252,     79}, 0, {   348,   1584}, {0x77, 0x1a, 0x22, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx thwomp_seg5_vertex_0500B3D0[] = {
 };
 
 // 0x0500B4D0
-static const Vtx thwomp_seg5_vertex_0500B4D0[] = {
+ const Vtx thwomp_seg5_vertex_0500B4D0[] = {
     {{{    98,     52,    142}, 0, {   754,    418}, {0x32, 0xcb, 0x67, 0xff}}},
     {{{   142,     52,     73}, 0, {   354,    418}, {0x6d, 0xca, 0x21, 0xff}}},
     {{{   157,    252,     79}, 0, {   348,   1584}, {0x77, 0x1a, 0x22, 0xff}}},
@@ -104,7 +104,7 @@ static const Vtx thwomp_seg5_vertex_0500B4D0[] = {
 };
 
 // 0x0500B530
-static const Vtx thwomp_seg5_vertex_0500B530[] = {
+ const Vtx thwomp_seg5_vertex_0500B530[] = {
     {{{    98,     52,    142}, 0, {   968,   1976}, {0x32, 0xcb, 0x67, 0xff}}},
     {{{   106,    252,    157}, 0, {  1010,      0}, {0x30, 0x46, 0x5d, 0xff}}},
     {{{  -105,    252,    157}, 0, {   -54,    -12}, {0xd7, 0x39, 0x69, 0xff}}},

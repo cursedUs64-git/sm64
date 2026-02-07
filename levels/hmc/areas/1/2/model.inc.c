@@ -1,5 +1,5 @@
 // 0x070079E8 - 0x07007AE8
-static const Vtx hmc_seg7_vertex_070079E8[] = {
+ const Vtx hmc_seg7_vertex_070079E8[] = {
     {{{ -6860,   1760,   3753}, 0, {  5998,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6245,   1658,   3753}, 0, {    70,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6860,   1658,   3753}, 0, {  5998,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx hmc_seg7_vertex_070079E8[] = {
 };
 
 // 0x07007AE8 - 0x07007B50
-static const Gfx hmc_seg7_dl_07007AE8[] = {
+ const Gfx hmc_seg7_dl_07007AE8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, cave_09003000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

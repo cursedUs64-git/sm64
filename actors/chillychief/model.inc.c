@@ -1,46 +1,46 @@
 // Chilly Chief (Chill Bully)
 
 // 0x06000000
-static const Lights1 chilly_chief_seg6_lights_06000000 = gdSPDefLights1(
+ const Lights1 chilly_chief_seg6_lights_06000000 = gdSPDefLights1(
     0x00, 0x38, 0x00,
     0x00, 0xe3, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06000018
-static const Lights1 chilly_chief_seg6_lights_06000018 = gdSPDefLights1(
+ const Lights1 chilly_chief_seg6_lights_06000018 = gdSPDefLights1(
     0x00, 0x3f, 0x00,
     0x00, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06000030
-static const Lights1 chilly_chief_seg6_lights_06000030 = gdSPDefLights1(
+ const Lights1 chilly_chief_seg6_lights_06000030 = gdSPDefLights1(
     0x3f, 0x29, 0x00,
     0xff, 0xa5, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chillychief_lights_unused = gdSPDefLights1(
+UNUSED  const Lights1 chillychief_lights_unused = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x06000060
-ALIGNED8 static const Texture chilly_chief_seg6_texture_06000060[] = {
+ALIGNED8  const Texture chilly_chief_seg6_texture_06000060[] = {
 #include "actors/chillychief/chill_bully_left_side.rgba16.inc.c"
 };
 
 // 0x06001060
-ALIGNED8 static const Texture chilly_chief_seg6_texture_06001060[] = {
+ALIGNED8  const Texture chilly_chief_seg6_texture_06001060[] = {
 #include "actors/chillychief/chill_bully_right_side.rgba16.inc.c"
 };
 
 // 0x06002060
-ALIGNED8 static const Texture chilly_chief_seg6_texture_06002060[] = {
+ALIGNED8  const Texture chilly_chief_seg6_texture_06002060[] = {
 #include "actors/chillychief/chill_bully_eye.rgba16.inc.c"
 };
 
 // 0x06002860
-static const Vtx chilly_chief_seg6_vertex_06002860[] = {
+ const Vtx chilly_chief_seg6_vertex_06002860[] = {
     {{{    27,    -35,      0}, 0, {     0,      0}, {0x0c, 0x82, 0x04, 0x00}}},
     {{{    56,    -16,    -27}, 0, {     0,      0}, {0x16, 0xae, 0xa3, 0x00}}},
     {{{    72,    -16,      0}, 0, {     0,      0}, {0x59, 0xa7, 0x04, 0x00}}},
@@ -58,7 +58,7 @@ static const Vtx chilly_chief_seg6_vertex_06002860[] = {
 };
 
 // 0x06002940
-static const Vtx chilly_chief_seg6_vertex_06002940[] = {
+ const Vtx chilly_chief_seg6_vertex_06002940[] = {
     {{{    90,     28,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0xff}}},
     {{{    56,     28,    -46}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{   -37,     27,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
@@ -66,7 +66,7 @@ static const Vtx chilly_chief_seg6_vertex_06002940[] = {
 };
 
 // 0x06002980
-static const Vtx chilly_chief_seg6_vertex_06002980[] = {
+ const Vtx chilly_chief_seg6_vertex_06002980[] = {
     {{{    72,    -16,      0}, 0, {     0,      0}, {0x59, 0xa7, 0xfc, 0x00}}},
     {{{    56,    -16,     27}, 0, {     0,      0}, {0x16, 0xae, 0x5d, 0x00}}},
     {{{    27,    -35,      0}, 0, {     0,      0}, {0x0c, 0x82, 0xfc, 0x00}}},
@@ -84,7 +84,7 @@ static const Vtx chilly_chief_seg6_vertex_06002980[] = {
 };
 
 // 0x06002A60
-static const Vtx chilly_chief_seg6_vertex_06002A60[] = {
+ const Vtx chilly_chief_seg6_vertex_06002A60[] = {
     {{{    55,     28,    -41}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0xff}}},
     {{{   -37,     27,      0}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
     {{{    56,     28,     46}, 0, {     0,      0}, {0xff, 0x7f, 0x00, 0x00}}},
@@ -92,7 +92,7 @@ static const Vtx chilly_chief_seg6_vertex_06002A60[] = {
 };
 
 // 0x06002AA0
-static const Vtx chilly_chief_seg6_vertex_06002AA0[] = {
+ const Vtx chilly_chief_seg6_vertex_06002AA0[] = {
     {{{   132,    -29,      0}, 0, {     0,      0}, {0x10, 0xc2, 0x93, 0x00}}},
     {{{   131,     31,    -35}, 0, {     0,      0}, {0x10, 0xc2, 0x93, 0x00}}},
     {{{   250,      2,      0}, 0, {     0,      0}, {0x10, 0xc2, 0x93, 0x00}}},
@@ -147,7 +147,7 @@ const Gfx chilly_chief_seg6_dl_06002C60[] = {
 };
 
 // 0x06002C98
-static const Vtx chilly_chief_seg6_vertex_06002C98[] = {
+ const Vtx chilly_chief_seg6_vertex_06002C98[] = {
     {{{     0,     68,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -66,    -66,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -66,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -155,7 +155,7 @@ static const Vtx chilly_chief_seg6_vertex_06002C98[] = {
 };
 
 // 0x06002CD8
-static const Vtx chilly_chief_seg6_vertex_06002CD8[] = {
+ const Vtx chilly_chief_seg6_vertex_06002CD8[] = {
     {{{    68,     68,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -66,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    68,    -66,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -202,7 +202,7 @@ const Gfx chilly_chief_seg6_dl_06002D88[] = {
 };
 
 // 0x06002E00
-static const Vtx chilly_chief_seg6_vertex_06002E00[] = {
+ const Vtx chilly_chief_seg6_vertex_06002E00[] = {
     {{{     0,    136,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -133,   -133,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -133,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -210,7 +210,7 @@ static const Vtx chilly_chief_seg6_vertex_06002E00[] = {
 };
 
 // 0x06002E40
-static const Vtx chilly_chief_seg6_vertex_06002E40[] = {
+ const Vtx chilly_chief_seg6_vertex_06002E40[] = {
     {{{   136,    136,      0}, 0, {   992,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,   -133,      0}, 0, {     0,   2016}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   136,   -133,      0}, 0, {   992,   2016}, {0xff, 0xff, 0xff, 0xff}}},
@@ -257,7 +257,7 @@ const Gfx chilly_chief_seg6_dl_06002EF0[] = {
 };
 
 // 0x06002F68
-static const Vtx chilly_chief_seg6_vertex_06002F68[] = {
+ const Vtx chilly_chief_seg6_vertex_06002F68[] = {
     {{{   -36,    152,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -40,    136,     68}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    56,    124,     68}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},

@@ -8,7 +8,7 @@
 /**
  * Collision models for the different types of platforms.
  */
-static Collision const *sPlatformOnTrackCollisionModels[] = {
+ Collision const *sPlatformOnTrackCollisionModels[] = {
     /* PLATFORM_ON_TRACK_TYPE_CARPET    */ rr_seg7_collision_07029038,
     /* PLATFORM_ON_TRACK_TYPE_SKI_LIFT  */ ccm_seg7_collision_070163F8,
     /* PLATFORM_ON_TRACK_TYPE_CHECKERED */ checkerboard_platform_seg8_collision_0800D710,
@@ -18,7 +18,7 @@ static Collision const *sPlatformOnTrackCollisionModels[] = {
 /**
  * Paths for the different instances of these platforms.
  */
-static Trajectory const *sPlatformOnTrackPaths[] = {
+ Trajectory const *sPlatformOnTrackPaths[] = {
     rr_seg7_trajectory_0702EC3C,
     rr_seg7_trajectory_0702ECC0,
     ccm_seg7_trajectory_0701669C,
@@ -33,7 +33,7 @@ static Trajectory const *sPlatformOnTrackPaths[] = {
 /**
  * Despawn all track balls and enter the init action.
  */
-static void platform_on_track_reset(void) {
+ void platform_on_track_reset(void) {
     o->oAction = PLATFORM_ON_TRACK_ACT_INIT;
     // This will cause the track balls to all despawn
     o->oPlatformOnTrackBaseBallIndex += 99;
@@ -43,7 +43,7 @@ static void platform_on_track_reset(void) {
  * If this platform is the kind that disappears, pause for a while, then
  * begin blinking, and finally reset.
  */
-static void platform_on_track_mario_not_on_platform(void) {
+ void platform_on_track_mario_not_on_platform(void) {
     if (!((u16)(o->oBhvParams >> 16) & PLATFORM_ON_TRACK_BP_DONT_DISAPPEAR)) {
         // Once oTimer reaches 150, blink 40 times
         if (cur_obj_wait_then_blink(150, 40)) {
@@ -82,7 +82,7 @@ void bhv_platform_on_track_init(void) {
  * Move to the start waypoint, spawn the first track balls, and enter the
  * wait for mario action.
  */
-static void platform_on_track_act_init(void) {
+ void platform_on_track_act_init(void) {
     s32 i;
 
     o->oPlatformOnTrackPrevWaypoint = o->oPlatformOnTrackStartWaypoint;
@@ -113,7 +113,7 @@ static void platform_on_track_act_init(void) {
 /**
  * Wait for mario to stand on the platform for 20 frames, then begin moving.
  */
-static void platform_on_track_act_wait_for_mario(void) {
+ void platform_on_track_act_wait_for_mario(void) {
     if (gMarioObject->platform == o) {
         if (o->oTimer > 20) {
             o->oAction = PLATFORM_ON_TRACK_ACT_MOVE_ALONG_TRACK;
@@ -131,7 +131,7 @@ static void platform_on_track_act_wait_for_mario(void) {
  * Move along the track. After reaching the end, either start falling,
  * return to the init action, or continue moving back to the start waypoint.
  */
-static void platform_on_track_act_move_along_track(void) {
+ void platform_on_track_act_move_along_track(void) {
     s16 initialAngle;
 
     if (!o->oPlatformOnTrackIsNotSkiLift) {
@@ -223,7 +223,7 @@ static void platform_on_track_act_move_along_track(void) {
 /**
  * Wait 20 frames then continue moving.
  */
-static void platform_on_track_act_pause_briefly(void) {
+ void platform_on_track_act_pause_briefly(void) {
     if (o->oTimer > 20) {
         o->oAction = PLATFORM_ON_TRACK_ACT_MOVE_ALONG_TRACK;
     }
@@ -233,7 +233,7 @@ static void platform_on_track_act_pause_briefly(void) {
  * Fall downward with no terminal velocity, stopping after reaching y = -12k
  * and eventually blinking and disappearing.
  */
-static void platform_on_track_act_fall(void) {
+ void platform_on_track_act_fall(void) {
     cur_obj_move_using_vel_and_gravity();
 
     if (gMarioObject->platform != o) {
@@ -247,7 +247,7 @@ static void platform_on_track_act_fall(void) {
 /**
  * Control the rocking of the ski lift.
  */
-static void platform_on_track_rock_ski_lift(void) {
+ void platform_on_track_rock_ski_lift(void) {
     s32 targetRoll = 0;
     UNUSED s32 initialRoll = o->oFaceAngleRoll;
 

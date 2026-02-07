@@ -1,7 +1,7 @@
 // Yoshi Egg (unused)
 
 // 0x05005778
-static const Vtx yoshi_egg_seg5_vertex_05005778[] = {
+ const Vtx yoshi_egg_seg5_vertex_05005778[] = {
     {{{  -128,      0,      0}, 0, {     0,   1984}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   128,      0,      0}, 0, {  1984,   1984}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   128,    256,      0}, 0, {  1984,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -9,42 +9,42 @@ static const Vtx yoshi_egg_seg5_vertex_05005778[] = {
 };
 
 // 0x050057B8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_050057B8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_050057B8[] = {
 #include "actors/yoshi_egg/yoshi_egg_0_unused.rgba16.inc.c"
 };
 
 // 0x05005FB8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_05005FB8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_05005FB8[] = {
 #include "actors/yoshi_egg/yoshi_egg_1_unused.rgba16.inc.c"
 };
 
 // 0x050067B8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_050067B8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_050067B8[] = {
 #include "actors/yoshi_egg/yoshi_egg_2_unused.rgba16.inc.c"
 };
 
 // 0x05006FB8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_05006FB8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_05006FB8[] = {
 #include "actors/yoshi_egg/yoshi_egg_3_unused.rgba16.inc.c"
 };
 
 // 0x050077B8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_050077B8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_050077B8[] = {
 #include "actors/yoshi_egg/yoshi_egg_4_unused.rgba16.inc.c"
 };
 
 // 0x05007FB8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_05007FB8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_05007FB8[] = {
 #include "actors/yoshi_egg/yoshi_egg_5_unused.rgba16.inc.c"
 };
 
 // 0x050087B8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_050087B8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_050087B8[] = {
 #include "actors/yoshi_egg/yoshi_egg_6_unused.rgba16.inc.c"
 };
 
 // 0x05008FB8
-ALIGNED8 static const Texture yoshi_egg_seg5_texture_05008FB8[] = {
+ALIGNED8  const Texture yoshi_egg_seg5_texture_05008FB8[] = {
 #include "actors/yoshi_egg/yoshi_egg_7_unused.rgba16.inc.c"
 };
 

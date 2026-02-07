@@ -1,37 +1,37 @@
 // Blargg (Unused)
 
 // Unreferenced light group
-UNUSED static const Lights1 blargg_lights_unused = gdSPDefLights1(
+UNUSED  const Lights1 blargg_lights_unused = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004740
-static const Lights1 blargg_seg5_lights_05004740 = gdSPDefLights1(
+ const Lights1 blargg_seg5_lights_05004740 = gdSPDefLights1(
     0x3f, 0x0d, 0x05,
     0xff, 0x36, 0x16, 0x28, 0x28, 0x28
 );
 
 // 0x05004758
-static const Lights1 blargg_seg5_lights_05004758 = gdSPDefLights1(
+ const Lights1 blargg_seg5_lights_05004758 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x05004770
-static const Lights1 blargg_seg5_lights_05004770 = gdSPDefLights1(
+ const Lights1 blargg_seg5_lights_05004770 = gdSPDefLights1(
     0x3f, 0x0a, 0x06,
     0xff, 0x2a, 0x1a, 0x28, 0x28, 0x28
 );
 
 // 0x05004788
-static const Lights1 blargg_seg5_lights_05004788 = gdSPDefLights1(
+ const Lights1 blargg_seg5_lights_05004788 = gdSPDefLights1(
     0x3f, 0x0b, 0x07,
     0xff, 0x2e, 0x1f, 0x28, 0x28, 0x28
 );
 
 // 0x050047A0
-static const Vtx blargg_seg5_vertex_050047A0[] = {
+ const Vtx blargg_seg5_vertex_050047A0[] = {
     {{{   378,   -178,    -92}, 0, {     0,      0}, {0x32, 0xe7, 0x8f, 0x00}}},
     {{{   298,   -166,   -131}, 0, {     0,      0}, {0x32, 0xe7, 0x8f, 0x00}}},
     {{{   306,    -56,   -152}, 0, {     0,      0}, {0x32, 0xe7, 0x8f, 0x00}}},
@@ -51,7 +51,7 @@ static const Vtx blargg_seg5_vertex_050047A0[] = {
 };
 
 // 0x050048A0
-static const Vtx blargg_seg5_vertex_050048A0[] = {
+ const Vtx blargg_seg5_vertex_050048A0[] = {
     {{{   361,   -176,    -56}, 0, {     0,      0}, {0xed, 0x83, 0x00, 0x00}}},
     {{{   280,   -163,    -94}, 0, {     0,      0}, {0xed, 0x83, 0x00, 0x00}}},
     {{{   298,   -166,   -131}, 0, {     0,      0}, {0xed, 0x83, 0x00, 0x00}}},
@@ -71,7 +71,7 @@ static const Vtx blargg_seg5_vertex_050048A0[] = {
 };
 
 // 0x050049A0
-static const Vtx blargg_seg5_vertex_050049A0[] = {
+ const Vtx blargg_seg5_vertex_050049A0[] = {
     {{{   387,    -68,     35}, 0, {     0,      0}, {0x6d, 0xdc, 0xcb, 0x00}}},
     {{{   417,    -73,     99}, 0, {     0,      0}, {0x6d, 0xdc, 0xcb, 0x00}}},
     {{{   378,   -178,     92}, 0, {     0,      0}, {0x6d, 0xdc, 0xcb, 0x00}}},
@@ -83,7 +83,7 @@ static const Vtx blargg_seg5_vertex_050049A0[] = {
 };
 
 // 0x05004A20
-static const Vtx blargg_seg5_vertex_05004A20[] = {
+ const Vtx blargg_seg5_vertex_05004A20[] = {
     {{{   556,    -10,    -56}, 0, {     0,      0}, {0x6e, 0x37, 0xe5, 0x00}}},
     {{{   556,    -10,     56}, 0, {     0,      0}, {0x6e, 0x37, 0x1b, 0x00}}},
     {{{   556,   -128,    120}, 0, {     0,      0}, {0x6b, 0x0f, 0x42, 0x00}}},
@@ -103,7 +103,7 @@ static const Vtx blargg_seg5_vertex_05004A20[] = {
 };
 
 // 0x05004B20
-static const Vtx blargg_seg5_vertex_05004B20[] = {
+ const Vtx blargg_seg5_vertex_05004B20[] = {
     {{{   111,     99,    -96}, 0, {     0,      0}, {0xe5, 0x71, 0xce, 0x00}}},
     {{{   410,     80,   -203}, 0, {     0,      0}, {0x35, 0x58, 0xb7, 0x00}}},
     {{{   318,    -84,   -267}, 0, {     0,      0}, {0xff, 0x2d, 0x8a, 0x00}}},
@@ -119,7 +119,7 @@ static const Vtx blargg_seg5_vertex_05004B20[] = {
 };
 
 // 0x05004BE0
-static const Vtx blargg_seg5_vertex_05004BE0[] = {
+ const Vtx blargg_seg5_vertex_05004BE0[] = {
     {{{   524,     82,     92}, 0, {     0,      0}, {0x36, 0x10, 0x71, 0x00}}},
     {{{   443,     83,    131}, 0, {     0,      0}, {0x36, 0x10, 0x71, 0x00}}},
     {{{   432,    -25,    152}, 0, {     0,      0}, {0x36, 0x10, 0x71, 0x00}}},
@@ -139,7 +139,7 @@ static const Vtx blargg_seg5_vertex_05004BE0[] = {
 };
 
 // 0x05004CE0
-static const Vtx blargg_seg5_vertex_05004CE0[] = {
+ const Vtx blargg_seg5_vertex_05004CE0[] = {
     {{{   507,     82,     56}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
     {{{   425,     84,     94}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
     {{{   443,     83,    131}, 0, {     0,      0}, {0x02, 0x7f, 0x00, 0x00}}},
@@ -159,7 +159,7 @@ static const Vtx blargg_seg5_vertex_05004CE0[] = {
 };
 
 // 0x05004DE0
-static const Vtx blargg_seg5_vertex_05004DE0[] = {
+ const Vtx blargg_seg5_vertex_05004DE0[] = {
     {{{   513,    -27,    -35}, 0, {     0,      0}, {0x71, 0x10, 0x35, 0x00}}},
     {{{   544,    -28,    -99}, 0, {     0,      0}, {0x71, 0x10, 0x35, 0x00}}},
     {{{   524,     82,    -92}, 0, {     0,      0}, {0x71, 0x10, 0x35, 0x00}}},
@@ -171,7 +171,7 @@ static const Vtx blargg_seg5_vertex_05004DE0[] = {
 };
 
 // 0x05004E60
-static const Vtx blargg_seg5_vertex_05004E60[] = {
+ const Vtx blargg_seg5_vertex_05004E60[] = {
     {{{   617,     23,   -154}, 0, {     0,      0}, {0x6b, 0xdf, 0xc5, 0x00}}},
     {{{   571,   -260,      0}, 0, {     0,      0}, {0x7a, 0xdd, 0x00, 0x00}}},
     {{{   555,   -242,   -127}, 0, {     0,      0}, {0x43, 0xba, 0xb0, 0x00}}},
@@ -191,7 +191,7 @@ static const Vtx blargg_seg5_vertex_05004E60[] = {
 };
 
 // 0x05004F60
-static const Vtx blargg_seg5_vertex_05004F60[] = {
+ const Vtx blargg_seg5_vertex_05004F60[] = {
     {{{   326,     21,    307}, 0, {     0,      0}, {0x00, 0xd6, 0x77, 0x00}}},
     {{{   295,   -262,    175}, 0, {     0,      0}, {0xf1, 0xa2, 0x53, 0x00}}},
     {{{   555,   -242,    127}, 0, {     0,      0}, {0x43, 0xba, 0x50, 0x00}}},
@@ -210,7 +210,7 @@ static const Vtx blargg_seg5_vertex_05004F60[] = {
 };
 
 // 0x05005050
-static const Vtx blargg_seg5_vertex_05005050[] = {
+ const Vtx blargg_seg5_vertex_05005050[] = {
     {{{   161,   -168,   -171}, 0, {     0,      0}, {0xce, 0xd4, 0x95, 0x00}}},
     {{{   -88,     24,   -119}, 0, {     0,      0}, {0xeb, 0x06, 0x83, 0x00}}},
     {{{   326,     21,   -307}, 0, {     0,      0}, {0xff, 0xd5, 0x89, 0x00}}},
@@ -230,7 +230,7 @@ static const Vtx blargg_seg5_vertex_05005050[] = {
 };
 
 // 0x05005150
-static const Vtx blargg_seg5_vertex_05005150[] = {
+ const Vtx blargg_seg5_vertex_05005150[] = {
     {{{   -88,     24,    119}, 0, {     0,      0}, {0xec, 0x09, 0x7c, 0x00}}},
     {{{   -62,   -140,    183}, 0, {     0,      0}, {0xc1, 0x01, 0x6d, 0x00}}},
     {{{   140,   -168,    171}, 0, {     0,      0}, {0xd0, 0xd3, 0x6c, 0x00}}},
@@ -250,7 +250,7 @@ static const Vtx blargg_seg5_vertex_05005150[] = {
 };
 
 // 0x05005250
-static const Vtx blargg_seg5_vertex_05005250[] = {
+ const Vtx blargg_seg5_vertex_05005250[] = {
     {{{   161,   -168,   -171}, 0, {     0,      0}, {0x6f, 0xc7, 0xed, 0x00}}},
     {{{   140,   -168,    171}, 0, {     0,      0}, {0x76, 0xd8, 0x15, 0x00}}},
     {{{   130,   -287,      0}, 0, {     0,      0}, {0x58, 0xa6, 0xfc, 0x00}}},
@@ -269,7 +269,7 @@ static const Vtx blargg_seg5_vertex_05005250[] = {
 };
 
 // 0x05005340
-static const Vtx blargg_seg5_vertex_05005340[] = {
+ const Vtx blargg_seg5_vertex_05005340[] = {
     {{{   617,     23,    154}, 0, {     0,      0}, {0x6b, 0xdf, 0x3b, 0x00}}},
     {{{   555,   -242,    127}, 0, {     0,      0}, {0x43, 0xba, 0x50, 0x00}}},
     {{{   571,   -260,      0}, 0, {     0,      0}, {0x7a, 0xdd, 0x00, 0x00}}},
@@ -283,7 +283,7 @@ static const Vtx blargg_seg5_vertex_05005340[] = {
 };
 
 // 0x050053E0
-static const Vtx blargg_seg5_vertex_050053E0[] = {
+ const Vtx blargg_seg5_vertex_050053E0[] = {
     {{{  -243,    -48,    -45}, 0, {     0,      0}, {0xf9, 0xf0, 0x83, 0x00}}},
     {{{  -104,   -120,    -43}, 0, {     0,      0}, {0xfa, 0xf0, 0x83, 0x00}}},
     {{{  -200,   -235,    -23}, 0, {     0,      0}, {0xf9, 0xf0, 0x83, 0x00}}},
@@ -303,7 +303,7 @@ static const Vtx blargg_seg5_vertex_050053E0[] = {
 };
 
 // 0x050054E0
-static const Vtx blargg_seg5_vertex_050054E0[] = {
+ const Vtx blargg_seg5_vertex_050054E0[] = {
     {{{  -298,   -186,    -23}, 0, {     0,      0}, {0xc8, 0x8f, 0x00, 0x00}}},
     {{{  -200,   -235,    -23}, 0, {     0,      0}, {0xc8, 0x8f, 0x00, 0x00}}},
     {{{  -200,   -235,     23}, 0, {     0,      0}, {0xc8, 0x8f, 0x00, 0x00}}},
@@ -323,7 +323,7 @@ static const Vtx blargg_seg5_vertex_050054E0[] = {
 };
 
 // 0x050055E0
-static const Vtx blargg_seg5_vertex_050055E0[] = {
+ const Vtx blargg_seg5_vertex_050055E0[] = {
     {{{   -70,   -105,     53}, 0, {     0,      0}, {0x86, 0xdf, 0x00, 0x00}}},
     {{{   -70,   -105,    -52}, 0, {     0,      0}, {0x86, 0xdf, 0x00, 0x00}}},
     {{{   -24,   -273,    -27}, 0, {     0,      0}, {0x86, 0xdf, 0x00, 0x00}}},
@@ -343,7 +343,7 @@ static const Vtx blargg_seg5_vertex_050055E0[] = {
 };
 
 // 0x050056E0
-static const Vtx blargg_seg5_vertex_050056E0[] = {
+ const Vtx blargg_seg5_vertex_050056E0[] = {
     {{{   127,   -116,   -102}, 0, {     0,      0}, {0x26, 0x96, 0xc8, 0x00}}},
     {{{   127,   -116,    102}, 0, {     0,      0}, {0x26, 0x96, 0x38, 0x00}}},
     {{{  -114,   -139,     64}, 0, {     0,      0}, {0xe0, 0x92, 0x35, 0x00}}},
@@ -363,7 +363,7 @@ static const Vtx blargg_seg5_vertex_050056E0[] = {
 };
 
 // 0x050057E0
-static const Vtx blargg_seg5_vertex_050057E0[] = {
+ const Vtx blargg_seg5_vertex_050057E0[] = {
     {{{   146,     26,    196}, 0, {     0,      0}, {0x20, 0xcb, 0x6e, 0x00}}},
     {{{   288,    -17,     53}, 0, {     0,      0}, {0x64, 0xc7, 0x34, 0x00}}},
     {{{   286,    227,    123}, 0, {     0,      0}, {0x73, 0xf4, 0x32, 0x00}}},

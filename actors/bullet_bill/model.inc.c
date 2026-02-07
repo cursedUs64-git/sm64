@@ -1,23 +1,23 @@
 // Bullet Bill
 
 // 0x0500BA90
-static const Lights1 bullet_bill_seg5_lights_0500BA90 = gdSPDefLights1(
+ const Lights1 bullet_bill_seg5_lights_0500BA90 = gdSPDefLights1(
     0x06, 0x07, 0x14,
     0x19, 0x1c, 0x52, 0x28, 0x28, 0x28
 );
 
 // 0x0500BAA8
-ALIGNED8 static const Texture bullet_bill_seg5_texture_0500BAA8[] = {
+ALIGNED8  const Texture bullet_bill_seg5_texture_0500BAA8[] = {
 #include "actors/bullet_bill/bullet_bill_eye.rgba16.inc.c"
 };
 
 // 0x0500CAA8
-ALIGNED8 static const Texture bullet_bill_seg5_texture_0500CAA8[] = {
+ALIGNED8  const Texture bullet_bill_seg5_texture_0500CAA8[] = {
 #include "actors/bullet_bill/bullet_bill_mouth.rgba16.inc.c"
 };
 
 // 0x0500DAA8
-static const Vtx bullet_bill_seg5_vertex_0500DAA8[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DAA8[] = {
     {{{  -195,      0,    272}, 0, {   884,   1044}, {0x9e, 0x02, 0x50, 0xff}}},
     {{{  -138,    139,    272}, 0, {   884,   -180}, {0xbc, 0x47, 0x50, 0xff}}},
     {{{  -176,    177,    161}, 0, {  2304,   -208}, {0x9e, 0x4a, 0x1c, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DAA8[] = {
 };
 
 // 0x0500DB98
-static const Vtx bullet_bill_seg5_vertex_0500DB98[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DB98[] = {
     {{{    71,     71,    347}, 0, {  -304,   -134}, {0x1c, 0x1c, 0x78, 0xff}}},
     {{{   101,      0,    347}, 0, {  -480,    478}, {0x36, 0x00, 0x72, 0xff}}},
     {{{   139,    139,    272}, 0, {   960,   -306}, {0x48, 0x3e, 0x53, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DB98[] = {
 };
 
 // 0x0500DC28
-static const Vtx bullet_bill_seg5_vertex_0500DC28[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DC28[] = {
     {{{   -70,     71,    347}, 0, {   508,   -448}, {0xf0, 0x15, 0x7c, 0xff}}},
     {{{     0,   -100,    347}, 0, {   996,    556}, {0xfa, 0xd0, 0x75, 0xff}}},
     {{{    71,    -70,    347}, 0, {  1480,    384}, {0x1d, 0xd9, 0x74, 0xff}}},
@@ -68,7 +68,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DC28[] = {
 };
 
 // 0x0500DD18
-static const Vtx bullet_bill_seg5_vertex_0500DD18[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DD18[] = {
     {{{   -70,     71,    347}, 0, {   508,   -448}, {0xf0, 0x15, 0x7c, 0xff}}},
     {{{   -70,    -70,    347}, 0, {   508,    384}, {0xd9, 0xe3, 0x74, 0xff}}},
     {{{     0,   -100,    347}, 0, {   996,    556}, {0xfa, 0xd0, 0x75, 0xff}}},
@@ -87,7 +87,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DD18[] = {
 };
 
 // 0x0500DE08
-static const Vtx bullet_bill_seg5_vertex_0500DE08[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DE08[] = {
     {{{   -70,    -70,    347}, 0, {   508,    384}, {0xd9, 0xe3, 0x74, 0xff}}},
     {{{  -195,      0,    272}, 0, {  -336,      0}, {0x9e, 0x02, 0x50, 0xff}}},
     {{{  -138,   -138,    272}, 0, {    52,    776}, {0xb9, 0xbd, 0x50, 0xff}}},
@@ -103,7 +103,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DE08[] = {
 };
 
 // 0x0500DEC8
-static const Vtx bullet_bill_seg5_vertex_0500DEC8[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DEC8[] = {
     {{{  -176,   -176,   -192}, 0, {     0,      0}, {0xd6, 0xe0, 0x8d, 0xff}}},
     {{{   250,      0,   -192}, 0, {     0,      0}, {0x66, 0xf2, 0xb7, 0xff}}},
     {{{   177,   -176,   -192}, 0, {     0,      0}, {0x3e, 0xae, 0xb7, 0xff}}},
@@ -122,7 +122,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DEC8[] = {
 };
 
 // 0x0500DFB8
-static const Vtx bullet_bill_seg5_vertex_0500DFB8[] = {
+ const Vtx bullet_bill_seg5_vertex_0500DFB8[] = {
     {{{   139,   -138,    272}, 0, {     0,      0}, {0x4a, 0xbc, 0x4c, 0xff}}},
     {{{   177,   -176,    161}, 0, {     0,      0}, {0x5f, 0xb0, 0x16, 0xff}}},
     {{{   250,      0,    161}, 0, {     0,      0}, {0x7a, 0x07, 0x20, 0xff}}},
@@ -141,7 +141,7 @@ static const Vtx bullet_bill_seg5_vertex_0500DFB8[] = {
 };
 
 // 0x0500E0A8
-static const Vtx bullet_bill_seg5_vertex_0500E0A8[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E0A8[] = {
     {{{     0,   -249,   -192}, 0, {     0,      0}, {0xf0, 0x8a, 0xd6, 0xff}}},
     {{{     0,   -249,    161}, 0, {     0,      0}, {0x10, 0x86, 0x1c, 0xff}}},
     {{{  -176,   -176,    161}, 0, {     0,      0}, {0xb6, 0x9e, 0x1c, 0xff}}},
@@ -160,7 +160,7 @@ static const Vtx bullet_bill_seg5_vertex_0500E0A8[] = {
 };
 
 // 0x0500E198
-static const Vtx bullet_bill_seg5_vertex_0500E198[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E198[] = {
     {{{   177,    177,   -192}, 0, {     0,      0}, {0x52, 0x3e, 0xb7, 0xff}}},
     {{{   177,    177,    161}, 0, {     0,      0}, {0x4a, 0x62, 0x1c, 0xff}}},
     {{{   250,      0,    161}, 0, {     0,      0}, {0x7a, 0x07, 0x20, 0xff}}},
@@ -179,7 +179,7 @@ static const Vtx bullet_bill_seg5_vertex_0500E198[] = {
 };
 
 // 0x0500E288
-static const Vtx bullet_bill_seg5_vertex_0500E288[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E288[] = {
     {{{     0,    196,    272}, 0, {     0,      0}, {0x02, 0x62, 0x50, 0xff}}},
     {{{   139,    139,    272}, 0, {     0,      0}, {0x48, 0x3e, 0x53, 0xff}}},
     {{{   177,    177,    161}, 0, {     0,      0}, {0x4a, 0x62, 0x1c, 0xff}}},
@@ -198,7 +198,7 @@ static const Vtx bullet_bill_seg5_vertex_0500E288[] = {
 };
 
 // 0x0500E378
-static const Vtx bullet_bill_seg5_vertex_0500E378[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E378[] = {
     {{{  -138,    139,    272}, 0, {     0,      0}, {0xbc, 0x47, 0x50, 0xff}}},
     {{{     0,    196,    272}, 0, {     0,      0}, {0x02, 0x62, 0x50, 0xff}}},
     {{{     0,    250,    161}, 0, {     0,      0}, {0xef, 0x7a, 0x1c, 0xff}}},
@@ -217,7 +217,7 @@ static const Vtx bullet_bill_seg5_vertex_0500E378[] = {
 };
 
 // 0x0500E468
-static const Vtx bullet_bill_seg5_vertex_0500E468[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E468[] = {
     {{{  -176,   -176,   -192}, 0, {     0,      0}, {0xd6, 0xe0, 0x8d, 0xff}}},
     {{{  -249,      0,    161}, 0, {     0,      0}, {0x86, 0xef, 0x1c, 0xff}}},
     {{{  -249,      0,   -192}, 0, {     0,      0}, {0x8a, 0x10, 0xd6, 0xff}}},
@@ -236,7 +236,7 @@ static const Vtx bullet_bill_seg5_vertex_0500E468[] = {
 };
 
 // 0x0500E558
-static const Vtx bullet_bill_seg5_vertex_0500E558[] = {
+ const Vtx bullet_bill_seg5_vertex_0500E558[] = {
     {{{   -70,     71,    347}, 0, {     0,      0}, {0xf0, 0x15, 0x7c, 0xff}}},
     {{{     0,    196,    272}, 0, {     0,      0}, {0x02, 0x62, 0x50, 0xff}}},
     {{{  -138,    139,    272}, 0, {     0,      0}, {0xbc, 0x47, 0x50, 0xff}}},

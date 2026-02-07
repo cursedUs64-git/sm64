@@ -1,11 +1,11 @@
 // 0x07021AC8 - 0x07021AE0
-static const Lights1 ssl_seg7_lights_07021AC8 = gdSPDefLights1(
+ const Lights1 ssl_seg7_lights_07021AC8 = gdSPDefLights1(
     0x46, 0x46, 0x46,
     0x8c, 0x8c, 0x8c, 0x28, 0x28, 0x28
 );
 
 // 0x07021AE0 - 0x07021BA0
-static const Vtx ssl_seg7_vertex_07021AE0[] = {
+ const Vtx ssl_seg7_vertex_07021AE0[] = {
     {{{   947,  -3224,  -1855}, 0, { -3608,   4668}, {0x71, 0x00, 0x38, 0x00}}},
     {{{   947,  -3224,  -3954}, 0, {  4772,   4668}, {0x59, 0x00, 0x59, 0x00}}},
     {{{   947,  -2200,  -3954}, 0, {  4772,    582}, {0x59, 0x00, 0x59, 0xff}}},
@@ -21,7 +21,7 @@ static const Vtx ssl_seg7_vertex_07021AE0[] = {
 };
 
 // 0x07021BA0 - 0x07021C90
-static const Vtx ssl_seg7_vertex_07021BA0[] = {
+ const Vtx ssl_seg7_vertex_07021BA0[] = {
     {{{ -2559,  -3224,  -3954}, 0, { -9228,   7120}, {0x59, 0x00, 0x59, 0x00}}},
     {{{  -946,  -3224,  -3954}, 0, { -2790,   7120}, {0x8f, 0x00, 0x38, 0x00}}},
     {{{  -946,  -2200,  -3954}, 0, { -2790,   3032}, {0xc8, 0x00, 0x71, 0xff}}},
@@ -40,7 +40,7 @@ static const Vtx ssl_seg7_vertex_07021BA0[] = {
 };
 
 // 0x07021C90 - 0x07021D00
-static const Vtx ssl_seg7_vertex_07021C90[] = {
+ const Vtx ssl_seg7_vertex_07021C90[] = {
     {{{  2560,  -2200,   -370}, 0, { -9228,    990}, {0xc8, 0x00, 0x8f, 0xff}}},
     {{{  2560,  -3224,   -370}, 0, { -9228,   5076}, {0x8f, 0x00, 0xc8, 0x00}}},
     {{{ -2559,  -3224,   -370}, 0, { 11210,   5076}, {0x38, 0x00, 0x8f, 0x00}}},
@@ -51,7 +51,7 @@ static const Vtx ssl_seg7_vertex_07021C90[] = {
 };
 
 // 0x07021D00 - 0x07021D68
-static const Gfx ssl_seg7_dl_07021D00[] = {
+ const Gfx ssl_seg7_dl_07021D00[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, generic_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -65,7 +65,7 @@ static const Gfx ssl_seg7_dl_07021D00[] = {
 };
 
 // 0x07021D68 - 0x07021DE8
-static const Gfx ssl_seg7_dl_07021D68[] = {
+ const Gfx ssl_seg7_dl_07021D68[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, generic_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,17 +1,17 @@
 // 0x07011BE0 - 0x07011BF8
-static const Lights1 ttc_seg7_lights_07011BE0 = gdSPDefLights1(
+ const Lights1 ttc_seg7_lights_07011BE0 = gdSPDefLights1(
     0x46, 0x46, 0x46,
     0x8c, 0x8c, 0x8c, 0x28, 0x28, 0x28
 );
 
 // 0x07011BF8 - 0x07011C10
-static const Lights1 ttc_seg7_lights_07011BF8 = gdSPDefLights1(
+ const Lights1 ttc_seg7_lights_07011BF8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x07011C10 - 0x07011D10
-static const Vtx ttc_seg7_vertex_07011C10[] = {
+ const Vtx ttc_seg7_vertex_07011C10[] = {
     {{{  -153,    -25,     26}, 0, {   734,    436}, {0xd6, 0x98, 0x3b, 0xff}}},
     {{{   154,    -50,      0}, 0, {   224,    478}, {0x33, 0x92, 0x22, 0xff}}},
     {{{   154,    -25,     26}, 0, {   224,    436}, {0x75, 0xd3, 0x0b, 0xff}}},
@@ -31,7 +31,7 @@ static const Vtx ttc_seg7_vertex_07011C10[] = {
 };
 
 // 0x07011D10 - 0x07011DC0
-static const Vtx ttc_seg7_vertex_07011D10[] = {
+ const Vtx ttc_seg7_vertex_07011D10[] = {
     {{{   154,     26,   -306}, 0, {   224,    990}, {0x54, 0x2a, 0xac, 0xff}}},
     {{{   154,    -25,   -306}, 0, {   224,    990}, {0x49, 0xb7, 0xb7, 0xff}}},
     {{{  -153,    -25,   -306}, 0, {   734,    990}, {0xd6, 0xac, 0xac, 0xff}}},
@@ -46,7 +46,7 @@ static const Vtx ttc_seg7_vertex_07011D10[] = {
 };
 
 // 0x07011DC0 - 0x07011EC0
-static const Vtx ttc_seg7_vertex_07011DC0[] = {
+ const Vtx ttc_seg7_vertex_07011DC0[] = {
     {{{  -153,    -25,   -306}, 0, {   734,    990}, {0xd6, 0xac, 0xac, 0xff}}},
     {{{   154,    -25,   -306}, 0, {   224,    990}, {0x49, 0xb7, 0xb7, 0xff}}},
     {{{   154,    -25,    -25}, 0, {   224,    522}, {0x21, 0x8f, 0xd2, 0xff}}},
@@ -66,7 +66,7 @@ static const Vtx ttc_seg7_vertex_07011DC0[] = {
 };
 
 // 0x07011EC0 - 0x07012028
-static const Gfx ttc_seg7_dl_07011EC0[] = {
+ const Gfx ttc_seg7_dl_07011EC0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, machine_09006800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

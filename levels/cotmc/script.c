@@ -16,14 +16,14 @@
 #include "make_const_nonconst.h"
 #include "levels/cotmc/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript cotmc_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_CAP_SWITCH, /*pos*/ 0,  363, -6144, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM2(0x01), /*bhv*/ bhvCapSwitch),
     OBJECT(/*model*/ MODEL_NONE,       /*pos*/ 0,  500, -7373, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvWaterfallSoundLoop),
     OBJECT(/*model*/ MODEL_NONE,       /*pos*/ 0,  500,  3584, /*angle*/ 0, 0, 0, /*bhvParam*/ 0, /*bhv*/ bhvWaterfallSoundLoop),
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript cotmc_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_NONE,       /*pos*/ 0, -200, -7000, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvHiddenRedCoinStar),
     RETURN(),
 };
@@ -50,8 +50,8 @@ const LevelScript level_cotmc_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS,    /*destLevel*/ LEVEL_CASTLE,         /*destArea*/ 3, /*destNode*/ WARP_NODE_34, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,      /*destLevel*/ LEVEL_CASTLE,         /*destArea*/ 3, /*destNode*/ WARP_NODE_66, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_WARP_FLOOR, /*destLevel*/ LEVEL_CASTLE_GROUNDS, /*destArea*/ 1, /*destNode*/ WARP_NODE_14, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_1),
+        JUMP_LINK(cotmc_script_func_local_2),
+        JUMP_LINK(cotmc_script_func_local_1),
         TERRAIN(/*terrainData*/ cotmc_seg7_collision_level),
         MACRO_OBJECTS(/*objList*/ cotmc_seg7_macro_objs),
         SHOW_DIALOG(/*index*/ 0x00, DIALOG_130),

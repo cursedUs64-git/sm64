@@ -53,4 +53,4 @@ const GeoLayout mips_geo[] = {
     GEO_END(),
 };
 
-UNUSED static const u64 mips_unused_1 = 0;
+UNUSED  const u64 mips_unused_1 = 0;

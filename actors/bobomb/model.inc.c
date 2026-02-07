@@ -1,37 +1,37 @@
 // Bobomb
 
 // 0x0801DA60
-ALIGNED8 static const Texture bobomb_seg8_texture_0801DA60[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_0801DA60[] = {
 #include "actors/bobomb/bob-omb_left_side.rgba16.inc.c"
 };
 
 // 0x0801EA60
-ALIGNED8 static const Texture bobomb_seg8_texture_0801EA60[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_0801EA60[] = {
 #include "actors/bobomb/bob-omb_right_side.rgba16.inc.c"
 };
 
 // 0x0801FA60
-ALIGNED8 static const Texture bobomb_seg8_texture_0801FA60[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_0801FA60[] = {
 #include "actors/bobomb/bob-omb_buddy_left_side.rgba16.inc.c"
 };
 
 // 0x08020A60
-ALIGNED8 static const Texture bobomb_seg8_texture_08020A60[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_08020A60[] = {
 #include "actors/bobomb/bob-omb_buddy_right_side.rgba16.inc.c"
 };
 
 // 0x08021A60
-ALIGNED8 static const Texture bobomb_seg8_texture_08021A60[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_08021A60[] = {
 #include "actors/bobomb/bob-omb_eyes.rgba16.inc.c"
 };
 
 // 0x08022260
-ALIGNED8 static const Texture bobomb_seg8_texture_08022260[] = {
+ALIGNED8  const Texture bobomb_seg8_texture_08022260[] = {
 #include "actors/bobomb/bob-omb_eyes_blink.rgba16.inc.c"
 };
 
 // 0x08022A60
-static const Vtx bobomb_seg8_vertex_08022A60[] = {
+ const Vtx bobomb_seg8_vertex_08022A60[] = {
     {{{   133,    -47,      0}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   133,     32,      0}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   128,     32,     50}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -86,7 +86,7 @@ const Gfx bobomb_seg8_dl_08022B88[] = {
 };
 
 // 0x08022BB8
-static const Vtx bobomb_seg8_vertex_08022BB8[] = {
+ const Vtx bobomb_seg8_vertex_08022BB8[] = {
     {{{     0,     49,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -49,    -49,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -49,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx bobomb_seg8_vertex_08022BB8[] = {
 };
 
 // 0x08022BF8
-static const Vtx bobomb_seg8_vertex_08022BF8[] = {
+ const Vtx bobomb_seg8_vertex_08022BF8[] = {
     {{{    49,     49,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -49,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    49,    -49,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -168,25 +168,25 @@ const Gfx bobomb_seg8_dl_08022D78[] = {
 };
 
 // 0x08022DE8
-static const Lights1 bobomb_seg8_lights_08022DE8 = gdSPDefLights1(
+ const Lights1 bobomb_seg8_lights_08022DE8 = gdSPDefLights1(
     0x3f, 0x26, 0x04,
     0xff, 0x99, 0x12, 0x28, 0x28, 0x28
 );
 
 // 0x08022E00
-static const Lights1 bobomb_seg8_lights_08022E00 = gdSPDefLights1(
+ const Lights1 bobomb_seg8_lights_08022E00 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-static const Lights1 bobomb_lights_unused = gdSPDefLights1(
+ const Lights1 bobomb_lights_unused = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08022E30
-static const Vtx bobomb_seg8_vertex_08022E30[] = {
+ const Vtx bobomb_seg8_vertex_08022E30[] = {
     {{{    27,    -26,    -31}, 0, {     0,      0}, {0xeb, 0x96, 0xbf, 0x00}}},
     {{{   -36,      0,    -20}, 0, {     0,      0}, {0xb1, 0xd0, 0xaa, 0x00}}},
     {{{    32,      0,    -41}, 0, {     0,      0}, {0xfc, 0xfb, 0x82, 0x00}}},
@@ -206,7 +206,7 @@ static const Vtx bobomb_seg8_vertex_08022E30[] = {
 };
 
 // 0x08022F30
-static const Vtx bobomb_seg8_vertex_08022F30[] = {
+ const Vtx bobomb_seg8_vertex_08022F30[] = {
     {{{    27,    -26,    -31}, 0, {     0,      0}, {0xed, 0x90, 0xc8, 0xff}}},
     {{{    27,    -26,     27}, 0, {     0,      0}, {0xf5, 0xa2, 0x53, 0x00}}},
     {{{   -36,      0,     16}, 0, {     0,      0}, {0xa2, 0xf8, 0x54, 0x00}}},
@@ -214,7 +214,7 @@ static const Vtx bobomb_seg8_vertex_08022F30[] = {
 };
 
 // 0x08022F70
-static const Vtx bobomb_seg8_vertex_08022F70[] = {
+ const Vtx bobomb_seg8_vertex_08022F70[] = {
     {{{    32,      0,     41}, 0, {     0,      0}, {0xfc, 0xfb, 0x7e, 0x00}}},
     {{{   -36,      0,     20}, 0, {     0,      0}, {0xb1, 0xd0, 0x56, 0x00}}},
     {{{    27,    -26,     31}, 0, {     0,      0}, {0xeb, 0x96, 0x41, 0x00}}},
@@ -234,7 +234,7 @@ static const Vtx bobomb_seg8_vertex_08022F70[] = {
 };
 
 // 0x08023070
-static const Vtx bobomb_seg8_vertex_08023070[] = {
+ const Vtx bobomb_seg8_vertex_08023070[] = {
     {{{    27,    -26,    -27}, 0, {     0,      0}, {0xed, 0x90, 0xc8, 0xff}}},
     {{{    27,    -26,     31}, 0, {     0,      0}, {0xf5, 0xa2, 0x53, 0x00}}},
     {{{   -36,      0,     20}, 0, {     0,      0}, {0xa2, 0xf8, 0x54, 0x00}}},
@@ -242,7 +242,7 @@ static const Vtx bobomb_seg8_vertex_08023070[] = {
 };
 
 // 0x080230B0
-static const Vtx bobomb_seg8_vertex_080230B0[] = {
+ const Vtx bobomb_seg8_vertex_080230B0[] = {
     {{{     0,   -100,     59}, 0, {     0,      0}, {0x00, 0xfe, 0x7f, 0x00}}},
     {{{   -53,    -99,     28}, 0, {     0,      0}, {0xc1, 0xfe, 0x6d, 0x00}}},
     {{{   -53,   -140,     27}, 0, {     0,      0}, {0xc1, 0xfe, 0x6d, 0x00}}},
@@ -260,7 +260,7 @@ static const Vtx bobomb_seg8_vertex_080230B0[] = {
 };
 
 // 0x08023190
-static const Vtx bobomb_seg8_vertex_08023190[] = {
+ const Vtx bobomb_seg8_vertex_08023190[] = {
     {{{    53,    -98,    -32}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    53,    -99,     28}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    53,   -140,     27}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},

@@ -1,28 +1,28 @@
 // Dorrie
 
 // 0x06009BA0
-ALIGNED8 static const Texture dorrie_seg6_texture_06009BA0[] = {
+ALIGNED8  const Texture dorrie_seg6_texture_06009BA0[] = {
 #include "actors/dorrie/dorrie_eye.rgba16.inc.c"
 };
 
 // 0x06009DA0
-ALIGNED8 static const Texture dorrie_seg6_texture_06009DA0[] = {
+ALIGNED8  const Texture dorrie_seg6_texture_06009DA0[] = {
 #include "actors/dorrie/dorrie_skin.rgba16.inc.c"
 };
 
 // 0x0600ADA0
-ALIGNED8 static const Texture dorrie_seg6_texture_0600ADA0[] = {
+ALIGNED8  const Texture dorrie_seg6_texture_0600ADA0[] = {
 #include "actors/dorrie/dorrie_tongue.rgba16.inc.c"
 };
 
 // 0x0600B5A0
-static const Lights1 dorrie_seg6_lights_0600B5A0 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600B5A0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600B5B8
-static const Vtx dorrie_seg6_vertex_0600B5B8[] = {
+ const Vtx dorrie_seg6_vertex_0600B5B8[] = {
     {{{   -22,   1201,   -234}, 0, {   672,    994}, {0xc5, 0x6a, 0xdd, 0xff}}},
     {{{   -51,    746,    492}, 0, {   -52,    582}, {0xad, 0x15, 0x5d, 0xff}}},
     {{{   -22,   1201,    234}, 0, {   204,    994}, {0xd6, 0x68, 0x3a, 0xff}}},
@@ -32,7 +32,7 @@ static const Vtx dorrie_seg6_vertex_0600B5B8[] = {
 };
 
 // 0x0600B618
-static const Vtx dorrie_seg6_vertex_0600B618[] = {
+ const Vtx dorrie_seg6_vertex_0600B618[] = {
     {{{   313,    758,   -422}, 0, {   606,    720}, {0x42, 0x27, 0x9b, 0xff}}},
     {{{   345,   1135,   -185}, 0, {   568,    464}, {0x45, 0x50, 0xbb, 0xff}}},
     {{{   487,    752,   -178}, 0, {   540,    696}, {0x68, 0x38, 0xd4, 0xff}}},
@@ -52,7 +52,7 @@ static const Vtx dorrie_seg6_vertex_0600B618[] = {
 };
 
 // 0x0600B718
-static const Vtx dorrie_seg6_vertex_0600B718[] = {
+ const Vtx dorrie_seg6_vertex_0600B718[] = {
     {{{   778,    532,    166}, 0, {   466,    796}, {0x6b, 0x25, 0x38, 0xff}}},
     {{{   349,    372,    482}, 0, {   388,    948}, {0x2c, 0x14, 0x75, 0xff}}},
     {{{   568,     -9,    418}, 0, {   420,   1172}, {0x3b, 0xdc, 0x6a, 0xff}}},
@@ -71,7 +71,7 @@ static const Vtx dorrie_seg6_vertex_0600B718[] = {
 };
 
 // 0x0600B808
-static const Vtx dorrie_seg6_vertex_0600B808[] = {
+ const Vtx dorrie_seg6_vertex_0600B808[] = {
     {{{    91,     29,   -516}, 0, {   628,   1228}, {0xf2, 0xe8, 0x85, 0xff}}},
     {{{    46,   -407,   -301}, 0, {   582,   1512}, {0xee, 0x9e, 0xb3, 0xff}}},
     {{{  -269,     26,   -300}, 0, {   696,   1268}, {0x92, 0xe3, 0xca, 0xff}}},
@@ -167,13 +167,13 @@ const Gfx dorrie_seg6_dl_0600BAF8[] = {
 };
 
 // 0x0600BBC0
-static const Lights1 dorrie_seg6_lights_0600BBC0 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600BBC0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600BBD8
-static const Vtx dorrie_seg6_vertex_0600BBD8[] = {
+ const Vtx dorrie_seg6_vertex_0600BBD8[] = {
     {{{   442,     17,   -243}, 0, {   220,    696}, {0xdb, 0x88, 0x0b, 0xff}}},
     {{{   442,     17,    253}, 0, {   716,    696}, {0xdf, 0x86, 0xf6, 0xff}}},
     {{{  -109,    -18,    237}, 0, {   700,    208}, {0xed, 0x83, 0x06, 0xff}}},
@@ -189,7 +189,7 @@ static const Vtx dorrie_seg6_vertex_0600BBD8[] = {
 };
 
 // 0x0600BC98
-static const Vtx dorrie_seg6_vertex_0600BC98[] = {
+ const Vtx dorrie_seg6_vertex_0600BC98[] = {
     {{{  -272,    375,    253}, 0, {   -80,   1972}, {0xbc, 0x66, 0x1c, 0xff}}},
     {{{  -345,     87,   -456}, 0, {    58,   2052}, {0x99, 0xcf, 0xcb, 0xff}}},
     {{{  -345,     87,    467}, 0, {  -122,   2052}, {0xa2, 0xda, 0x4c, 0xff}}},
@@ -209,7 +209,7 @@ static const Vtx dorrie_seg6_vertex_0600BC98[] = {
 };
 
 // 0x0600BD98
-static const Vtx dorrie_seg6_vertex_0600BD98[] = {
+ const Vtx dorrie_seg6_vertex_0600BD98[] = {
     {{{   498,    236,   -165}, 0, {     0,   1120}, {0x41, 0x64, 0xd7, 0xff}}},
     {{{   456,     72,   -407}, 0, {    48,   1164}, {0x44, 0x34, 0xa4, 0xff}}},
     {{{   -28,    276,   -491}, 0, {    64,   1704}, {0x09, 0x44, 0x96, 0xff}}},
@@ -298,13 +298,13 @@ const Gfx dorrie_seg6_dl_0600C030[] = {
 };
 
 // 0x0600C0F8
-static const Lights1 dorrie_seg6_lights_0600C0F8 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600C0F8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600C110
-static const Vtx dorrie_seg6_vertex_0600C110[] = {
+ const Vtx dorrie_seg6_vertex_0600C110[] = {
     {{{  1090,    -93,    204}, 0, {   340,    152}, {0x64, 0xc3, 0x30, 0xff}}},
     {{{   852,   -373,   -231}, 0, {   558,    336}, {0x3f, 0x98, 0xdf, 0xff}}},
     {{{  1090,    -93,   -205}, 0, {   612,    144}, {0x5c, 0xe0, 0xaf, 0xff}}},
@@ -324,7 +324,7 @@ static const Vtx dorrie_seg6_vertex_0600C110[] = {
 };
 
 // 0x0600C210
-static const Vtx dorrie_seg6_vertex_0600C210[] = {
+ const Vtx dorrie_seg6_vertex_0600C210[] = {
     {{{  1090,    -93,   -205}, 0, {   612,    144}, {0x5c, 0xe0, 0xaf, 0xff}}},
     {{{   852,   -373,   -231}, 0, {   558,    336}, {0x3f, 0x98, 0xdf, 0xff}}},
     {{{   837,   -121,   -437}, 0, {   668,    324}, {0x32, 0xda, 0x93, 0xff}}},
@@ -399,13 +399,13 @@ const Gfx dorrie_seg6_dl_0600C468[] = {
 };
 
 // 0x0600C510
-static const Lights1 dorrie_seg6_lights_0600C510 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600C510 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600C528
-static const Vtx dorrie_seg6_vertex_0600C528[] = {
+ const Vtx dorrie_seg6_vertex_0600C528[] = {
     {{{    19,    -22,   -821}, 0, {   674,   1540}, {0xea, 0xfb, 0x84, 0xff}}},
     {{{   187,    693,   -578}, 0, {   822,   1620}, {0x1c, 0x5d, 0xb0, 0xff}}},
     {{{  1057,    309,   -449}, 0, {   834,    920}, {0x50, 0x27, 0xa6, 0xff}}},
@@ -425,7 +425,7 @@ static const Vtx dorrie_seg6_vertex_0600C528[] = {
 };
 
 // 0x0600C628
-static const Vtx dorrie_seg6_vertex_0600C628[] = {
+ const Vtx dorrie_seg6_vertex_0600C628[] = {
     {{{   187,    693,    571}, 0, {   118,   1652}, {0x1c, 0x4c, 0x61, 0xff}}},
     {{{    19,    -22,    822}, 0, {   294,   1584}, {0xe4, 0xe8, 0x79, 0xff}}},
     {{{   899,   -211,    569}, 0, {   284,    920}, {0x3f, 0xef, 0x6c, 0xff}}},
@@ -445,7 +445,7 @@ static const Vtx dorrie_seg6_vertex_0600C628[] = {
 };
 
 // 0x0600C728
-static const Vtx dorrie_seg6_vertex_0600C728[] = {
+ const Vtx dorrie_seg6_vertex_0600C728[] = {
     {{{   899,   -211,    569}, 0, {  1306,    920}, {0x3f, 0xef, 0x6c, 0xff}}},
     {{{  1185,   -300,    304}, 0, {  1340,    692}, {0x50, 0xad, 0x33, 0xff}}},
     {{{  1290,    174,      0}, 0, {   980,    736}, {0x79, 0x1f, 0x15, 0xff}}},
@@ -508,13 +508,13 @@ const Gfx dorrie_seg6_dl_0600C8B8[] = {
 };
 
 // 0x0600C960
-static const Lights1 dorrie_seg6_lights_0600C960 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600C960 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600C978
-static const Vtx dorrie_seg6_vertex_0600C978[] = {
+ const Vtx dorrie_seg6_vertex_0600C978[] = {
     {{{  1085,   -101,  -1112}, 0, {   710,    924}, {0x34, 0xd6, 0x95, 0xff}}},
     {{{   934,   -870,   -414}, 0, {   558,   1232}, {0x4e, 0xa0, 0xe8, 0xff}}},
     {{{   154,  -1257,   -586}, 0, {   584,   1788}, {0x11, 0x8e, 0xcc, 0xff}}},
@@ -533,7 +533,7 @@ static const Vtx dorrie_seg6_vertex_0600C978[] = {
 };
 
 // 0x0600CA68
-static const Vtx dorrie_seg6_vertex_0600CA68[] = {
+ const Vtx dorrie_seg6_vertex_0600CA68[] = {
     {{{  -765,    228,   1204}, 0, {   114,   1888}, {0xc2, 0x11, 0x6c, 0xff}}},
     {{{  -975,   -982,    549}, 0, {   232,   2348}, {0xac, 0xb1, 0x34, 0xff}}},
     {{{  -236,   -788,   1119}, 0, {   250,   1876}, {0xf7, 0xcc, 0x73, 0xff}}},
@@ -552,7 +552,7 @@ static const Vtx dorrie_seg6_vertex_0600CA68[] = {
 };
 
 // 0x0600CB58
-static const Vtx dorrie_seg6_vertex_0600CB58[] = {
+ const Vtx dorrie_seg6_vertex_0600CB58[] = {
     {{{   560,    718,  -1192}, 0, {   830,    992}, {0x18, 0x34, 0x90, 0xff}}},
     {{{  1573,    878,   -612}, 0, {   844,    368}, {0x3a, 0x67, 0xd5, 0xff}}},
     {{{  1832,    492,   -639}, 0, {   742,    332}, {0x64, 0x31, 0xc4, 0xff}}},
@@ -572,7 +572,7 @@ static const Vtx dorrie_seg6_vertex_0600CB58[] = {
 };
 
 // 0x0600CC58
-static const Vtx dorrie_seg6_vertex_0600CC58[] = {
+ const Vtx dorrie_seg6_vertex_0600CC58[] = {
     {{{  -765,    228,   1204}, 0, {   114,   1888}, {0xc2, 0x11, 0x6c, 0xff}}},
     {{{ -1340,   -279,    694}, 0, {    88,   2356}, {0x8a, 0x19, 0x26, 0xff}}},
     {{{  -975,   -982,    549}, 0, {   232,   2348}, {0xac, 0xb1, 0x34, 0xff}}},
@@ -592,7 +592,7 @@ static const Vtx dorrie_seg6_vertex_0600CC58[] = {
 };
 
 // 0x0600CD58
-static const Vtx dorrie_seg6_vertex_0600CD58[] = {
+ const Vtx dorrie_seg6_vertex_0600CD58[] = {
     {{{  1832,    492,   -639}, 0, {   742,    332}, {0x64, 0x31, 0xc4, 0xff}}},
     {{{  1573,    878,    611}, 0, {  1134,    368}, {0x4c, 0x5b, 0x2b, 0xff}}},
     {{{  1832,    492,    638}, 0, {  1238,    332}, {0x62, 0x34, 0x3c, 0xff}}},
@@ -671,13 +671,13 @@ const Gfx dorrie_seg6_dl_0600CFD0[] = {
 };
 
 // 0x0600D078
-static const Lights1 dorrie_seg6_lights_0600D078 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600D078 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600D090
-static const Vtx dorrie_seg6_vertex_0600D090[] = {
+ const Vtx dorrie_seg6_vertex_0600D090[] = {
     {{{   324,   -369,    725}, 0, {   136,   1456}, {0x0a, 0xb0, 0x61, 0xff}}},
     {{{  1263,    236,    383}, 0, {   320,   1800}, {0x33, 0x44, 0x5d, 0xff}}},
     {{{   241,    413,    672}, 0, {   298,   1396}, {0xfb, 0x35, 0x72, 0xff}}},
@@ -696,7 +696,7 @@ static const Vtx dorrie_seg6_vertex_0600D090[] = {
 };
 
 // 0x0600D180
-static const Vtx dorrie_seg6_vertex_0600D180[] = {
+ const Vtx dorrie_seg6_vertex_0600D180[] = {
     {{{   218,   -509,      5}, 0, {   996,   1416}, {0x00, 0x82, 0xfc, 0xff}}},
     {{{  -150,   -380,    431}, 0, {  1110,   1268}, {0xd1, 0xac, 0x51, 0xff}}},
     {{{  -150,   -380,   -420}, 0, {   878,   1264}, {0xd1, 0x97, 0xcc, 0xff}}},
@@ -716,7 +716,7 @@ static const Vtx dorrie_seg6_vertex_0600D180[] = {
 };
 
 // 0x0600D280
-static const Vtx dorrie_seg6_vertex_0600D280[] = {
+ const Vtx dorrie_seg6_vertex_0600D280[] = {
     {{{  1312,   -229,   -372}, 0, {   816,   1836}, {0x3d, 0xb9, 0xac, 0xff}}},
     {{{   241,    413,   -661}, 0, {   656,   1388}, {0x17, 0x46, 0x9a, 0xff}}},
     {{{  1263,    236,   -372}, 0, {   636,   1796}, {0x46, 0x31, 0xa3, 0xff}}},
@@ -782,13 +782,13 @@ const Gfx dorrie_seg6_dl_0600D440[] = {
 };
 
 // 0x0600D4E8
-static const Lights1 dorrie_seg6_lights_0600D4E8 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600D4E8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600D500
-static const Vtx dorrie_seg6_vertex_0600D500[] = {
+ const Vtx dorrie_seg6_vertex_0600D500[] = {
     {{{  1443,      8,      5}, 0, {   484,   2048}, {0x7e, 0xf8, 0x00, 0xff}}},
     {{{   -92,    409,      5}, 0, {   470,    932}, {0xef, 0x7d, 0x00, 0xff}}},
     {{{   -65,    219,    361}, 0, {   316,    960}, {0xe2, 0x2a, 0x73, 0xff}}},
@@ -807,7 +807,7 @@ static const Vtx dorrie_seg6_vertex_0600D500[] = {
 };
 
 // 0x0600D5F0
-static const Vtx dorrie_seg6_vertex_0600D5F0[] = {
+ const Vtx dorrie_seg6_vertex_0600D5F0[] = {
     {{{  1443,      8,      5}, 0, {   502,   2084}, {0x7e, 0xf8, 0x00, 0xff}}},
     {{{     9,   -315,      5}, 0, {  1022,   1052}, {0x12, 0x83, 0x00, 0xff}}},
     {{{    -3,   -224,   -350}, 0, {   840,   1036}, {0xee, 0xb4, 0x9d, 0xff}}},
@@ -859,13 +859,13 @@ const Gfx dorrie_seg6_dl_0600D6D8[] = {
 };
 
 // 0x0600D780
-static const Lights1 dorrie_seg6_lights_0600D780 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600D780 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600D798
-static const Vtx dorrie_seg6_vertex_0600D798[] = {
+ const Vtx dorrie_seg6_vertex_0600D798[] = {
     {{{  1134,    -10,   -867}, 0, {   594,   1972}, {0xdd, 0xc3, 0x97, 0xff}}},
     {{{  2429,    -78,   -421}, 0, {   406,   1676}, {0x62, 0xda, 0x46, 0xff}}},
     {{{  1289,   -124,    319}, 0, {   620,   1500}, {0x17, 0x46, 0x66, 0xff}}},
@@ -919,13 +919,13 @@ const Gfx dorrie_seg6_dl_0600D8B0[] = {
 };
 
 // 0x0600D958
-static const Lights1 dorrie_seg6_lights_0600D958 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600D958 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600D970
-static const Vtx dorrie_seg6_vertex_0600D970[] = {
+ const Vtx dorrie_seg6_vertex_0600D970[] = {
     {{{  1134,    -13,    872}, 0, {   268,   1708}, {0xde, 0xc1, 0x68, 0xff}}},
     {{{  1286,   -114,   -315}, 0, {   328,   1164}, {0x0d, 0x1f, 0x86, 0xff}}},
     {{{  2428,    -73,    422}, 0, {   474,   1360}, {0x56, 0x2a, 0xae, 0xff}}},
@@ -979,13 +979,13 @@ const Gfx dorrie_seg6_dl_0600DA88[] = {
 };
 
 // 0x0600DB30
-static const Lights1 dorrie_seg6_lights_0600DB30 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600DB30 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600DB48
-static const Vtx dorrie_seg6_vertex_0600DB48[] = {
+ const Vtx dorrie_seg6_vertex_0600DB48[] = {
     {{{   864,     32,   -681}, 0, {   572,   1464}, {0xd8, 0xc2, 0x99, 0xff}}},
     {{{   -63,    -44,     97}, 0, {   786,   1880}, {0xa9, 0xea, 0x59, 0xff}}},
     {{{   -60,    106,    -81}, 0, {   782,   1756}, {0xcd, 0x73, 0xfe, 0xff}}},
@@ -1039,13 +1039,13 @@ const Gfx dorrie_seg6_dl_0600DC60[] = {
 };
 
 // 0x0600DD08
-static const Lights1 dorrie_seg6_lights_0600DD08 = gdSPDefLights1(
+ const Lights1 dorrie_seg6_lights_0600DD08 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600DD20
-static const Vtx dorrie_seg6_vertex_0600DD20[] = {
+ const Vtx dorrie_seg6_vertex_0600DD20[] = {
     {{{   981,     88,    -55}, 0, {   478,    736}, {0x0b, 0x75, 0xd3, 0xff}}},
     {{{   -61,     97,     82}, 0, {   288,   1108}, {0xcc, 0x73, 0x03, 0xff}}},
     {{{   864,     24,    682}, 0, {   444,   1372}, {0xd8, 0xc1, 0x66, 0xff}}},
@@ -1099,7 +1099,7 @@ const Gfx dorrie_seg6_dl_0600DE38[] = {
 };
 
 // 0x0600DEE0
-static const Vtx dorrie_seg6_vertex_0600DEE0[] = {
+ const Vtx dorrie_seg6_vertex_0600DEE0[] = {
     {{{   558,    286,    434}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   544,    476,    403}, 0, {   479,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   358,    472,    454}, 0, {   479,    479}, {0xff, 0xff, 0xff, 0xff}}},

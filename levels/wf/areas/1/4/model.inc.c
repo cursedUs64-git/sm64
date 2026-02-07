@@ -1,5 +1,5 @@
 // 0x07005568 - 0x07005658
-static const Vtx wf_seg7_vertex_07005568[] = {
+ const Vtx wf_seg7_vertex_07005568[] = {
     {{{  1270,   2944,   -772}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  1343,   2739,   -844}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  1198,   2739,   -699}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
@@ -18,7 +18,7 @@ static const Vtx wf_seg7_vertex_07005568[] = {
 };
 
 // 0x07005658 - 0x07005690
-static const Gfx wf_seg7_dl_07005658[] = {
+ const Gfx wf_seg7_dl_07005658[] = {
     gsSPVertex(wf_seg7_vertex_07005568, 15, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  3,  4,  5, 0x0),
     gsSP2Triangles( 6,  7,  8, 0x0,  9, 10, 11, 0x0),

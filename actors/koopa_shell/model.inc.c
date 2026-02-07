@@ -1,31 +1,31 @@
 // Koopa Shell
 
 // 0x08026388
-static const Lights1 koopa_shell_seg8_lights_08026388 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_08026388 = gdSPDefLights1(
     0x11, 0x33, 0x06,
     0x45, 0xcd, 0x1a, 0x28, 0x28, 0x28
 );
 
 // 0x080263A0
-static const Lights1 koopa_shell_seg8_lights_080263A0 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_080263A0 = gdSPDefLights1(
     0x39, 0x0a, 0x07,
     0xe4, 0x29, 0x1d, 0x28, 0x28, 0x28
 );
 
 // 0x080263B8
-static const Lights1 koopa_shell_seg8_lights_080263B8 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_080263B8 = gdSPDefLights1(
     0x21, 0x30, 0x39,
     0x84, 0xc3, 0xe5, 0x28, 0x28, 0x28
 );
 
 // 0x080263D0
-static const Lights1 koopa_shell_seg8_lights_080263D0 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_080263D0 = gdSPDefLights1(
     0x3e, 0x3f, 0x3e,
     0xfa, 0xff, 0xf8, 0x28, 0x28, 0x28
 );
 
 // 0x080263E8
-static const Vtx koopa_shell_seg8_vertex_080263E8[] = {
+ const Vtx koopa_shell_seg8_vertex_080263E8[] = {
     {{{   101,     53,     57}, 0, {     0,      0}, {0x53, 0x5e, 0x14, 0xff}}},
     {{{    40,    149,     46}, 0, {     0,      0}, {0x40, 0x6a, 0x1e, 0xff}}},
     {{{     0,     78,    118}, 0, {     0,      0}, {0x00, 0x6d, 0x42, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx koopa_shell_seg8_vertex_080263E8[] = {
 };
 
 // 0x080264D8
-static const Vtx koopa_shell_seg8_vertex_080264D8[] = {
+ const Vtx koopa_shell_seg8_vertex_080264D8[] = {
     {{{     0,    138,    -67}, 0, {     0,      0}, {0x00, 0x69, 0xb8, 0xff}}},
     {{{   -40,    149,     46}, 0, {     0,      0}, {0xc0, 0x6a, 0x1e, 0xff}}},
     {{{    40,    149,     46}, 0, {     0,      0}, {0x40, 0x6a, 0x1e, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx koopa_shell_seg8_vertex_080264D8[] = {
 };
 
 // 0x080265C8
-static const Vtx koopa_shell_seg8_vertex_080265C8[] = {
+ const Vtx koopa_shell_seg8_vertex_080265C8[] = {
     {{{     0,     17,    108}, 0, {     0,      0}, {0x00, 0xab, 0x5f, 0xff}}},
     {{{    46,      0,     60}, 0, {     0,      0}, {0x23, 0x8c, 0x25, 0xff}}},
     {{{    25,     51,    118}, 0, {     0,      0}, {0x14, 0xba, 0x68, 0xff}}},
@@ -82,7 +82,7 @@ static const Vtx koopa_shell_seg8_vertex_080265C8[] = {
 };
 
 // 0x080266B8
-static const Vtx koopa_shell_seg8_vertex_080266B8[] = {
+ const Vtx koopa_shell_seg8_vertex_080266B8[] = {
     {{{    46,      0,    -68}, 0, {     0,      0}, {0x2a, 0x8a, 0xe9, 0xff}}},
     {{{    70,     17,     41}, 0, {     0,      0}, {0x49, 0x98, 0x07, 0xff}}},
     {{{    46,      0,     60}, 0, {     0,      0}, {0x23, 0x8c, 0x25, 0xff}}},
@@ -101,7 +101,7 @@ static const Vtx koopa_shell_seg8_vertex_080266B8[] = {
 };
 
 // 0x080267A8
-static const Vtx koopa_shell_seg8_vertex_080267A8[] = {
+ const Vtx koopa_shell_seg8_vertex_080267A8[] = {
     {{{   -25,     51,    118}, 0, {     0,      0}, {0xf0, 0xbb, 0x6a, 0xff}}},
     {{{   -70,     28,     88}, 0, {     0,      0}, {0xc9, 0xa0, 0x3f, 0xff}}},
     {{{   -46,      0,     59}, 0, {     0,      0}, {0xdd, 0x8c, 0x25, 0xff}}},
@@ -120,7 +120,7 @@ static const Vtx koopa_shell_seg8_vertex_080267A8[] = {
 };
 
 // 0x08026898
-static const Vtx koopa_shell_seg8_vertex_08026898[] = {
+ const Vtx koopa_shell_seg8_vertex_08026898[] = {
     {{{   -70,     21,    -50}, 0, {     0,      0}, {0xbd, 0x94, 0xf7, 0xff}}},
     {{{   -70,     27,    -99}, 0, {     0,      0}, {0xcd, 0xa5, 0xb7, 0xff}}},
     {{{   -45,      0,    -69}, 0, {     0,      0}, {0xd7, 0x8a, 0xe9, 0xff}}},
@@ -139,7 +139,7 @@ static const Vtx koopa_shell_seg8_vertex_08026898[] = {
 };
 
 // 0x08026988
-static const Vtx koopa_shell_seg8_vertex_08026988[] = {
+ const Vtx koopa_shell_seg8_vertex_08026988[] = {
     {{{    46,      0,     60}, 0, {     0,      0}, {0x23, 0x8c, 0x25, 0xff}}},
     {{{     0,     17,    108}, 0, {     0,      0}, {0x00, 0xab, 0x5f, 0xff}}},
     {{{   -46,      0,     59}, 0, {     0,      0}, {0xdd, 0x8c, 0x25, 0xff}}},
@@ -152,7 +152,7 @@ static const Vtx koopa_shell_seg8_vertex_08026988[] = {
 };
 
 // 0x08026A18
-static const Vtx koopa_shell_seg8_vertex_08026A18[] = {
+ const Vtx koopa_shell_seg8_vertex_08026A18[] = {
     {{{     0,     39,   -112}, 0, {     0,      0}, {0x00, 0xc4, 0x90, 0xff}}},
     {{{    36,     58,   -129}, 0, {     0,      0}, {0x22, 0x44, 0x9a, 0xff}}},
     {{{   103,     44,    -89}, 0, {     0,      0}, {0x52, 0x0e, 0x9f, 0xff}}},
@@ -171,7 +171,7 @@ static const Vtx koopa_shell_seg8_vertex_08026A18[] = {
 };
 
 // 0x08026B08
-static const Vtx koopa_shell_seg8_vertex_08026B08[] = {
+ const Vtx koopa_shell_seg8_vertex_08026B08[] = {
     {{{    70,     17,     41}, 0, {     0,      0}, {0x49, 0x98, 0x07, 0xff}}},
     {{{    70,     21,    -50}, 0, {     0,      0}, {0x44, 0x95, 0xf7, 0xff}}},
     {{{   117,     36,    -19}, 0, {     0,      0}, {0x70, 0xc4, 0x00, 0xff}}},
@@ -190,7 +190,7 @@ static const Vtx koopa_shell_seg8_vertex_08026B08[] = {
 };
 
 // 0x08026BF8
-static const Vtx koopa_shell_seg8_vertex_08026BF8[] = {
+ const Vtx koopa_shell_seg8_vertex_08026BF8[] = {
     {{{    38,     70,    129}, 0, {     0,      0}, {0x27, 0x11, 0x78, 0xff}}},
     {{{   103,     44,     80}, 0, {     0,      0}, {0x6f, 0xfe, 0x3e, 0xff}}},
     {{{   101,     53,     57}, 0, {     0,      0}, {0x53, 0x5e, 0x14, 0xff}}},
@@ -209,7 +209,7 @@ static const Vtx koopa_shell_seg8_vertex_08026BF8[] = {
 };
 
 // 0x08026CE8
-static const Vtx koopa_shell_seg8_vertex_08026CE8[] = {
+ const Vtx koopa_shell_seg8_vertex_08026CE8[] = {
     {{{    70,     27,    -99}, 0, {     0,      0}, {0x33, 0xa5, 0xb8, 0xff}}},
     {{{   103,     44,    -89}, 0, {     0,      0}, {0x52, 0x0e, 0x9f, 0xff}}},
     {{{   117,     36,    -19}, 0, {     0,      0}, {0x70, 0xc4, 0x00, 0xff}}},
@@ -228,7 +228,7 @@ static const Vtx koopa_shell_seg8_vertex_08026CE8[] = {
 };
 
 // 0x08026DD8
-static const Vtx koopa_shell_seg8_vertex_08026DD8[] = {
+ const Vtx koopa_shell_seg8_vertex_08026DD8[] = {
     {{{   -70,     28,     88}, 0, {     0,      0}, {0xc9, 0xa0, 0x3f, 0xff}}},
     {{{  -103,     44,     80}, 0, {     0,      0}, {0x91, 0xfe, 0x3e, 0xff}}},
     {{{  -117,     36,    -19}, 0, {     0,      0}, {0x90, 0xc4, 0x00, 0xff}}},
@@ -247,7 +247,7 @@ static const Vtx koopa_shell_seg8_vertex_08026DD8[] = {
 };
 
 // 0x08026EC8
-static const Vtx koopa_shell_seg8_vertex_08026EC8[] = {
+ const Vtx koopa_shell_seg8_vertex_08026EC8[] = {
     {{{  -101,     53,     57}, 0, {     0,      0}, {0xad, 0x5e, 0x14, 0xff}}},
     {{{  -117,     36,    -19}, 0, {     0,      0}, {0x90, 0xc4, 0x00, 0xff}}},
     {{{  -103,     44,     80}, 0, {     0,      0}, {0x91, 0xfe, 0x3e, 0xff}}},
@@ -266,7 +266,7 @@ static const Vtx koopa_shell_seg8_vertex_08026EC8[] = {
 };
 
 // 0x08026FB8
-static const Vtx koopa_shell_seg8_vertex_08026FB8[] = {
+ const Vtx koopa_shell_seg8_vertex_08026FB8[] = {
     {{{   -70,     28,     88}, 0, {     0,      0}, {0xc9, 0xa0, 0x3f, 0xff}}},
     {{{  -117,     36,    -19}, 0, {     0,      0}, {0x90, 0xc4, 0x00, 0xff}}},
     {{{   -70,     17,     41}, 0, {     0,      0}, {0xb8, 0x98, 0x07, 0xff}}},
@@ -285,7 +285,7 @@ static const Vtx koopa_shell_seg8_vertex_08026FB8[] = {
 };
 
 // 0x080270A8
-static const Vtx koopa_shell_seg8_vertex_080270A8[] = {
+ const Vtx koopa_shell_seg8_vertex_080270A8[] = {
     {{{   -25,     51,    118}, 0, {     0,      0}, {0xf0, 0xbb, 0x6a, 0xff}}},
     {{{    25,     51,    118}, 0, {     0,      0}, {0x14, 0xba, 0x68, 0xff}}},
     {{{    38,     70,    129}, 0, {     0,      0}, {0x27, 0x11, 0x78, 0xff}}},
@@ -396,29 +396,29 @@ const Gfx koopa_shell_seg8_dl_08027420[] = {
 };
 
 // 0x08027470
-static const Lights1 koopa_shell_seg8_lights_08027470 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_08027470 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08027488
-static const Lights1 koopa_shell_seg8_lights_08027488 = gdSPDefLights1(
+ const Lights1 koopa_shell_seg8_lights_08027488 = gdSPDefLights1(
     0x38, 0x2b, 0x00,
     0xe0, 0xae, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x080274A0
-ALIGNED8 static const Texture koopa_shell_seg8_texture_080274A0[] = {
+ALIGNED8  const Texture koopa_shell_seg8_texture_080274A0[] = {
 #include "actors/koopa_shell/koopa_shell_front.rgba16.inc.c"
 };
 
 // 0x08027CA0
-ALIGNED8 static const Texture koopa_shell_seg8_texture_08027CA0[] = {
+ALIGNED8  const Texture koopa_shell_seg8_texture_08027CA0[] = {
 #include "actors/koopa_shell/koopa_shell_back.rgba16.inc.c"
 };
 
 // 0x080284A0
-static const Vtx koopa_shell_seg8_vertex_080284A0[] = {
+ const Vtx koopa_shell_seg8_vertex_080284A0[] = {
     {{{   -15,     47,    -16}, 0, {   774,    814}, {0xe1, 0x74, 0xdb, 0xff}}},
     {{{     0,     29,    -44}, 0, {   468,   1346}, {0x00, 0x67, 0xb6, 0xff}}},
     {{{   -34,     23,    -31}, 0, {  1132,   1060}, {0xba, 0x63, 0xdc, 0xff}}},
@@ -432,7 +432,7 @@ static const Vtx koopa_shell_seg8_vertex_080284A0[] = {
 };
 
 // 0x08028540
-static const Vtx koopa_shell_seg8_vertex_08028540[] = {
+ const Vtx koopa_shell_seg8_vertex_08028540[] = {
     {{{    19,      0,     25}, 0, {   826,     98}, {0x15, 0x86, 0x18, 0xff}}},
     {{{     0,      6,     45}, 0, {   524,   -122}, {0x00, 0xa7, 0x5a, 0xff}}},
     {{{   -18,      0,     25}, 0, {   212,    100}, {0xe6, 0x88, 0x1d, 0xff}}},
@@ -450,7 +450,7 @@ static const Vtx koopa_shell_seg8_vertex_08028540[] = {
 };
 
 // 0x08028620
-static const Vtx koopa_shell_seg8_vertex_08028620[] = {
+ const Vtx koopa_shell_seg8_vertex_08028620[] = {
     {{{   -14,     33,     54}, 0, {     0,      0}, {0xcd, 0x27, 0x6d, 0xff}}},
     {{{   -28,     10,     37}, 0, {     0,      0}, {0xd0, 0xa8, 0x4c, 0xff}}},
     {{{     0,      6,     45}, 0, {     0,      0}, {0x00, 0xa7, 0x5a, 0xff}}},
@@ -459,7 +459,7 @@ static const Vtx koopa_shell_seg8_vertex_08028620[] = {
 };
 
 // 0x08028670
-static const Vtx koopa_shell_seg8_vertex_08028670[] = {
+ const Vtx koopa_shell_seg8_vertex_08028670[] = {
     {{{   -34,     23,    -31}, 0, {     0,      0}, {0xba, 0x63, 0xdc, 0xff}}},
     {{{   -40,     17,    -38}, 0, {     0,      0}, {0xb5, 0xf3, 0x9b, 0xff}}},
     {{{   -50,     14,     -6}, 0, {     0,      0}, {0x86, 0xe2, 0xee, 0xff}}},
@@ -478,7 +478,7 @@ static const Vtx koopa_shell_seg8_vertex_08028670[] = {
 };
 
 // 0x08028760
-static const Vtx koopa_shell_seg8_vertex_08028760[] = {
+ const Vtx koopa_shell_seg8_vertex_08028760[] = {
     {{{     0,     22,    -56}, 0, {     0,      0}, {0x00, 0x3d, 0x92, 0xff}}},
     {{{     0,     29,    -44}, 0, {     0,      0}, {0x00, 0x67, 0xb6, 0xff}}},
     {{{    35,     23,    -31}, 0, {     0,      0}, {0x46, 0x63, 0xdc, 0xff}}},
@@ -497,7 +497,7 @@ static const Vtx koopa_shell_seg8_vertex_08028760[] = {
 };
 
 // 0x08028850
-static const Vtx koopa_shell_seg8_vertex_08028850[] = {
+ const Vtx koopa_shell_seg8_vertex_08028850[] = {
     {{{    27,     10,    -39}, 0, {     0,      0}, {0x22, 0xa1, 0xb5, 0xff}}},
     {{{    41,     17,    -38}, 0, {     0,      0}, {0x4a, 0xf3, 0x9b, 0xff}}},
     {{{    51,     14,     -6}, 0, {     0,      0}, {0x7a, 0xe2, 0xee, 0xff}}},

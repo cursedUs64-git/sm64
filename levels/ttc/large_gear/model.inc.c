@@ -1,5 +1,5 @@
 // 0x07012200 - 0x07012240
-static const Vtx ttc_seg7_vertex_07012200[] = {
+ const Vtx ttc_seg7_vertex_07012200[] = {
     {{{   154,      0,   -153}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -153,      0,   -153}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -153,      0,    154}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx ttc_seg7_vertex_07012200[] = {
 };
 
 // 0x07012240 - 0x07012278
-static const Gfx ttc_seg7_dl_07012240[] = {
+ const Gfx ttc_seg7_dl_07012240[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, ttc_seg7_texture_07000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

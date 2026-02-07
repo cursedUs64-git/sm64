@@ -4,7 +4,7 @@
 
 // (this wasn't translated for US, and was removed in EU)
 
-static const u8 Debug0[] = {
+ const u8 Debug0[] = {
     _("ＳＴＡＧＥ　ＳＥＬＥＣＴ\n"
       "　つづける？\n"
       "　１　マウンテン\n"
@@ -15,17 +15,17 @@ static const u8 Debug0[] = {
       "　もどる")
 };
 
-static const u8 Debug1[] = {
+ const u8 Debug1[] = {
     _("ＰＡＵＳＥ　　　　\n"
       "　つづける？\n"
       "　やめる　？")
 };
 
-static const struct DialogEntry debug_text_entry_0 = {
+ const struct DialogEntry debug_text_entry_0 = {
     1, 8, 30, 200, Debug0
 };
 
-static const struct DialogEntry debug_text_entry_1 = {
+ const struct DialogEntry debug_text_entry_1 = {
     1, 3, 100, 150, Debug1
 };
 

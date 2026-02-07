@@ -1,69 +1,69 @@
 // Peach
 
 // 0x050009F8
-static const Lights1 peach_seg5_lights_050009F8 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_050009F8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05000A10
-static const Lights1 peach_seg5_lights_05000A10 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05000A10 = gdSPDefLights1(
     0x7f, 0x5f, 0x0c,
     0xff, 0xbf, 0x18, 0x28, 0x28, 0x28
 );
 
 // 0x05000A28
-ALIGNED8 static const Texture peach_seg5_texture_05000A28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05000A28[] = {
 #include "actors/peach/peach_eye_open.rgba16.inc.c"
 };
 
 // 0x05001228
-ALIGNED8 static const Texture peach_seg5_texture_05001228[] = {
+ALIGNED8  const Texture peach_seg5_texture_05001228[] = {
 #include "actors/peach/peach_eye_mostly_open.rgba16.inc.c"
 };
 
 // 0x05001A28
-ALIGNED8 static const Texture peach_seg5_texture_05001A28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05001A28[] = {
 #include "actors/peach/peach_eye_mostly_closed.rgba16.inc.c"
 };
 
 // 0x05002228
-ALIGNED8 static const Texture peach_seg5_texture_05002228[] = {
+ALIGNED8  const Texture peach_seg5_texture_05002228[] = {
 #include "actors/peach/peach_eye_closed.rgba16.inc.c"
 };
 
 // 0x05002A28
-ALIGNED8 static const Texture peach_seg5_texture_05002A28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05002A28[] = {
 #include "actors/peach/peach_crown_jewel.rgba16.inc.c"
 };
 
 // 0x05002C28
-ALIGNED8 static const Texture peach_seg5_texture_05002C28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05002C28[] = {
 #include "actors/peach/peach_chest_jewel.rgba16.inc.c"
 };
 
 // 0x05002E28
-ALIGNED8 static const Texture peach_seg5_texture_05002E28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05002E28[] = {
 #include "actors/peach/peach_lips_scrunched.rgba16.inc.c"
 };
 
 // 0x05003628
-ALIGNED8 static const Texture peach_seg5_texture_05003628[] = {
+ALIGNED8  const Texture peach_seg5_texture_05003628[] = {
 #include "actors/peach/peach_lips.rgba16.inc.c"
 };
 
 // 0x05003E28
-ALIGNED8 static const Texture peach_seg5_texture_05003E28[] = {
+ALIGNED8  const Texture peach_seg5_texture_05003E28[] = {
 #include "actors/peach/peach_nostril.rgba16.inc.c"
 };
 
 // 0x05004028
-ALIGNED8 static const Texture peach_seg5_texture_05004028[] = {
+ALIGNED8  const Texture peach_seg5_texture_05004028[] = {
 #include "actors/peach/peach_dress.rgba16.inc.c"
 };
 
 // 0x05004828
-static const Vtx peach_seg5_vertex_05004828[] = {
+ const Vtx peach_seg5_vertex_05004828[] = {
     {{{   205,     -4,    -48}, 0, {   265,   1338}, {0x7a, 0xf9, 0xe1, 0xff}}},
     {{{   163,      0,      0}, 0, {   244,   1052}, {0x7e, 0x03, 0x00, 0xff}}},
     {{{   187,    -34,    -19}, 0, {   375,   1162}, {0x2d, 0xac, 0xad, 0xff}}},
@@ -83,7 +83,7 @@ static const Vtx peach_seg5_vertex_05004828[] = {
 };
 
 // 0x05004928
-static const Vtx peach_seg5_vertex_05004928[] = {
+ const Vtx peach_seg5_vertex_05004928[] = {
     {{{   165,    -43,      0}, 0, {   224,    496}, {0x4b, 0x9a, 0x00, 0xff}}},
     {{{   214,    -40,      0}, 0, {   223,   -306}, {0x74, 0xcd, 0xfd, 0xff}}},
     {{{   187,    -34,     20}, 0, {   551,    145}, {0x2d, 0xab, 0x52, 0xff}}},
@@ -102,7 +102,7 @@ static const Vtx peach_seg5_vertex_05004928[] = {
 };
 
 // 0x05004A18
-static const Vtx peach_seg5_vertex_05004A18[] = {
+ const Vtx peach_seg5_vertex_05004A18[] = {
     {{{   169,     -4,     43}, 0, {   224,    511}, {0x4a, 0xf1, 0x65, 0xff}}},
     {{{   167,    -34,     20}, 0, {   824,    539}, {0x4c, 0xac, 0x38, 0xff}}},
     {{{   187,    -34,     20}, 0, {   829,    159}, {0x2d, 0xab, 0x52, 0xff}}},
@@ -115,14 +115,14 @@ static const Vtx peach_seg5_vertex_05004A18[] = {
 };
 
 // 0x05004AA8
-static const Vtx peach_seg5_vertex_05004AA8[] = {
+ const Vtx peach_seg5_vertex_05004AA8[] = {
     {{{    16,     89,     -9}, 0, {  -141,    397}, {0xe1, 0x72, 0xd4, 0xff}}},
     {{{    16,     89,     10}, 0, {   547,    428}, {0xe2, 0x73, 0x2b, 0xff}}},
     {{{    26,    102,      0}, 0, {   230,   -159}, {0xf4, 0x7e, 0xfe, 0xff}}},
 };
 
 // 0x05004AD8
-static const Vtx peach_seg5_vertex_05004AD8[] = {
+ const Vtx peach_seg5_vertex_05004AD8[] = {
     {{{    59,     -8,     86}, 0, {  1146,  -1042}, {0xcd, 0x1d, 0x6f, 0xff}}},
     {{{    20,     28,     56}, 0, {   774,   -582}, {0xa7, 0x05, 0x59, 0xff}}},
     {{{    17,     11,     58}, 0, {   740,   -552}, {0xa5, 0x15, 0x55, 0xff}}},
@@ -142,7 +142,7 @@ static const Vtx peach_seg5_vertex_05004AD8[] = {
 };
 
 // 0x05004BD8
-static const Vtx peach_seg5_vertex_05004BD8[] = {
+ const Vtx peach_seg5_vertex_05004BD8[] = {
     {{{     1,     38,    -34}, 0, {  -380,   -670}, {0x9a, 0x03, 0xb6, 0xff}}},
     {{{   -10,     -6,      0}, 0, {    40,   -324}, {0x82, 0xf1, 0x00, 0xff}}},
     {{{   -20,     72,      0}, 0, {    18,   -210}, {0x96, 0x45, 0x00, 0xff}}},
@@ -161,7 +161,7 @@ static const Vtx peach_seg5_vertex_05004BD8[] = {
 };
 
 // 0x05004CC8
-static const Vtx peach_seg5_vertex_05004CC8[] = {
+ const Vtx peach_seg5_vertex_05004CC8[] = {
     {{{    45,     79,     37}, 0, {   714,    746}, {0xf1, 0x6f, 0x3a, 0xff}}},
     {{{   102,     92,     31}, 0, {   588,   -144}, {0xce, 0x64, 0x3b, 0xff}}},
     {{{    85,     99,      0}, 0, {     0,     64}, {0xcd, 0x74, 0x00, 0xff}}},
@@ -180,7 +180,7 @@ static const Vtx peach_seg5_vertex_05004CC8[] = {
 };
 
 // 0x05004DB8
-static const Vtx peach_seg5_vertex_05004DB8[] = {
+ const Vtx peach_seg5_vertex_05004DB8[] = {
     {{{    45,     79,     37}, 0, {   714,    746}, {0xf1, 0x6f, 0x3a, 0xff}}},
     {{{    44,     56,     58}, 0, {  1116,    782}, {0xf0, 0x5b, 0x56, 0xff}}},
     {{{    73,     65,     66}, 0, {  1286,    354}, {0xd5, 0x50, 0x57, 0xff}}},
@@ -192,7 +192,7 @@ static const Vtx peach_seg5_vertex_05004DB8[] = {
 };
 
 // 0x05004E38
-static const Vtx peach_seg5_vertex_05004E38[] = {
+ const Vtx peach_seg5_vertex_05004E38[] = {
     {{{   -20,     72,      0}, 0, {   480,   2010}, {0x96, 0x45, 0x00, 0xff}}},
     {{{    17,     81,     33}, 0, {  2102,    128}, {0xe6, 0x68, 0x43, 0xff}}},
     {{{    16,     89,     10}, 0, {   962,    -24}, {0xe2, 0x73, 0x2b, 0xff}}},
@@ -201,7 +201,7 @@ static const Vtx peach_seg5_vertex_05004E38[] = {
 };
 
 // 0x05004E88
-static const Vtx peach_seg5_vertex_05004E88[] = {
+ const Vtx peach_seg5_vertex_05004E88[] = {
     {{{    18,    -87,    -62}, 0, {     0,      0}, {0xa9, 0xc8, 0xb7, 0xff}}},
     {{{    17,     11,    -57}, 0, {     0,      0}, {0xa5, 0x15, 0xab, 0xff}}},
     {{{    32,    -11,    -81}, 0, {     0,      0}, {0xc8, 0x17, 0x91, 0xff}}},
@@ -220,7 +220,7 @@ static const Vtx peach_seg5_vertex_05004E88[] = {
 };
 
 // 0x05004F78
-static const Vtx peach_seg5_vertex_05004F78[] = {
+ const Vtx peach_seg5_vertex_05004F78[] = {
     {{{    59,     -8,     86}, 0, {     0,      0}, {0xcd, 0x1d, 0x6f, 0xff}}},
     {{{   100,    -62,    128}, 0, {     0,      0}, {0x1b, 0x17, 0x79, 0xff}}},
     {{{    92,    -29,    104}, 0, {     0,      0}, {0x36, 0x08, 0x72, 0xff}}},
@@ -240,7 +240,7 @@ static const Vtx peach_seg5_vertex_05004F78[] = {
 };
 
 // 0x05005078
-static const Vtx peach_seg5_vertex_05005078[] = {
+ const Vtx peach_seg5_vertex_05005078[] = {
     {{{    35,     37,    -76}, 0, {     0,      0}, {0xd0, 0x29, 0x92, 0xff}}},
     {{{    59,     -8,    -85}, 0, {     0,      0}, {0xcd, 0x1d, 0x91, 0xff}}},
     {{{    20,     28,    -55}, 0, {     0,      0}, {0xa7, 0x05, 0xa7, 0xff}}},
@@ -259,7 +259,7 @@ static const Vtx peach_seg5_vertex_05005078[] = {
 };
 
 // 0x05005168
-static const Vtx peach_seg5_vertex_05005168[] = {
+ const Vtx peach_seg5_vertex_05005168[] = {
     {{{    44,     56,     58}, 0, {     0,      0}, {0xf0, 0x5b, 0x56, 0xff}}},
     {{{    35,     37,     77}, 0, {     0,      0}, {0xd0, 0x29, 0x6e, 0xff}}},
     {{{    73,     65,     66}, 0, {     0,      0}, {0xd5, 0x50, 0x57, 0xff}}},
@@ -279,7 +279,7 @@ static const Vtx peach_seg5_vertex_05005168[] = {
 };
 
 // 0x05005268
-static const Vtx peach_seg5_vertex_05005268[] = {
+ const Vtx peach_seg5_vertex_05005268[] = {
     {{{   131,    -87,      0}, 0, {     0,      0}, {0x44, 0x96, 0x00, 0xff}}},
     {{{    98,    -89,    -74}, 0, {     0,      0}, {0x31, 0x98, 0xcc, 0xff}}},
     {{{   131,    -79,    -38}, 0, {     0,      0}, {0x57, 0xb2, 0xd1, 0xff}}},
@@ -299,7 +299,7 @@ static const Vtx peach_seg5_vertex_05005268[] = {
 };
 
 // 0x05005368
-static const Vtx peach_seg5_vertex_05005368[] = {
+ const Vtx peach_seg5_vertex_05005368[] = {
     {{{   148,    108,      0}, 0, {     0,      0}, {0x5e, 0x55, 0x00, 0xff}}},
     {{{   138,    104,    -46}, 0, {     0,      0}, {0x0b, 0x6f, 0xc5, 0xff}}},
     {{{   105,    124,      0}, 0, {     0,      0}, {0xd3, 0x76, 0x00, 0xff}}},
@@ -319,7 +319,7 @@ static const Vtx peach_seg5_vertex_05005368[] = {
 };
 
 // 0x05005468
-static const Vtx peach_seg5_vertex_05005468[] = {
+ const Vtx peach_seg5_vertex_05005468[] = {
     {{{    98,    -89,     75}, 0, {     0,      0}, {0x31, 0x97, 0x33, 0xff}}},
     {{{    98,    -98,      0}, 0, {     0,      0}, {0x1f, 0x86, 0x00, 0xff}}},
     {{{   131,    -87,      0}, 0, {     0,      0}, {0x44, 0x96, 0x00, 0xff}}},
@@ -339,7 +339,7 @@ static const Vtx peach_seg5_vertex_05005468[] = {
 };
 
 // 0x05005568
-static const Vtx peach_seg5_vertex_05005568[] = {
+ const Vtx peach_seg5_vertex_05005568[] = {
     {{{    98,    -89,     75}, 0, {     0,      0}, {0x31, 0x97, 0x33, 0xff}}},
     {{{   134,    -13,     80}, 0, {     0,      0}, {0x4d, 0xd6, 0x5b, 0xff}}},
     {{{    92,    -29,    104}, 0, {     0,      0}, {0x36, 0x08, 0x72, 0xff}}},
@@ -641,13 +641,13 @@ const Gfx peach_seg5_dl_05005F48[] = {
 };
 
 // 0x05005FA0
-static const Lights1 peach_seg5_lights_05005FA0 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05005FA0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05005FB8
-static const Vtx peach_seg5_vertex_05005FB8[] = {
+ const Vtx peach_seg5_vertex_05005FB8[] = {
     {{{    96,     28,      1}, 0, {   246,   2076}, {0x0a, 0x7b, 0x1c, 0xff}}},
     {{{    96,      9,     27}, 0, {    58,   2076}, {0x0b, 0x08, 0x7e, 0xff}}},
     {{{   152,      8,     22}, 0, {    44,   1520}, {0x0b, 0x42, 0x6b, 0xff}}},
@@ -692,19 +692,19 @@ const Gfx peach_seg5_dl_050060E0[] = {
 };
 
 // 0x05006138
-static const Lights1 peach_seg5_lights_05006138 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05006138 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05006150
-static const Lights1 peach_seg5_lights_05006150 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05006150 = gdSPDefLights1(
     0x6c, 0x54, 0x5f,
     0xd9, 0xa9, 0xbe, 0x28, 0x28, 0x28
 );
 
 // 0x05006168
-static const Vtx peach_seg5_vertex_05006168[] = {
+ const Vtx peach_seg5_vertex_05006168[] = {
     {{{    54,     70,    -23}, 0, {  -179,    143}, {0x23, 0x6c, 0xca, 0xff}}},
     {{{    52,     85,      0}, 0, {   224,    223}, {0x17, 0x7c, 0x00, 0xff}}},
     {{{    70,     67,     -7}, 0, {    96,   -135}, {0x55, 0x5b, 0xeb, 0xff}}},
@@ -716,7 +716,7 @@ static const Vtx peach_seg5_vertex_05006168[] = {
 };
 
 // 0x050061E8
-static const Vtx peach_seg5_vertex_050061E8[] = {
+ const Vtx peach_seg5_vertex_050061E8[] = {
     {{{   116,     24,     43}, 0, {   692,   -612}, {0x36, 0x3d, 0x60, 0xff}}},
     {{{   119,    -30,     36}, 0, {   658,   -626}, {0x30, 0xac, 0x51, 0xff}}},
     {{{   119,    -30,    -35}, 0, {   300,   -626}, {0x40, 0x9f, 0xce, 0xff}}},
@@ -725,7 +725,7 @@ static const Vtx peach_seg5_vertex_050061E8[] = {
 };
 
 // 0x05006238
-static const Vtx peach_seg5_vertex_05006238[] = {
+ const Vtx peach_seg5_vertex_05006238[] = {
     {{{    85,     34,    -65}, 0, {   150,   -458}, {0x4b, 0x3c, 0xae, 0xff}}},
     {{{    98,     18,    -34}, 0, {   302,   -522}, {0x2e, 0x52, 0xac, 0xff}}},
     {{{    98,    -23,    -34}, 0, {   302,   -520}, {0x59, 0xcd, 0xb7, 0xff}}},
@@ -743,7 +743,7 @@ static const Vtx peach_seg5_vertex_05006238[] = {
 };
 
 // 0x05006318
-static const Vtx peach_seg5_vertex_05006318[] = {
+ const Vtx peach_seg5_vertex_05006318[] = {
     {{{    54,     70,     24}, 0, {   600,   -300}, {0x23, 0x6d, 0x36, 0xff}}},
     {{{    20,     69,     40}, 0, {   680,   -132}, {0xd3, 0x6f, 0x28, 0xff}}},
     {{{    85,     34,     66}, 0, {   808,   -458}, {0x4b, 0x3c, 0x52, 0xff}}},
@@ -762,7 +762,7 @@ static const Vtx peach_seg5_vertex_05006318[] = {
 };
 
 // 0x05006408
-static const Vtx peach_seg5_vertex_05006408[] = {
+ const Vtx peach_seg5_vertex_05006408[] = {
     {{{   111,     45,      0}, 0, {   478,   -586}, {0xef, 0x7b, 0xea, 0xff}}},
     {{{    98,     18,    -34}, 0, {   302,   -522}, {0x2e, 0x52, 0xac, 0xff}}},
     {{{    95,     36,      0}, 0, {   478,   -506}, {0x25, 0x78, 0x0d, 0xff}}},
@@ -780,7 +780,7 @@ static const Vtx peach_seg5_vertex_05006408[] = {
 };
 
 // 0x050064E8
-static const Vtx peach_seg5_vertex_050064E8[] = {
+ const Vtx peach_seg5_vertex_050064E8[] = {
     {{{    23,    -45,    -34}, 0, {   302,   -146}, {0xd9, 0x8d, 0xdf, 0xff}}},
     {{{    86,    -53,    -34}, 0, {   302,   -460}, {0x40, 0x9d, 0xd3, 0xff}}},
     {{{    86,    -53,     35}, 0, {   656,   -460}, {0x41, 0x98, 0x1e, 0xff}}},
@@ -800,7 +800,7 @@ static const Vtx peach_seg5_vertex_050064E8[] = {
 };
 
 // 0x050065E8
-static const Vtx peach_seg5_vertex_050065E8[] = {
+ const Vtx peach_seg5_vertex_050065E8[] = {
     {{{    98,    -23,     35}, 0, {   656,   -520}, {0x42, 0xb8, 0x50, 0xff}}},
     {{{    86,    -53,     35}, 0, {   656,   -460}, {0x41, 0x98, 0x1e, 0xff}}},
     {{{    98,    -23,    -34}, 0, {   302,   -520}, {0x59, 0xcd, 0xb7, 0xff}}},
@@ -820,7 +820,7 @@ static const Vtx peach_seg5_vertex_050065E8[] = {
 };
 
 // 0x050066E8
-static const Vtx peach_seg5_vertex_050066E8[] = {
+ const Vtx peach_seg5_vertex_050066E8[] = {
     {{{   116,     24,    -42}, 0, {   266,   -612}, {0x2f, 0x2b, 0x93, 0xff}}},
     {{{   119,    -30,    -35}, 0, {   300,   -626}, {0x40, 0x9f, 0xce, 0xff}}},
     {{{    98,    -23,    -34}, 0, {   302,   -520}, {0x59, 0xcd, 0xb7, 0xff}}},
@@ -916,13 +916,13 @@ const Gfx peach_seg5_dl_05006A18[] = {
 };
 
 // 0x05006A90
-static const Lights1 peach_seg5_lights_05006A90 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05006A90 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05006AA8
-static const Vtx peach_seg5_vertex_05006AA8[] = {
+ const Vtx peach_seg5_vertex_05006AA8[] = {
     {{{    93,     12,     39}, 0, {   676,   1080}, {0x2c, 0x13, 0x75, 0xff}}},
     {{{    92,     36,     28}, 0, {   618,   1092}, {0x46, 0x58, 0x38, 0xff}}},
     {{{    54,     35,     28}, 0, {   618,   1468}, {0x3e, 0x53, 0x48, 0xff}}},
@@ -942,7 +942,7 @@ static const Vtx peach_seg5_vertex_05006AA8[] = {
 };
 
 // 0x05006BA8
-static const Vtx peach_seg5_vertex_05006BA8[] = {
+ const Vtx peach_seg5_vertex_05006BA8[] = {
     {{{    91,     46,      0}, 0, {   480,   1096}, {0x63, 0x4e, 0xf8, 0xff}}},
     {{{    92,     36,     28}, 0, {   618,   1092}, {0x46, 0x58, 0x38, 0xff}}},
     {{{    94,    -10,     28}, 0, {   618,   1070}, {0x5f, 0xcc, 0x40, 0xff}}},
@@ -962,7 +962,7 @@ static const Vtx peach_seg5_vertex_05006BA8[] = {
 };
 
 // 0x05006CA8
-static const Vtx peach_seg5_vertex_05006CA8[] = {
+ const Vtx peach_seg5_vertex_05006CA8[] = {
     {{{    35,     12,    -80}, 0, {    76,  -1404}, {0x5f, 0x0a, 0xae, 0xff}}},
     {{{   -14,      8,   -114}, 0, {   -94,   -900}, {0x2c, 0xfd, 0x89, 0xff}}},
     {{{   -18,     76,    -80}, 0, {    72,   -868}, {0x21, 0x52, 0xa6, 0xff}}},
@@ -982,7 +982,7 @@ static const Vtx peach_seg5_vertex_05006CA8[] = {
 };
 
 // 0x05006DA8
-static const Vtx peach_seg5_vertex_05006DA8[] = {
+ const Vtx peach_seg5_vertex_05006DA8[] = {
     {{{    57,    -22,      0}, 0, {   478,  -1624}, {0x54, 0xa2, 0xf8, 0xff}}},
     {{{    57,    -12,     28}, 0, {   620,  -1618}, {0x49, 0xb1, 0x42, 0xff}}},
     {{{    38,    -47,     57}, 0, {   764,  -1434}, {0x62, 0xc2, 0x32, 0xff}}},
@@ -1002,7 +1002,7 @@ static const Vtx peach_seg5_vertex_05006DA8[] = {
 };
 
 // 0x05006EA8
-static const Vtx peach_seg5_vertex_05006EA8[] = {
+ const Vtx peach_seg5_vertex_05006EA8[] = {
     {{{   -19,     99,      0}, 0, {   480,   -856}, {0x1c, 0x7b, 0x00, 0xff}}},
     {{{   -47,     79,     81}, 0, {   882,   -574}, {0x01, 0x6d, 0x40, 0xff}}},
     {{{   -18,     76,     81}, 0, {   886,   -868}, {0x21, 0x52, 0x5a, 0xff}}},
@@ -1106,13 +1106,13 @@ const Gfx peach_seg5_us_dl_05007288[] = {
 #endif
 
 // 0x05007288
-static const Lights1 peach_seg5_lights_05007288 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05007288 = gdSPDefLights1(
     0x7f, 0x5f, 0x0c,
     0xff, 0xbf, 0x18, 0x28, 0x28, 0x28
 );
 
 // 0x050072A0
-static const Vtx peach_seg5_vertex_050072A0[] = {
+ const Vtx peach_seg5_vertex_050072A0[] = {
     {{{    89,    -13,     96}, 0, {     0,      0}, {0x12, 0x64, 0x4b, 0xff}}},
     {{{    77,     -2,    169}, 0, {     0,      0}, {0xbc, 0x59, 0x3a, 0xff}}},
     {{{   113,    -57,    148}, 0, {     0,      0}, {0x3c, 0xde, 0x69, 0xff}}},
@@ -1130,7 +1130,7 @@ static const Vtx peach_seg5_vertex_050072A0[] = {
 };
 
 // 0x05007380
-static const Vtx peach_seg5_vertex_05007380[] = {
+ const Vtx peach_seg5_vertex_05007380[] = {
     {{{    64,    -31,   -123}, 0, {     0,      0}, {0x9d, 0xf3, 0xb3, 0xff}}},
     {{{    77,     -2,   -168}, 0, {     0,      0}, {0xbc, 0x59, 0xc6, 0xff}}},
     {{{   113,    -57,   -147}, 0, {     0,      0}, {0x3d, 0xdd, 0x97, 0xff}}},
@@ -1150,7 +1150,7 @@ static const Vtx peach_seg5_vertex_05007380[] = {
 };
 
 // 0x05007480
-static const Vtx peach_seg5_vertex_05007480[] = {
+ const Vtx peach_seg5_vertex_05007480[] = {
     {{{   136,   -112,     40}, 0, {     0,      0}, {0xf1, 0x84, 0x16, 0xff}}},
     {{{   -27,    -67,     43}, 0, {     0,      0}, {0xbd, 0x98, 0x1b, 0xff}}},
     {{{   -27,    -67,    -43}, 0, {     0,      0}, {0xc6, 0x93, 0xe4, 0xff}}},
@@ -1170,7 +1170,7 @@ static const Vtx peach_seg5_vertex_05007480[] = {
 };
 
 // 0x05007580
-static const Vtx peach_seg5_vertex_05007580[] = {
+ const Vtx peach_seg5_vertex_05007580[] = {
     {{{   229,    -45,    -47}, 0, {     0,      0}, {0x43, 0x4f, 0xb8, 0xff}}},
     {{{   188,    -40,    -84}, 0, {     0,      0}, {0x39, 0x28, 0x97, 0xff}}},
     {{{   184,      6,    -55}, 0, {     0,      0}, {0x35, 0x56, 0xb5, 0xff}}},
@@ -1190,7 +1190,7 @@ static const Vtx peach_seg5_vertex_05007580[] = {
 };
 
 // 0x05007680
-static const Vtx peach_seg5_vertex_05007680[] = {
+ const Vtx peach_seg5_vertex_05007680[] = {
     {{{   -95,     -7,     22}, 0, {     0,      0}, {0x86, 0x09, 0x21, 0xff}}},
     {{{   -72,    -14,     66}, 0, {     0,      0}, {0xa7, 0x00, 0x59, 0xff}}},
     {{{   -37,     23,     46}, 0, {     0,      0}, {0xd9, 0x6c, 0x33, 0xff}}},
@@ -1210,7 +1210,7 @@ static const Vtx peach_seg5_vertex_05007680[] = {
 };
 
 // 0x05007780
-static const Vtx peach_seg5_vertex_05007780[] = {
+ const Vtx peach_seg5_vertex_05007780[] = {
     {{{   184,      6,     56}, 0, {     0,      0}, {0x35, 0x56, 0x4b, 0xff}}},
     {{{   188,    -40,     85}, 0, {     0,      0}, {0x39, 0x28, 0x6a, 0xff}}},
     {{{   229,    -45,     49}, 0, {     0,      0}, {0x43, 0x4f, 0x47, 0xff}}},
@@ -1284,13 +1284,13 @@ const Gfx peach_seg5_dl_05007AB8[] = {
 };
 
 // 0x05007AE0
-static const Lights1 peach_seg5_lights_05007AE0 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05007AE0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05007AF8
-static const Vtx peach_seg5_vertex_05007AF8[] = {
+ const Vtx peach_seg5_vertex_05007AF8[] = {
     {{{   -32,     28,     30}, 0, {   312,  -1330}, {0x96, 0x36, 0x2a, 0xff}}},
     {{{   -12,     51,    -18}, 0, {   412,  -1562}, {0xea, 0x75, 0xd7, 0xff}}},
     {{{   -35,     28,    -17}, 0, {   300,  -1330}, {0x91, 0x27, 0xd2, 0xff}}},
@@ -1309,7 +1309,7 @@ static const Vtx peach_seg5_vertex_05007AF8[] = {
 };
 
 // 0x05007BE8
-static const Vtx peach_seg5_vertex_05007BE8[] = {
+ const Vtx peach_seg5_vertex_05007BE8[] = {
     {{{    33,     38,    -15}, 0, {   644,  -1434}, {0x75, 0x28, 0xe8, 0xff}}},
     {{{    35,    -15,     38}, 0, {   652,   -898}, {0x55, 0xd8, 0x54, 0xff}}},
     {{{    33,    -33,     20}, 0, {   646,   -720}, {0x6d, 0xc0, 0x09, 0xff}}},
@@ -1375,13 +1375,13 @@ const Gfx peach_seg5_dl_05007E58[] = {
 };
 
 // 0x05007EB0
-static const Lights1 peach_seg5_lights_05007EB0 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05007EB0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05007EC8
-static const Vtx peach_seg5_vertex_05007EC8[] = {
+ const Vtx peach_seg5_vertex_05007EC8[] = {
     {{{   -32,     28,    -29}, 0, {   312,  -1330}, {0x96, 0x36, 0xd6, 0xff}}},
     {{{   -33,    -19,    -29}, 0, {   308,   -856}, {0x95, 0xd6, 0xcd, 0xff}}},
     {{{   -42,      4,     -5}, 0, {   264,  -1096}, {0x82, 0x02, 0xf9, 0xff}}},
@@ -1400,7 +1400,7 @@ static const Vtx peach_seg5_vertex_05007EC8[] = {
 };
 
 // 0x05007FB8
-static const Vtx peach_seg5_vertex_05007FB8[] = {
+ const Vtx peach_seg5_vertex_05007FB8[] = {
     {{{    33,    -33,    -19}, 0, {   646,   -720}, {0x6d, 0xc0, 0xf7, 0xff}}},
     {{{    35,    -15,    -37}, 0, {   652,   -898}, {0x55, 0xd8, 0xac, 0xff}}},
     {{{    33,     38,     16}, 0, {   644,  -1434}, {0x75, 0x28, 0x18, 0xff}}},
@@ -1467,13 +1467,13 @@ const Gfx peach_seg5_dl_05008228[] = {
 };
 
 // 0x05008280
-static const Lights1 peach_seg5_lights_05008280 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05008280 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05008298
-static const Vtx peach_seg5_vertex_05008298[] = {
+ const Vtx peach_seg5_vertex_05008298[] = {
     {{{    52,     26,      0}, 0, {  1068,  -1682}, {0x07, 0x7e, 0x00, 0xff}}},
     {{{    23,     13,     18}, 0, {   380,  -1426}, {0x00, 0x3e, 0x6e, 0xff}}},
     {{{    52,     12,     18}, 0, {  1050,  -1376}, {0x07, 0x40, 0x6d, 0xff}}},
@@ -1489,7 +1489,7 @@ static const Vtx peach_seg5_vertex_05008298[] = {
 };
 
 // 0x05008358
-static const Vtx peach_seg5_vertex_05008358[] = {
+ const Vtx peach_seg5_vertex_05008358[] = {
     {{{   115,     -2,      0}, 0, {     0,      0}, {0x7e, 0xfa, 0x00, 0xff}}},
     {{{   101,     -9,     16}, 0, {     0,      0}, {0x2d, 0xc8, 0x68, 0xff}}},
     {{{   101,    -18,      0}, 0, {     0,      0}, {0x2e, 0x8b, 0xf1, 0xff}}},
@@ -1556,13 +1556,13 @@ const Gfx peach_seg5_dl_05008560[] = {
 };
 
 // 0x050085D0
-static const Lights1 peach_seg5_lights_050085D0 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_050085D0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050085E8
-static const Vtx peach_seg5_vertex_050085E8[] = {
+ const Vtx peach_seg5_vertex_050085E8[] = {
     {{{   -18,      2,      0}, 0, {     0,      0}, {0x82, 0x01, 0x03, 0xff}}},
     {{{     0,     -9,    -19}, 0, {     0,      0}, {0xcb, 0xcd, 0x99, 0xff}}},
     {{{    -5,    -20,      0}, 0, {     0,      0}, {0xd6, 0x89, 0xf5, 0xff}}},
@@ -1610,13 +1610,13 @@ const Gfx peach_seg5_dl_050087A8[] = {
 };
 
 // 0x050087D0
-static const Lights1 peach_seg5_lights_050087D0 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_050087D0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050087E8
-static const Vtx peach_seg5_vertex_050087E8[] = {
+ const Vtx peach_seg5_vertex_050087E8[] = {
     {{{    23,     13,    -17}, 0, {   568,   -670}, {0x00, 0x3c, 0x91, 0xff}}},
     {{{    52,     12,    -17}, 0, {   990,   -670}, {0x07, 0x3f, 0x93, 0xff}}},
     {{{    51,     -9,    -20}, 0, {   982,   -348}, {0x03, 0xc7, 0x8f, 0xff}}},
@@ -1632,7 +1632,7 @@ static const Vtx peach_seg5_vertex_050087E8[] = {
 };
 
 // 0x050088A8
-static const Vtx peach_seg5_vertex_050088A8[] = {
+ const Vtx peach_seg5_vertex_050088A8[] = {
     {{{   101,    -18,      1}, 0, {     0,      0}, {0x2e, 0x8b, 0x0e, 0xff}}},
     {{{   101,     -9,    -15}, 0, {     0,      0}, {0x2d, 0xc9, 0x98, 0xff}}},
     {{{   115,     -2,      1}, 0, {     0,      0}, {0x7e, 0xfa, 0x00, 0xff}}},
@@ -1699,13 +1699,13 @@ const Gfx peach_seg5_dl_05008AB0[] = {
 };
 
 // 0x05008B20
-static const Lights1 peach_seg5_lights_05008B20 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05008B20 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05008B38
-static const Vtx peach_seg5_vertex_05008B38[] = {
+ const Vtx peach_seg5_vertex_05008B38[] = {
     {{{    -5,    -20,      1}, 0, {     0,      0}, {0xd6, 0x89, 0x0a, 0xff}}},
     {{{     0,     -9,     20}, 0, {     0,      0}, {0xcb, 0xcd, 0x67, 0xff}}},
     {{{   -18,      2,      1}, 0, {     0,      0}, {0x82, 0x01, 0xfd, 0xff}}},
@@ -1752,13 +1752,13 @@ const Gfx peach_seg5_dl_05008CF8[] = {
 };
 
 // 0x05008D20
-static const Lights1 peach_seg5_lights_05008D20 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05008D20 = gdSPDefLights1(
     0x0b, 0x1a, 0x67,
     0x16, 0x35, 0xce, 0x28, 0x28, 0x28
 );
 
 // 0x05008D38
-static const Vtx peach_seg5_vertex_05008D38[] = {
+ const Vtx peach_seg5_vertex_05008D38[] = {
     {{{     6,     -2,     75}, 0, {     0,      0}, {0xa8, 0xae, 0x26, 0xff}}},
     {{{    -1,      8,     67}, 0, {     0,      0}, {0x82, 0xf9, 0x02, 0xff}}},
     {{{     1,      8,     52}, 0, {     0,      0}, {0x93, 0xec, 0xc3, 0xff}}},
@@ -1808,13 +1808,13 @@ const Gfx peach_seg5_dl_05008F20[] = {
 };
 
 // 0x05008F48
-static const Lights1 peach_seg5_lights_05008F48 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05008F48 = gdSPDefLights1(
     0x0b, 0x1a, 0x67,
     0x16, 0x35, 0xce, 0x28, 0x28, 0x28
 );
 
 // 0x05008F60
-static const Vtx peach_seg5_vertex_05008F60[] = {
+ const Vtx peach_seg5_vertex_05008F60[] = {
     {{{    29,      1,    -83}, 0, {     0,      0}, {0x29, 0xca, 0x96, 0xff}}},
     {{{     6,     -3,    -74}, 0, {     0,      0}, {0xbb, 0xa8, 0xc5, 0xff}}},
     {{{    15,      4,    -85}, 0, {     0,      0}, {0xeb, 0xe2, 0x87, 0xff}}},
@@ -1864,13 +1864,13 @@ const Gfx peach_seg5_dl_05009148[] = {
 };
 
 // 0x05009170
-static const Lights1 peach_seg5_lights_05009170 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05009170 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05009188
-static const Vtx peach_seg5_vertex_05009188[] = {
+ const Vtx peach_seg5_vertex_05009188[] = {
     {{{     7,    -19,    -19}, 0, {     0,      0}, {0xbe, 0xb1, 0xb8, 0xff}}},
     {{{    44,    -29,    -34}, 0, {     0,      0}, {0xf6, 0xb3, 0x9c, 0xff}}},
     {{{    30,    -23,    -10}, 0, {     0,      0}, {0x32, 0x8c, 0x08, 0xff}}},
@@ -1890,7 +1890,7 @@ static const Vtx peach_seg5_vertex_05009188[] = {
 };
 
 // 0x05009288
-static const Vtx peach_seg5_vertex_05009288[] = {
+ const Vtx peach_seg5_vertex_05009288[] = {
     {{{    51,    -16,      0}, 0, {     0,      0}, {0x27, 0xaf, 0xa8, 0xff}}},
     {{{    87,    -10,      0}, 0, {     0,      0}, {0x48, 0xd3, 0xa2, 0xff}}},
     {{{    47,    -17,     19}, 0, {     0,      0}, {0x1f, 0xab, 0x58, 0xff}}},
@@ -1950,13 +1950,13 @@ const Gfx peach_seg5_dl_05009500[] = {
 };
 
 // 0x05009528
-static const Lights1 peach_seg5_lights_05009528 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05009528 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05009540
-static const Vtx peach_seg5_vertex_05009540[] = {
+ const Vtx peach_seg5_vertex_05009540[] = {
     {{{   -10,     -7,     12}, 0, {     0,      0}, {0x95, 0xd1, 0x2f, 0xff}}},
     {{{   -11,     12,     12}, 0, {     0,      0}, {0x9e, 0x31, 0x3e, 0xff}}},
     {{{   -10,     -7,     -8}, 0, {     0,      0}, {0x99, 0xce, 0xcc, 0xff}}},
@@ -1976,7 +1976,7 @@ static const Vtx peach_seg5_vertex_05009540[] = {
 };
 
 // 0x05009640
-static const Vtx peach_seg5_vertex_05009640[] = {
+ const Vtx peach_seg5_vertex_05009640[] = {
     {{{    17,     -3,     24}, 0, {     0,      0}, {0xee, 0x30, 0x73, 0xff}}},
     {{{    43,    -15,     35}, 0, {     0,      0}, {0xfe, 0x2a, 0x77, 0xff}}},
     {{{    26,      9,     13}, 0, {     0,      0}, {0x3b, 0x4c, 0x51, 0xff}}},
@@ -1996,7 +1996,7 @@ static const Vtx peach_seg5_vertex_05009640[] = {
 };
 
 // 0x05009740
-static const Vtx peach_seg5_vertex_05009740[] = {
+ const Vtx peach_seg5_vertex_05009740[] = {
     {{{    47,    -17,    -18}, 0, {     0,      0}, {0x1f, 0xab, 0xa8, 0xff}}},
     {{{    90,     -4,     -4}, 0, {     0,      0}, {0x67, 0xdc, 0xc1, 0xff}}},
     {{{    87,    -10,      1}, 0, {     0,      0}, {0x48, 0xd3, 0x5e, 0xff}}},
@@ -2049,13 +2049,13 @@ const Gfx peach_seg5_dl_05009940[] = {
 };
 
 // 0x05009968
-static const Lights1 peach_seg5_lights_05009968 = gdSPDefLights1(
+ const Lights1 peach_seg5_lights_05009968 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05009980
-static const Vtx peach_seg5_vertex_05009980[] = {
+ const Vtx peach_seg5_vertex_05009980[] = {
     {{{   324,    171,    145}, 0, {  1954,   1582}, {0xe1, 0x5d, 0x4f, 0xff}}},
     {{{   322,    239,     -3}, 0, {  2536,   1574}, {0xe1, 0x79, 0xef, 0xff}}},
     {{{   184,    205,     -3}, 0, {  2538,    886}, {0xde, 0x79, 0x0d, 0xff}}},
@@ -2074,7 +2074,7 @@ static const Vtx peach_seg5_vertex_05009980[] = {
 };
 
 // 0x05009A70
-static const Vtx peach_seg5_vertex_05009A70[] = {
+ const Vtx peach_seg5_vertex_05009A70[] = {
     {{{   333,   -153,    145}, 0, {   580,   1626}, {0xe7, 0xa1, 0x4f, 0xff}}},
     {{{   328,      9,    204}, 0, {  1280,   1604}, {0xe5, 0x00, 0x7b, 0xff}}},
     {{{   186,   -131,    121}, 0, {   570,    898}, {0xe3, 0xb4, 0x60, 0xff}}},
@@ -2093,7 +2093,7 @@ static const Vtx peach_seg5_vertex_05009A70[] = {
 };
 
 // 0x05009B60
-static const Vtx peach_seg5_vertex_05009B60[] = {
+ const Vtx peach_seg5_vertex_05009B60[] = {
     {{{   -10,      0,   -101}, 0, {  3806,    -88}, {0xaf, 0xfe, 0x9f, 0xff}}},
     {{{   -44,      0,    -67}, 0, {  3818,   -254}, {0x8b, 0xfd, 0xd1, 0xff}}},
     {{{   -45,     44,    -48}, 0, {  3206,   -260}, {0x8d, 0x1d, 0xd5, 0xff}}},
@@ -2113,7 +2113,7 @@ static const Vtx peach_seg5_vertex_05009B60[] = {
 };
 
 // 0x05009C60
-static const Vtx peach_seg5_vertex_05009C60[] = {
+ const Vtx peach_seg5_vertex_05009C60[] = {
     {{{   -44,      0,     61}, 0, {  1226,   -254}, {0x89, 0xfd, 0x2a, 0xff}}},
     {{{   -45,     44,     42}, 0, {  1904,   -260}, {0x90, 0x25, 0x2d, 0xff}}},
     {{{   -45,     63,     -2}, 0, {  2568,   -264}, {0x86, 0x22, 0xfa, 0xff}}},
@@ -2132,7 +2132,7 @@ static const Vtx peach_seg5_vertex_05009C60[] = {
 };
 
 // 0x05009D50
-static const Vtx peach_seg5_vertex_05009D50[] = {
+ const Vtx peach_seg5_vertex_05009D50[] = {
     {{{   124,      3,   -182}, 0, {  3788,    584}, {0xcd, 0xff, 0x8d, 0xff}}},
     {{{   -10,      0,   -101}, 0, {  3806,    -88}, {0xaf, 0xfe, 0x9f, 0xff}}},
     {{{    52,    106,   -109}, 0, {  3178,    228}, {0xc2, 0x4c, 0xb1, 0xff}}},

@@ -1,5 +1,5 @@
 // 0x07008040 - 0x07008140
-static const Vtx bbh_seg7_vertex_07008040[] = {
+ const Vtx bbh_seg7_vertex_07008040[] = {
     {{{   435,    410,     36}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   435,    486,     36}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   410,    486,     10}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bbh_seg7_vertex_07008040[] = {
 };
 
 // 0x07008140 - 0x07008240
-static const Vtx bbh_seg7_vertex_07008140[] = {
+ const Vtx bbh_seg7_vertex_07008140[] = {
     {{{  1638,    410,     10}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1613,    410,     36}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1587,    410,     10}, 0, {   990,    480}, {0xff, 0xff, 0xff, 0xff}}},
@@ -39,7 +39,7 @@ static const Vtx bbh_seg7_vertex_07008140[] = {
 };
 
 // 0x07008240 - 0x07008330
-static const Vtx bbh_seg7_vertex_07008240[] = {
+ const Vtx bbh_seg7_vertex_07008240[] = {
     {{{   205,   1357,     10}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   154,   1357,     10}, 0, {   990,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   179,   1357,     36}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -58,7 +58,7 @@ static const Vtx bbh_seg7_vertex_07008240[] = {
 };
 
 // 0x07008330 - 0x07008430
-static const Vtx bbh_seg7_vertex_07008330[] = {
+ const Vtx bbh_seg7_vertex_07008330[] = {
     {{{  1638,   1280,     10}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1613,   1357,     36}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1613,   1280,     36}, 0, {   478,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -78,7 +78,7 @@ static const Vtx bbh_seg7_vertex_07008330[] = {
 };
 
 // 0x07008430 - 0x07008530
-static const Vtx bbh_seg7_vertex_07008430[] = {
+ const Vtx bbh_seg7_vertex_07008430[] = {
     {{{  2038,   1280,    512}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2038,   1357,    512}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2012,   1357,    486}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -98,7 +98,7 @@ static const Vtx bbh_seg7_vertex_07008430[] = {
 };
 
 // 0x07008530 - 0x07008620
-static const Vtx bbh_seg7_vertex_07008530[] = {
+ const Vtx bbh_seg7_vertex_07008530[] = {
     {{{  2012,   1280,   1818}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2012,   1357,   1818}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  2038,   1357,   1792}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -117,7 +117,7 @@ static const Vtx bbh_seg7_vertex_07008530[] = {
 };
 
 // 0x07008620 - 0x07008720
-static const Vtx bbh_seg7_vertex_07008620[] = {
+ const Vtx bbh_seg7_vertex_07008620[] = {
     {{{    10,    410,   1434}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    10,    486,   1434}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    36,    486,   1459}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -137,7 +137,7 @@ static const Vtx bbh_seg7_vertex_07008620[] = {
 };
 
 // 0x07008720 - 0x07008820
-static const Vtx bbh_seg7_vertex_07008720[] = {
+ const Vtx bbh_seg7_vertex_07008720[] = {
     {{{    36,    410,    640}, 0, {   478,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    36,    486,    640}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    10,    486,    666}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -157,7 +157,7 @@ static const Vtx bbh_seg7_vertex_07008720[] = {
 };
 
 // 0x07008820 - 0x070088E0
-static const Vtx bbh_seg7_vertex_07008820[] = {
+ const Vtx bbh_seg7_vertex_07008820[] = {
     {{{  -706,   1280,    614}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -706,   1357,    614}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -680,   1357,    640}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -173,7 +173,7 @@ static const Vtx bbh_seg7_vertex_07008820[] = {
 };
 
 // 0x070088E0 - 0x07008B58
-static const Gfx bbh_seg7_dl_070088E0[] = {
+ const Gfx bbh_seg7_dl_070088E0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, spooky_09006800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

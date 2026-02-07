@@ -1,5 +1,5 @@
 // 0x0700E3E0 - 0x0700E420
-static const Vtx bob_seg7_vertex_0700E3E0[] = {
+ const Vtx bob_seg7_vertex_0700E3E0[] = {
     {{{   512,      0,      0}, 0, { -7184,  -5142}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   512,    640,      0}, 0, { -7184,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -511,    640,      0}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx bob_seg7_vertex_0700E3E0[] = {
 };
 
 // 0x0700E420 - 0x0700E458
-static const Gfx bob_seg7_dl_0700E420[] = {
+ const Gfx bob_seg7_dl_0700E420[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, generic_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

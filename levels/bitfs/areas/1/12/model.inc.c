@@ -1,5 +1,5 @@
 // 0x07009000 - 0x07009040
-static const Vtx bitfs_seg7_vertex_07009000[] = {
+ const Vtx bitfs_seg7_vertex_07009000[] = {
     {{{  -588,    154,   -306}, 0, {  4464,   3440}, {0x8c, 0xcc, 0xd8, 0xff}}},
     {{{ -1714,    154,   -306}, 0, {     0,   3440}, {0x8c, 0xcc, 0xd8, 0xff}}},
     {{{ -1714,    154,    307}, 0, {     0,    990}, {0x8c, 0xcc, 0xd8, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx bitfs_seg7_vertex_07009000[] = {
 };
 
 // 0x07009040 - 0x07009140
-static const Vtx bitfs_seg7_vertex_07009040[] = {
+ const Vtx bitfs_seg7_vertex_07009040[] = {
     {{{  1664,   -281,   -204}, 0, {   308,   -372}, {0x7d, 0x7d, 0x7d, 0xff}}},
     {{{  1664,   -178,   -204}, 0, {     0,   -372}, {0x7d, 0x7d, 0x7d, 0xff}}},
     {{{  1664,   -178,    205}, 0, {     0,    990}, {0x7d, 0x7d, 0x7d, 0xff}}},
@@ -27,7 +27,7 @@ static const Vtx bitfs_seg7_vertex_07009040[] = {
 };
 
 // 0x07009140 - 0x07009178
-static const Gfx bitfs_seg7_dl_07009140[] = {
+ const Gfx bitfs_seg7_dl_07009140[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitfs_seg7_texture_07000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
@@ -37,7 +37,7 @@ static const Gfx bitfs_seg7_dl_07009140[] = {
 };
 
 // 0x07009178 - 0x070091E0
-static const Gfx bitfs_seg7_dl_07009178[] = {
+ const Gfx bitfs_seg7_dl_07009178[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09003800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),

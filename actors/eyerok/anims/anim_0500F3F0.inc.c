@@ -1,5 +1,5 @@
 // 0x0500F3F0
-static const struct Animation eyerok_seg5_anim_0500F3F0 = {
+ const struct Animation eyerok_seg5_anim_0500F3F0 = {
     35,
     0,
     29,

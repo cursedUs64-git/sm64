@@ -1,7 +1,7 @@
 // Quicksand Pit
 
 // 0x07004000 - 0x07004018
-static const Lights1 ssl_lights_quicksand_pit = gdSPDefLights1(
+ const Lights1 ssl_lights_quicksand_pit = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
@@ -99,7 +99,7 @@ const Gfx ssl_dl_quicksand_pit[] = {
 };
 
 // 0x07004A70 - 0x07004AE0
-static const Vtx ssl_seg7_vertex_07004A70[] = {
+ const Vtx ssl_seg7_vertex_07004A70[] = {
     {{{     0,   -204,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  1024,      0,      0}, 0, {  2016,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   512,      0,   -886}, 0, {  2016,    992}, {0x00, 0x7f, 0x00, 0xff}}},

@@ -15,8 +15,8 @@
 
 /* bss */
 struct ObjWeight *sResetCurWeight;
-static Mat4f D_801B9EA8; // TODO: rename to sHead2Mtx?
-static struct ObjJoint *D_801B9EE8;  // set but not used
+ Mat4f D_801B9EA8; // TODO: rename to sHead2Mtx?
+ struct ObjJoint *D_801B9EE8;  // set but not used
 
 /* @ 22FDB0 for 0x180 */
 void func_801815E0(Mat4f *mtx) {

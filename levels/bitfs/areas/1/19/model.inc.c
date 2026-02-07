@@ -1,5 +1,5 @@
 // 0x0700ECF0 - 0x0700ED50
-static const Vtx bitfs_seg7_vertex_0700ECF0[] = {
+ const Vtx bitfs_seg7_vertex_0700ECF0[] = {
     {{{     0,      0,   -306}, 0, {   334,    528}, {0xff, 0xff, 0x00, 0xff}}},
     {{{  -278,      0,    283}, 0, {   362,    620}, {0xff, 0xff, 0x00, 0xff}}},
     {{{    -7,      0,    135}, 0, {   336,    530}, {0xff, 0xff, 0x00, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx bitfs_seg7_vertex_0700ECF0[] = {
 };
 
 // 0x0700ED50 - 0x0700ED90
-static const Gfx bitfs_seg7_dl_0700ED50[] = {
+ const Gfx bitfs_seg7_dl_0700ED50[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,23 +1,23 @@
 // Breakable Box
 
 // 0x08011A78
-static const Lights1 breakable_box_seg8_lights_08011A80 = gdSPDefLights1(
+ const Lights1 breakable_box_seg8_lights_08011A80 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08011A90
-ALIGNED8 static const Texture breakable_box_seg8_texture_08011A90[] = {
+ALIGNED8  const Texture breakable_box_seg8_texture_08011A90[] = {
 #include "actors/breakable_box/crazy_box_surface.rgba16.inc.c"
 };
 
 // 0x08012290
-ALIGNED8 static const Texture breakable_box_seg8_texture_08012290[] = {
+ALIGNED8  const Texture breakable_box_seg8_texture_08012290[] = {
 #include "actors/breakable_box/cork_box_surface.rgba16.inc.c"
 };
 
 // 0x08012A90
-static const Vtx breakable_box_seg8_vertex_08012A90[] = {
+ const Vtx breakable_box_seg8_vertex_08012A90[] = {
     {{{  -100,      0,   -100}, 0, {   992,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -100,      0,    100}, 0, {   992,    992}, {0x81, 0x00, 0x00, 0xff}}},
     {{{  -100,    200,    100}, 0, {     0,    992}, {0x81, 0x00, 0x00, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx breakable_box_seg8_vertex_08012A90[] = {
 };
 
 // 0x08012B80
-static const Vtx breakable_box_seg8_vertex_08012B80[] = {
+ const Vtx breakable_box_seg8_vertex_08012B80[] = {
     {{{  -100,    200,    100}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   100,    200,   -100}, 0, {   992,    992}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -100,    200,   -100}, 0, {   992,      0}, {0x00, 0x7f, 0x00, 0xff}}},

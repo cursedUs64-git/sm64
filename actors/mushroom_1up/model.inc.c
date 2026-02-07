@@ -1,7 +1,7 @@
 // Mushroom 1-Up
 
 // 0x030295E8
-static const Vtx mushroom_1up_seg3_vertex_030295E8[] = {
+ const Vtx mushroom_1up_seg3_vertex_030295E8[] = {
     {{{    31,     31,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -30,     31,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -30,    -30,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx mushroom_1up_seg3_vertex_030295E8[] = {
 };
 
 // 0x03029628
-ALIGNED8 static const Texture mushroom_1up_seg3_texture_03029628[] = {
+ALIGNED8  const Texture mushroom_1up_seg3_texture_03029628[] = {
 #include "actors/mushroom_1up/1-up_mushroom.rgba16.inc.c"
 };
 

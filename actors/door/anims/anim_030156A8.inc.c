@@ -1,5 +1,5 @@
 // 0x030156A8
-static const struct Animation door_seg3_anim_030156A8 = {
+ const struct Animation door_seg3_anim_030156A8 = {
     1,
     0,
     40,

@@ -16,12 +16,12 @@
 #include "make_const_nonconst.h"
 #include "levels/ccm/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript ccm_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_CCM_ROPEWAY_LIFT, /*pos*/ 531, -4430, 6426,    /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(0x07) | BPARAM2(0x12), /*bhv*/ bhvPlatformOnTrack),
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript ccm_script_func_local_2[] = {
     OBJECT          (/*model*/ MODEL_PENGUIN,          /*pos*/  2650, -3735,  3970, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(0x01), /*bhv*/ bhvSmallPenguin),
     OBJECT          (/*model*/ MODEL_PENGUIN,          /*pos*/  -555,  3470, -1000, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(0x00), /*bhv*/ bhvSmallPenguin),
     OBJECT          (/*model*/ MODEL_MR_BLIZZARD,      /*pos*/ -2376, -1589,  4256, /*angle*/ 0, 252, 0, /*bhvParam*/ BPARAM2(MR_BLIZZARD_STYPE_JUMPING), /*bhv*/ bhvMrBlizzard),
@@ -30,7 +30,7 @@ static const LevelScript script_func_local_2[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript ccm_script_func_local_3[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,             /*pos*/  2665, -4607,  4525, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvCCMTouchedStarSpawn, /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_PENGUIN,          /*pos*/  3450, -4700,  4550, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_2), /*bhv*/ bhvTuxiesMother,          /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,             /*pos*/  4200,  -927,   400, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_4), /*bhv*/ bhvHiddenRedCoinStar,   /*acts*/ ALL_ACTS),
@@ -39,7 +39,7 @@ static const LevelScript script_func_local_3[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_4[] = {
+ const LevelScript ccm_script_func_local_4[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_PENGUIN, /*pos*/ -4952,  6656, -6075, /*angle*/ 0, 270, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_3) | BPARAM2(RACING_PENGUIN_BP_THIN), /*bhv*/ bhvRacingPenguin,   /*acts*/ ACT_2 | ACT_3 | ACT_4 | ACT_5 | ACT_6),
     OBJECT          (/*model*/ MODEL_NONE,    /*pos*/ -6500, -5836, -6400, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvPenguinRaceFinishLine),
     OBJECT          (/*model*/ MODEL_NONE,    /*pos*/ -6393,  -716,  7503, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvPenguinRaceShortcutCheck),
@@ -89,9 +89,9 @@ const LevelScript level_ccm_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_20,      /*destLevel*/ LEVEL_CCM,    /*destArea*/ 1, /*destNode*/ WARP_NODE_1F, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(ccm_script_func_local_1),
+        JUMP_LINK(ccm_script_func_local_2),
+        JUMP_LINK(ccm_script_func_local_3),
         TERRAIN(/*terrainData*/ ccm_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ ccm_seg7_area_1_macro_objs),
         SHOW_DIALOG(/*index*/ 0x00, DIALOG_048),
@@ -105,7 +105,7 @@ const LevelScript level_ccm_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0A,      /*destLevel*/ LEVEL_CCM,    /*destArea*/ 2, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ WARP_NODE_33, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 1, /*destNode*/ WARP_NODE_65, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_4),
+        JUMP_LINK(ccm_script_func_local_4),
         TERRAIN(/*terrainData*/ ccm_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ ccm_seg7_area_2_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0001, /*seq*/ SEQ_LEVEL_SLIDE),

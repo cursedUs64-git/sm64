@@ -1,17 +1,17 @@
 // 0x070589C0 - 0x070589D8
-static const Lights1 inside_castle_seg7_lights_070589C0 = gdSPDefLights1(
+ const Lights1 inside_castle_seg7_lights_070589C0 = gdSPDefLights1(
     0x3f, 0x33, 0x19,
     0xff, 0xcc, 0x65, 0x28, 0x28, 0x28
 );
 
 // 0x070589D8 - 0x070589F0
-static const Lights1 inside_castle_seg7_lights_070589D8 = gdSPDefLights1(
+ const Lights1 inside_castle_seg7_lights_070589D8 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x070589F0 - 0x07058AF0
-static const Vtx inside_castle_seg7_vertex_070589F0[] = {
+ const Vtx inside_castle_seg7_vertex_070589F0[] = {
     {{{   -19,     56,     10}, 0, {   480,    138}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     56,      0}, 0, {   480,    138}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     26,      0}, 0, {   682,    138}, {0x81, 0x00, 0x00, 0xff}}},
@@ -31,7 +31,7 @@ static const Vtx inside_castle_seg7_vertex_070589F0[] = {
 };
 
 // 0x07058AF0 - 0x07058BD0
-static const Vtx inside_castle_seg7_vertex_07058AF0[] = {
+ const Vtx inside_castle_seg7_vertex_07058AF0[] = {
     {{{    10,     92,     10}, 0, {   240,    650}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    -9,     92,     10}, 0, {   240,    308}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    -9,     77,     10}, 0, {   344,    308}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -49,7 +49,7 @@ static const Vtx inside_castle_seg7_vertex_07058AF0[] = {
 };
 
 // 0x07058BD0 - 0x07058CD0
-static const Vtx inside_castle_seg7_vertex_07058BD0[] = {
+ const Vtx inside_castle_seg7_vertex_07058BD0[] = {
     {{{   -19,     56,     10}, 0, {   480,    138}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     26,      0}, 0, {   682,    138}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     26,     10}, 0, {   682,    138}, {0x81, 0x00, 0x00, 0xff}}},
@@ -69,7 +69,7 @@ static const Vtx inside_castle_seg7_vertex_07058BD0[] = {
 };
 
 // 0x07058CD0 - 0x07058DB0
-static const Vtx inside_castle_seg7_vertex_07058CD0[] = {
+ const Vtx inside_castle_seg7_vertex_07058CD0[] = {
     {{{    10,     10,     10}, 0, {   786,    650}, {0x72, 0x36, 0x00, 0xff}}},
     {{{     0,     31,      0}, 0, {   650,    478}, {0x72, 0x36, 0x00, 0xff}}},
     {{{     0,     31,     10}, 0, {   650,    478}, {0x72, 0x36, 0x00, 0xff}}},
@@ -87,7 +87,7 @@ static const Vtx inside_castle_seg7_vertex_07058CD0[] = {
 };
 
 // 0x07058DB0 - 0x07058E50
-static const Vtx inside_castle_seg7_vertex_07058DB0[] = {
+ const Vtx inside_castle_seg7_vertex_07058DB0[] = {
     {{{    10,    -19,     10}, 0, {   990,    650}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    10,     10,      0}, 0, {   786,    650}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    10,     10,     10}, 0, {   786,    650}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -101,7 +101,7 @@ static const Vtx inside_castle_seg7_vertex_07058DB0[] = {
 };
 
 // 0x07058E50 - 0x07058F50
-static const Vtx inside_castle_seg7_vertex_07058E50[] = {
+ const Vtx inside_castle_seg7_vertex_07058E50[] = {
     {{{   -30,     82,      0}, 0, {   308,      0}, {0x93, 0x40, 0x00, 0xff}}},
     {{{   -30,     82,     10}, 0, {   308,      0}, {0x93, 0x40, 0x00, 0xff}}},
     {{{     0,    133,     10}, 0, {     0,    478}, {0x93, 0x40, 0x00, 0xff}}},
@@ -121,7 +121,7 @@ static const Vtx inside_castle_seg7_vertex_07058E50[] = {
 };
 
 // 0x07058F50 - 0x07058FC0
-static const Vtx inside_castle_seg7_vertex_07058F50[] = {
+ const Vtx inside_castle_seg7_vertex_07058F50[] = {
     {{{   -30,     82,      0}, 0, {   308,      0}, {0x93, 0x40, 0x00, 0xff}}},
     {{{     0,    133,     10}, 0, {     0,    478}, {0x93, 0x40, 0x00, 0xff}}},
     {{{     0,    133,      0}, 0, {     0,    478}, {0x93, 0x40, 0x00, 0xff}}},
@@ -132,7 +132,7 @@ static const Vtx inside_castle_seg7_vertex_07058F50[] = {
 };
 
 // 0x07058FC0 - 0x07059190
-static const Gfx inside_castle_seg7_dl_07058FC0[] = {
+ const Gfx inside_castle_seg7_dl_07058FC0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, inside_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

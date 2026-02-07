@@ -1,39 +1,39 @@
 // Haunted Cage
 
 // 0x0500C258
-static const Lights1 haunted_cage_seg5_lights_0500C258 = gdSPDefLights1(
+ const Lights1 haunted_cage_seg5_lights_0500C258 = gdSPDefLights1(
     0x39, 0x0c, 0x0e,
     0x90, 0x1e, 0x25, 0x28, 0x28, 0x28
 );
 
 // 0x0500C270
-static const Lights1 haunted_cage_seg5_lights_0500C270 = gdSPDefLights1(
+ const Lights1 haunted_cage_seg5_lights_0500C270 = gdSPDefLights1(
     0x47, 0x47, 0x47,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x0500C288
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500C288[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500C288[] = {
 #include "actors/haunted_cage/bbh_cage_floor.rgba16.inc.c"
 };
 
 // 0x0500CA88
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500CA88[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500CA88[] = {
 #include "actors/haunted_cage/bbh_cage_double_ornament.rgba16.inc.c"
 };
 
 // 0x0500D288
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500D288[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500D288[] = {
 #include "actors/haunted_cage/bbh_cage_ornament.rgba16.inc.c"
 };
 
 // 0x0500D688
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500D688[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500D688[] = {
 #include "actors/haunted_cage/bbh_cage_wooden_base.rgba16.inc.c"
 };
 
 // 0x0500DA88
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500DA88[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500DA88[] = {
 #include "actors/haunted_cage/bbh_cage_bars.rgba16.inc.c"
 };
 
@@ -41,12 +41,12 @@ ALIGNED8 static const Texture haunted_cage_seg5_texture_0500DA88[] = {
 // also could be some sort of shader mask from much earlier in development, considering
 // Big Boo's Haunt was a very very early level.
 // 0x0500E288
-ALIGNED8 static const Texture haunted_cage_seg5_texture_0500E288[] = {
+ALIGNED8  const Texture haunted_cage_seg5_texture_0500E288[] = {
 #include "actors/haunted_cage/bbh_cage_garbage.rgba16.inc.c"
 };
 
 // 0x0500EA88
-static const Vtx haunted_cage_seg5_vertex_0500EA88[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EA88[] = {
     {{{    47,     81,      0}, 0, {  6100,   2042}, {0x31, 0x73, 0xf1, 0xff}}},
     {{{    40,     81,    -22}, 0, {  7122,   2042}, {0x31, 0x73, 0xf1, 0xff}}},
     {{{     0,    101,      0}, 0, {  6612,     66}, {0x31, 0x73, 0xf1, 0xff}}},
@@ -65,7 +65,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EA88[] = {
 };
 
 // 0x0500EB78
-static const Vtx haunted_cage_seg5_vertex_0500EB78[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EB78[] = {
     {{{   -22,     81,    -39}, 0, { 10188,   2042}, {0xdb, 0x73, 0xdb, 0xff}}},
     {{{   -39,     81,    -22}, 0, { 11210,   2042}, {0xdb, 0x73, 0xdb, 0xff}}},
     {{{     0,    101,      0}, 0, { 10698,     66}, {0xdb, 0x73, 0xdb, 0xff}}},
@@ -84,7 +84,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EB78[] = {
 };
 
 // 0x0500EC68
-static const Vtx haunted_cage_seg5_vertex_0500EC68[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EC68[] = {
     {{{     0,     81,     47}, 0, {  3034,   2042}, {0x0f, 0x74, 0x31, 0xff}}},
     {{{    23,     81,     40}, 0, {  4056,   2042}, {0x0f, 0x74, 0x31, 0xff}}},
     {{{     0,    101,      0}, 0, {  3546,     66}, {0x0f, 0x74, 0x31, 0xff}}},
@@ -94,7 +94,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EC68[] = {
 };
 
 // 0x0500ECC8
-static const Vtx haunted_cage_seg5_vertex_0500ECC8[] = {
+ const Vtx haunted_cage_seg5_vertex_0500ECC8[] = {
     {{{   -43,      0,    -25}, 0, { 11210,    479}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{   -25,     10,    -43}, 0, { 10188,      0}, {0xa7, 0x00, 0xa7, 0xff}}},
     {{{   -25,      0,    -43}, 0, { 10188,    479}, {0xa7, 0x00, 0xa7, 0xff}}},
@@ -113,7 +113,7 @@ static const Vtx haunted_cage_seg5_vertex_0500ECC8[] = {
 };
 
 // 0x0500EDB8
-static const Vtx haunted_cage_seg5_vertex_0500EDB8[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EDB8[] = {
     {{{     0,      0,    -50}, 0, {  9166,    479}, {0x21, 0x00, 0x86, 0xff}}},
     {{{    26,     10,    -43}, 0, {  8144,      0}, {0x21, 0x00, 0x86, 0xff}}},
     {{{    26,      0,    -43}, 0, {  8144,    479}, {0x21, 0x00, 0x86, 0xff}}},
@@ -131,7 +131,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EDB8[] = {
 };
 
 // 0x0500EE98
-static const Vtx haunted_cage_seg5_vertex_0500EE98[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EE98[] = {
     {{{   -50,      0,      0}, 0, { 12232,    479}, {0x86, 0x00, 0xde, 0xff}}},
     {{{   -43,     10,    -25}, 0, { 11210,      0}, {0x86, 0x00, 0xde, 0xff}}},
     {{{   -43,      0,    -25}, 0, { 11210,    479}, {0x86, 0x00, 0xde, 0xff}}},
@@ -150,7 +150,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EE98[] = {
 };
 
 // 0x0500EF88
-static const Vtx haunted_cage_seg5_vertex_0500EF88[] = {
+ const Vtx haunted_cage_seg5_vertex_0500EF88[] = {
     {{{    26,      0,     44}, 0, {  4056,    479}, {0x21, 0x00, 0x7a, 0xff}}},
     {{{     0,     10,     51}, 0, {  3034,      0}, {0x21, 0x00, 0x7a, 0xff}}},
     {{{     0,      0,     51}, 0, {  3034,    479}, {0x21, 0x00, 0x7a, 0xff}}},
@@ -162,7 +162,7 @@ static const Vtx haunted_cage_seg5_vertex_0500EF88[] = {
 };
 
 // 0x0500F008
-static const Vtx haunted_cage_seg5_vertex_0500F008[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F008[] = {
     {{{    44,     64,    -25}, 0, {  7122,    990}, {0x74, 0x21, 0xdb, 0xff}}},
     {{{    40,     81,    -22}, 0, {  7122,    -72}, {0x74, 0x21, 0xdb, 0xff}}},
     {{{    47,     81,      0}, 0, {  6100,    -72}, {0x74, 0x21, 0xdb, 0xff}}},
@@ -182,7 +182,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F008[] = {
 };
 
 // 0x0500F108
-static const Vtx haunted_cage_seg5_vertex_0500F108[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F108[] = {
     {{{     0,     81,    -46}, 0, {  9166,    -72}, {0x23, 0x21, 0x8b, 0xff}}},
     {{{    23,     81,    -39}, 0, {  8144,    -72}, {0x23, 0x21, 0x8b, 0xff}}},
     {{{    26,     64,    -43}, 0, {  8144,    990}, {0x23, 0x21, 0x8b, 0xff}}},
@@ -202,7 +202,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F108[] = {
 };
 
 // 0x0500F208
-static const Vtx haunted_cage_seg5_vertex_0500F208[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F208[] = {
     {{{   -50,     64,      0}, 0, { 12232,    990}, {0x8b, 0x21, 0xdf, 0xff}}},
     {{{   -39,     81,    -22}, 0, { 11210,    -72}, {0x8b, 0x21, 0xdf, 0xff}}},
     {{{   -43,     64,    -25}, 0, { 11210,    990}, {0x8b, 0x21, 0xdf, 0xff}}},
@@ -222,7 +222,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F208[] = {
 };
 
 // 0x0500F308
-static const Vtx haunted_cage_seg5_vertex_0500F308[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F308[] = {
     {{{     0,     64,     51}, 0, {  3034,    990}, {0xdf, 0x1c, 0x77, 0xff}}},
     {{{     0,     81,     47}, 0, {  3034,    -72}, {0xdf, 0x1c, 0x77, 0xff}}},
     {{{   -25,     64,     44}, 0, {  2012,    990}, {0xdf, 0x1c, 0x77, 0xff}}},
@@ -242,7 +242,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F308[] = {
 };
 
 // 0x0500F408
-static const Vtx haunted_cage_seg5_vertex_0500F408[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F408[] = {
     {{{   -43,      0,    -25}, 0, {  5204,  -2624}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{     0,      0,     51}, 0, { -1052,  -8882}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    26,      0,     44}, 0, { -3342,  -7560}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -361,13 +361,13 @@ const Gfx haunted_cage_seg5_dl_0500F7D8[] = {
 };
 
 // 0x0500F888
-static const Lights1 haunted_cage_seg5_lights_0500F888 = gdSPDefLights1(
+ const Lights1 haunted_cage_seg5_lights_0500F888 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500F8A0
-static const Vtx haunted_cage_seg5_vertex_0500F8A0[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F8A0[] = {
     {{{   -19,      0,     10}, 0, {  3034,    479}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,     28,    -19}, 0, {     0,  -2350}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -19,      0,    -19}, 0, {     0,    479}, {0x81, 0x00, 0x00, 0xff}}},
@@ -386,7 +386,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F8A0[] = {
 };
 
 // 0x0500F990
-static const Vtx haunted_cage_seg5_vertex_0500F990[] = {
+ const Vtx haunted_cage_seg5_vertex_0500F990[] = {
     {{{   -30,      0,     39}, 0, {   990,    479}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -30,     10,     39}, 0, {   990,   -543}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -30,     10,     29}, 0, {     0,   -543}, {0x81, 0x00, 0x00, 0xff}}},
@@ -405,7 +405,7 @@ static const Vtx haunted_cage_seg5_vertex_0500F990[] = {
 };
 
 // 0x0500FA80
-static const Vtx haunted_cage_seg5_vertex_0500FA80[] = {
+ const Vtx haunted_cage_seg5_vertex_0500FA80[] = {
     {{{   -30,      0,     29}, 0, {   990,    479}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -30,     10,     29}, 0, {   990,   -543}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -19,     10,     29}, 0, {     0,   -543}, {0x00, 0x00, 0x81, 0xff}}},
@@ -463,13 +463,13 @@ const Gfx haunted_cage_seg5_dl_0500FC28[] = {
 };
 
 // 0x0500FC98
-static const Lights1 haunted_cage_seg5_lights_0500FC98 = gdSPDefLights1(
+ const Lights1 haunted_cage_seg5_lights_0500FC98 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // 0x0500FCB0
-static const Vtx haunted_cage_seg5_vertex_0500FCB0[] = {
+ const Vtx haunted_cage_seg5_vertex_0500FCB0[] = {
     {{{   -43,     10,     26}, 0, {  8484,    990}, {0x86, 0x00, 0x21, 0xff}}},
     {{{   -43,     64,     26}, 0, {  8484,   6370}, {0x86, 0x00, 0x21, 0xff}}},
     {{{   -50,     64,      0}, 0, { 10188,   6370}, {0x86, 0x00, 0x21, 0xff}}},
@@ -488,7 +488,7 @@ static const Vtx haunted_cage_seg5_vertex_0500FCB0[] = {
 };
 
 // 0x0500FDA0
-static const Vtx haunted_cage_seg5_vertex_0500FDA0[] = {
+ const Vtx haunted_cage_seg5_vertex_0500FDA0[] = {
     {{{     0,     10,     51}, 0, {  5078,    990}, {0xde, 0x00, 0x7a, 0xff}}},
     {{{     0,     64,     51}, 0, {  5078,   6370}, {0xde, 0x00, 0x7a, 0xff}}},
     {{{   -25,     64,     44}, 0, {  6782,   6370}, {0xde, 0x00, 0x7a, 0xff}}},
@@ -506,7 +506,7 @@ static const Vtx haunted_cage_seg5_vertex_0500FDA0[] = {
 };
 
 // 0x0500FE80
-static const Vtx haunted_cage_seg5_vertex_0500FE80[] = {
+ const Vtx haunted_cage_seg5_vertex_0500FE80[] = {
     {{{   -50,     10,      0}, 0, { 10188,    990}, {0x86, 0x00, 0xde, 0xff}}},
     {{{   -50,     64,      0}, 0, { 10188,   6370}, {0x86, 0x00, 0xde, 0xff}}},
     {{{   -43,     64,    -25}, 0, { 11892,   6370}, {0x86, 0x00, 0xde, 0xff}}},
@@ -526,7 +526,7 @@ static const Vtx haunted_cage_seg5_vertex_0500FE80[] = {
 };
 
 // 0x0500FF80
-static const Vtx haunted_cage_seg5_vertex_0500FF80[] = {
+ const Vtx haunted_cage_seg5_vertex_0500FF80[] = {
     {{{    26,     10,    -43}, 0, { 17002,    990}, {0x59, 0x00, 0xa7, 0xff}}},
     {{{    26,     64,    -43}, 0, { 17002,   6370}, {0x59, 0x00, 0xa7, 0xff}}},
     {{{    44,     64,    -25}, 0, { 18704,   6370}, {0x59, 0x00, 0xa7, 0xff}}},

@@ -1,5 +1,5 @@
 // 0x0700B948 - 0x0700BA48
-static const Vtx bitdw_seg7_vertex_0700B948[] = {
+ const Vtx bitdw_seg7_vertex_0700B948[] = {
     {{{   205,      0,   -306}, 0, {  2012,  -2076}, {0x3d, 0x41, 0x74, 0xff}}},
     {{{   205,      0,    307}, 0, {  2012,    990}, {0x3d, 0x41, 0x74, 0xff}}},
     {{{  -204,      0,   -306}, 0, {     0,  -2076}, {0x3d, 0x41, 0x74, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bitdw_seg7_vertex_0700B948[] = {
 };
 
 // 0x0700BA48 - 0x0700BAC8
-static const Vtx bitdw_seg7_vertex_0700BA48[] = {
+ const Vtx bitdw_seg7_vertex_0700BA48[] = {
     {{{  -204,      0,   -306}, 0, { -2074,      0}, {0x52, 0x61, 0xac, 0xff}}},
     {{{  -204,      0,    307}, 0, {   990,      0}, {0x52, 0x61, 0xac, 0xff}}},
     {{{  -204,    102,   -306}, 0, { -2074,    990}, {0x52, 0x61, 0xac, 0xff}}},
@@ -31,7 +31,7 @@ static const Vtx bitdw_seg7_vertex_0700BA48[] = {
 };
 
 // 0x0700BAC8 - 0x0700BB58
-static const Gfx bitdw_seg7_dl_0700BAC8[] = {
+ const Gfx bitdw_seg7_dl_0700BAC8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitdw_seg7_texture_07000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

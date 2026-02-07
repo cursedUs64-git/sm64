@@ -17,7 +17,7 @@
 #include "levels/lll/header.h"
 
 // Unlike most levels, level geometry objects in LLL are defined as regular objects instead of terrain objects.
-static const LevelScript script_func_local_1[] = {
+ const LevelScript lll_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_LEVEL_GEOMETRY_03, /*pos*/  3840,   0, -5631, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvStaticObject),
     OBJECT(/*model*/ MODEL_LEVEL_GEOMETRY_04, /*pos*/  4992,   0,  -639, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvStaticObject),
     OBJECT(/*model*/ MODEL_LEVEL_GEOMETRY_05, /*pos*/  7168,   0,  1408, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvStaticObject),
@@ -38,7 +38,7 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript lll_script_func_local_2[] = {
     OBJECT(/*model*/ MODEL_LLL_DRAWBRIDGE_PART,                /*pos*/ -1919,  307,  3648, /*angle*/ 0,  0, 0, /*bhvParam*/ 0, /*bhv*/ bhvLLLDrawbridgeSpawner),
     OBJECT(/*model*/ MODEL_LLL_ROTATING_BLOCK_FIRE_BARS,       /*pos*/ -5119,  307, -4095, /*angle*/ 0,  0, 0, /*bhvParam*/ 0, /*bhv*/ bhvLLLRotatingBlockWithFireBars),
     OBJECT(/*model*/ MODEL_LLL_ROTATING_HEXAGONAL_RING,        /*pos*/     0,    0,     0, /*angle*/ 0,  0, 0, /*bhvParam*/ 0, /*bhv*/ bhvLLLRotatingHexagonalRing),
@@ -55,7 +55,7 @@ static const LevelScript script_func_local_2[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript lll_script_func_local_3[] = {
     OBJECT(/*model*/ MODEL_LLL_MOVING_OCTAGONAL_MESH_PLATFORM, /*pos*/  1124,    0, -4607, /*angle*/ 0,  0, 0, /*bhvParam*/ 0, /*bhv*/ bhvLLLMovingOctagonalMeshPlatform),
     OBJECT(/*model*/ MODEL_LLL_MOVING_OCTAGONAL_MESH_PLATFORM, /*pos*/  7168,    0,  2432, /*angle*/ 0,  0, 0, /*bhvParam*/ BPARAM2(0x01), /*bhv*/ bhvLLLMovingOctagonalMeshPlatform),
     OBJECT(/*model*/ MODEL_LLL_SINKING_ROCK_BLOCK,             /*pos*/  7168,    0,  7296, /*angle*/ 0,  0, 0, /*bhvParam*/ 0, /*bhv*/ bhvLLLSinkingRockBlock),
@@ -65,7 +65,7 @@ static const LevelScript script_func_local_3[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_4[] = {
+ const LevelScript lll_script_func_local_4[] = {
     OBJECT          (/*model*/ MODEL_NONE,            /*pos*/ -3199,  307,  3456, /*angle*/ 0,   0, 0, /*bhvParam*/ 0, /*bhv*/ bhvMrI),
     OBJECT          (/*model*/ MODEL_BULLY_BOSS,      /*pos*/     0,  307, -4385, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvBigBully),
     OBJECT          (/*model*/ MODEL_BULLY_BOSS,      /*pos*/  4046, 2234, -5521, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_2), /*bhv*/ bhvBigBullyWithMinions),
@@ -86,13 +86,13 @@ static const LevelScript script_func_local_4[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_5[] = {
+ const LevelScript lll_script_func_local_5[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE, /*pos*/ -4400, 350,  250, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_3), /*bhv*/ bhvHiddenRedCoinStar, /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR, /*pos*/  3100, 400, 7900, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_4), /*bhv*/ bhvStar,                 /*acts*/ ALL_ACTS),
     RETURN(),
 };
 
-static const LevelScript script_func_local_6[] = {
+ const LevelScript lll_script_func_local_6[] = {
     OBJECT(/*model*/ MODEL_NONE,                         /*pos*/   728, 2606, -2754, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(56),   /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_NONE,                         /*pos*/  1043, 2972, -2679, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(78),   /*bhv*/ bhvPoleGrabbing),
     OBJECT(/*model*/ MODEL_NONE,                         /*pos*/  1078, 3078, -2269, /*angle*/ 0,   0, 0, /*bhvParam*/ BPARAM2(102),  /*bhv*/ bhvPoleGrabbing),
@@ -110,7 +110,7 @@ static const LevelScript script_func_local_6[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_7[] = {
+ const LevelScript lll_script_func_local_7[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR, /*pos*/ 2523, 3850, -901, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_5), /*bhv*/ bhvStar, /*acts*/ ALL_ACTS),
     OBJECT_WITH_ACTS(/*model*/ MODEL_STAR, /*pos*/ 1800, 3400, 1450, /*angle*/ 0, 0, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_6), /*bhv*/ bhvStar, /*acts*/ ALL_ACTS),
     RETURN(),
@@ -185,11 +185,11 @@ const LevelScript level_lll_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0D,      /*destLevel*/ LEVEL_LLL,    /*destArea*/ 1, /*destNode*/ WARP_NODE_0C, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_32, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_64, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
-        JUMP_LINK(script_func_local_4),
-        JUMP_LINK(script_func_local_5),
+        JUMP_LINK(lll_script_func_local_1),
+        JUMP_LINK(lll_script_func_local_2),
+        JUMP_LINK(lll_script_func_local_3),
+        JUMP_LINK(lll_script_func_local_4),
+        JUMP_LINK(lll_script_func_local_5),
         TERRAIN(/*terrainData*/ lll_seg7_area_1_collision),
         MACRO_OBJECTS(/*objList*/ lll_seg7_area_1_macro_objs),
         SHOW_DIALOG(/*index*/ 0x00, DIALOG_097),
@@ -202,8 +202,8 @@ const LevelScript level_lll_entry[] = {
         WARP_NODE(/*id*/ WARP_NODE_0A,      /*destLevel*/ LEVEL_LLL,    /*destArea*/ 2, /*destNode*/ WARP_NODE_0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_SUCCESS, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_32, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ WARP_NODE_DEATH,   /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 3, /*destNode*/ WARP_NODE_64, /*flags*/ WARP_NO_CHECKPOINT),
-        JUMP_LINK(script_func_local_6),
-        JUMP_LINK(script_func_local_7),
+        JUMP_LINK(lll_script_func_local_6),
+        JUMP_LINK(lll_script_func_local_7),
         TERRAIN(/*terrainData*/ lll_seg7_area_2_collision),
         MACRO_OBJECTS(/*objList*/ lll_seg7_area_2_macro_objs),
         SET_BACKGROUND_MUSIC(/*settingsPreset*/ 0x0004, /*seq*/ SEQ_LEVEL_HOT),

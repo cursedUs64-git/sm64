@@ -1,5 +1,5 @@
 // 0x03016C00
-static const s16 bowser_key_seg3_animvalue_unlock_door[] = {
+ const s16 bowser_key_seg3_animvalue_unlock_door[] = {
     0x0000, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6,
     0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6,
     0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6, 0xFFE6,
@@ -109,13 +109,13 @@ static const s16 bowser_key_seg3_animvalue_unlock_door[] = {
 };
 
 // 0x03017294
-static const u16 bowser_key_seg3_animindex_unlock_door[] = {
+ const u16 bowser_key_seg3_animindex_unlock_door[] = {
     0x008C, 0x0001, 0x008C, 0x008D, 0x008C, 0x0119, 0x0001, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000,
     0x008C, 0x01A5, 0x008C, 0x0231, 0x008C, 0x02BD,
 };
 
 // 0x030172B8
-static const struct Animation bowser_key_seg3_anim_unlock_door = {
+ const struct Animation bowser_key_seg3_anim_unlock_door = {
     1,
     0,
     0,

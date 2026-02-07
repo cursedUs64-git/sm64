@@ -1,5 +1,5 @@
 // 0x07002000 - 0x07002100
-static const Vtx dl_cruiser_metal_holes_vertex_group[] = {
+ const Vtx dl_cruiser_metal_holes_vertex_group[] = {
     {{{ -4786,   -975,   4124}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -4889,   -975,   4124}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -4786,  -1057,   4185}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx dl_cruiser_metal_holes_vertex_group[] = {
 };
 
 // 0x07002100 - 0x07002168
-static const Gfx dl_cruiser_metal_holes_model[] = {
+ const Gfx dl_cruiser_metal_holes_model[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, texture_metal_hole),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -16,7 +16,7 @@
 #include "make_const_nonconst.h"
 #include "levels/bob/header.h"
 
-static const LevelScript script_func_local_1[] = {
+ const LevelScript bob_script_func_local_1[] = {
     OBJECT(/*model*/ MODEL_BOB_CHAIN_CHOMP_GATE,  /*pos*/  1456,   768,   446, /*angle*/ 0, 326, 0,  /*bhvParam*/ 0, /*bhv*/ bhvChainChompGate),
     OBJECT(/*model*/ MODEL_BOB_SEESAW_PLATFORM,   /*pos*/ -2303,   717,  1024, /*angle*/ 0, 45, 0,   /*bhvParam*/ BPARAM2(0x03), /*bhv*/ bhvSeesawPlatform),
     OBJECT(/*model*/ MODEL_NONE,                  /*pos*/ -2050,     0, -3069, /*angle*/ 0, 25, 0,   /*bhvParam*/ BPARAM2(OPENABLE_GRILL_BP_BOB), /*bhv*/ bhvOpenableGrill),
@@ -25,7 +25,7 @@ static const LevelScript script_func_local_1[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_2[] = {
+ const LevelScript bob_script_func_local_2[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/  1535, 3840, -5561, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM2(BBALL_BP_STYPE_BOB_UPPER), /*bhv*/ bhvBoBBowlingBallSpawner,  /*acts*/ ACT_1 | ACT_2),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/  1535, 3840, -5561, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM2(BBALL_BP_STYPE_BOB_UPPER), /*bhv*/ bhvTTMBowlingBallSpawner,  /*acts*/ ACT_3 | ACT_4 | ACT_5 | ACT_6),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/   524, 2825, -5400, /*angle*/ 0, 0, 0,   /*bhvParam*/ BPARAM2(BBALL_BP_STYPE_BOB_LOWER), /*bhv*/ bhvBoBBowlingBallSpawner,  /*acts*/ ACT_1 | ACT_2),
@@ -44,7 +44,7 @@ static const LevelScript script_func_local_2[] = {
     RETURN(),
 };
 
-static const LevelScript script_func_local_3[] = {
+ const LevelScript bob_script_func_local_3[] = {
     OBJECT_WITH_ACTS(/*model*/ MODEL_KING_BOBOMB,           /*pos*/  1636, 4242, -5567, /*angle*/ 0, -147, 0, /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_1), /*bhv*/ bhvKingBobomb,            /*acts*/ ACT_1),
     OBJECT_WITH_ACTS(/*model*/ MODEL_KOOPA_WITH_SHELL,      /*pos*/ -4004,    0,  5221, /*angle*/ 0, 0, 0,    /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_2) | BPARAM2(KOOPA_BP_KOOPA_THE_QUICK_BOB), /*bhv*/ bhvKoopa,                 /*acts*/ ACT_2),
     OBJECT_WITH_ACTS(/*model*/ MODEL_NONE,                  /*pos*/ -6000, 1000,  2400, /*angle*/ 0, 0, 0,    /*bhvParam*/ BPARAM1(STAR_INDEX_ACT_4), /*bhv*/ bhvHiddenRedCoinStar,     /*acts*/ ALL_ACTS),
@@ -75,9 +75,9 @@ const LevelScript level_bob_entry[] = {
     LOAD_MODEL_FROM_GEO(MODEL_BOB_BARS_GRILLS,      bob_geo_000470),
 
     AREA(/*index*/ 1, bob_geo_000488),
-        JUMP_LINK(script_func_local_1),
-        JUMP_LINK(script_func_local_2),
-        JUMP_LINK(script_func_local_3),
+        JUMP_LINK(bob_script_func_local_1),
+        JUMP_LINK(bob_script_func_local_2),
+        JUMP_LINK(bob_script_func_local_3),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ -6558,  1000,  6464, /*angle*/ 0, 135, 0,  /*bhvParam*/ BPARAM2(WARP_NODE_0A), /*bhv*/ bhvSpinAirborneWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/   583,  2683, -5387, /*angle*/ 0, -154, 0, /*bhvParam*/ BPARAM2(WARP_NODE_0B), /*bhv*/ bhvFadingWarp),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/  1680,  3835, -5523, /*angle*/ 0, -153, 0, /*bhvParam*/ BPARAM2(WARP_NODE_0C), /*bhv*/ bhvFadingWarp),

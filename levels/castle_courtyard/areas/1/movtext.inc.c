@@ -1,5 +1,5 @@
 // 0x07006E4C - 0x07006E7C
-static Movtex castle_courtyard_movtex_star_statue_water_data[] = {
+ Movtex castle_courtyard_movtex_star_statue_water_data[] = {
     MOV_TEX_INIT_LOAD(   1),
     MOV_TEX_ROT_SPEED(   5),
     MOV_TEX_ROT_SCALE(   3),

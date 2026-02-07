@@ -1,5 +1,5 @@
 // 0x0702A948 - 0x0702A988
-static const Vtx ttm_seg7_vertex_0702A948[] = {
+ const Vtx ttm_seg7_vertex_0702A948[] = {
     {{{  1024,   2048,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1023,   2048,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1023,      0,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx ttm_seg7_vertex_0702A948[] = {
 };
 
 // 0x0702A988 - 0x0702A9C0
-static const Gfx ttm_seg7_dl_0702A988[] = {
+ const Gfx ttm_seg7_dl_0702A988[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, mountain_09002800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

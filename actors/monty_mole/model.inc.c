@@ -1,74 +1,74 @@
 // Monty Mole
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused1 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused2 = gdSPDefLights1(
     0x30, 0x1f, 0x00,
     0xc3, 0x7e, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused3 = gdSPDefLights1(
     0x05, 0x04, 0x05,
     0x16, 0x13, 0x14, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused4 = gdSPDefLights1(
     0x07, 0x08, 0x07,
     0x1f, 0x20, 0x1f, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused5 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused5 = gdSPDefLights1(
     0x14, 0x0b, 0x0a,
     0x53, 0x2e, 0x28, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 monty_mole_lights_unused6 = gdSPDefLights1(
+UNUSED  const Lights1 monty_mole_lights_unused6 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05000970
-ALIGNED8 static const Texture monty_mole_seg5_texture_05000970[] = {
+ALIGNED8  const Texture monty_mole_seg5_texture_05000970[] = {
 #include "actors/monty_mole/monty_mole_cheek.rgba16.inc.c"
 };
 
 // 0x05001170
-ALIGNED8 static const Texture monty_mole_seg5_texture_05001170[] = {
+ALIGNED8  const Texture monty_mole_seg5_texture_05001170[] = {
 #include "actors/monty_mole/monty_mole_eye.rgba16.inc.c"
 };
 
 // 0x05001970
-ALIGNED8 static const Texture monty_mole_seg5_texture_05001970[] = {
+ALIGNED8  const Texture monty_mole_seg5_texture_05001970[] = {
 #include "actors/monty_mole/monty_mole_nose.rgba16.inc.c"
 };
 
 // 0x05002170
-ALIGNED8 static const Texture monty_mole_seg5_texture_05002170[] = {
+ALIGNED8  const Texture monty_mole_seg5_texture_05002170[] = {
 #include "actors/monty_mole/monty_mole_tooth.rgba16.inc.c"
 };
 
 // 0x05002970
-ALIGNED8 static const Texture monty_mole_seg5_texture_05002970[] = {
+ALIGNED8  const Texture monty_mole_seg5_texture_05002970[] = {
 #include "actors/monty_mole/monty_mole_claw.rgba16.inc.c"
 };
 
 // 0x05003170
-static const Lights1 monty_mole_seg5_lights_05003170 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003170 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003188
-static const Vtx monty_mole_seg5_vertex_05003188[] = {
+ const Vtx monty_mole_seg5_vertex_05003188[] = {
     {{{    85,    -12,    -77}, 0, {    -6,    778}, {0x21, 0x97, 0xc2, 0xff}}},
     {{{   -13,     -8,     32}, 0, {   348,    972}, {0xa0, 0xc2, 0x36, 0xff}}},
     {{{   -13,     -8,    -24}, 0, {   150,    978}, {0x99, 0x28, 0xc3, 0xff}}},
@@ -113,13 +113,13 @@ const Gfx monty_mole_seg5_dl_050032A0[] = {
 };
 
 // 0x05003300
-static const Lights1 monty_mole_seg5_lights_05003300 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003300 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003318
-static const Vtx monty_mole_seg5_vertex_05003318[] = {
+ const Vtx monty_mole_seg5_vertex_05003318[] = {
     {{{    80,     10,     54}, 0, {  3144,    202}, {0x17, 0x63, 0x4a, 0xff}}},
     {{{   133,     10,     13}, 0, {  1908,    982}, {0x77, 0xf7, 0x29, 0xff}}},
     {{{    79,     10,    -41}, 0, {  -148,    212}, {0x11, 0x61, 0xb1, 0xff}}},
@@ -133,7 +133,7 @@ static const Vtx monty_mole_seg5_vertex_05003318[] = {
 };
 
 // 0x050033B8
-static const Vtx monty_mole_seg5_vertex_050033B8[] = {
+ const Vtx monty_mole_seg5_vertex_050033B8[] = {
     {{{    -4,     10,     36}, 0, {  1044,    680}, {0xd0, 0xda, 0x6e, 0xff}}},
     {{{    98,    -18,     18}, 0, {   780,    984}, {0x16, 0x8c, 0x2d, 0xff}}},
     {{{    80,     10,     54}, 0, {   896,    934}, {0x17, 0x63, 0x4a, 0xff}}},
@@ -193,13 +193,13 @@ const Gfx monty_mole_seg5_dl_05003518[] = {
 };
 
 // 0x05003598
-static const Lights1 monty_mole_seg5_lights_05003598 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003598 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050035B0
-static const Vtx monty_mole_seg5_vertex_050035B0[] = {
+ const Vtx monty_mole_seg5_vertex_050035B0[] = {
     {{{    69,    -15,     58}, 0, {  -562,    834}, {0x64, 0x03, 0x4d, 0xff}}},
     {{{    48,     21,      0}, 0, {  1416,    262}, {0x3b, 0x6e, 0xef, 0xff}}},
     {{{    38,     13,     47}, 0, {   -42,    224}, {0x1e, 0x6b, 0x3c, 0xff}}},
@@ -215,7 +215,7 @@ static const Vtx monty_mole_seg5_vertex_050035B0[] = {
 };
 
 // 0x05003670
-static const Vtx monty_mole_seg5_vertex_05003670[] = {
+ const Vtx monty_mole_seg5_vertex_05003670[] = {
     {{{   -21,     -2,    -55}, 0, {  1006,    906}, {0x93, 0xd0, 0xd6, 0xff}}},
     {{{    -3,     15,    -63}, 0, {   986,    942}, {0xd3, 0x6e, 0xd5, 0xff}}},
     {{{     4,    -12,    -76}, 0, {  1000,    962}, {0x06, 0xe0, 0x86, 0xff}}},
@@ -280,13 +280,13 @@ const Gfx monty_mole_seg5_dl_05003820[] = {
 };
 
 // 0x050038A0
-static const Lights1 monty_mole_seg5_lights_050038A0 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_050038A0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050038B8
-static const Vtx monty_mole_seg5_vertex_050038B8[] = {
+ const Vtx monty_mole_seg5_vertex_050038B8[] = {
     {{{    -3,      7,    -22}, 0, {   234,    806}, {0xd2, 0x73, 0xe5, 0xff}}},
     {{{    -3,      7,     19}, 0, {    80,    810}, {0xb2, 0x58, 0x2e, 0xff}}},
     {{{    78,     15,     64}, 0, {    34,    970}, {0x11, 0x79, 0x22, 0xff}}},
@@ -331,13 +331,13 @@ const Gfx monty_mole_seg5_dl_050039D0[] = {
 };
 
 // 0x05003A30
-static const Lights1 monty_mole_seg5_lights_05003A30 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003A30 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003A48
-static const Vtx monty_mole_seg5_vertex_05003A48[] = {
+ const Vtx monty_mole_seg5_vertex_05003A48[] = {
     {{{    79,     10,     42}, 0, {  -148,    212}, {0x11, 0x61, 0x4f, 0xff}}},
     {{{   133,     10,     15}, 0, {   948,    982}, {0x5f, 0xe9, 0x4f, 0xff}}},
     {{{   133,     10,    -12}, 0, {  1908,    982}, {0x77, 0xf7, 0xd7, 0xff}}},
@@ -351,7 +351,7 @@ static const Vtx monty_mole_seg5_vertex_05003A48[] = {
 };
 
 // 0x05003AE8
-static const Vtx monty_mole_seg5_vertex_05003AE8[] = {
+ const Vtx monty_mole_seg5_vertex_05003AE8[] = {
     {{{    -4,     10,    -35}, 0, {   838,    786}, {0xd0, 0xdb, 0x91, 0xff}}},
     {{{   -46,     10,      0}, 0, {   948,    720}, {0xa0, 0xae, 0x00, 0xff}}},
     {{{    -4,     10,     35}, 0, {   970,    808}, {0xd9, 0x2b, 0x70, 0xff}}},
@@ -411,13 +411,13 @@ const Gfx monty_mole_seg5_dl_05003C48[] = {
 };
 
 // 0x05003CC8
-static const Lights1 monty_mole_seg5_lights_05003CC8 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003CC8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003CE0
-static const Vtx monty_mole_seg5_vertex_05003CE0[] = {
+ const Vtx monty_mole_seg5_vertex_05003CE0[] = {
     {{{     4,    -12,     77}, 0, {  3424,    196}, {0x06, 0xe0, 0x7a, 0xff}}},
     {{{    69,    -15,     32}, 0, {  2066,    864}, {0x3a, 0x9d, 0x33, 0xff}}},
     {{{    48,     21,      0}, 0, {  1416,    262}, {0x3b, 0x6e, 0x10, 0xff}}},
@@ -433,7 +433,7 @@ static const Vtx monty_mole_seg5_vertex_05003CE0[] = {
 };
 
 // 0x05003DA0
-static const Vtx monty_mole_seg5_vertex_05003DA0[] = {
+ const Vtx monty_mole_seg5_vertex_05003DA0[] = {
     {{{    48,     21,      0}, 0, {   700,    872}, {0x3b, 0x6e, 0x10, 0xff}}},
     {{{    38,     13,    -46}, 0, {   818,    856}, {0x1e, 0x6b, 0xc4, 0xff}}},
     {{{    -5,      8,    -57}, 0, {   898,    758}, {0xd3, 0x6f, 0xd8, 0xff}}},
@@ -498,13 +498,13 @@ const Gfx monty_mole_seg5_dl_05003F50[] = {
 };
 
 // 0x05003FD0
-static const Lights1 monty_mole_seg5_lights_05003FD0 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05003FD0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003FE8
-static const Vtx monty_mole_seg5_vertex_05003FE8[] = {
+ const Vtx monty_mole_seg5_vertex_05003FE8[] = {
     {{{   -39,     52,     94}, 0, {  1068,    880}, {0xca, 0x25, 0x6c, 0xff}}},
     {{{    -6,     97,     52}, 0, {   806,    668}, {0xf6, 0x72, 0x35, 0xff}}},
     {{{   -59,     66,     46}, 0, {   756,   1006}, {0x96, 0x42, 0x13, 0xff}}},
@@ -521,7 +521,7 @@ static const Vtx monty_mole_seg5_vertex_05003FE8[] = {
 };
 
 // 0x050040B8
-static const Vtx monty_mole_seg5_vertex_050040B8[] = {
+ const Vtx monty_mole_seg5_vertex_050040B8[] = {
     {{{     5,    -97,     36}, 0, {   564,    746}, {0x1d, 0x96, 0x3f, 0xff}}},
     {{{    33,    -45,     89}, 0, {   514,    820}, {0x1f, 0xd1, 0x71, 0xff}}},
     {{{   -38,    -44,     92}, 0, {   512,    824}, {0xcc, 0xca, 0x65, 0xff}}},
@@ -541,7 +541,7 @@ static const Vtx monty_mole_seg5_vertex_050040B8[] = {
 };
 
 // 0x050041B8
-static const Vtx monty_mole_seg5_vertex_050041B8[] = {
+ const Vtx monty_mole_seg5_vertex_050041B8[] = {
     {{{   -38,    -44,    -91}, 0, {   514,    658}, {0xd2, 0xcf, 0x95, 0xff}}},
     {{{    59,    -84,    -30}, 0, {   552,    692}, {0x34, 0x9b, 0xc8, 0xff}}},
     {{{     5,    -97,    -35}, 0, {   564,    680}, {0x22, 0x92, 0xcd, 0xff}}},
@@ -625,13 +625,13 @@ const Gfx monty_mole_seg5_dl_050044B0[] = {
 };
 
 // 0x05004518
-static const Lights1 monty_mole_seg5_lights_05004518 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05004518 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004530
-static const Vtx monty_mole_seg5_vertex_05004530[] = {
+ const Vtx monty_mole_seg5_vertex_05004530[] = {
     {{{    48,    140,      0}, 0, {   474,    386}, {0x1b, 0x7c, 0x00, 0xff}}},
     {{{    57,    101,      0}, 0, {   472,    156}, {0x5e, 0x54, 0x00, 0xff}}},
     {{{    34,     99,    -34}, 0, {    96,    420}, {0x23, 0x56, 0xaa, 0xff}}},
@@ -641,7 +641,7 @@ static const Vtx monty_mole_seg5_vertex_05004530[] = {
 };
 
 // 0x05004590
-static const Vtx monty_mole_seg5_vertex_05004590[] = {
+ const Vtx monty_mole_seg5_vertex_05004590[] = {
     {{{    34,     99,    -34}, 0, {   404,    956}, {0x23, 0x56, 0xaa, 0xff}}},
     {{{    57,    101,      0}, 0, {  -182,    680}, {0x5e, 0x54, 0x00, 0xff}}},
     {{{   100,     66,    -27}, 0, {   244,    -20}, {0x53, 0x52, 0xd0, 0xff}}},
@@ -661,7 +661,7 @@ static const Vtx monty_mole_seg5_vertex_05004590[] = {
 };
 
 // 0x05004690
-static const Vtx monty_mole_seg5_vertex_05004690[] = {
+ const Vtx monty_mole_seg5_vertex_05004690[] = {
     {{{   118,     28,    -28}, 0, {   204,    308}, {0x77, 0x1b, 0xdf, 0xff}}},
     {{{   118,    -22,     29}, 0, {   356,    246}, {0x71, 0xcf, 0x1b, 0xff}}},
     {{{   118,    -22,    -28}, 0, {   240,    246}, {0x6b, 0xdc, 0xc8, 0xff}}},
@@ -681,7 +681,7 @@ static const Vtx monty_mole_seg5_vertex_05004690[] = {
 };
 
 // 0x05004790
-static const Vtx monty_mole_seg5_vertex_05004790[] = {
+ const Vtx monty_mole_seg5_vertex_05004790[] = {
     {{{   -35,    -41,    -54}, 0, {   202,    222}, {0x8c, 0xd5, 0xe7, 0xff}}},
     {{{    -4,    -80,    -46}, 0, {   248,    174}, {0xe6, 0x91, 0xca, 0xff}}},
     {{{    -4,    -80,     47}, 0, {   434,    174}, {0xd6, 0x8d, 0x1e, 0xff}}},
@@ -695,7 +695,7 @@ static const Vtx monty_mole_seg5_vertex_05004790[] = {
 };
 
 // 0x05004830
-static const Vtx monty_mole_seg5_vertex_05004830[] = {
+ const Vtx monty_mole_seg5_vertex_05004830[] = {
     {{{     2,    111,    -10}, 0, {   898,    558}, {0xbf, 0x63, 0xd4, 0xff}}},
     {{{     0,     44,    -93}, 0, {    -8,    556}, {0xf0, 0x40, 0x94, 0xff}}},
     {{{   -36,     61,    -57}, 0, {   302,    130}, {0x97, 0x29, 0xc8, 0xff}}},
@@ -715,7 +715,7 @@ static const Vtx monty_mole_seg5_vertex_05004830[] = {
 };
 
 // 0x05004930
-static const Vtx monty_mole_seg5_vertex_05004930[] = {
+ const Vtx monty_mole_seg5_vertex_05004930[] = {
     {{{     0,     44,     94}, 0, {   922,    692}, {0xe7, 0x30, 0x72, 0xff}}},
     {{{   -35,    -41,     55}, 0, {   772,   1916}, {0x91, 0xdf, 0x32, 0xff}}},
     {{{    -7,    -37,     94}, 0, {   952,   1870}, {0xe5, 0xc1, 0x6a, 0xff}}},
@@ -723,7 +723,7 @@ static const Vtx monty_mole_seg5_vertex_05004930[] = {
 };
 
 // 0x05004970
-static const Vtx monty_mole_seg5_vertex_05004970[] = {
+ const Vtx monty_mole_seg5_vertex_05004970[] = {
     {{{   -36,     61,     58}, 0, {     0,      0}, {0x8f, 0x2f, 0x20, 0xff}}},
     {{{     2,    111,     11}, 0, {     0,      0}, {0xc9, 0x65, 0x34, 0xff}}},
     {{{     2,    111,    -10}, 0, {     0,      0}, {0xbf, 0x63, 0xd4, 0xff}}},
@@ -818,13 +818,13 @@ const Gfx monty_mole_seg5_dl_05004C00[] = {
 };
 
 // 0x05004C90
-static const Lights1 monty_mole_seg5_lights_05004C90 = gdSPDefLights1(
+ const Lights1 monty_mole_seg5_lights_05004C90 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004CA8
-static const Vtx monty_mole_seg5_vertex_05004CA8[] = {
+ const Vtx monty_mole_seg5_vertex_05004CA8[] = {
     {{{     3,     99,    -25}, 0, {  -154,    -14}, {0xed, 0x7d, 0x00, 0xff}}},
     {{{   -42,     92,    -12}, 0, {   160,    980}, {0xed, 0x7d, 0x00, 0xff}}},
     {{{   -42,     92,     13}, 0, {   800,    978}, {0xed, 0x7d, 0x00, 0xff}}},

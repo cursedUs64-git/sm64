@@ -1,69 +1,69 @@
 // Chuckya
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused1 = gdSPDefLights1(
     0x26, 0x00, 0x27,
     0x9a, 0x00, 0x9c, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused2 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused3 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused4 = gdSPDefLights1(
     0x0e, 0x0e, 0x0e,
     0x39, 0x39, 0x39, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused5 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused5 = gdSPDefLights1(
     0x39, 0x20, 0x00,
     0xe4, 0x83, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused6 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused6 = gdSPDefLights1(
     0x3f, 0x27, 0x00,
     0xff, 0x9e, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 chuckya_lights_unused7 = gdSPDefLights1(
+UNUSED  const Lights1 chuckya_lights_unused7 = gdSPDefLights1(
     0x15, 0x14, 0x16,
     0x57, 0x53, 0x58, 0x28, 0x28, 0x28
 );
 
 // 0x08006778
-ALIGNED8 static const Texture chuckya_seg8_texture_08006778[] = {
+ALIGNED8  const Texture chuckya_seg8_texture_08006778[] = {
 #include "actors/chuckya/chuckya_eyes.rgba16.inc.c"
 };
 
 // 0x08007778
-ALIGNED8 static const Texture chuckya_seg8_texture_08007778[] = {
+ALIGNED8  const Texture chuckya_seg8_texture_08007778[] = {
 #include "actors/chuckya/chuckya_hand_antenna.rgba16.inc.c"
 };
 
 // 0x08007F78
-ALIGNED8 static const Texture chuckya_seg8_texture_08007F78[] = {
+ALIGNED8  const Texture chuckya_seg8_texture_08007F78[] = {
 #include "actors/chuckya/chuckya_body_arm_left_side.rgba16.inc.c"
 };
 
 // 0x08008F78
-ALIGNED8 static const Texture chuckya_seg8_texture_08008F78[] = {
+ALIGNED8  const Texture chuckya_seg8_texture_08008F78[] = {
 #include "actors/chuckya/chuckya_body_arm_right_side.rgba16.inc.c"
 };
 
 // 0x08009F78
-static const Vtx chuckya_seg8_vertex_08009F78[] = {
+ const Vtx chuckya_seg8_vertex_08009F78[] = {
     {{{     0,     56,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -56,    -56,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -56,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -71,7 +71,7 @@ static const Vtx chuckya_seg8_vertex_08009F78[] = {
 };
 
 // 0x08009FB8
-static const Vtx chuckya_seg8_vertex_08009FB8[] = {
+ const Vtx chuckya_seg8_vertex_08009FB8[] = {
     {{{    56,     56,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -56,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    56,    -56,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -118,7 +118,7 @@ const Gfx chuckya_seg8_dl_0800A068[] = {
 };
 
 // 0x0800A0E0
-static const Vtx chuckya_seg8_vertex_0800A0E0[] = {
+ const Vtx chuckya_seg8_vertex_0800A0E0[] = {
     {{{     0,     13,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -13,    -13,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -13,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -126,7 +126,7 @@ static const Vtx chuckya_seg8_vertex_0800A0E0[] = {
 };
 
 // 0x0800A120
-static const Vtx chuckya_seg8_vertex_0800A120[] = {
+ const Vtx chuckya_seg8_vertex_0800A120[] = {
     {{{    13,     13,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -13,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    13,    -13,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -173,7 +173,7 @@ const Gfx chuckya_seg8_dl_0800A1D0[] = {
 };
 
 // 0x0800A248
-static const Vtx chuckya_seg8_vertex_0800A248[] = {
+ const Vtx chuckya_seg8_vertex_0800A248[] = {
     {{{     0,     13,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -13,    -13,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -13,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -181,7 +181,7 @@ static const Vtx chuckya_seg8_vertex_0800A248[] = {
 };
 
 // 0x0800A288
-static const Vtx chuckya_seg8_vertex_0800A288[] = {
+ const Vtx chuckya_seg8_vertex_0800A288[] = {
     {{{    13,     13,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -13,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    13,    -13,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -228,7 +228,7 @@ const Gfx chuckya_seg8_dl_0800A338[] = {
 };
 
 // 0x0800A3B0
-static const Vtx chuckya_seg8_vertex_0800A3B0[] = {
+ const Vtx chuckya_seg8_vertex_0800A3B0[] = {
     {{{    23,     23,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -22,     23,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -22,    -22,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -264,7 +264,7 @@ const Gfx chuckya_seg8_dl_0800A428[] = {
 };
 
 // 0x0800A498
-static const Vtx chuckya_seg8_vertex_0800A498[] = {
+ const Vtx chuckya_seg8_vertex_0800A498[] = {
     {{{    23,     23,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -22,     23,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -22,    -22,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -300,7 +300,7 @@ const Gfx chuckya_seg8_dl_0800A510[] = {
 };
 
 // 0x0800A580
-static const Vtx chuckya_seg8_vertex_0800A580[] = {
+ const Vtx chuckya_seg8_vertex_0800A580[] = {
     {{{    25,     25,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -25,     25,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -25,    -25,      0}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -336,13 +336,13 @@ const Gfx chuckya_seg8_dl_0800A5F8[] = {
 };
 
 // 0x0800A668
-static const Lights1 chuckya_seg8_lights_0800A668 = gdSPDefLights1(
+ const Lights1 chuckya_seg8_lights_0800A668 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0800A680
-static const Vtx chuckya_seg8_vertex_0800A680[] = {
+ const Vtx chuckya_seg8_vertex_0800A680[] = {
     {{{    33,    237,      0}, 0, {   480,   1016}, {0x40, 0x65, 0x28, 0xff}}},
     {{{    27,    198,    107}, 0, {  1012,    932}, {0x40, 0x65, 0x28, 0xff}}},
     {{{   196,    134,      0}, 0, {   480,    -66}, {0x40, 0x65, 0x28, 0xff}}},
@@ -385,13 +385,13 @@ const Gfx chuckya_seg8_dl_0800A758[] = {
 };
 
 // 0x0800A7C8
-static const Lights1 chuckya_seg8_lights_0800A7C8 = gdSPDefLights1(
+ const Lights1 chuckya_seg8_lights_0800A7C8 = gdSPDefLights1(
     0x29, 0x29, 0x29,
     0x89, 0x89, 0x8a, 0x28, 0x28, 0x28
 );
 
 // 0x0800A7E0
-static const Vtx chuckya_seg8_vertex_0800A7E0[] = {
+ const Vtx chuckya_seg8_vertex_0800A7E0[] = {
     {{{    87,     41,    -41}, 0, {     0,      0}, {0xb8, 0x49, 0xb7, 0xff}}},
     {{{    87,      0,    -58}, 0, {     0,      0}, {0xb8, 0x00, 0x98, 0xff}}},
     {{{     3,     -1,      0}, 0, {     0,      0}, {0x82, 0x00, 0x00, 0xff}}},
@@ -424,13 +424,13 @@ const Gfx chuckya_seg8_dl_0800A8D0[] = {
 };
 
 // 0x0800A8F0
-static const Lights1 chuckya_seg8_lights_0800A8F0 = gdSPDefLights1(
+ const Lights1 chuckya_seg8_lights_0800A8F0 = gdSPDefLights1(
     0x4c, 0x4c, 0x00,
     0xff, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0800A908
-static const Vtx chuckya_seg8_vertex_0800A908[] = {
+ const Vtx chuckya_seg8_vertex_0800A908[] = {
     {{{    -9,      2,      0}, 0, {     0,      0}, {0x82, 0xfd, 0x00, 0xff}}},
     {{{    79,     26,      0}, 0, {     0,      0}, {0xdf, 0x7a, 0x00, 0xff}}},
     {{{    79,      1,    -33}, 0, {     0,      0}, {0xd4, 0xff, 0x8a, 0xff}}},
@@ -457,13 +457,13 @@ const Gfx chuckya_seg8_dl_0800A998[] = {
 };
 
 // 0x0800A9B8
-static const Lights1 chuckya_seg8_lights_0800A9B8 = gdSPDefLights1(
+ const Lights1 chuckya_seg8_lights_0800A9B8 = gdSPDefLights1(
     0x0c, 0x0c, 0x0c,
     0x32, 0x32, 0x32, 0x28, 0x28, 0x28
 );
 
 // 0x0800A9D0
-static const Vtx chuckya_seg8_vertex_0800A9D0[] = {
+ const Vtx chuckya_seg8_vertex_0800A9D0[] = {
     {{{   -99,   -129,    130}, 0, {     0,      0}, {0x24, 0xa9, 0x54, 0xff}}},
     {{{  -135,   -173,    100}, 0, {     0,      0}, {0x24, 0xa9, 0x54, 0xff}}},
     {{{   -55,   -236,      0}, 0, {     0,      0}, {0x24, 0xa9, 0x54, 0xff}}},
@@ -482,7 +482,7 @@ static const Vtx chuckya_seg8_vertex_0800A9D0[] = {
 };
 
 // 0x0800AAC0
-static const Vtx chuckya_seg8_vertex_0800AAC0[] = {
+ const Vtx chuckya_seg8_vertex_0800AAC0[] = {
     {{{  -213,   -113,      1}, 0, {     0,      0}, {0xa3, 0x0e, 0xac, 0xff}}},
     {{{  -202,    -49,      0}, 0, {     0,      0}, {0xa3, 0x0e, 0xac, 0xff}}},
     {{{   -98,   -130,   -130}, 0, {     0,      0}, {0xa3, 0x0e, 0xac, 0xff}}},

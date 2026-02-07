@@ -1,7 +1,7 @@
 // Sand
 
 // 0x0302BA90
-static const Vtx sand_seg3_vertex_0302BA90[] = {
+ const Vtx sand_seg3_vertex_0302BA90[] = {
     {{{    -8,     -8,      0}, 0, {     0,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     8,     -8,      0}, 0, {   480,    480}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     8,      8,      0}, 0, {   480,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -9,7 +9,7 @@ static const Vtx sand_seg3_vertex_0302BA90[] = {
 };
 
 // 0x0302BAD0
-ALIGNED8 static const Texture sand_seg3_texture_0302BAD0[] = {
+ALIGNED8  const Texture sand_seg3_texture_0302BAD0[] = {
 #include "actors/sand/sand_particle.rgba16.inc.c"
 };
 

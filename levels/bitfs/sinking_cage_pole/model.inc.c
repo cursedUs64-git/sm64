@@ -1,5 +1,5 @@
 // 0x0700F718 - 0x0700F818
-static const Vtx bitfs_seg7_vertex_0700F718[] = {
+ const Vtx bitfs_seg7_vertex_0700F718[] = {
     {{{    -7,    742,    -12}, 0, {   334,  -7110}, {0xad, 0xbb, 0xd1, 0xff}}},
     {{{     8,    742,     13}, 0, {   386,  -6956}, {0xad, 0xbb, 0xd1, 0xff}}},
     {{{    15,    742,      0}, 0, {   410,  -6880}, {0xad, 0xbb, 0xd1, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx bitfs_seg7_vertex_0700F718[] = {
 };
 
 // 0x0700F818 - 0x0700F8F8
-static const Vtx bitfs_seg7_vertex_0700F818[] = {
+ const Vtx bitfs_seg7_vertex_0700F818[] = {
     {{{   307,      1,   -288}, 0, {   308,  -2076}, {0x5e, 0x58, 0xa6, 0xff}}},
     {{{   307,    152,    307}, 0, {   644,   4054}, {0x5e, 0x58, 0xa6, 0xff}}},
     {{{   307,      0,    307}, 0, {   308,   4054}, {0x5e, 0x58, 0xa6, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx bitfs_seg7_vertex_0700F818[] = {
 };
 
 // 0x0700F8F8 - 0x0700F9F8
-static const Vtx bitfs_seg7_vertex_0700F8F8[] = {
+ const Vtx bitfs_seg7_vertex_0700F8F8[] = {
     {{{    15,      0,      0}, 0, {   410,   2316}, {0x97, 0xa0, 0xcd, 0xff}}},
     {{{     8,    742,     13}, 0, {   386,  -6956}, {0x97, 0xa0, 0xcd, 0xff}}},
     {{{     8,      0,     13}, 0, {   386,   2240}, {0x97, 0xa0, 0xcd, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx bitfs_seg7_vertex_0700F8F8[] = {
 };
 
 // 0x0700F9F8 - 0x0700FA38
-static const Vtx bitfs_seg7_vertex_0700F9F8[] = {
+ const Vtx bitfs_seg7_vertex_0700F9F8[] = {
     {{{     8,      0,     13}, 0, {   386,   2240}, {0x79, 0x8c, 0xeb, 0xff}}},
     {{{    -7,    742,     13}, 0, {   334,  -7110}, {0x79, 0x8c, 0xeb, 0xff}}},
     {{{    -7,      0,     13}, 0, {   334,   2086}, {0x79, 0x8c, 0xeb, 0xff}}},
@@ -65,7 +65,7 @@ static const Vtx bitfs_seg7_vertex_0700F9F8[] = {
 };
 
 // 0x0700FA38 - 0x0700FB38
-static const Gfx bitfs_seg7_dl_0700FA38[] = {
+ const Gfx bitfs_seg7_dl_0700FA38[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bitfs_seg7_texture_07001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

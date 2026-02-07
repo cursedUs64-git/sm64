@@ -1,49 +1,49 @@
 // Possible Removed Actor File
 
 // Bin ID? What is this?
-UNUSED static const u64 klepto_unused_1 = 0;
+UNUSED  const u64 klepto_unused_1 = 0;
 
 // Klepto
 
 // 0x05000008
-ALIGNED8 static const Texture klepto_seg5_texture_05000008[] = {
+ALIGNED8  const Texture klepto_seg5_texture_05000008[] = {
 #include "actors/klepto/klepto_chest_tuft.rgba16.inc.c"
 };
 
 // 0x05000808
-ALIGNED8 static const Texture klepto_seg5_texture_05000808[] = {
+ALIGNED8  const Texture klepto_seg5_texture_05000808[] = {
 #include "actors/klepto/klepto_eye.rgba16.inc.c"
 };
 
 // 0x05001008
-ALIGNED8 static const Texture klepto_seg5_texture_05001008[] = {
+ALIGNED8  const Texture klepto_seg5_texture_05001008[] = {
 #include "actors/klepto/klepto_beak.rgba16.inc.c"
 };
 
 // 0x05002008
-ALIGNED8 static const Texture klepto_seg5_texture_05002008[] = {
+ALIGNED8  const Texture klepto_seg5_texture_05002008[] = {
 #include "actors/klepto/klepto_wing.rgba16.inc.c"
 };
 
 // 0x05003008
-ALIGNED8 static const Texture klepto_seg5_texture_05003008[] = {
+ALIGNED8  const Texture klepto_seg5_texture_05003008[] = {
 #include "actors/klepto/klepto_wing_flap.rgba16.inc.c"
 };
 
 // 0x05003808
-static const Lights1 klepto_seg5_lights_05003808 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05003808 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003820
-static const Lights1 klepto_seg5_lights_05003820 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05003820 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05003838
-static const Vtx klepto_seg5_vertex_05003838[] = {
+ const Vtx klepto_seg5_vertex_05003838[] = {
     {{{    14,    -62,     52}, 0, {  1058,   -314}, {0x0e, 0xc0, 0x6c, 0xff}}},
     {{{    65,    -69,      0}, 0, {    80,   -454}, {0x56, 0xa3, 0x00, 0xff}}},
     {{{    76,    -43,      0}, 0, {   -36,    532}, {0x5b, 0xa9, 0x00, 0xff}}},
@@ -53,7 +53,7 @@ static const Vtx klepto_seg5_vertex_05003838[] = {
 };
 
 // 0x05003898
-static const Vtx klepto_seg5_vertex_05003898[] = {
+ const Vtx klepto_seg5_vertex_05003898[] = {
     {{{   134,     -7,     32}, 0, {   496,   1112}, {0x1b, 0x59, 0x55, 0xff}}},
     {{{   134,     -7,    -31}, 0, {   224,   1048}, {0x1a, 0x59, 0xab, 0xff}}},
     {{{     0,     16,      0}, 0, {   454,   -308}, {0xf5, 0x7e, 0x00, 0xff}}},
@@ -72,14 +72,14 @@ static const Vtx klepto_seg5_vertex_05003898[] = {
 };
 
 // 0x05003988
-static const Vtx klepto_seg5_vertex_05003988[] = {
+ const Vtx klepto_seg5_vertex_05003988[] = {
     {{{   134,     -7,    -31}, 0, {   558,   1256}, {0x1a, 0x59, 0xab, 0xff}}},
     {{{   134,     -7,     32}, 0, {   318,   1032}, {0x1b, 0x59, 0x55, 0xff}}},
     {{{   183,     18,      0}, 0, {   326,   1572}, {0x72, 0x35, 0xff, 0xff}}},
 };
 
 // 0x050039B8
-static const Vtx klepto_seg5_vertex_050039B8[] = {
+ const Vtx klepto_seg5_vertex_050039B8[] = {
     {{{    14,    -62,    -51}, 0, {     0,      0}, {0x0e, 0xc0, 0x94, 0xff}}},
     {{{    65,    -69,      0}, 0, {     0,      0}, {0x56, 0xa3, 0x00, 0xff}}},
     {{{    21,    -88,      0}, 0, {     0,      0}, {0xf8, 0x82, 0x00, 0xff}}},
@@ -159,13 +159,13 @@ const Gfx klepto_seg5_dl_05003BD0[] = {
 };
 
 // 0x05003C58
-static const Lights1 klepto_seg5_lights_05003C58 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05003C58 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05003C70
-static const Vtx klepto_seg5_vertex_05003C70[] = {
+ const Vtx klepto_seg5_vertex_05003C70[] = {
     {{{    65,    -11,    -11}, 0, {     0,      0}, {0x0d, 0xa7, 0xa7, 0xff}}},
     {{{    65,    -11,     12}, 0, {     0,      0}, {0x0c, 0xa6, 0x58, 0xff}}},
     {{{     6,    -19,      0}, 0, {     0,      0}, {0xd5, 0x89, 0xff, 0xff}}},
@@ -202,13 +202,13 @@ const Gfx klepto_seg5_dl_05003D80[] = {
 };
 
 // 0x05003DB0
-static const Lights1 klepto_seg5_lights_05003DB0 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05003DB0 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05003DC8
-static const Vtx klepto_seg5_vertex_05003DC8[] = {
+ const Vtx klepto_seg5_vertex_05003DC8[] = {
     {{{   -10,      0,      0}, 0, {   478,    974}, {0x82, 0xf2, 0x00, 0xff}}},
     {{{    10,     24,    -20}, 0, {   186,    654}, {0xc1, 0x4b, 0xb1, 0xff}}},
     {{{    17,    -23,    -20}, 0, {   186,    650}, {0xc2, 0xb5, 0xb0, 0xff}}},
@@ -257,13 +257,13 @@ const Gfx klepto_seg5_dl_05003F20[] = {
 };
 
 // 0x05003F80
-static const Lights1 klepto_seg5_lights_05003F80 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05003F80 = gdSPDefLights1(
     0x07, 0x01, 0x01,
     0x1e, 0x05, 0x04, 0x28, 0x28, 0x28
 );
 
 // 0x05003F98
-static const Vtx klepto_seg5_vertex_05003F98[] = {
+ const Vtx klepto_seg5_vertex_05003F98[] = {
     {{{    54,     19,    -37}, 0, {     0,      0}, {0x38, 0x13, 0x91, 0xff}}},
     {{{    86,     16,      0}, 0, {     0,      0}, {0x78, 0x27, 0xfc, 0xff}}},
     {{{    76,    -14,      0}, 0, {     0,      0}, {0x67, 0xb7, 0xfd, 0xff}}},
@@ -307,13 +307,13 @@ const Gfx klepto_seg5_dl_05004118[] = {
 };
 
 // 0x05004148
-static const Lights1 klepto_seg5_lights_05004148 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004148 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004160
-static const Vtx klepto_seg5_vertex_05004160[] = {
+ const Vtx klepto_seg5_vertex_05004160[] = {
     {{{     5,     -3,      0}, 0, {     0,    992}, {0x37, 0x8e, 0x00, 0xff}}},
     {{{   -81,    -45,      0}, 0, {     0,      0}, {0x37, 0x8e, 0x00, 0xff}}},
     {{{   -77,      2,    -47}, 0, {  1700,    224}, {0x2a, 0xaa, 0xae, 0xff}}},
@@ -351,13 +351,13 @@ const Gfx klepto_seg5_dl_050041E8[] = {
 };
 
 // 0x05004258
-static const Lights1 klepto_seg5_lights_05004258 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004258 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05004270
-static const Vtx klepto_seg5_vertex_05004270[] = {
+ const Vtx klepto_seg5_vertex_05004270[] = {
     {{{     9,     27,      3}, 0, {     0,      0}, {0xd5, 0x50, 0x57, 0xff}}},
     {{{     0,      0,      0}, 0, {     0,      0}, {0x86, 0xe0, 0xfd, 0xff}}},
     {{{    14,      9,      8}, 0, {     0,      0}, {0x01, 0xb1, 0x62, 0xff}}},
@@ -389,13 +389,13 @@ const Gfx klepto_seg5_dl_05004330[] = {
 };
 
 // 0x05004360
-static const Lights1 klepto_seg5_lights_05004360 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004360 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05004378
-static const Vtx klepto_seg5_vertex_05004378[] = {
+ const Vtx klepto_seg5_vertex_05004378[] = {
     {{{     9,     27,      3}, 0, {     0,      0}, {0xd5, 0x50, 0x57, 0xff}}},
     {{{     0,      0,      0}, 0, {     0,      0}, {0x86, 0xe0, 0xfd, 0xff}}},
     {{{    14,      9,      8}, 0, {     0,      0}, {0x01, 0xb1, 0x62, 0xff}}},
@@ -427,19 +427,19 @@ const Gfx klepto_seg5_dl_05004438[] = {
 };
 
 // 0x05004468
-static const Lights1 klepto_seg5_lights_05004468 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004468 = gdSPDefLights1(
     0x02, 0x00, 0x00,
     0x08, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05004480
-static const Lights1 klepto_seg5_lights_05004480 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004480 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05004498
-static const Vtx klepto_seg5_vertex_05004498[] = {
+ const Vtx klepto_seg5_vertex_05004498[] = {
     {{{    38,      7,     24}, 0, {     0,      0}, {0x10, 0x7d, 0x00, 0xff}}},
     {{{    24,    -12,     28}, 0, {     0,      0}, {0xb4, 0x24, 0x5e, 0xff}}},
     {{{    43,    -19,     30}, 0, {     0,      0}, {0x50, 0xae, 0x35, 0xff}}},
@@ -455,7 +455,7 @@ static const Vtx klepto_seg5_vertex_05004498[] = {
 };
 
 // 0x05004558
-static const Vtx klepto_seg5_vertex_05004558[] = {
+ const Vtx klepto_seg5_vertex_05004558[] = {
     {{{     7,     -1,      6}, 0, {     0,      0}, {0xac, 0x4a, 0xc6, 0xff}}},
     {{{    33,    -13,     13}, 0, {     0,      0}, {0x35, 0x11, 0x8f, 0xff}}},
     {{{    20,    -24,     16}, 0, {     0,      0}, {0xdd, 0x87, 0xf3, 0xff}}},
@@ -474,7 +474,7 @@ static const Vtx klepto_seg5_vertex_05004558[] = {
 };
 
 // 0x05004648
-static const Vtx klepto_seg5_vertex_05004648[] = {
+ const Vtx klepto_seg5_vertex_05004648[] = {
     {{{   -22,      7,      0}, 0, {     0,      0}, {0x9a, 0x4a, 0xf4, 0xff}}},
     {{{     2,    -10,      0}, 0, {     0,      0}, {0xe8, 0x84, 0xfe, 0xff}}},
     {{{    15,     -3,     17}, 0, {     0,      0}, {0x4b, 0x0d, 0x65, 0xff}}},
@@ -521,19 +521,19 @@ const Gfx klepto_seg5_dl_050047C8[] = {
 };
 
 // 0x050047F8
-static const Lights1 klepto_seg5_lights_050047F8 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_050047F8 = gdSPDefLights1(
     0x02, 0x00, 0x00,
     0x08, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x05004810
-static const Lights1 klepto_seg5_lights_05004810 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004810 = gdSPDefLights1(
     0x3f, 0x1d, 0x08,
     0xff, 0x75, 0x21, 0x28, 0x28, 0x28
 );
 
 // 0x05004828
-static const Vtx klepto_seg5_vertex_05004828[] = {
+ const Vtx klepto_seg5_vertex_05004828[] = {
     {{{    38,      7,     24}, 0, {     0,      0}, {0x10, 0x7d, 0x00, 0xff}}},
     {{{    24,    -12,     28}, 0, {     0,      0}, {0xb4, 0x24, 0x5e, 0xff}}},
     {{{    43,    -19,     30}, 0, {     0,      0}, {0x50, 0xae, 0x35, 0xff}}},
@@ -549,7 +549,7 @@ static const Vtx klepto_seg5_vertex_05004828[] = {
 };
 
 // 0x050048E8
-static const Vtx klepto_seg5_vertex_050048E8[] = {
+ const Vtx klepto_seg5_vertex_050048E8[] = {
     {{{     7,     -1,      6}, 0, {     0,      0}, {0xac, 0x4a, 0xc6, 0xff}}},
     {{{    33,    -13,     13}, 0, {     0,      0}, {0x35, 0x11, 0x8f, 0xff}}},
     {{{    20,    -24,     16}, 0, {     0,      0}, {0xdd, 0x87, 0xf3, 0xff}}},
@@ -568,7 +568,7 @@ static const Vtx klepto_seg5_vertex_050048E8[] = {
 };
 
 // 0x050049D8
-static const Vtx klepto_seg5_vertex_050049D8[] = {
+ const Vtx klepto_seg5_vertex_050049D8[] = {
     {{{   -22,      7,      0}, 0, {     0,      0}, {0x9a, 0x4a, 0xf4, 0xff}}},
     {{{     2,    -10,      0}, 0, {     0,      0}, {0xe8, 0x84, 0xfe, 0xff}}},
     {{{    15,     -3,     17}, 0, {     0,      0}, {0x4b, 0x0d, 0x65, 0xff}}},
@@ -615,13 +615,13 @@ const Gfx klepto_seg5_dl_05004B58[] = {
 };
 
 // 0x05004B88
-static const Lights1 klepto_seg5_lights_05004B88 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004B88 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004BA0
-static const Vtx klepto_seg5_vertex_05004BA0[] = {
+ const Vtx klepto_seg5_vertex_05004BA0[] = {
     {{{    -2,    -13,      0}, 0, {  1992,    528}, {0x00, 0x00, 0x81, 0xff}}},
     {{{    -2,     14,      0}, 0, {  1992,    272}, {0x00, 0x00, 0x81, 0xff}}},
     {{{    34,     24,      0}, 0, {  1640,    176}, {0x00, 0x00, 0x81, 0xff}}},
@@ -659,13 +659,13 @@ const Gfx klepto_seg5_dl_05004C28[] = {
 };
 
 // 0x05004C98
-static const Lights1 klepto_seg5_lights_05004C98 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004C98 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004CB0
-static const Vtx klepto_seg5_vertex_05004CB0[] = {
+ const Vtx klepto_seg5_vertex_05004CB0[] = {
     {{{    34,    -33,      0}, 0, {  1640,    722}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    34,     24,      0}, 0, {  1640,    176}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    -2,    -13,      0}, 0, {  1992,    528}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -703,13 +703,13 @@ const Gfx klepto_seg5_dl_05004D38[] = {
 };
 
 // 0x05004DA8
-static const Lights1 klepto_seg5_lights_05004DA8 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004DA8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004DC0
-static const Vtx klepto_seg5_vertex_05004DC0[] = {
+ const Vtx klepto_seg5_vertex_05004DC0[] = {
     {{{     0,    -33,      0}, 0, {  1640,    716}, {0x00, 0x00, 0x81, 0xff}}},
     {{{     0,     24,      0}, 0, {  1640,    172}, {0x00, 0x00, 0x81, 0xff}}},
     {{{    79,     34,      0}, 0, {   904,     76}, {0x00, 0x00, 0x81, 0xff}}},
@@ -747,13 +747,13 @@ const Gfx klepto_seg5_dl_05004E48[] = {
 };
 
 // 0x05004EB8
-static const Lights1 klepto_seg5_lights_05004EB8 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004EB8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004ED0
-static const Vtx klepto_seg5_vertex_05004ED0[] = {
+ const Vtx klepto_seg5_vertex_05004ED0[] = {
     {{{    79,    -58,      0}, 0, {   904,    940}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    79,     34,      0}, 0, {   904,     76}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,    -33,      0}, 0, {  1640,    716}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -791,13 +791,13 @@ const Gfx klepto_seg5_dl_05004F58[] = {
 };
 
 // 0x05004FC8
-static const Lights1 klepto_seg5_lights_05004FC8 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_05004FC8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004FE0
-static const Vtx klepto_seg5_vertex_05004FE0[] = {
+ const Vtx klepto_seg5_vertex_05004FE0[] = {
     {{{     0,    -58,      0}, 0, {   904,    942}, {0x00, 0x00, 0x81, 0xff}}},
     {{{     0,     34,      0}, 0, {   904,     78}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   108,     52,      0}, 0, {   -96,    -86}, {0x00, 0x00, 0x81, 0xff}}},
@@ -835,13 +835,13 @@ const Gfx klepto_seg5_dl_05005068[] = {
 };
 
 // 0x050050D8
-static const Lights1 klepto_seg5_lights_050050D8 = gdSPDefLights1(
+ const Lights1 klepto_seg5_lights_050050D8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050050F0
-static const Vtx klepto_seg5_vertex_050050F0[] = {
+ const Vtx klepto_seg5_vertex_050050F0[] = {
     {{{    65,    -68,      0}, 0, {   296,   1036}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   108,     52,      0}, 0, {   -96,    -86}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{     0,    -58,      0}, 0, {   904,    942}, {0x00, 0x00, 0x7f, 0xff}}},

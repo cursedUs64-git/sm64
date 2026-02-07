@@ -1,23 +1,23 @@
 // Star
 
 // 0x0302A6D8
-static const Lights1 star_seg3_lights_0302A6D8 = gdSPDefLights1(
+ const Lights1 star_seg3_lights_0302A6D8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0302A6F0
-ALIGNED8 static const Texture star_seg3_texture_0302A6F0[] = {
+ALIGNED8  const Texture star_seg3_texture_0302A6F0[] = {
 #include "actors/star/star_surface.rgba16.inc.c"
 };
 
 // 0x0302AEF0
-ALIGNED8 static const Texture star_seg3_texture_0302AEF0[] = {
+ALIGNED8  const Texture star_seg3_texture_0302AEF0[] = {
 #include "actors/star/star_eye.rgba16.inc.c"
 };
 
 // 0x0302B6F0
-static const Vtx star_seg3_vertex_0302B6F0[] = {
+ const Vtx star_seg3_vertex_0302B6F0[] = {
     {{{     0,      8,    -89}, 0, {     0,      0}, {0x00, 0x07, 0x82, 0xff}}},
     {{{   190,   -201,      0}, 0, {     0,      0}, {0x55, 0xa3, 0x00, 0xff}}},
     {{{     0,   -129,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},
@@ -68,13 +68,13 @@ const Gfx star_seg3_dl_0302B870[] = {
 };
 
 // 0x0302B908
-static const Lights1 star_seg3_lights_0302B908 = gdSPDefLights1(
+ const Lights1 star_seg3_lights_0302B908 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0302B920
-static const Vtx star_seg3_vertex_0302B920[] = {
+ const Vtx star_seg3_vertex_0302B920[] = {
     {{{    67,     86,     63}, 0, {   990,      0}, {0x18, 0x15, 0x7a, 0xff}}},
     {{{     0,    -27,     96}, 0, {     0,    990}, {0x18, 0x15, 0x7a, 0xff}}},
     {{{    67,    -29,     83}, 0, {   990,    990}, {0x18, 0x15, 0x7a, 0xff}}},

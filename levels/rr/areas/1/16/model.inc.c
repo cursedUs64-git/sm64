@@ -1,5 +1,5 @@
 // 0x07014590 - 0x07014670
-static const Vtx rr_seg7_vertex_07014590[] = {
+ const Vtx rr_seg7_vertex_07014590[] = {
     {{{    17,   1352,   -736}, 0, { -3692,    650}, {0xad, 0xbb, 0xd1, 0xff}}},
     {{{    40,   1352,   -722}, 0, { -3538,    572}, {0xad, 0xbb, 0xd1, 0xff}}},
     {{{    32,   1352,   -736}, 0, { -3590,    598}, {0xad, 0xbb, 0xd1, 0xff}}},
@@ -17,7 +17,7 @@ static const Vtx rr_seg7_vertex_07014590[] = {
 };
 
 // 0x07014670 - 0x07014770
-static const Vtx rr_seg7_vertex_07014670[] = {
+ const Vtx rr_seg7_vertex_07014670[] = {
     {{{    32,   1352,   -709}, 0, { -3590,    598}, {0x52, 0x70, 0xac, 0xff}}},
     {{{    17,   1352,   -709}, 0, { -3692,    650}, {0x52, 0x70, 0xac, 0xff}}},
     {{{    32,    379,   -709}, 0, {  1262,    598}, {0x52, 0x70, 0xac, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx rr_seg7_vertex_07014670[] = {
 };
 
 // 0x07014770 - 0x07014870
-static const Vtx rr_seg7_vertex_07014770[] = {
+ const Vtx rr_seg7_vertex_07014770[] = {
     {{{ -1134,    236,   -444}, 0, {   906,   1926}, {0x59, 0x7a, 0xb3, 0xff}}},
     {{{  -566,   -439,   -209}, 0, {  1238,   1126}, {0x59, 0x7a, 0xb3, 0xff}}},
     {{{ -1134,    236,    495}, 0, {     0,    990}, {0x59, 0x7a, 0xb3, 0xff}}},
@@ -57,7 +57,7 @@ static const Vtx rr_seg7_vertex_07014770[] = {
 };
 
 // 0x07014870 - 0x07014970
-static const Vtx rr_seg7_vertex_07014870[] = {
+ const Vtx rr_seg7_vertex_07014870[] = {
     {{{  -469,    236,  -1109}, 0, {  2234,   1926}, {0x52, 0x70, 0xac, 0xff}}},
     {{{  -234,   -439,   -541}, 0, {  1902,   1126}, {0x52, 0x70, 0xac, 0xff}}},
     {{{  -566,   -439,   -209}, 0, {  1238,   1126}, {0x52, 0x70, 0xac, 0xff}}},
@@ -77,7 +77,7 @@ static const Vtx rr_seg7_vertex_07014870[] = {
 };
 
 // 0x07014970 - 0x07014A60
-static const Vtx rr_seg7_vertex_07014970[] = {
+ const Vtx rr_seg7_vertex_07014970[] = {
     {{{  -469,    236,   1160}, 0, {     0,   -338}, {0x52, 0x61, 0xac, 0xff}}},
     {{{   236,   -439,    593}, 0, {  1238,   -474}, {0x52, 0x61, 0xac, 0xff}}},
     {{{   471,    236,   1160}, 0, {   906,  -1276}, {0x52, 0x61, 0xac, 0xff}}},
@@ -96,7 +96,7 @@ static const Vtx rr_seg7_vertex_07014970[] = {
 };
 
 // 0x07014A60 - 0x07014B60
-static const Vtx rr_seg7_vertex_07014A60[] = {
+ const Vtx rr_seg7_vertex_07014A60[] = {
     {{{ -1134,    236,   -444}, 0, {  1142,   2162}, {0x7d, 0x7d, 0x7d, 0xff}}},
     {{{  -469,    379,  -1109}, 0, {  2800,   2162}, {0x7d, 0x7d, 0x7d, 0xff}}},
     {{{  -469,    236,  -1109}, 0, {  2800,   2162}, {0x7d, 0x7d, 0x7d, 0xff}}},
@@ -116,7 +116,7 @@ static const Vtx rr_seg7_vertex_07014A60[] = {
 };
 
 // 0x07014B60 - 0x07014C60
-static const Vtx rr_seg7_vertex_07014B60[] = {
+ const Vtx rr_seg7_vertex_07014B60[] = {
     {{{   471,    379,  -1109}, 0, {  3974,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1134,    379,   -444}, 0, {  1142,   2162}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1134,    379,    495}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -136,7 +136,7 @@ static const Vtx rr_seg7_vertex_07014B60[] = {
 };
 
 // 0x07014C60 - 0x07014CD0
-static const Vtx rr_seg7_vertex_07014C60[] = {
+ const Vtx rr_seg7_vertex_07014C60[] = {
     {{{   471,    379,  -1109}, 0, {  3974,    990}, {0x91, 0x91, 0x91, 0xff}}},
     {{{   471,    236,  -1109}, 0, {  3974,    990}, {0x91, 0x91, 0x91, 0xff}}},
     {{{  -469,    236,  -1109}, 0, {  2800,   2162}, {0x91, 0x91, 0x91, 0xff}}},
@@ -147,7 +147,7 @@ static const Vtx rr_seg7_vertex_07014C60[] = {
 };
 
 // 0x07014CD0 - 0x07014D80
-static const Gfx rr_seg7_dl_07014CD0[] = {
+ const Gfx rr_seg7_dl_07014CD0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09008000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -165,7 +165,7 @@ static const Gfx rr_seg7_dl_07014CD0[] = {
 };
 
 // 0x07014D80 - 0x07014F30
-static const Gfx rr_seg7_dl_07014D80[] = {
+ const Gfx rr_seg7_dl_07014D80[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, sky_09001800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,5 +1,5 @@
 // 0x07006A30 - 0x07006B20
-static const Vtx thi_seg7_vertex_07006A30[] = {
+ const Vtx thi_seg7_vertex_07006A30[] = {
     {{{ -6614,  -2047,  -6628}, 0, {  4806,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6614,  -1945,  -6143}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -6614,  -1945,  -6628}, 0, {  4806,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx thi_seg7_vertex_07006A30[] = {
 };
 
 // 0x07006B20 - 0x07006C10
-static const Vtx thi_seg7_vertex_07006B20[] = {
+ const Vtx thi_seg7_vertex_07006B20[] = {
     {{{ -2605,   -511,   2827}, 0, {  -102,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2834,   -511,   2140}, 0, {  7122,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -2834,   -409,   2140}, 0, {  7122,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -37,7 +37,7 @@ static const Vtx thi_seg7_vertex_07006B20[] = {
 };
 
 // 0x07006C10 - 0x07006D00
-static const Vtx thi_seg7_vertex_07006C10[] = {
+ const Vtx thi_seg7_vertex_07006C10[] = {
     {{{  7168,  -2457,   5632}, 0, { 20408,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  7168,  -2559,   3584}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  7168,  -2559,   5632}, 0, { 20408,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -56,7 +56,7 @@ static const Vtx thi_seg7_vertex_07006C10[] = {
 };
 
 // 0x07006D00 - 0x07006DF0
-static const Vtx thi_seg7_vertex_07006D00[] = {
+ const Vtx thi_seg7_vertex_07006D00[] = {
     {{{  6400,  -2457,   4096}, 0, { -7694,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5632,  -2559,   4096}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  6400,  -2559,   4096}, 0, { -7694,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -75,7 +75,7 @@ static const Vtx thi_seg7_vertex_07006D00[] = {
 };
 
 // 0x07006DF0 - 0x07006EB0
-static const Vtx thi_seg7_vertex_07006DF0[] = {
+ const Vtx thi_seg7_vertex_07006DF0[] = {
     {{{  5632,  -1535,  -6655}, 0, { 10188,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5632,  -1433,  -6655}, 0, { 10188,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  5632,  -1433,  -5631}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -91,7 +91,7 @@ static const Vtx thi_seg7_vertex_07006DF0[] = {
 };
 
 // 0x07006EB0 - 0x07007008
-static const Gfx thi_seg7_dl_07006EB0[] = {
+ const Gfx thi_seg7_dl_07006EB0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_0900A000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,5 +1,5 @@
 // 0x07000000 - 0x070000F0
-static const Vtx castle_courtyard_seg7_vertex_07000000[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000000[] = {
     {{{  2867,      0,    307}, 0, {     0,    479}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2939,     20,    717}, 0, {  2012,    -36}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2939,     20,    317}, 0, {    16,    -36}, {0x95, 0x95, 0xa9, 0xff}}},
@@ -18,7 +18,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000000[] = {
 };
 
 // 0x070000F0 - 0x070001D0
-static const Vtx castle_courtyard_seg7_vertex_070000F0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070000F0[] = {
     {{{   718,      0,  -3420}, 0, {   990,    479}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   738,     20,  -3461}, 0, {   888,      0}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   616,      0,  -3522}, 0, {     0,    479}, {0xc4, 0xc4, 0xd0, 0xff}}},
@@ -36,7 +36,7 @@ static const Vtx castle_courtyard_seg7_vertex_070000F0[] = {
 };
 
 // 0x070001D0 - 0x070002C0
-static const Vtx castle_courtyard_seg7_vertex_070001D0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070001D0[] = {
     {{{  -736,     20,     41}, 0, {   890,      0}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{  -654,     20,    123}, 0, {    72,      0}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{  -613,      0,    102}, 0, {     0,    479}, {0xc4, 0xc4, 0xd0, 0xff}}},
@@ -55,7 +55,7 @@ static const Vtx castle_courtyard_seg7_vertex_070001D0[] = {
 };
 
 // 0x070002C0 - 0x070003B0
-static const Vtx castle_courtyard_seg7_vertex_070002C0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070002C0[] = {
     {{{   718,      0,  -3830}, 0, {   990,    479}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   738,     20,  -3789}, 0, {   888,      0}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   923,      0,  -3830}, 0, {     0,    479}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -74,7 +74,7 @@ static const Vtx castle_courtyard_seg7_vertex_070002C0[] = {
 };
 
 // 0x070003B0 - 0x070004A0
-static const Vtx castle_courtyard_seg7_vertex_070003B0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070003B0[] = {
     {{{ -3583,     20,     71}, 0, {  2012,    -36}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{ -3184,     20,     71}, 0, {    22,    -36}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{ -3173,      0,      0}, 0, {     0,    479}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -93,7 +93,7 @@ static const Vtx castle_courtyard_seg7_vertex_070003B0[] = {
 };
 
 // 0x070004A0 - 0x07000590
-static const Vtx castle_courtyard_seg7_vertex_070004A0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070004A0[] = {
     {{{   614,      0,    102}, 0, {   990,    479}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   655,     20,    123}, 0, {   888,      0}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   737,     20,     41}, 0, {    70,      0}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -112,7 +112,7 @@ static const Vtx castle_courtyard_seg7_vertex_070004A0[] = {
 };
 
 // 0x07000590 - 0x07000670
-static const Vtx castle_courtyard_seg7_vertex_07000590[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000590[] = {
     {{{   901,     20,    369}, 0, {    72,      0}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   922,      0,    410}, 0, {     0,    479}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  1024,      0,    307}, 0, {   990,    479}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -130,7 +130,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000590[] = {
 };
 
 // 0x07000670 - 0x07000750
-static const Vtx castle_courtyard_seg7_vertex_07000670[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000670[] = {
     {{{   738,     20,  -3789}, 0, {    70,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   718,      0,  -3830}, 0, {     0,    479}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   657,     20,  -3707}, 0, {   888,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -148,7 +148,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000670[] = {
 };
 
 // 0x07000750 - 0x07000840
-static const Vtx castle_courtyard_seg7_vertex_07000750[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000750[] = {
     {{{  -982,     20,    123}, 0, {    72,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{ -1023,      0,    102}, 0, {     0,    479}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{  -982,     20,    287}, 0, {   888,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -167,7 +167,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000750[] = {
 };
 
 // 0x07000840 - 0x07000930
-static const Vtx castle_courtyard_seg7_vertex_07000840[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000840[] = {
     {{{   655,     20,    287}, 0, {    72,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   614,      0,    307}, 0, {     0,    479}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{   717,      0,    410}, 0, {   990,    479}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -186,7 +186,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000840[] = {
 };
 
 // 0x07000930 - 0x07000A10
-static const Vtx castle_courtyard_seg7_vertex_07000930[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000930[] = {
     {{{  -612,      0,  -3522}, 0, {   990,    479}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -735,     20,  -3461}, 0, {    74,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -715,      0,  -3420}, 0, {     0,    479}, {0xff, 0xff, 0xff, 0xff}}},
@@ -204,7 +204,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000930[] = {
 };
 
 // 0x07000A10 - 0x07000A80
-static const Vtx castle_courtyard_seg7_vertex_07000A10[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000A10[] = {
     {{{   902,     20,  -3461}, 0, {   888,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   738,     20,  -3461}, 0, {    70,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   923,      0,  -3420}, 0, {   990,    479}, {0xff, 0xff, 0xff, 0xff}}},
@@ -215,7 +215,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000A10[] = {
 };
 
 // 0x07000A80 - 0x07000B80
-static const Vtx castle_courtyard_seg7_vertex_07000A80[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000A80[] = {
     {{{  -653,     20,  -3543}, 0, {  -166,    444}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{  -653,     20,  -3707}, 0, {  -166,   -100}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{  -735,     20,  -3789}, 0, {   104,   -372}, {0xb5, 0xa0, 0x58, 0xff}}},
@@ -235,7 +235,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000A80[] = {
 };
 
 // 0x07000B80 - 0x07000C70
-static const Vtx castle_courtyard_seg7_vertex_07000B80[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000B80[] = {
     {{{   984,     20,  -3543}, 0, {  -166,    786}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{   902,     20,  -3789}, 0, {   104,      0}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{   738,     20,  -3789}, 0, {   650,      0}, {0xb5, 0xa0, 0x58, 0xff}}},
@@ -254,7 +254,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000B80[] = {
 };
 
 // 0x07000C70 - 0x07000D70
-static const Vtx castle_courtyard_seg7_vertex_07000C70[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000C70[] = {
     {{{  -736,     20,    369}, 0, {   104,   -372}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{  -736,     20,     41}, 0, {   104,    718}, {0xb5, 0xa0, 0x58, 0xff}}},
     {{{  -900,     20,     41}, 0, {   650,    718}, {0xb5, 0xa0, 0x58, 0xff}}},
@@ -274,7 +274,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000C70[] = {
 };
 
 // 0x07000D70 - 0x07000E70
-static const Vtx castle_courtyard_seg7_vertex_07000D70[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000D70[] = {
     {{{  -818,      0,  -1125}, 0, { 12232,    990}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  -818,    102,  -2354}, 0, {     0,      0}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  -818,      0,  -2354}, 0, {     0,    990}, {0x60, 0x60, 0x75, 0xff}}},
@@ -294,7 +294,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000D70[] = {
 };
 
 // 0x07000E70 - 0x07000F70
-static const Vtx castle_courtyard_seg7_vertex_07000E70[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000E70[] = {
     {{{   614,      0,   -921}, 0, { 12232,    990}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{   614,    102,   -921}, 0, { 12232,      0}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  -613,    102,   -921}, 0, {     0,      0}, {0x95, 0x95, 0xa9, 0xff}}},
@@ -314,7 +314,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000E70[] = {
 };
 
 // 0x07000F70 - 0x07001060
-static const Vtx castle_courtyard_seg7_vertex_07000F70[] = {
+ const Vtx castle_courtyard_seg7_vertex_07000F70[] = {
     {{{ -1740,   -101,  -1433}, 0, {  3034,    480}, {0x60, 0x60, 0x75, 0xff}}},
     {{{ -1740,      0,  -2047}, 0, {     0,      0}, {0x60, 0x60, 0x75, 0xff}}},
     {{{ -1740,   -101,  -2047}, 0, {     0,    480}, {0x60, 0x60, 0x75, 0xff}}},
@@ -333,7 +333,7 @@ static const Vtx castle_courtyard_seg7_vertex_07000F70[] = {
 };
 
 // 0x07001060 - 0x07001150
-static const Vtx castle_courtyard_seg7_vertex_07001060[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001060[] = {
     {{{ -1945,   -204,  -1330}, 0, {  4056,    480}, {0x60, 0x60, 0x75, 0xff}}},
     {{{ -1945,   -101,  -1330}, 0, {  4056,      0}, {0x60, 0x60, 0x75, 0xff}}},
     {{{ -1945,   -101,  -2149}, 0, {     0,      0}, {0x60, 0x60, 0x75, 0xff}}},
@@ -352,7 +352,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001060[] = {
 };
 
 // 0x07001150 - 0x07001250
-static const Vtx castle_courtyard_seg7_vertex_07001150[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001150[] = {
     {{{  3072,      0,   -613}, 0, {     0,      0}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  3072,   -204,   -613}, 0, {     0,    990}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2253,   -204,    205}, 0, {  5750,    990}, {0x60, 0x60, 0x75, 0xff}}},
@@ -372,7 +372,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001150[] = {
 };
 
 // 0x07001250 - 0x07001330
-static const Vtx castle_courtyard_seg7_vertex_07001250[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001250[] = {
     {{{   111,    205,  -1791}, 0, {   994,     14}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -93,    205,  -1689}, 0, {   -28,     14}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   111,    205,  -1689}, 0, {   994,     14}, {0xff, 0xff, 0xff, 0xff}}},
@@ -390,7 +390,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001250[] = {
 };
 
 // 0x07001330 - 0x07001420
-static const Vtx castle_courtyard_seg7_vertex_07001330[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001330[] = {
     {{{ -1228,    102,    307}, 0, {     0,      0}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{ -1228,      0,    307}, 0, {     0,    308}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{ -1228,      0,  -1023}, 0, {  4396,    308}, {0x7d, 0x7d, 0x95, 0xff}}},
@@ -409,7 +409,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001330[] = {
 };
 
 // 0x07001420 - 0x07001500
-static const Vtx castle_courtyard_seg7_vertex_07001420[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001420[] = {
     {{{   922,   2150,    410}, 0, { -3606,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   922,   2048,    410}, 0, { -3606,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  -921,   2048,    410}, 0, {  5588,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -427,7 +427,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001420[] = {
 };
 
 // 0x07001500 - 0x070015E0
-static const Vtx castle_courtyard_seg7_vertex_07001500[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001500[] = {
     {{{ -2252,   -204,    205}, 0, {     0,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{ -3071,   -204,   -613}, 0, {  5750,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{ -3071,      0,   -613}, 0, {  5750,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -445,7 +445,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001500[] = {
 };
 
 // 0x070015E0 - 0x070016D0
-static const Vtx castle_courtyard_seg7_vertex_070015E0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070015E0[] = {
     {{{  1946,   -101,  -1330}, 0, {  4304,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  1331,   -101,   -716}, 0, {     0,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  1331,   -204,   -716}, 0, {     0,    480}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -464,7 +464,7 @@ static const Vtx castle_courtyard_seg7_vertex_070015E0[] = {
 };
 
 // 0x070016D0 - 0x070017B0
-static const Vtx castle_courtyard_seg7_vertex_070016D0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070016D0[] = {
     {{{  1331,      0,  -1023}, 0, {     0,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  1331,   -101,  -1023}, 0, {     0,    480}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  1741,   -101,  -1433}, 0, {  2858,    478}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -482,7 +482,7 @@ static const Vtx castle_courtyard_seg7_vertex_070016D0[] = {
 };
 
 // 0x070017B0 - 0x070018B0
-static const Vtx castle_courtyard_seg7_vertex_070017B0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070017B0[] = {
     {{{ -2661,   2150,    512}, 0, {     0,      0}, {0x58, 0x58, 0x62, 0xff}}},
     {{{ -2661,   2048,    512}, 0, {     0,    990}, {0x58, 0x58, 0x62, 0xff}}},
     {{{ -2661,   2048,   2048}, 0, {  2524,    990}, {0x58, 0x58, 0x62, 0xff}}},
@@ -502,7 +502,7 @@ static const Vtx castle_courtyard_seg7_vertex_070017B0[] = {
 };
 
 // 0x070018B0 - 0x070019B0
-static const Vtx castle_courtyard_seg7_vertex_070018B0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070018B0[] = {
     {{{   214,    -50,  -1586}, 0, {  2830,    984}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   111,    205,  -1689}, 0, {  2148,     66}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   -93,    205,  -1689}, 0, {   786,     66}, {0xc4, 0xc4, 0xd0, 0xff}}},
@@ -522,7 +522,7 @@ static const Vtx castle_courtyard_seg7_vertex_070018B0[] = {
 };
 
 // 0x070019B0 - 0x07001AB0
-static const Vtx castle_courtyard_seg7_vertex_070019B0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070019B0[] = {
     {{{  1229,    102,    307}, 0, {  6610,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{  1331,    102,  -1023}, 0, {     0,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{  1229,    102,  -1023}, 0, {     0,      0}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -542,7 +542,7 @@ static const Vtx castle_courtyard_seg7_vertex_070019B0[] = {
 };
 
 // 0x07001AB0 - 0x07001BA0
-static const Vtx castle_courtyard_seg7_vertex_07001AB0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001AB0[] = {
     {{{  2541,   -204,  -3583}, 0, {  6716,  -1890}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1331,   -204,  -3583}, 0, {  5962,  -5234}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1331,   -204,  -2457}, 0, {  3116,  -4148}, {0xff, 0xff, 0xff, 0xff}}},
@@ -561,7 +561,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001AB0[] = {
 };
 
 // 0x07001BA0 - 0x07001CA0
-static const Vtx castle_courtyard_seg7_vertex_07001BA0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001BA0[] = {
     {{{ -3071,      0,   -613}, 0, { -1562, -13828}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3071,      0,  -3173}, 0, { -1562,  -1054}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -3583,      0,  -3583}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -581,7 +581,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001BA0[] = {
 };
 
 // 0x07001CA0 - 0x07001D90
-static const Vtx castle_courtyard_seg7_vertex_07001CA0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001CA0[] = {
     {{{  2355,      0,    717}, 0, { 19386,   4564}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2867,      0,    307}, 0, { 17342,   2010}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2253,      0,    205}, 0, { 16830,   5076}, {0x95, 0x95, 0xa9, 0xff}}},
@@ -600,7 +600,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001CA0[] = {
 };
 
 // 0x07001D90 - 0x07001E90
-static const Vtx castle_courtyard_seg7_vertex_07001D90[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001D90[] = {
     {{{  1229,      0,   -921}, 0, {   480, -13574}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   666,      0,  -2707}, 0, {  3290,  -4658}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   666,      0,  -1074}, 0, {  3290, -12806}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -620,7 +620,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001D90[] = {
 };
 
 // 0x07001E90 - 0x07001F90
-static const Vtx castle_courtyard_seg7_vertex_07001E90[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001E90[] = {
     {{{ -3071,      0,  -3173}, 0, { -1562,  -1054}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{ -2661,      0,  -3583}, 0, { -3606,    990}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{ -3583,      0,  -3583}, 0, {   990,    990}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -640,7 +640,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001E90[] = {
 };
 
 // 0x07001F90 - 0x07002090
-static const Vtx castle_courtyard_seg7_vertex_07001F90[] = {
+ const Vtx castle_courtyard_seg7_vertex_07001F90[] = {
     {{{  -264,      0,  -2354}, 0, { -2250, -10252}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   162,    -50,  -2149}, 0, {  2012,  -8208}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   265,      0,  -2354}, 0, {  3034, -10252}, {0xff, 0xff, 0xff, 0xff}}},
@@ -660,7 +660,7 @@ static const Vtx castle_courtyard_seg7_vertex_07001F90[] = {
 };
 
 // 0x07002090 - 0x07002140
-static const Vtx castle_courtyard_seg7_vertex_07002090[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002090[] = {
     {{{   367,    -50,  -1535}, 0, {  4056,  -2076}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   614,      0,  -1475}, 0, {  6524,  -1478}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   367,    -50,  -1945}, 0, {  4056,  -6164}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -675,7 +675,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002090[] = {
 };
 
 // 0x07002140 - 0x07002180
-static const Vtx castle_courtyard_seg7_vertex_07002140[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002140[] = {
     {{{    80,    190,  -1677}, 0, {   990,      0}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   -62,    190,  -1677}, 0, {     0,      0}, {0xc4, 0xc4, 0xd0, 0xff}}},
     {{{   -62,     92,  -1638}, 0, {     0,    990}, {0xc4, 0xc4, 0xd0, 0xff}}},
@@ -683,7 +683,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002140[] = {
 };
 
 // 0x07002180 - 0x070021C0
-static const Vtx castle_courtyard_seg7_vertex_07002180[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002180[] = {
     {{{   307,      0,    512}, 0, {     0,    990}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  -306,      0,   1126}, 0, {   990,      0}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{   307,      0,   1126}, 0, {     0,      0}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -691,7 +691,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002180[] = {
 };
 
 // 0x070021C0 - 0x070022A0
-static const Vtx castle_courtyard_seg7_vertex_070021C0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070021C0[] = {
     {{{ -4095,    728,  -3378}, 0, {   192,   2084}, {0x30, 0xdb, 0x02, 0xff}}},
     {{{ -4486,   1000,  -2810}, 0, {   364,   1576}, {0x30, 0xdb, 0x02, 0xff}}},
     {{{ -3583,    512,  -3071}, 0, {    36,   1792}, {0x30, 0xdb, 0x02, 0xff}}},
@@ -709,7 +709,7 @@ static const Vtx castle_courtyard_seg7_vertex_070021C0[] = {
 };
 
 // 0x070022A0 - 0x07002380
-static const Vtx castle_courtyard_seg7_vertex_070022A0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070022A0[] = {
     {{{  4545,    666,  -1135}, 0, {   614,   2096}, {0x30, 0xdb, 0x02, 0xff}}},
     {{{  3584,    614,  -1228}, 0, {    62,   1720}, {0x30, 0xdb, 0x02, 0xff}}},
     {{{  3584,    512,   -511}, 0, {   124,   1020}, {0x30, 0xdb, 0x02, 0xff}}},
@@ -727,7 +727,7 @@ static const Vtx castle_courtyard_seg7_vertex_070022A0[] = {
 };
 
 // 0x07002380 - 0x07002470
-static const Vtx castle_courtyard_seg7_vertex_07002380[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002380[] = {
     {{{   106,    203,  -1735}, 0, {   354,   1840}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{     9,    240,  -1735}, 0, {   290,   1288}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{     9,    311,  -1781}, 0, {   476,   1076}, {0x70, 0x70, 0x8a, 0xff}}},
@@ -746,7 +746,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002380[] = {
 };
 
 // 0x07002470 - 0x07002550
-static const Vtx castle_courtyard_seg7_vertex_07002470[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002470[] = {
     {{{     9,    311,  -1689}, 0, {   476,   1076}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{    83,    285,  -1735}, 0, {   532,   1492}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   140,    350,  -1735}, 0, {   798,   1560}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -764,7 +764,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002470[] = {
 };
 
 // 0x07002550 - 0x07002650
-static const Vtx castle_courtyard_seg7_vertex_07002550[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002550[] = {
     {{{   -39,    358,  -1735}, 0, {   518,    712}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{     9,    311,  -1689}, 0, {   476,   1076}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{     9,    433,  -1735}, 0, {   798,    712}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -784,7 +784,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002550[] = {
 };
 
 // 0x07002650 - 0x07002740
-static const Vtx castle_courtyard_seg7_vertex_07002650[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002650[] = {
     {{{  2662,   2048,    512}, 0, {-12804,   1500}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2662,   2048,   2048}, 0, {-12804,   4054}, {0x60, 0x60, 0x75, 0xff}}},
     {{{ -2661,   2048,   2048}, 0, { 13764,   4054}, {0x60, 0x60, 0x75, 0xff}}},
@@ -803,7 +803,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002650[] = {
 };
 
 // 0x07002740 - 0x07002830
-static const Vtx castle_courtyard_seg7_vertex_07002740[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002740[] = {
     {{{   922,   2048,    410}, 0, { -4116,    990}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2253,   2048,    102}, 0, {-10760,   -544}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2662,   2048,    512}, 0, {-12804,   1500}, {0x60, 0x60, 0x75, 0xff}}},
@@ -822,7 +822,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002740[] = {
 };
 
 // 0x07002830 - 0x07002910
-static const Vtx castle_courtyard_seg7_vertex_07002830[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002830[] = {
     {{{  -264,      0,  -1125}, 0, {  4656,    990}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{   265,    102,  -1125}, 0, {  -624,      0}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{   265,      0,  -1125}, 0, {  -624,    990}, {0x70, 0x70, 0x8a, 0xff}}},
@@ -840,7 +840,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002830[] = {
 };
 
 // 0x07002910 - 0x070029F0
-static const Vtx castle_courtyard_seg7_vertex_07002910[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002910[] = {
     {{{   922,   2048,    410}, 0, { -4116,    990}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{  2662,   2048,    512}, 0, {-12804,   1500}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{ -2661,   2048,    512}, 0, { 13764,   1500}, {0x7d, 0x7d, 0x95, 0xff}}},
@@ -858,7 +858,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002910[] = {
 };
 
 // 0x070029F0 - 0x07002AE0
-static const Vtx castle_courtyard_seg7_vertex_070029F0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070029F0[] = {
     {{{   922,   2048,    512}, 0, { -3604,  -6164}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   922,      0,    512}, 0, { -3604,   4054}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   307,      0,    512}, 0, {  -540,   4054}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -877,7 +877,7 @@ static const Vtx castle_courtyard_seg7_vertex_070029F0[] = {
 };
 
 // 0x07002AE0 - 0x07002BD0
-static const Vtx castle_courtyard_seg7_vertex_07002AE0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002AE0[] = {
     {{{   614,      0,  -1475}, 0, {  5144,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   614,    102,  -2005}, 0, {  -136,      0}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   614,      0,  -2005}, 0, {  -136,    990}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -896,7 +896,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002AE0[] = {
 };
 
 // 0x07002BD0 - 0x07002CD0
-static const Vtx castle_courtyard_seg7_vertex_07002BD0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002BD0[] = {
     {{{  2560,   2048,   2048}, 0, {     0,  -9230}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2560,      0,   2048}, 0, {     0,    990}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{  2560,      0,    512}, 0, {  6100,    990}, {0x95, 0x95, 0xa9, 0xff}}},
@@ -916,7 +916,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002BD0[] = {
 };
 
 // 0x07002CD0 - 0x07002DB0
-static const Vtx castle_courtyard_seg7_vertex_07002CD0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002CD0[] = {
     {{{  -264,    102,  -2354}, 0, {  5500,  -3098}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  -613,    102,  -2559}, 0, {  2012,  -4120}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  -818,    102,  -2354}, 0, {     0,  -3098}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -934,7 +934,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002CD0[] = {
 };
 
 // 0x07002DB0 - 0x07002E20
-static const Vtx castle_courtyard_seg7_vertex_07002DB0[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002DB0[] = {
     {{{  -921,   2048,    512}, 0, {  5588,  -4120}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{  -921,      0,    512}, 0, {  5588,   6098}, {0x9c, 0x9c, 0xae, 0xff}}},
     {{{ -1331,     -1,    205}, 0, {  7636,   6108}, {0x9c, 0x9c, 0xae, 0xff}}},
@@ -945,7 +945,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002DB0[] = {
 };
 
 // 0x07002E20 - 0x07002F20
-static const Vtx castle_courtyard_seg7_vertex_07002E20[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002E20[] = {
     {{{  3072,    819,    717}, 0, {  -540,  -3098}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2560,      0,    717}, 0, {  2012,    990}, {0x60, 0x60, 0x75, 0xff}}},
     {{{  2560,    819,    717}, 0, {  2012,  -3098}, {0x60, 0x60, 0x75, 0xff}}},
@@ -965,7 +965,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002E20[] = {
 };
 
 // 0x07002F20 - 0x07003020
-static const Vtx castle_courtyard_seg7_vertex_07002F20[] = {
+ const Vtx castle_courtyard_seg7_vertex_07002F20[] = {
     {{{ -2559,    819,    717}, 0, {     0,  -3098}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{ -3071,      0,    717}, 0, {  2524,    990}, {0x70, 0x70, 0x8a, 0xff}}},
     {{{ -3071,    819,    717}, 0, {  2524,  -3098}, {0x70, 0x70, 0x8a, 0xff}}},
@@ -985,7 +985,7 @@ static const Vtx castle_courtyard_seg7_vertex_07002F20[] = {
 };
 
 // 0x07003020 - 0x07003120
-static const Vtx castle_courtyard_seg7_vertex_07003020[] = {
+ const Vtx castle_courtyard_seg7_vertex_07003020[] = {
     {{{ -4095,   2048,  -3378}, 0, { 11532,  10186}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{ -4095,      0,  -3378}, 0, { 11532,      0}, {0x7d, 0x7d, 0x95, 0xff}}},
     {{{ -3788,      0,  -3071}, 0, { 10016,      0}, {0x7d, 0x7d, 0x95, 0xff}}},
@@ -1005,7 +1005,7 @@ static const Vtx castle_courtyard_seg7_vertex_07003020[] = {
 };
 
 // 0x07003120 - 0x07003210
-static const Vtx castle_courtyard_seg7_vertex_07003120[] = {
+ const Vtx castle_courtyard_seg7_vertex_07003120[] = {
     {{{    77,    256,    410}, 0, {  2268,  -1566}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{   -76,    256,    410}, 0, {  3800,  -1566}, {0x6f, 0x6f, 0x89, 0xff}}},
     {{{  -306,    512,    410}, 0, {  6100,  -4120}, {0x6f, 0x6f, 0x89, 0xff}}},
@@ -1024,7 +1024,7 @@ static const Vtx castle_courtyard_seg7_vertex_07003120[] = {
 };
 
 // 0x07003210 - 0x07003300
-static const Vtx castle_courtyard_seg7_vertex_07003210[] = {
+ const Vtx castle_courtyard_seg7_vertex_07003210[] = {
     {{{   -76,    256,    512}, 0, {   988,  -1566}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{   -76,      0,    512}, 0, {   988,    990}, {0x95, 0x95, 0xa9, 0xff}}},
     {{{   -76,      0,    410}, 0, {  2012,    990}, {0x95, 0x95, 0xa9, 0xff}}},
@@ -1043,7 +1043,7 @@ static const Vtx castle_courtyard_seg7_vertex_07003210[] = {
 };
 
 // 0x07003300 - 0x070033F0
-static const Vtx castle_courtyard_seg7_vertex_07003300[] = {
+ const Vtx castle_courtyard_seg7_vertex_07003300[] = {
     {{{   973,      0,  -3839}, 0, { 10188,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -972,    819,  -3839}, 0, {   480,  -3098}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -972,      0,  -3839}, 0, {   480,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -1062,7 +1062,7 @@ static const Vtx castle_courtyard_seg7_vertex_07003300[] = {
 };
 
 // 0x070033F0 - 0x070034E0
-static const Vtx castle_courtyard_seg7_vertex_070033F0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070033F0[] = {
     {{{  3379,      0,  -3071}, 0, {  8408,    990}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  3789,      0,  -3071}, 0, {  9924,    990}, {0xad, 0xad, 0xbc, 0xff}}},
     {{{  3584,    819,  -3071}, 0, {  9168,  -3098}, {0xad, 0xad, 0xbc, 0xff}}},
@@ -1081,7 +1081,7 @@ static const Vtx castle_courtyard_seg7_vertex_070033F0[] = {
 };
 
 // 0x070034E0 - 0x070035C0
-static const Vtx castle_courtyard_seg7_vertex_070034E0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070034E0[] = {
     {{{  1331,   -204,  -3583}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  3072,    819,  -3583}, 0, {  8656,  -4120}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  1331,    819,  -3583}, 0, {     0,  -4120}, {0xff, 0xff, 0xff, 0xff}}},
@@ -1099,7 +1099,7 @@ static const Vtx castle_courtyard_seg7_vertex_070034E0[] = {
 };
 
 // 0x070035C0 - 0x07003670
-static const Vtx castle_courtyard_seg7_vertex_070035C0[] = {
+ const Vtx castle_courtyard_seg7_vertex_070035C0[] = {
     {{{ -1245,   -166,  -3644}, 0, {  1000,    802}, {0xff, 0xff, 0xff, 0xff}}},
     {{{  -972,    819,  -3839}, 0, {  2676,  -4120}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -1245,    819,  -3644}, 0, {  1000,  -4120}, {0xff, 0xff, 0xff, 0xff}}},
@@ -1114,7 +1114,7 @@ static const Vtx castle_courtyard_seg7_vertex_070035C0[] = {
 };
 
 // 0x07003670 - 0x070036F0
-static const Vtx castle_courtyard_seg7_vertex_07003670[] = {
+ const Vtx castle_courtyard_seg7_vertex_07003670[] = {
     {{{   307,    512,   1126}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  -306,      0,   1126}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xff}}},
     {{{  -306,    512,   1126}, 0, {     0,      0}, {0x00, 0x00, 0x00, 0xff}}},
@@ -1126,7 +1126,7 @@ static const Vtx castle_courtyard_seg7_vertex_07003670[] = {
 };
 
 // 0x070036F0 - 0x070039D0
-static const Gfx castle_courtyard_seg7_dl_070036F0[] = {
+ const Gfx castle_courtyard_seg7_dl_070036F0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_0900B000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 16 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1188,7 +1188,7 @@ static const Gfx castle_courtyard_seg7_dl_070036F0[] = {
 };
 
 // 0x070039D0 - 0x07003AF8
-static const Gfx castle_courtyard_seg7_dl_070039D0[] = {
+ const Gfx castle_courtyard_seg7_dl_070039D0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09009000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1215,7 +1215,7 @@ static const Gfx castle_courtyard_seg7_dl_070039D0[] = {
 };
 
 // 0x07003AF8 - 0x07003BA8
-static const Gfx castle_courtyard_seg7_dl_07003AF8[] = {
+ const Gfx castle_courtyard_seg7_dl_07003AF8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09003000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1233,7 +1233,7 @@ static const Gfx castle_courtyard_seg7_dl_07003AF8[] = {
 };
 
 // 0x07003BA8 - 0x07003EC8
-static const Gfx castle_courtyard_seg7_dl_07003BA8[] = {
+ const Gfx castle_courtyard_seg7_dl_07003BA8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1297,7 +1297,7 @@ static const Gfx castle_courtyard_seg7_dl_07003BA8[] = {
 };
 
 // 0x07003EC8 - 0x07003F30
-static const Gfx castle_courtyard_seg7_dl_07003EC8[] = {
+ const Gfx castle_courtyard_seg7_dl_07003EC8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09004000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1310,7 +1310,7 @@ static const Gfx castle_courtyard_seg7_dl_07003EC8[] = {
 };
 
 // 0x07003F30 - 0x070040A8
-static const Gfx castle_courtyard_seg7_dl_07003F30[] = {
+ const Gfx castle_courtyard_seg7_dl_07003F30[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_0900A000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1342,7 +1342,7 @@ static const Gfx castle_courtyard_seg7_dl_07003F30[] = {
 };
 
 // 0x070040A8 - 0x07004168
-static const Gfx castle_courtyard_seg7_dl_070040A8[] = {
+ const Gfx castle_courtyard_seg7_dl_070040A8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09000000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1361,7 +1361,7 @@ static const Gfx castle_courtyard_seg7_dl_070040A8[] = {
 };
 
 // 0x07004168 - 0x070041A0
-static const Gfx castle_courtyard_seg7_dl_07004168[] = {
+ const Gfx castle_courtyard_seg7_dl_07004168[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1371,7 +1371,7 @@ static const Gfx castle_courtyard_seg7_dl_07004168[] = {
 };
 
 // 0x070041A0 - 0x070041D8
-static const Gfx castle_courtyard_seg7_dl_070041A0[] = {
+ const Gfx castle_courtyard_seg7_dl_070041A0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09006000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1381,7 +1381,7 @@ static const Gfx castle_courtyard_seg7_dl_070041A0[] = {
 };
 
 // 0x070041D8 - 0x07004370
-static const Gfx castle_courtyard_seg7_dl_070041D8[] = {
+ const Gfx castle_courtyard_seg7_dl_070041D8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -1416,7 +1416,7 @@ static const Gfx castle_courtyard_seg7_dl_070041D8[] = {
 };
 
 // 0x07004370 - 0x070045F0
-static const Gfx castle_courtyard_seg7_dl_07004370[] = {
+ const Gfx castle_courtyard_seg7_dl_07004370[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09001000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
@@ -1469,7 +1469,7 @@ static const Gfx castle_courtyard_seg7_dl_07004370[] = {
 };
 
 // 0x070045F0 - 0x07004868
-static const Gfx castle_courtyard_seg7_dl_070045F0[] = {
+ const Gfx castle_courtyard_seg7_dl_070045F0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, outside_09006800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 64 * 32 - 1, CALC_DXT(64, G_IM_SIZ_16b_BYTES)),
@@ -1522,7 +1522,7 @@ static const Gfx castle_courtyard_seg7_dl_070045F0[] = {
 };
 
 // 0x07004868 - 0x070048B8
-static const Gfx castle_courtyard_seg7_dl_07004868[] = {
+ const Gfx castle_courtyard_seg7_dl_07004868[] = {
     gsSPVertex(castle_courtyard_seg7_vertex_07003670, 8, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  0,  2,  3, 0x0),
     gsSP2Triangles( 2,  1,  4, 0x0,  2,  4,  3, 0x0),

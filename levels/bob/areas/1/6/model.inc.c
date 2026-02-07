@@ -1,11 +1,11 @@
 // 0x0700DE30 - 0x0700DE48
-static const Lights1 bob_seg7_lights_0700DE30 = gdSPDefLights1(
+ const Lights1 bob_seg7_lights_0700DE30 = gdSPDefLights1(
     0x33, 0x33, 0x33,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0700DE48 - 0x0700DF38
-static const Vtx bob_seg7_vertex_0700DE48[] = {
+ const Vtx bob_seg7_vertex_0700DE48[] = {
     {{{  1902,   3835,  -5506}, 0, {     0,    990}, {0xb1, 0x37, 0xae, 0xff}}},
     {{{  1814,   4191,  -5455}, 0, {   240,     44}, {0xae, 0xa8, 0xda, 0xff}}},
     {{{  1902,   4088,  -5506}, 0, {     0,    316}, {0x87, 0xe3, 0x14, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx bob_seg7_vertex_0700DE48[] = {
 };
 
 // 0x0700DF38 - 0x0700E038
-static const Vtx bob_seg7_vertex_0700DF38[] = {
+ const Vtx bob_seg7_vertex_0700DF38[] = {
     {{{  1697,   3835,  -5861}, 0, {     0,    990}, {0x9e, 0x38, 0x38, 0xff}}},
     {{{  1902,   3835,  -5506}, 0, {  1604,    990}, {0xb1, 0x37, 0xae, 0xff}}},
     {{{  1902,   4088,  -5506}, 0, {  1604,    -22}, {0x87, 0xe3, 0x14, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx bob_seg7_vertex_0700DF38[] = {
 };
 
 // 0x0700E038 - 0x0700E128
-static const Vtx bob_seg7_vertex_0700E038[] = {
+ const Vtx bob_seg7_vertex_0700E038[] = {
     {{{   596,   2939,  -5748}, 0, {  2862,  -1214}, {0x9b, 0xd0, 0x3a, 0xff}}},
     {{{   803,   2940,  -5394}, 0, {  2854,   -122}, {0x89, 0xd5, 0x00, 0xff}}},
     {{{   712,   3042,  -5342}, 0, {  3136,   -126}, {0xaf, 0xa7, 0xda, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx bob_seg7_vertex_0700E038[] = {
 };
 
 // 0x0700E128 - 0x0700E1E8
-static const Vtx bob_seg7_vertex_0700E128[] = {
+ const Vtx bob_seg7_vertex_0700E128[] = {
     {{{   240,   2683,  -5544}, 0, {  3748,   2264}, {0x31, 0x71, 0xe4, 0xff}}},
     {{{   801,   2683,  -5393}, 0, {  2658,   1170}, {0xa0, 0x34, 0xc0, 0xff}}},
     {{{   596,   2683,  -5748}, 0, {  2658,   2262}, {0xb3, 0x59, 0x2c, 0xff}}},
@@ -79,7 +79,7 @@ static const Vtx bob_seg7_vertex_0700E128[] = {
 };
 
 // 0x0700E1E8 - 0x0700E338
-static const Gfx bob_seg7_dl_0700E1E8[] = {
+ const Gfx bob_seg7_dl_0700E1E8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, generic_09009000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

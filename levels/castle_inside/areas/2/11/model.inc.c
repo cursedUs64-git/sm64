@@ -1,5 +1,5 @@
 // 0x070516E8 - 0x070517E8
-static const Vtx inside_castle_seg7_vertex_070516E8[] = {
+ const Vtx inside_castle_seg7_vertex_070516E8[] = {
     {{{  2081,   2970,   6091}, 0, {   478,    990}, {0xff, 0xff, 0xff, 0x91}}},
     {{{  1569,   2970,   6091}, 0, {   478,      0}, {0xff, 0xff, 0xff, 0x91}}},
     {{{  1569,   2970,   5681}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0x91}}},
@@ -19,7 +19,7 @@ static const Vtx inside_castle_seg7_vertex_070516E8[] = {
 };
 
 // 0x070517E8 - 0x070518D8
-static const Vtx inside_castle_seg7_vertex_070517E8[] = {
+ const Vtx inside_castle_seg7_vertex_070517E8[] = {
     {{{  2081,   3379,   6091}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0x91}}},
     {{{  1569,   3379,   6091}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0x91}}},
     {{{  1569,   2970,   6091}, 0, {   478,      0}, {0xff, 0xff, 0xff, 0x91}}},
@@ -38,7 +38,7 @@ static const Vtx inside_castle_seg7_vertex_070517E8[] = {
 };
 
 // 0x070518D8 - 0x070519C8
-static const Gfx inside_castle_seg7_dl_070518D8[] = {
+ const Gfx inside_castle_seg7_dl_070518D8[] = {
     gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_16b, 1, texture_castle_light),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

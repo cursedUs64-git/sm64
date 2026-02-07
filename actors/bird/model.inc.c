@@ -1,25 +1,25 @@
 // Birds
 
 // 0x05000000
-static const Lights1 birds_seg5_lights_05000000 = gdSPDefLights1(
+ const Lights1 birds_seg5_lights_05000000 = gdSPDefLights1(
     0x07, 0x24, 0x2c,
     0x1d, 0x91, 0xb0, 0x28, 0x28, 0x28
 );
 
 // 0x05000018
-static const Lights1 birds_seg5_lights_05000018 = gdSPDefLights1(
+ const Lights1 birds_seg5_lights_05000018 = gdSPDefLights1(
     0x33, 0x27, 0x0d,
     0xce, 0x9d, 0x34, 0x28, 0x28, 0x28
 );
 
 // 0x05000030
-static const Lights1 birds_seg5_lights_05000030 = gdSPDefLights1(
+ const Lights1 birds_seg5_lights_05000030 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05000048
-static const Vtx birds_seg5_vertex_05000048[] = {
+ const Vtx birds_seg5_vertex_05000048[] = {
     {{{   178,      2,     39}, 0, {     0,      0}, {0x0d, 0x7e, 0x00, 0x00}}},
     {{{   122,     -4,    -33}, 0, {     0,      0}, {0x10, 0x79, 0xde, 0x00}}},
     {{{    97,     10,     13}, 0, {     0,      0}, {0x0b, 0x7e, 0xff, 0x00}}},
@@ -32,28 +32,28 @@ static const Vtx birds_seg5_vertex_05000048[] = {
 };
 
 // 0x050000D8
-static const Vtx birds_seg5_vertex_050000D8[] = {
+ const Vtx birds_seg5_vertex_050000D8[] = {
     {{{  -143,     -7,    -29}, 0, {     0,      0}, {0x16, 0x94, 0xc2, 0x00}}},
     {{{   -86,    -11,     -2}, 0, {     0,      0}, {0x16, 0x94, 0xc2, 0x00}}},
     {{{  -154,    -21,     -9}, 0, {     0,      0}, {0x16, 0x94, 0xc2, 0x00}}},
 };
 
 // 0x05000108
-static const Vtx birds_seg5_vertex_05000108[] = {
+ const Vtx birds_seg5_vertex_05000108[] = {
     {{{  -154,    -21,      9}, 0, {     0,      0}, {0x16, 0x94, 0x3e, 0x00}}},
     {{{   -86,    -11,      2}, 0, {     0,      0}, {0x16, 0x94, 0x3e, 0x00}}},
     {{{  -143,     -7,     29}, 0, {     0,      0}, {0x16, 0x94, 0x3e, 0x00}}},
 };
 
 // 0x05000138
-static const Vtx birds_seg5_vertex_05000138[] = {
+ const Vtx birds_seg5_vertex_05000138[] = {
     {{{  -152,    -30,    -17}, 0, {     0,      0}, {0x26, 0x87, 0x00, 0x00}}},
     {{{   -80,     -7,      0}, 0, {     0,      0}, {0x26, 0x87, 0x00, 0x00}}},
     {{{  -152,    -30,     17}, 0, {     0,      0}, {0x26, 0x87, 0x00, 0x00}}},
 };
 
 // 0x05000168
-static const Vtx birds_seg5_vertex_05000168[] = {
+ const Vtx birds_seg5_vertex_05000168[] = {
     {{{    97,     10,    -13}, 0, {     0,      0}, {0x0b, 0x7e, 0x01, 0x00}}},
     {{{   122,     -4,     33}, 0, {     0,      0}, {0x10, 0x79, 0x22, 0x00}}},
     {{{   178,      2,    -39}, 0, {     0,      0}, {0x0d, 0x7e, 0x00, 0x00}}},
@@ -66,7 +66,7 @@ static const Vtx birds_seg5_vertex_05000168[] = {
 };
 
 // 0x050001F8
-static const Vtx birds_seg5_vertex_050001F8[] = {
+ const Vtx birds_seg5_vertex_050001F8[] = {
     {{{    69,      4,    -40}, 0, {     0,      0}, {0x40, 0x26, 0x9a, 0x00}}},
     {{{    78,    -51,    -21}, 0, {     0,      0}, {0x27, 0xae, 0xa8, 0x00}}},
     {{{    -1,      0,    -56}, 0, {     0,      0}, {0xf4, 0xc6, 0x90, 0x00}}},
@@ -86,7 +86,7 @@ static const Vtx birds_seg5_vertex_050001F8[] = {
 };
 
 // 0x050002F8
-static const Vtx birds_seg5_vertex_050002F8[] = {
+ const Vtx birds_seg5_vertex_050002F8[] = {
     {{{    83,    -57,      0}, 0, {     0,      0}, {0x60, 0xad, 0x00, 0xff}}},
     {{{   113,    -23,      0}, 0, {     0,      0}, {0x62, 0xb0, 0x00, 0x00}}},
     {{{    78,    -51,     21}, 0, {     0,      0}, {0x27, 0xae, 0x58, 0x00}}},
@@ -106,14 +106,14 @@ static const Vtx birds_seg5_vertex_050002F8[] = {
 };
 
 // 0x050003F8
-static const Vtx birds_seg5_vertex_050003F8[] = {
+ const Vtx birds_seg5_vertex_050003F8[] = {
     {{{    -1,      0,     56}, 0, {     0,      0}, {0xf4, 0xc6, 0x70, 0xff}}},
     {{{    78,    -51,     21}, 0, {     0,      0}, {0x27, 0xae, 0x58, 0x00}}},
     {{{    69,      4,     40}, 0, {     0,      0}, {0x40, 0x26, 0x66, 0x00}}},
 };
 
 // 0x05000428
-static const Vtx birds_seg5_vertex_05000428[] = {
+ const Vtx birds_seg5_vertex_05000428[] = {
     {{{    69,      4,    -40}, 0, {     0,      0}, {0x40, 0x26, 0x9a, 0x00}}},
     {{{    10,     48,    -56}, 0, {     0,      0}, {0xef, 0x41, 0x95, 0x00}}},
     {{{    18,     78,      0}, 0, {     0,      0}, {0x54, 0x5e, 0x00, 0x00}}},
@@ -127,7 +127,7 @@ static const Vtx birds_seg5_vertex_05000428[] = {
 };
 
 // 0x050004C8
-static const Vtx birds_seg5_vertex_050004C8[] = {
+ const Vtx birds_seg5_vertex_050004C8[] = {
     {{{   113,    -23,      0}, 0, {     0,      0}, {0x62, 0xb0, 0x00, 0x00}}},
     {{{   113,      0,    -10}, 0, {     0,      0}, {0x4e, 0x32, 0xab, 0x00}}},
     {{{   143,     -2,      0}, 0, {     0,      0}, {0x24, 0xcb, 0x93, 0x00}}},

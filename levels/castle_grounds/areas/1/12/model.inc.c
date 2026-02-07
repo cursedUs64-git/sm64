@@ -1,8 +1,8 @@
 // TODO: what is this? 0700C960-0700C968 [8,8]
-UNUSED static const u64 castle_grounds_unused_2 = 0;
+UNUSED  const u64 castle_grounds_unused_2 = 0;
 
 // 0x0700C968 - 0x0700C9A8
-static const Vtx castle_grounds_seg7_vertex_0700C968[] = {
+ const Vtx castle_grounds_seg7_vertex_0700C968[] = {
     {{{     0,     82,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -71,    -81,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -81,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -10,7 +10,7 @@ static const Vtx castle_grounds_seg7_vertex_0700C968[] = {
 };
 
 // 0x0700C9A8 - 0x0700C9E8
-static const Vtx castle_grounds_seg7_vertex_0700C9A8[] = {
+ const Vtx castle_grounds_seg7_vertex_0700C9A8[] = {
     {{{    72,     82,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -81,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    72,    -81,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -18,17 +18,17 @@ static const Vtx castle_grounds_seg7_vertex_0700C9A8[] = {
 };
 
 // 0x0700C9E8 - 0x0700D9E8
-ALIGNED8 static const Texture castle_grounds_seg7_texture_0700C9E8[] = {
+ALIGNED8  const Texture castle_grounds_seg7_texture_0700C9E8[] = {
 #include "levels/castle_grounds/3.rgba16.inc.c"
 };
 
 // 0x0700D9E8 - 0x0700E9E8
-ALIGNED8 static const Texture castle_grounds_seg7_texture_0700D9E8[] = {
+ALIGNED8  const Texture castle_grounds_seg7_texture_0700D9E8[] = {
 #include "levels/castle_grounds/4.rgba16.inc.c"
 };
 
 // 0x0700E9E8 - 0x0700EA20
-static const Gfx castle_grounds_seg7_dl_0700E9E8[] = {
+ const Gfx castle_grounds_seg7_dl_0700E9E8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, castle_grounds_seg7_texture_0700C9E8),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -38,7 +38,7 @@ static const Gfx castle_grounds_seg7_dl_0700E9E8[] = {
 };
 
 // 0x0700EA20 - 0x0700EA58
-static const Gfx castle_grounds_seg7_dl_0700EA20[] = {
+ const Gfx castle_grounds_seg7_dl_0700EA20[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, castle_grounds_seg7_texture_0700D9E8),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 64 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

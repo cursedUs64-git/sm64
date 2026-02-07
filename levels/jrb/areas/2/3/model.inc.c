@@ -1,11 +1,11 @@
 // 0x0700FEB8 - 0x0700FED0
-static const Lights1 jrb_seg7_lights_0700FEB8 = gdSPDefLights1(
+ const Lights1 jrb_seg7_lights_0700FEB8 = gdSPDefLights1(
     0x50, 0x66, 0x58,
     0xc8, 0xff, 0xdc, 0x28, 0x28, 0x28
 );
 
 // 0x0700FED0 - 0x0700FFC0
-static const Vtx jrb_seg7_vertex_0700FED0[] = {
+ const Vtx jrb_seg7_vertex_0700FED0[] = {
     {{{   886,    -35,    839}, 0, {   820,    146}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   847,    -35,   1084}, 0, {   -10,    734}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   906,    -35,   1054}, 0, {   186,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -24,7 +24,7 @@ static const Vtx jrb_seg7_vertex_0700FED0[] = {
 };
 
 // 0x0700FFC0 - 0x070100C0
-static const Vtx jrb_seg7_vertex_0700FFC0[] = {
+ const Vtx jrb_seg7_vertex_0700FFC0[] = {
     {{{   168,    322,   1458}, 0, {    90,    184}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    33,    322,   1615}, 0, {     0,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   477,    322,   1814}, 0, {   978,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx jrb_seg7_vertex_0700FFC0[] = {
 };
 
 // 0x070100C0 - 0x070101B0
-static const Vtx jrb_seg7_vertex_070100C0[] = {
+ const Vtx jrb_seg7_vertex_070100C0[] = {
     {{{   523,     95,   1273}, 0, {   206,    284}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   841,     95,   1342}, 0, {   956,    802}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   761,     95,   1210}, 0, {   854,    306}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx jrb_seg7_vertex_070100C0[] = {
 };
 
 // 0x070101B0 - 0x07010290
-static const Vtx jrb_seg7_vertex_070101B0[] = {
+ const Vtx jrb_seg7_vertex_070101B0[] = {
     {{{   275,    558,   1980}, 0, {    62,    460}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   517,    558,   2227}, 0, {   952,    990}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   513,    558,   2044}, 0, {   736,    294}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -81,7 +81,7 @@ static const Vtx jrb_seg7_vertex_070101B0[] = {
 };
 
 // 0x07010290 - 0x07010390
-static const Vtx jrb_seg7_vertex_07010290[] = {
+ const Vtx jrb_seg7_vertex_07010290[] = {
     {{{  -167,   1258,   2584}, 0, {     8,    222}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -350,   1258,   2875}, 0, {   -20,    808}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -211,   1258,   3072}, 0, {   236,    990}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -101,7 +101,7 @@ static const Vtx jrb_seg7_vertex_07010290[] = {
 };
 
 // 0x07010390 - 0x07010548
-static const Gfx jrb_seg7_dl_07010390[] = {
+ const Gfx jrb_seg7_dl_07010390[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, water_09008800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

@@ -1,67 +1,67 @@
 // Flyguy
 
 // ???
-UNUSED static const u64 flyguy_unused_1 = 0;
+UNUSED  const u64 flyguy_unused_1 = 0;
 
 // 0x0800E088
-ALIGNED8 static const Texture flyguy_seg8_texture_0800E088[] = {
+ALIGNED8  const Texture flyguy_seg8_texture_0800E088[] = {
 #include "actors/flyguy/flyguy_cloth_wrinkle.rgba16.inc.c"
 };
 
 // 0x0800F088
-ALIGNED8 static const Texture flyguy_seg8_texture_0800F088[] = {
+ALIGNED8  const Texture flyguy_seg8_texture_0800F088[] = {
 #include "actors/flyguy/flyguy_face.rgba16.inc.c"
 };
 
 // 0x0800F888
-ALIGNED8 static const Texture flyguy_seg8_texture_0800F888[] = {
+ALIGNED8  const Texture flyguy_seg8_texture_0800F888[] = {
 #include "actors/flyguy/flyguy_propeller.ia16.inc.c"
 };
 
 // Unreferenced light group
-UNUSED static const Lights1 flyguy_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 flyguy_lights_unused1 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x080100A0
-static const Lights1 flyguy_seg8_lights_080100A0 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_080100A0 = gdSPDefLights1(
     0x00, 0x1f, 0x33,
     0x02, 0x7f, 0xcc, 0x28, 0x28, 0x28
 );
 
 // 0x080100B8
-static const Lights1 flyguy_seg8_lights_080100B8 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_080100B8 = gdSPDefLights1(
     0x3f, 0x32, 0x08,
     0xff, 0xc8, 0x23, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 flyguy_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 flyguy_lights_unused2 = gdSPDefLights1(
     0x3a, 0x2f, 0x04,
     0xe8, 0xbd, 0x13, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 flyguy_lights_unused3 = gdSPDefLights1(
+UNUSED  const Lights1 flyguy_lights_unused3 = gdSPDefLights1(
     0x2c, 0x00, 0x00,
     0xb2, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 flyguy_lights_unused4 = gdSPDefLights1(
+UNUSED  const Lights1 flyguy_lights_unused4 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 flyguy_lights_unused5 = gdSPDefLights1(
+UNUSED  const Lights1 flyguy_lights_unused5 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08010130
-static const Vtx flyguy_seg8_vertex_08010130[] = {
+ const Vtx flyguy_seg8_vertex_08010130[] = {
     {{{    83,    -22,     14}, 0, {     0,      0}, {0x08, 0x8d, 0x33, 0x00}}},
     {{{    83,      1,     40}, 0, {     0,      0}, {0x29, 0xca, 0x6b, 0x00}}},
     {{{     5,     18,     30}, 0, {     0,      0}, {0xca, 0xba, 0x5a, 0x00}}},
@@ -81,7 +81,7 @@ static const Vtx flyguy_seg8_vertex_08010130[] = {
 };
 
 // 0x08010230
-static const Vtx flyguy_seg8_vertex_08010230[] = {
+ const Vtx flyguy_seg8_vertex_08010230[] = {
     {{{    82,     19,     44}, 0, {     0,      0}, {0x16, 0x7c, 0x00, 0xff}}},
     {{{   107,     14,     20}, 0, {     0,      0}, {0x18, 0x7c, 0x00, 0x00}}},
     {{{   107,     14,    -20}, 0, {     0,      0}, {0x18, 0x7c, 0x00, 0x00}}},
@@ -101,7 +101,7 @@ static const Vtx flyguy_seg8_vertex_08010230[] = {
 };
 
 // 0x08010330
-static const Vtx flyguy_seg8_vertex_08010330[] = {
+ const Vtx flyguy_seg8_vertex_08010330[] = {
     {{{     5,     18,     30}, 0, {     0,      0}, {0xca, 0xba, 0x5a, 0xff}}},
     {{{     3,      3,      0}, 0, {     0,      0}, {0xca, 0x8e, 0x00, 0x00}}},
     {{{    83,    -22,     14}, 0, {     0,      0}, {0x08, 0x8d, 0x33, 0x00}}},
@@ -121,14 +121,14 @@ static const Vtx flyguy_seg8_vertex_08010330[] = {
 };
 
 // 0x08010430
-static const Vtx flyguy_seg8_vertex_08010430[] = {
+ const Vtx flyguy_seg8_vertex_08010430[] = {
     {{{   103,     -2,     20}, 0, {     0,      0}, {0x65, 0xc5, 0x2f, 0xff}}},
     {{{   107,     14,    -20}, 0, {     0,      0}, {0x6a, 0xeb, 0xbf, 0x00}}},
     {{{   107,     14,     20}, 0, {     0,      0}, {0x6a, 0xeb, 0x41, 0x00}}},
 };
 
 // 0x08010460
-static const Vtx flyguy_seg8_vertex_08010460[] = {
+ const Vtx flyguy_seg8_vertex_08010460[] = {
     {{{   107,     14,    -20}, 0, {     0,      0}, {0x6a, 0xeb, 0xbf, 0x00}}},
     {{{   107,     14,     20}, 0, {     0,      0}, {0x6a, 0xeb, 0x41, 0x00}}},
     {{{   103,     -2,     20}, 0, {     0,      0}, {0x65, 0xc5, 0x2f, 0x00}}},
@@ -148,7 +148,7 @@ static const Vtx flyguy_seg8_vertex_08010460[] = {
 };
 
 // 0x08010560
-static const Vtx flyguy_seg8_vertex_08010560[] = {
+ const Vtx flyguy_seg8_vertex_08010560[] = {
     {{{     8,     31,    -34}, 0, {     0,      0}, {0xc6, 0xf2, 0x90, 0xff}}},
     {{{    83,      1,    -40}, 0, {     0,      0}, {0x29, 0xca, 0x95, 0x00}}},
     {{{     5,     18,    -30}, 0, {     0,      0}, {0xca, 0xba, 0xa6, 0x00}}},
@@ -166,7 +166,7 @@ static const Vtx flyguy_seg8_vertex_08010560[] = {
 };
 
 // 0x08010640
-static const Vtx flyguy_seg8_vertex_08010640[] = {
+ const Vtx flyguy_seg8_vertex_08010640[] = {
     {{{    82,     19,     44}, 0, {     0,      0}, {0x16, 0x7c, 0x00, 0xff}}},
     {{{   107,     14,     20}, 0, {     0,      0}, {0x18, 0x7c, 0x00, 0x00}}},
     {{{   107,     14,    -20}, 0, {     0,      0}, {0x18, 0x7c, 0x00, 0x00}}},
@@ -186,14 +186,14 @@ static const Vtx flyguy_seg8_vertex_08010640[] = {
 };
 
 // 0x08010740
-static const Vtx flyguy_seg8_vertex_08010740[] = {
+ const Vtx flyguy_seg8_vertex_08010740[] = {
     {{{     5,     18,    -30}, 0, {     0,      0}, {0xca, 0xba, 0xa6, 0xff}}},
     {{{    83,      1,    -40}, 0, {     0,      0}, {0x29, 0xca, 0x95, 0x00}}},
     {{{    83,    -22,    -14}, 0, {     0,      0}, {0x08, 0x8d, 0xcd, 0x00}}},
 };
 
 // 0x08010770
-static const Vtx flyguy_seg8_vertex_08010770[] = {
+ const Vtx flyguy_seg8_vertex_08010770[] = {
     {{{   -20,    -66,    -34}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{    40,    -66,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{     0,    -66,      0}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -275,13 +275,13 @@ const Gfx flyguy_seg8_dl_08010A90[] = {
 };
 
 // 0x08010AE0
-static const Lights1 flyguy_seg8_lights_08010AE0 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_08010AE0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08010AF8
-static const Vtx flyguy_seg8_vertex_08010AF8[] = {
+ const Vtx flyguy_seg8_vertex_08010AF8[] = {
     {{{    40,   -104,   -104}, 0, {   990,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    40,    106,    105}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{    40,   -104,    105}, 0, {     0,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -319,25 +319,25 @@ const Gfx flyguy_seg8_dl_08010B80[] = {
 };
 
 // 0x08010BF0
-static const Lights1 flyguy_seg8_lights_08010BF0 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_08010BF0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08010C08
-static const Lights1 flyguy_seg8_lights_08010C08 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_08010C08 = gdSPDefLights1(
     0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x08010C20
-static const Lights1 flyguy_seg8_lights_08010C20 = gdSPDefLights1(
+ const Lights1 flyguy_seg8_lights_08010C20 = gdSPDefLights1(
     0x62, 0x00, 0x13,
     0xc4, 0x00, 0x26, 0x28, 0x28, 0x28
 );
 
 // 0x08010C38
-static const Vtx flyguy_seg8_vertex_08010C38[] = {
+ const Vtx flyguy_seg8_vertex_08010C38[] = {
     {{{   108,    123,      0}, 0, {   484,    568}, {0xf7, 0x7e, 0x00, 0xff}}},
     {{{    56,    100,     68}, 0, {   828,    856}, {0xf4, 0x64, 0x4c, 0xff}}},
     {{{   193,    100,     75}, 0, {   836,    132}, {0x1f, 0x51, 0x5b, 0xff}}},
@@ -350,7 +350,7 @@ static const Vtx flyguy_seg8_vertex_08010C38[] = {
 };
 
 // 0x08010CC8
-static const Vtx flyguy_seg8_vertex_08010CC8[] = {
+ const Vtx flyguy_seg8_vertex_08010CC8[] = {
     {{{   -49,    -81,    -83}, 0, {  1756,    758}, {0xaf, 0xc4, 0xb4, 0xff}}},
     {{{   -28,   -165,      0}, 0, {  1144,    820}, {0xff, 0x82, 0x00, 0xff}}},
     {{{   -49,    -81,     84}, 0, {   528,    758}, {0x9a, 0xd3, 0x3c, 0xff}}},
@@ -360,7 +360,7 @@ static const Vtx flyguy_seg8_vertex_08010CC8[] = {
 };
 
 // 0x08010D28
-static const Vtx flyguy_seg8_vertex_08010D28[] = {
+ const Vtx flyguy_seg8_vertex_08010D28[] = {
     {{{    96,      0,     90}, 0, {  1540,    424}, {0x09, 0x00, 0x7e, 0xff}}},
     {{{   117,    -60,     68}, 0, {  1524,    604}, {0xec, 0xb1, 0x60, 0xff}}},
     {{{   142,     -6,    103}, 0, {  1308,    446}, {0x00, 0xf0, 0x7d, 0xff}}},
@@ -378,7 +378,7 @@ static const Vtx flyguy_seg8_vertex_08010D28[] = {
 };
 
 // 0x08010E08
-static const Vtx flyguy_seg8_vertex_08010E08[] = {
+ const Vtx flyguy_seg8_vertex_08010E08[] = {
     {{{    16,     64,     88}, 0, {  -556,    338}, {0xf6, 0x4c, 0x64, 0xff}}},
     {{{     0,    117,      0}, 0, {  -940,    334}, {0xfd, 0x7e, 0x00, 0xff}}},
     {{{   -48,     72,     90}, 0, {  -688,    582}, {0xb6, 0x44, 0x4c, 0xff}}},
@@ -398,7 +398,7 @@ static const Vtx flyguy_seg8_vertex_08010E08[] = {
 };
 
 // 0x08010F08
-static const Vtx flyguy_seg8_vertex_08010F08[] = {
+ const Vtx flyguy_seg8_vertex_08010F08[] = {
     {{{     0,    117,      0}, 0, {  -940,    334}, {0xfd, 0x7e, 0x00, 0xff}}},
     {{{    56,    100,     68}, 0, {  -764,    128}, {0xf4, 0x64, 0x4c, 0xff}}},
     {{{    30,    109,      0}, 0, {  -852,    218}, {0x05, 0x7e, 0x00, 0xff}}},
@@ -418,7 +418,7 @@ static const Vtx flyguy_seg8_vertex_08010F08[] = {
 };
 
 // 0x08011008
-static const Vtx flyguy_seg8_vertex_08011008[] = {
+ const Vtx flyguy_seg8_vertex_08011008[] = {
     {{{    61,    -61,    -81}, 0, {   356,    330}, {0x16, 0xb7, 0x9b, 0xff}}},
     {{{   -28,   -165,      0}, 0, {   964,    828}, {0xff, 0x82, 0x00, 0xff}}},
     {{{   -49,    -81,    -83}, 0, {   364,    796}, {0xaf, 0xc4, 0xb4, 0xff}}},
@@ -437,7 +437,7 @@ static const Vtx flyguy_seg8_vertex_08011008[] = {
 };
 
 // 0x080110F8
-static const Vtx flyguy_seg8_vertex_080110F8[] = {
+ const Vtx flyguy_seg8_vertex_080110F8[] = {
     {{{   -45,    -22,    112}, 0, {     0,    700}, {0xb4, 0xf8, 0x64, 0xff}}},
     {{{   -10,    -14,    112}, 0, {   -48,    552}, {0xd9, 0xf2, 0x77, 0xff}}},
     {{{    16,     64,     88}, 0, {  -556,    338}, {0xf6, 0x4c, 0x64, 0xff}}},
@@ -457,7 +457,7 @@ static const Vtx flyguy_seg8_vertex_080110F8[] = {
 };
 
 // 0x080111F8
-static const Vtx flyguy_seg8_vertex_080111F8[] = {
+ const Vtx flyguy_seg8_vertex_080111F8[] = {
     {{{   239,    -50,    -61}, 0, {   860,    578}, {0x62, 0xdd, 0xb9, 0xff}}},
     {{{   232,     24,    -75}, 0, {   780,    360}, {0x54, 0x10, 0xa3, 0xff}}},
     {{{   257,     35,      0}, 0, {   636,    328}, {0x7d, 0x10, 0x00, 0xff}}},
@@ -475,7 +475,7 @@ static const Vtx flyguy_seg8_vertex_080111F8[] = {
 };
 
 // 0x080112D8
-static const Vtx flyguy_seg8_vertex_080112D8[] = {
+ const Vtx flyguy_seg8_vertex_080112D8[] = {
     {{{   126,     73,    100}, 0, {  1272,    212}, {0xf3, 0x1d, 0x7a, 0xff}}},
     {{{    56,    100,     68}, 0, {  1604,    132}, {0xf4, 0x64, 0x4c, 0xff}}},
     {{{    96,      0,     90}, 0, {  1540,    424}, {0x09, 0x00, 0x7e, 0xff}}},
@@ -486,7 +486,7 @@ static const Vtx flyguy_seg8_vertex_080112D8[] = {
 };
 
 // 0x08011348
-static const Vtx flyguy_seg8_vertex_08011348[] = {
+ const Vtx flyguy_seg8_vertex_08011348[] = {
     {{{   -48,     72,    -89}, 0, {     0,      0}, {0xa1, 0x37, 0xc1, 0xff}}},
     {{{   -45,    -22,   -111}, 0, {     0,      0}, {0xb4, 0xfb, 0x9b, 0xff}}},
     {{{   -45,    -22,    112}, 0, {     0,      0}, {0xb4, 0xf8, 0x64, 0xff}}},

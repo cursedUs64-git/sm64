@@ -30,9 +30,9 @@
 #define NUM_FLYING_CARPET_VERTICES 21
 extern const s16 flying_carpet_static_vertex_data[NUM_FLYING_CARPET_VERTICES];
 
-static s16 sCurAreaTimer = 1;
-static s16 sPrevAreaTimer = 0;
-static s16 sFlyingCarpetRippleTimer = 0;
+ s16 sCurAreaTimer = 1;
+ s16 sPrevAreaTimer = 0;
+ s16 sFlyingCarpetRippleTimer = 0;
 
 s8 gFlyingCarpetState;
 
@@ -108,7 +108,7 @@ Gfx *geo_exec_inside_castle_light(s32 callContext, struct GraphNode *node, UNUSE
 }
 
 /**
- * Update static timer variables that control the flying carpets' ripple effect.
+ * Update  timer variables that control the flying carpets' ripple effect.
  */
 Gfx *geo_exec_flying_carpet_timer_update(s32 callContext, UNUSED struct GraphNode *node,
                                          UNUSED f32 mtx[4][4]) {

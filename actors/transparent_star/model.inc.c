@@ -1,13 +1,13 @@
 // Transparent Star
 
 // 0x0302C488
-static const Lights1 transparent_star_seg3_lights_0302C488 = gdSPDefLights1(
+ const Lights1 transparent_star_seg3_lights_0302C488 = gdSPDefLights1(
     0x03, 0x05, 0x17,
     0x1e, 0x32, 0xe6, 0x28, 0x28, 0x28
 );
 
 // 0x0302C4A0
-static const Vtx transparent_star_seg3_vertex_0302C4A0[] = {
+ const Vtx transparent_star_seg3_vertex_0302C4A0[] = {
     {{{     0,      8,    -89}, 0, {     0,      0}, {0x00, 0x07, 0x82, 0xff}}},
     {{{   190,   -201,      0}, 0, {     0,      0}, {0x55, 0xa3, 0x00, 0xff}}},
     {{{     0,   -129,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},

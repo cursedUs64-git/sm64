@@ -1,5 +1,5 @@
 // 0x0701FDE8 - 0x0701FE28
-static const Vtx ccm_seg7_vertex_0701FDE8[] = {
+ const Vtx ccm_seg7_vertex_0701FDE8[] = {
     {{{ -7592,  -5703,  -6819}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -7592,  -5600,  -6716}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{ -7592,  -5703,  -6716}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -7,7 +7,7 @@ static const Vtx ccm_seg7_vertex_0701FDE8[] = {
 };
 
 // 0x0701FE28 - 0x0701FE60
-static const Gfx ccm_seg7_dl_0701FE28[] = {
+ const Gfx ccm_seg7_dl_0701FE28[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, snow_09000800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

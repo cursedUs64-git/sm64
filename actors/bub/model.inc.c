@@ -1,39 +1,39 @@
 // Bub
 
 // 0x0600E278
-static const Lights1 bub_seg6_lights_0600E280 = gdSPDefLights1(
+ const Lights1 bub_seg6_lights_0600E280 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0600E290
-static const Lights1 bub_seg6_lights_0600E290 = gdSPDefLights1(
+ const Lights1 bub_seg6_lights_0600E290 = gdSPDefLights1(
     0x3f, 0x1d, 0x25,
     0xff, 0x75, 0x94, 0x28, 0x28, 0x28
 );
 
 // 0x0600E2A8
-ALIGNED8 static const Texture bub_seg6_texture_0600E2A8[] = {
+ALIGNED8  const Texture bub_seg6_texture_0600E2A8[] = {
 #include "actors/bub/bub_eye_border.rgba16.inc.c"
 };
 
 // 0x0600EAA8
-ALIGNED8 static const Texture bub_seg6_texture_0600EAA8[] = {
+ALIGNED8  const Texture bub_seg6_texture_0600EAA8[] = {
 #include "actors/bub/bub_fins.rgba16.inc.c"
 };
 
 // 0x0600F2A8
-ALIGNED8 static const Texture bub_seg6_texture_0600F2A8[] = {
+ALIGNED8  const Texture bub_seg6_texture_0600F2A8[] = {
 #include "actors/bub/bub_eyes.rgba16.inc.c"
 };
 
 // 0x060102A8
-ALIGNED8 static const Texture bub_seg6_texture_060102A8[] = {
+ALIGNED8  const Texture bub_seg6_texture_060102A8[] = {
 #include "actors/bub/bub_scales.rgba16.inc.c"
 };
 
 // 0x060112A8
-static const Vtx bub_seg6_vertex_060112A8[] = {
+ const Vtx bub_seg6_vertex_060112A8[] = {
     {{{   -47,     79,     27}, 0, {    26,    980}, {0x00, 0x6b, 0x43, 0xff}}},
     {{{   -94,     80,     38}, 0, {   928,    968}, {0xf7, 0x73, 0x33, 0xff}}},
     {{{   -53,      0,     91}, 0, {   132,    102}, {0x10, 0x01, 0x7d, 0xff}}},
@@ -51,14 +51,14 @@ static const Vtx bub_seg6_vertex_060112A8[] = {
 };
 
 // 0x06011388
-static const Vtx bub_seg6_vertex_06011388[] = {
+ const Vtx bub_seg6_vertex_06011388[] = {
     {{{  -102,     68,    -23}, 0, {   688,     60}, {0x9e, 0x4f, 0x00, 0xff}}},
     {{{   -94,     80,     38}, 0, {   960,    960}, {0xf7, 0x73, 0x33, 0xff}}},
     {{{   -47,     79,     27}, 0, {    16,    968}, {0x00, 0x6b, 0x43, 0xff}}},
 };
 
 // 0x060113B8
-static const Vtx bub_seg6_vertex_060113B8[] = {
+ const Vtx bub_seg6_vertex_060113B8[] = {
     {{{   -17,    -15,     85}, 0, {   426,   1050}, {0xfd, 0x8e, 0x35, 0xff}}},
     {{{    93,      0,     75}, 0, {  2024,   1040}, {0x38, 0x00, 0x71, 0xff}}},
     {{{    30,      0,    126}, 0, {  1056,   1694}, {0x3c, 0x02, 0x6f, 0xff}}},
@@ -68,7 +68,7 @@ static const Vtx bub_seg6_vertex_060113B8[] = {
 };
 
 // 0x06011418
-static const Vtx bub_seg6_vertex_06011418[] = {
+ const Vtx bub_seg6_vertex_06011418[] = {
     {{{  -100,    -71,    -23}, 0, {  2008,   1286}, {0x9f, 0xaf, 0x00, 0xff}}},
     {{{   -92,    -82,     38}, 0, {  2180,    384}, {0xf9, 0x8d, 0x33, 0xff}}},
     {{{  -111,    -41,    102}, 0, {  1576,   -554}, {0xa4, 0xca, 0x43, 0xff}}},
@@ -79,7 +79,7 @@ static const Vtx bub_seg6_vertex_06011418[] = {
 };
 
 // 0x06011488
-static const Vtx bub_seg6_vertex_06011488[] = {
+ const Vtx bub_seg6_vertex_06011488[] = {
     {{{    69,     68,     18}, 0, {  1976,   -164}, {0x3a, 0x6a, 0x24, 0xff}}},
     {{{    63,     77,    -64}, 0, {  1872,   1220}, {0x35, 0x55, 0xb3, 0xff}}},
     {{{   -62,    106,    -67}, 0, {  -288,   1334}, {0xe7, 0x7b, 0xf2, 0xff}}},
@@ -98,7 +98,7 @@ static const Vtx bub_seg6_vertex_06011488[] = {
 };
 
 // 0x06011578
-static const Vtx bub_seg6_vertex_06011578[] = {
+ const Vtx bub_seg6_vertex_06011578[] = {
     {{{   134,      0,    -17}, 0, {  1744,   1076}, {0x7c, 0x00, 0xe7, 0xff}}},
     {{{   134,      0,     22}, 0, {  1444,    174}, {0x77, 0x00, 0x2a, 0xff}}},
     {{{    70,    -68,     18}, 0, {   124,    848}, {0x3b, 0x97, 0x24, 0xff}}},
@@ -116,7 +116,7 @@ static const Vtx bub_seg6_vertex_06011578[] = {
 };
 
 // 0x06011658
-static const Vtx bub_seg6_vertex_06011658[] = {
+ const Vtx bub_seg6_vertex_06011658[] = {
     {{{   -60,   -108,    -67}, 0, {  1920,    450}, {0xe9, 0x85, 0xf2, 0xff}}},
     {{{   -45,    -81,     27}, 0, {  2056,  -1674}, {0x00, 0x95, 0x43, 0xff}}},
     {{{  -100,    -71,    -23}, 0, {   852,   -280}, {0x9f, 0xaf, 0x00, 0xff}}},
@@ -132,7 +132,7 @@ static const Vtx bub_seg6_vertex_06011658[] = {
 };
 
 // 0x06011718
-static const Vtx bub_seg6_vertex_06011718[] = {
+ const Vtx bub_seg6_vertex_06011718[] = {
     {{{   -76,    -73,    -91}, 0, {     0,      0}, {0xc1, 0xcf, 0x9e, 0xff}}},
     {{{  -107,     -1,    -79}, 0, {     0,      0}, {0x83, 0x00, 0xef, 0xff}}},
     {{{   -83,     -1,   -102}, 0, {     0,      0}, {0xcb, 0x00, 0x8d, 0xff}}},
@@ -148,7 +148,7 @@ static const Vtx bub_seg6_vertex_06011718[] = {
 };
 
 // 0x060117D8
-static const Vtx bub_seg6_vertex_060117D8[] = {
+ const Vtx bub_seg6_vertex_060117D8[] = {
     {{{    63,     77,    -64}, 0, {     0,      0}, {0x35, 0x55, 0xb3, 0xff}}},
     {{{    85,      0,    -97}, 0, {     0,      0}, {0x43, 0x00, 0x95, 0xff}}},
     {{{   -24,      0,   -108}, 0, {     0,      0}, {0x07, 0x00, 0x82, 0xff}}},
@@ -268,7 +268,7 @@ const Gfx bub_seg6_dl_06011B28[] = {
 };
 
 // 0x06011BD8
-static const Vtx bub_seg6_vertex_06011BD8[] = {
+ const Vtx bub_seg6_vertex_06011BD8[] = {
     {{{    45,     16,      2}, 0, {   488,    418}, {0x04, 0x7e, 0x00, 0xff}}},
     {{{    61,      1,    -60}, 0, {   996,    234}, {0x1d, 0xff, 0x85, 0xff}}},
     {{{     0,      0,    -16}, 0, {   634,    976}, {0x91, 0xfe, 0xc4, 0xff}}},
@@ -313,7 +313,7 @@ const Gfx bub_seg6_dl_06011CF0[] = {
 };
 
 // 0x06011D50
-static const Vtx bub_seg6_vertex_06011D50[] = {
+ const Vtx bub_seg6_vertex_06011D50[] = {
     {{{   113,     -7,      0}, 0, {   586,    220}, {0x4b, 0x9b, 0x0c, 0xff}}},
     {{{   113,     12,      0}, 0, {   584,    220}, {0x33, 0x73, 0xf7, 0xff}}},
     {{{    84,      7,     42}, 0, {   120,    132}, {0x37, 0x30, 0x67, 0xff}}},
@@ -356,7 +356,7 @@ const Gfx bub_seg6_dl_06011E48[] = {
 };
 
 // 0x06011EA8
-static const Vtx bub_seg6_vertex_06011EA8[] = {
+ const Vtx bub_seg6_vertex_06011EA8[] = {
     {{{   127,      8,      0}, 0, {   454,    956}, {0x4a, 0x65, 0x0d, 0xff}}},
     {{{    31,      0,    -30}, 0, {   138,      4}, {0xbb, 0x01, 0x96, 0xff}}},
     {{{     3,      0,      0}, 0, {   518,    -40}, {0xb3, 0x00, 0x64, 0xff}}},

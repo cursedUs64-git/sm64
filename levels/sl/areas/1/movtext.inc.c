@@ -1,5 +1,5 @@
 // 0x0700FA30 - 0x0700FA50
-static Movtex sl_movtex_snowman_water_data[] = {
+ Movtex sl_movtex_snowman_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    8),
     MOV_TEX_ROT_SCALE(   10),
@@ -14,7 +14,7 @@ static Movtex sl_movtex_snowman_water_data[] = {
 };
 
 // 0x0700FA50 - 0x0700FA70
-static Movtex sl_movtex_ice_bully_water_data[] = {
+ Movtex sl_movtex_ice_bully_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(    8),
     MOV_TEX_ROT_SCALE(   10),

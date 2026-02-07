@@ -1,5 +1,5 @@
 // 0x07010E40 - 0x07010E60
-static Movtex castle_grounds_movtex_moat_water_data[] = {
+ Movtex castle_grounds_movtex_moat_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   20),
     MOV_TEX_ROT_SCALE(   15),
@@ -14,7 +14,7 @@ static Movtex castle_grounds_movtex_moat_water_data[] = {
 };
 
 // 0x07010E60 - 0x07010E80
-static Movtex castle_grounds_movtex_lake_water_data[] = {
+ Movtex castle_grounds_movtex_lake_water_data[] = {
     MOV_TEX_INIT_LOAD(   1),
     MOV_TEX_ROT_SPEED(  15),
     MOV_TEX_ROT_SCALE(  10),

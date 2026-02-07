@@ -1,53 +1,53 @@
 // Exclamation Box
 
 // 0x08012E10
-static const Lights1 exclamation_box_seg8_lights_08012E10 = gdSPDefLights1(
+ const Lights1 exclamation_box_seg8_lights_08012E10 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x08012E28
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08012E28[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08012E28[] = {
 #include "actors/exclamation_box/vanish_cap_box_front.rgba16.inc.c"
 };
 
 // 0x08013628
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08013628[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08013628[] = {
 #include "actors/exclamation_box/vanish_cap_box_side.rgba16.inc.c"
 };
 
 // 0x08014628
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08014628[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08014628[] = {
 #include "actors/exclamation_box/metal_cap_box_front.rgba16.inc.c"
 };
 
 // 0x08014E28
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08014E28[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08014E28[] = {
 #include "actors/exclamation_box/metal_cap_box_side.rgba16.inc.c"
 };
 
 // 0x08015E28
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08015E28[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08015E28[] = {
 #include "actors/exclamation_box/wing_cap_box_front.rgba16.inc.c"
 };
 
 // 0x08016628
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08016628[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08016628[] = {
 #include "actors/exclamation_box/wing_cap_box_side.rgba16.inc.c"
 };
 
 // 0x08017628
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08017628[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08017628[] = {
 #include "actors/exclamation_box/exclamation_box_front.rgba16.inc.c"
 };
 
 // 0x08017E28
-ALIGNED8 static const Texture exclamation_box_seg8_texture_08017E28[] = {
+ALIGNED8  const Texture exclamation_box_seg8_texture_08017E28[] = {
 #include "actors/exclamation_box/exclamation_box_side.rgba16.inc.c"
 };
 
 // 0x08018E28
-static const Vtx exclamation_box_seg8_vertex_08018E28[] = {
+ const Vtx exclamation_box_seg8_vertex_08018E28[] = {
     {{{   -25,      1,    -25}, 0, {   992,    992}, {0x00, 0x00, 0x81, 0xff}}},
     {{{   -25,     52,    -25}, 0, {   992,      0}, {0x00, 0x00, 0x81, 0xff}}},
     {{{    26,     52,    -25}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0xff}}},
@@ -67,7 +67,7 @@ static const Vtx exclamation_box_seg8_vertex_08018E28[] = {
 };
 
 // 0x08018F28
-static const Vtx exclamation_box_seg8_vertex_08018F28[] = {
+ const Vtx exclamation_box_seg8_vertex_08018F28[] = {
     {{{    26,      1,    -25}, 0, {   992,   2014}, {0x00, 0x81, 0x00, 0xff}}},
     {{{    26,      1,     26}, 0, {   992,      0}, {0x00, 0x81, 0x00, 0xff}}},
     {{{   -25,      1,     26}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0xff}}},
@@ -116,7 +116,7 @@ const Gfx exclamation_box_seg8_dl_08019058[] = {
 };
 
 // 0x080190A0
-static const Vtx exclamation_box_seg8_vertex_080190A0[] = {
+ const Vtx exclamation_box_seg8_vertex_080190A0[] = {
     {{{   -25,      1,     26}, 0, {   992,    992}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -25,     52,     26}, 0, {   992,      0}, {0x81, 0x00, 0x00, 0xff}}},
     {{{   -25,     52,    -25}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0xff}}},
@@ -136,7 +136,7 @@ static const Vtx exclamation_box_seg8_vertex_080190A0[] = {
 };
 
 // 0x080191A0
-static const Vtx exclamation_box_seg8_vertex_080191A0[] = {
+ const Vtx exclamation_box_seg8_vertex_080191A0[] = {
     {{{   -25,     52,     26}, 0, {     0,    992}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    26,     52,     26}, 0, {  2014,    992}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{    26,     52,    -25}, 0, {  2014,      0}, {0x00, 0x7f, 0x00, 0xff}}},

@@ -1,31 +1,31 @@
 // Wiggler Head
 
 // 0x0500C878
-static const Lights1 wiggler_seg5_lights_0500C878 = gdSPDefLights1(
+ const Lights1 wiggler_seg5_lights_0500C878 = gdSPDefLights1(
     0x37, 0x00, 0x00,
     0xdf, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0500C890
-static const Lights1 wiggler_seg5_lights_0500C890 = gdSPDefLights1(
+ const Lights1 wiggler_seg5_lights_0500C890 = gdSPDefLights1(
     0x39, 0x11, 0x00,
     0xe7, 0x47, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 wiggler_head_lights_unused1 = gdSPDefLights1(
+UNUSED  const Lights1 wiggler_head_lights_unused1 = gdSPDefLights1(
     0x1b, 0x06, 0x00,
     0x6d, 0x1a, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-UNUSED static const Lights1 wiggler_head_lights_unused2 = gdSPDefLights1(
+UNUSED  const Lights1 wiggler_head_lights_unused2 = gdSPDefLights1(
     0x3a, 0x22, 0x05,
     0xea, 0x8b, 0x16, 0x28, 0x28, 0x28
 );
 
 // 0x0500C8D8
-static const Vtx wiggler_seg5_vertex_0500C8D8[] = {
+ const Vtx wiggler_seg5_vertex_0500C8D8[] = {
     {{{    19,      5,    -31}, 0, {     0,      0}, {0x40, 0x2b, 0x9d, 0x00}}},
     {{{    20,    -37,    -43}, 0, {     0,      0}, {0x48, 0xeb, 0x9a, 0x00}}},
     {{{    -5,    -36,    -43}, 0, {     0,      0}, {0xbd, 0xe4, 0x99, 0x00}}},
@@ -45,7 +45,7 @@ static const Vtx wiggler_seg5_vertex_0500C8D8[] = {
 };
 
 // 0x0500C9D8
-static const Vtx wiggler_seg5_vertex_0500C9D8[] = {
+ const Vtx wiggler_seg5_vertex_0500C9D8[] = {
     {{{     0,    -59,     21}, 0, {     0,      0}, {0xb7, 0xa1, 0x27, 0xff}}},
     {{{    -5,    -36,     43}, 0, {     0,      0}, {0xbd, 0xe4, 0x67, 0x00}}},
     {{{   -17,    -33,     21}, 0, {     0,      0}, {0x89, 0xe3, 0x1f, 0x00}}},
@@ -65,7 +65,7 @@ static const Vtx wiggler_seg5_vertex_0500C9D8[] = {
 };
 
 // 0x0500CAD8
-static const Vtx wiggler_seg5_vertex_0500CAD8[] = {
+ const Vtx wiggler_seg5_vertex_0500CAD8[] = {
     {{{    20,    -37,     43}, 0, {     0,      0}, {0x48, 0xeb, 0x66, 0xff}}},
     {{{    -5,    -36,     43}, 0, {     0,      0}, {0xbd, 0xe4, 0x67, 0x00}}},
     {{{     0,    -59,     21}, 0, {     0,      0}, {0xb7, 0xa1, 0x27, 0x00}}},
@@ -85,7 +85,7 @@ static const Vtx wiggler_seg5_vertex_0500CAD8[] = {
 };
 
 // 0x0500CBD8
-static const Vtx wiggler_seg5_vertex_0500CBD8[] = {
+ const Vtx wiggler_seg5_vertex_0500CBD8[] = {
     {{{    20,    -66,    -21}, 0, {     0,      0}, {0x7f, 0x02, 0x00, 0xff}}},
     {{{    19,      5,     31}, 0, {     0,      0}, {0x39, 0x2b, 0x68, 0x00}}},
     {{{    20,    -37,     43}, 0, {     0,      0}, {0x1b, 0xe7, 0x79, 0x00}}},
@@ -93,7 +93,7 @@ static const Vtx wiggler_seg5_vertex_0500CBD8[] = {
 };
 
 // 0x0500CC18
-static const Vtx wiggler_seg5_vertex_0500CC18[] = {
+ const Vtx wiggler_seg5_vertex_0500CC18[] = {
     {{{    53,     -2,    -13}, 0, {     0,      0}, {0x00, 0xd8, 0x88, 0x00}}},
     {{{    53,    -11,      0}, 0, {     0,      0}, {0x01, 0x81, 0x01, 0x00}}},
     {{{    -3,    -12,      0}, 0, {     0,      0}, {0x01, 0x81, 0x01, 0x00}}},
@@ -112,7 +112,7 @@ static const Vtx wiggler_seg5_vertex_0500CC18[] = {
 };
 
 // 0x0500CD08
-static const Vtx wiggler_seg5_vertex_0500CD08[] = {
+ const Vtx wiggler_seg5_vertex_0500CD08[] = {
     {{{    42,     -2,    -13}, 0, {     0,      0}, {0x00, 0xd8, 0x88, 0x00}}},
     {{{    42,    -12,      0}, 0, {     0,      0}, {0x00, 0x81, 0x01, 0x00}}},
     {{{    -6,    -12,      0}, 0, {     0,      0}, {0x00, 0x81, 0x01, 0x00}}},
@@ -131,7 +131,7 @@ static const Vtx wiggler_seg5_vertex_0500CD08[] = {
 };
 
 // 0x0500CDF8
-static const Vtx wiggler_seg5_vertex_0500CDF8[] = {
+ const Vtx wiggler_seg5_vertex_0500CDF8[] = {
     {{{    -2,      5,     31}, 0, {     0,      0}, {0xca, 0x32, 0x66, 0x00}}},
     {{{    -5,    -36,     43}, 0, {     0,      0}, {0xbd, 0xe4, 0x67, 0x00}}},
     {{{    20,    -37,     43}, 0, {     0,      0}, {0x48, 0xeb, 0x66, 0x00}}},
@@ -151,7 +151,7 @@ static const Vtx wiggler_seg5_vertex_0500CDF8[] = {
 };
 
 // 0x0500CEF8
-static const Vtx wiggler_seg5_vertex_0500CEF8[] = {
+ const Vtx wiggler_seg5_vertex_0500CEF8[] = {
     {{{   -17,    -33,    -21}, 0, {     0,      0}, {0x89, 0xe3, 0xe1, 0xff}}},
     {{{    -5,    -36,    -43}, 0, {     0,      0}, {0xbd, 0xe4, 0x99, 0x00}}},
     {{{     0,    -59,    -21}, 0, {     0,      0}, {0xb7, 0xa1, 0xd9, 0x00}}},
@@ -171,7 +171,7 @@ static const Vtx wiggler_seg5_vertex_0500CEF8[] = {
 };
 
 // 0x0500CFF8
-static const Vtx wiggler_seg5_vertex_0500CFF8[] = {
+ const Vtx wiggler_seg5_vertex_0500CFF8[] = {
     {{{    20,    -66,    -21}, 0, {     0,      0}, {0x42, 0xa1, 0xce, 0xff}}},
     {{{     0,    -59,    -21}, 0, {     0,      0}, {0xb7, 0xa1, 0xd9, 0x00}}},
     {{{    -5,    -36,    -43}, 0, {     0,      0}, {0xbd, 0xe4, 0x99, 0x00}}},
@@ -191,7 +191,7 @@ static const Vtx wiggler_seg5_vertex_0500CFF8[] = {
 };
 
 // 0x0500D0F8
-static const Vtx wiggler_seg5_vertex_0500D0F8[] = {
+ const Vtx wiggler_seg5_vertex_0500D0F8[] = {
     {{{    20,    -37,     43}, 0, {     0,      0}, {0x1b, 0xe7, 0x79, 0xff}}},
     {{{    18,     34,    -15}, 0, {     0,      0}, {0x7f, 0x02, 0x00, 0x00}}},
     {{{    18,     34,     15}, 0, {     0,      0}, {0x06, 0x6e, 0x3e, 0x00}}},
@@ -199,7 +199,7 @@ static const Vtx wiggler_seg5_vertex_0500D0F8[] = {
 };
 
 // 0x0500D138
-static const Vtx wiggler_seg5_vertex_0500D138[] = {
+ const Vtx wiggler_seg5_vertex_0500D138[] = {
     {{{    -3,     -2,     13}, 0, {     0,      0}, {0x00, 0xd8, 0x78, 0x00}}},
     {{{    -3,    -12,      0}, 0, {     0,      0}, {0x01, 0x81, 0xff, 0x00}}},
     {{{    53,    -11,      0}, 0, {     0,      0}, {0x01, 0x81, 0xff, 0x00}}},
@@ -218,7 +218,7 @@ static const Vtx wiggler_seg5_vertex_0500D138[] = {
 };
 
 // 0x0500D228
-static const Vtx wiggler_seg5_vertex_0500D228[] = {
+ const Vtx wiggler_seg5_vertex_0500D228[] = {
     {{{    -6,     -2,     13}, 0, {     0,      0}, {0x00, 0xd8, 0x78, 0x00}}},
     {{{    -6,    -12,      0}, 0, {     0,      0}, {0x00, 0x81, 0xff, 0x00}}},
     {{{    42,    -12,      0}, 0, {     0,      0}, {0x00, 0x81, 0xff, 0x00}}},
@@ -237,7 +237,7 @@ static const Vtx wiggler_seg5_vertex_0500D228[] = {
 };
 
 // Unused vertices? what are these? [D318]
-static const Vtx wiggler_seg5_vertex_0500D318[] = {
+ const Vtx wiggler_seg5_vertex_0500D318[] = {
     {{{    92,     51,      0}, 0, {     0,      0}, {0x5d, 0x55, 0x00, 0x00}}},
     {{{    87,     46,    -28}, 0, {     0,      0}, {0x5a, 0x53, 0xe1, 0x00}}},
     {{{    49,     88,    -28}, 0, {     0,      0}, {0x5a, 0x53, 0xe1, 0x00}}},
@@ -503,7 +503,7 @@ const Gfx wiggler_seg5_dl_0500E060[] = {
 };
 
 // 0x0500E0E8
-static const Vtx wiggler_seg5_vertex_0500E0E8[] = {
+ const Vtx wiggler_seg5_vertex_0500E0E8[] = {
     {{{     0,     15,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -15,    -15,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -15,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -511,7 +511,7 @@ static const Vtx wiggler_seg5_vertex_0500E0E8[] = {
 };
 
 // 0x0500E128
-static const Vtx wiggler_seg5_vertex_0500E128[] = {
+ const Vtx wiggler_seg5_vertex_0500E128[] = {
     {{{    15,     15,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -15,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    15,    -15,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -558,7 +558,7 @@ const Gfx wiggler_seg5_dl_0500E1D8[] = {
 };
 
 // 0x0500E250
-static const Vtx wiggler_seg5_vertex_0500E250[] = {
+ const Vtx wiggler_seg5_vertex_0500E250[] = {
     {{{    58,     87,      0}, 0, {   478,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    84,     50,     23}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    88,     54,      0}, 0, {   478,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -597,7 +597,7 @@ const Gfx wiggler_seg5_dl_0500E2F8[] = {
 };
 
 // 0x0500E368
-static const Vtx wiggler_seg5_vertex_0500E368[] = {
+ const Vtx wiggler_seg5_vertex_0500E368[] = {
     {{{    58,    -82,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    88,    -35,    -43}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    94,    -40,      0}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -638,7 +638,7 @@ const Gfx wiggler_seg5_dl_0500E430[] = {
 };
 
 // 0x0500E4A0
-static const Vtx wiggler_seg5_vertex_0500E4A0[] = {
+ const Vtx wiggler_seg5_vertex_0500E4A0[] = {
     {{{   -77,    -98,      2}, 0, {   990,    990}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     8,    -83,     94}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -74,    -53,     79}, 0, {     0,    990}, {0xff, 0xff, 0xff, 0xff}}},
@@ -674,7 +674,7 @@ const Gfx wiggler_seg5_dl_0500E518[] = {
 };
 
 // 0x0500E588
-static const Vtx wiggler_seg5_vertex_0500E588[] = {
+ const Vtx wiggler_seg5_vertex_0500E588[] = {
     {{{     0,     26,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{   -26,    -26,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -26,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},
@@ -682,7 +682,7 @@ static const Vtx wiggler_seg5_vertex_0500E588[] = {
 };
 
 // 0x0500E5C8
-static const Vtx wiggler_seg5_vertex_0500E5C8[] = {
+ const Vtx wiggler_seg5_vertex_0500E5C8[] = {
     {{{    26,     26,      0}, 0, {   990,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{     0,    -26,      0}, 0, {     0,   2012}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    26,    -26,      0}, 0, {   990,   2012}, {0xff, 0xff, 0xff, 0xff}}},

@@ -1,5 +1,5 @@
 // 0x0700D28C - 0x0700D2AC
-static Movtex jrb_movtex_water_data[] = {
+ Movtex jrb_movtex_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   20),
     MOV_TEX_ROT_SCALE(    6),
@@ -14,7 +14,7 @@ static Movtex jrb_movtex_water_data[] = {
 };
 
 // 0x0700D2AC - 0x0700D2CC
-static Movtex jrb_movtex_ocean_cave_water_data[] = {
+ Movtex jrb_movtex_ocean_cave_water_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   10),
     MOV_TEX_ROT_SCALE(    2),
@@ -36,7 +36,7 @@ const struct MovtexQuadCollection jrb_movtex_water[] = {
 };
 
 // 0x0700D2E4, appears if you enter the course the first time, then it disappears when you collect the "Plunder in the Sunken Ship" star
-static Movtex jrb_movtex_initial_mist_data[] = {
+ Movtex jrb_movtex_initial_mist_data[] = {
     MOV_TEX_INIT_LOAD(    1),
     MOV_TEX_ROT_SPEED(   20),
     MOV_TEX_ROT_SCALE(   10),

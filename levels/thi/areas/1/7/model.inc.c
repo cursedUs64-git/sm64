@@ -1,17 +1,17 @@
 // 0x070076A8 - 0x070076C0
-static const Lights1 thi_seg7_lights_070076A8 = gdSPDefLights1(
+ const Lights1 thi_seg7_lights_070076A8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x070076C0 - 0x070076D8
-static const Lights1 thi_seg7_lights_070076C0 = gdSPDefLights1(
+ const Lights1 thi_seg7_lights_070076C0 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0x99, 0x99, 0x99, 0x28, 0x28, 0x28
 );
 
 // 0x070076D8 - 0x07007718
-static const Vtx thi_seg7_vertex_070076D8[] = {
+ const Vtx thi_seg7_vertex_070076D8[] = {
     {{{  -409,      0,   -409}, 0, {  -848,    172}, {0xac, 0x54, 0xd6, 0xff}}},
     {{{   410,      0,    410}, 0, {   786,   1806}, {0x54, 0x54, 0x2a, 0xff}}},
     {{{   410,      0,   -409}, 0, {   786,    172}, {0x33, 0x33, 0x99, 0xff}}},
@@ -19,7 +19,7 @@ static const Vtx thi_seg7_vertex_070076D8[] = {
 };
 
 // 0x07007718 - 0x070077D8
-static const Vtx thi_seg7_vertex_07007718[] = {
+ const Vtx thi_seg7_vertex_07007718[] = {
     {{{  -409,   -101,   -409}, 0, {   990,    224}, {0xc0, 0xd4, 0x9c, 0xff}}},
     {{{  -409,      0,   -409}, 0, {   990,      0}, {0xac, 0x54, 0xd6, 0xff}}},
     {{{   410,      0,   -409}, 0, {     0,      0}, {0x33, 0x33, 0x99, 0xff}}},
@@ -35,7 +35,7 @@ static const Vtx thi_seg7_vertex_07007718[] = {
 };
 
 // 0x070077D8 - 0x07007828
-static const Vtx thi_seg7_vertex_070077D8[] = {
+ const Vtx thi_seg7_vertex_070077D8[] = {
     {{{  -409,   -101,   -409}, 0, {  -438,   2624}, {0xc0, 0xd4, 0x9c, 0xff}}},
     {{{   410,   -101,   -409}, 0, { -1666,   2624}, {0x64, 0xd4, 0xc0, 0xff}}},
     {{{     0,   -613,      0}, 0, { -1052,   2010}, {0x00, 0x82, 0x00, 0xff}}},
@@ -44,7 +44,7 @@ static const Vtx thi_seg7_vertex_070077D8[] = {
 };
 
 // 0x07007828 - 0x07007870
-static const Gfx thi_seg7_dl_07007828[] = {
+ const Gfx thi_seg7_dl_07007828[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09005800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -56,7 +56,7 @@ static const Gfx thi_seg7_dl_07007828[] = {
 };
 
 // 0x07007870 - 0x070078D8
-static const Gfx thi_seg7_dl_07007870[] = {
+ const Gfx thi_seg7_dl_07007870[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09005000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -69,7 +69,7 @@ static const Gfx thi_seg7_dl_07007870[] = {
 };
 
 // 0x070078D8 - 0x07007930
-static const Gfx thi_seg7_dl_070078D8[] = {
+ const Gfx thi_seg7_dl_070078D8[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09004800),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

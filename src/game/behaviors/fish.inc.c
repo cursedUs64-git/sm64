@@ -8,7 +8,7 @@
  * Spawns fish with settings chosen by oBhvParams2ndByte.
  * These settings are animations, color, and spawn quantity.
  */
-static void fish_spawner_act_spawn(void) {
+ void fish_spawner_act_spawn(void) {
     s32 i;
     s32 schoolQuantity;
     s16 model;
@@ -52,7 +52,7 @@ static void fish_spawner_act_spawn(void) {
  * Sets the spawner to respawn fish if the stage is not Secret Aquarium and
  * Mario is more than 2000 units higher.
  */
-static void fish_spawner_act_idle(void) {
+ void fish_spawner_act_idle(void) {
     if ((gCurrLevelNum != LEVEL_SA) && (gMarioObject->oPosY - o->oPosY > 2000.0f)) {
         o->oAction = FISH_SPAWNER_ACT_RESPAWN;
     }
@@ -61,11 +61,11 @@ static void fish_spawner_act_idle(void) {
 /**
  * Temp action that sets the action to spawn fish. This triggers the old fish to despawn.
  */
-static void fish_spawner_act_respawn(void) {
+ void fish_spawner_act_respawn(void) {
     o->oAction = FISH_SPAWNER_ACT_SPAWN;
 }
 
-static void (*sFishSpawnerActions[])(void) = {
+ void (*sFishSpawnerActions[])(void) = {
     fish_spawner_act_spawn,
     fish_spawner_act_idle,
     fish_spawner_act_respawn,
@@ -78,7 +78,7 @@ void bhv_fish_spawner_loop(void) {
 /**
  * Allows the fish to swim vertically.
  */
-static void fish_vertical_roam(s32 speed) {
+ void fish_vertical_roam(s32 speed) {
     f32 parentY = o->parentObj->oPosY;
 
     // If the stage is Secret Aquarium, the fish can
@@ -100,7 +100,7 @@ static void fish_vertical_roam(s32 speed) {
 /**
  * Fish action that randomly roams within a set range.
  */
-static void fish_act_roam(void) {
+ void fish_act_roam(void) {
     f32 fishY = o->oPosY - gMarioObject->oPosY;
 
     // Alters speed of animation for natural movement.
@@ -153,7 +153,7 @@ static void fish_act_roam(void) {
 /**
  * Interactively maneuver fish in relation to its distance from other fish and Mario.
  */
-static void fish_act_flee(void) {
+ void fish_act_flee(void) {
     f32 fishY = o->oPosY - gMarioObject->oPosY;
     UNUSED s32 distance;
 
@@ -221,7 +221,7 @@ static void fish_act_flee(void) {
 /**
  * Animate fish and alter scaling at random for a magnifying effect from the water.
  */
-static void fish_act_init(void) {
+ void fish_act_init(void) {
     cur_obj_init_animation_with_accel_and_sound(0, 1.0f);
     o->header.gfx.animInfo.animFrame = (s16)(random_float() * 28.0f);
     o->oFishDepthDistance = random_float() * 300.0f;
@@ -229,7 +229,7 @@ static void fish_act_init(void) {
     o->oAction = FISH_ACT_ROAM;
 }
 
-static void (*sFishActions[])(void) = {
+ void (*sFishActions[])(void) = {
     fish_act_init,
     fish_act_roam,
     fish_act_flee,

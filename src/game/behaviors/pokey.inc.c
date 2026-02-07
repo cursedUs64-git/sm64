@@ -10,7 +10,7 @@
 /**
  * Hitbox for a single pokey body part.
  */
-static struct ObjectHitbox sPokeyBodyPartHitbox = {
+ struct ObjectHitbox sPokeyBodyPartHitbox = {
     /* interactType:      */ INTERACT_BOUNCE_TOP,
     /* downOffset:        */ 10,
     /* damageOrCoinValue: */ 2,
@@ -25,7 +25,7 @@ static struct ObjectHitbox sPokeyBodyPartHitbox = {
 /**
  * Attack handlers for pokey body part.
  */
-static u8 sPokeyBodyPartAttackHandlers[] = {
+ u8 sPokeyBodyPartAttackHandlers[] = {
     /* ATTACK_PUNCH:                 */ ATTACK_HANDLER_KNOCKBACK,
     /* ATTACK_KICK_OR_TRIP:          */ ATTACK_HANDLER_KNOCKBACK,
     /* ATTACK_FROM_ABOVE:            */ ATTACK_HANDLER_SQUISHED,
@@ -146,7 +146,7 @@ void bhv_pokey_body_part_update(void) {
  * When mario gets within range, spawn the 5 body parts and enter the wander
  * action.
  */
-static void pokey_act_uninitialized(void) {
+ void pokey_act_uninitialized(void) {
     struct Object *bodyPart;
     s32 i;
     s16 partModel;
@@ -179,7 +179,7 @@ static void pokey_act_uninitialized(void) {
  * While wandering, if mario is within 2000 units, try to move toward him. But
  * if mario gets too close, then shy away from him.
  */
-static void pokey_act_wander(void) {
+ void pokey_act_wander(void) {
     s32 targetAngleOffset;
 
     if (o->oPokeyNumAliveBodyParts == 0) {
@@ -279,7 +279,7 @@ static void pokey_act_wander(void) {
  * The pokey body parts check to see if pokey is in this action, and if so,
  * unload themselves.
  */
-static void pokey_act_unload_parts(void) {
+ void pokey_act_unload_parts(void) {
     o->oAction = POKEY_ACT_UNINITIALIZED;
     cur_obj_set_pos_to_home();
 }

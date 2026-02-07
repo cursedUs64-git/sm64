@@ -26,7 +26,7 @@ void *func_802f3f08(s32 poolIdx, s32 idx, s32 numChunks, s32 arg3, OSMesgQueue *
 
 struct Note *gNotes;
 
-UNUSED static u32 pad;
+UNUSED  u32 pad;
 
 struct SequencePlayer gSequencePlayers[SEQUENCE_PLAYERS];
 struct SequenceChannel gSequenceChannels[SEQUENCE_CHANNELS];

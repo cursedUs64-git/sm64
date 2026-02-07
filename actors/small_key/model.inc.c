@@ -1,36 +1,36 @@
 // Small Key (unused)
 
 // ???
-UNUSED static const u64 small_key_unused_1 = 0;
+UNUSED  const u64 small_key_unused_1 = 0;
 
 // 0x05005798
-static const Lights1 small_key_seg5_lights_05005798 = gdSPDefLights1(
+ const Lights1 small_key_seg5_lights_05005798 = gdSPDefLights1(
     0x3f, 0x19, 0x0c,
     0xff, 0x64, 0x32, 0x28, 0x28, 0x28
 );
 
 // 0x050057B0
-static const Lights1 small_key_seg5_lights_050057B0 = gdSPDefLights1(
+ const Lights1 small_key_seg5_lights_050057B0 = gdSPDefLights1(
     0x0c, 0x3f, 0x19,
     0x32, 0xff, 0x64, 0x28, 0x28, 0x28
 );
 
 // 0x050057C8
-static const Lights1 small_key_seg5_lights_050057C8 = gdSPDefLights1(
+ const Lights1 small_key_seg5_lights_050057C8 = gdSPDefLights1(
     0x0c, 0x19, 0x3f,
     0x32, 0x64, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050057E0
-static const Lights1 small_key_seg5_lights_050057E0 = gdSPDefLights1(
+ const Lights1 small_key_seg5_lights_050057E0 = gdSPDefLights1(
     0x33, 0x3f, 0x00,
     0xcc, 0xff, 0x00, 0x28, 0x28, 0x28
 );
 
 // align
-UNUSED static const u64 small_key_unused_2 = 0;
+UNUSED  const u64 small_key_unused_2 = 0;
 // 0x05005800
-static const Vtx small_key_seg5_vertex_05005800[] = {
+ const Vtx small_key_seg5_vertex_05005800[] = {
     {{{   -14,   -109,     14}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{    14,   -109,     14}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
     {{{   -14,     57,     14}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0x00}}},
@@ -49,7 +49,7 @@ static const Vtx small_key_seg5_vertex_05005800[] = {
 };
 
 // 0x050058F0
-static const Vtx small_key_seg5_vertex_050058F0[] = {
+ const Vtx small_key_seg5_vertex_050058F0[] = {
     {{{   -14,    -14,    -14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,     57,     14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,     57,    -14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -68,7 +68,7 @@ static const Vtx small_key_seg5_vertex_050058F0[] = {
 };
 
 // 0x050059E0
-static const Vtx small_key_seg5_vertex_050059E0[] = {
+ const Vtx small_key_seg5_vertex_050059E0[] = {
     {{{    14,    -73,    -58}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{    14,   -109,    -58}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{   -14,    -73,    -58}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
@@ -87,7 +87,7 @@ static const Vtx small_key_seg5_vertex_050059E0[] = {
 };
 
 // 0x05005AD0
-static const Vtx small_key_seg5_vertex_05005AD0[] = {
+ const Vtx small_key_seg5_vertex_05005AD0[] = {
     {{{   -14,   -109,    -14}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{   -14,   -109,    -58}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{    14,   -109,    -14}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -106,7 +106,7 @@ static const Vtx small_key_seg5_vertex_05005AD0[] = {
 };
 
 // 0x05005BC0
-static const Vtx small_key_seg5_vertex_05005BC0[] = {
+ const Vtx small_key_seg5_vertex_05005BC0[] = {
     {{{   -14,     57,     48}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{   -14,     57,     14}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{    14,     57,     48}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -125,7 +125,7 @@ static const Vtx small_key_seg5_vertex_05005BC0[] = {
 };
 
 // 0x05005CB0
-static const Vtx small_key_seg5_vertex_05005CB0[] = {
+ const Vtx small_key_seg5_vertex_05005CB0[] = {
     {{{    14,     57,     14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,    195,    -28}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,    195,     28}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -144,7 +144,7 @@ static const Vtx small_key_seg5_vertex_05005CB0[] = {
 };
 
 // 0x05005DA0
-static const Vtx small_key_seg5_vertex_05005DA0[] = {
+ const Vtx small_key_seg5_vertex_05005DA0[] = {
     {{{    19,    180,    -67}, 0, {     0,      0}, {0x00, 0x77, 0xd3, 0x00}}},
     {{{   -19,    180,    -67}, 0, {     0,      0}, {0x00, 0x77, 0xd3, 0x00}}},
     {{{   -14,    195,    -28}, 0, {     0,      0}, {0x00, 0x77, 0xd3, 0x00}}},
@@ -163,7 +163,7 @@ static const Vtx small_key_seg5_vertex_05005DA0[] = {
 };
 
 // 0x05005E90
-static const Vtx small_key_seg5_vertex_05005E90[] = {
+ const Vtx small_key_seg5_vertex_05005E90[] = {
     {{{   -23,    103,     83}, 0, {     0,      0}, {0x83, 0x00, 0xec, 0x00}}},
     {{{   -23,    149,     83}, 0, {     0,      0}, {0x83, 0x00, 0xec, 0x00}}},
     {{{   -14,    195,     28}, 0, {     0,      0}, {0x83, 0x00, 0xec, 0x00}}},
@@ -182,7 +182,7 @@ static const Vtx small_key_seg5_vertex_05005E90[] = {
 };
 
 // 0x05005F80
-static const Vtx small_key_seg5_vertex_05005F80[] = {
+ const Vtx small_key_seg5_vertex_05005F80[] = {
     {{{    14,     57,     14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,     57,    -14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,    195,    -28}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -201,7 +201,7 @@ static const Vtx small_key_seg5_vertex_05005F80[] = {
 };
 
 // 0x05006070
-static const Vtx small_key_seg5_vertex_05006070[] = {
+ const Vtx small_key_seg5_vertex_05006070[] = {
     {{{   -19,    180,    -67}, 0, {     0,      0}, {0x00, 0x38, 0x8e, 0x00}}},
     {{{    19,    180,    -67}, 0, {     0,      0}, {0x00, 0x38, 0x8e, 0x00}}},
     {{{    23,    149,    -83}, 0, {     0,      0}, {0x00, 0x38, 0x8e, 0x00}}},
@@ -220,7 +220,7 @@ static const Vtx small_key_seg5_vertex_05006070[] = {
 };
 
 // 0x05006160
-static const Vtx small_key_seg5_vertex_05006160[] = {
+ const Vtx small_key_seg5_vertex_05006160[] = {
     {{{   -14,    -50,    -58}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{    14,    -50,    -58}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
     {{{    14,    -50,    -14}, 0, {     0,      0}, {0x00, 0x81, 0x00, 0x00}}},
@@ -239,7 +239,7 @@ static const Vtx small_key_seg5_vertex_05006160[] = {
 };
 
 // 0x05006250
-static const Vtx small_key_seg5_vertex_05006250[] = {
+ const Vtx small_key_seg5_vertex_05006250[] = {
     {{{   -14,    -73,    -58}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,   -109,    -58}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,   -109,    -14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -258,7 +258,7 @@ static const Vtx small_key_seg5_vertex_05006250[] = {
 };
 
 // 0x05006340
-static const Vtx small_key_seg5_vertex_05006340[] = {
+ const Vtx small_key_seg5_vertex_05006340[] = {
     {{{   -14,     57,    -14}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{    14,     57,    -14}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
     {{{    14,    -14,    -14}, 0, {     0,      0}, {0x00, 0x00, 0x81, 0x00}}},
@@ -277,7 +277,7 @@ static const Vtx small_key_seg5_vertex_05006340[] = {
 };
 
 // 0x05006430
-static const Vtx small_key_seg5_vertex_05006430[] = {
+ const Vtx small_key_seg5_vertex_05006430[] = {
     {{{   -14,    195,    -28}, 0, {     0,      0}, {0x84, 0xfc, 0x1a, 0x00}}},
     {{{   -23,    103,    -83}, 0, {     0,      0}, {0x84, 0xfc, 0x1a, 0x00}}},
     {{{   -14,     57,    -48}, 0, {     0,      0}, {0x84, 0xfc, 0x1a, 0x00}}},
@@ -296,7 +296,7 @@ static const Vtx small_key_seg5_vertex_05006430[] = {
 };
 
 // 0x05006520
-static const Vtx small_key_seg5_vertex_05006520[] = {
+ const Vtx small_key_seg5_vertex_05006520[] = {
     {{{   -14,    -50,    -14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,    -73,    -14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
     {{{   -14,   -109,     14}, 0, {     0,      0}, {0x81, 0x00, 0x00, 0x00}}},
@@ -315,7 +315,7 @@ static const Vtx small_key_seg5_vertex_05006520[] = {
 };
 
 // 0x05006610
-static const Vtx small_key_seg5_vertex_05006610[] = {
+ const Vtx small_key_seg5_vertex_05006610[] = {
     {{{    14,    -14,    -14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,     57,    -14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{    14,     57,     14}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},

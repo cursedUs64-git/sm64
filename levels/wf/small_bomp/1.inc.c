@@ -1,11 +1,11 @@
 // 0x0700D370 - 0x0700D388
-static const Lights1 wf_seg7_lights_0700D370 = gdSPDefLights1(
+ const Lights1 wf_seg7_lights_0700D370 = gdSPDefLights1(
     0x66, 0x66, 0x66,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0700D388 - 0x0700D488
-static const Vtx wf_seg7_vertex_0700D388[] = {
+ const Vtx wf_seg7_vertex_0700D388[] = {
     {{{  -252,    261,     75}, 0, {     0,  -3138}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{   136,    261,    -77}, 0, {  1194,      0}, {0x00, 0x7f, 0x00, 0xff}}},
     {{{  -252,    261,    -77}, 0, {  1194,  -3138}, {0x00, 0x7f, 0x00, 0xff}}},
@@ -25,7 +25,7 @@ static const Vtx wf_seg7_vertex_0700D388[] = {
 };
 
 // 0x0700D488 - 0x0700D568
-static const Vtx wf_seg7_vertex_0700D488[] = {
+ const Vtx wf_seg7_vertex_0700D488[] = {
     {{{   195,    210,    127}, 0, {   480,    990}, {0x00, 0x5a, 0x58, 0xff}}},
     {{{   136,    261,     75}, 0, {     8,    412}, {0x00, 0x5a, 0x58, 0xff}}},
     {{{  -252,    261,     75}, 0, { -3096,    412}, {0x00, 0x5a, 0x58, 0xff}}},
@@ -43,7 +43,7 @@ static const Vtx wf_seg7_vertex_0700D488[] = {
 };
 
 // 0x0700D568 - 0x0700D5C8
-static const Vtx wf_seg7_vertex_0700D568[] = {
+ const Vtx wf_seg7_vertex_0700D568[] = {
     {{{   259,    210,     95}, 0, {   764,   -144}, {0x38, 0x11, 0x70, 0xff}}},
     {{{   195,    210,    127}, 0, {   368,   -116}, {0x38, 0x11, 0x70, 0xff}}},
     {{{   259,      5,    127}, 0, {   764,   1004}, {0x38, 0x11, 0x70, 0xff}}},
@@ -53,7 +53,7 @@ static const Vtx wf_seg7_vertex_0700D568[] = {
 };
 
 // 0x0700D5C8 - 0x0700D608
-static const Vtx wf_seg7_vertex_0700D5C8[] = {
+ const Vtx wf_seg7_vertex_0700D5C8[] = {
     {{{   259,      5,   -128}, 0, {  1118,    990}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   259,    210,     95}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0xff}}},
     {{{   259,      5,    127}, 0, {  -158,    990}, {0x7f, 0x00, 0x00, 0xff}}},
@@ -61,7 +61,7 @@ static const Vtx wf_seg7_vertex_0700D5C8[] = {
 };
 
 // 0x0700D608 - 0x0700D6D0
-static const Gfx wf_seg7_dl_0700D608[] = {
+ const Gfx wf_seg7_dl_0700D608[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, grass_09008000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),
@@ -82,7 +82,7 @@ static const Gfx wf_seg7_dl_0700D608[] = {
 };
 
 // 0x0700D6D0 - 0x0700D708
-static const Gfx wf_seg7_dl_0700D6D0[] = {
+ const Gfx wf_seg7_dl_0700D6D0[] = {
     gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, wf_seg7_texture_07002000),
     gsDPLoadSync(),
     gsDPLoadBlock(G_TX_LOADTILE, 0, 0, 32 * 32 - 1, CALC_DXT(32, G_IM_SIZ_16b_BYTES)),

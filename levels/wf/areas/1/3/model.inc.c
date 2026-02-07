@@ -1,5 +1,5 @@
 // 0x07005328 - 0x07005418
-static const Vtx wf_seg7_vertex_07005328[] = {
+ const Vtx wf_seg7_vertex_07005328[] = {
     {{{  3840,   1075,  -1458}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  3661,   1075,  -1100}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  4019,   1075,  -1100}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
@@ -18,7 +18,7 @@ static const Vtx wf_seg7_vertex_07005328[] = {
 };
 
 // 0x07005418 - 0x070054D8
-static const Vtx wf_seg7_vertex_07005418[] = {
+ const Vtx wf_seg7_vertex_07005418[] = {
     {{{  3533,   2304,   -101}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  3533,   2304,   -409}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
     {{{  3277,   2304,   -255}, 0, {     0,      0}, {0xff, 0xff, 0x00, 0x80}}},
@@ -34,7 +34,7 @@ static const Vtx wf_seg7_vertex_07005418[] = {
 };
 
 // 0x070054D8 - 0x07005538
-static const Gfx wf_seg7_dl_070054D8[] = {
+ const Gfx wf_seg7_dl_070054D8[] = {
     gsSPVertex(wf_seg7_vertex_07005328, 15, 0),
     gsSP2Triangles( 0,  1,  2, 0x0,  3,  4,  5, 0x0),
     gsSP2Triangles( 6,  7,  8, 0x0,  9, 10, 11, 0x0),

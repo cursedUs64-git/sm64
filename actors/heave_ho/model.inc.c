@@ -1,91 +1,91 @@
 // Heave Ho
 
 // Unreferenced light group
-static const Lights1 heave_ho_lights_unused1 = gdSPDefLights1(
+ const Lights1 heave_ho_lights_unused1 = gdSPDefLights1(
     0x2c, 0x2c, 0x2c,
     0xb2, 0xb2, 0xb2, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-static const Lights1 heave_ho_lights_unused2 = gdSPDefLights1(
+ const Lights1 heave_ho_lights_unused2 = gdSPDefLights1(
     0x3f, 0x38, 0x00,
     0xff, 0xe3, 0x00, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-static const Lights1 heave_ho_lights_unused3 = gdSPDefLights1(
+ const Lights1 heave_ho_lights_unused3 = gdSPDefLights1(
     0x3f, 0x00, 0x00,
     0xff, 0x00, 0x00, 0x28, 0x28, 0x28
 );
 
 // 0x0500E968
-static const Lights1 heave_ho_seg5_lights_0500E968 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_0500E968 = gdSPDefLights1(
     0x14, 0x14, 0x15,
     0x50, 0x50, 0x54, 0x28, 0x28, 0x28
 );
 
 // 0x0500E980
-static const Lights1 heave_ho_seg5_lights_0500E980 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_0500E980 = gdSPDefLights1(
     0x73, 0x3f, 0x32,
     0xff, 0xe0, 0x85, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-static const Lights1 heave_ho_lights_unused4 = gdSPDefLights1(
+ const Lights1 heave_ho_lights_unused4 = gdSPDefLights1(
     0x3b, 0x38, 0x21,
     0xec, 0xe3, 0x84, 0x28, 0x28, 0x28
 );
 
 // Unreferenced light group
-static const Lights1 heave_ho_lights_unused5 = gdSPDefLights1(
+ const Lights1 heave_ho_lights_unused5 = gdSPDefLights1(
     0x32, 0x32, 0x32,
     0xc8, 0xc8, 0xc8, 0x28, 0x28, 0x28
 );
 
 // 0x0500E9C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_0500E9C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_0500E9C8[] = {
 #include "actors/heave_ho/heave-ho_face.rgba16.inc.c"
 };
 
 // 0x0500F1C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_0500F1C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_0500F1C8[] = {
 #include "actors/heave_ho/heave-ho_platform.rgba16.inc.c"
 };
 
 // 0x0500F9C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_0500F9C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_0500F9C8[] = {
 #include "actors/heave_ho/heave-ho_logo.rgba16.inc.c"
 };
 
 // 0x050109C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_050109C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_050109C8[] = {
 #include "actors/heave_ho/heave-ho_arm_ornament.rgba16.inc.c"
 };
 
 // 0x050111C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_050111C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_050111C8[] = {
 #include "actors/heave_ho/heave-ho_roller.rgba16.inc.c"
 };
 
 // 0x050113C8
-ALIGNED8 static const Texture heave_ho_seg5_texture_050113C8[] = {
+ALIGNED8  const Texture heave_ho_seg5_texture_050113C8[] = {
 #include "actors/heave_ho/heave-ho_turnkey.rgba16.inc.c"
 };
 
 // 0x05011BC8
-static const Lights1 heave_ho_seg5_lights_05011BC8 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05011BC8 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05011BE0
-static const Lights1 heave_ho_seg5_lights_05011BE0 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05011BE0 = gdSPDefLights1(
     0x40, 0x00, 0x0d,
     0x81, 0x01, 0x1a, 0x28, 0x28, 0x28
 );
 
 // 0x05011BF8
-static const Vtx heave_ho_seg5_vertex_05011BF8[] = {
+ const Vtx heave_ho_seg5_vertex_05011BF8[] = {
     {{{   -23,    108,    -47}, 0, {    96,   -150}, {0xd4, 0x70, 0xda, 0xff}}},
     {{{  -107,    -11,    -95}, 0, {  -286,   1018}, {0xa6, 0xbd, 0xc6, 0xff}}},
     {{{  -107,    -11,     96}, 0, {  1246,   1018}, {0x90, 0x28, 0x2b, 0xff}}},
@@ -93,7 +93,7 @@ static const Vtx heave_ho_seg5_vertex_05011BF8[] = {
 };
 
 // 0x05011C38
-static const Vtx heave_ho_seg5_vertex_05011C38[] = {
+ const Vtx heave_ho_seg5_vertex_05011C38[] = {
     {{{   -23,    108,    -47}, 0, {   862,   -822}, {0xd4, 0x70, 0xda, 0xff}}},
     {{{   -23,    108,     48}, 0, {    96,   -822}, {0xd9, 0x6a, 0x39, 0xff}}},
     {{{   132,     86,     72}, 0, {   -94,    236}, {0x30, 0x6e, 0x27, 0xff}}},
@@ -103,7 +103,7 @@ static const Vtx heave_ho_seg5_vertex_05011C38[] = {
 };
 
 // 0x05011C98
-static const Vtx heave_ho_seg5_vertex_05011C98[] = {
+ const Vtx heave_ho_seg5_vertex_05011C98[] = {
     {{{   132,     86,    -71}, 0, {  1736,   -108}, {0x2b, 0x67, 0xc4, 0xff}}},
     {{{    24,    -11,   -155}, 0, {    36,   1382}, {0x00, 0xbf, 0x93, 0xff}}},
     {{{   -23,    108,    -47}, 0, {  -452,   -292}, {0xd4, 0x70, 0xda, 0xff}}},
@@ -117,7 +117,7 @@ static const Vtx heave_ho_seg5_vertex_05011C98[] = {
 };
 
 // 0x05011D38
-static const Vtx heave_ho_seg5_vertex_05011D38[] = {
+ const Vtx heave_ho_seg5_vertex_05011D38[] = {
     {{{  -107,    -11,    -95}, 0, {     0,      0}, {0xa6, 0xbd, 0xc6, 0xff}}},
     {{{    24,    -11,    156}, 0, {     0,      0}, {0x00, 0xbf, 0x6d, 0xff}}},
     {{{  -107,    -11,     96}, 0, {     0,      0}, {0x90, 0x28, 0x2b, 0xff}}},
@@ -194,19 +194,19 @@ const Gfx heave_ho_seg5_dl_05011EC0[] = {
 };
 
 // 0x05011F50
-static const Lights1 heave_ho_seg5_lights_05011F50 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05011F50 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05011F68
-static const Lights1 heave_ho_seg5_lights_05011F68 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05011F68 = gdSPDefLights1(
     0x4c, 0x00, 0x16,
     0x99, 0x00, 0x2d, 0x28, 0x28, 0x28
 );
 
 // 0x05011F80
-static const Vtx heave_ho_seg5_vertex_05011F80[] = {
+ const Vtx heave_ho_seg5_vertex_05011F80[] = {
     {{{    -1,     -2,    245}, 0, {  -604,    434}, {0xd6, 0xf8, 0x77, 0xff}}},
     {{{   -37,     20,    206}, 0, {   990,   1372}, {0xb4, 0x5f, 0xdf, 0xff}}},
     {{{   -28,    -33,    206}, 0, {   990,   -368}, {0xdb, 0x8c, 0x21, 0xff}}},
@@ -221,7 +221,7 @@ static const Vtx heave_ho_seg5_vertex_05011F80[] = {
 };
 
 // 0x05012030
-static const Vtx heave_ho_seg5_vertex_05012030[] = {
+ const Vtx heave_ho_seg5_vertex_05012030[] = {
     {{{   166,     53,    250}, 0, {     0,      0}, {0x19, 0x3d, 0x6c, 0xff}}},
     {{{   218,     73,    204}, 0, {     0,      0}, {0x30, 0x75, 0xfc, 0xff}}},
     {{{   -37,     20,    206}, 0, {     0,      0}, {0xb4, 0x5f, 0xdf, 0xff}}},
@@ -274,19 +274,19 @@ const Gfx heave_ho_seg5_dl_05012148[] = {
 };
 
 // 0x050121B0
-static const Lights1 heave_ho_seg5_lights_050121B0 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_050121B0 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x050121C8
-static const Lights1 heave_ho_seg5_lights_050121C8 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_050121C8 = gdSPDefLights1(
     0x4c, 0x00, 0x16,
     0x99, 0x00, 0x2d, 0x28, 0x28, 0x28
 );
 
 // 0x050121E0
-static const Vtx heave_ho_seg5_vertex_050121E0[] = {
+ const Vtx heave_ho_seg5_vertex_050121E0[] = {
     {{{   -28,    -33,   -205}, 0, {   990,   -368}, {0xdb, 0x8c, 0xdf, 0xff}}},
     {{{   -37,     20,   -205}, 0, {   990,   1372}, {0xb4, 0x5f, 0x21, 0xff}}},
     {{{    -1,     -2,   -244}, 0, {  -604,    434}, {0xd6, 0xf8, 0x89, 0xff}}},
@@ -301,7 +301,7 @@ static const Vtx heave_ho_seg5_vertex_050121E0[] = {
 };
 
 // 0x05012290
-static const Vtx heave_ho_seg5_vertex_05012290[] = {
+ const Vtx heave_ho_seg5_vertex_05012290[] = {
     {{{   -37,     20,   -205}, 0, {     0,      0}, {0xb4, 0x5f, 0x21, 0xff}}},
     {{{   218,     73,   -203}, 0, {     0,      0}, {0x30, 0x75, 0x04, 0xff}}},
     {{{   166,     53,   -249}, 0, {     0,      0}, {0x19, 0x3d, 0x94, 0xff}}},
@@ -354,19 +354,19 @@ const Gfx heave_ho_seg5_dl_050123A8[] = {
 };
 
 // 0x05012410
-static const Lights1 heave_ho_seg5_lights_05012410 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05012410 = gdSPDefLights1(
     0x7f, 0x7f, 0x7f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05012428
-static const Lights1 heave_ho_seg5_lights_05012428 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05012428 = gdSPDefLights1(
     0x5d, 0x6d, 0x65,
     0xbb, 0xda, 0xcb, 0x28, 0x28, 0x28
 );
 
 // 0x05012440
-static const Vtx heave_ho_seg5_vertex_05012440[] = {
+ const Vtx heave_ho_seg5_vertex_05012440[] = {
     {{{   438,     63,   -205}, 0, {     0,    990}, {0x10, 0x83, 0x00, 0xff}}},
     {{{   438,     63,    206}, 0, {   990,    990}, {0x10, 0x83, 0x00, 0xff}}},
     {{{   146,     25,    206}, 0, {   990,      0}, {0x10, 0x83, 0x00, 0xff}}},
@@ -374,7 +374,7 @@ static const Vtx heave_ho_seg5_vertex_05012440[] = {
 };
 
 // 0x05012480
-static const Vtx heave_ho_seg5_vertex_05012480[] = {
+ const Vtx heave_ho_seg5_vertex_05012480[] = {
     {{{   188,     61,    206}, 0, {     0,      0}, {0xae, 0x60, 0x00, 0xff}}},
     {{{   188,     61,   -205}, 0, {     0,      0}, {0xae, 0x60, 0x00, 0xff}}},
     {{{   146,     25,   -205}, 0, {     0,      0}, {0xae, 0x60, 0x00, 0xff}}},
@@ -434,7 +434,7 @@ const Gfx heave_ho_seg5_dl_050125F8[] = {
 };
 
 // 0x05012670
-static const Vtx heave_ho_seg5_vertex_05012670[] = {
+ const Vtx heave_ho_seg5_vertex_05012670[] = {
     {{{   -11,     12,      0}, 0, {     0,      0}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    12,    -11,      0}, 0, {   479,    479}, {0xff, 0xff, 0xff, 0xff}}},
     {{{    12,     12,      0}, 0, {   479,      0}, {0xff, 0xff, 0xff, 0xff}}},
@@ -470,13 +470,13 @@ const Gfx heave_ho_seg5_dl_050126E8[] = {
 };
 
 // 0x05012758
-static const Lights1 heave_ho_seg5_lights_05012758 = gdSPDefLights1(
+ const Lights1 heave_ho_seg5_lights_05012758 = gdSPDefLights1(
     0x93, 0x73, 0x7c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05012770
-static const Vtx heave_ho_seg5_vertex_05012770[] = {
+ const Vtx heave_ho_seg5_vertex_05012770[] = {
     {{{    30,    155,      0}, 0, {     0,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{    30,   -153,      0}, 0, {   990,    990}, {0x00, 0x00, 0x7f, 0xff}}},
     {{{   214,    155,      0}, 0, {     0,      0}, {0x00, 0x00, 0x7f, 0xff}}},
@@ -514,7 +514,7 @@ const Gfx heave_ho_seg5_dl_050127F8[] = {
 };
 
 // 0x05012868
-static const Vtx heave_ho_seg5_vertex_05012868[] = {
+ const Vtx heave_ho_seg5_vertex_05012868[] = {
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -534,7 +534,7 @@ static const Vtx heave_ho_seg5_vertex_05012868[] = {
 };
 
 // 0x05012968
-static const Vtx heave_ho_seg5_vertex_05012968[] = {
+ const Vtx heave_ho_seg5_vertex_05012968[] = {
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0xff}}},
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -554,7 +554,7 @@ static const Vtx heave_ho_seg5_vertex_05012968[] = {
 };
 
 // 0x05012A68
-static const Vtx heave_ho_seg5_vertex_05012A68[] = {
+ const Vtx heave_ho_seg5_vertex_05012A68[] = {
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0xff}}},
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -574,7 +574,7 @@ static const Vtx heave_ho_seg5_vertex_05012A68[] = {
 };
 
 // 0x05012B68
-static const Vtx heave_ho_seg5_vertex_05012B68[] = {
+ const Vtx heave_ho_seg5_vertex_05012B68[] = {
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0xff}}},
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -594,7 +594,7 @@ static const Vtx heave_ho_seg5_vertex_05012B68[] = {
 };
 
 // 0x05012C68
-static const Vtx heave_ho_seg5_vertex_05012C68[] = {
+ const Vtx heave_ho_seg5_vertex_05012C68[] = {
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0xff}}},
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -614,7 +614,7 @@ static const Vtx heave_ho_seg5_vertex_05012C68[] = {
 };
 
 // 0x05012D68
-static const Vtx heave_ho_seg5_vertex_05012D68[] = {
+ const Vtx heave_ho_seg5_vertex_05012D68[] = {
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0xff}}},
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -634,7 +634,7 @@ static const Vtx heave_ho_seg5_vertex_05012D68[] = {
 };
 
 // 0x05012E68
-static const Vtx heave_ho_seg5_vertex_05012E68[] = {
+ const Vtx heave_ho_seg5_vertex_05012E68[] = {
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0xff}}},
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -654,7 +654,7 @@ static const Vtx heave_ho_seg5_vertex_05012E68[] = {
 };
 
 // 0x05012F68
-static const Vtx heave_ho_seg5_vertex_05012F68[] = {
+ const Vtx heave_ho_seg5_vertex_05012F68[] = {
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0xff}}},
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -674,7 +674,7 @@ static const Vtx heave_ho_seg5_vertex_05012F68[] = {
 };
 
 // 0x05013068
-static const Vtx heave_ho_seg5_vertex_05013068[] = {
+ const Vtx heave_ho_seg5_vertex_05013068[] = {
     {{{   223,    -25,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{   223,      0,    -25}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
     {{{   223,     25,      0}, 0, {     0,      0}, {0x7f, 0x00, 0x00, 0x00}}},
@@ -690,7 +690,7 @@ static const Vtx heave_ho_seg5_vertex_05013068[] = {
 };
 
 // 0x05013128
-static const Vtx heave_ho_seg5_vertex_05013128[] = {
+ const Vtx heave_ho_seg5_vertex_05013128[] = {
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -710,7 +710,7 @@ static const Vtx heave_ho_seg5_vertex_05013128[] = {
 };
 
 // 0x05013228
-static const Vtx heave_ho_seg5_vertex_05013228[] = {
+ const Vtx heave_ho_seg5_vertex_05013228[] = {
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0xff}}},
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -730,7 +730,7 @@ static const Vtx heave_ho_seg5_vertex_05013228[] = {
 };
 
 // 0x05013328
-static const Vtx heave_ho_seg5_vertex_05013328[] = {
+ const Vtx heave_ho_seg5_vertex_05013328[] = {
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0xff}}},
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -750,7 +750,7 @@ static const Vtx heave_ho_seg5_vertex_05013328[] = {
 };
 
 // 0x05013428
-static const Vtx heave_ho_seg5_vertex_05013428[] = {
+ const Vtx heave_ho_seg5_vertex_05013428[] = {
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0xff}}},
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -770,7 +770,7 @@ static const Vtx heave_ho_seg5_vertex_05013428[] = {
 };
 
 // 0x05013528
-static const Vtx heave_ho_seg5_vertex_05013528[] = {
+ const Vtx heave_ho_seg5_vertex_05013528[] = {
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0xff}}},
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -790,7 +790,7 @@ static const Vtx heave_ho_seg5_vertex_05013528[] = {
 };
 
 // 0x05013628
-static const Vtx heave_ho_seg5_vertex_05013628[] = {
+ const Vtx heave_ho_seg5_vertex_05013628[] = {
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0xff}}},
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -810,7 +810,7 @@ static const Vtx heave_ho_seg5_vertex_05013628[] = {
 };
 
 // 0x05013728
-static const Vtx heave_ho_seg5_vertex_05013728[] = {
+ const Vtx heave_ho_seg5_vertex_05013728[] = {
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0xff}}},
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -830,7 +830,7 @@ static const Vtx heave_ho_seg5_vertex_05013728[] = {
 };
 
 // 0x05013828
-static const Vtx heave_ho_seg5_vertex_05013828[] = {
+ const Vtx heave_ho_seg5_vertex_05013828[] = {
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0xff}}},
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -850,7 +850,7 @@ static const Vtx heave_ho_seg5_vertex_05013828[] = {
 };
 
 // 0x05013928
-static const Vtx heave_ho_seg5_vertex_05013928[] = {
+ const Vtx heave_ho_seg5_vertex_05013928[] = {
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -870,7 +870,7 @@ static const Vtx heave_ho_seg5_vertex_05013928[] = {
 };
 
 // 0x05013A28
-static const Vtx heave_ho_seg5_vertex_05013A28[] = {
+ const Vtx heave_ho_seg5_vertex_05013A28[] = {
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0xff}}},
     {{{   -13,     44,     13}, 0, {     0,      0}, {0xde, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -890,7 +890,7 @@ static const Vtx heave_ho_seg5_vertex_05013A28[] = {
 };
 
 // 0x05013B28
-static const Vtx heave_ho_seg5_vertex_05013B28[] = {
+ const Vtx heave_ho_seg5_vertex_05013B28[] = {
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0xff}}},
     {{{   -18,     44,      0}, 0, {     0,      0}, {0xd0, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -910,7 +910,7 @@ static const Vtx heave_ho_seg5_vertex_05013B28[] = {
 };
 
 // 0x05013C28
-static const Vtx heave_ho_seg5_vertex_05013C28[] = {
+ const Vtx heave_ho_seg5_vertex_05013C28[] = {
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0xff}}},
     {{{   -13,     44,    -13}, 0, {     0,      0}, {0xde, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -930,7 +930,7 @@ static const Vtx heave_ho_seg5_vertex_05013C28[] = {
 };
 
 // 0x05013D28
-static const Vtx heave_ho_seg5_vertex_05013D28[] = {
+ const Vtx heave_ho_seg5_vertex_05013D28[] = {
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0xff}}},
     {{{     0,     44,    -18}, 0, {     0,      0}, {0x00, 0x75, 0xd0, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -950,7 +950,7 @@ static const Vtx heave_ho_seg5_vertex_05013D28[] = {
 };
 
 // 0x05013E28
-static const Vtx heave_ho_seg5_vertex_05013E28[] = {
+ const Vtx heave_ho_seg5_vertex_05013E28[] = {
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0xff}}},
     {{{    13,     44,    -13}, 0, {     0,      0}, {0x22, 0x75, 0xde, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -970,7 +970,7 @@ static const Vtx heave_ho_seg5_vertex_05013E28[] = {
 };
 
 // 0x05013F28
-static const Vtx heave_ho_seg5_vertex_05013F28[] = {
+ const Vtx heave_ho_seg5_vertex_05013F28[] = {
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0xff}}},
     {{{    18,     44,      0}, 0, {     0,      0}, {0x30, 0x75, 0x00, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -990,7 +990,7 @@ static const Vtx heave_ho_seg5_vertex_05013F28[] = {
 };
 
 // 0x05014028
-static const Vtx heave_ho_seg5_vertex_05014028[] = {
+ const Vtx heave_ho_seg5_vertex_05014028[] = {
     {{{     0,     44,     18}, 0, {     0,      0}, {0x00, 0x75, 0x30, 0xff}}},
     {{{    13,     44,     13}, 0, {     0,      0}, {0x22, 0x75, 0x22, 0x00}}},
     {{{     0,     48,      0}, 0, {     0,      0}, {0x00, 0x7f, 0x00, 0x00}}},
@@ -1010,7 +1010,7 @@ static const Vtx heave_ho_seg5_vertex_05014028[] = {
 };
 
 // 0x05014128
-static const Vtx heave_ho_seg5_vertex_05014128[] = {
+ const Vtx heave_ho_seg5_vertex_05014128[] = {
     {{{   204,    -17,    220}, 0, {     0,      0}, {0x3e, 0x6e, 0x00, 0x00}}},
     {{{   204,    -29,   -219}, 0, {     0,      0}, {0x7f, 0x00, 0xfd, 0x00}}},
     {{{   180,    -17,   -219}, 0, {     0,      0}, {0xc2, 0x6e, 0x00, 0x00}}},

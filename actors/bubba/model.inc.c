@@ -3,56 +3,56 @@
 // one actor file.
 
 // Bin ID? What is this?
-UNUSED static const u64 bubba_unused_1 = 0;
+UNUSED  const u64 bubba_unused_1 = 0;
 
 // Bubba
 
 // 0x05000008
-ALIGNED8 static const Texture bubba_seg5_texture_05000008[] = {
+ALIGNED8  const Texture bubba_seg5_texture_05000008[] = {
 #include "actors/bubba/bubba_sunglasses.rgba16.inc.c"
 };
 
 // unused eye texture, assumed leftover from when actor file was copied from bub
 // 0x05000408
-ALIGNED8 static const Texture bubba_seg5_texture_05000408[] = {
+ALIGNED8  const Texture bubba_seg5_texture_05000408[] = {
 #include "actors/bubba/bubba_eyes_unused.rgba16.inc.c"
 };
 
 // 0x05001408
-ALIGNED8 static const Texture bubba_seg5_texture_05001408[] = {
+ALIGNED8  const Texture bubba_seg5_texture_05001408[] = {
 #include "actors/bubba/bubba_eye_border.rgba16.inc.c"
 };
 
 // 0x05001C08
-ALIGNED8 static const Texture bubba_seg5_texture_05001C08[] = {
+ALIGNED8  const Texture bubba_seg5_texture_05001C08[] = {
 #include "actors/bubba/bubba_fins.rgba16.inc.c"
 };
 
 // 0x05002408
-ALIGNED8 static const Texture bubba_seg5_texture_05002408[] = {
+ALIGNED8  const Texture bubba_seg5_texture_05002408[] = {
 #include "actors/bubba/bubba_scales.rgba16.inc.c"
 };
 
 // 0x05004408
-static const Lights1 bubba_seg5_lights_05004408 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004408 = gdSPDefLights1(
     0x48, 0x31, 0x2a,
     0xf1, 0xa6, 0x8c, 0x28, 0x28, 0x28
 );
 
 // 0x05004420
-static const Lights1 bubba_seg5_lights_05004420 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004420 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004438
-static const Lights1 bubba_seg5_lights_05004438 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004438 = gdSPDefLights1(
     0x10, 0x07, 0x08,
     0x36, 0x1a, 0x1c, 0x28, 0x28, 0x28
 );
 
 // 0x05004450
-static const Vtx bubba_seg5_vertex_05004450[] = {
+ const Vtx bubba_seg5_vertex_05004450[] = {
     {{{   239,   -320,    320}, 0, {   203,    530}, {0x44, 0xad, 0x42, 0xff}}},
     {{{     6,   -197,    290}, 0, {   372,    190}, {0x00, 0x99, 0x49, 0xff}}},
     {{{     6,   -284,    420}, 0, {   267,    636}, {0x01, 0x07, 0x7e, 0xff}}},
@@ -63,7 +63,7 @@ static const Vtx bubba_seg5_vertex_05004450[] = {
 };
 
 // 0x050044C0
-static const Vtx bubba_seg5_vertex_050044C0[] = {
+ const Vtx bubba_seg5_vertex_050044C0[] = {
     {{{  -512,   -352,     46}, 0, {   856,    794}, {0xab, 0xa7, 0xe5, 0xff}}},
     {{{  -248,   -181,    193}, 0, {    94,    684}, {0xf5, 0x65, 0x4b, 0xff}}},
     {{{  -508,   -306,    182}, 0, {   816,    650}, {0xaf, 0x47, 0x41, 0xff}}},
@@ -82,7 +82,7 @@ static const Vtx bubba_seg5_vertex_050044C0[] = {
 };
 
 // 0x050045B0
-static const Vtx bubba_seg5_vertex_050045B0[] = {
+ const Vtx bubba_seg5_vertex_050045B0[] = {
     {{{   513,   -352,     46}, 0, {   482,    860}, {0x55, 0xa7, 0xe5, 0xff}}},
     {{{   353,   -273,    -31}, 0, {   896,    900}, {0x24, 0x4c, 0xa2, 0xff}}},
     {{{   451,   -258,     81}, 0, {   626,    798}, {0x3b, 0x6b, 0xe1, 0xff}}},
@@ -93,7 +93,7 @@ static const Vtx bubba_seg5_vertex_050045B0[] = {
 };
 
 // 0x05004620
-static const Vtx bubba_seg5_vertex_05004620[] = {
+ const Vtx bubba_seg5_vertex_05004620[] = {
     {{{    51,    274,    117}, 0, {   360,    626}, {0x6b, 0x41, 0x12, 0xff}}},
     {{{     5,    317,    341}, 0, {   -14,    458}, {0x00, 0x59, 0x5a, 0xff}}},
     {{{     5,    215,    291}, 0, {    72,    912}, {0x01, 0x59, 0x5a, 0xff}}},
@@ -103,7 +103,7 @@ static const Vtx bubba_seg5_vertex_05004620[] = {
 };
 
 // 0x05004680
-static const Vtx bubba_seg5_vertex_05004680[] = {
+ const Vtx bubba_seg5_vertex_05004680[] = {
     {{{   261,    127,    217}, 0, {     0,  -2344}, {0x5f, 0x53, 0x07, 0xff}}},
     {{{   350,   -212,    251}, 0, {  -196,   -646}, {0x7c, 0xf6, 0x18, 0xff}}},
     {{{   222,     29,   -150}, 0, {  1808,  -1854}, {0x68, 0x23, 0xc1, 0xff}}},
@@ -123,7 +123,7 @@ static const Vtx bubba_seg5_vertex_05004680[] = {
 };
 
 // 0x05004780
-static const Vtx bubba_seg5_vertex_05004780[] = {
+ const Vtx bubba_seg5_vertex_05004780[] = {
     {{{   -42,    274,    118}, 0, {   464,  -3076}, {0x96, 0x41, 0x13, 0xff}}},
     {{{     1,    191,   -223}, 0, {  2172,  -2664}, {0x00, 0x6d, 0xbf, 0xff}}},
     {{{  -251,    127,    221}, 0, {   -48,  -2344}, {0xa1, 0x53, 0x08, 0xff}}},
@@ -142,7 +142,7 @@ static const Vtx bubba_seg5_vertex_05004780[] = {
 };
 
 // 0x05004870
-static const Vtx bubba_seg5_vertex_05004870[] = {
+ const Vtx bubba_seg5_vertex_05004870[] = {
     {{{   129,   -136,    504}, 0, {     0,      0}, {0x48, 0xf3, 0x67, 0xff}}},
     {{{   123,   -217,    469}, 0, {     0,      0}, {0x09, 0x99, 0x48, 0xff}}},
     {{{   239,   -320,    320}, 0, {     0,      0}, {0x44, 0xad, 0x42, 0xff}}},
@@ -159,7 +159,7 @@ static const Vtx bubba_seg5_vertex_05004870[] = {
 };
 
 // 0x05004940
-static const Vtx bubba_seg5_vertex_05004940[] = {
+ const Vtx bubba_seg5_vertex_05004940[] = {
     {{{  -217,   -105,    364}, 0, {     0,      0}, {0xa4, 0x15, 0x54, 0xff}}},
     {{{  -255,    129,    314}, 0, {     0,      0}, {0xa6, 0x42, 0x3b, 0xff}}},
     {{{  -251,    127,    221}, 0, {     0,      0}, {0xa1, 0x53, 0x08, 0xff}}},
@@ -172,7 +172,7 @@ static const Vtx bubba_seg5_vertex_05004940[] = {
 };
 
 // 0x050049D0
-static const Vtx bubba_seg5_vertex_050049D0[] = {
+ const Vtx bubba_seg5_vertex_050049D0[] = {
     {{{     4,   -377,    154}, 0, {     0,      0}, {0x00, 0x82, 0xf7, 0xff}}},
     {{{   239,   -320,    320}, 0, {     0,      0}, {0x44, 0xad, 0x42, 0xff}}},
     {{{     6,   -357,    343}, 0, {     0,      0}, {0x00, 0x8d, 0x35, 0xff}}},
@@ -316,25 +316,25 @@ const Gfx bubba_seg5_dl_05004E80[] = {
 };
 
 // 0x05004F30
-static const Lights1 bubba_seg5_lights_05004F30 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004F30 = gdSPDefLights1(
     0x48, 0x31, 0x2a,
     0xf1, 0xa6, 0x8c, 0x28, 0x28, 0x28
 );
 
 // 0x05004F48
-static const Lights1 bubba_seg5_lights_05004F50 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004F50 = gdSPDefLights1(
     0x4c, 0x4c, 0x4c,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x05004F60
-static const Lights1 bubba_seg5_lights_05004F60 = gdSPDefLights1(
+ const Lights1 bubba_seg5_lights_05004F60 = gdSPDefLights1(
     0x0a, 0x07, 0x08,
     0x22, 0x1a, 0x1c, 0x28, 0x28, 0x28
 );
 
 // 0x05004F78
-static const Vtx bubba_seg5_vertex_05004F78[] = {
+ const Vtx bubba_seg5_vertex_05004F78[] = {
     {{{     6,   -194,     96}, 0, {   405,     48}, {0x00, 0xbf, 0x6d, 0xff}}},
     {{{  -227,   -437,    270}, 0, {   201,    516}, {0xba, 0xb3, 0x47, 0xff}}},
     {{{     6,   -401,    385}, 0, {   222,    642}, {0x00, 0x0b, 0x7e, 0xff}}},
@@ -345,7 +345,7 @@ static const Vtx bubba_seg5_vertex_05004F78[] = {
 };
 
 // 0x05004FE8
-static const Vtx bubba_seg5_vertex_05004FE8[] = {
+ const Vtx bubba_seg5_vertex_05004FE8[] = {
     {{{   513,   -352,     46}, 0, {   482,    860}, {0x55, 0xa7, 0xe5, 0xff}}},
     {{{   451,   -258,     81}, 0, {   626,    798}, {0x3b, 0x6b, 0xe1, 0xff}}},
     {{{   452,   -258,    151}, 0, {   608,    716}, {0x4d, 0x64, 0x08, 0xff}}},
@@ -364,7 +364,7 @@ static const Vtx bubba_seg5_vertex_05004FE8[] = {
 };
 
 // 0x050050D8
-static const Vtx bubba_seg5_vertex_050050D8[] = {
+ const Vtx bubba_seg5_vertex_050050D8[] = {
     {{{  -512,   -352,     46}, 0, {   856,    794}, {0xab, 0xa7, 0xe5, 0xff}}},
     {{{  -508,   -306,    182}, 0, {   816,    650}, {0xaf, 0x47, 0x41, 0xff}}},
     {{{  -451,   -258,    151}, 0, {   664,    694}, {0xb3, 0x64, 0x08, 0xff}}},
@@ -375,7 +375,7 @@ static const Vtx bubba_seg5_vertex_050050D8[] = {
 };
 
 // 0x05005148
-static const Vtx bubba_seg5_vertex_05005148[] = {
+ const Vtx bubba_seg5_vertex_05005148[] = {
     {{{     5,    465,    287}, 0, {   -14,    458}, {0x00, 0x43, 0x6b, 0xff}}},
     {{{    51,    274,    117}, 0, {   360,    626}, {0x6a, 0x44, 0x06, 0xff}}},
     {{{     3,    404,    -20}, 0, {   586,     18}, {0x00, 0x71, 0xc7, 0xff}}},
@@ -385,7 +385,7 @@ static const Vtx bubba_seg5_vertex_05005148[] = {
 };
 
 // 0x050051A8
-static const Vtx bubba_seg5_vertex_050051A8[] = {
+ const Vtx bubba_seg5_vertex_050051A8[] = {
     {{{  -339,   -241,    257}, 0, {  -224,   -646}, {0x83, 0xf8, 0x14, 0xff}}},
     {{{  -251,    216,    243}, 0, {   -48,  -2344}, {0xa6, 0x59, 0xfe, 0xff}}},
     {{{  -218,     29,   -147}, 0, {  1788,  -1854}, {0x98, 0x20, 0xc0, 0xff}}},
@@ -405,7 +405,7 @@ static const Vtx bubba_seg5_vertex_050051A8[] = {
 };
 
 // 0x050052A8
-static const Vtx bubba_seg5_vertex_050052A8[] = {
+ const Vtx bubba_seg5_vertex_050052A8[] = {
     {{{   350,   -241,    251}, 0, {  -196,   -646}, {0x7d, 0xf9, 0x11, 0xff}}},
     {{{   230,     18,    380}, 0, {  -744,  -1182}, {0x61, 0x14, 0x4e, 0xff}}},
     {{{   239,   -437,    266}, 0, {  -540,   -106}, {0x47, 0xb3, 0x46, 0xff}}},
@@ -421,7 +421,7 @@ static const Vtx bubba_seg5_vertex_050052A8[] = {
 };
 
 // 0x05005368
-static const Vtx bubba_seg5_vertex_05005368[] = {
+ const Vtx bubba_seg5_vertex_05005368[] = {
     {{{  -227,   -437,    270}, 0, {     0,      0}, {0xba, 0xb3, 0x47, 0xff}}},
     {{{  -133,    -12,    525}, 0, {     0,      0}, {0xbb, 0xed, 0x68, 0xff}}},
     {{{  -217,     18,    383}, 0, {     0,      0}, {0xa0, 0x13, 0x4f, 0xff}}},
@@ -438,7 +438,7 @@ static const Vtx bubba_seg5_vertex_05005368[] = {
 };
 
 // 0x05005438
-static const Vtx bubba_seg5_vertex_05005438[] = {
+ const Vtx bubba_seg5_vertex_05005438[] = {
     {{{  -217,     18,    383}, 0, {     0,      0}, {0xa0, 0x13, 0x4f, 0xff}}},
     {{{  -255,    217,    336}, 0, {     0,      0}, {0xa5, 0x40, 0x3c, 0xff}}},
     {{{  -251,    216,    243}, 0, {     0,      0}, {0xa6, 0x59, 0xfe, 0xff}}},
@@ -451,7 +451,7 @@ static const Vtx bubba_seg5_vertex_05005438[] = {
 };
 
 // 0x050054C8
-static const Vtx bubba_seg5_vertex_050054C8[] = {
+ const Vtx bubba_seg5_vertex_050054C8[] = {
     {{{     4,   -488,     81}, 0, {     0,      0}, {0x00, 0x88, 0xd8, 0xff}}},
     {{{   239,   -437,    266}, 0, {     0,      0}, {0x47, 0xb3, 0x46, 0xff}}},
     {{{     6,   -503,    295}, 0, {     0,      0}, {0x00, 0x8b, 0x30, 0xff}}},

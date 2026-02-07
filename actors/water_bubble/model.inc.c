@@ -1,18 +1,18 @@
 // Water Bubble
 
 // 0x0500FE68
-static const Lights1 water_bubble_seg5_lights_0500FE68 = gdSPDefLights1(
+ const Lights1 water_bubble_seg5_lights_0500FE68 = gdSPDefLights1(
     0xbf, 0xbf, 0xbf,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0500FE80
-ALIGNED8 static const Texture water_bubble_seg5_texture_0500FE80[] = {
+ALIGNED8  const Texture water_bubble_seg5_texture_0500FE80[] = {
 #include "actors/water_bubble/water_bubble.rgba16.inc.c"
 };
 
 // 0x05010680
-static const Vtx water_bubble_seg5_vertex_05010680[] = {
+ const Vtx water_bubble_seg5_vertex_05010680[] = {
     {{{   -20,    -64,    -33}, 0, {     0,      0}, {0xdd, 0x95, 0xc7, 0xff}}},
     {{{     0,    -76,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},
     {{{   -44,    -61,      0}, 0, {     0,      0}, {0xb6, 0x9a, 0x00, 0xff}}},
@@ -32,7 +32,7 @@ static const Vtx water_bubble_seg5_vertex_05010680[] = {
 };
 
 // 0x05010780
-static const Vtx water_bubble_seg5_vertex_05010780[] = {
+ const Vtx water_bubble_seg5_vertex_05010780[] = {
     {{{    33,    -23,    -64}, 0, {     0,      0}, {0x37, 0xd7, 0x96, 0xff}}},
     {{{    56,    -39,    -33}, 0, {     0,      0}, {0x5b, 0xbd, 0xc9, 0xff}}},
     {{{    21,    -64,    -33}, 0, {     0,      0}, {0x21, 0x98, 0xc0, 0xff}}},
@@ -51,7 +51,7 @@ static const Vtx water_bubble_seg5_vertex_05010780[] = {
 };
 
 // 0x05010870
-static const Vtx water_bubble_seg5_vertex_05010870[] = {
+ const Vtx water_bubble_seg5_vertex_05010870[] = {
     {{{    33,     24,    -64}, 0, {     0,      0}, {0x37, 0x29, 0x96, 0xff}}},
     {{{    56,     40,    -33}, 0, {     0,      0}, {0x5b, 0x43, 0xc8, 0xff}}},
     {{{    69,      0,    -33}, 0, {     0,      0}, {0x6d, 0x00, 0xc1, 0xff}}},
@@ -69,7 +69,7 @@ static const Vtx water_bubble_seg5_vertex_05010870[] = {
 };
 
 // 0x05010950
-static const Vtx water_bubble_seg5_vertex_05010950[] = {
+ const Vtx water_bubble_seg5_vertex_05010950[] = {
     {{{   -72,    -23,      0}, 0, {     0,      0}, {0x88, 0xd9, 0x00, 0xff}}},
     {{{   -68,      0,     34}, 0, {     0,      0}, {0x92, 0x00, 0x3f, 0xff}}},
     {{{   -72,     24,      0}, 0, {     0,      0}, {0x88, 0x27, 0x00, 0xff}}},
@@ -89,7 +89,7 @@ static const Vtx water_bubble_seg5_vertex_05010950[] = {
 };
 
 // 0x05010A50
-static const Vtx water_bubble_seg5_vertex_05010A50[] = {
+ const Vtx water_bubble_seg5_vertex_05010A50[] = {
     {{{     0,    -76,      0}, 0, {     0,      0}, {0x00, 0x82, 0x00, 0xff}}},
     {{{   -20,    -64,    -33}, 0, {     0,      0}, {0xdd, 0x95, 0xc7, 0xff}}},
     {{{    21,    -64,    -33}, 0, {     0,      0}, {0x21, 0x98, 0xc0, 0xff}}},
@@ -109,7 +109,7 @@ static const Vtx water_bubble_seg5_vertex_05010A50[] = {
 };
 
 // 0x05010B50
-static const Vtx water_bubble_seg5_vertex_05010B50[] = {
+ const Vtx water_bubble_seg5_vertex_05010B50[] = {
     {{{   -55,     40,     34}, 0, {     0,      0}, {0xa4, 0x43, 0x37, 0xff}}},
     {{{   -44,     62,      0}, 0, {     0,      0}, {0xb6, 0x66, 0x00, 0xff}}},
     {{{   -72,     24,      0}, 0, {     0,      0}, {0x88, 0x27, 0x00, 0xff}}},
@@ -129,7 +129,7 @@ static const Vtx water_bubble_seg5_vertex_05010B50[] = {
 };
 
 // 0x05010C50
-static const Vtx water_bubble_seg5_vertex_05010C50[] = {
+ const Vtx water_bubble_seg5_vertex_05010C50[] = {
     {{{    12,     38,     65}, 0, {     0,      0}, {0x15, 0x41, 0x6a, 0xff}}},
     {{{    21,     65,     34}, 0, {     0,      0}, {0x22, 0x6c, 0x38, 0xff}}},
     {{{   -20,     65,     34}, 0, {     0,      0}, {0xdf, 0x68, 0x3f, 0xff}}},

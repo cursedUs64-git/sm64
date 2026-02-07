@@ -310,7 +310,7 @@ void ukiki_act_jump(void) {
 /**
  * Waypoints that lead from the top of the mountain to the cage.
  */
-static Trajectory sCageUkikiPath[] = {
+Trajectory sCageUkikiPath[] = {
     TRAJECTORY_POS(0, /*pos*/  1011, 2306,  -285),
     TRAJECTORY_POS(0, /*pos*/  1151, 2304,  -510),
     TRAJECTORY_POS(0, /*pos*/  1723, 1861,  -964),
@@ -494,7 +494,7 @@ void ukiki_free_loop(void) {
  *
  * Possibly unused so AnimState could be used for wearing a cap?
  */
-UNUSED static void ukiki_blink_timer(void) {
+UNUSED void ukiki_blink_timer(void) {
     if (gGlobalTimer % 50 < 7) {
         o->oAnimState = UKIKI_ANIM_STATE_EYE_CLOSED;
     } else {

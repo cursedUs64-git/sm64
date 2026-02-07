@@ -1,18 +1,18 @@
 // Blue Fish
 
 // 0x0301B5C8
-static const Lights1 blue_fish_seg3_lights_0301B5C8 = gdSPDefLights1(
+ const Lights1 blue_fish_seg3_lights_0301B5C8 = gdSPDefLights1(
     0x3f, 0x3f, 0x3f,
     0xff, 0xff, 0xff, 0x28, 0x28, 0x28
 );
 
 // 0x0301B5E0
-ALIGNED8 static const Texture blue_fish_seg3_texture_0301B5E0[] = {
+ALIGNED8  const Texture blue_fish_seg3_texture_0301B5E0[] = {
 #include "actors/blue_fish/blue_fish.rgba16.inc.c"
 };
 
 // 0x0301BDE0
-static const Vtx blue_fish_seg3_vertex_0301BDE0[] = {
+ const Vtx blue_fish_seg3_vertex_0301BDE0[] = {
     {{{  -108,      1,      0}, 0, {    14,    566}, {0x89, 0x00, 0xd7, 0xff}}},
     {{{   -44,    -13,    -31}, 0, {   286,    688}, {0xeb, 0x89, 0xdc, 0xff}}},
     {{{   -62,    -19,     12}, 0, {   210,    502}, {0xe8, 0x84, 0x0a, 0xff}}},
@@ -69,7 +69,7 @@ const Gfx blue_fish_seg3_dl_0301BFB8[] = {
 };
 
 // 0x0301C018
-static const Vtx blue_fish_seg3_vertex_0301C018[] = {
+ const Vtx blue_fish_seg3_vertex_0301C018[] = {
     {{{    67,      0,    -58}, 0, {   736,    728}, {0x7a, 0x00, 0xde, 0xff}}},
     {{{    67,     -3,    -28}, 0, {   704,    574}, {0x53, 0xa3, 0x14, 0xff}}},
     {{{     0,      1,     -3}, 0, {  1022,    356}, {0xa1, 0xf9, 0xad, 0xff}}},

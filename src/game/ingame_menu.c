@@ -225,7 +225,7 @@ void create_dl_ortho_matrix(void) {
 UNUSED
 #endif
 #ifdef VERSION_CN
-static u8 *alloc_ia8_text_from_i1(u8 *in) {
+ u8 *alloc_ia8_text_from_i1(u8 *in) {
     s32 i, j;
     u8 l, r;
     u8 bitMask = 0x80;
@@ -251,7 +251,7 @@ static u8 *alloc_ia8_text_from_i1(u8 *in) {
     return out;
 }
 #else
-static u8 *alloc_ia8_text_from_i1(u16 *in, s16 width, s16 height) {
+ u8 *alloc_ia8_text_from_i1(u16 *in, s16 width, s16 height) {
     s32 inPos;
     u16 bitMask;
     u8 *out;
