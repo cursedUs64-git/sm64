@@ -146,7 +146,7 @@ docker build -t sm64 .
 
 To build, mount the local filesystem into the Docker container and build the ROM with `docker run sm64 make`.
 
-###### Example:
+##### Example:
 ```bash
 docker run --rm -v ${PWD}:/sm64 sm64 make VERSION=us -j4
 ```
