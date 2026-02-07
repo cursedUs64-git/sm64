@@ -158,7 +158,6 @@ Resulting artifacts can be found in the `build` directory.
 	sm64
 	├── actors: object behaviors, geo layout, and display lists
 	├── asm: handwritten assembly code, rom header
-	│   └── non_matchings: asm for non-matching sections
 	├── assets: animation and demo data
 	│   ├── anims: animation data
 	│   └── demos: demo data
