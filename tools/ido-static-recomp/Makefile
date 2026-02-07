@@ -39,6 +39,8 @@ else ifeq ($(UNAME_S),Darwin)
   DETECTED_OS := macos
   MAKE := gmake
   CPPFLAGS += -xc++
+else ifeq ($(UNAME_S),FreeBSD)
+  DETECTED_OS := freebsd
 else
   $(error Unsupported host OS for Makefile)
 endif
@@ -121,6 +123,10 @@ endif
 ifeq ($(DETECTED_OS),linux)
 # For traceback
 $(RECOMP_ELF): LDFLAGS   += -Wl,-export-dynamic
+endif
+ifeq ($(DETECTED_OS),freebsd)
+# For traceback
+$(RECOMP_ELF): LDFLAGS   += -Wl,-export-dynamic -lexecinfo
 endif
 
 # Too many warnings, disable everything for now...

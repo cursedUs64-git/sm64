@@ -582,6 +582,13 @@
 #define /*0x104*/ oHorizontalMovementUnk104 OBJECT_FIELD_S32(0x1F)
 #define /*0x108*/ oHorizontalMovementUnk108 OBJECT_FIELD_F32(0x20)
 
+/* LLL Octagonal Rotating Mesh */
+#define /*0x0F4*/ oLllOctmeshWaveTimer    OBJECT_FIELD_S32(0x1B)
+#define /*0x0F8*/ oLllOctmeshActionOffset OBJECT_FIELD_S32(0x1C)
+#define /*0x100*/ oLllOctmeshWaveOffset1  OBJECT_FIELD_F32(0x1E)
+#define /*0x104*/ oLllOctmeshStandTimer   OBJECT_FIELD_S32(0x1F)
+#define /*0x108*/ oLllOctmeshWaveOffset2  OBJECT_FIELD_F32(0x20)
+
 /* Kickable Board */
 #define /*0x0F4*/ oKickableBoardF4 OBJECT_FIELD_S32(0x1B)
 #define /*0x0F8*/ oKickableBoardF8 OBJECT_FIELD_S32(0x1C)
@@ -849,8 +856,8 @@
 #define /*0x0F4*/ oSeesawPlatformPitchVel OBJECT_FIELD_F32(0x1B)
 
 /* Ship Part 3 */
-#define /*0x0F4*/ oShipPart3UnkF4 OBJECT_FIELD_S32(0x1B) // angle?
-#define /*0x0F8*/ oShipPart3UnkF8 OBJECT_FIELD_S32(0x1C) // angle?
+#define /*0x0F4*/ oShipPart3PitchAdjust OBJECT_FIELD_S32(0x1B)
+#define /*0x0F8*/ oShipPart3RollAdjust OBJECT_FIELD_S32(0x1C)
 
 /* Sink When Stepped On */
 #define /*0x104*/ oSinkWhenSteppedOnUnk104 OBJECT_FIELD_S32(0x1F)
@@ -864,9 +871,9 @@
 #define /*0x1AC*/ oSkeeterUnk1AC              OBJECT_FIELD_S16(0x49, 0)
 
 /* JRB Sliding Box */
-#define /*0x0F4*/ oJRBSlidingBoxUnkF4 OBJECT_FIELD_OBJ(0x1B)
-#define /*0x0F8*/ oJRBSlidingBoxUnkF8 OBJECT_FIELD_S32(0x1C)
-#define /*0x0FC*/ oJRBSlidingBoxUnkFC OBJECT_FIELD_F32(0x1D)
+#define /*0x0F4*/ oJRBSlidingBoxShipCenterReference OBJECT_FIELD_OBJ(0x1B)
+#define /*0x0F8*/ oJRBSlidingBoxUnkF8               OBJECT_FIELD_S32(0x1C)
+#define /*0x0FC*/ oJRBSlidingBoxUnkFC               OBJECT_FIELD_F32(0x1D)
 
 /* WF Sliding Brick Platform */
 #define /*0x0F4*/ oWFSlidBrickPtfmMovVel OBJECT_FIELD_F32(0x1B)
