@@ -20,7 +20,8 @@ s32 osEepromLongRead(OSMesgQueue *mq, u8 address, u8 *buffer, s32 nbytes) {
         address++;
         buffer += EEPROM_BLOCK_SIZE;
 #ifndef VERSION_CN
-        osSetTimer(&__osEepromTimer, 12000 * osClockRate / 1000000, 0, &__osEepromTimerQ, __osEepromTimerMsg);
+        osSetTimer(&__osEepromTimer, 12000 * osClockRate / 1000000, 0, &__osEepromTimerQ,
+                   __osEepromTimerMsg);
         osRecvMesg(&__osEepromTimerQ, NULL, OS_MESG_BLOCK);
 #endif
     }

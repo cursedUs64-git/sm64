@@ -18,23 +18,23 @@
 
 #define MUSIC_NONE 0xFFFF
 
- Vec3f unused80339DC0;
- OSMesgQueue sSoundMesgQueue;
- OSMesg sSoundMesgBuf[1];
- struct VblankHandler sSoundVblankHandler;
+Vec3f unused80339DC0;
+OSMesgQueue sSoundMesgQueue;
+OSMesg sSoundMesgBuf[1];
+struct VblankHandler sSoundVblankHandler;
 
 // Only written to, never read.
- u8 sMusicVolume = 0;
+u8 sMusicVolume = 0;
 
- u8 sBgMusicDisabled = FALSE;
- u16 sCurrentMusic = MUSIC_NONE;
- u16 sCurrentShellMusic = MUSIC_NONE;
- u16 sCurrentCapMusic = MUSIC_NONE;
- u8 sPlayingInfiniteStairs = FALSE;
-UNUSED  u8 unused8032C6D8[16] = { 0 };
- s16 sSoundMenuModeToSoundMode[] = { SOUND_MODE_STEREO, SOUND_MODE_MONO, SOUND_MODE_HEADSET };
+u8 sBgMusicDisabled = FALSE;
+u16 sCurrentMusic = MUSIC_NONE;
+u16 sCurrentShellMusic = MUSIC_NONE;
+u16 sCurrentCapMusic = MUSIC_NONE;
+u8 sPlayingInfiniteStairs = FALSE;
+UNUSED u8 unused8032C6D8[16] = { 0 };
+s16 sSoundMenuModeToSoundMode[] = { SOUND_MODE_STEREO, SOUND_MODE_MONO, SOUND_MODE_HEADSET };
 // Only the 20th array element is used.
- u32 sMenuSoundsExtra[] = {
+u32 sMenuSoundsExtra[] = {
     SOUND_MOVING_TERRAIN_SLIDE + (0 << 16),
     SOUND_MOVING_TERRAIN_SLIDE + (1 << 16),
     SOUND_MOVING_TERRAIN_SLIDE + (2 << 16),
@@ -72,7 +72,7 @@ UNUSED  u8 unused8032C6D8[16] = { 0 };
     SOUND_AIR_BLOW_FIRE,
     SOUND_ENV_ELEVATOR4,
 };
- s8 sPaintingEjectSoundPlayed = FALSE;
+s8 sPaintingEjectSoundPlayed = FALSE;
 
 void play_menu_sounds_extra(s32 a, void *b);
 

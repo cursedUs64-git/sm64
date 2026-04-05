@@ -122,8 +122,8 @@ void apply_platform_displacement(u32 isMario, struct Object *platform) {
 
     if (rotation[0] != 0 || rotation[1] != 0 || rotation[2] != 0) {
         unusedPitch = rotation[0];
-        unusedRoll  = rotation[2];
-        unusedYaw   = platform->oFaceAngleYaw;
+        unusedRoll = rotation[2];
+        unusedYaw = platform->oFaceAngleYaw;
 
         if (isMario) {
             gMarioStates[0].faceAngle[1] += rotation[1];

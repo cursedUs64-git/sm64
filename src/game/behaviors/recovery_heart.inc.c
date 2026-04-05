@@ -20,7 +20,7 @@ void bhv_recovery_heart_loop(void) {
             o->oSpinningHeartPlayedSound++;
         }
 
-        o->oAngleVelYaw = (s32)(200.0f * gMarioStates[0].forwardVel) + 1000;
+        o->oAngleVelYaw = (s32) (200.0f * gMarioStates[0].forwardVel) + 1000;
     } else {
         o->oSpinningHeartPlayedSound = 0;
 

@@ -19,9 +19,8 @@ u8 gCrashScreenCharToGlyph[128] = {
 
 // A height of seven pixels for each Character * nine rows of characters + one row unused.
 u32 gCrashScreenFont[7 * 9 + 1] = {
-    #include "textures/crash_screen/crash_screen_font.ia1.inc.c"
+#include "textures/crash_screen/crash_screen_font.ia1.inc.c"
 };
-
 
 char *gCauseDesc[18] = {
     "Interrupt",
@@ -48,8 +47,6 @@ char *gFpcsrDesc[6] = {
     "Unimplemented operation", "Invalid operation", "Division by zero", "Overflow", "Underflow",
     "Inexact operation",
 };
-
-
 
 extern u64 osClockRate;
 
@@ -100,7 +97,7 @@ void crash_screen_draw_glyph(s32 x, s32 y, s32 glyph) {
     }
 }
 
- char *write_to_buf(char *buffer, const char *data, size_t size) {
+char *write_to_buf(char *buffer, const char *data, size_t size) {
     return (char *) memcpy(buffer, data, size) + size;
 }
 
@@ -280,7 +277,7 @@ void crash_screen_set_framebuffer(u16 *framebuffer, u16 width, u16 height) {
 #ifdef VERSION_EU
     gCrashScreen.framebuffer = framebuffer;
 #else
-    gCrashScreen.framebuffer = (u16 *)((uintptr_t)framebuffer | 0xa0000000);
+    gCrashScreen.framebuffer = (u16 *) ((uintptr_t) framebuffer | 0xa0000000);
 #endif
     gCrashScreen.width = width;
     gCrashScreen.height = height;
@@ -299,13 +296,12 @@ void crash_screen_init(void) {
     gCrashScreen.height = 0x10;
 #endif
     osCreateMesgQueue(&gCrashScreen.mesgQueue, &gCrashScreen.mesg, 1);
-    osCreateThread(
-        &gCrashScreen.thread, 2, thread2_crash_screen, NULL,
-        (u8 *) gCrashScreen.stack + sizeof(gCrashScreen.stack),
+    osCreateThread(&gCrashScreen.thread, 2, thread2_crash_screen, NULL,
+                   (u8 *) gCrashScreen.stack + sizeof(gCrashScreen.stack),
 #ifdef VERSION_EU
-        OS_PRIORITY_APPMAX
+                   OS_PRIORITY_APPMAX
 #else
-        OS_PRIORITY_RMON
+                   OS_PRIORITY_RMON
 #endif
     );
     osStartThread(&gCrashScreen.thread);

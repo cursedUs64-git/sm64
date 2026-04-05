@@ -3,7 +3,7 @@
 // X/Z coordinates of Yoshi's homes that he switches between.
 // Note that this doesn't contain the Y coordinate since the castle roof is flat,
 // so o->oHomeY is never updated.
- s16 sYoshiHomeLocations[] = { 0, -5625, -1364, -5912, -1403, -4609, -1004, -5308 };
+s16 sYoshiHomeLocations[] = { 0, -5625, -1364, -5912, -1403, -4609, -1004, -5308 };
 
 void bhv_yoshi_init(void) {
     o->oGravity = 2.0f;
@@ -71,8 +71,8 @@ void yoshi_idle_loop(void) {
     }
 
     // Credits; Yoshi appears at this position overlooking the castle near the end of the credits
-    if (gPlayerCameraState->cameraEvent == CAM_EVENT_START_ENDING ||
-        gPlayerCameraState->cameraEvent == CAM_EVENT_START_END_WAVING) {
+    if (gPlayerCameraState->cameraEvent == CAM_EVENT_START_ENDING
+        || gPlayerCameraState->cameraEvent == CAM_EVENT_START_END_WAVING) {
         o->oAction = YOSHI_ACT_CREDITS;
         o->oPosX = -1798.0f;
         o->oPosY = 3174.0f;

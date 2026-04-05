@@ -88,9 +88,8 @@ void __osContGetInitData(u8 *bitpattern, OSContStatus *status) {
     if (__osBbIsBb != 0 && __osBbHackFlags != 0) {
         OSContStatus tmp;
         status -= __osMaxControllers;
-        sp7 = (sp7 & ~((1 << __osBbHackFlags) | 1)) |
-                ((sp7 & 1) << __osBbHackFlags) |
-                ((sp7 & (1 << __osBbHackFlags)) >> __osBbHackFlags);
+        sp7 = (sp7 & ~((1 << __osBbHackFlags) | 1)) | ((sp7 & 1) << __osBbHackFlags)
+              | ((sp7 & (1 << __osBbHackFlags)) >> __osBbHackFlags);
         tmp = *status;
         *status = status[__osBbHackFlags];
         status[__osBbHackFlags] = tmp;
@@ -124,7 +123,7 @@ void __osPackRequestData(u8 command) {
     request.data4 = 255;
 
     for (i = 0; i < __osMaxControllers; i++) {
-        * (OSContPackedRequest *) cmdBufPtr = request;
+        *(OSContPackedRequest *) cmdBufPtr = request;
         cmdBufPtr += sizeof(OSContPackedRequest);
     }
     *cmdBufPtr = 254;

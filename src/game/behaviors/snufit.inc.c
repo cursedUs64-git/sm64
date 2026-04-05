@@ -37,8 +37,8 @@ struct ObjectHitbox sSnufitBulletHitbox = {
 Gfx *geo_snufit_move_mask(s32 callContext, struct GraphNode *node, UNUSED Mat4 *c) {
     if (callContext == GEO_CONTEXT_RENDER) {
         struct Object *obj = (struct Object *) gCurGraphNodeObject;
-        struct GraphNodeTranslationRotation *transNode
-            = (struct GraphNodeTranslationRotation *) node->next;
+        struct GraphNodeTranslationRotation *transNode =
+            (struct GraphNodeTranslationRotation *) node->next;
 
         transNode->translation[0] = obj->oSnufitXOffset;
         transNode->translation[1] = obj->oSnufitYOffset;
@@ -69,15 +69,13 @@ Gfx *geo_snufit_scale_body(s32 callContext, struct GraphNode *node, UNUSED Mat4 
 void snufit_act_idle(void) {
     // This line would could cause a crash in certain PU situations,
     // if the game would not have already crashed.
-    s32 marioDist = (s32)(o->oDistanceToMario / 10.0f);
+    s32 marioDist = (s32) (o->oDistanceToMario / 10.0f);
 
     if (o->oTimer > marioDist && o->oDistanceToMario < 800.0f) {
 
         // Controls an alternating scaling factor in a cos.
-        o->oSnufitBodyScalePeriod
-            = approach_s16_symmetric(o->oSnufitBodyScalePeriod, 0, 1500);
-        o->oSnufitBodyBaseScale
-            = approach_s16_symmetric(o->oSnufitBodyBaseScale, 600, 15);
+        o->oSnufitBodyScalePeriod = approach_s16_symmetric(o->oSnufitBodyScalePeriod, 0, 1500);
+        o->oSnufitBodyBaseScale = approach_s16_symmetric(o->oSnufitBodyBaseScale, 600, 15);
 
         if ((s16) o->oSnufitBodyScalePeriod == 0 && o->oSnufitBodyBaseScale == 600) {
             o->oAction = SNUFIT_ACT_SHOOT;
@@ -92,10 +90,8 @@ void snufit_act_idle(void) {
  * Controls the literal shooting action, spawning three bhvSnufitBalls.
  */
 void snufit_act_shoot(void) {
-    o->oSnufitBodyScalePeriod
-        = approach_s16_symmetric(o->oSnufitBodyScalePeriod, -0x8000, 3000);
-    o->oSnufitBodyBaseScale
-        = approach_s16_symmetric(o->oSnufitBodyBaseScale, 167, 20);
+    o->oSnufitBodyScalePeriod = approach_s16_symmetric(o->oSnufitBodyScalePeriod, -0x8000, 3000);
+    o->oSnufitBodyBaseScale = approach_s16_symmetric(o->oSnufitBodyBaseScale, 167, 20);
 
     if ((u16) o->oSnufitBodyScalePeriod == 0x8000 && o->oSnufitBodyBaseScale == 167) {
         o->oAction = SNUFIT_ACT_IDLE;
@@ -153,9 +149,8 @@ void bhv_snufit_loop(void) {
 
         o->oSnufitYOffset = -0x20;
         o->oSnufitZOffset = o->oSnufitRecoil + 180;
-        o->oSnufitBodyScale
-            = (s16)(o->oSnufitBodyBaseScale + 666
-            + o->oSnufitBodyBaseScale * coss(o->oSnufitBodyScalePeriod));
+        o->oSnufitBodyScale = (s16) (o->oSnufitBodyBaseScale + 666
+                                     + o->oSnufitBodyBaseScale * coss(o->oSnufitBodyScalePeriod));
 
         if (o->oSnufitBodyScale > 1000) {
             o->oSnufitScale = (o->oSnufitBodyScale - 1000) / 1000.0f + 1.0f;
@@ -193,8 +188,7 @@ void bhv_snufit_balls_loop(void) {
             o->oGravity = -4.0f;
 
             cur_obj_become_intangible();
-        } else if (o->oAction == 1
-                   || (o->oMoveFlags & (OBJ_MOVE_MASK_ON_GROUND | OBJ_MOVE_HIT_WALL))) {
+        } else if (o->oAction == 1 || (o->oMoveFlags & (OBJ_MOVE_MASK_ON_GROUND | OBJ_MOVE_HIT_WALL))) {
             // The Snufit shot Mario and has fulfilled its lonely existance.
             //! The above check could theoretically be avoided by finding a geometric
             //! situation that does not trigger those flags (Water?). If found,

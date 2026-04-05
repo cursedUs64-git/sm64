@@ -17,7 +17,7 @@ struct FerrisWheelProperties {
 /**
  * Properties for the ferris wheels in BitS and BitDW, respectively.
  */
- struct FerrisWheelProperties sFerrisWheelProperties[] = {
+struct FerrisWheelProperties sFerrisWheelProperties[] = {
     { bits_seg7_collision_0701ACAC, bits_seg7_collision_0701AC28, MODEL_BITS_BLUE_PLATFORM },
     { bitdw_seg7_collision_0700F7F0, bitdw_seg7_collision_0700F898, MODEL_BITDW_BLUE_PLATFORM },
 };
@@ -31,8 +31,7 @@ void bhv_ferris_wheel_axle_init(void) {
     struct Object *platform;
     s32 i;
 
-    o->collisionData =
-        segmented_to_virtual(sFerrisWheelProperties[o->oBhvParams2ndByte].axleCollision);
+    o->collisionData = segmented_to_virtual(sFerrisWheelProperties[o->oBhvParams2ndByte].axleCollision);
 
     for (i = 0; i < 4; i++) {
         platform = spawn_object_relative(i, 0, 0, 0, o,

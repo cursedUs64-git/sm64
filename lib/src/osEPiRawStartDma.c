@@ -128,4 +128,3 @@ s32 osEPiRawStartDma(OSPiHandle *pihandle, s32 dir, u32 devAddr, void *dram_addr
 #endif
     return 0;
 }
-

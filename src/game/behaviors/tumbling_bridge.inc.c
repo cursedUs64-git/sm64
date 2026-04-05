@@ -14,10 +14,14 @@ struct TumblingBridgeData {
 };
 
 struct TumblingBridgeData sTumblingBridgeData[] = {
-    /* TUMBLING_BRIDGE_BP_WF    */ { 9, -512, 128, MODEL_WF_TUMBLING_BRIDGE_PART,      wf_seg7_collision_tumbling_bridge },
-    /* TUMBLING_BRIDGE_BP_BBH   */ { 9, -412, 103, MODEL_BBH_TUMBLING_PLATFORM_PART,   bbh_seg7_collision_07026B1C       },
-    /* TUMBLING_BRIDGE_BP_LLL   */ { 9, -512, 128, MODEL_LLL_FALLING_PLATFORM,         lll_seg7_collision_0701D21C       },
-    /* TUMBLING_BRIDGE_BP_BITFS */ { 9, -512, 128, MODEL_BITFS_TUMBLING_PLATFORM_PART, bitfs_seg7_collision_07015288     },
+    /* TUMBLING_BRIDGE_BP_WF    */ { 9, -512, 128, MODEL_WF_TUMBLING_BRIDGE_PART,
+                                     wf_seg7_collision_tumbling_bridge },
+    /* TUMBLING_BRIDGE_BP_BBH   */
+    { 9, -412, 103, MODEL_BBH_TUMBLING_PLATFORM_PART, bbh_seg7_collision_07026B1C },
+    /* TUMBLING_BRIDGE_BP_LLL   */
+    { 9, -512, 128, MODEL_LLL_FALLING_PLATFORM, lll_seg7_collision_0701D21C },
+    /* TUMBLING_BRIDGE_BP_BITFS */
+    { 9, -512, 128, MODEL_BITFS_TUMBLING_PLATFORM_PART, bitfs_seg7_collision_07015288 },
 };
 
 void bhv_tumbling_bridge_platform_loop(void) {

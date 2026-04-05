@@ -127,7 +127,8 @@ void geo_layout_cmd_end(void) {
 */
 void geo_layout_cmd_branch(void) {
     if (cur_geo_cmd_u8(0x01) == 1) {
-        gGeoLayoutStack[gGeoLayoutStackIndex++] = (uintptr_t) (gGeoLayoutCommand + CMD_PROCESS_OFFSET(8));
+        gGeoLayoutStack[gGeoLayoutStackIndex++] =
+            (uintptr_t) (gGeoLayoutCommand + CMD_PROCESS_OFFSET(8));
     }
 
     gGeoLayoutCommand = segmented_to_virtual(cur_geo_cmd_ptr(0x04));
@@ -747,8 +748,9 @@ void geo_layout_cmd_node_held_obj(void) {
 
     read_vec3s(offset, (s16 *) &gGeoLayoutCommand[0x02]);
 
-    graphNode = init_graph_node_held_object(
-        gGraphNodePool, NULL, NULL, offset, (GraphNodeFunc) cur_geo_cmd_ptr(0x08), cur_geo_cmd_u8(0x01));
+    graphNode =
+        init_graph_node_held_object(gGraphNodePool, NULL, NULL, offset,
+                                    (GraphNodeFunc) cur_geo_cmd_ptr(0x08), cur_geo_cmd_u8(0x01));
 
     register_scene_graph_node(&graphNode->fnNode.node);
 

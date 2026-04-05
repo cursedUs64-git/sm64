@@ -1,38 +1,39 @@
 // tox_box.inc.c
 
-#define FORWARD  TOX_BOX_ACT_ROLL_FORWARD,  TOX_BOX_ACT_ROLL_LAND
+#define FORWARD TOX_BOX_ACT_ROLL_FORWARD, TOX_BOX_ACT_ROLL_LAND
 #define BACKWARD TOX_BOX_ACT_ROLL_BACKWARD, TOX_BOX_ACT_ROLL_LAND
-#define RIGHT    TOX_BOX_ACT_ROLL_RIGHT,    TOX_BOX_ACT_ROLL_LAND
-#define LEFT     TOX_BOX_ACT_ROLL_LEFT,     TOX_BOX_ACT_ROLL_LAND
-#define IDLE     TOX_BOX_ACT_IDLE
-#define END      TOX_BOX_ACT_TABLE_END
+#define RIGHT TOX_BOX_ACT_ROLL_RIGHT, TOX_BOX_ACT_ROLL_LAND
+#define LEFT TOX_BOX_ACT_ROLL_LEFT, TOX_BOX_ACT_ROLL_LAND
+#define IDLE TOX_BOX_ACT_IDLE
+#define END TOX_BOX_ACT_TABLE_END
 
 s8 sToxBoxActionTable1[] = {
-    FORWARD, FORWARD, RIGHT, RIGHT, BACKWARD, BACKWARD, RIGHT, RIGHT, BACKWARD, IDLE,
+    FORWARD,  FORWARD,  RIGHT,   RIGHT, BACKWARD, BACKWARD, RIGHT, RIGHT, BACKWARD, IDLE,
 
-    FORWARD, FORWARD, FORWARD, IDLE,
+    FORWARD,  FORWARD,  FORWARD, IDLE,
 
-    BACKWARD, BACKWARD, LEFT, LEFT, FORWARD, FORWARD, LEFT, LEFT, BACKWARD, BACKWARD, BACKWARD, IDLE,
+    BACKWARD, BACKWARD, LEFT,    LEFT,  FORWARD,  FORWARD,  LEFT,  LEFT,  BACKWARD, BACKWARD,
+    BACKWARD, IDLE,
 
-    FORWARD, END,
+    FORWARD,  END,
 };
 
 s8 sToxBoxActionTable2[] = {
-    FORWARD, FORWARD, LEFT, LEFT, LEFT, IDLE,
+    FORWARD, FORWARD, LEFT,  LEFT,     LEFT,     IDLE,
 
-    RIGHT, RIGHT, RIGHT, BACKWARD, BACKWARD, RIGHT, BACKWARD, BACKWARD, IDLE,
+    RIGHT,   RIGHT,   RIGHT, BACKWARD, BACKWARD, RIGHT, BACKWARD, BACKWARD, IDLE,
 
-    FORWARD, FORWARD, LEFT, END,
+    FORWARD, FORWARD, LEFT,  END,
 };
 
 s8 sToxBoxActionTable3[] = {
-    FORWARD, FORWARD, FORWARD, FORWARD, FORWARD, IDLE,
+    FORWARD,  FORWARD,  FORWARD,  FORWARD,  FORWARD,  IDLE,
 
     BACKWARD, BACKWARD, BACKWARD, BACKWARD, BACKWARD, LEFT, IDLE,
 
-    RIGHT, RIGHT, BACKWARD, IDLE,
+    RIGHT,    RIGHT,    BACKWARD, IDLE,
 
-    FORWARD, LEFT, END,
+    FORWARD,  LEFT,     END,
 };
 
 #undef FORWARD
@@ -84,7 +85,7 @@ void tox_box_shake_screen(void) {
 }
 
 void tox_box_move(f32 forwardVel, f32 upVel, s16 deltaPitch, s16 deltaRoll) {
-    o->oPosY = 99.41124 * sins((f32)(o->oTimer + 1) / 8 * 0x8000) + o->oHomeY + 3.0f;
+    o->oPosY = 99.41124 * sins((f32) (o->oTimer + 1) / 8 * 0x8000) + o->oHomeY + 3.0f;
     o->oForwardVel = forwardVel;
     o->oUpVel = upVel;
     o->oFaceAnglePitch += deltaPitch;
@@ -150,14 +151,9 @@ void tox_box_act_init(void) {
 }
 
 void (*sToxBoxActions[])(void) = {
-    tox_box_act_init,
-    tox_box_act_roll_land,
-    tox_box_act_idle,
-    tox_box_act_unused_idle,
-    tox_box_act_roll_forward,
-    tox_box_act_roll_backward,
-    tox_box_act_roll_right,
-    tox_box_act_roll_left,
+    tox_box_act_init,        tox_box_act_roll_land,    tox_box_act_idle,
+    tox_box_act_unused_idle, tox_box_act_roll_forward, tox_box_act_roll_backward,
+    tox_box_act_roll_right,  tox_box_act_roll_left,
 };
 
 void bhv_tox_box_loop(void) {

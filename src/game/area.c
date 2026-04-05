@@ -57,22 +57,52 @@ s16 gCurrLevelNum = LEVEL_MIN;
  * from warp behavior.
  * When looping through sWarpBhvSpawnTable, if the behavior function in the table matches
  * the spawn behavior executed, the index of that behavior is used with sSpawnTypeFromWarpBhv
-*/
+ */
 
 const BehaviorScript *sWarpBhvSpawnTable[] = {
-    bhvDoorWarp,                bhvStar,                   bhvExitPodiumWarp,          bhvWarp,
-    bhvWarpPipe,                bhvFadingWarp,             bhvInstantActiveWarp,       bhvAirborneWarp,
-    bhvHardAirKnockBackWarp,    bhvSpinAirborneCircleWarp, bhvDeathWarp,               bhvSpinAirborneWarp,
-    bhvFlyingWarp,              bhvSwimmingWarp,           bhvPaintingStarCollectWarp, bhvPaintingDeathWarp,
-    bhvAirborneStarCollectWarp, bhvAirborneDeathWarp,      bhvLaunchStarCollectWarp,   bhvLaunchDeathWarp,
+    bhvDoorWarp,
+    bhvStar,
+    bhvExitPodiumWarp,
+    bhvWarp,
+    bhvWarpPipe,
+    bhvFadingWarp,
+    bhvInstantActiveWarp,
+    bhvAirborneWarp,
+    bhvHardAirKnockBackWarp,
+    bhvSpinAirborneCircleWarp,
+    bhvDeathWarp,
+    bhvSpinAirborneWarp,
+    bhvFlyingWarp,
+    bhvSwimmingWarp,
+    bhvPaintingStarCollectWarp,
+    bhvPaintingDeathWarp,
+    bhvAirborneStarCollectWarp,
+    bhvAirborneDeathWarp,
+    bhvLaunchStarCollectWarp,
+    bhvLaunchDeathWarp,
 };
 
 u8 sSpawnTypeFromWarpBhv[] = {
-    MARIO_SPAWN_DOOR_WARP,             MARIO_SPAWN_UNKNOWN_02,           MARIO_SPAWN_UNKNOWN_03,            MARIO_SPAWN_UNKNOWN_03,
-    MARIO_SPAWN_UNKNOWN_03,            MARIO_SPAWN_TELEPORT,             MARIO_SPAWN_INSTANT_ACTIVE,        MARIO_SPAWN_AIRBORNE,
-    MARIO_SPAWN_HARD_AIR_KNOCKBACK,    MARIO_SPAWN_SPIN_AIRBORNE_CIRCLE, MARIO_SPAWN_DEATH,                 MARIO_SPAWN_SPIN_AIRBORNE,
-    MARIO_SPAWN_FLYING,                MARIO_SPAWN_SWIMMING,             MARIO_SPAWN_PAINTING_STAR_COLLECT, MARIO_SPAWN_PAINTING_DEATH,
-    MARIO_SPAWN_AIRBORNE_STAR_COLLECT, MARIO_SPAWN_AIRBORNE_DEATH,       MARIO_SPAWN_LAUNCH_STAR_COLLECT,   MARIO_SPAWN_LAUNCH_DEATH,
+    MARIO_SPAWN_DOOR_WARP,
+    MARIO_SPAWN_UNKNOWN_02,
+    MARIO_SPAWN_UNKNOWN_03,
+    MARIO_SPAWN_UNKNOWN_03,
+    MARIO_SPAWN_UNKNOWN_03,
+    MARIO_SPAWN_TELEPORT,
+    MARIO_SPAWN_INSTANT_ACTIVE,
+    MARIO_SPAWN_AIRBORNE,
+    MARIO_SPAWN_HARD_AIR_KNOCKBACK,
+    MARIO_SPAWN_SPIN_AIRBORNE_CIRCLE,
+    MARIO_SPAWN_DEATH,
+    MARIO_SPAWN_SPIN_AIRBORNE,
+    MARIO_SPAWN_FLYING,
+    MARIO_SPAWN_SWIMMING,
+    MARIO_SPAWN_PAINTING_STAR_COLLECT,
+    MARIO_SPAWN_PAINTING_DEATH,
+    MARIO_SPAWN_AIRBORNE_STAR_COLLECT,
+    MARIO_SPAWN_AIRBORNE_DEATH,
+    MARIO_SPAWN_LAUNCH_STAR_COLLECT,
+    MARIO_SPAWN_LAUNCH_DEATH,
 };
 
 Vp D_8032CF00 = { {
@@ -396,8 +426,8 @@ void render_game(void) {
 
         if (gWarpTransition.isActive) {
             if (gWarpTransDelay == 0) {
-                gWarpTransition.isActive = !render_screen_transition(0, gWarpTransition.type, gWarpTransition.time,
-                                                                     &gWarpTransition.data);
+                gWarpTransition.isActive = !render_screen_transition(
+                    0, gWarpTransition.type, gWarpTransition.time, &gWarpTransition.data);
                 if (!gWarpTransition.isActive) {
                     if (gWarpTransition.type & 1) {
                         gWarpTransition.pauseRendering = TRUE;

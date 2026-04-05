@@ -13,7 +13,7 @@ s32 __osContRamRead(OSMesgQueue *mq, int channel, u16 address, u8 *buffer) {
     __OSContRamReadFormat ramreadformat;
     int retry;
     ret = 0;
-    ptr = (u8 *)&__osPfsPifRam;
+    ptr = (u8 *) &__osPfsPifRam;
     retry = 2;
     __osSiGetAccess();
     __osContLastCmd = CONT_CMD_READ_MEMPACK;
@@ -23,17 +23,17 @@ s32 __osContRamRead(OSMesgQueue *mq, int channel, u16 address, u8 *buffer) {
     do {
         ret = __osSiRawStartDma(OS_READ, &__osPfsPifRam);
         osRecvMesg(mq, NULL, OS_MESG_BLOCK);
-        ptr = (u8 *)&__osPfsPifRam;
+        ptr = (u8 *) &__osPfsPifRam;
         if (channel != 0) {
             for (i = 0; i < channel; i++) {
                 ptr++;
             }
         }
-        ramreadformat = *(__OSContRamReadFormat *)ptr;
+        ramreadformat = *(__OSContRamReadFormat *) ptr;
         ret = CHNL_ERR(ramreadformat);
         if (ret == 0) {
             u8 c;
-            c = __osContDataCrc((u8*)&ramreadformat.data);
+            c = __osContDataCrc((u8 *) &ramreadformat.data);
             if (c != ramreadformat.datacrc) {
                 ret = __osPfsGetStatus(mq, channel);
                 if (ret != 0) {
@@ -62,7 +62,7 @@ void __osPackRamReadData(int channel, u16 address) {
     __OSContRamReadFormat ramreadformat;
     int i;
 
-    ptr = (u8 *)__osPfsPifRam.ramarray;
+    ptr = (u8 *) __osPfsPifRam.ramarray;
 
     for (i = 0; i < ARRAY_COUNT(__osPfsPifRam.ramarray) + 1; i++) {
         __osPfsPifRam.ramarray[i] = 0;
@@ -83,7 +83,7 @@ void __osPackRamReadData(int channel, u16 address) {
             *ptr++ = 0;
         }
     }
-    *(__OSContRamReadFormat *)ptr = ramreadformat;
+    *(__OSContRamReadFormat *) ptr = ramreadformat;
     ptr += sizeof(__OSContRamReadFormat);
     ptr[0] = CONT_CMD_END;
 }

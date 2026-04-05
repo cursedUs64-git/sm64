@@ -14,7 +14,7 @@
  * that can be used by in-game objects.
  */
 s16 convert_rotation(s16 inRotation) {
-    u16 rotation = ((u16)(inRotation & 0xFF));
+    u16 rotation = ((u16) (inRotation & 0xFF));
     rotation <<= 8;
 
     if (rotation == 0x3F00) {
@@ -41,7 +41,8 @@ s16 convert_rotation(s16 inRotation) {
  * parameters filling up the upper 2 bytes of newObj->oBhvParams.
  * The object will not spawn if 'behavior' is NULL.
  */
-void spawn_macro_abs_yrot_2params(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z, s16 ry, s16 params) {
+void spawn_macro_abs_yrot_2params(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z,
+                                  s16 ry, s16 params) {
     if (behavior != NULL) {
         struct Object *newObj = spawn_object_abs_with_rot(
             &gMacroObjectDefaultParent, 0, model, behavior, x, y, z, 0, convert_rotation(ry), 0);
@@ -54,7 +55,8 @@ void spawn_macro_abs_yrot_2params(s32 model, const BehaviorScript *behavior, s16
  * a single parameter filling up the upper byte of newObj->oBhvParams.
  * The object will not spawn if 'behavior' is NULL.
  */
-void spawn_macro_abs_yrot_param1(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z, s16 ry, s16 param) {
+void spawn_macro_abs_yrot_param1(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z, s16 ry,
+                                 s16 param) {
     if (behavior != NULL) {
         struct Object *newObj = spawn_object_abs_with_rot(
             &gMacroObjectDefaultParent, 0, model, behavior, x, y, z, 0, convert_rotation(ry), 0);
@@ -66,8 +68,8 @@ void spawn_macro_abs_yrot_param1(s32 model, const BehaviorScript *behavior, s16 
  * Spawns an object at an absolute location with currently 3 unknown variables that get converted to
  * floats. Oddly enough, this function doesn't care if 'behavior' is NULL or not.
  */
-void spawn_macro_abs_special(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z, s16 unkA, s16 unkB,
-                             s16 unkC) {
+void spawn_macro_abs_special(s32 model, const BehaviorScript *behavior, s16 x, s16 y, s16 z, s16 unkA,
+                             s16 unkB, s16 unkC) {
     struct Object *newObj =
         spawn_object_abs_with_rot(&gMacroObjectDefaultParent, 0, model, behavior, x, y, z, 0, 0, 0);
 
@@ -83,7 +85,7 @@ void spawn_macro_abs_special(s32 model, const BehaviorScript *behavior, s16 x, s
 #define MACRO_OBJ_Z 3
 #define MACRO_OBJ_PARAMS 4
 
-UNUSED  void spawn_macro_coin_unknown(const BehaviorScript *behavior, s16 objInfo[]) {
+UNUSED void spawn_macro_coin_unknown(const BehaviorScript *behavior, s16 objInfo[]) {
     struct Object *coin;
     s16 model = bhvYellowCoin == behavior ? MODEL_YELLOW_COIN : MODEL_NONE;
 
@@ -143,18 +145,18 @@ void spawn_macro_objects(s16 areaIndex, s16 *macroObjList) {
         if (((macroObject[MACRO_OBJ_PARAMS] >> 8) & RESPAWN_INFO_DONT_RESPAWN)
             != RESPAWN_INFO_DONT_RESPAWN) {
             // Spawn the new macro object.
-            newObj = spawn_object_abs_with_rot(
-                         &gMacroObjectDefaultParent, // Parent object
-                         0,                          // Unused
-                         preset.model,               // Model ID
-                         preset.behavior,            // Behavior address
-                         macroObject[MACRO_OBJ_X],   // X-position
-                         macroObject[MACRO_OBJ_Y],   // Y-position
-                         macroObject[MACRO_OBJ_Z],   // Z-position
-                         0,                          // X-rotation
-                         convert_rotation(macroObject[MACRO_OBJ_Y_ROT]), // Y-rotation
-                         0                                               // Z-rotation
-                     );
+            newObj =
+                spawn_object_abs_with_rot(&gMacroObjectDefaultParent, // Parent object
+                                          0,                          // Unused
+                                          preset.model,               // Model ID
+                                          preset.behavior,            // Behavior address
+                                          macroObject[MACRO_OBJ_X],   // X-position
+                                          macroObject[MACRO_OBJ_Y],   // Y-position
+                                          macroObject[MACRO_OBJ_Z],   // Z-position
+                                          0,                          // X-rotation
+                                          convert_rotation(macroObject[MACRO_OBJ_Y_ROT]), // Y-rotation
+                                          0                                               // Z-rotation
+                );
 
             newObj->oUnusedBhvParams = macroObject[MACRO_OBJ_PARAMS];
             newObj->oBhvParams = ((macroObject[MACRO_OBJ_PARAMS] & 0x00FF) << 16)
@@ -254,7 +256,7 @@ void spawn_special_objects(s16 areaIndex, TerrainData **specialObjList) {
     gMacroObjectDefaultParent.header.gfx.activeAreaIndex = areaIndex;
 
     for (i = 0; i < numOfSpecialObjects; i++) {
-        presetID = (u8) **specialObjList;
+        presetID = (u8) * *specialObjList;
         (*specialObjList)++;
         x = **specialObjList;
         (*specialObjList)++;

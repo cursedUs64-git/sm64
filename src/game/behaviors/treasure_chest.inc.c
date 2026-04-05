@@ -3,7 +3,7 @@
 /**
  * Hitbox for treasure chest bottom.
  */
- struct ObjectHitbox sTreasureChestBottomHitbox = {
+struct ObjectHitbox sTreasureChestBottomHitbox = {
     /* interactType:      */ INTERACT_SHOCK,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
@@ -68,7 +68,8 @@ void bhv_treasure_chest_bottom_init(void) {
 void bhv_treasure_chest_bottom_loop(void) {
     switch (o->oAction) {
         case 0:
-            if (obj_check_if_facing_toward_angle(o->oMoveAngleYaw, gMarioObject->header.gfx.angle[1] + 0x8000, 0x3000)
+            if (obj_check_if_facing_toward_angle(o->oMoveAngleYaw,
+                                                 gMarioObject->header.gfx.angle[1] + 0x8000, 0x3000)
                 && is_point_within_radius_of_mario(o->oPosX, o->oPosY, o->oPosZ, 150)
                 && !o->parentObj->oTreasureChestUnkF8) {
                 if (o->parentObj->oTreasureChestUnkF4 == o->oBhvParams2ndByte) {

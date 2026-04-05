@@ -18,8 +18,7 @@ struct LateralPosition {
  * Array of positions for all coffins relative to their spawner.
  */
 struct LateralPosition coffinRelativePos[] = {
-    { 412, -150 }, { 762, -150 }, { 1112, -150 },
-    { 412,  150 }, { 762,  150 }, { 1112,  150 },
+    { 412, -150 }, { 762, -150 }, { 1112, -150 }, { 412, 150 }, { 762, 150 }, { 1112, 150 },
 };
 
 /**
@@ -95,8 +94,7 @@ void coffin_act_idle(void) {
 
             // This checks a box around the coffin and if it has been a bit since it stood up.
             // It also checks in the case Mario is squished, so he doesn't get permanently squished.
-            if (o->oTimer > 60
-                && (o->oDistanceToMario > 100.0f || gMarioState->action == ACT_SQUISHED)
+            if (o->oTimer > 60 && (o->oDistanceToMario > 100.0f || gMarioState->action == ACT_SQUISHED)
                 && gMarioObject->oPosY - o->oPosY < 200.0f && absf(distForwards) < 140.0f
                 && distSideways < 150.0f && distSideways > -450.0f) {
                 cur_obj_play_sound_2(SOUND_GENERAL_BUTTON_PRESS_2_LOWPRIO);

@@ -1,6 +1,6 @@
 // bully.inc.c
 
- struct ObjectHitbox sSmallBullyHitbox = {
+struct ObjectHitbox sSmallBullyHitbox = {
     /* interactType:      */ INTERACT_BULLY,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
@@ -12,7 +12,7 @@
     /* hurtboxHeight:     */ 113,
 };
 
- struct ObjectHitbox sBigBullyHitbox = {
+struct ObjectHitbox sBigBullyHitbox = {
     /* interactType:      */ INTERACT_BULLY,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
@@ -54,9 +54,9 @@ void bhv_big_bully_init(void) {
 void bully_check_mario_collision(void) {
     if (
 #if defined(VERSION_SH) || defined(VERSION_CN)
-    o->oAction != BULLY_ACT_LAVA_DEATH && o->oAction != BULLY_ACT_DEATH_PLANE_DEATH &&
+        o->oAction != BULLY_ACT_LAVA_DEATH && o->oAction != BULLY_ACT_DEATH_PLANE_DEATH &&
 #endif
-    o->oInteractStatus & INT_STATUS_INTERACTED) {
+        o->oInteractStatus & INT_STATUS_INTERACTED) {
         if (o->oBhvParams2ndByte == BULLY_BP_SIZE_SMALL) {
             cur_obj_play_sound_2(SOUND_OBJ2_BULLY_ATTACKED);
         } else {
@@ -195,7 +195,7 @@ void bully_spawn_coin(void) {
     coin->oForwardVel = 10.0f;
     coin->oVelY = 100.0f;
     coin->oPosY = o->oPosY + 310.0f;
-    coin->oMoveAngleYaw = (f32)(o->oBullyMarioCollisionAngle + 0x8000) + random_float() * 1024.0f;
+    coin->oMoveAngleYaw = (f32) (o->oBullyMarioCollisionAngle + 0x8000) + random_float() * 1024.0f;
 }
 
 void bully_act_level_death(void) {
@@ -212,8 +212,8 @@ void bully_act_level_death(void) {
                 spawn_default_star(130.0f, 1600.0f, -4335.0f);
             } else {
                 spawn_default_star(0, 950.0f, -6800.0f);
-                spawn_object_abs_with_rot(o, 0, MODEL_NONE, bhvLLLTumblingBridge,
-                                          0, 154, -5631, 0, 0, 0);
+                spawn_object_abs_with_rot(o, 0, MODEL_NONE, bhvLLLTumblingBridge, 0, 154, -5631, 0, 0,
+                                          0);
             }
         }
     }

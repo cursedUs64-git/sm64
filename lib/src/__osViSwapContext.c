@@ -27,7 +27,7 @@ void __osViSwapContext() {
         s1->unk20 = viMode->comRegs.xScale;
     }
     if (s1->unk00 & 4) {
-        sp34 = (u32)(viMode->fldRegs[field].yScale & 0xfff);
+        sp34 = (u32) (viMode->fldRegs[field].yScale & 0xfff);
         s1->unk2c = s1->unk24 * sp34;
         s1->unk2c |= viMode->fldRegs[field].yScale & ~0xfff;
     } else {

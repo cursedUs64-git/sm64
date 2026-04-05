@@ -88,8 +88,10 @@ struct SPTask *create_next_audio_frame_task(void) {
     index = gCurrAiBufferIndex;
     currAiBuffer = gAiBuffers[index];
 
-    gAiBufferLengths[index] = ((gAudioBufferParameters.samplesPerFrameTarget - samplesRemainingInAI +
-         EXTRA_BUFFERED_AI_SAMPLES_TARGET) & ~0xf) + SAMPLES_TO_OVERPRODUCE;
+    gAiBufferLengths[index] = ((gAudioBufferParameters.samplesPerFrameTarget - samplesRemainingInAI
+                                + EXTRA_BUFFERED_AI_SAMPLES_TARGET)
+                               & ~0xf)
+                              + SAMPLES_TO_OVERPRODUCE;
     if (gAiBufferLengths[index] < gAudioBufferParameters.minAiBufferLength) {
         gAiBufferLengths[index] = gAudioBufferParameters.minAiBufferLength;
     }
@@ -148,8 +150,7 @@ void eu_process_audio_cmd(struct EuAudioCmd *cmd) {
             if (gSequencePlayers[cmd->u.s.arg1].enabled != FALSE) {
                 if (cmd->u2.as_s32 == 0) {
                     sequence_player_disable(&gSequencePlayers[cmd->u.s.arg1]);
-                }
-                else {
+                } else {
                     seq_player_fade_to_zero_volume(cmd->u.s.arg1, cmd->u2.as_s32);
                 }
             }
@@ -192,7 +193,6 @@ void seq_player_fade_to_zero_volume(s32 player, FadeT fadeOutTime) {
     gSequencePlayers[player].fadeVelocity = -(gSequencePlayers[player].fadeVolume / fadeOutTime);
     gSequencePlayers[player].state = 2;
     gSequencePlayers[player].fadeRemainingFrames = fadeOutTime;
-
 }
 
 void func_8031D690(s32 player, FadeT fadeInTime) {
@@ -222,11 +222,11 @@ void func_802ad6f0(s32 arg0, s32 *arg1) {
 }
 
 void func_802ad728(u32 arg0, f32 arg1) {
-    func_802ad6f0(arg0, (s32*) &arg1);
+    func_802ad6f0(arg0, (s32 *) &arg1);
 }
 
 void func_802ad74c(u32 arg0, u32 arg1) {
-    func_802ad6f0(arg0, (s32*) &arg1);
+    func_802ad6f0(arg0, (s32 *) &arg1);
 }
 
 void func_802ad770(u32 arg0, s8 arg1) {
@@ -235,9 +235,8 @@ void func_802ad770(u32 arg0, s8 arg1) {
 }
 
 void func_802ad7a0(void) {
-    osSendMesg(OSMesgQueues[1],
-            (OSMesg)(u32)((D_EU_80302014 & 0xff) << 8 | (D_EU_80302010 & 0xff)),
-            OS_MESG_NOBLOCK);
+    osSendMesg(OSMesgQueues[1], (OSMesg) (u32) ((D_EU_80302014 & 0xff) << 8 | (D_EU_80302010 & 0xff)),
+               OS_MESG_NOBLOCK);
     D_EU_80302014 = D_EU_80302010;
 }
 
@@ -249,15 +248,15 @@ void func_802ad7ec(u32 arg0) {
     u8 i = (arg0 >> 8) & 0xff;
 
     for (;;) {
-        if (i == end) break;
+        if (i == end)
+            break;
         cmd = &sAudioCmd[i++ & 0xff];
 
         if (cmd->u.s.arg1 < SEQUENCE_PLAYERS) {
             seqPlayer = &gSequencePlayers[cmd->u.s.arg1];
             if ((cmd->u.s.op & 0x80) != 0) {
                 eu_process_audio_cmd(cmd);
-            }
-            else if ((cmd->u.s.op & 0x40) != 0) {
+            } else if ((cmd->u.s.op & 0x40) != 0) {
                 switch (cmd->u.s.op) {
                     case 0x41:
                         seqPlayer->fadeVolumeScale = cmd->u2.as_f32;
@@ -276,8 +275,7 @@ void func_802ad7ec(u32 arg0) {
                         seqPlayer->seqVariationEu[cmd->u.s.arg3] = cmd->u2.as_s8;
                         break;
                 }
-            }
-            else if (seqPlayer->enabled != FALSE && cmd->u.s.arg2 < 0x10) {
+            } else if (seqPlayer->enabled != FALSE && cmd->u.s.arg2 < 0x10) {
                 chan = seqPlayer->channels[cmd->u.s.arg2];
                 if (IS_SEQUENCE_CHANNEL_VALID(chan)) {
                     switch (cmd->u.s.op) {

@@ -12,7 +12,7 @@ struct RotatingPlatformData {
 
 struct RotatingPlatformData sRotatingPlatformData[] = {
     /* ROTATING_PLATFORM_BP_WF  */ { 0, 100, wf_seg7_collision_rotating_platform, 2000 },
-    /* ROTATING_PLATFORM_BP_WDW */ { 0, 150, wdw_seg7_collision_070186B4,         1000 },
+    /* ROTATING_PLATFORM_BP_WDW */ { 0, 150, wdw_seg7_collision_070186B4, 1000 },
 };
 
 void bhv_wf_rotating_wooden_platform_loop(void) {

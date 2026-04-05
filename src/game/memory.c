@@ -49,7 +49,6 @@ extern u8 *sPoolEnd;
 extern struct MainPoolBlock *sPoolListHeadL;
 extern struct MainPoolBlock *sPoolListHeadR;
 
-
 /**
  * Memory pool for small graphical effects that aren't connected to Objects.
  * Used for colored text, paintings, and environmental snow and bubbles.
@@ -63,7 +62,7 @@ FORCE_BSS u8 *sPoolEnd;
 FORCE_BSS struct MainPoolBlock *sPoolListHeadL;
 FORCE_BSS struct MainPoolBlock *sPoolListHeadR;
 
- struct MainPoolState *gMainPoolState = NULL;
+struct MainPoolState *gMainPoolState = NULL;
 
 uintptr_t set_segment_base_addr(s32 segment, void *addr) {
     sSegmentTable[segment] = (uintptr_t) addr & 0x1FFFFFFF;
@@ -248,7 +247,7 @@ u32 main_pool_pop_state(void) {
  * Perform a DMA read from ROM. The transfer is split into 4KB blocks, and this
  * function blocks until completion.
  */
- void dma_read(u8 *dest, u8 *srcStart, u8 *srcEnd) {
+void dma_read(u8 *dest, u8 *srcStart, u8 *srcEnd) {
     u32 size = ALIGN16(srcEnd - srcStart);
 
     osInvalDCache(dest, size);
@@ -269,7 +268,7 @@ u32 main_pool_pop_state(void) {
  * Perform a DMA read from ROM, allocating space in the memory pool to write to.
  * Return the destination address.
  */
- void *dynamic_dma_read(u8 *srcStart, u8 *srcEnd, u32 side) {
+void *dynamic_dma_read(u8 *srcStart, u8 *srcEnd, u32 side) {
     void *dest;
     u32 size = ALIGN16(srcEnd - srcStart);
 
@@ -544,11 +543,10 @@ void *alloc_display_list(u32 size) {
     return ptr;
 }
 
- struct DmaTable *load_dma_table_address(u8 *srcAddr) {
-    struct DmaTable *table = dynamic_dma_read(srcAddr, srcAddr + sizeof(u32),
-                                                             MEMORY_POOL_LEFT);
-    u32 size = table->count * sizeof(struct OffsetSizePair) +
-        sizeof(struct DmaTable) - sizeof(struct OffsetSizePair);
+struct DmaTable *load_dma_table_address(u8 *srcAddr) {
+    struct DmaTable *table = dynamic_dma_read(srcAddr, srcAddr + sizeof(u32), MEMORY_POOL_LEFT);
+    u32 size = table->count * sizeof(struct OffsetSizePair) + sizeof(struct DmaTable)
+               - sizeof(struct OffsetSizePair);
     main_pool_free(table);
 
     table = dynamic_dma_read(srcAddr, srcAddr + size, MEMORY_POOL_LEFT);
@@ -568,7 +566,7 @@ s32 load_patchable_table(struct DmaHandlerList *list, s32 index) {
     s32 ret = FALSE;
     struct DmaTable *table = list->dmaTable;
 
-    if ((u32)index < table->count) {
+    if ((u32) index < table->count) {
         u8 *addr = table->srcAddr + table->anim[index].offset;
         s32 size = table->anim[index].size;
 

@@ -5,7 +5,7 @@ void bhv_flamethrower_flame_loop(void) {
     s32 sp18;
 
     if (o->oTimer == 0) {
-        o->oAnimState = (s32)(random_float() * 10.0f);
+        o->oAnimState = (s32) (random_float() * 10.0f);
         obj_translate_xyz_random(o, 10.0f);
     }
 

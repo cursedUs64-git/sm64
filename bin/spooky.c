@@ -87,4 +87,3 @@ ALIGNED8 const Texture spooky_0900B000[] = {
 ALIGNED8 const Texture spooky_0900B800[] = {
 #include "textures/spooky/bbh_textures.0B800.ia16.inc.c"
 };
-

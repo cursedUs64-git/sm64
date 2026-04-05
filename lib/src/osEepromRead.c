@@ -89,7 +89,7 @@ void __osPackEepReadData(u8 address) {
     u8 *ptr = (u8 *) &__osEepPifRam.ramarray;
     __OSContEepromFormat eepromformat;
     s32 i;
-    
+
     for (i = 0; i < ARRAY_COUNT(__osEepPifRam.ramarray) + 1; i++) {
         __osEepPifRam.ramarray[i] = CONT_CMD_NOP;
     }

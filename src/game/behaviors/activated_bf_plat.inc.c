@@ -17,7 +17,7 @@
  * move off of it. To do this, they changed it to a bhvPlatformOnTrack, but
  * forgot to remove its entry in this table.
  */
- Collision const *sActivatedBackAndForthPlatformCollisionModels[] = {
+Collision const *sActivatedBackAndForthPlatformCollisionModels[] = {
     /* ACTIVATED_BF_PLAT_TYPE_BITS_ARROW_PLAT */ bits_seg7_collision_0701AD54,
     /* ACTIVATED_BF_PLAT_TYPE_BITFS_MESH_PLAT */ bitfs_seg7_collision_070157E0,
     /* ACTIVATED_BF_PLAT_TYPE_BITFS_ELEVATOR  */ bitfs_seg7_collision_07015124
@@ -28,7 +28,7 @@
  */
 void bhv_activated_back_and_forth_platform_init(void) {
     // Equivalent to the first behavior param byte & 3 (last 2 bits of the byte).
-    s32 platformType = ((u16)(o->oBhvParams >> 16) & ACTIVATED_BF_PLAT_BP_MASK_TYPE) >> 8;
+    s32 platformType = ((u16) (o->oBhvParams >> 16) & ACTIVATED_BF_PLAT_BP_MASK_TYPE) >> 8;
 
     // The BitS arrow platform should flip 180º (0x8000 angle units), but
     // there is no reason for the other platforms to flip.
@@ -45,7 +45,7 @@ void bhv_activated_back_and_forth_platform_init(void) {
     // Equivalent to 50 * (oBhvParams2ndByte & 0x7F), i.e. 50 * (oBhvParams2ndByte % 128).
     // The maximum possible value of this is 50 * 127 = 6350.
     // It's 50 * 97 = 4850 in BitS and 50 * 31 = 1550 in BitFS.
-    o->oActivatedBackAndForthPlatformMaxOffset = 50.0f * ((u16)(o->oBhvParams >> 16) & 0x007F);
+    o->oActivatedBackAndForthPlatformMaxOffset = 50.0f * ((u16) (o->oBhvParams >> 16) & 0x007F);
 
     if (platformType == ACTIVATED_BF_PLAT_TYPE_BITFS_ELEVATOR) {
         o->oActivatedBackAndForthPlatformMaxOffset -= 12.0f;
@@ -53,7 +53,7 @@ void bhv_activated_back_and_forth_platform_init(void) {
 
     // Truthy/falsy value that determines the direction of movement.
     // Equivalent to oBhvParams2ndByte & 0x80, i.e. the most significant bit of oBhvParams2ndByte.
-    o->oActivatedBackAndForthPlatformVertical = (u16)(o->oBhvParams >> 16) & 0x0080;
+    o->oActivatedBackAndForthPlatformVertical = (u16) (o->oBhvParams >> 16) & 0x0080;
 
     o->oActivatedBackAndForthPlatformStartYaw = o->oFaceAngleYaw;
 }

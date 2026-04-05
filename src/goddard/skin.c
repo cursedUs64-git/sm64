@@ -19,17 +19,19 @@
 // bss
 struct ObjNet *gGdSkinNet; // @ 801BAAF0
 
- s32 D_801BAAF4;
- s32 sNetCount; // @ 801BAAF8
+s32 D_801BAAF4;
+s32 sNetCount; // @ 801BAAF8
 
 /* 2406E0 -> 240894 */
 void compute_net_bounding_box(struct ObjNet *net) {
     reset_bounding_box();
     if (net->unk1D0 != NULL) {
-        apply_to_obj_types_in_group(OBJ_TYPE_ALL, (applyproc_t) add_obj_pos_to_bounding_box, net->unk1D0);
+        apply_to_obj_types_in_group(OBJ_TYPE_ALL, (applyproc_t) add_obj_pos_to_bounding_box,
+                                    net->unk1D0);
     }
     if (net->unk1C8 != NULL) {
-        apply_to_obj_types_in_group(OBJ_TYPE_ALL, (applyproc_t) add_obj_pos_to_bounding_box, net->unk1C8);
+        apply_to_obj_types_in_group(OBJ_TYPE_ALL, (applyproc_t) add_obj_pos_to_bounding_box,
+                                    net->unk1C8);
     }
     gSomeBoundingBox.minX *= net->scale.x;
     gSomeBoundingBox.maxX *= net->scale.x;
@@ -66,7 +68,7 @@ void reset_net(struct ObjNet *net) {
     D_801BAAF4 = 0;
     gd_set_identity_mat4(&net->mat168);
     gd_set_identity_mat4(&net->matE8);
-    gd_rot_mat_about_vec(&net->matE8, &net->unk68); // set rot mtx to initial rotation?
+    gd_rot_mat_about_vec(&net->matE8, &net->unk68);            // set rot mtx to initial rotation?
     gd_add_vec3f_to_mat4f_offset(&net->matE8, &net->worldPos); // set to initial position?
     gd_copy_mat4f(&net->matE8, &net->mat128);
 
@@ -305,14 +307,14 @@ void convert_gd_verts_to_Vn(struct ObjGroup *grp) {
     UNUSED u8 filler2[4];
     register struct VtxLink *vtxlink; // a1
 #ifndef GBI_FLOATS
-    register s16 *vnPos;              // a2
+    register s16 *vnPos; // a2
 #endif
-    register s16 x;                   // a3
-    register s16 y;                   // t0
-    register s16 z;                   // t1
-    register struct ObjVertex *vtx;   // t2
-    register struct ListNode *link;      // t3
-    struct GdObj *obj;                // sp4
+    register s16 x;                 // a3
+    register s16 y;                 // t0
+    register s16 z;                 // t1
+    register struct ObjVertex *vtx; // t2
+    register struct ListNode *link; // t3
+    struct GdObj *obj;              // sp4
 
     for (link = grp->firstMember; link != NULL; link = link->next) {
         obj = link->obj;
@@ -321,9 +323,9 @@ void convert_gd_verts_to_Vn(struct ObjGroup *grp) {
         y = (s16) vtx->pos.y;
         z = (s16) vtx->pos.z;
 
-        nx = (u8)(vtx->normal.x * 255.0f);
-        ny = (u8)(vtx->normal.y * 255.0f);
-        nz = (u8)(vtx->normal.z * 255.0f);
+        nx = (u8) (vtx->normal.x * 255.0f);
+        ny = (u8) (vtx->normal.y * 255.0f);
+        nz = (u8) (vtx->normal.z * 255.0f);
 
         for (vtxlink = vtx->gbiVerts; vtxlink != NULL; vtxlink = vtxlink->prev) {
 #ifndef GBI_FLOATS
@@ -350,14 +352,14 @@ void convert_gd_verts_to_Vtx(struct ObjGroup *grp) {
     UNUSED u8 filler[24];
     register struct VtxLink *vtxlink; // a1
 #ifndef GBI_FLOATS
-    register s16 *vtxcoords;          // a2
+    register s16 *vtxcoords; // a2
 #endif
-    register s16 x;                   // a3
-    register s16 y;                   // t0
-    register s16 z;                   // t1
-    register struct ObjVertex *vtx;   // t2
-    register struct ListNode *link;      // t3
-    struct GdObj *obj;                // sp4
+    register s16 x;                 // a3
+    register s16 y;                 // t0
+    register s16 z;                 // t1
+    register struct ObjVertex *vtx; // t2
+    register struct ListNode *link; // t3
+    struct GdObj *obj;              // sp4
 
     for (link = grp->firstMember; link != NULL; link = link->next) {
         obj = link->obj;
@@ -399,10 +401,10 @@ void convert_net_verts(struct ObjNet *net) {
 }
 
 /* 241CA0 -> 241D6C */
- void move_joints_in_net(struct ObjNet *net) {
-    struct ObjGroup *grp;        // 2c
+void move_joints_in_net(struct ObjNet *net) {
+    struct ObjGroup *grp;           // 2c
     register struct ListNode *link; // s0
-    struct GdObj *obj;           // 24
+    struct GdObj *obj;              // 24
 
     if ((grp = net->unk1C8) != NULL) {
         for (link = grp->firstMember; link != NULL; link = link->next) {

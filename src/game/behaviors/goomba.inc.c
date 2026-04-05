@@ -8,7 +8,7 @@
 /**
  * Hitbox for goomba.
  */
- struct ObjectHitbox sGoombaHitbox = {
+struct ObjectHitbox sGoombaHitbox = {
     /* interactType:      */ INTERACT_BOUNCE_TOP,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 1,
@@ -33,7 +33,7 @@ struct GoombaProperties {
 /**
  * Properties for regular, huge, and tiny goombas.
  */
- struct GoombaProperties sGoombaProperties[] = {
+struct GoombaProperties sGoombaProperties[] = {
     { 1.5f, SOUND_OBJ_ENEMY_DEATH_HIGH, 4000, 1 },
     { 3.5f, SOUND_OBJ_ENEMY_DEATH_LOW, 4000, 2 },
     { 0.5f, SOUND_OBJ_ENEMY_DEATH_HIGH, 1500, 0 },
@@ -42,7 +42,7 @@ struct GoombaProperties {
 /**
  * Attack handlers for goombas.
  */
- u8 sGoombaAttackHandlers[][6] = {
+u8 sGoombaAttackHandlers[][6] = {
     // regular and tiny
     {
         /* ATTACK_PUNCH:                 */ ATTACK_HANDLER_KNOCKBACK,
@@ -89,7 +89,8 @@ void bhv_goomba_triplet_spawner_update(void) {
                     s16 dz = 500.0f * sins(angle);
 
                     spawn_object_relative((o->oBhvParams2ndByte & GOOMBA_BP_SIZE_MASK)
-                                           | (goombaFlag >> 6), dx, 0, dz, o, MODEL_GOOMBA, bhvGoomba);
+                                              | (goombaFlag >> 6),
+                                          dx, 0, dz, o, MODEL_GOOMBA, bhvGoomba);
                 }
             }
 
@@ -122,7 +123,7 @@ void bhv_goomba_init(void) {
 /**
  * Enter the jump action and set initial y velocity.
  */
- void goomba_begin_jump(void) {
+void goomba_begin_jump(void) {
     cur_obj_play_sound_2(SOUND_OBJ_GOOMBA_ALERT);
 
     o->oAction = GOOMBA_ACT_JUMP;
@@ -135,13 +136,13 @@ void bhv_goomba_init(void) {
  * this goomba died. This prevents it from spawning again when mario leaves and
  * comes back.
  */
- void mark_goomba_as_dead(void) {
+void mark_goomba_as_dead(void) {
     if (o->parentObj != o) {
-        set_object_respawn_info_bits(
-            o->parentObj, (o->oBhvParams2ndByte & GOOMBA_BP_TRIPLET_RESPAWN_FLAG_MASK) >> 2);
+        set_object_respawn_info_bits(o->parentObj,
+                                     (o->oBhvParams2ndByte & GOOMBA_BP_TRIPLET_RESPAWN_FLAG_MASK) >> 2);
 
-        o->parentObj->oBhvParams =
-            o->parentObj->oBhvParams | (o->oBhvParams2ndByte & GOOMBA_BP_TRIPLET_RESPAWN_FLAG_MASK) << 6;
+        o->parentObj->oBhvParams = o->parentObj->oBhvParams
+                                   | (o->oBhvParams2ndByte & GOOMBA_BP_TRIPLET_RESPAWN_FLAG_MASK) << 6;
     }
 }
 
@@ -149,7 +150,7 @@ void bhv_goomba_init(void) {
  * Walk around randomly occasionally jumping. If mario comes within range,
  * chase him.
  */
- void goomba_act_walk(void) {
+void goomba_act_walk(void) {
     treat_far_home_as_mario(1000.0f);
 
     obj_forward_vel_approach(o->oGoombaRelativeSpeed * o->oGoombaScale, 0.4f);
@@ -215,7 +216,7 @@ void bhv_goomba_init(void) {
  * This action occurs when either the goomba attacks mario normally, or mario
  * attacks a huge goomba with an attack that doesn't kill it.
  */
- void goomba_act_attacked_mario(void) {
+void goomba_act_attacked_mario(void) {
     if (o->oGoombaSize == GOOMBA_SIZE_TINY) {
         mark_goomba_as_dead();
         o->oNumLootCoins = 0;
@@ -232,7 +233,7 @@ void bhv_goomba_init(void) {
 /**
  * Move until landing, and rotate toward target yaw.
  */
- void goomba_act_jump(void) {
+void goomba_act_jump(void) {
     obj_resolve_object_collisions(NULL);
 
     //! If we move outside the goomba's drawing radius the frame it enters the

@@ -37,8 +37,7 @@ void __osDevMgrMain(void *args) {
     while (TRUE) {
         osRecvMesg(sp34->cmdQueue, (OSMesg) &mb, OS_MESG_BLOCK);
         if (mb->piHandle != NULL && mb->piHandle->type == 2
-            && (mb->piHandle->transferInfo.cmdType == 0
-                || mb->piHandle->transferInfo.cmdType == 1)) {
+            && (mb->piHandle->transferInfo.cmdType == 0 || mb->piHandle->transferInfo.cmdType == 1)) {
             sp24 = &mb->piHandle->transferInfo;
             sp28 = &sp24->block[sp24->blockNum];
             sp24->sectorNum = -1;
@@ -53,7 +52,7 @@ void __osDevMgrMain(void *args) {
             osRecvMesg(sp34->accessQueue, &dummy, OS_MESG_BLOCK);
             __osResetGlobalIntMask(OS_IM_PI);
             osEPiRawWriteIo(mb->piHandle, 0x05000510, (sp24->bmCtlShadow | 0x80000000));
-l1:
+        l1:
             osRecvMesg(sp34->eventQueue, &em, OS_MESG_BLOCK);
 #if defined(VERSION_SH) || defined(VERSION_CN)
             sp24 = &mb->piHandle->transferInfo;
@@ -111,16 +110,15 @@ l1:
                     if (__osBbIsBb == 1 && ((uintptr_t) mb->dramAddr & 0x7f) >= 0x60) {
                         loadedToTempBuffer = TRUE;
                         ret = sp34->edma_func(mb->piHandle, OS_READ, mb->devAddr, (void *) 0x80600000,
-                                               mb->size);
+                                              mb->size);
                     } else
 #endif
-                        ret = sp34->edma_func(mb->piHandle, OS_READ, mb->devAddr, mb->dramAddr,
-                                               mb->size);
+                        ret =
+                            sp34->edma_func(mb->piHandle, OS_READ, mb->devAddr, mb->dramAddr, mb->size);
                     break;
                 case 16:
                     osRecvMesg(sp34->accessQueue, &dummy, OS_MESG_BLOCK);
-                    ret = sp34->edma_func(mb->piHandle, OS_WRITE, mb->devAddr, mb->dramAddr,
-                                           mb->size);
+                    ret = sp34->edma_func(mb->piHandle, OS_WRITE, mb->devAddr, mb->dramAddr, mb->size);
                     break;
                 case 10:
                     osSendMesg(mb->hdr.retQueue, mb, OS_MESG_NOBLOCK);
@@ -144,7 +142,7 @@ l1:
 #ifdef VERSION_EU
                 sp30 =
 #endif
-                osSendMesg(mb->hdr.retQueue, mb, OS_MESG_NOBLOCK);
+                    osSendMesg(mb->hdr.retQueue, mb, OS_MESG_NOBLOCK);
                 osSendMesg(sp34->accessQueue, NULL, OS_MESG_NOBLOCK);
             }
         }

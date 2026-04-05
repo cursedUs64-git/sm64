@@ -14,11 +14,11 @@
 
 // data
 s32 gGdMoveScene = TRUE; // @ 801A8050
-UNUSED  s32 sUnref801A8054 = TRUE;
+UNUSED s32 sUnref801A8054 = TRUE;
 f32 D_801A8058 = -600.0f;
 s32 gGdUseVtxNormal = TRUE; // @ 801A805C; instead of face normals
-UNUSED  s32 sUnrefScnWidth = 320;
-UNUSED  s32 sUnrefScnHeight = 240;
+UNUSED s32 sUnrefScnWidth = 320;
+UNUSED s32 sUnrefScnHeight = 240;
 
 // bss
 struct GdControl gGdCtrl;     // @ 801B9920; processed controller info
@@ -42,7 +42,7 @@ u32 __main__(void) {
     gGdCtrl.prevFrame = &gGdCtrlPrev;
 
     imin("main - make_scene");
-    make_scene();  // make_scene does nothing, though
+    make_scene(); // make_scene does nothing, though
     imout();
 
     gd_init_controllers();

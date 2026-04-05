@@ -32,7 +32,7 @@ void osSpTaskLoad(OSTask *task) {
         task->t.flags &= ~M_TASK_FLAG0;
 #if defined(VERSION_SH) || defined(VERSION_CN)
         if (physicalTask->t.flags & M_TASK_FLAG2) {
-            physicalTask->t.ucode = (u64 *) IO_READ((uintptr_t)task->t.yield_data_ptr + 0xBFC);
+            physicalTask->t.ucode = (u64 *) IO_READ((uintptr_t) task->t.yield_data_ptr + 0xBFC);
         }
 #endif
     }

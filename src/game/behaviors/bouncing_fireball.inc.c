@@ -24,7 +24,7 @@ void bhv_bouncing_fireball_flame_loop(void) {
             }
 
             if (o->oMoveFlags
-                & (OBJ_MOVE_ON_GROUND | OBJ_MOVE_AT_WATER_SURFACE | OBJ_MOVE_UNDERWATER_ON_GROUND)
+                    & (OBJ_MOVE_ON_GROUND | OBJ_MOVE_AT_WATER_SURFACE | OBJ_MOVE_UNDERWATER_ON_GROUND)
                 && o->oTimer > 100) {
                 obj_mark_for_deletion(o);
             }

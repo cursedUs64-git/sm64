@@ -46,8 +46,8 @@ size_t strlen(const char *str) {
 
 char *strchr(const char *str, s32 ch) {
     u8 c = ch;
-    while (*(u8 *)str != c) {
-        if (*(u8 *)str == 0) {
+    while (*(u8 *) str != c) {
+        if (*(u8 *) str == 0) {
             return NULL;
         }
         str++;

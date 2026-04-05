@@ -56,7 +56,8 @@ void note_set_vel_pan_reverb(struct Note *note, f32 velocity, u8 pan, u8 reverbV
         }
 
         sub->headsetPanLeft = gHeadsetPanQuantization[smallPanIndex];
-        sub->headsetPanRight = gHeadsetPanQuantization[ARRAY_COUNT(gHeadsetPanQuantization) - 1 - smallPanIndex];
+        sub->headsetPanRight =
+            gHeadsetPanQuantization[ARRAY_COUNT(gHeadsetPanQuantization) - 1 - smallPanIndex];
         sub->stereoStrongRight = FALSE;
         sub->stereoStrongLeft = FALSE;
         sub->usesHeadsetPanEffects = TRUE;
@@ -126,7 +127,7 @@ void note_set_vel_pan_reverb(struct Note *note, f32 velocity, u8 pan, u8 reverbV
         velocity = 1.0f;
     }
 
-    sub->targetVolLeft =  ((s32) (velocity * volLeft * 4095.999f));
+    sub->targetVolLeft = ((s32) (velocity * volLeft * 4095.999f));
     sub->targetVolRight = ((s32) (velocity * volRight * 4095.999f));
     sub->synthesisVolume = reverbInfo->synthesisVolume;
     sub->filter = reverbInfo->filter;
@@ -140,7 +141,7 @@ void note_set_vel_pan_reverb(struct Note *note, f32 velocity, u8 pan, u8 reverbV
         velocity = 32767.f;
     }
 
-    sub->targetVolLeft =  ((s32) (velocity * volLeft) & 0xffff) >> 5;
+    sub->targetVolLeft = ((s32) (velocity * volLeft) & 0xffff) >> 5;
     sub->targetVolRight = ((s32) (velocity * volRight) & 0xffff) >> 5;
 #endif
 
@@ -221,8 +222,8 @@ struct Instrument *get_instrument_inner(s32 bankId, s32 instId) {
     }
 
     if (instId >= gCtlEntries[bankId].numInstruments) {
-        stubbed_printf("Audio: voiceman: progNo. overflow %d,%d\n",
-                instId, gCtlEntries[bankId].numInstruments);
+        stubbed_printf("Audio: voiceman: progNo. overflow %d,%d\n", instId,
+                       gCtlEntries[bankId].numInstruments);
         gAudioErrorFlags = ((bankId << 8) + instId) + 0x3000000;
         return NULL;
     }
@@ -236,11 +237,11 @@ struct Instrument *get_instrument_inner(s32 bankId, s32 instId) {
 
 #ifdef VERSION_EU
     if (((uintptr_t) gBankLoadedPool.persistent.pool.start <= (uintptr_t) inst
-         && (uintptr_t) inst <= (uintptr_t)(gBankLoadedPool.persistent.pool.start
-                    + gBankLoadedPool.persistent.pool.size))
+         && (uintptr_t) inst <= (uintptr_t) (gBankLoadedPool.persistent.pool.start
+                                             + gBankLoadedPool.persistent.pool.size))
         || ((uintptr_t) gBankLoadedPool.temporary.pool.start <= (uintptr_t) inst
-            && (uintptr_t) inst <= (uintptr_t)(gBankLoadedPool.temporary.pool.start
-                                   + gBankLoadedPool.temporary.pool.size))) {
+            && (uintptr_t) inst <= (uintptr_t) (gBankLoadedPool.temporary.pool.start
+                                                + gBankLoadedPool.temporary.pool.size))) {
         return inst;
     }
 
@@ -264,8 +265,8 @@ struct Drum *get_drum(s32 bankId, s32 drumId) {
 #endif
 
     if (drumId >= gCtlEntries[bankId].numDrums) {
-        stubbed_printf("Audio: voiceman: Percussion Overflow %d,%d\n",
-                drumId, gCtlEntries[bankId].numDrums);
+        stubbed_printf("Audio: voiceman: Percussion Overflow %d,%d\n", drumId,
+                       gCtlEntries[bankId].numDrums);
         gAudioErrorFlags = ((bankId << 8) + drumId) + 0x4000000;
         return NULL;
     }
@@ -404,17 +405,17 @@ void process_notes(void) {
                 playbackState->priority = 1;
                 playbackState->unkSH34 = 2;
                 goto d;
-            } else if (!playbackState->parentLayer->enabled && playbackState->unkSH34 == 0 &&
-                       playbackState->priority >= 1) {
+            } else if (!playbackState->parentLayer->enabled && playbackState->unkSH34 == 0
+                       && playbackState->priority >= 1) {
                 // do nothing
             } else if (playbackState->parentLayer->seqChannel->seqPlayer == NULL) {
                 sequence_channel_disable(playbackState->parentLayer->seqChannel);
                 playbackState->priority = 1;
                 playbackState->unkSH34 = 1;
                 continue;
-            } else if (playbackState->parentLayer->seqChannel->seqPlayer->muted &&
-                       (playbackState->parentLayer->seqChannel->muteBehavior
-                       & (MUTE_BEHAVIOR_STOP_NOTES))) {
+            } else if (playbackState->parentLayer->seqChannel->seqPlayer->muted
+                       && (playbackState->parentLayer->seqChannel->muteBehavior
+                           & (MUTE_BEHAVIOR_STOP_NOTES))) {
                 // do nothing
             } else {
                 goto d;
@@ -438,13 +439,13 @@ void process_notes(void) {
                 continue;
             } else if (playbackState->parentLayer->seqChannel->seqPlayer->muted) {
                 if ((playbackState->parentLayer->seqChannel->muteBehavior
-                    & (MUTE_BEHAVIOR_STOP_SCRIPT | MUTE_BEHAVIOR_STOP_NOTES))) {
+                     & (MUTE_BEHAVIOR_STOP_SCRIPT | MUTE_BEHAVIOR_STOP_NOTES))) {
                     goto c;
                 }
             }
             goto d;
             if (1) {
-                c:
+            c:
                 seq_channel_layer_note_release(playbackState->parentLayer);
                 audio_list_remove(&note->listItem);
                 audio_list_push_front(&note->listItem.pool->decaying, &note->listItem);
@@ -454,10 +455,11 @@ void process_notes(void) {
             continue;
         }
 #endif
-        d:
+    d:
         if (playbackState->priority != NOTE_PRIORITY_DISABLED) {
 #if defined(VERSION_SH) || defined(VERSION_CN)
-            if (1) {}
+            if (1) {
+            }
 #endif
             noteSubEu = &note->noteSubEu;
 #if defined(VERSION_SH) || defined(VERSION_CN)
@@ -530,7 +532,8 @@ void process_notes(void) {
                 }
             }
 
-            reverbInfo.freqScale *= playbackState->vibratoFreqScale * playbackState->portamentoFreqScale;
+            reverbInfo.freqScale *=
+                playbackState->vibratoFreqScale * playbackState->portamentoFreqScale;
             reverbInfo.freqScale *= gAudioBufferParameters.resampleRate;
             reverbInfo.velocity *= scale;
             note_set_vel_pan_reverb(note, &reverbInfo);
@@ -558,7 +561,7 @@ void process_notes(void) {
             note_set_vel_pan_reverb(note, velocity, pan, reverbVol);
 #endif
             noteSubEu->bookOffset = bookOffset;
-            skip:;
+        skip:;
         }
 #else
         if (note->priority != NOTE_PRIORITY_DISABLED) {
@@ -725,8 +728,8 @@ void seq_channel_layer_decay_release_internal(struct SequenceChannelLayer *seqLa
     if (note->parentLayer != seqLayer) {
 
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
-        if (note->parentLayer == NO_LAYER && note->wantedParentLayer == NO_LAYER &&
-                note->prevParentLayer == seqLayer && target != ADSR_STATE_DECAY) {
+        if (note->parentLayer == NO_LAYER && note->wantedParentLayer == NO_LAYER
+            && note->prevParentLayer == seqLayer && target != ADSR_STATE_DECAY) {
             // Just guessing that this printf goes here... it's hard to parse.
             eu_stubbed_printf_0("Slow Release Batting\n");
             note->adsr.fadeOutVel = gAudioBufferParameters.updatesPerFrameInv;
@@ -751,7 +754,8 @@ void seq_channel_layer_decay_release_internal(struct SequenceChannelLayer *seqLa
 #if defined(VERSION_SH) || defined(VERSION_CN)
             attributes->synthesisVolume = seqLayer->seqChannel->synthesisVolume;
             attributes->filter = seqLayer->seqChannel->filter;
-            if (seqLayer->seqChannel->seqPlayer->muted && (seqLayer->seqChannel->muteBehavior & 8) != 0) {
+            if (seqLayer->seqChannel->seqPlayer->muted
+                && (seqLayer->seqChannel->muteBehavior & 8) != 0) {
                 note->noteSubEu.finished = TRUE;
             }
             note->priority = seqLayer->seqChannel->unkSH06;
@@ -783,11 +787,14 @@ void seq_channel_layer_decay_release_internal(struct SequenceChannelLayer *seqLa
             note->adsr.action |= ADSR_ACTION_DECAY;
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
             if (seqLayer->adsr.releaseRate == 0) {
-                note->adsr.fadeOutVel = seqLayer->seqChannel->adsr.releaseRate * gAudioBufferParameters.unkUpdatesPerFrameScaled;
+                note->adsr.fadeOutVel = seqLayer->seqChannel->adsr.releaseRate
+                                        * gAudioBufferParameters.unkUpdatesPerFrameScaled;
             } else {
-                note->adsr.fadeOutVel = seqLayer->adsr.releaseRate * gAudioBufferParameters.unkUpdatesPerFrameScaled;
+                note->adsr.fadeOutVel =
+                    seqLayer->adsr.releaseRate * gAudioBufferParameters.unkUpdatesPerFrameScaled;
             }
-            note->adsr.sustain = (FLOAT_CAST(seqLayer->seqChannel->adsr.sustain) * note->adsr.current) / 256.0f;
+            note->adsr.sustain =
+                (FLOAT_CAST(seqLayer->seqChannel->adsr.sustain) * note->adsr.current) / 256.0f;
 #else
             if (seqLayer->adsr.releaseRate == 0) {
                 note->adsr.fadeOutVel = seqLayer->seqChannel->adsr.releaseRate * 24;
@@ -920,9 +927,13 @@ void init_synthetic_wave(struct Note *note, struct SequenceChannelLayer *seqLaye
     sampleCountIndex = note->sampleCountIndex;
     waveSampleCountIndex = build_synthetic_wave(note, seqLayer, waveId);
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
-    note->synthesisState.samplePosInt = note->synthesisState.samplePosInt * euUnknownData_8030194c[waveSampleCountIndex] / euUnknownData_8030194c[sampleCountIndex];
+    note->synthesisState.samplePosInt = note->synthesisState.samplePosInt
+                                        * euUnknownData_8030194c[waveSampleCountIndex]
+                                        / euUnknownData_8030194c[sampleCountIndex];
 #else // Not a real change. Just temporary so I can remove this variable.
-    note->synthesisState.samplePosInt = note->synthesisState.samplePosInt * gDefaultShortNoteVelocityTable[waveSampleCountIndex] / gDefaultShortNoteVelocityTable[sampleCountIndex];
+    note->synthesisState.samplePosInt = note->synthesisState.samplePosInt
+                                        * gDefaultShortNoteVelocityTable[waveSampleCountIndex]
+                                        / gDefaultShortNoteVelocityTable[sampleCountIndex];
 #endif
 #else
     s32 sampleCount = note->sampleCount;
@@ -1294,9 +1305,9 @@ struct Note *alloc_note(struct SequenceChannelLayer *seqLayer) {
         ret = seqLayer->note;
         if (ret != NULL && ret->prevParentLayer == seqLayer
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
-                && ret->wantedParentLayer == NO_LAYER
+            && ret->wantedParentLayer == NO_LAYER
 #endif
-                ) {
+        ) {
             note_release_and_take_ownership(ret, seqLayer);
             audio_list_remove(&ret->listItem);
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
@@ -1462,9 +1473,11 @@ void note_init_all(void) {
         note->portamento.cur = 0.0f;
         note->portamento.speed = 0.0f;
 #if defined(VERSION_SH) || defined(VERSION_CN)
-        note->synthesisState.synthesisBuffers = sound_alloc_uninitialized(&gNotesAndBuffersPool, sizeof(struct NoteSynthesisBuffers));
+        note->synthesisState.synthesisBuffers =
+            sound_alloc_uninitialized(&gNotesAndBuffersPool, sizeof(struct NoteSynthesisBuffers));
 #elif defined(VERSION_EU)
-        note->synthesisState.synthesisBuffers = soundAlloc(&gNotesAndBuffersPool, sizeof(struct NoteSynthesisBuffers));
+        note->synthesisState.synthesisBuffers =
+            soundAlloc(&gNotesAndBuffersPool, sizeof(struct NoteSynthesisBuffers));
 #else
         note->synthesisBuffers = soundAlloc(&gNotesAndBuffersPool, sizeof(struct NoteSynthesisBuffers));
 #endif

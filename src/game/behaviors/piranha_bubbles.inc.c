@@ -71,9 +71,11 @@ void bhv_piranha_plant_bubble_loop(void) {
                     } else if (animFrame > beginGrowingFrame) {
                         // Grow from 1.0f to 5.0f.
                         scale = sins((
-                                    // they should have used beginGrowingFrame here:
-                                    (animFrame - (lastFrame / 2.0f + 4.0f)) / beginGrowingFrame
-                                    ) * 0x4000) * 4.0f + 1.0;
+                                         // they should have used beginGrowingFrame here:
+                                         (animFrame - (lastFrame / 2.0f + 4.0f)) / beginGrowingFrame)
+                                     * 0x4000)
+                                    * 4.0f
+                                + 1.0;
                     } else {
                         // Stay at 1.0f for a few frames.
                         scale = 1.0f;

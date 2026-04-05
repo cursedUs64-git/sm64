@@ -17,7 +17,8 @@ void sequence_channel_process_sound(struct SequenceChannel *seqChannel, s32 reca
     s32 i;
 
     if (seqChannel->changes.as_bitfields.volume || recalculateVolume) {
-        channelVolume = seqChannel->volume * seqChannel->volumeScale * seqChannel->seqPlayer->appliedFadeVolume;
+        channelVolume =
+            seqChannel->volume * seqChannel->volumeScale * seqChannel->seqPlayer->appliedFadeVolume;
         if (seqChannel->seqPlayer->muted && (seqChannel->muteBehavior & MUTE_BEHAVIOR_SOFTEN) != 0) {
             channelVolume = seqChannel->seqPlayer->muteVolumeScale * channelVolume;
         }
@@ -38,7 +39,8 @@ void sequence_channel_process_sound(struct SequenceChannel *seqChannel, s32 reca
             if (layer->notePropertiesNeedInit) {
                 layer->noteFreqScale = layer->freqScale * seqChannel->freqScale;
                 layer->noteVelocity = layer->velocitySquare * seqChannel->appliedVolume;
-                layer->notePan = (seqChannel->pan + layer->pan * (0x80 - seqChannel->panChannelWeight)) >> 7;
+                layer->notePan =
+                    (seqChannel->pan + layer->pan * (0x80 - seqChannel->panChannelWeight)) >> 7;
                 layer->notePropertiesNeedInit = FALSE;
             } else {
                 if (seqChannel->changes.as_bitfields.freqScale) {
@@ -48,7 +50,8 @@ void sequence_channel_process_sound(struct SequenceChannel *seqChannel, s32 reca
                     layer->noteVelocity = layer->velocitySquare * seqChannel->appliedVolume;
                 }
                 if (seqChannel->changes.as_bitfields.pan) {
-                    layer->notePan = (seqChannel->pan + layer->pan * (0x80 - seqChannel->panChannelWeight)) >> 7;
+                    layer->notePan =
+                        (seqChannel->pan + layer->pan * (0x80 - seqChannel->panChannelWeight)) >> 7;
                 }
             }
         }
@@ -221,8 +224,8 @@ f32 get_vibrato_freq_scale(struct VibratoState *vib) {
         if (vib->extentChangeTimer == 1) {
             vib->extent = (s32) vib->seqChannel->vibratoExtentTarget;
         } else {
-            vib->extent +=
-                ((s32) vib->seqChannel->vibratoExtentTarget - vib->extent) / (s32) vib->extentChangeTimer;
+            vib->extent += ((s32) vib->seqChannel->vibratoExtentTarget - vib->extent)
+                           / (s32) vib->extentChangeTimer;
         }
 
         vib->extentChangeTimer--;
@@ -236,7 +239,8 @@ f32 get_vibrato_freq_scale(struct VibratoState *vib) {
         if (vib->rateChangeTimer == 1) {
             vib->rate = (s32) vib->seqChannel->vibratoRateTarget;
         } else {
-            vib->rate += ((s32) vib->seqChannel->vibratoRateTarget - vib->rate) / (s32) vib->rateChangeTimer;
+            vib->rate +=
+                ((s32) vib->seqChannel->vibratoRateTarget - vib->rate) / (s32) vib->rateChangeTimer;
         }
 
         vib->rateChangeTimer--;
@@ -397,7 +401,7 @@ s32 adsr_update(struct AdsrState *adsr) {
             // fallthrough
 
 #if defined(VERSION_SH) || defined(VERSION_CN)
-            restart:
+        restart:
 #endif
         case ADSR_STATE_LOOP:
             adsr->delay = BSWAP16(adsr->envelope[adsr->envIndex].delay);
@@ -424,9 +428,9 @@ s32 adsr_update(struct AdsrState *adsr) {
                     if (adsr->delay >= 4) {
                         adsr->delay = adsr->delay * gAudioBufferParameters.updatesPerFrame
 #if defined(VERSION_SH) || defined(VERSION_CN)
-                        / gAudioBufferParameters.presetUnk4
+                                      / gAudioBufferParameters.presetUnk4
 #endif
-                        / 4;
+                                      / 4;
                     }
 #if defined(VERSION_SH) || defined(VERSION_CN)
                     if (adsr->delay == 0) {
@@ -497,10 +501,10 @@ s32 adsr_update(struct AdsrState *adsr) {
                 adsr->state = ADSR_STATE_DISABLED;
             }
 #else
-            if (adsr->current < 100) {
-                adsr->current = 0;
-                adsr->state = ADSR_STATE_DISABLED;
-            }
+    if (adsr->current < 100) {
+        adsr->current = 0;
+        adsr->state = ADSR_STATE_DISABLED;
+    }
 #endif
             break;
         }

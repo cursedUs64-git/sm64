@@ -1,6 +1,6 @@
 // moneybag.inc.c
 
- struct ObjectHitbox sMoneybagHitbox = {
+struct ObjectHitbox sMoneybagHitbox = {
     /* interactType:      */ INTERACT_BOUNCE_TOP,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 2,
@@ -12,7 +12,7 @@
     /* hurtboxHeight:     */ 50,
 };
 
- struct ObjectHitbox sMoneybagHiddenHitbox = {
+struct ObjectHitbox sMoneybagHiddenHitbox = {
     /* interactType:      */ INTERACT_DAMAGE,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 2,
@@ -111,7 +111,7 @@ void moneybag_act_move_around(void) {
 
     if (((collisionFlags & OBJ_COL_FLAGS_LANDED) == OBJ_COL_FLAGS_LANDED)
         && (o->oMoneybagJumpState == MONEYBAG_JUMP_LANDING)) {
-        if ((s32)(random_float() * 6.0f) == 1) {
+        if ((s32) (random_float() * 6.0f) == 1) {
             o->oMoneybagJumpState = MONEYBAG_JUMP_WALK_AROUND;
             o->oTimer = 0;
         } else {

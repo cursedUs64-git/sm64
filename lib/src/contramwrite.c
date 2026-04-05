@@ -14,7 +14,7 @@ s32 __osContRamWrite(OSMesgQueue *mq, s32 channel, u16 address, u8 *buffer, s32 
     s32 retry;
 
     ret = 0;
-    ptr = (u8 *)&__osPfsPifRam;
+    ptr = (u8 *) &__osPfsPifRam;
     retry = 2;
     if (force != 1 && address < 7 && address != 0) {
         return 0;
@@ -27,14 +27,14 @@ s32 __osContRamWrite(OSMesgQueue *mq, s32 channel, u16 address, u8 *buffer, s32 
     do {
         ret = __osSiRawStartDma(OS_READ, &__osPfsPifRam);
         osRecvMesg(mq, NULL, OS_MESG_BLOCK);
-        ptr = (u8 *)&__osPfsPifRam;
+        ptr = (u8 *) &__osPfsPifRam;
         if (channel != 0) {
             for (i = 0; i < channel; i++) {
                 ptr++;
             }
         }
 
-        ramreadformat = *(__OSContRamReadFormat *)ptr;
+        ramreadformat = *(__OSContRamReadFormat *) ptr;
 
         ret = CHNL_ERR(ramreadformat);
         if (ret == 0) {
@@ -62,7 +62,7 @@ void __osPackRamWriteData(int channel, u16 address, u8 *buffer) {
     __OSContRamReadFormat ramreadformat;
     int i;
 
-    ptr = (u8 *)__osPfsPifRam.ramarray;
+    ptr = (u8 *) __osPfsPifRam.ramarray;
 
     for (i = 0; i < ARRAY_COUNT(__osPfsPifRam.ramarray) + 1; i++) {
         __osPfsPifRam.ramarray[i] = 0;
@@ -83,7 +83,7 @@ void __osPackRamWriteData(int channel, u16 address, u8 *buffer) {
             *ptr++ = 0;
         }
     }
-    *(__OSContRamReadFormat *)ptr = ramreadformat;
+    *(__OSContRamReadFormat *) ptr = ramreadformat;
     ptr += sizeof(__OSContRamReadFormat);
     ptr[0] = CONT_CMD_END;
 }

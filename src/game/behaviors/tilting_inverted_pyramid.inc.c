@@ -59,8 +59,8 @@ f32 approach_by_increment(f32 goal, f32 src, f32 inc) {
 }
 
 /**
- * Main behavior for the tilting pyramids in LLL/BitFS. These platforms calculate rough normals from Mario's position,
- * then gradually tilt back moving Mario with them.
+ * Main behavior for the tilting pyramids in LLL/BitFS. These platforms calculate rough normals from
+ * Mario's position, then gradually tilt back moving Mario with them.
  */
 void bhv_tilting_inverted_pyramid_loop(void) {
     f32 dx;
@@ -120,12 +120,14 @@ void bhv_tilting_inverted_pyramid_loop(void) {
         o->oTiltingPyramidMarioOnPlatform = FALSE;
     }
 
-    // Approach the normals by 0.01f towards the new goal, then create a transform matrix and orient the object.
-    // Outside of the other conditionals since it needs to tilt regardless of whether Mario is on.
+    // Approach the normals by 0.01f towards the new goal, then create a transform matrix and orient the
+    // object. Outside of the other conditionals since it needs to tilt regardless of whether Mario is
+    // on.
     o->oTiltingPyramidNormalX = approach_by_increment(dx, o->oTiltingPyramidNormalX, 0.01f);
     o->oTiltingPyramidNormalY = approach_by_increment(dy, o->oTiltingPyramidNormalY, 0.01f);
     o->oTiltingPyramidNormalZ = approach_by_increment(dz, o->oTiltingPyramidNormalZ, 0.01f);
-    create_transform_from_normals(*transform, o->oTiltingPyramidNormalX, o->oTiltingPyramidNormalY, o->oTiltingPyramidNormalZ);
+    create_transform_from_normals(*transform, o->oTiltingPyramidNormalX, o->oTiltingPyramidNormalY,
+                                  o->oTiltingPyramidNormalZ);
 
     // If Mario is on the platform, adjust his position for the platform tilt.
     if (marioOnPlatform) {

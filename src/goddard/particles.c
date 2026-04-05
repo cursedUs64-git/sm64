@@ -18,28 +18,28 @@ typedef union {
 } VtxPtc;
 
 struct Connection {
-    struct GdObj header;  // this header is never used
+    struct GdObj header; // this header is never used
     u8 filler[8];
-    VtxPtc node1;  // first connected vertex or particle
-    VtxPtc node2;  // second connected vertex or particle
+    VtxPtc node1; // first connected vertex or particle
+    VtxPtc node2; // second connected vertex or particle
     f32 unk24;
     u32 unk28; // union tag? 0 = vertex; 1 = particle?
 };
 
 // data
-UNUSED  void *sUnused801A81D0 = NULL;
- s32 D_801A81D4[25] = {
+UNUSED void *sUnused801A81D0 = NULL;
+s32 D_801A81D4[25] = {
     /*  ID?    X    Y    Z */
     9,  3,  12,  -14, 25, 5,  16,  -25, 42, 4,  15, -39, 55,
     -6, 20, -23, 70,  -2, 20, -23, 135, 0,  16, 0,  0 /* Terminator */
 };
- s32 D_801A8238[5] = {
+s32 D_801A8238[5] = {
     /*  ID? X   Y  Z */
     15, 0, 22, 0, 0 /* Terminator */
 };
 
 //  bss
- struct ObjFace *D_801B9EF0;
+struct ObjFace *D_801B9EF0;
 
 // fn declarations
 struct Connection *make_connection(struct ObjVertex *, struct ObjVertex *);
@@ -53,7 +53,7 @@ void func_80182A08(struct ObjParticle *, struct GdVec3f *b);
 void func_801838D0(struct ObjParticle *);
 void Unknown801835C8(struct ObjParticle *ptc);
 
- void connect_vertices(struct ObjVertex *vtx1, struct ObjVertex *vtx2) {
+void connect_vertices(struct ObjVertex *vtx1, struct ObjVertex *vtx2) {
     struct Connection *newConn;
     register struct ListNode *link;
 
@@ -66,7 +66,7 @@ void Unknown801835C8(struct ObjParticle *ptc);
         struct Connection *conn = (struct Connection *) link->obj;
 
         if ((conn->node1.vtx == vtx1 || conn->node1.vtx == vtx2)
-         && (conn->node2.vtx == vtx1 || conn->node2.vtx == vtx2)) {
+            && (conn->node2.vtx == vtx1 || conn->node2.vtx == vtx2)) {
             break;
         }
         link = link->next;
@@ -235,9 +235,9 @@ struct Connection *make_connection(struct ObjVertex *vtx1, struct ObjVertex *vtx
     conn->node1.vtx = vtx1;
     conn->node2.vtx = vtx2;
     d_stash_dynobj();
-    set_cur_dynobj((struct GdObj *)vtx1);
+    set_cur_dynobj((struct GdObj *) vtx1);
     d_get_world_pos(&sp28);
-    set_cur_dynobj((struct GdObj *)vtx2);
+    set_cur_dynobj((struct GdObj *) vtx2);
     d_get_world_pos(&sp1C);
     sp28.x -= sp1C.x;
     sp28.y -= sp1C.y;
@@ -445,7 +445,8 @@ void move_particle(struct ObjParticle *ptc) {
                 func_80182A08(ptc, &sp34);
                 break;
         }
-        apply_to_obj_types_in_group(OBJ_TYPE_PARTICLES, (applyproc_t) move_particle, ptc->subParticlesGrp);
+        apply_to_obj_types_in_group(OBJ_TYPE_PARTICLES, (applyproc_t) move_particle,
+                                    ptc->subParticlesGrp);
     }
     if (ptc->timeout >= 0) {
         if (ptc->timeout-- <= 0) {

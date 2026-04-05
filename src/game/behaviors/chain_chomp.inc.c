@@ -12,7 +12,7 @@
 /**
  * Hitbox for chain chomp.
  */
- struct ObjectHitbox sChainChompHitbox = {
+struct ObjectHitbox sChainChompHitbox = {
     /* interactType:      */ INTERACT_MR_BLIZZARD,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 3,
@@ -46,7 +46,7 @@ void bhv_chain_chomp_chain_part_update(void) {
 /**
  * When mario gets close enough, allocate chain segments and spawn their objects.
  */
- void chain_chomp_act_uninitialized(void) {
+void chain_chomp_act_uninitialized(void) {
     struct ChainSegment *segments;
     s32 i;
 
@@ -85,7 +85,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * Apply gravity to each chain part, and cap its distance to the previous
  * part as well as from the pivot.
  */
- void chain_chomp_update_chain_segments(void) {
+void chain_chomp_update_chain_segments(void) {
     struct ChainSegment *prevSegment;
     struct ChainSegment *segment;
     f32 offsetX;
@@ -156,7 +156,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * Lunging increases the maximum distance from the pivot and changes the maximum
  * distance between chain parts. Restore these values to normal.
  */
- void chain_chomp_restore_normal_chain_lengths(void) {
+void chain_chomp_restore_normal_chain_lengths(void) {
     approach_f32_ptr(&o->oChainChompMaxDistFromPivotPerChainPart, 750.0f / 5, 4.0f);
     o->oChainChompMaxDistBetweenChainParts = o->oChainChompMaxDistFromPivotPerChainPart;
 }
@@ -164,7 +164,7 @@ void bhv_chain_chomp_chain_part_update(void) {
 /**
  * Turn toward mario. Wait a bit and then enter the lunging sub-action.
  */
- void chain_chomp_sub_act_turn(void) {
+void chain_chomp_sub_act_turn(void) {
     o->oGravity = -4.0f;
 
     chain_chomp_restore_normal_chain_lengths();
@@ -206,7 +206,7 @@ void bhv_chain_chomp_chain_part_update(void) {
     }
 }
 
- void chain_chomp_sub_act_lunge(void) {
+void chain_chomp_sub_act_lunge(void) {
     obj_face_pitch_approach(o->oChainChompTargetPitch, 0x400);
 
     if (o->oForwardVel != 0.0f) {
@@ -227,8 +227,8 @@ void bhv_chain_chomp_chain_part_update(void) {
         o->oTimer = 0;
     } else {
         // Turn toward pivot
-        cur_obj_rotate_yaw_toward(atan2s(o->oChainChompSegments[0].posZ, o->oChainChompSegments[0].posX),
-                                  0x1000);
+        cur_obj_rotate_yaw_toward(
+            atan2s(o->oChainChompSegments[0].posZ, o->oChainChompSegments[0].posX), 0x1000);
 
         if (o->oChainChompUnk104 != 0.0f) {
             approach_f32_ptr(&o->oChainChompUnk104, 0.0f, 0.8f);
@@ -250,7 +250,7 @@ void bhv_chain_chomp_chain_part_update(void) {
 /**
  * Fall to the ground and interrupt mario into a cutscene action.
  */
- void chain_chomp_released_trigger_cutscene(void) {
+void chain_chomp_released_trigger_cutscene(void) {
     o->oForwardVel = 0.0f;
     o->oGravity = -4.0f;
 
@@ -267,7 +267,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * Lunge 4 times, each time moving toward mario +/- 0x2000 angular units.
  * Finally, begin a lunge toward x=1450, z=562 (near the gate).
  */
- void chain_chomp_released_lunge_around(void) {
+void chain_chomp_released_lunge_around(void) {
     chain_chomp_restore_normal_chain_lengths();
 
     // Finish bounce
@@ -306,7 +306,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * wait for the chain chomp to land, and then begin a jump toward the final
  * target, x=3288, z=-1770.
  */
- void chain_chomp_released_break_gate(void) {
+void chain_chomp_released_break_gate(void) {
     if (!o->oChainChompHitGate) {
         // If hit wall, assume it's the gate and bounce off of it
         //! The wall may not be the gate
@@ -330,7 +330,7 @@ void bhv_chain_chomp_chain_part_update(void) {
 /**
  * Wait until the chain chomp lands.
  */
- void chain_chomp_released_jump_away(void) {
+void chain_chomp_released_jump_away(void) {
     if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
         gObjCutsceneDone = TRUE;
         o->oChainChompReleaseStatus = CHAIN_CHOMP_RELEASED_END_CUTSCENE;
@@ -340,7 +340,7 @@ void bhv_chain_chomp_chain_part_update(void) {
 /**
  * Release mario and transition to the unload chain action.
  */
- void chain_chomp_released_end_cutscene(void) {
+void chain_chomp_released_end_cutscene(void) {
     if (cutscene_object(CUTSCENE_STAR_SPAWN, o) == -1) {
         set_mario_npc_dialog(MARIO_DIALOG_STOP);
         o->oAction = CHAIN_CHOMP_ACT_UNLOAD_CHAIN;
@@ -351,7 +351,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * All chain chomp movement behavior, including the cutscene after being
  * released.
  */
- void chain_chomp_act_move(void) {
+void chain_chomp_act_move(void) {
     f32 maxDistToPivot;
 
     // Unload chain if mario is far enough
@@ -449,7 +449,7 @@ void bhv_chain_chomp_chain_part_update(void) {
  * Hide and free the chain chomp segments. The chain objects will unload
  * themselves when they see that the chain chomp is in this action.
  */
- void chain_chomp_act_unload_chain(void) {
+void chain_chomp_act_unload_chain(void) {
     cur_obj_hide();
     mem_pool_free(gObjectMemoryPool, o->oChainChompSegments);
 
@@ -510,7 +510,7 @@ void bhv_wooden_post_update(void) {
         } else {
             // When mario runs around the post 3 times within 200 frames, spawn
             // coins
-            o->oWoodenPostTotalMarioAngle += (s16)(o->oAngleToMario - o->oWoodenPostPrevAngleToMario);
+            o->oWoodenPostTotalMarioAngle += (s16) (o->oAngleToMario - o->oWoodenPostPrevAngleToMario);
             if (absi(o->oWoodenPostTotalMarioAngle) > 0x30000 && o->oTimer < 200) {
                 obj_spawn_loot_yellow_coins(o, 5, 20.0f);
                 set_object_respawn_info_bits(o, 1);

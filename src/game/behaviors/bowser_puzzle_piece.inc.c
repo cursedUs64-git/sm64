@@ -13,34 +13,34 @@
  *
  * Note that pieces 11 and 14 do not move.
  */
- s8 sPieceActions01[] = { 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, -1 };
- s8 sPieceActions02[] = { 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, -1 };
- s8 sPieceActions05[] = { 2, 2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, -1 };
- s8 sPieceActions06[] = { 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, -1 };
- s8 sPieceActions10[] = { 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions09[] = { 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions13[] = { 2, 2, 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions12[] = { 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2,
-                                2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions08[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2,
-                                2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions07[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2,
-                                2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions03[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2,
-                                5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions04[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4,
-                                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions11[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
- s8 sPieceActions14[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
-                                2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions01[] = { 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, -1 };
+s8 sPieceActions02[] = { 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, -1 };
+s8 sPieceActions05[] = { 2, 2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, -1 };
+s8 sPieceActions06[] = { 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, -1 };
+s8 sPieceActions10[] = { 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions09[] = { 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions13[] = { 2, 2, 2, 2, 2, 2, 2, 5, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 6, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions12[] = { 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2,
+                         2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions08[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2, 2, 2,
+                         2, 2, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions07[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2,
+                         2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions03[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 2, 2,
+                         5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions04[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4,
+                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions11[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
+s8 sPieceActions14[] = { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+                         2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, -1 };
 
 struct BowserPuzzlePiece {
     u8 model;
@@ -65,7 +65,7 @@ struct BowserPuzzlePiece {
  *
  * (* = star platform)
  */
- struct BowserPuzzlePiece sBowserPuzzlePieces[] = {
+struct BowserPuzzlePiece sBowserPuzzlePieces[] = {
     { MODEL_LLL_BOWSER_PIECE_1, -5, -15, 1, sPieceActions01 },
     { MODEL_LLL_BOWSER_PIECE_2, 5, -15, 0, sPieceActions02 },
     { MODEL_LLL_BOWSER_PIECE_3, -15, -5, 0, sPieceActions03 },
@@ -85,9 +85,8 @@ struct BowserPuzzlePiece {
 /**
  * Spawn a single puzzle piece.
  */
-void bhv_lll_bowser_puzzle_spawn_piece(s16 model, const BehaviorScript *behavior,
-                                       f32 xOffset, f32 zOffset,
-                                       s8 initialAction, s8 *actionList) {
+void bhv_lll_bowser_puzzle_spawn_piece(s16 model, const BehaviorScript *behavior, f32 xOffset,
+                                       f32 zOffset, s8 initialAction, s8 *actionList) {
     struct Object *puzzlePiece = spawn_object(o, model, behavior);
     puzzlePiece->oPosX += xOffset;
     puzzlePiece->oPosY += 50.0f;
@@ -256,12 +255,9 @@ void bhv_lll_bowser_puzzle_piece_move_down(void) {
 }
 
 void (*sBowserPuzzlePieceActions[])(void) = {
-    bhv_lll_bowser_puzzle_piece_action_0,
-    bhv_lll_bowser_puzzle_piece_action_1,
-    bhv_lll_bowser_puzzle_piece_idle,
-    bhv_lll_bowser_puzzle_piece_move_left,
-    bhv_lll_bowser_puzzle_piece_move_right,
-    bhv_lll_bowser_puzzle_piece_move_up,
+    bhv_lll_bowser_puzzle_piece_action_0,   bhv_lll_bowser_puzzle_piece_action_1,
+    bhv_lll_bowser_puzzle_piece_idle,       bhv_lll_bowser_puzzle_piece_move_left,
+    bhv_lll_bowser_puzzle_piece_move_right, bhv_lll_bowser_puzzle_piece_move_up,
     bhv_lll_bowser_puzzle_piece_move_down,
 };
 

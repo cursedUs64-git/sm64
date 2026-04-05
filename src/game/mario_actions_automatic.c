@@ -17,13 +17,13 @@
 #include "level_table.h"
 #include "rumble_init.h"
 
-#define POLE_NONE          0
+#define POLE_NONE 0
 #define POLE_TOUCHED_FLOOR 1
-#define POLE_FELL_OFF      2
+#define POLE_FELL_OFF 2
 
-#define HANG_NONE            0
+#define HANG_NONE 0
 #define HANG_HIT_CEIL_OR_OOB 1
-#define HANG_LEFT_CEIL       2
+#define HANG_LEFT_CEIL 2
 
 void add_tree_leaf_particles(struct MarioState *m) {
     f32 leafHeight;
@@ -210,7 +210,8 @@ s32 act_climbing_pole(struct MarioState *m) {
 
     marioObj->oMarioPolePos += m->controller->stickY / 8.0f;
     marioObj->oMarioPoleYawVel = 0;
-    m->faceAngle[1] = cameraAngle - approach_s32((s16)(cameraAngle - m->faceAngle[1]), 0, 0x400, 0x400);
+    m->faceAngle[1] =
+        cameraAngle - approach_s32((s16) (cameraAngle - m->faceAngle[1]), 0, 0x400, 0x400);
 
     if (set_pole_position(m, 0.0f) == POLE_NONE) {
         sp24 = m->controller->stickY / 4.0f * 0x10000;
@@ -351,7 +352,7 @@ s32 update_hang_moving(struct MarioState *m) {
     }
 
     m->faceAngle[1] =
-        m->intendedYaw - approach_s32((s16)(m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
+        m->intendedYaw - approach_s32((s16) (m->intendedYaw - m->faceAngle[1]), 0, 0x800, 0x800);
 
     m->slideYaw = m->faceAngle[1];
     m->slideVelX = m->forwardVel * sins(m->faceAngle[1]);
@@ -567,7 +568,8 @@ s32 act_ledge_grab(struct MarioState *m) {
         }
         return let_go_of_ledge(m);
     }
-    if (m->actionTimer == 10 && (m->input & INPUT_NONZERO_ANALOG)
+    if (m->actionTimer == 10
+        && (m->input & INPUT_NONZERO_ANALOG)
 #ifdef VERSION_EU
         // On EU, you can't slow climb up ledges while holding A.
         && !(m->input & INPUT_A_DOWN)
@@ -708,8 +710,8 @@ s32 act_in_cannon(struct MarioState *m) {
             break;
 
         case 2:
-            m->faceAngle[0] -= (s16)(m->controller->stickY * 10.0f);
-            marioObj->oMarioCannonInputYaw -= (s16)(m->controller->stickX * 10.0f);
+            m->faceAngle[0] -= (s16) (m->controller->stickY * 10.0f);
+            marioObj->oMarioCannonInputYaw -= (s16) (m->controller->stickX * 10.0f);
 
             if (m->faceAngle[0] > 0x38E3) {
                 m->faceAngle[0] = 0x38E3;

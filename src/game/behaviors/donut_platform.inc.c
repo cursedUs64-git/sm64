@@ -1,6 +1,6 @@
 // donut_platform.inc.c
 
- Vec3s sDonutPlatformPositions[] = {
+Vec3s sDonutPlatformPositions[] = {
     { 0x0B4C, 0xF7D7, 0x19A4 }, { 0xF794, 0x08A3, 0xFFA9 }, { 0x069C, 0x09D8, 0xFFE0 },
     { 0x05CF, 0x09D8, 0xFFE0 }, { 0x0502, 0x09D8, 0xFFE0 }, { 0x054C, 0xF7D7, 0x19A4 },
     { 0x0A7F, 0xF7D7, 0x19A4 }, { 0x09B2, 0xF7D7, 0x19A4 }, { 0x06E6, 0xF7D7, 0x19A4 },
@@ -18,7 +18,8 @@ void bhv_donut_platform_spawner_update(void) {
     s32 i;
     s32 platformFlag;
 
-    for (i = 0, platformFlag = 1; i < ARRAY_COUNT(sDonutPlatformPositions); i++, platformFlag = platformFlag << 1) {
+    for (i = 0, platformFlag = 1; i < ARRAY_COUNT(sDonutPlatformPositions);
+         i++, platformFlag = platformFlag << 1) {
         if (!(o->oDonutPlatformSpawnerSpawnedPlatforms & platformFlag)) {
             f32 dx = gMarioObject->oPosX - sDonutPlatformPositions[i][0];
             f32 dy = gMarioObject->oPosY - sDonutPlatformPositions[i][1];
@@ -29,7 +30,8 @@ void bhv_donut_platform_spawner_update(void) {
             if (marioSqDist > 1000000.0f && marioSqDist < 4000000.0f) {
                 if (spawn_object_relative(i, sDonutPlatformPositions[i][0],
                                           sDonutPlatformPositions[i][1], sDonutPlatformPositions[i][2],
-                                          o, MODEL_RR_DONUT_PLATFORM, bhvDonutPlatform) != NULL) {
+                                          o, MODEL_RR_DONUT_PLATFORM, bhvDonutPlatform)
+                    != NULL) {
                     o->oDonutPlatformSpawnerSpawnedPlatforms |= platformFlag;
                 }
             }
@@ -38,7 +40,8 @@ void bhv_donut_platform_spawner_update(void) {
 }
 
 void bhv_donut_platform_update(void) {
-    if (o->oTimer != 0 && ((o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) || o->oDistanceToMario > 2500.0f)) {
+    if (o->oTimer != 0
+        && ((o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) || o->oDistanceToMario > 2500.0f)) {
         o->parentObj->oDonutPlatformSpawnerSpawnedPlatforms =
             o->parentObj->oDonutPlatformSpawnerSpawnedPlatforms
             & ((1 << o->oBhvParams2ndByte) ^ 0xFFFFFFFF);

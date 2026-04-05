@@ -7,7 +7,7 @@
 /**
  * The collision models for cube and triangular prism, respectively.
  */
- Collision const *sTTCRotatingSolidCollisionModels[] = {
+Collision const *sTTCRotatingSolidCollisionModels[] = {
     ttc_seg7_collision_07014F70,
     ttc_seg7_collision_07015008,
 };
@@ -15,7 +15,7 @@
 /**
  * The number of frames to wait before rotating for the first time.
  */
- u8 sTTCRotatingSolidInitialDelays[] = {
+u8 sTTCRotatingSolidInitialDelays[] = {
     /* TTC_SPEED_SLOW    */ 120,
     /* TTC_SPEED_FAST    */ 40,
     /* TTC_SPEED_RANDOM  */ 0,
@@ -48,7 +48,7 @@ void bhv_ttc_rotating_solid_update(void) {
         } else if (o->oTTCRotatingSolidVelY > 0.0f && o->oPosY >= o->oHomeY) {
             // 4. Rotate
             s32 targetRoll =
-                (s32)((f32) o->oTTCRotatingSolidNumTurns / o->oTTCRotatingSolidNumSides * 0x10000);
+                (s32) ((f32) o->oTTCRotatingSolidNumTurns / o->oTTCRotatingSolidNumSides * 0x10000);
             s32 startRoll = o->oFaceAngleRoll;
 
             obj_face_roll_approach(targetRoll, 1200);

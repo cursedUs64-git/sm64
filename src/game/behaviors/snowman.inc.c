@@ -1,6 +1,6 @@
 // snowman.inc.c
 
- struct ObjectHitbox sRollingSphereHitbox = {
+struct ObjectHitbox sRollingSphereHitbox = {
     /* interactType:      */ INTERACT_DAMAGE,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 3,
@@ -43,7 +43,7 @@ void set_rolling_sphere_hitbox(void) {
 }
 
 void adjust_rolling_face_pitch(f32 f12) {
-    o->oFaceAnglePitch += (s16)(o->oForwardVel * (100.0f / f12));
+    o->oFaceAnglePitch += (s16) (o->oForwardVel * (100.0f / f12));
     o->oSnowmansBottomScale += o->oForwardVel * 0.0001;
 
     if (o->oSnowmansBottomScale > 1.0) {
@@ -190,7 +190,8 @@ void bhv_snowmans_head_loop(void) {
 
     switch (o->oAction) {
         case 0:
-            if (trigger_obj_dialog_when_facing(&o->oSnowmansHeadDialogActive, DIALOG_109, 400.0f, MARIO_DIALOG_LOOK_FRONT)) {
+            if (trigger_obj_dialog_when_facing(&o->oSnowmansHeadDialogActive, DIALOG_109, 400.0f,
+                                               MARIO_DIALOG_LOOK_FRONT)) {
                 o->oAction = 1;
             }
             break;
@@ -216,7 +217,8 @@ void bhv_snowmans_head_loop(void) {
             break;
 
         case 4:
-            if (trigger_obj_dialog_when_facing(&o->oSnowmansHeadDialogActive, DIALOG_111, 700.0f, MARIO_DIALOG_LOOK_UP)) {
+            if (trigger_obj_dialog_when_facing(&o->oSnowmansHeadDialogActive, DIALOG_111, 700.0f,
+                                               MARIO_DIALOG_LOOK_UP)) {
                 spawn_mist_particles();
                 spawn_default_star(-4700.0f, -1024.0f, 1890.0f);
                 o->oAction = 1;

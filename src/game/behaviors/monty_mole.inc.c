@@ -67,7 +67,7 @@ struct Object *monty_mole_select_available_hole(f32 minDistToMario) {
     }
 
     if (numAvailableHoles != 0) {
-        s32 selectedHole = (s32)(random_float() * numAvailableHoles);
+        s32 selectedHole = (s32) (random_float() * numAvailableHoles);
 
         hole = sMontyMoleHoleList;
         numAvailableHoles = 0;
@@ -185,7 +185,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Move upward until high enough, then enter the spawn rock action.
  */
- void monty_mole_act_rise_from_hole(void) {
+void monty_mole_act_rise_from_hole(void) {
     cur_obj_init_animation_with_sound(1);
 
     if (o->oMontyMoleHeightRelativeToFloor >= 49.0f) {
@@ -202,7 +202,7 @@ void monty_mole_act_select_hole(void) {
  * If mario is close enough, then spawn a rock and enter the throw rock action.
  * Otherwise, enter the begin jump into hole action.
  */
- void monty_mole_act_spawn_rock(void) {
+void monty_mole_act_spawn_rock(void) {
     struct Object *rock;
 
     if (cur_obj_init_anim_and_check_if_end(2)) {
@@ -221,7 +221,7 @@ void monty_mole_act_select_hole(void) {
  * Wait until mario is relatively close, then set vely to 40 and enter the jump
  * into hole action.
  */
- void monty_mole_act_begin_jump_into_hole(void) {
+void monty_mole_act_begin_jump_into_hole(void) {
     if (cur_obj_init_anim_and_check_if_end(3) || obj_is_near_to_and_facing_mario(1000.0f, 0x4000)) {
         o->oAction = MONTY_MOLE_ACT_JUMP_INTO_HOLE;
         o->oVelY = 40.0f;
@@ -232,7 +232,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Throw the held rock, then enter the begin jump into hole action.
  */
- void monty_mole_act_throw_rock(void) {
+void monty_mole_act_throw_rock(void) {
     if (cur_obj_init_anim_check_frame(8, 10)) {
         cur_obj_play_sound_2(SOUND_OBJ_MONTY_MOLE_ATTACK);
         o->prevObj = NULL;
@@ -246,7 +246,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Tilt downward and wait until close to landing, then enter the hide action.
  */
- void monty_mole_act_jump_into_hole(void) {
+void monty_mole_act_jump_into_hole(void) {
     cur_obj_init_anim_extend(0);
 
     o->oFaceAnglePitch = -atan2s(o->oVelY, -4.0f);
@@ -261,7 +261,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Become intangible and enter the select hole action.
  */
- void monty_mole_hide_in_hole(void) {
+void monty_mole_hide_in_hole(void) {
     o->oMontyMoleCurrentHole->oMontyMoleHoleCooldown = 30;
     o->oAction = MONTY_MOLE_ACT_SELECT_HOLE;
     o->oVelY = 0.0f;
@@ -279,7 +279,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Wait to land on the floor, then hide.
  */
- void monty_mole_act_hide(void) {
+void monty_mole_act_hide(void) {
     cur_obj_init_animation_with_sound(1);
 
     if (o->oMoveFlags & OBJ_MOVE_MASK_ON_GROUND) {
@@ -294,7 +294,7 @@ void monty_mole_act_select_hole(void) {
  * Jump upward and then fall back down. Then enter the begin jump into hole
  * action.
  */
- void monty_mole_act_jump_out_of_hole(void) {
+void monty_mole_act_jump_out_of_hole(void) {
     if (o->oVelY > 0.0f) {
         cur_obj_init_animation_with_sound(9);
     } else {
@@ -311,7 +311,7 @@ void monty_mole_act_select_hole(void) {
 /**
  * Hitbox for monty mole.
  */
- struct ObjectHitbox sMontyMoleHitbox = {
+struct ObjectHitbox sMontyMoleHitbox = {
     /* interactType:      */ INTERACT_BOUNCE_TOP,
     /* downOffset:        */ 0,
     /* damageOrCoinValue: */ 2,
@@ -402,7 +402,7 @@ void bhv_monty_mole_update(void) {
 /**
  * Wait for monty mole to throw the rock, then enter the move action.
  */
- void monty_mole_rock_act_held(void) {
+void monty_mole_rock_act_held(void) {
     // The position is offset since the monty mole is throwing it with its hand
     o->oParentRelativePosX = 80.0f;
     o->oParentRelativePosY = -50.0f;
@@ -417,7 +417,7 @@ void bhv_monty_mole_update(void) {
         o->oAction = MONTY_MOLE_ROCK_ACT_MOVE;
 
         // The angle is adjusted to compensate for the start position offset
-        o->oMoveAngleYaw = (s32)(o->parentObj->oMoveAngleYaw + 500 - distToMario * 0.1f);
+        o->oMoveAngleYaw = (s32) (o->parentObj->oMoveAngleYaw + 500 - distToMario * 0.1f);
 
         o->oForwardVel = 40.0f;
         o->oVelY = distToMario * 0.08f + 8.0f;
@@ -429,7 +429,7 @@ void bhv_monty_mole_update(void) {
 /**
  * Hitbox for monty mole rock.
  */
- struct ObjectHitbox sMontyMoleRockHitbox = {
+struct ObjectHitbox sMontyMoleRockHitbox = {
     /* interactType:      */ INTERACT_MR_BLIZZARD,
     /* downOffset:        */ 15,
     /* damageOrCoinValue: */ 1,
@@ -444,7 +444,7 @@ void bhv_monty_mole_update(void) {
 /**
  * The particles that spawn when a monty mole rock breaks.
  */
- struct SpawnParticlesInfo sMontyMoleRockBreakParticles = {
+struct SpawnParticlesInfo sMontyMoleRockBreakParticles = {
     /* bhvParam:        */ 0,
     /* count:           */ 2,
     /* model:           */ MODEL_PEBBLE,
@@ -462,7 +462,7 @@ void bhv_monty_mole_update(void) {
 /**
  * Move, then despawn after hitting the ground or water.
  */
- void monty_mole_rock_act_move(void) {
+void monty_mole_rock_act_move(void) {
     cur_obj_update_floor_and_walls();
 
     if (o->oMoveFlags & (OBJ_MOVE_MASK_ON_GROUND | OBJ_MOVE_ENTERED_WATER)) {

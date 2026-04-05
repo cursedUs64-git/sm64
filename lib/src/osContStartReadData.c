@@ -47,7 +47,7 @@ void osContGetReadData(OSContPad *pad) {
     s32 i;
     cmdBufPtr = (u8 *) __osContPifRam.ramarray;
     for (i = 0; i < __osMaxControllers; i++, cmdBufPtr += sizeof(OSContPackedRead), pad++) {
-        response = * (OSContPackedRead *) cmdBufPtr;
+        response = *(OSContPackedRead *) cmdBufPtr;
         pad->errnum = (response.rxLen & 0xc0) >> 4;
         if (pad->errnum == 0) {
             pad->button = response.button;
@@ -89,7 +89,7 @@ void __osPackReadData() {
     request.rawStickX = -1;
     request.rawStickY = -1;
     for (i = 0; i < __osMaxControllers; i++) {
-        * (OSContPackedRead *) cmdBufPtr = request;
+        *(OSContPackedRead *) cmdBufPtr = request;
         cmdBufPtr += sizeof(OSContPackedRead);
     }
     *cmdBufPtr = 254;

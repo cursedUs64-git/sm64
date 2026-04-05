@@ -76,7 +76,8 @@ OSTime __osInsertTimer(OSTimer *t) {
     s32 savedMask;
 
     savedMask = __osDisableInt();
-    for (timep = __osTimerList->next, time = t->remaining; timep != __osTimerList && time > timep->remaining;
+    for (timep = __osTimerList->next, time = t->remaining;
+         timep != __osTimerList && time > timep->remaining;
          time -= timep->remaining, timep = timep->next) {
         ;
     }

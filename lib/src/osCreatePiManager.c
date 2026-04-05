@@ -53,7 +53,8 @@ void osCreatePiManager(OSPri pri, OSMesgQueue *cmdQ, OSMesg *cmdBuf, s32 cmdMsgC
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
         __osPiDevMgr.edma = osEPiRawStartDma;
 #endif
-        osCreateThread(&piMgrThread, 0, __osDevMgrMain, (void *) &__osPiDevMgr, &piMgrStack[0x400], pri);
+        osCreateThread(&piMgrThread, 0, __osDevMgrMain, (void *) &__osPiDevMgr, &piMgrStack[0x400],
+                       pri);
         osStartThread(&piMgrThread);
         __osRestoreInt(int_disabled);
         if (newPri != -1) {

@@ -21,22 +21,22 @@ struct ExclamationBoxContents {
 };
 
 struct ExclamationBoxContents sExclamationBoxContents[] = {
-    { EXCLAMATION_BOX_BP_WING_CAP,         0,                0, MODEL_MARIOS_WING_CAP,  bhvWingCap               },
-    { EXCLAMATION_BOX_BP_METAL_CAP,        0,                0, MODEL_MARIOS_METAL_CAP, bhvMetalCap              },
-    { EXCLAMATION_BOX_BP_VANISH_CAP,       0,                0, MODEL_MARIOS_CAP,       bhvVanishCap             },
-    { EXCLAMATION_BOX_BP_KOOPA_SHELL,      0,                0, MODEL_KOOPA_SHELL,      bhvKoopaShell            },
-    { EXCLAMATION_BOX_BP_ONE_COIN,         0,                0, MODEL_YELLOW_COIN,      bhvSingleCoinGetsSpawned },
-    { EXCLAMATION_BOX_BP_THREE_COINS,      0,                0, MODEL_NONE,             bhvThreeCoinsSpawn       },
-    { EXCLAMATION_BOX_BP_TEN_COINS,        0,                0, MODEL_NONE,             bhvTenCoinsSpawn         },
-    { EXCLAMATION_BOX_BP_1UP_WALKING,      0,                0, MODEL_1UP,              bhv1UpWalking            },
-    { EXCLAMATION_BOX_BP_STAR_ACT_1,       0, STAR_INDEX_ACT_1, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_1UP_RUNNING_AWAY, 0,                0, MODEL_1UP,              bhv1UpRunningAway        },
-    { EXCLAMATION_BOX_BP_STAR_ACT_2,       0, STAR_INDEX_ACT_2, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_STAR_ACT_3,       0, STAR_INDEX_ACT_3, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_STAR_ACT_4,       0, STAR_INDEX_ACT_4, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_STAR_ACT_5,       0, STAR_INDEX_ACT_5, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_STAR_ACT_6,       0, STAR_INDEX_ACT_6, MODEL_STAR,             bhvSpawnedStar           },
-    { EXCLAMATION_BOX_BP_END,              0,                0, MODEL_NONE,             NULL                     },
+    { EXCLAMATION_BOX_BP_WING_CAP, 0, 0, MODEL_MARIOS_WING_CAP, bhvWingCap },
+    { EXCLAMATION_BOX_BP_METAL_CAP, 0, 0, MODEL_MARIOS_METAL_CAP, bhvMetalCap },
+    { EXCLAMATION_BOX_BP_VANISH_CAP, 0, 0, MODEL_MARIOS_CAP, bhvVanishCap },
+    { EXCLAMATION_BOX_BP_KOOPA_SHELL, 0, 0, MODEL_KOOPA_SHELL, bhvKoopaShell },
+    { EXCLAMATION_BOX_BP_ONE_COIN, 0, 0, MODEL_YELLOW_COIN, bhvSingleCoinGetsSpawned },
+    { EXCLAMATION_BOX_BP_THREE_COINS, 0, 0, MODEL_NONE, bhvThreeCoinsSpawn },
+    { EXCLAMATION_BOX_BP_TEN_COINS, 0, 0, MODEL_NONE, bhvTenCoinsSpawn },
+    { EXCLAMATION_BOX_BP_1UP_WALKING, 0, 0, MODEL_1UP, bhv1UpWalking },
+    { EXCLAMATION_BOX_BP_STAR_ACT_1, 0, STAR_INDEX_ACT_1, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_1UP_RUNNING_AWAY, 0, 0, MODEL_1UP, bhv1UpRunningAway },
+    { EXCLAMATION_BOX_BP_STAR_ACT_2, 0, STAR_INDEX_ACT_2, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_STAR_ACT_3, 0, STAR_INDEX_ACT_3, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_STAR_ACT_4, 0, STAR_INDEX_ACT_4, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_STAR_ACT_5, 0, STAR_INDEX_ACT_5, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_STAR_ACT_6, 0, STAR_INDEX_ACT_6, MODEL_STAR, bhvSpawnedStar },
+    { EXCLAMATION_BOX_BP_END, 0, 0, MODEL_NONE, NULL },
 };
 
 void bhv_rotating_exclamation_box_loop(void) {
@@ -164,12 +164,8 @@ void exclamation_box_act_5(void) {
 }
 
 void (*sExclamationBoxActions[])(void) = {
-    exclamation_box_act_0,
-    exclamation_box_act_1,
-    exclamation_box_act_2,
-    exclamation_box_act_3,
-    exclamation_box_act_4,
-    exclamation_box_act_5,
+    exclamation_box_act_0, exclamation_box_act_1, exclamation_box_act_2,
+    exclamation_box_act_3, exclamation_box_act_4, exclamation_box_act_5,
 };
 
 void bhv_exclamation_box_loop(void) {

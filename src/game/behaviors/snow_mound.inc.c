@@ -32,7 +32,8 @@ void bhv_snow_mound_spawn_loop(void) {
         return;
     }
 
-    if (o->oTimer == 64 || o->oTimer == 128 || o->oTimer == 192 || o->oTimer == 224 || o->oTimer == 256) {
+    if (o->oTimer == 64 || o->oTimer == 128 || o->oTimer == 192 || o->oTimer == 224
+        || o->oTimer == 256) {
         snowMound = spawn_object(o, MODEL_SL_SNOW_TRIANGLE, bhvSlidingSnowMound);
     }
 

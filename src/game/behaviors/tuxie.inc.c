@@ -59,8 +59,8 @@ void tuxies_mother_act_1(void) {
                 } else {
                     dialogID = DIALOG_059;
                 }
-                if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-                        DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, dialogID)) {
+                if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TURN_TO_MARIO,
+                                                        CUTSCENE_DIALOG, dialogID)) {
                     if (dialogID == DIALOG_058) {
                         o->oSubAction = 1;
                     } else {
@@ -129,8 +129,8 @@ void tuxies_mother_act_0(void) {
                 }
                 break;
             case 1:
-                if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-                    DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, DIALOG_057)) {
+                if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TURN_TO_MARIO,
+                                                        CUTSCENE_DIALOG, DIALOG_057)) {
                     o->oSubAction++;
                 }
                 break;
@@ -172,8 +172,7 @@ void small_penguin_dive_with_mario(void) {
 void small_penguin_act_2(void) {
     s32 sp1C = FALSE;
 
-    if (o->oTimer == 0
-        && cur_obj_dist_to_nearest_object_with_behavior(bhvTuxiesMother) < 1000.0f) {
+    if (o->oTimer == 0 && cur_obj_dist_to_nearest_object_with_behavior(bhvTuxiesMother) < 1000.0f) {
         sp1C = TRUE;
     }
     cur_obj_init_animation_with_sound(0);
@@ -228,7 +227,7 @@ void small_penguin_act_0(void) {
 
     cur_obj_init_animation_with_sound(3);
     if (o->oTimer == 0) {
-        o->oSmallPenguinUnk110 = (s32)(random_float() * 0x400);
+        o->oSmallPenguinUnk110 = (s32) (random_float() * 0x400);
         o->oSmallPenguinUnk108 = random_float() * 100.0f;
         o->oSmallPenguinUnk104 = random_float();
         o->oForwardVel = 0.0f;
@@ -277,12 +276,8 @@ void small_penguin_act_5(void) {
 }
 
 void (*sSmallPenguinActions[])(void) = {
-    small_penguin_act_0,
-    small_penguin_act_1,
-    small_penguin_act_2,
-    small_penguin_act_3,
-    small_penguin_act_4,
-    small_penguin_act_5,
+    small_penguin_act_0, small_penguin_act_1, small_penguin_act_2,
+    small_penguin_act_3, small_penguin_act_4, small_penguin_act_5,
 };
 
 void small_penguin_free_actions(void) {

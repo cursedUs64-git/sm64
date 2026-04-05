@@ -6,7 +6,7 @@ char shindouDebugPrint1[] = "Terminate-Canceled Channel %d,Phase %d\n";
 char shindouDebugPrint2[] = "S->W\n";
 char shindouDebugPrint3[] = "W->S\n";
 char shindouDebugPrint4[] = "S-Resample Pitch %x (old %d -> delay %d)\n";
-s32 shindouDebugPrintPadding1[] = {0,0,0};
+s32 shindouDebugPrintPadding1[] = { 0, 0, 0 };
 
 // heap.c
 char shindouDebugPrint5[] = "Warning:Kill Note  %x \n";
@@ -14,7 +14,7 @@ char shindouDebugPrint6[] = "Kill Voice %d (ID %d) %d\n";
 char shindouDebugPrint7[] = "Warning: Running Sequence's data disappear!\n";
 char shindouDebugPrint8[] = "%x %x %x\n";
 char shindouDebugPrint9[] = "Audio:Memory:Heap OverFlow : Not Allocate %d!\n";
-char shindouDebugPrint10[] = "%x %x %x\n"; // Again
+char shindouDebugPrint10[] = "%x %x %x\n";                                      // Again
 char shindouDebugPrint11[] = "Audio:Memory:Heap OverFlow : Not Allocate %d!\n"; // Again
 char shindouDebugPrint12[] = "Audio:Memory:DataHeap Not Allocate \n";
 char shindouDebugPrint13[] = "StayHeap Not Allocate %d\n";
@@ -65,7 +65,7 @@ char shindouDebugPrint57[] = "Request--------Single-Stay, %d\n";
 char shindouDebugPrint58[] = "Try Kill %d \n";
 char shindouDebugPrint59[] = "Try Kill %x %x\n";
 char shindouDebugPrint60[] = "Try Kill %x %x %x\n";
-s32 shindouDebugPrintPadding[] = {0, 0, 0};
+s32 shindouDebugPrintPadding[] = { 0, 0, 0 };
 
 // load.c
 char shindouDebugPrint61[] = "CAUTION:WAVE CACHE FULL %d";

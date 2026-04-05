@@ -14,7 +14,7 @@ typedef struct {
 extern __osExceptionVector __osExceptionPreamble;
 
 #if defined(VERSION_EU) || defined(VERSION_SH) || defined(VERSION_CN)
-extern u32 __osSetHWintrRoutine(OSHWIntr, s32 (*));
+extern u32 __osSetHWintrRoutine(OSHWIntr, s32(*));
 extern s32 __osLeoInterrupt(void);
 #endif
 
@@ -35,7 +35,6 @@ u32 __OSGlobalIntMask = OS_IM_ALL;
 u32 osDDActive = 0;
 u8 EU_unusedZeroes[8] = { 0 };
 #endif
-
 
 #ifdef VERSION_CN
 
@@ -164,10 +163,10 @@ void osInitialize(void)
         __osBbSramAddress = __osBbFlashAddress;
     }
     if (__osBbIsBb != 0) {
-        IO_WRITE(PI_BASE_REG+0x64, IO_READ(PI_BASE_REG+0x64) & 0x7FFFFFFF);
+        IO_WRITE(PI_BASE_REG + 0x64, IO_READ(PI_BASE_REG + 0x64) & 0x7FFFFFFF);
         IO_WRITE(MI_HW_INTR_MASK_REG, 0x20000);
-        IO_WRITE(SI_BASE_REG+0x0C, 0); // a "reserved" register
-        IO_WRITE(SI_BASE_REG+0x1C, (IO_READ(SI_BASE_REG+0x1C) & 0x80FFFFFF) | 0x2F400000);
+        IO_WRITE(SI_BASE_REG + 0x0C, 0); // a "reserved" register
+        IO_WRITE(SI_BASE_REG + 0x1C, (IO_READ(SI_BASE_REG + 0x1C) & 0x80FFFFFF) | 0x2F400000);
     }
 
     IO_WRITE(AI_CONTROL_REG, 1);

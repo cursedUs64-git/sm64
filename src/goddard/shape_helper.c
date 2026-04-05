@@ -21,38 +21,44 @@
 #include "skin.h"
 
 // data
-struct ObjGroup *gMarioFaceGrp = NULL;     // @ 801A82E0; returned by load_dynlist
-struct ObjShape *gSpotShape = NULL;        // Shape used for drawing lights?
- struct ObjShape *sGrabJointTestShape = NULL; // Test shape for showing grab joints. This isn't rendered due to make_grabber_joint setting the drawFlags to OBJ_INVISIBLE.
+struct ObjGroup *gMarioFaceGrp = NULL; // @ 801A82E0; returned by load_dynlist
+struct ObjShape *gSpotShape = NULL;    // Shape used for drawing lights?
+struct ObjShape *sGrabJointTestShape =
+    NULL; // Test shape for showing grab joints. This isn't rendered due to make_grabber_joint setting
+          // the drawFlags to OBJ_INVISIBLE.
 struct ObjShape *gShapeRedSpark = NULL;    // @ 801A82EC
-struct ObjShape *gShapeSilverSpark = NULL;    // @ 801A82F0
+struct ObjShape *gShapeSilverSpark = NULL; // @ 801A82F0
 struct ObjShape *gShapeRedStar = NULL;     // @ 801A82F4
 struct ObjShape *gShapeSilverStar = NULL;  // @ 801A82F8
 
 // Not sure what this data is, but it looks like stub animation data
 
- struct GdAnimTransform unusedAnimData1[] = {
-    { {1.0, 1.0, 1.0}, {0.0, 0.0, 0.0}, {0.0, 0.0, 0.0} },
+struct GdAnimTransform unusedAnimData1[] = {
+    { { 1.0, 1.0, 1.0 }, { 0.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0 } },
 };
 
-UNUSED  struct AnimDataInfo unusedAnim1 = { ARRAY_COUNT(unusedAnimData1), GD_ANIM_SCALE3F_ROT3F_POS3F_2, unusedAnimData1 };
+UNUSED struct AnimDataInfo unusedAnim1 = { ARRAY_COUNT(unusedAnimData1), GD_ANIM_SCALE3F_ROT3F_POS3F_2,
+                                           unusedAnimData1 };
 
- struct GdAnimTransform unusedAnimData2[] = {
-    { {1.0, 1.0, 1.0}, {0.0, 0.0, 0.0}, {0.0, 0.0, 0.0} },
+struct GdAnimTransform unusedAnimData2[] = {
+    { { 1.0, 1.0, 1.0 }, { 0.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0 } },
 };
 
-UNUSED  struct AnimDataInfo unusedAnim2 = { ARRAY_COUNT(unusedAnimData2), GD_ANIM_SCALE3F_ROT3F_POS3F_2, unusedAnimData2 };
+UNUSED struct AnimDataInfo unusedAnim2 = { ARRAY_COUNT(unusedAnimData2), GD_ANIM_SCALE3F_ROT3F_POS3F_2,
+                                           unusedAnimData2 };
 
- struct GdAnimTransform unusedAnimData3[] = {
-    { {1.0, 1.0, 1.0}, {0.0, 0.0, 0.0}, {0.0, 0.0, 0.0} },
+struct GdAnimTransform unusedAnimData3[] = {
+    { { 1.0, 1.0, 1.0 }, { 0.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0 } },
 };
 
-UNUSED  struct AnimDataInfo unusedAnim3 = { ARRAY_COUNT(unusedAnimData3), GD_ANIM_SCALE3F_ROT3F_POS3F_2, unusedAnimData3 };
+UNUSED struct AnimDataInfo unusedAnim3 = { ARRAY_COUNT(unusedAnimData3), GD_ANIM_SCALE3F_ROT3F_POS3F_2,
+                                           unusedAnimData3 };
 
-UNUSED  s32 sUnref801A838C[6] = { 0 };
+UNUSED s32 sUnref801A838C[6] = { 0 };
 struct ObjShape *sSimpleShape = NULL;
-UNUSED  s32 sUnref801A83A8[31] = { 0 };
-UNUSED  struct DynList sSimpleDylist[8] = {  // unused
+UNUSED s32 sUnref801A83A8[31] = { 0 };
+UNUSED struct DynList sSimpleDylist[8] = {
+    // unused
     BeginList(),
     StartGroup("simpleg"),
     MakeDynObj(D_NET, "simple"),
@@ -62,59 +68,58 @@ UNUSED  struct DynList sSimpleDylist[8] = {  // unused
     UseObj("simpleg"),
     EndList(),
 };
- struct DynList sDynlist801A84E4[3] = {
+struct DynList sDynlist801A84E4[3] = {
     BeginList(),
     SetFlag(0x1800),
     EndList(),
 };
-UNUSED  struct DynList sDynlist801A85B3[5] = {
-    BeginList(), CallList(sDynlist801A84E4), SetFlag(0x400), SetFriction(0.04, 0.01, 0.01),
-    EndList(),
+UNUSED struct DynList sDynlist801A85B3[5] = {
+    BeginList(), CallList(sDynlist801A84E4), SetFlag(0x400), SetFriction(0.04, 0.01, 0.01), EndList(),
 };
-UNUSED  struct DynList sDynlist801A85A4[4] = {
+UNUSED struct DynList sDynlist801A85A4[4] = {
     BeginList(),
     CallList(sDynlist801A84E4),
     SetFriction(0.04, 0.01, 0.01),
     EndList(),
 };
-UNUSED  struct DynList sDynlist801A8604[4] = {
+UNUSED struct DynList sDynlist801A8604[4] = {
     BeginList(),
     CallList(sDynlist801A84E4),
     SetFriction(0.005, 0.005, 0.005),
     EndList(),
 };
- f64 D_801A8668 = 0.0;
+f64 D_801A8668 = 0.0;
 
 // bss
-UNUSED  u8 sUnrefSpaceB00[0x2C];    // @ 801BAB00
- struct ObjGroup *sCubeShapeGroup;  // @ 801BAB2C
-UNUSED  u8 sUnrefSpaceB30[0xC];     // @ 801BAB30
- struct ObjShape *sCubeShape;       // @ 801BAB3C
-UNUSED  u8 sUnrefSpaceB40[0x8];     // @ 801BAB40
- char sGdLineBuf[0x100];            // @ 801BAB48
- s32 sGdLineBufCsr;                 // @ 801BAC48
- struct GdFile *sGdShapeFile;       // @ 801BAC4C
- struct ObjShape *sGdShapeListHead; // @ 801BAC50
- u32 sGdShapeCount;                 // @ 801BAC54
-UNUSED  u8 sUnrefSpaceC58[0x8];     // @ 801BAC58
- struct GdVec3f D_801BAC60;
-UNUSED  u32 sUnrefSpaceC6C;         // @ 801BAC6C
-UNUSED  u32 sUnrefSpaceC70;         // @ 801BAC70
- struct ObjPlane *D_801BAC74;
- struct ObjPlane *D_801BAC78; // sShapeNetHead?
-UNUSED  u8 sUnrefSpaceC80[0x1C];    // @ 801BAC80
- struct ObjFace *D_801BAC9C;
- struct ObjFace *D_801BACA0;
-UNUSED  u8 sUnrefSpaceCA8[0x10];    // @ 801BACA8
+UNUSED u8 sUnrefSpaceB00[0x2C];    // @ 801BAB00
+struct ObjGroup *sCubeShapeGroup;  // @ 801BAB2C
+UNUSED u8 sUnrefSpaceB30[0xC];     // @ 801BAB30
+struct ObjShape *sCubeShape;       // @ 801BAB3C
+UNUSED u8 sUnrefSpaceB40[0x8];     // @ 801BAB40
+char sGdLineBuf[0x100];            // @ 801BAB48
+s32 sGdLineBufCsr;                 // @ 801BAC48
+struct GdFile *sGdShapeFile;       // @ 801BAC4C
+struct ObjShape *sGdShapeListHead; // @ 801BAC50
+u32 sGdShapeCount;                 // @ 801BAC54
+UNUSED u8 sUnrefSpaceC58[0x8];     // @ 801BAC58
+struct GdVec3f D_801BAC60;
+UNUSED u32 sUnrefSpaceC6C; // @ 801BAC6C
+UNUSED u32 sUnrefSpaceC70; // @ 801BAC70
+struct ObjPlane *D_801BAC74;
+struct ObjPlane *D_801BAC78;    // sShapeNetHead?
+UNUSED u8 sUnrefSpaceC80[0x1C]; // @ 801BAC80
+struct ObjFace *D_801BAC9C;
+struct ObjFace *D_801BACA0;
+UNUSED u8 sUnrefSpaceCA8[0x10]; // @ 801BACA8
 /// factor for scaling vertices in an `ObjShape` when calling `scale_verts_in_shape()`
- struct GdVec3f sVertexScaleFactor;
+struct GdVec3f sVertexScaleFactor;
 /// factor for translating vertices in an `ObjShape` when calling `translate_verts_in_shape()`
- struct GdVec3f sVertexTranslateOffset;
-UNUSED  u8 sUnrefSpaceCD8[0x30];    // @ 801BACD8
- struct ObjGroup *D_801BAD08; // group of planes from make_netfromshape
-UNUSED  u8 sUnrefSpaceD10[0x20];    // @ 801BAD10
- struct GdVec3f sShapeCenter;   // printed with "c="
-UNUSED  u8 sUnrefSpaceD40[0x120];   // @ 801BAD40
+struct GdVec3f sVertexTranslateOffset;
+UNUSED u8 sUnrefSpaceCD8[0x30];  // @ 801BACD8
+struct ObjGroup *D_801BAD08;     // group of planes from make_netfromshape
+UNUSED u8 sUnrefSpaceD10[0x20];  // @ 801BAD10
+struct GdVec3f sShapeCenter;     // printed with "c="
+UNUSED u8 sUnrefSpaceD40[0x120]; // @ 801BAD40
 
 // Forward Declarations
 struct ObjMaterial *find_or_add_new_mtl(struct ObjGroup *, s32, f32, f32, f32);
@@ -144,7 +149,7 @@ void calc_face_normal(struct ObjFace *face) {
 
     imin("calc_facenormal");
 
-    if (face->vtxCount >= 3) {  // need at least three points to compute a normal
+    if (face->vtxCount >= 3) { // need at least three points to compute a normal
         vtx1 = face->vertices[0];
         p1.x = vtx1->pos.x;
         p1.y = vtx1->pos.y;
@@ -161,7 +166,8 @@ void calc_face_normal(struct ObjFace *face) {
         p3.z = vtx3->pos.z;
 
         // calculate the cross product of edges (p2 - p1) and (p3 - p2)
-        // not sure why each component is multiplied by 1000. maybe to avoid loss of precision when normalizing?
+        // not sure why each component is multiplied by 1000. maybe to avoid loss of precision when
+        // normalizing?
         normal.x = (((p2.y - p1.y) * (p3.z - p2.z)) - ((p2.z - p1.z) * (p3.y - p2.y))) * mul;
         normal.y = (((p2.z - p1.z) * (p3.x - p2.x)) - ((p2.x - p1.x) * (p3.z - p2.z))) * mul;
         normal.z = (((p2.x - p1.x) * (p3.y - p2.y)) - ((p2.y - p1.y) * (p3.x - p2.x))) * mul;
@@ -235,7 +241,7 @@ struct ObjFace *make_face_with_material(struct ObjMaterial *mtl) {
 
 /* @ 245F0C for 0x88 */
 void add_4_vertices_to_face(struct ObjFace *face, struct ObjVertex *vtx1, struct ObjVertex *vtx2,
-                     struct ObjVertex *vtx3, struct ObjVertex *vtx4) {
+                            struct ObjVertex *vtx3, struct ObjVertex *vtx4) {
     face->vertices[0] = vtx1;
     face->vertices[1] = vtx2;
     face->vertices[2] = vtx3;
@@ -593,9 +599,9 @@ void Unknown801985E8(struct ObjShape *shape) {
 
     get_some_bounding_box(&bbox);
 
-    sShapeCenter.x = (f32)((bbox.minX + bbox.maxX) / 2.0); //? 2.0f
-    sShapeCenter.y = (f32)((bbox.minY + bbox.maxY) / 2.0); //? 2.0f
-    sShapeCenter.z = (f32)((bbox.minZ + bbox.maxZ) / 2.0); //? 2.0f
+    sShapeCenter.x = (f32) ((bbox.minX + bbox.maxX) / 2.0); //? 2.0f
+    sShapeCenter.y = (f32) ((bbox.minY + bbox.maxY) / 2.0); //? 2.0f
+    sShapeCenter.z = (f32) ((bbox.minZ + bbox.maxZ) / 2.0); //? 2.0f
 
     gd_print_vec("c=", &sShapeCenter);
 
@@ -869,7 +875,7 @@ struct ObjMaterial *find_or_add_new_mtl(struct ObjGroup *group, UNUSED s32 a1, f
     }
 
     newMtl = make_material(0, NULL, 1);
-    set_cur_dynobj((struct GdObj *)newMtl);
+    set_cur_dynobj((struct GdObj *) newMtl);
     d_set_diffuse(r, g, b);
     addto_group(group, (struct GdObj *) newMtl);
 
@@ -1197,7 +1203,7 @@ void animate_mario_head_gameover(struct ObjAnimator *self) {
     switch (self->state) {
         case 0:
             self->frame = 1.0f;
-            self->animSeqNum = 1;  // game over anim sequence
+            self->animSeqNum = 1; // game over anim sequence
             self->state = 1;
             break;
         case 1:
@@ -1207,7 +1213,7 @@ void animate_mario_head_gameover(struct ObjAnimator *self) {
                 self->frame = 69.0f;
                 self->state = 4;
                 self->controlFunc = animate_mario_head_normal;
-                self->animSeqNum = 0;  // normal anim sequence
+                self->animSeqNum = 0; // normal anim sequence
             }
             break;
     }
@@ -1224,7 +1230,7 @@ void animate_mario_head_normal(struct ObjAnimator *self) {
         case 0:
             // initialize?
             self->frame = 1.0f;
-            self->animSeqNum = 0;  // normal anim sequence
+            self->animSeqNum = 0; // normal anim sequence
             state = 2;
             self->nods = 5;
             break;
@@ -1271,7 +1277,7 @@ void animate_mario_head_normal(struct ObjAnimator *self) {
 
             self->stillTimer = 150;
             break;
-        case 7:  // Mario is staying still while his eyes follow the cursor
+        case 7: // Mario is staying still while his eyes follow the cursor
             if (aBtnPressed) {
                 self->stillTimer = 300;
             } else {
@@ -1303,9 +1309,9 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     struct ObjGroup *sp48; // Joint group
     UNUSED u8 filler2[8];
     struct ObjGroup *mainShapesGrp;
-    struct GdObj *sp38;       // object list head before making a bunch of joints
-    struct GdObj *faceJoint;        // joint on the face that `grabberJoint` pulls
-    struct ObjJoint *grabberJoint;  // joint that's dragged by the cursor
+    struct GdObj *sp38;            // object list head before making a bunch of joints
+    struct GdObj *faceJoint;       // joint on the face that `grabberJoint` pulls
+    struct ObjJoint *grabberJoint; // joint that's dragged by the cursor
     struct ObjCamera *camera;
     struct ObjAnimator *animator;
     struct ObjParticle *particle;
@@ -1313,7 +1319,8 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     // Load Mario head from the dynlist
 
     start_memtracker("mario face");
-    d_set_name_suffix("l");  // add "l" to the end of all dynobj names generated by the dynlist, for some reason
+    d_set_name_suffix(
+        "l"); // add "l" to the end of all dynobj names generated by the dynlist, for some reason
 
     d_use_integer_names(TRUE);
     animator = (struct ObjAnimator *) d_makeobj(D_ANIMATOR, AsDynName(DYNOBJ_MARIO_MAIN_ANIMATOR));
@@ -1336,7 +1343,7 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     addto_group(gMarioFaceGrp, &camera->header);
     addto_group(gMarioFaceGrp, &animator->header);
 
-    d_set_name_suffix(NULL);  // stop adding "l" to generated dynobj names
+    d_set_name_suffix(NULL); // stop adding "l" to generated dynobj names
 
     // Make sparkle particles
 
@@ -1361,59 +1368,59 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
     particle->shapePtr = gShapeRedSpark;
     addto_group(gGdLightGroup, &particle->header);
 
-    mainShapesGrp = (struct ObjGroup *) d_use_obj("N1000l");  // DYNOBJ_MARIO_MAIN_SHAPES_GROUP
+    mainShapesGrp = (struct ObjGroup *) d_use_obj("N1000l"); // DYNOBJ_MARIO_MAIN_SHAPES_GROUP
     create_gddl_for_shapes(mainShapesGrp);
     sp38 = gGdObjectList;
 
     // Make grabbers to move the face with the cursor
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, -500.0f, 0.0f, -150.0f);
-    faceJoint = d_use_obj("N167l");  // DYNOBJ_MARIO_LEFT_EAR_JOINT_1
+    faceJoint = d_use_obj("N167l"); // DYNOBJ_MARIO_LEFT_EAR_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 500.0f, 0.0f, -150.0f);
-    faceJoint = d_use_obj("N176l");  // DYNOBJ_MARIO_RIGHT_EAR_JOINT_1
+    faceJoint = d_use_obj("N176l"); // DYNOBJ_MARIO_RIGHT_EAR_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 0.0f, 700.0f, 300.0f);
-    faceJoint = d_use_obj("N131l");  // DYNOBJ_MARIO_CAP_JOINT_1
+    faceJoint = d_use_obj("N131l"); // DYNOBJ_MARIO_CAP_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
     // drag eyelids and eyebrows along with cap?
-    faceJoint = d_use_obj("N206l");  // DYNOBJ_LEFT_EYELID_JOINT_1
+    faceJoint = d_use_obj("N206l"); // DYNOBJ_LEFT_EYELID_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
-    faceJoint = d_use_obj("N215l");  // DYNOBJ_RIGHT_EYELID_JOINT_1
+    faceJoint = d_use_obj("N215l"); // DYNOBJ_RIGHT_EYELID_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
-    faceJoint = d_use_obj("N31l");  // DYNOBJ_MARIO_LEFT_EYEBROW_MPART_JOINT_1
+    faceJoint = d_use_obj("N31l"); // DYNOBJ_MARIO_LEFT_EYEBROW_MPART_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
-    faceJoint = d_use_obj("N65l");  // DYNOBJ_MARIO_RIGHT_EYEBROW_MPART_JOINT_1
+    faceJoint = d_use_obj("N65l"); // DYNOBJ_MARIO_RIGHT_EYEBROW_MPART_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 0.0f, 0.0f, 600.0f);
-    faceJoint = d_use_obj("N185l");  // DYNOBJ_MARIO_NOSE_JOINT_1
+    faceJoint = d_use_obj("N185l"); // DYNOBJ_MARIO_NOSE_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 0.0f, -300.0f, 300.0f);
-    faceJoint = d_use_obj("N194l");  // DYNOBJ_MARIO_LEFT_JAW_JOINT
+    faceJoint = d_use_obj("N194l"); // DYNOBJ_MARIO_LEFT_JAW_JOINT
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 250.0f, -150.0f, 300.0f);
-    faceJoint = d_use_obj("N158l");  // DYNOBJ_MARIO_RIGHT_LIP_CORNER_JOINT_1
+    faceJoint = d_use_obj("N158l"); // DYNOBJ_MARIO_RIGHT_LIP_CORNER_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
-    faceJoint = d_use_obj("N15l");  // DYNOBJ_MARIO_LEFT_MUSTACHE_JOINT_1
+    faceJoint = d_use_obj("N15l"); // DYNOBJ_MARIO_LEFT_MUSTACHE_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, -250.0f, -150.0f, 300.0f);
-    faceJoint = d_use_obj("N149l");  // DYNOBJ_MARIO_LEFT_LIP_CORNER_JOINT_1
+    faceJoint = d_use_obj("N149l"); // DYNOBJ_MARIO_LEFT_LIP_CORNER_JOINT_1
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
 
-    faceJoint = d_use_obj("N6l");  // DYNOBJ_MARIO_RIGHT_MUSTACHE_JOINT_1
+    faceJoint = d_use_obj("N6l"); // DYNOBJ_MARIO_RIGHT_MUSTACHE_JOINT_1
     addto_group(grabberJoint->attachedObjsGrp, faceJoint);
 
     // make the left eye follow cursor
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, 100.0f, 200.0f, 400.0f);
-    faceJoint = d_use_obj("N112l");  // DYNOBJ_MARIO_RIGHT_EYE_UNKNOWN_NET
+    faceJoint = d_use_obj("N112l"); // DYNOBJ_MARIO_RIGHT_EYE_UNKNOWN_NET
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
     grabberJoint->updateFunc = eye_joint_update_func;
     grabberJoint->rootAnimator = animator;
@@ -1421,7 +1428,7 @@ s32 load_mario_head(void (*aniFn)(struct ObjAnimator *)) {
 
     // make the right eye follow cursor
     grabberJoint = make_grabber_joint(sGrabJointTestShape, 0, -100.0f, 200.0f, 400.0f);
-    faceJoint = d_use_obj("N96l");  // DYNOBJ_MARIO_LEFT_EYE_UNKNOWN_NET
+    faceJoint = d_use_obj("N96l"); // DYNOBJ_MARIO_LEFT_EYE_UNKNOWN_NET
     grabberJoint->attachedObjsGrp = make_group(1, faceJoint);
     grabberJoint->updateFunc = eye_joint_update_func;
     grabberJoint->rootAnimator = animator;

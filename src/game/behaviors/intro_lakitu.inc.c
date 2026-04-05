@@ -15,11 +15,10 @@ void intro_lakitu_set_offset_from_camera(struct Object *obj, Vec3f offset) {
     s16 offsetPitch, offsetYaw;
 
     vec3f_add(offset, gCamera->pos);
-    vec3f_get_dist_and_angle(gCamera->pos, gCamera->focus,
-                             &dist, &focusAngles[0], &focusAngles[1]);
+    vec3f_get_dist_and_angle(gCamera->pos, gCamera->focus, &dist, &focusAngles[0], &focusAngles[1]);
     vec3f_get_dist_and_angle(gCamera->pos, offset, &dist, &offsetPitch, &offsetYaw);
-    vec3f_set_dist_and_angle(gCamera->pos, offset, dist,
-                             focusAngles[0] + offsetPitch, focusAngles[1] + offsetYaw);
+    vec3f_set_dist_and_angle(gCamera->pos, offset, dist, focusAngles[0] + offsetPitch,
+                             focusAngles[1] + offsetYaw);
     vec3f_to_object_pos(obj, offset);
 }
 
@@ -49,9 +48,11 @@ s32 intro_lakitu_set_pos_and_focus(struct Object *obj, struct CutsceneSplinePoin
     s16 splineSegment = obj->oIntroLakituSplineSegment;
 
     if ((move_point_along_spline(newFocus, offset, &splineSegment,
-                                 &obj->oIntroLakituSplineSegmentProgress) == 1)
+                                 &obj->oIntroLakituSplineSegmentProgress)
+         == 1)
         || (move_point_along_spline(newOffset, focus, &splineSegment,
-                                    &obj->oIntroLakituSplineSegmentProgress) == 1)) {
+                                    &obj->oIntroLakituSplineSegmentProgress)
+            == 1)) {
         splineFinished++;
     }
 
@@ -81,8 +82,8 @@ void bhv_intro_lakitu_loop(void) {
 
             o->oIntroLakituSplineSegment = 0.0f;
             o->oIntroLakituSplineSegmentProgress = 0.0f;
-            o->oIntroLakituCloud =
-                spawn_object_relative_with_scale(CLOUD_BP_LAKITU_CLOUD, 0, 0, 0, 2.0f, o, MODEL_MIST, bhvCloud);
+            o->oIntroLakituCloud = spawn_object_relative_with_scale(CLOUD_BP_LAKITU_CLOUD, 0, 0, 0,
+                                                                    2.0f, o, MODEL_MIST, bhvCloud);
 
             if (gCamera->cutscene == CUTSCENE_END_WAVING) {
                 o->oAction = 100;
@@ -105,7 +106,8 @@ void bhv_intro_lakitu_loop(void) {
             }
 
             if (intro_lakitu_set_pos_and_focus(o, gIntroLakituStartToPipeOffsetFromCamera,
-                                               gIntroLakituStartToPipeFocus) == 1) {
+                                               gIntroLakituStartToPipeFocus)
+                == 1) {
                 o->oAction++;
             }
 
@@ -216,7 +218,7 @@ void bhv_intro_lakitu_loop(void) {
                 o->oMoveAngleYaw += 0x78;
                 o->oMoveAnglePitch += 0x40;
                 o->oFaceAngleYaw = camera_approach_s16_symmetric(
-                                       o->oFaceAngleYaw, calculate_yaw(sp4C, gCamera->pos), 0x200);
+                    o->oFaceAngleYaw, calculate_yaw(sp4C, gCamera->pos), 0x200);
             }
 
             if (o->oTimer > 105) {
@@ -233,8 +235,8 @@ void bhv_intro_lakitu_loop(void) {
             object_pos_to_vec3f(sp4C, o);
 
             o->oForwardVel = approach_f32_asymptotic(o->oForwardVel, 60.0f, 0.05f);
-            o->oFaceAngleYaw = camera_approach_s16_symmetric(
-                                   o->oFaceAngleYaw, calculate_yaw(sp4C, gCamera->pos), 0x200);
+            o->oFaceAngleYaw = camera_approach_s16_symmetric(o->oFaceAngleYaw,
+                                                             calculate_yaw(sp4C, gCamera->pos), 0x200);
 
             if (o->oTimer < 62) {
                 o->oMoveAngleYaw = approach_s16_asymptotic(o->oMoveAngleYaw, 0x1800, 0x1E);

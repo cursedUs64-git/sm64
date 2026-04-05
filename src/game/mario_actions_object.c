@@ -366,7 +366,7 @@ s32 act_holding_bowser(struct MarioState *m) {
             m->twirlYaw = m->intendedYaw;
         } else {
             // spin = acceleration
-            spin = (s16)(m->intendedYaw - m->twirlYaw) / 0x80;
+            spin = (s16) (m->intendedYaw - m->twirlYaw) / 0x80;
 
             if (spin < -0x80) {
                 spin = -0x80;

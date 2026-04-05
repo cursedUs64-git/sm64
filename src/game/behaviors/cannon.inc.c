@@ -11,7 +11,7 @@ void opened_cannon_act_0(void) {
         o->oPosY = o->oHomeY;
         o->oPosZ = o->oHomeZ;
         o->oMoveAnglePitch = 0;
-        o->oMoveAngleYaw = (s16)(o->oBhvParams2ndByte << 8);
+        o->oMoveAngleYaw = (s16) (o->oBhvParams2ndByte << 8);
         o->oCannonUnkF4 = 0;
         o->oCannonUnk10C = FALSE;
         cur_obj_enable_rendering();
@@ -22,7 +22,8 @@ void opened_cannon_act_0(void) {
         cur_obj_become_tangible();
         cur_obj_enable_rendering();
         if ((o->oInteractStatus & INT_STATUS_INTERACTED)
-            && !(o->oInteractStatus & INT_STATUS_TOUCHED_BOB_OMB)) { // bob-omb explodes when it gets into a cannon
+            && !(o->oInteractStatus
+                 & INT_STATUS_TOUCHED_BOB_OMB)) { // bob-omb explodes when it gets into a cannon
             o->oAction = 4;
             o->oCannonUnk10C = TRUE;
             o->oCannonUnkF8 = 1;
@@ -42,12 +43,12 @@ void opened_cannon_act_4(void) {
     }
 
     o->oPosY += 5.0f;
-    o->oPosX += (f32)((o->oTimer / 2 & 1) - 0.5) * 2;
-    o->oPosZ += (f32)((o->oTimer / 2 & 1) - 0.5) * 2;
+    o->oPosX += (f32) ((o->oTimer / 2 & 1) - 0.5) * 2;
+    o->oPosZ += (f32) ((o->oTimer / 2 & 1) - 0.5) * 2;
 
     if (o->oTimer > 67) {
-        o->oPosX += (f32)((o->oTimer / 2 & 1) - 0.5) * 4;
-        o->oPosZ += (f32)((o->oTimer / 2 & 1) - 0.5) * 4;
+        o->oPosX += (f32) ((o->oTimer / 2 & 1) - 0.5) * 4;
+        o->oPosZ += (f32) ((o->oTimer / 2 & 1) - 0.5) * 4;
         o->oAction = 6;
     }
 }
@@ -58,14 +59,13 @@ void opened_cannon_act_6(void) {
     }
 
     if (o->oTimer < 4) {
-        o->oPosX += (f32)((o->oTimer / 2 & 1) - 0.5) * 4.0f;
-        o->oPosZ += (f32)((o->oTimer / 2 & 1) - 0.5) * 4.0f;
+        o->oPosX += (f32) ((o->oTimer / 2 & 1) - 0.5) * 4.0f;
+        o->oPosZ += (f32) ((o->oTimer / 2 & 1) - 0.5) * 4.0f;
     } else {
         if (o->oTimer < 6) {
         } else {
             if (o->oTimer < 22) {
-                o->oMoveAngleYaw =
-                    sins(o->oCannonUnkF4) * 0x4000 + ((s16)(o->oBhvParams2ndByte << 8));
+                o->oMoveAngleYaw = sins(o->oCannonUnkF4) * 0x4000 + ((s16) (o->oBhvParams2ndByte << 8));
                 o->oCannonUnkF4 += 0x400;
             } else if (o->oTimer < 26) {
             } else {
@@ -115,13 +115,8 @@ void opened_cannon_act_3(void) {
 }
 
 void (*sOpenedCannonActions[])(void) = {
-    opened_cannon_act_0,
-    opened_cannon_act_1,
-    opened_cannon_act_2,
-    opened_cannon_act_3,
-    opened_cannon_act_4,
-    opened_cannon_act_5,
-    opened_cannon_act_6,
+    opened_cannon_act_0, opened_cannon_act_1, opened_cannon_act_2, opened_cannon_act_3,
+    opened_cannon_act_4, opened_cannon_act_5, opened_cannon_act_6,
 };
 
 void bhv_cannon_base_loop(void) {

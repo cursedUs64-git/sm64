@@ -66,7 +66,7 @@ s32 check_common_hold_idle_cancels(struct MarioState *m) {
 
     if (m->heldObj->oInteractionSubtype & INT_SUBTYPE_DROP_IMMEDIATELY) {
         m->heldObj->oInteractionSubtype =
-            (s32)(m->heldObj->oInteractionSubtype & ~INT_SUBTYPE_DROP_IMMEDIATELY);
+            (s32) (m->heldObj->oInteractionSubtype & ~INT_SUBTYPE_DROP_IMMEDIATELY);
         return set_mario_action(m, ACT_PLACING_DOWN, 0);
     }
 
@@ -153,11 +153,14 @@ s32 act_idle(struct MarioState *m) {
             // and that he's gone through 10 cycles before sleeping.
             // actionTimer is used to track how many cycles have passed.
             if (++m->actionState == 3) {
-                f32 deltaYOfFloorBehindMario = m->pos[1] - find_floor_height_relative_polar(m, -0x8000, 60.0f);
-                if (deltaYOfFloorBehindMario < -24.0f || 24.0f < deltaYOfFloorBehindMario || m->floor->flags & SURFACE_FLAG_DYNAMIC) {
+                f32 deltaYOfFloorBehindMario =
+                    m->pos[1] - find_floor_height_relative_polar(m, -0x8000, 60.0f);
+                if (deltaYOfFloorBehindMario < -24.0f || 24.0f < deltaYOfFloorBehindMario
+                    || m->floor->flags & SURFACE_FLAG_DYNAMIC) {
                     m->actionState = 0;
                 } else {
-                    // If Mario hasn't turned his head 10 times yet, stay idle instead of going to sleep.
+                    // If Mario hasn't turned his head 10 times yet, stay idle instead of going to
+                    // sleep.
                     m->actionTimer++;
                     if (m->actionTimer < 10) {
                         m->actionState = 0;
@@ -200,21 +203,21 @@ s32 act_start_sleeping(struct MarioState *m) {
 #ifndef VERSION_JP
             animFrame =
 #endif
-            set_mario_animation(m, MARIO_ANIM_START_SLEEP_IDLE);
+                set_mario_animation(m, MARIO_ANIM_START_SLEEP_IDLE);
             break;
 
         case 1:
 #ifndef VERSION_JP
             animFrame =
 #endif
-            set_mario_animation(m, MARIO_ANIM_START_SLEEP_SCRATCH);
+                set_mario_animation(m, MARIO_ANIM_START_SLEEP_SCRATCH);
             break;
 
         case 2:
 #ifndef VERSION_JP
             animFrame =
 #endif
-            set_mario_animation(m, MARIO_ANIM_START_SLEEP_YAWN);
+                set_mario_animation(m, MARIO_ANIM_START_SLEEP_YAWN);
             m->marioBodyState->eyeState = MARIO_EYES_HALF_CLOSED;
             break;
 
@@ -222,7 +225,7 @@ s32 act_start_sleeping(struct MarioState *m) {
 #ifndef VERSION_JP
             animFrame =
 #endif
-            set_mario_animation(m, MARIO_ANIM_START_SLEEP_SITTING);
+                set_mario_animation(m, MARIO_ANIM_START_SLEEP_SITTING);
             m->marioBodyState->eyeState = MARIO_EYES_HALF_CLOSED;
             break;
     }
@@ -812,7 +815,7 @@ s32 act_shockwave_bounce(struct MarioState *m) {
     }
 
     sp1E = (m->actionTimer % 16) << 12;
-    sp18 = (f32)(((f32)(6 - m->actionTimer / 8) * 8.0f) + 4.0f);
+    sp18 = (f32) (((f32) (6 - m->actionTimer / 8) * 8.0f) + 4.0f);
     mario_set_forward_vel(m, 0);
     vec3f_set(m->vel, 0.0f, 0.0f, 0.0f);
     if (sins(sp1E) >= 0.0f) {
@@ -940,8 +943,9 @@ s32 act_long_jump_land_stop(struct MarioState *m) {
         return TRUE;
     }
 
-    landing_step(m, !m->marioObj->oMarioLongJumpIsSlow ? MARIO_ANIM_CROUCH_FROM_FAST_LONGJUMP
-                                                       : MARIO_ANIM_CROUCH_FROM_SLOW_LONGJUMP,
+    landing_step(m,
+                 !m->marioObj->oMarioLongJumpIsSlow ? MARIO_ANIM_CROUCH_FROM_FAST_LONGJUMP
+                                                    : MARIO_ANIM_CROUCH_FROM_SLOW_LONGJUMP,
                  ACT_CROUCHING);
     return FALSE;
 }

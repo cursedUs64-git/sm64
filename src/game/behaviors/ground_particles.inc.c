@@ -58,7 +58,8 @@ void spawn_smoke_with_velocity(void) {
 
 // TODO Fix name
 void clear_particle_flags(u32 flags) {
-    o->parentObj->oActiveParticleFlags &= flags ^ 0xFFFFFFFF; // Clear the flags given (could just be ~flags)
+    o->parentObj->oActiveParticleFlags &=
+        flags ^ 0xFFFFFFFF; // Clear the flags given (could just be ~flags)
 }
 
 struct SpawnParticlesInfo sSnowParticles = {

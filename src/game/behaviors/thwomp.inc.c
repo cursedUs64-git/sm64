@@ -50,11 +50,8 @@ void grindel_thwomp_act_raise(void) {
 }
 
 void (*sGrindelThwompActions[])(void) = {
-    grindel_thwomp_act_raise,
-    grindel_thwomp_act_idle_at_top,
-    grindel_thwomp_act_lower,
-    grindel_thwomp_act_land,
-    grindel_thwomp_act_idle_at_bottom,
+    grindel_thwomp_act_raise, grindel_thwomp_act_idle_at_top,    grindel_thwomp_act_lower,
+    grindel_thwomp_act_land,  grindel_thwomp_act_idle_at_bottom,
 };
 
 void bhv_grindel_thwomp_loop(void) {

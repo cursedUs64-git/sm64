@@ -36,8 +36,8 @@ void king_bobomb_act_0(void) {
             o->oSubAction++;
             seq_player_lower_volume(SEQ_PLAYER_LEVEL, 60, 40);
         }
-    } else if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-        DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, DIALOG_017)) {
+    } else if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TURN_TO_MARIO,
+                                                   CUTSCENE_DIALOG, DIALOG_017)) {
         o->oAction = 2;
         o->oFlags |= OBJ_FLAG_HOLDABLE;
     }
@@ -200,8 +200,8 @@ void king_bobomb_act_6(void) {
 
 void king_bobomb_act_7(void) {
     cur_obj_init_animation_with_sound(2);
-    if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-        DIALOG_FLAG_TEXT_DEFAULT, CUTSCENE_DIALOG, DIALOG_116)) {
+    if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TEXT_DEFAULT,
+                                            CUTSCENE_DIALOG, DIALOG_116)) {
         create_sound_spawner(SOUND_OBJ_KING_WHOMP_DEATH);
 
         cur_obj_hide();
@@ -228,7 +228,7 @@ void king_bobomb_act_8(void) {
     }
 }
 
-void king_bobomb_act_4(void) { // bobomb been thrown
+void king_bobomb_act_4(void) {            // bobomb been thrown
     if (o->oPosY - o->oHomeY > -100.0f) { // not thrown off hill
         if (o->oMoveFlags & OBJ_MOVE_LANDED) {
             o->oHealth--;
@@ -319,8 +319,8 @@ void king_bobomb_act_5(void) { // bobomb returns home
             break;
 
         case 4:
-            if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP,
-                DIALOG_FLAG_TURN_TO_MARIO, CUTSCENE_DIALOG, DIALOG_128)) {
+            if (cur_obj_update_dialog_with_cutscene(MARIO_DIALOG_LOOK_UP, DIALOG_FLAG_TURN_TO_MARIO,
+                                                    CUTSCENE_DIALOG, DIALOG_128)) {
                 o->oAction = 2;
             }
             break;
@@ -328,15 +328,8 @@ void king_bobomb_act_5(void) { // bobomb returns home
 }
 
 void (*sKingBobombActions[])(void) = {
-    king_bobomb_act_0,
-    king_bobomb_act_1,
-    king_bobomb_act_2,
-    king_bobomb_act_3,
-    king_bobomb_act_4,
-    king_bobomb_act_5,
-    king_bobomb_act_6,
-    king_bobomb_act_7,
-    king_bobomb_act_8,
+    king_bobomb_act_0, king_bobomb_act_1, king_bobomb_act_2, king_bobomb_act_3, king_bobomb_act_4,
+    king_bobomb_act_5, king_bobomb_act_6, king_bobomb_act_7, king_bobomb_act_8,
 };
 
 struct SoundState sKingBobombSoundStates[] = {

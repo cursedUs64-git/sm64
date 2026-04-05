@@ -230,7 +230,7 @@ void print_string_array_info(const char **strArr) {
         }
         // modify the cursor position so the cursor prints at the correct location.
         // this is equivalent to (sDebugSysCursor - 8)
-        set_text_array_x_y(0, -1 - (u32)(7 - sDebugSysCursor));
+        set_text_array_x_y(0, -1 - (u32) (7 - sDebugSysCursor));
         print_debug_top_down_mapinfo(strArr[8], 0); // print the cursor
         set_text_array_x_y(0, 7 - sDebugSysCursor);
     }
@@ -303,14 +303,14 @@ void reset_debug_objectinfo(void) {
  * C Right) and then toggles the debug flags from FF to 2; 2 is unused,
  * despite so this has no effect, being called. (unused)
  */
-UNUSED  void check_debug_button_seq(void) {
+UNUSED void check_debug_button_seq(void) {
     s16 *buttonArr = sDebugInfoButtonSeq;
     s16 cButtonMask;
 
     if (!(gPlayer1Controller->buttonDown & L_TRIG)) {
         sDebugInfoButtonSeqID = 0;
     } else {
-        if ((s16)(cButtonMask = (gPlayer1Controller->buttonPressed & C_BUTTONS))) {
+        if ((s16) (cButtonMask = (gPlayer1Controller->buttonPressed & C_BUTTONS))) {
             if (buttonArr[sDebugInfoButtonSeqID] == cButtonMask) {
                 sDebugInfoButtonSeqID++;
                 if (buttonArr[sDebugInfoButtonSeqID] == -1) {
@@ -331,7 +331,7 @@ UNUSED  void check_debug_button_seq(void) {
  * Poll the debug info flags and controller for appropriate presses that
  * control sDebugPage's range. (unused)
  */
-UNUSED  void try_change_debug_page(void) {
+UNUSED void try_change_debug_page(void) {
     if (gDebugInfoFlags & DEBUG_INFO_FLAG_DPRINT) {
         if ((gPlayer1Controller->buttonPressed & L_JPAD)
             && (gPlayer1Controller->buttonDown & (L_TRIG | R_TRIG))) {
@@ -357,7 +357,7 @@ UNUSED  void try_change_debug_page(void) {
  * on the fly. (unused)
  */
 #ifdef VERSION_EU
-UNUSED 
+UNUSED
 #endif
 void try_modify_debug_controls(void) {
     s32 sp4;

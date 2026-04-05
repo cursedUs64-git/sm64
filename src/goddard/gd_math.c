@@ -22,8 +22,8 @@ f32 gd_sqrt_f(f32 val) {
  * at the position 'to'.
  * An effective goddard copy of mtxf_lookat.
  */
-void gd_mat4f_lookat(Mat4f *mtx, f32 xFrom, f32 yFrom, f32 zFrom, f32 xTo, f32 yTo, f32 zTo,
-                     f32 zColY, f32 yColY, f32 xColY) {
+void gd_mat4f_lookat(Mat4f *mtx, f32 xFrom, f32 yFrom, f32 zFrom, f32 xTo, f32 yTo, f32 zTo, f32 zColY,
+                     f32 yColY, f32 xColY) {
     f32 invLength;
 
     struct GdVec3f d;
@@ -319,7 +319,6 @@ void gd_absrot_mat4(Mat4f *mtx, s32 axisnum, f32 ang) {
     gd_mult_mat4f(mtx, &rMat, mtx);
 }
 
-
 f32 gd_vec3f_magnitude(struct GdVec3f *vec) {
     return gd_sqrt_f(SQ(vec->x) + SQ(vec->y) + SQ(vec->z));
 }
@@ -432,37 +431,37 @@ void gd_adjunct_mat4f(Mat4f *src, Mat4f *dst) {
     inv.r0.c0 = (*src)[3][3];
 
     (*dst)[0][0] = gd_3x3_det(inv.r2.c2, inv.r2.c1, inv.r2.c0, inv.r1.c2, inv.r1.c1, inv.r1.c0,
-                                 inv.r0.c2, inv.r0.c1, inv.r0.c0);
+                              inv.r0.c2, inv.r0.c1, inv.r0.c0);
     (*dst)[1][0] = -gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r1.c2, inv.r1.c1, inv.r1.c0,
-                                  inv.r0.c2, inv.r0.c1, inv.r0.c0);
+                               inv.r0.c2, inv.r0.c1, inv.r0.c0);
     (*dst)[2][0] = gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r2.c2, inv.r2.c1, inv.r2.c0,
-                                 inv.r0.c2, inv.r0.c1, inv.r0.c0);
+                              inv.r0.c2, inv.r0.c1, inv.r0.c0);
     (*dst)[3][0] = -gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r2.c2, inv.r2.c1, inv.r2.c0,
-                                  inv.r1.c2, inv.r1.c1, inv.r1.c0);
+                               inv.r1.c2, inv.r1.c1, inv.r1.c0);
     (*dst)[0][1] = -gd_3x3_det(inv.r2.c3, inv.r2.c1, inv.r2.c0, inv.r1.c3, inv.r1.c1, inv.r1.c0,
-                                  inv.r0.c3, inv.r0.c1, inv.r0.c0);
+                               inv.r0.c3, inv.r0.c1, inv.r0.c0);
     (*dst)[1][1] = gd_3x3_det(inv.r3.c3, inv.r3.c1, inv.r3.c0, inv.r1.c3, inv.r1.c1, inv.r1.c0,
-                                 inv.r0.c3, inv.r0.c1, inv.r0.c0);
+                              inv.r0.c3, inv.r0.c1, inv.r0.c0);
     (*dst)[2][1] = -gd_3x3_det(inv.r3.c3, inv.r3.c1, inv.r3.c0, inv.r2.c3, inv.r2.c1, inv.r2.c0,
-                                  inv.r0.c3, inv.r0.c1, inv.r0.c0);
+                               inv.r0.c3, inv.r0.c1, inv.r0.c0);
     (*dst)[3][1] = gd_3x3_det(inv.r3.c3, inv.r3.c1, inv.r3.c0, inv.r2.c3, inv.r2.c1, inv.r2.c0,
-                                 inv.r1.c3, inv.r1.c1, inv.r1.c0);
+                              inv.r1.c3, inv.r1.c1, inv.r1.c0);
     (*dst)[0][2] = gd_3x3_det(inv.r2.c3, inv.r2.c2, inv.r2.c0, inv.r1.c3, inv.r1.c2, inv.r1.c0,
-                                 inv.r0.c3, inv.r0.c2, inv.r0.c0);
+                              inv.r0.c3, inv.r0.c2, inv.r0.c0);
     (*dst)[1][2] = -gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c0, inv.r1.c3, inv.r1.c2, inv.r1.c0,
-                                  inv.r0.c3, inv.r0.c2, inv.r0.c0);
+                               inv.r0.c3, inv.r0.c2, inv.r0.c0);
     (*dst)[2][2] = gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c0, inv.r2.c3, inv.r2.c2, inv.r2.c0,
-                                 inv.r0.c3, inv.r0.c2, inv.r0.c0);
+                              inv.r0.c3, inv.r0.c2, inv.r0.c0);
     (*dst)[3][2] = -gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c0, inv.r2.c3, inv.r2.c2, inv.r2.c0,
-                                  inv.r1.c3, inv.r1.c2, inv.r1.c0);
+                               inv.r1.c3, inv.r1.c2, inv.r1.c0);
     (*dst)[0][3] = -gd_3x3_det(inv.r2.c3, inv.r2.c2, inv.r2.c1, inv.r1.c3, inv.r1.c2, inv.r1.c1,
-                                  inv.r0.c3, inv.r0.c2, inv.r0.c1);
+                               inv.r0.c3, inv.r0.c2, inv.r0.c1);
     (*dst)[1][3] = gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c1, inv.r1.c3, inv.r1.c2, inv.r1.c1,
-                                 inv.r0.c3, inv.r0.c2, inv.r0.c1);
+                              inv.r0.c3, inv.r0.c2, inv.r0.c1);
     (*dst)[2][3] = -gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c1, inv.r2.c3, inv.r2.c2, inv.r2.c1,
-                                  inv.r0.c3, inv.r0.c2, inv.r0.c1);
+                               inv.r0.c3, inv.r0.c2, inv.r0.c1);
     (*dst)[3][3] = gd_3x3_det(inv.r3.c3, inv.r3.c2, inv.r3.c1, inv.r2.c3, inv.r2.c2, inv.r2.c1,
-                                 inv.r1.c3, inv.r1.c2, inv.r1.c1);
+                              inv.r1.c3, inv.r1.c2, inv.r1.c1);
 }
 
 /**
@@ -490,20 +489,16 @@ f32 gd_mat4f_det(Mat4f *mtx) {
     inv.r0.c0 = (*mtx)[3][3];
 
     det = (inv.r3.c3
-                * gd_3x3_det(inv.r2.c2, inv.r2.c1, inv.r2.c0,
-                             inv.r1.c2, inv.r1.c1, inv.r1.c0,
-                             inv.r0.c2, inv.r0.c1, inv.r0.c0)
+               * gd_3x3_det(inv.r2.c2, inv.r2.c1, inv.r2.c0, inv.r1.c2, inv.r1.c1, inv.r1.c0, inv.r0.c2,
+                            inv.r0.c1, inv.r0.c0)
            - inv.r2.c3
-                * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0,
-                             inv.r1.c2, inv.r1.c1, inv.r1.c0,
-                             inv.r0.c2, inv.r0.c1, inv.r0.c0))
+                 * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r1.c2, inv.r1.c1, inv.r1.c0,
+                              inv.r0.c2, inv.r0.c1, inv.r0.c0))
           + inv.r1.c3
-                * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0,
-                             inv.r2.c2, inv.r2.c1, inv.r2.c0,
+                * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r2.c2, inv.r2.c1, inv.r2.c0,
                              inv.r0.c2, inv.r0.c1, inv.r0.c0)
           - inv.r0.c3
-                * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0,
-                             inv.r2.c2, inv.r2.c1, inv.r2.c0,
+                * gd_3x3_det(inv.r3.c2, inv.r3.c1, inv.r3.c0, inv.r2.c2, inv.r2.c1, inv.r2.c0,
                              inv.r1.c2, inv.r1.c1, inv.r1.c0);
 
     return det;
@@ -513,9 +508,8 @@ f32 gd_mat4f_det(Mat4f *mtx) {
  * Takes the individual values of a 3 by 3 matrix and
  * returns the determinant.
  */
-f32 gd_3x3_det(f32 r0c0, f32 r0c1, f32 r0c2,
-               f32 r1c0, f32 r1c1, f32 r1c2,
-               f32 r2c0, f32 r2c1, f32 r2c2) {
+f32 gd_3x3_det(f32 r0c0, f32 r0c1, f32 r0c2, f32 r1c0, f32 r1c1, f32 r1c2, f32 r2c0, f32 r2c1,
+               f32 r2c2) {
     f32 det;
 
     det = r0c0 * gd_2x2_det(r1c1, r1c2, r2c1, r2c2) - r1c0 * gd_2x2_det(r0c1, r0c2, r2c1, r2c2)

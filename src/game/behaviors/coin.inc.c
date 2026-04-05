@@ -157,14 +157,8 @@ void bhv_coin_formation_spawn_loop(void) {
 }
 
 s16 sCoinArrowPositions[][2] = {
-    { 0, -150 },
-    { 0, -50 },
-    { 0, 50 },
-    { 0, 150 },
-    { -50, 100 },
-    { -100, 50 },
-    { 50, 100 },
-    { 100, 50 },
+    { 0, -150 },  { 0, -50 },   { 0, 50 },   { 0, 150 },
+    { -50, 100 }, { -100, 50 }, { 50, 100 }, { 100, 50 },
 };
 
 void spawn_coin_in_formation(s32 coinIndex, s32 coinFormationFlags) {
@@ -213,8 +207,8 @@ void spawn_coin_in_formation(s32 coinIndex, s32 coinFormationFlags) {
     }
 
     if (setSpawner) {
-        coinSpawner = spawn_object_relative(coinIndex, pos[0], pos[1], pos[2], o,
-                                            MODEL_YELLOW_COIN, bhvCoinFormationSpawn);
+        coinSpawner = spawn_object_relative(coinIndex, pos[0], pos[1], pos[2], o, MODEL_YELLOW_COIN,
+                                            bhvCoinFormationSpawn);
         coinSpawner->oCoinOnGround = onGround;
     }
 }
