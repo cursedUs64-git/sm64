@@ -12,18 +12,18 @@ index b961ca52..531231cf 100644
 +#define FPS_COUNTER_X_POS 24
 +#define FPS_COUNTER_Y_POS 190
 +
-+static OSTime gLastOSTime = 0;
-+static float gFrameTime = 0.0f;
-+static u16 gFrames = 0;
-+static u16 gFPS = 0;
-+static u8 gRenderFPS = FALSE;
++OSTime gLastOSTime = 0;
++float gFrameTime = 0.0f;
++u16 gFrames = 0;
++u16 gFPS = 0;
++u8 gRenderFPS = FALSE;
 +
-+static void calculate_frameTime_from_OSTime(OSTime diff) {
++void calculate_frameTime_from_OSTime(OSTime diff) {
 +    gFrameTime += diff * SECONDS_PER_CYCLE;
 +    gFrames++;
 +}
 +
-+static void render_fps(void) {
++void render_fps(void) {
 +    // Toggle rendering framerate with the L button.
 +    if (gPlayer1Controller->buttonPressed & L_TRIG) {
 +        gRenderFPS ^= 1;

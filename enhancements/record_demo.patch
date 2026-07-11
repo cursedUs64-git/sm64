@@ -56,7 +56,7 @@ index b961ca52..adfde049 100644
  /**
   * This function records distinct inputs over a 255-frame interval to RAM locations and was likely
   * used to record the demo sequences seen in the final game. This function is unused.
-@@ -420,6 +460,118 @@ UNUSED static void record_demo(void) {
+@@ -420,6 +460,118 @@ UNUSED void record_demo(void) {
      gRecordedDemoInput.timer++;
  }
  
